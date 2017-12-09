@@ -1,0 +1,198 @@
+\documentclass[thesis.tex]{subfiles}
+
+\begin{document}
+
+\begin{equation}
+  \Phi_{0}\left(\vec{r}_{1},\cdots,\vec{r}_{2}\right) =
+  \frac{1}{\sqrt{A!}}\begin{vmatrix}
+    \phi_{1}\left(\vec{r}_{1}\right) & \phi_{1}\left(\vec{r}_{2}\right) & \cdots & \phi_{1}\left(\vec{r}_{A}\right) \\
+    \phi_{2}\left(\vec{r}_{1}\right) & \phi_{2}\left(\vec{r}_{2}\right) & \cdots & \phi_{2}\left(\vec{r}_{A}\right) \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \phi_{A}\left(\vec{r}_{1}\right) & \phi_{A}\left(\vec{r}_{2}\right) & \cdots & \phi_{A}\left(\vec{r}_{A}\right)
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation}
+  V_{\text{WS}}\left( r \right) = -V_{0} \left[ 1 + \E^{\frac{\left( r-R_{0} \right)}{a}} \right]^{-1}
+\end{equation}
+
+\begin{equation}
+  V_{\text{HO}}\left( r \right) = \frac{1}{2}m\omega^{2}r^{2}
+\end{equation}
+
+\begin{equation}
+  \Ham = \HamB{1} + \HamB{2} + \HamB{3} + \cdots
+\end{equation}
+
+\begin{equation}
+  \Ham = \frac{-\hbar^{2}}{2m}\sum^{A}_{\mathclap{i}}\nabla^{2}_{i} + \sum^{A}_{\mathclap{i<j}}\HamB{2}\left(\vec{r}_{i},\vec{r}_{j}\right) + \sum^{A}_{\mathclap{i<j<k}}\HamB{3}\left(\vec{r}_{i},\vec{r}_{j},\vec{r}_{k}\right) + \cdots
+\end{equation}
+
+\begin{equation}
+  \Ham = \sum_{\mathclap{pq}}\Hint{1}{p}{q}\ \co{p}\ao{q} + \frac{1}{4}\sum_{\mathclap{pqrs}}\Hint{2}{pq}{rs}\ \co{p}\co{q}\ao{s}\ao{r} + \frac{1}{36}\sum_{\mathclap{pqrstu}}\Hint{3}{pqr}{stu}\ \co{p}\co{q}\co{r}\ao{u}\ao{t}\ao{s} + \cdots
+\end{equation}
+
+\begin{equation}
+  \Ham = E_{0} + \sum_{\mathclap{pq}}\fint{p}{q}\normord{\co{p}\ao{q}} + \frac{1}{4}\sum_{\mathclap{pqrs}}\vint{pq}{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}} + \frac{1}{36}\sum_{\mathclap{pqrstu}}\wint{pqr}{stu}\normord{\co{p}\co{q}\co{r}\ao{u}\ao{t}\ao{s}} + \cdots
+\end{equation}
+
+\begin{gather}
+  E_{0} = \sum_{\mathclap{i}}\Hint{1}{i}{i} + \frac{1}{2}\sum_{\mathclap{ij}}\Hint{2}{ij}{ij} + \frac{1}{6}\sum_{\mathclap{ijk}}\Hint{3}{ijk}{ijk} \cdots \\
+  \fint{p}{q} = \Hint{1}{p}{q} + \sum_{\mathclap{i}}\Hint{2}{pi}{qi} + \frac{1}{2}\sum_{\mathclap{ij}}\Hint{3}{pij}{qij} + \cdots \\
+  \vint{pq}{rs} = \Hint{2}{pq}{rs} + \sum_{\mathclap{i}}\Hint{3}{pqi}{rsi} + \cdots \\
+  \wint{pqr}{stu} = \Hint{3}{pqr}{stu} + \cdots
+\end{gather}
+
+\section{Many-Body Perturbation Theory}
+
+\begin{equation}
+  \Ham = \Ham_{0} + \Ham_{1}
+\end{equation}
+
+\begin{equation}
+  \Ham\corrket = \mathop{(\Ham_{0} + \Ham_{1})}\corrket = E\corrket
+\end{equation}
+
+\begin{gather}
+  \refbra\Ham\corrket = \corrbra\mathop{(\Ham_{0} + \Ham_{1})}\corrket = E \\
+  \refbra\Ham_{0}\corrket + \refbra\Ham_{1}\corrket = E\braket{\Phi}{\Psi} = E \\
+  \Ham_{0}\refket = E^{(0)}\refket \\
+  \braket{\Ham_{0}\Phi}{\Psi} + \refbra\Ham_{1}\corrket = E^{(0)}\braket{\Phi}{\Psi} + \refbra\Ham_{1}\corrket = E^{(0)} + \refbra\Ham_{1}\corrket = E \\
+  \Delta E \equiv E - E^{(0)} = \refbra\Ham_{1}\corrket
+\end{gather}
+
+\begin{gather}
+  \mathop{(\Ham - E)}\Psi = 0 \\
+  E \equiv E^{(0)} + \Delta E = E^{(0)} + \lambda E^{(1)} + \lambda^{2} E^{(2)} + \cdots \\
+  \Psi \equiv \Phi + \mathcal{X} = \mathcal{X}^{(0)} + \lambda\mathcal{X}^{(1)} + \lambda^{2}\mathcal{X}^{(2)} + \cdots \\
+  \mathop{(\Ham_{0} + \lambda\Ham_{1} - E^{(0)} - \lambda E^{(1)} - \lambda^{2} E^{(2)} - \cdots)}\mathop{(\mathcal{X}^{(0)} + \lambda\mathcal{X}^{(1)} + \lambda^{2}\mathcal{X}^{(2)} + \cdots)} = 0
+\end{gather}
+
+\begin{gather}
+  \mathop{(\Ham_{0} - E^{(0)}\cdots)}\mathcal{X}^{(0)} = 0 \\
+  \mathop{(\Ham_{0} - E^{(0)})}\mathcal{X}^{(1)} + \mathop{(\Ham_{1} - E^{(1)})}\mathcal{X}^{(0)} = 0 \\
+  \mathop{(\Ham_{0} - E^{(0)})}\mathcal{X}^{(2)} + \mathop{(\Ham_{1} - E^{(1)})}\mathcal{X}^{(1)} - E^{(2)}\mathcal{X}^{(0)} = 0 \\
+  \mathop{(\Ham_{0} - E^{(0)})}\mathcal{X}^{(n)} + \mathop{(\Ham_{1} - E^{(1)})}\mathcal{X}^{(n-1)} - \sum^{n-2}_{\mathclap{m=0}} E^{(n-m)}\mathcal{X}^{(m)} = 0
+\end{gather}
+
+\begin{gather}
+  \refbra\mathop{(\Ham_{0} - E^{(0)})}\ket{\mathcal{X}^{(n)}} = \refbra\mathop{(E^{(1)} - \Ham_{1})}\ket{\mathcal{X}^{(n-1)}} + \refbra\sum^{n-2}_{\mathclap{m=0}} E^{(n-m)}\ket{\mathcal{X}^{(m)}} \\
+  \refbra\Ham_{0}\ket{\mathcal{X}^{(n)}} - \refbra E^{(0)}\ket{\mathcal{X}^{(n)}} = \refbra E^{(1)}\ket{\mathcal{X}^{(n-1)}} - \refbra\Ham_{1}\ket{\mathcal{X}^{(n-1)}} + \sum^{n-2}_{\mathclap{m=0}}\refbra E^{(n-m)}\ket{\mathcal{X}^{(m)}} \\
+  \refbra\Ham_{0}\ket{\mathcal{X}^{(n)}} - \refbra E^{(0)}\ket{\mathcal{X}^{(n)}} = - \refbra\Ham_{1}\ket{\mathcal{X}^{(n-1)}} + \sum^{n-1}_{\mathclap{m=0}}\refbra E^{(n-m)}\ket{\mathcal{X}^{(m)}} \\
+  \mathop{(E^{(0)} - E^{(0)})}\braket{\Phi}{\mathcal{X}^{(n)}} = - \refbra\Ham_{1}\ket{\mathcal{X}^{(n-1)}} + \sum^{n-1}_{\mathclap{m=0}}E^{(n-m)}\braket{\Phi}{\mathcal{X}^{(m)}} \\
+  0 = - \refbra\Ham_{1}\ket{\mathcal{X}^{(n-1)}} + \sum^{n-1}_{\mathclap{m=0}}E^{(n-m)}\delta_{m0} \\
+  E^{(n)} = \refbra\Ham_{1}\ket{\mathcal{X}^{(n-1)}}
+\end{gather}
+
+\begin{gather}
+  E^{(1)} = \refbra\Ham_{1}\refket \\
+  E^{(n)} = \refbra\Ham_{1}\ket{\mathcal{X}^{(n-1)}}
+\end{gather}
+
+\section{Many-Body Perturbation Theory}
+Many-body perturbation theory treats the interaction part of the Hamiltonian, $H_{1}$, as a perturbation using the parameter $\lambda$ to keep track of the perturbation order. The unperturbed Hamiltonian is given when $\lambda=0$ and the full Hamiltonian is restored when $\lambda=1$,
+\begin{equation}
+H=H_{0}+\lambda H_{1}.
+\end{equation}
+The solution wave functions to the unperturbed Hamiltonian are given by $\Phi_{n}$ and those for the perturbed Hamiltonian are given by $\Psi_{n}$,
+\begin{equation}
+H_{0}\ket{\Phi_{n}}=E^{(0)}_{n}\ket{\Phi_{n}}
+\end{equation}
+\begin{equation}
+\mathop{(H_{0}+H_{1})}\ket{\Psi_{n}}=E_{n}\ket{\Psi_{n}}
+\end{equation}
+If one assumes that the $\Phi_{n}$ are non-degenerate, then the perturbed wave functions and energies become the corresponding non-perturbed wave function and energies when $\lambda\rightarrow 0$. Defining the differences between the full and unperturbed wave functions and energies as $\chi_{n}=\Psi_{n}-\Phi_{n}$ and $\Delta E_{n}=E_{n}-E^{(0)}_{n}$, respectively, I can rewrite the Schrodinger equation as
+\begin{equation}
+H\mathop{(\Phi_{n}+\chi_{n})}=E_{n}\mathop{(\Phi_{n}+\chi_{n})}
+\end{equation}
+\begin{equation}
+\mathop{(H-E_{n})}\chi_{n}=\mathop{(E_{n}-H)}\Phi_{n}=\mathop{(E_{n}-H_{0}-H_{1})}\Phi_{n}
+\end{equation}
+\begin{equation}
+\mathop{(H-E_{n})}\chi_{n}=\mathop{(E_{n}-E^{(0)}_{n}-H_{1})}\Phi_{n}=\mathop{(\Delta E_{n}-H_{1})}\Phi_{n}
+\end{equation}
+Because any solution to the homogeneous version of Eqn. (28), $\mathop{(H-E_{n})}\chi_{n}=0$, can be added to the solution of the inhomogeneous version, there exists a degree of freedom that can be used to set $\chi_{n}$ orthogonal to $\Phi_{n}$, $\braket{\chi_{n}}{\Phi_{n}}=0$. This form is known as intermediate normalization and sets the following inner products,
+\begin{equation}
+\braket{\Phi_{n}}{\Psi_{n}}=\braket{\Phi_{n}}{\Phi_{n}+\chi_{n}}=\braket{\Phi_{n}}{\Phi_{n}}+\braket{\Phi_{n}}{\chi_{n}}=1+0=1,
+\end{equation}
+\begin{equation}
+\braket{\Psi_{n}}{\Psi_{n}}=\braket{\Phi_{n}+\chi_{n}}{\Phi_{n}+\chi_{n}}=\braket{\Phi_{n}}{\Phi_{n}}+\braket{\chi_{n}}{\chi_{n}}=1+\braket{\chi_{n}}{\chi_{n}}.
+\end{equation}
+Now the perturbation expasion equations can be written by first expanding $\chi_{n}$ and $\Delta E_{n}$ in different orders of $\lambda$ where the zero-order contributions correspond to the unperturbed wave function and energy, respectively.
+\begin{equation}
+\Psi_{n}=\Phi_{n}+\chi_{n}=\Psi^{(0)}_{n}+\lambda\Psi^{(1)}_{n}+\lambda^{2}\Psi^{(1)}_{n}+...
+\end{equation}
+\begin{equation}
+E_{n}=E^{(0)}_{n}+\Delta E_{n}=E^{(0)}_{n}+\lambda E^{(1)}_{n}+\lambda^{2}E^{(2)}_{n}+...
+\end{equation}
+Plugging these expansions into the perturbed Hamiltonian, $\mathop{(H_{0}+\lambda H_{1}-E_{n})}\Psi_{n}=0$, gives
+\begin{equation}
+\mathop{(H_{0}+\lambda H_{1}-E^{(0)}_{n}-\lambda E^{(1)}_{n}-\lambda^{2}E^{(2)}_{n}-...)}\mathop{(\Psi^{(0)}_{n}+\lambda\Psi^{(1)}_{n}+\lambda^{2}\Psi^{(1)}_{n}+...)}=0
+\end{equation}
+After expanding the expressions in Eqn. (33), different orders of $\lambda$ can be equated to give order-by-order equations for the $\Psi^{(m)}_{n}$ in terms of the lower-order wave functions. In general, the equations are given by
+\begin{equation}
+\mathop{(E^{(0)}_{n}-H_{0})}\Psi^{(0)}_{n}=0,
+\end{equation}
+\begin{equation}
+\mathop{(E^{(0)}_{n}-H_{0})}\Psi^{(m)}_{n}=H_{1}\Psi^{(m-1)}_{n}-\sum_{l=0}^{m-1}E^{(m-l)}_{n}\Psi^{(l)}_{n}.
+\end{equation}
+The corresponding order-by-order energies are solved by multiplying Eqn. (35) by $\bra{\Phi_{n}}$ and integrating,
+\begin{equation}
+\element{\Phi_{n}}{\mathop{(E^{(0)}_{n}-H_{0})}}{\Psi^{(m)}_{n}}=\element{\Phi_{n}}{H_{1}}{\Psi^{(m-1)}_{n}}-\sum_{l=0}^{m-1}E^{(m-l)}_{n}\braket{\Phi_{n}}{\Psi^{(l)}_{n}}.
+\end{equation}
+The first term is zero because it gives the solution to the unperturbed Hamiltonian, and the inner product in the last term is only non-zero when $l=0$,
+\begin{equation}
+E^{(m)}_{n}=\element{\Phi_{n}}{H_{1}}{\Psi^{(m-1)}_{n}}.
+\end{equation}
+We see here that the $n^{\text{th}}$ order wavefunction contains the perturbation to the $\mathop{n-1}^{\text{th}}$ order.
+
+Using another formulation more conducive to many-body techniques, we start by introducing the projection operator $Q$ which projects out the unperturbed reference wave function, $\ket{\Phi_{0}}$, from any state.
+\begin{equation}
+Q=\sum_{n\neq 0}\ket{\Phi_{n}}\bra{\Phi_{n}}=1-\ket{\Phi_{0}}\bra{\Phi_{0}}
+\end{equation}
+It's easy to show that this projection operator commutes with $\mathop{(E^{(0)}_{n}-H_{0})}$,
+\begin{equation}
+Q\mathop{(E^{(0)}_{n}-H_{0})}=\mathop{(1-\ket{\Phi_{0}}\bra{\Phi_{0}})}\mathop{(E^{(0)}_{n}-H_{0})}=\mathop{(E^{(0)}_{n}-H_{0})}-\ket{\Phi_{0}}\bra{\Phi_{0}}\mathop{(E^{(0)}_{n}-H_{0})}
+\end{equation}
+\begin{equation}
+=\mathop{(E^{(0)}_{n}-H_{0})}-\ket{\Phi_{0}}\bra{\Phi_{0}}\mathop{(E^{(0)}_{n}-E^{(0)}_{0})}=\mathop{(E^{(0)}_{n}-H_{0})}-\mathop{(E^{(0)}_{n}-E^{(0)}_{0})}\ket{\Phi_{0}}\bra{\Phi_{0}}
+\end{equation}
+\begin{equation}
+=\mathop{(E^{(0)}_{n}-H_{0})}-\mathop{(E^{(0)}_{n}-H_{0})}\ket{\Phi_{0}}\bra{\Phi_{0}}=\mathop{(E^{(0)}_{n}-H_{0})}\mathop{(1-\ket{\Phi_{0}}\bra{\Phi_{0}})}=\mathop{(E^{(0)}_{n}-H_{0})}Q
+\end{equation}
+This implies that
+\begin{equation}
+\mathop{(E^{(0)}_{n}-H_{0})}Q\ket{\Psi_{n}}=Q\mathop{(E^{(0)}_{n}-H_{0})}\ket{\Psi_{n}}=Q\mathop{(E^{(0)}_{n}-H+H_{1})}\ket{\Psi_{n}}=Q\mathop{(E^{(0)}_{n}-E_{n}+H_{1})}\ket{\Psi_{n}}
+\end{equation}
+Assuming that the eigenvalues, $\mathop{E^{(0)}_{n}}$, are non-degenerate, the operator $\mathop{(E^{(0)}_{0}-H_{0})}$ is singular on $\ket{\Phi_{0}}$ but non-singular on the Q-space. Therefore, it can be inverted in the preceding equation,
+\begin{equation}
+Q\ket{\Psi_{0}}=\mathop{(E^{(0)}_{0}-H_{0})^{-1}}Q\mathop{(E^{(0)}_{0}-H+H_{1})}\ket{\Psi_{0}}=R^{(0)}\mathop{(E^{(0)}_{0}-E_{0}+H_{1})}\ket{\Psi_{0}},
+\end{equation}
+where $R^{(0)}=\mathop{(E^{(0)}_{0}-H_{0})^{-1}}Q$ is the reduced resolvent of the unperturbed operator $H_{0}$. Expanding an arbitrary term of the resolvant as an infinite series and applying the unperturbed operator gives
+\begin{equation}
+\mathop{(E^{(0)}_{0}-H_{0})^{-1}}\ket{\Phi_{n}}\bra{\Phi_{n}}=\mathop{(E^{(0)}_{0})^{-1}}\mathop{\left(1-\frac{H_{0}}{E^{(0)}_{0}}\right)^{-1}}\hspace{-4mm}\ket{\Phi_{n}}\bra{\Phi_{n}}=\mathop{(E^{(0)}_{0})^{-1}}\sum_{n=0}^{\infty}\mathop{\left(\frac{H_{0}}{E^{(0)}_{0}}\right)^{n}}\hspace{-2mm}\ket{\Phi_{n}}\bra{\Phi_{n}}
+\end{equation}
+\begin{equation}
+=\mathop{(E^{(0)}_{0})^{-1}}\sum_{n=0}^{\infty}\mathop{\left(\frac{E^{(0)}_{n}}{E^{(0)}_{0}}\right)^{n}}\hspace{-2mm}\ket{\Phi_{n}}\bra{\Phi_{n}}=\mathop{(E^{(0)}_{0})^{-1}}\mathop{\left(1-\frac{E^{(0)}_{n}}{E^{(0)}_{0}}\right)^{-1}}\hspace{-4mm}\ket{\Phi_{n}}\bra{\Phi_{n}}=\mathop{(E^{(0)}_{0}-E^{(0)}_{n})^{-1}}\ket{\Phi_{n}}\bra{\Phi_{n}}.
+\end{equation}
+From Eqn. (45), the definition of $Q$, and intermediate normalization ($\braket{\Phi_{0}}{\Psi_{0}}=1$),
+\begin{equation}
+Q\ket{\Psi_{0}}=\ket{\Psi_{0}}-\ket{\Phi_{0}}\braket{\Phi_{0}}{\Psi_{0}}=\ket{\Psi_{0}}-\ket{\Phi_{0}}=R^{(0)}\mathop{(E^{(0)}_{0}-E_{0}+H_{1})}\ket{\Psi_{0}}.
+\end{equation}
+Now we can define $W=\mathop{(E^{(0)}_{0}-E_{0}+H_{1})}$, drop the superscript from the reduced resolvent, and rearrange the previous equation to give,
+\begin{equation}
+\ket{\Psi_{0}}=\ket{\Phi_{0}}+RW\ket{\Psi_{0}}
+\end{equation}
+This equation can be iterated resulting in
+\begin{equation}
+\ket{\Psi_{0}}=\sum_{n=0}^{\infty}\mathop{(RW)^{n}}\ket{\Phi_{0}}
+\end{equation}
+The energy is obtained by applying the full Hamiltonian to this expression and multiplying by the unperturbed reference function to the left before applying the intermediate normalization,
+\begin{equation}
+\bra{\Phi_{0}}\mathop{(H_{0}+H_{1})}\ket{\Psi_{0}}=\bra{\Phi_{0}}\mathop{H_{0}\ket{\Psi_{0}}+\bra{\Phi_{0}}H_{1}}\ket{\Psi_{0}}=\bra{\Phi_{0}}E^{(0)}_{0}\ket{\Psi_{0}}+\bra{\Phi_{0}}H_{1}\ket{\Psi_{0}}
+\end{equation}
+\begin{equation}
+E_{0}=E^{(0)}_{0}\braket{\Phi_{0}}{\Psi_{0}}+\bra{\Phi_{0}}H_{1}\ket{\Psi_{0}}=E^{(0)}_{0}+\element{\Phi_{0}}{\sum_{n=0}^{\infty}\mathop{H_{1}(RW)^{n}}}{\Phi_{0}}
+\end{equation}
+
+\end{document}

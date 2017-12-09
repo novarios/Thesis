@@ -1,0 +1,31 @@
+\documentclass[thesis.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Angular Momentum Coupling}
+Two angular momenta, $\ket{j_{1}m_{1}}$ and $\ket{j_{2}m_{2}}$, can be coupled into a state with total angular momentum $J$ and projection $M$, $\ket{j_{1}j_{2};JM}$. The coupled state is written as a linear combination of uncoupled states, $\ket{j_{1}m_{1};j_{2}m_{2}}$.
+\begin{equation}
+\ket{j_{1}j_{2};JM}\hspace{1mm}=\hspace{-4mm}\sum_{m_{1}+m_{2}=M}\hspace{-4mm}\braket{j_{1}m_{1};j_{2}m_{2}}{JM}\ket{j_{1}m_{1};j_{2}m_{2}}
+\end{equation}
+The coefficients in this expansion, $\braket{j_{1}m_{1};j_{2}m_{2}}{JM}$, are called the Clebsch-Gordon coefficients. They have the symmetry property that introduces a relative phase between states with different coupling orders.
+\begin{equation}
+\braket{j_{2}m_{2};j_{1}m_{1}}{JM}=\left(-1\right)^{j_{1}+j_{2}-J}\braket{j_{1}m_{1};j_{2}m_{2}}{JM}
+\end{equation}
+
+\chapter{Coupled Two-Body State}
+A two-body state relative to some reference vacuum, $\ket{\Phi}$, involving either particles or holes, can be written as the result of acting with the appropriate particle or hole creation operators, $\ket{pq}=p^{\dagger}q^{\dagger}\ket{\Phi}$. The letters $\{p,q,r,s,...\}$ denote generic particle or hole states, $\{a,b,c,d,...\}$ denote particle states, and $\{i,j,k,l,...\}$ denote hole states. These $M$-scheme states, with total angular momentum projection $M$, can be used to build $J$-scheme states which are coupled to a total angular momentum $J$. The generic j-coupled states corresponding to the orbits of $p$ and $q$ are given by $\{\alpha,\beta,\gamma,...\}$.
+\begin{equation}
+\ket{\alpha\beta;JM}=\frac{\sqrt{1+\delta_{\alpha\beta}\left(-1\right)^{J}}}{1+\delta_{\alpha\beta}}\left[\alpha^{\dagger}\beta^{\dagger}\right]_{JM}\ket{\Phi}=\frac{\sqrt{1+\delta_{\alpha\beta}\left(-1\right)^{J}}}{1+\delta_{\alpha\beta}}\sum_{\substack{p\in\alpha \\ q\in\beta}}\braket{j_{p}m_{p}j_{q}m_{q}}{JM}\ p^{\dagger}q^{\dagger}\ket{\Phi}
+\end{equation}
+When the states $\alpha$ and $\beta$ are coupled in the reverse order, each Clebsch-Gordon coefficient acquires the same phase factor as Eqn. (2) when $p$ and $q$ are switched. Therefore the coupled states show a similar symmetry property as the Clebsch-Gordon coefficients depending on the order of $\alpha$ and $\beta$. An additional factor of $\left(-1\right)$ comes from anti-commutating the creation operators involved, which must commute because they are only of the particle/hole creation type.
+\begin{equation}
+\ket{\beta\alpha;JM}=\left(-1\right)^{j_{\alpha}+j_{\beta}-J+1}\ket{\alpha\beta;JM}
+\end{equation}
+
+\chapter{Convergence Acceleration: Direct-Inversion of the Iterative Subspace}
+Direct-Inversion of the Iterative Subspace (DIIS) is an extension to the damping method to help stabilize and accelerate the convergence. In the damping method, the input amplitude vector to iteration $i+1$ is a mixture of the output of the two previous iterations, $\mathbf{\tilde{t}}_{i+1}=\alpha\mathbf{t}_{i}+\left(1-\alpha\right)\mathbf{t}_{i-1}$, where the CCD step is $\mathcal{F}\left(\mathbf{\tilde{t}}_{i}\right)=\mathbf{t}_{i}$. In DIIS, the input amplitude vector to iteration $i+1$ is a linear combination of the last $l$ vectors, $\mathbf{\tilde{t}}_{i+1}=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t}_{m}$. Rewriting the vectors as as the exact solution, $\mathcal{F}\left(\mathbf{t^{*}}\right)=\mathbf{t^{*}}$ or $\mathbf{\tilde{t}}_{i}=\mathbf{t}_{i}$, plus an error term, $\mathbf{t}_{i}=\mathbf{t^{*}}+\mathbf{r}_{i}$, the interpolated vector can be rewritten, $\mathbf{\tilde{t}}_{i+1}=\sum_{m=i-l+1}^{i}c_{m}\left(\mathbf{t^{*}}+\mathbf{r}_{m}\right)=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}+\sum_{m=i-l+1}^{i}c_{m}\mathbf{r}_{m}$. Equating this to the exact solution and minimizing the error vector gives, $\mathbf{t^{*}}=lim\left(\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}+\sum_{m=i-l+1}^{i}c_{m}\mathbf{r}_{m}\right)=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}$, so that $\sum_{m=i-l+1}^{i}c_{m}=1$. Therefore, the task is to minimize the norm of the error vector, $\mathbf{\tilde{r}}_{i+1}^{\dagger}\mathbf{\tilde{r}}_{i+1}=\sum_{m,n=i-l+1}^{i}c_{m}c_{n}\mathbf{r}_{m}^{\dagger}\mathbf{r}_{n}$, with the constraint that the sum of the coefficients is one, $min\left(\sum_{m,n=i-l+1}^{i}c_{m}c_{n}\mathbf{r}_{m}^{\dagger}\mathbf{r}_{n}-\lambda\left(1-\sum_{m=i-l+1}^{i}c_{m}\right)\right)$. This can be rewritten as a matrix equation with matrix $B_{ij}=\mathbf{r}_{i}^{\dagger}\mathbf{r}_{j}$, $\mathcal{L}=\sum_{m,n=i-l+1}^{i}c_{m}c_{n}B_{mn}-\lambda\left(1-\sum_{m=i-l+1}^{i}c_{m}\right)$.
+\begin{gather}
+\frac{\partial\mathcal{L}}{\partial c_{k}}=0=\sum_{n=i-l+1}^{i}c_{n}B_{kn}+\sum_{m=i-l+1}^{i}c_{m}B_{mk}+\lambda=2\sum_{n=i-l+1}^{i}c_{n}B_{kn}+\lambda \\
+\end{gather}
+
+\end{document}
