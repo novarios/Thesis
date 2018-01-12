@@ -61,15 +61,15 @@ and form a bi-orthogonal set with the right-eigenvectors, $\braket{\bar{L}^{(N \
 In this paper, because the effective Hamiltonian is real, the corresponding left- and right-eigenvalues are equal. In addition, while the the left- and right-eigenvectors are generally not equivalent, the differences in their single-particle Eq.\ \eqref{eq:partial_norms_p} or single-hole Eq.\ \eqref{eq:partial_norms_h} natures are, in practice, not significant.  Therefore, only the right-eigenvectors are used in this paper.
 
 
-\begin{align}
-  \langle\Phi_{0}|\hat{L}^{+1}_{\nu}\bar{H}_{N}\hat{R}^{+1}_{\nu}|\Phi_{0}\rangle_{c} &= \diagram{PA_EOM/PA_EOM-figure0} + \diagram{PA_EOM/PA_EOM-figure1} + \diagram{PA_EOM/PA_EOM-figure2} + \diagram{PA_EOM/PA_EOM-figure3} \notag \\
-  &\hspace{-2cm} + \diagram{PA_EOM/PA_EOM-figure4} + \diagram{PA_EOM/PA_EOM-figure5} + \diagram{PA_EOM/PA_EOM-figure6} + \diagram{PA_EOM/PA_EOM-figure7} \notag \\
-\end{align}
+%\begin{align}
+%  \langle\Phi_{0}|\hat{L}^{+1}_{\nu}\bar{H}_{N}\hat{R}^{+1}_{\nu}|\Phi_{0}\rangle_{c} &= \diagram{PA_EOM/PA_EOM-figure0} + \diagram{PA_EOM/PA_EOM-figure1} + \diagram{PA_EOM/PA_EOM-figure2} + \diagram{PA_EOM/PA_EOM-figure3} \notag \\
+%  &\hspace{-2cm} + \diagram{PA_EOM/PA_EOM-figure4} + \diagram{PA_EOM/PA_EOM-figure5} + \diagram{PA_EOM/PA_EOM-figure6} + \diagram{PA_EOM/PA_EOM-figure7} \notag \\
+%\end{align}
 
-\begin{align}
-  \langle\Phi_{0}|\hat{L}^{-1}_{\nu}\bar{H}_{N}\hat{R}^{-1}_{\nu}|\Phi_{0}\rangle_{c}\ &= \diagram{PR_EOM/PR_EOM-figure0} + \diagram{PR_EOM/PR_EOM-figure1} + \diagram{PR_EOM/PR_EOM-figure2} + \diagram{PR_EOM/PR_EOM-figure3} \notag \\
-  &\hspace{-2cm} + \diagram{PR_EOM/PR_EOM-figure4} + \diagram{PR_EOM/PR_EOM-figure5} + \diagram{PR_EOM/PR_EOM-figure6} + \diagram{PR_EOM/PR_EOM-figure7} \notag \\
-\end{align}
+%\begin{align}
+%  \langle\Phi_{0}|\hat{L}^{-1}_{\nu}\bar{H}_{N}\hat{R}^{-1}_{\nu}|\Phi_{0}\rangle_{c}\ &= \diagram{PR_EOM/PR_EOM-figure0} + \diagram{PR_EOM/PR_EOM-figure1} + \diagram{PR_EOM/PR_EOM-figure2} + \diagram{PR_EOM/PR_EOM-figure3} \notag \\
+%  &\hspace{-2cm} + \diagram{PR_EOM/PR_EOM-figure4} + \diagram{PR_EOM/PR_EOM-figure5} + \diagram{PR_EOM/PR_EOM-figure6} + \diagram{PR_EOM/PR_EOM-figure7} \notag \\
+%\end{align}
 
 
 
@@ -78,34 +78,15 @@ In this paper, because the effective Hamiltonian is real, the corresponding left
   \omega_{k}\rop{a}{} &= \sum\limits_{c}\xint{a}{c}\rop{c}{} + \sum\limits_{kc}\xint{k}{c}\rop{ac}{k} + \frac{1}{2}\sum\limits_{kcd}\xint{ak}{cd}\rop{cd}{k}
 \end{align}
 \begin{align}
-  \omega_{k}\rop{a}{} &= \sum\limits_{c}\xint{a}{c}\rop{c}{} + \sum\limits_{kc}\xint{k}{c}\rop{ac}{k} - \frac{1}{2}\sum\limits_{kcd}\xint{ka}{cd}\rop{cd}{k} \notag \\
-  \omega_{k}\rop{a}{} &= \xint{a}{c}\rop{c}{} + \rop{a}{k\bar{c}}\xint{k\bar{c}}{} - \frac{1}{2}\xint{a}{cd\bar{k}}\rop{cd\bar{k}}{} \notag \\
-  \omega_{k}\rop{}{} &\leftarrow \xint{}{\text{pp}3}\rop{}{} + \rop{}{2_{1}}\xint{}{\text{hp}2} - \frac{1}{2}\xint{}{\text{hppp}3_{2}}\rop{}{3_{4}} \notag \\
-\end{align}
-\begin{align}
   \diagram{PA_EOM1/PA_EOM1-figure4} &= \diagram{PA_EOM1/PA_EOM1-figure5} + \diagram{PA_EOM1/PA_EOM1-figure6} + \diagram{PA_EOM1/PA_EOM1-figure7} + \diagram{PA_EOM1/PA_EOM1-figure8} \notag \\
   &+ \diagram{PA_EOM1/PA_EOM1-figure9} + \diagram{PA_EOM1/PA_EOM1-figure10} \notag \\
   \omega_{k}\rop{ab}{i} &= \sum\limits_{c}\xint{ab}{ci}\rop{c}{} + \Perm{ab}\sum\limits_{c}\xint{b}{c}\rop{ac}{i} - \sum\limits_{k}\xint{k}{i}\rop{ab}{k} + \frac{1}{2}\sum\limits_{cd}\xint{ab}{cd}\rop{cd}{i} \notag \\
   &-\Perm{ab}\sum\limits_{kc}\xint{ak}{ci}\rop{cb}{k} - \frac{1}{2}\sum\limits_{klcd}\vint{kl}{cd}\amp{ab}{ki}\rop{cd}{l}
 \end{align}
-\begin{align}
-  \omega_{k}\rop{ab}{i} &= -\sum\limits_{c}\xint{ab}{ic}\rop{c}{} + \Perm{ab}\sum\limits_{c}\xint{b}{c}\rop{ac}{i} - \sum\limits_{k}\xint{k}{i}\rop{ab}{k} + \frac{1}{2}\sum\limits_{cd}\xint{ab}{cd}\rop{cd}{i} \notag \\
-  &-\Perm{ab}\sum\limits_{kc}\xint{ka}{ic}\rop{cb}{k} - \frac{1}{2}\sum\limits_{klcd}\vint{kl}{cd}\amp{ab}{ki}\rop{cd}{l} \notag \\
-  \omega_{k}\rop{ab}{i} &= -\xint{ab\bar{i}}{c}\rop{c}{} + \Perm{ab}\xint{b}{c}\rop{c}{i\bar{a}} - \rop{ab}{k}\xint{k}{i} + \frac{1}{2}\xint{ab}{cd}\rop{cd}{i} \notag \\
-  &-\Perm{ab}\rop{b}{k\bar{c}}\xint{k\bar{c}}{i\bar{a}}  - \frac{1}{2}\amp{ab\bar{i}}{k}\vint{k}{cd\bar{l}}\rop{cd\bar{l}}{} \notag \\
-  \omega_{k}\rop{}{3} &\leftarrow -\xint{}{\text{pphp}3_{4}}\rop{}{} - \frac{1}{2}\amp{}{3_{3}}\vint{}{\text{hhpp}3_{1}}\rop{}{3} \notag \\
-  \omega_{k}\rop{}{3_{2}} &\leftarrow \xint{}{\text{pp}3}\rop{}{3_{2}} - \rop{}{3_{2}}\xint{}{\text{hphp}2_{1}} \notag \\
-  \omega_{k}\rop{}{3_{1}} &\leftarrow -\xint{}{\text{pp}3}\rop{}{3_{2}} + \rop{}{3_{2}}\xint{}{\text{hphp}2_{1}} \notag \\
-  \omega_{k}\rop{}{1} &\leftarrow -\rop{}{1}\xint{}{\text{hh}3} + \frac{1}{2}\xint{}{\text{pppp}1}\rop{}{1}
-\end{align}
+
 \begin{align}
   \diagram{PA_EOM1/PA_EOM1-figure11} &= \diagram{PA_EOM1/PA_EOM1-figure12} + \diagram{PA_EOM1/PA_EOM1-figure13} \notag \\
   E_{k}\lop{}{a} &= \sum\limits_{c}\lop{}{c}\xint{c}{a} + \frac{1}{2}\sum\limits_{kcd}\lop{k}{cd}\xint{cd}{ak}
-\end{align}
-\begin{align}
-  E_{k}\lop{}{a} &= \sum\limits_{c}\lop{}{c}\xint{c}{a} - \frac{1}{2}\sum\limits_{kcd}\lop{k}{cd}\xint{cd}{ka} \notag \\
-  E_{k}\lop{}{a} &= \lop{}{c}\xint{c}{a} - \frac{1}{2}\lop{}{cd\bar{k}}\xint{cd\bar{k}}{a} \notag \\
-  E_{k}\lop{}{} &\leftarrow \lop{}{}\xint{}{\text{pp}3} - \frac{1}{2}\lop{}{3}\xint{}{\text{pphp}3_{4}}
 \end{align}
 \begin{align}
   \diagram{PA_EOM1/PA_EOM1-figure14} &= \diagram{PA_EOM1/PA_EOM1-figure15} + \diagram{PA_EOM1/PA_EOM1-figure16} + \diagram{PA_EOM1/PA_EOM1-figure17} + \diagram{PA_EOM1/PA_EOM1-figure18} \notag \\
@@ -113,16 +94,7 @@ In this paper, because the effective Hamiltonian is real, the corresponding left
   E_{k}\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i}{b} + \sum\limits_{c}\lop{}{c}\xint{ci}{ab} - \sum\limits_{k}\lop{k}{ab}\xint{i}{k} + \Perm{ab}\sum\limits_{c}\lop{i}{ac}\xint{c}{b} \notag \\
   &+ \frac{1}{2}\sum\limits_{cd}\lop{i}{cd}\xint{cd}{ab} - \Perm{ab}\sum\limits_{kc}\lop{k}{cb}\xint{ci}{ak} - \frac{1}{2}\sum\limits_{klcd}\lop{l}{cd}\vint{ki}{ab}\amp{cd}{kl}
 \end{align}
-\begin{align}
-  E_{k}\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i}{b} - \sum\limits_{c}\lop{}{c}\xint{ic}{ab} - \sum\limits_{k}\lop{k}{ab}\xint{i}{k} + \Perm{ab}\sum\limits_{c}\lop{i}{ac}\xint{c}{b} \notag \\
-  &+ \frac{1}{2}\sum\limits_{cd}\lop{i}{cd}\xint{cd}{ab} - \Perm{ab}\sum\limits_{kc}\lop{k}{cb}\xint{ic}{ka} - \frac{1}{2}\sum\limits_{klcd}\lop{l}{cd}\vint{ki}{ab}\amp{cd}{kl} \notag \\
-  E_{k}\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i\bar{b}}{} - \lop{}{c}\xint{c}{ab\bar{i}} - \xint{i}{k}\lop{k}{ab} + \Perm{ab}\lop{i\bar{a}}{c}\xint{c}{b} \notag \\
-  &+ \frac{1}{2}\lop{i}{cd}\xint{cd}{ab} - \Perm{ab}\xint{i\bar{a}}{k\bar{c}}\lop{k\bar{c}}{b} - \frac{1}{2}\lop{}{cd\bar{l}}\amp{cd\bar{l}}{k}\vint{k}{ab\bar{i}} \notag \\
-  E_{k}\lop{}{3} &\leftarrow -\lop{}{}\xint{}{\text{hppp}3_{2}} - \frac{1}{2}\lop{}{3}\amp{}{3_{3}}\vint{}{\text{hhpp}3_{1}} \notag \\
-  E_{k}\lop{}{3_{2}} &\leftarrow -\lop{}{}\xint{}{\text{hp}2} + \lop{}{3_{2}}\xint{}{\text{pp}3} - \xint{}{\text{hphp}2_{1}}\lop{}{3_{2}} \notag \\
-  E_{k}\lop{}{3_{1}} &\leftarrow \lop{}{}\xint{}{\text{hp}2} - \lop{}{3_{2}}\xint{}{\text{pp}3} + \xint{}{\text{hphp}2_{1}}\lop{}{3_{2}} \notag \\
-  E_{k}\lop{}{1} &\leftarrow -\xint{}{\text{hh}3}\rop{}{1} + \frac{1}{2}\lop{}{1}\xint{}{\text{pppp}1}
-\end{align}
+
 
 \begin{align}
   \diagram{PR_EOM1/PR_EOM1-figure0} &= \diagram{PR_EOM1/PR_EOM1-figure1} + \diagram{PR_EOM1/PR_EOM1-figure2} + \diagram{PR_EOM1/PR_EOM1-figure3} \notag \\
@@ -134,6 +106,7 @@ In this paper, because the effective Hamiltonian is real, the corresponding left
   \omega_{k}\rop{a}{ij} &= -\sum\limits_{k}\xint{ka}{ij}\rop{}{k} - \Perm{ij}\sum\limits_{k}\xint{k}{j}\rop{a}{ik} + \sum\limits_{c}\xint{a}{c}\rop{c}{ij} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ij}\rop{a}{kl} \notag \\
   &-\Perm{ij}\sum\limits_{kc}\xint{ak}{ci}\rop{c}{kj} - \frac{1}{2}\sum\limits_{klcd}\vint{kl}{cd}\amp{ca}{ij}\rop{d}{kl}
 \end{align}
+
 \begin{align}
   \diagram{PR_EOM1/PR_EOM1-figure11} &= \diagram{PR_EOM1/PR_EOM1-figure12} + \diagram{PR_EOM1/PR_EOM1-figure13} \notag \\
   E_{k}\lop{i}{} &= -\sum\limits_{k}\lop{k}{}\xint{i}{k} - \frac{1}{2}\sum\limits_{klc}\lop{kl}{c}\xint{ic}{kl}

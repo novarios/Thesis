@@ -42,12 +42,17 @@ y2014 = [2014] * len(a2014)
 
 years = y1985 + y1987 + y1995 + y1997 + y2000 + y2002 + y2003 + y2005 + y2009 + y2010 + y2011 + y2012 + y2013 + y2014
 masses = a1985 + a1987 + a1995 + a1997 + a2000 + a2002 + a2003 + a2005 + a2009 + a2010 + a2011 + a2012 + a2013 + a2014
-        
+
+x1 = np.linspace(1985, 2020, 100)
+y1 = 0.01 * np.exp(0.34657 * (x1 - 1985))
+
 plt.rc('font', family='serif')
 
 fig, ax = plt.subplots()
-ax.scatter(years, masses, 75, marker='o', color=(1.0,0.4,0), edgecolor='black', linewidth = 0.9)
+#ax.scatter(years, masses, 75, marker='o', color=(1.0,0.4,0), edgecolor='black', linewidth = 0.9)
 
+plt.scatter(years, masses, 75, marker='o', color=(1.0,0.4,0), edgecolor='black', linewidth = 0.9)
+plt.plot(x1, y1)
 plt.xlabel(r'Year', fontsize=15)
 plt.ylabel(r'Mass Number (A)', fontsize=15)
 plt.axis([1980, 2020, 0, 160])
@@ -56,6 +61,11 @@ ax.xaxis.set_major_locator(majorLocatorX)
 ax.xaxis.set_minor_locator(minorLocatorX)
 ax.yaxis.set_major_locator(majorLocatorY)
 ax.yaxis.set_minor_locator(minorLocatorY)
+
+#plt.xaxis.set_major_locator(majorLocatorX)
+#plt.xaxis.set_minor_locator(minorLocatorX)
+#plt.yaxis.set_major_locator(majorLocatorY)
+#plt.yaxis.set_minor_locator(minorLocatorY)
 
 plt.savefig('ab-initio_progress.pdf', format='pdf', bbox_inches='tight')
 plt.show()

@@ -2,44 +2,16 @@
 
 \begin{document}
 
-One of the simplest corrections is that of the Hartree--Fock (HF) method, also known as the self-consistent field (SCF) method.  Using the variational principle, one can obtain an approximate ground state of a closed-shell system by minimizing the energy expectation value $E_{\Phi}$ with respect to some Slater determinant $|\Phi\rangle$ in an unknown single-particle basis.  We shall denote each state $|p'\rangle$ in this unknown basis by a primed label $p'$.  We assume each unknown state $|p'\rangle$ is built from a linear combination of known basis states $|p\rangle$ with an unknown unitary matrix of coefficients $C_{p p'}$.
-
-The goal is to find the coefficients $C_{p p'}$ that minimize the \textit{Hartree--Fock energy} $E_{\Phi}$,
+Linked-cluster theorem,
+\begin{equation}
+  \ket{\Psi^{(1)}} = \sddiagram{MBPT_linked/MBPT_linked-figure0} + \sdiagram{MBPT_linked/MBPT_linked-figure1}
+\end{equation}
 \begin{align}
-  E_{\Phi} &= \sum_{i'} \langle i' | \hat{H}_1 | i' \rangle + \frac{1}{2} \sum_{i' j'} \langle i' j' | \hat{H}_2 | i' j' \rangle \label{eq:hfenergy},
+  \ket{\Psi^{(2)}} &= \sdiagram{MBPT_linked/MBPT_linked-figure2} + \sdiagram{MBPT_linked/MBPT_linked-figure3} + \sddiagram{MBPT_linked/MBPT_linked-figure4} + \sddiagram{MBPT_linked/MBPT_linked-figure5} \notag \\
+  &+ \sddiagram{MBPT_linked/MBPT_linked-figure6} + \sddiagram{MBPT_linked/MBPT_linked-figure7} + \sddiagram{MBPT_linked/MBPT_linked-figure8} + \sddiagram{MBPT_linked/MBPT_linked-figure9} + \sddiagram{MBPT_linked/MBPT_linked-figure10} \notag \\
+  &+ \sddiagram{MBPT_linked/MBPT_linked-figure11} + \sddiagram{MBPT_linked/MBPT_linked-figure12} + \sdiagram{MBPT_linked/MBPT_linked-figure13} + \sdiagram{MBPT_linked/MBPT_linked-figure14} + \sdiagram{MBPT_linked/MBPT_linked-figure15} \notag \\
+  &+ \sdiagram{MBPT_linked/MBPT_linked-figure16} + \sdiagram{MBPT_linked/MBPT_linked-figure17} + \sdiagram{MBPT_linked/MBPT_linked-figure18} + \sdiagram{MBPT_linked/MBPT_linked-figure19} + \sdiagram{MBPT_linked/MBPT_linked-figure20}
 \end{align}
-where
-\begin{align}
-  \langle p' | \hat{H}_1 | q' \rangle &= \sum_{p q} C_{p p'}^* \langle p | \hat{H}_1 | q \rangle C_{q q'}^{}, \label{eq:hftransform1} \\
-  \langle p' q' | \hat{H}_2 | r' s' \rangle &= \sum_{p q r s} C_{p p'}^* C_{q q'}^* \langle p q | \hat{H}_2 | r s \rangle C_{r r'}^{} C_{s s'}^{}, \label{eq:hftransform2}
-\end{align}
-Using the method of Lagrange multipliers, the minimization problem reduces to a nonlinear equation -- the self-consistent \textit{Hartree--Fock equations}:
-\begin{align} \label{eq:hartreefock}
-  \sum_q F_{p q} C_{q p'} = C_{p p'} \varepsilon_{p'},
-\end{align}
-where the \textit{Fock matrix} $F_{p q}$ is defined as
-\begin{align} \label{eq:fock}
-  F_{p q} \equiv \langle p | \hat{H}_1 | q \rangle + \sum_{r s i'} C_{r i'}^* \langle p r | \hat{H}_2 | q s \rangle C_{s i'}^{},
-\end{align}
-and $\varepsilon_{p'}$ is a vector of Lagrange multipliers.  The Coulomb and exchange terms are both contained in the second term of Eq.\ \eqref{eq:fock} due to the use of antisymmetrized matrix elements.
-
-Besides trivial cases, the HF equation is generally solved numerically using an iterative algorithm the alternates between the use of Eq.\ \eqref{eq:fock} and Eq.\ \eqref{eq:hartreefock} to successively refine an initial guess for $C_{p p'}$ until a fixed point (self-consistency) is reached.  For our calculations, we use the identity matrix as the initial guess.  When convergence is too slow, methods such as DIIS \cite{PULAY1980393,PULAY1982556}, Broyden's method \cite{BROYDEN1965557}, or even \textit{ad hoc} linear mixing can improve and accelerate convergence greatly.  For our quantum dot cases, linear mixing was more than adequate.
-
-HF does not provide an exact solution to problems where multi-particle correlations are present even if the single-particle basis is not truncated (infinite in size).  The discrepancy between the HF energy and the exact ground state energy is often referred to as the \textit{correlation energy}.  The focus of post-HF methods such as IM-SRG or CC is to add corrections that recover parts of the correlation energy.
-
-To make use of the HF solution as the reference state for post-HF calculations, we transform the matrix elements via Eqs.\ \eqref{eq:hftransform1} and \eqref{eq:hftransform2}.  In effect, this means we are no longer operating within the harmonic oscillator single-particle basis, but rather a HF-optimized single-particle basis.  However, we will omit the prime symbols as the post-HF methods are generally basis-agnostic.
-
-
-
-\begin{align}
-\tilde{\Delta}_{a i} &\equiv \Delta_{a i} - H_{a i a i}, \notag \\
-\tilde{\Delta}_{a b i j} &\equiv \Delta_{a b i j} + w_{a b i j}, \notag \\
-\Delta_{p_1 \ldots p_k q_1 \ldots q_k} &\equiv \sum_{i = 1}^k (H_{p_i p_i} -  H_{q_i q_i}), \label{eq:moellerplessetdenominator} \\
-w_{a b i j}
-  &\equiv H_{a b a b} - H_{a i a i} - H_{b i b i} \notag \\
-  &\qquad + H_{i j i j} - H_{a j a j} - H_{b j b j}. \notag
-\end{align}
-
 
 
 Coupled cluster (CC) theory is based on expressing the $N$-particle correlated wave function $\corrket$ using the exponential ansatz,
@@ -121,111 +93,6 @@ where $\Edenom{}{}$ are the M\o ller--Plesset denominators from Eq.\ \eqref{eq:m
 \begin{align}
   \Delta E_{CCSD} &= \diagram{CCSD_dE/CCSD_dE-figure0} + \diagram{CCSD_dE/CCSD_dE-figure1} + \ddiagram{CCSD_dE/CCSD_dE-figure2} \notag \\
   &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{cd}_{kl} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{c}_{k}t^{d}_{l} + \dboxed{\sum\limits_{\mathclap{kc}}f^{k}_{c}t^{c}_{k}}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{align}
-  \hat{f}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure0} + \diagram{CCSD_t1/CCSD_t1-figure1} + \diagram{CCSD_t1/CCSD_t1-figure2}  \notag \\
-  &= \dboxed{\fint{a}{i}} - \sum\limits_{\mathclap{k}}\fint{k}{i}\tamp{a}{k} + \sum\limits_{\mathclap{c}}\fint{a}{c}\tamp{c}{i}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure3} \notag \\
-  &= -\sum\limits_{\mathclap{kc}}\vint{ka}{ic}\tamp{c}{k}
-\end{align}
-
-\begin{align}
-  \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure4} \notag \\
-  &= \dboxed{\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{ac}{ki}}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure5} + \diagram{CCSD_t1/CCSD_t1-figure6} \notag \\
-  &= \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{cd}{ki} + \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{ca}{kl}
-\end{align}
-
-\begin{align}
-  \hat{f}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure7} \notag \\
-  &= \dboxed{\sum\limits_{\mathclap{kcd}}\fint{l}{d}\tamp{a}{l}\tamp{d}{i}}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure8} + \diagram{CCSD_t1/CCSD_t1-figure9} \notag \\
-  &= \sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{c}{k}\tamp{d}{i} + \sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{c}{k}\tamp{a}{l}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}\hat{\text{t}}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure10} + \diagram{CCSD_t1/CCSD_t1-figure11} + \diagram{CCSD_t1/CCSD_t1-figure12} \notag \\
-  &= -\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{cd}{ki}\tamp{a}{l} - \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ca}{kl}\tamp{d}{i} + \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ad}{il}\tamp{c}{k}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure13} \notag \\
-  &= -\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{c}{k}\tamp{d}{i}\tamp{a}{l}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{align}
-  \hat{V}_{N}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure0} \notag \\
-  &= \vint{ab}{ij}
-\end{align}
-
-\begin{align}
-  \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure1} + \diagram{CCSD_t2/CCSD_t2-figure2} \notag \\
-  &= \Perm{ab}\sum\limits_{\mathclap{c}}\fint{b}{c}\tamp{ac}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\fint{k}{j}\tamp{ab}{ik}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure3} + \diagram{CCSD_t2/CCSD_t2-figure4} \notag \\
-  &= -\Perm{ab}\sum\limits_{\mathclap{k}}\vint{kb}{ij}\tamp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\vint{ab}{cj}\tamp{c}{i}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure5} + \diagram{CCSD_t2/CCSD_t2-figure6} + \diagram{CCSD_t2/CCSD_t2-figure7} \notag \\
-  &= \frac{1}{2}\sum\limits_{\mathclap{kl}}\vint{kl}{ij}\tamp{ab}{kl} + \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{cd}{ij} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{ac}{kj}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure8} + \diagram{CCSD_t2/CCSD_t2-figure9} + \diagram{CCSD_t2/CCSD_t2-figure10} \notag \\
-  &= \sum\limits_{\mathclap{kl}}\vint{kl}{ij}\tamp{a}{k}\tamp{b}{l} + \sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{c}{i}\tamp{d}{j} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{a}{k}\tamp{c}{j}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{2}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure11} + \diagram{CCSD_t2/CCSD_t2-figure12} + \diagram{CCSD_t2/CCSD_t2-figure13} \notag \\
-  &+ \diagram{CCSD_t2/CCSD_t2-figure14} \notag \\
-  &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{cd}{ij} + \Perm{ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ac}{lj}\tamp{bd}{ki} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{lj}\tamp{cd}{ki} \notag \\
-  &- \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl}
-\end{align}
-
-\begin{align}
-  \hat{f}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t2/CCSD_t2-figure15} + \ddiagram{CCSD_t2/CCSD_t2-figure16} \notag \\
-  &= -\dboxed{\Perm{ab}\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{a}{k}\tamp{cb}{ij}} - \dboxed{\Perm{ij}\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{c}{i}\tamp{ab}{kj}}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure17} + \diagram{CCSD_t2/CCSD_t2-figure18} + \diagram{CCSD_t2/CCSD_t2-figure19} \notag \\
-  &+ \diagram{CCSD_t2/CCSD_t2-figure20} + \diagram{CCSD_t2/CCSD_t2-figure21} + \diagram{CCSD_t2/CCSD_t2-figure22} \notag \\
-  &= \Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{bc}{jk}\tamp{d}{i} - \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\tamp{bc}{jk}\tamp{a}{l} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\tamp{cd}{ij}\tamp{a}{k} \notag \\
-  &+ \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\tamp{ab}{kl}\tamp{c}{i} + \Perm{ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{c}{k}\tamp{db}{ij} - \Perm{ij}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\tamp{c}{k}\tamp{ab}{lj}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure23} + \diagram{CCSD_t2/CCSD_t2-figure24} \notag \\
-  &= -\Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\tamp{a}{k}\tamp{c}{i}\tamp{d}{j} + \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\tamp{c}{i}\tamp{a}{k}\tamp{b}{l}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}^{2}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure25} + \diagram{CCSD_t2/CCSD_t2-figure26} + \diagram{CCSD_t2/CCSD_t2-figure27} \notag \\
-  &+ \diagram{CCSD_t2/CCSD_t2-figure28} + \diagram{CCSD_t2/CCSD_t2-figure29} \notag \\
-  &= \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{c}{i}\tamp{d}{j} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{cd}{ij}\tamp{a}{k}\tamp{b}{l} + \Perm{ij|ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ac}{lj}\tamp{b}{k}\tamp{d}{i} \notag \\
-  &- \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{lj}\tamp{c}{k}\tamp{d}{i} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{c}{k}\tamp{a}{l}
-\end{align}
-
-\begin{align}
-  \hat{V}_{N}\hat{t}_{1}^{4}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure30} \notag \\
-  &= \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{a}{k}\tamp{b}{l}\tamp{c}{i}\tamp{d}{j}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -360,19 +227,7 @@ where $\Edenom{}{}$ are the M\o ller--Plesset denominators from Eq.\ \eqref{eq:m
   &- \frac{1}{2}\sum\limits_{klc}\lamp{kl}{ac}\xint{ic}{kl} - \frac{1}{2}\sum\limits_{jklcd}\lamp{jl}{cd}\xint{ik}{aj}\tamp{cd}{kl} + \frac{1}{2}\sum\limits_{klbcd}\lamp{kl}{bc}\xint{ic}{ad}\tamp{bd}{kl}
 \end{align}
 
-\begin{align}
-  &= \xint{i}{a} + \sum\limits_{c}\lamp{i}{c}\xint{c}{a} - \sum\limits_{k}\lamp{k}{a}\xint{i}{k} - \sum\limits_{kc}\lamp{k}{c}\xint{ic}{ka} - \frac{1}{2}\sum\limits_{kcd}\lamp{ik}{cd}\xint{cd}{ka} \notag \\
-  &- \frac{1}{2}\sum\limits_{klc}\lamp{kl}{ac}\xint{ic}{kl} + \frac{1}{2}\sum\limits_{jklcd}\lamp{jl}{cd}\xint{ik}{ja}\tamp{cd}{kl} - \frac{1}{2}\sum\limits_{klbcd}\lamp{kl}{cb}\xint{ic}{ad}\tamp{bd}{kl} \notag \\
-  &= \xint{i}{a} + \lamp{i}{c}\xint{c}{a} - \xint{i}{k}\lamp{k}{a} - \xint{i\bar{a}}{k\bar{c}}\lamp{k\bar{c}}{} - \frac{1}{2}\lamp{i}{cd\bar{k}}\xint{cd\bar{k}}{a} \notag \\
-  &- \frac{1}{2}\xint{i}{kl\bar{c}}\lamp{kl\bar{c}}{a} + \frac{1}{2}\xint{i\bar{a}}{j\bar{k}}\left(\lamp{j}{cd\bar{l}}\tamp{cd\bar{l}}{k}\right)^{j\bar{k}} - \frac{1}{2}\xint{i\bar{a}}{d\bar{c}}\left(\tamp{d}{kl\bar{b}}\lamp{kl\bar{b}}{c}\right)^{d\bar{c}} \notag
-\end{align}
-
-\begin{align}
-  \lamp{}{3} &\leftarrow \xint{}{\text{hp}3} + \lamp{}{3}\xint{}{\text{pp}3} - \xint{}{\text{hh}3}\lamp{}{3} - \frac{1}{2}\lamp{}{3_{1}}\xint{}{\text{pphp}3_{4}} - \frac{1}{2}\xint{}{\text{hphh}3_{1}}\lamp{}{3_{3}} \notag \\
-  \lamp{}{2} &\leftarrow -\xint{}{\text{hphp}2_{1}}\lamp{}{2} + \frac{1}{2}\xint{}{\text{hhhp}2_{1}}\left(\lamp{}{3_{1}}\tamp{}{3_{3}}\right)_{2} - \frac{1}{2}\xint{}{\text{hppp}2_{3}}\left(\tamp{}{3_{2}}\lamp{}{3_{3}}\right)_{2} \notag
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-----------------
 
 \begin{align}
   0 &= \diagram{CCSD_L2/CCSD_L2-figure0} + \diagram{CCSD_L2/CCSD_L2-figure1} + \diagram{CCSD_L2/CCSD_L2-figure2} + \diagram{CCSD_L2/CCSD_L2-figure3} \notag \\
@@ -383,21 +238,509 @@ where $\Edenom{}{}$ are the M\o ller--Plesset denominators from Eq.\ \eqref{eq:m
   &- \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\lamp{kj}{ac}\xint{ic}{kb} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{kl}{ad}\vint{ij}{cb}\tamp{cd}{kl} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{il}{cd}\vint{kj}{ab}\tamp{cd}{kl}
 \end{align}
 
-\begin{align}
-  &= \vint{ij}{ab} + \Perm{ab|ij}\lamp{i}{a}\xint{j}{b} - \Perm{ab}\sum\limits_{\mathclap{k}}\lamp{k}{a}\xint{ij}{kb} - \Perm{ij}\sum\limits_{\mathclap{c}}\lamp{i}{c}\xint{jc}{ab} \notag \\
-  &- \Perm{ab}\sum\limits_{\mathclap{c}}\lamp{ij}{ca}\xint{c}{b} + \Perm{ij}\sum\limits_{\mathclap{k}}\lamp{ki}{ab}\xint{j}{k} + \frac{1}{2}\sum\limits_{\mathclap{cd}}\lamp{ij}{cd}\xint{cd}{ab} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\lamp{kl}{ab}\xint{ij}{kl} \notag \\
-  &- \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\lamp{kj}{ac}\xint{ic}{kb} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{kl}{ad}\vint{ij}{cb}\tamp{cd}{kl} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{il}{cd}\vint{kj}{ab}\tamp{cd}{kl} \notag \\
-  &= \vint{ij}{ab} + \Perm{ab|ij}\left(\lamp{i}{a}\xint{j}{b}\right)^{ij}_{ab} - \Perm{ab}\xint{ij\bar{b}}{k}\lamp{k}{a} - \Perm{ij}\lamp{i}{c}\xint{c}{ab\bar{j}} \notag \\
-  &- \Perm{ab}\lamp{ij\bar{a}}{c}\xint{c}{b} + \Perm{ij}\xint{j}{k}\lamp{k}{ab\bar{i}} + \frac{1}{2}\lamp{ij}{cd}\xint{cd}{ab} + \frac{1}{2}\xint{ij}{kl}\lamp{kl}{ab} \notag \\
-  &- \Perm{ab|ij}\xint{i\bar{b}}{k\bar{c}}\lamp{k\bar{c}}{a\bar{j}} - \Perm{ab}\frac{1}{2}\vint{ij\bar{b}}{c}\left(\tamp{c}{kl\bar{d}}\lamp{kl\bar{d}}{a}\right) - \Perm{ij}\frac{1}{2}\left(\lamp{i}{cd\bar{l}}\tamp{cd\bar{l}}{k}\right)\vint{k}{ab\bar{j}} \notag \\
-\end{align}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{align}
-  \lamp{}{1} &\leftarrow \vint{}{\text{hhpp}1} + \Perm{\lamp{}{3}\xint{}{\text{hp}3}}{}_{1} + \frac{1}{2}\lamp{}{1}\xint{}{\text{pppp}1} + \frac{1}{2}\xint{}{\text{hhhh}1}\lamp{}{1} \notag \\
-  \lamp{}{3_{3\left(4\right)}} &\leftarrow -\left(+\right)\xint{}{\text{hhhp}3_{3}}\lamp{}{3} +\left(-\right)\lamp{}{3_{3}}\xint{}{\text{pp}3} -\left(+\right)\frac{1}{2}\vint{}{\text{hhpp}3_{3}}\left(\tamp{}{3_{1}}\lamp{}{3_{3}}\right) \notag \\
-  \lamp{}{3_{1\left(2\right)}} &\leftarrow -\left(+\right)\lamp{}{3}\xint{}{\text{hppp}3_{2}} -\left(+\right)\xint{}{\text{hh}3}\lamp{}{3_{1}} -\left(+\right)\frac{1}{2}\left(\lamp{}{3_{1}}\tamp{}{3_{3}}\right)\vint{}{\text{hhpp}3_{1}} \notag \\
-  \lamp{}{2_{1\left(2\right)}} &\leftarrow -\xint{}{\text{hphp}2_{1}}\lamp{}{2_{1}} \notag \\
-  \lamp{}{2_{3\left(4\right)}} &\leftarrow \xint{}{\text{hphp}2_{1}}\lamp{}{2_{1}} \notag
-\end{align}
+
+\section{Connection to MBPT} \label{section:linkedcluster}
+
+The factorization theorem. (hugenholtz 1957, frantz and mills 1960, brandow 1967, 1977).
+A sum over all the time orderings between a pair of disconnected diagrams is equal to the product of those two diagrams.
+
+
+\section{Solving the Coupled Cluster Equations} \label{section:solvingcc}
+
+
+
+
+\section{Example: Pairing Model} \label{section:pairingmodel}
+
+It's beneficial to illustrate a simplified example of coupled cluster theory. For this purpose, we turn our attention to the simple pairing model Hamiltonian,
+\begin{equation} \label{eq:sppairing}
+  \hat{H}_0 = \delta \sum_{p \sigma} (p-1) a^{\dagger}_{p \sigma} a_{p \sigma}
+\end{equation}
+\begin{equation} \label{eq:intpairing}
+  \hat{V} = -\frac{1}{2}g \sum_{pq} a^{\dagger}_{p+}a^{\dagger}_{p-}a_{q-}a_{q+}
+\end{equation}
+which represents a basic pairing model with $p$ levels, each having a spin degeneracy of 2. The form of the coupled cluster equations uses single-particle states that are eigenstates of the Hartree-Fock operator, $\left(\hat{u}+\hat{u}_{\text{HF}}\right)\vert p\rangle=\epsilon_{p}\vert p\rangle$. In the pairing model, this condition is already fulfilled. All we have to do is define the lowest $N_{\mathrm{\mathrm{Fermi}}}$ states as holes and compute the Hartree-Fock energies,
+\begin{equation}\label{eq:pairingsp}
+  \epsilon_q = h_{qq} + \sum_{i} \braket{qi|\hat{v}|qi}.
+\end{equation}
+To be more specific, let us look at the pairing model with four particles and eight single-particle states. These states (with $\delta =1.0$) could be labeled as shown in Table \ref{tab:pairingmodelsp}.
+\begin{table}
+  \caption{Single-particle states and their quantum numbers and their energies from Eq.~(\ref{eq:pairingsp}). The degeneracy for every quantum number $p$ is equal to 2 due to the two possible spin values.} \label{tab:pairingmodelsp}
+  \begin{center}
+    \begin{tabular}{| l | l | l | l | l |}
+      \hline State Label & p & 2s$_z$ & E & type\\ \hline 0 & 1 & 1 &
+      -g/2 & hole \\ \hline 1 & 1 & -1 & -g/2 & hole \\ \hline 2 & 2 &
+      1 & 1-g/2 & hole \\ \hline 3 & 2 & -1 & 1-g/2 & hole \\ \hline 4
+      & 3 & 1 & 2 & particle \\ \hline 5 & 3 & -1 & 2 & particle
+      \\ \hline 6 & 4 & 1 & 3 & particle \\ \hline 7 & 4 & -1 & 3 &
+      particle \\ \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+The Hamiltonian matrix for this four-particle problem with no broken pairs is defined by six possible Slater determinants, one representing the ground state and zero-particle-zero-hole excitations $0p-0h$, four representing various $2p-2h$ excitations and finally one representing a $4p-4h$ excitation. Problem \ref{problem:pairingmodel} gives us for this specific problem
+\begin{equation}
+  H = \begin{bmatrix}
+    2\delta -g & -g/2 & -g/2 & -g/2 & -g/2 & 0 \\ -g/2 & 4\delta -g &
+    -g/2 & -g/2 & -0 & -g/2 \\ -g/2 & -g/2 & 6\delta -g & 0 & -g/2 &
+    -g/2 \\ -g/2 & -g/2 & 0 & 6\delta-g & -g/2 & -g/2 \\ -g/2 & 0 & -g/2
+    & -g/2 & 8\delta-g & -g/2 \\ 0 & -g/2 & -g/2 & -g/2 & -g/2 &
+    10\delta -g
+  \end{bmatrix}
+\end{equation}
+It plots the correlation energy, that is the difference between the ground state energy and the reference energy. Furthermore, for the pairing model we have added results from perturbation theory to second order (MBPT2)
+and third order in the interaction MBPT3. Second order perturbation theory includes diagram (2) of Fig.~\ref{fig:goldstone} while MBPT3 includes diagrams (3), (4), (5), (8) and (9) as well. Note that diagram (3) is zero for the pairing model and that diagrams (8) and (9) do not contribute either if we work with a canonical Hartree-Fock basis. In the case of the simple pairing model it is easy to calculate $\Delta E_{MBPT2}$ analytically. This is a very useful  check of our codes since this analytical expression  can  also be used to check our first CCD iteration. We restate this expression here but restrict the sums over single-particle states
+\[
+\Delta E_{MBPT2} = \frac{1}{4} \sum_{abij} \frac{\braket{ij|\hat{v}|ab}
+  \braket{ab|\hat{v}|ij}}{ \epsilon_{ij}^{ab}} = \sum_{a<b,i<j}
+\frac{\braket{ij|\hat{v}|ab} \braket{ab|\hat{v}|ij}}{ \epsilon_{ij}^{ab}}
+\]
+For our pairing example we obtain the following result
+\[
+\Delta E_{MBPT2} = \frac{\braket{01|\hat{v}|45}^2}{\epsilon_{01}^{45}} +
+\frac{\braket{01|\hat{v}|67}^2}{\epsilon_{01}^{67}} +
+\frac{\braket{23|\hat{v}|45}^2}{\epsilon_{23}^{45}} +
+\frac{\braket{23|\hat{v}|67}^2}{\epsilon_{23}^{67}},
+\]
+which translates into
+\[
+\Delta E_{MBPT2} = -\frac{g^2}{4} \bigg( \frac{1}{ 4 + g} +
+\frac{1}{ 6 + g} + \frac{1}{ 2 + g} + \frac{1}{ 4 + g} \bigg).
+\]
+This expression can be used to check the results
+for any value of $g$ and provides thereby an important test of  our codes.
+Figure \ref{fig:diagpairing} shows the resulting correlation energies for the exact case, MBPT2 and MBPT3.
+\begin{figure}
+  \includegraphics[width=\linewidth]{Chapter8-figures/perturbationtheory.pdf}
+  \caption{Correlation energy for the pairing model with exact diagonalization, MBPT2 and perturbation theory to third order MBPT3 for a range of interaction values. A canonical Hartree-Fock basis has been employed in all MBPT calculations.}
+  \label{fig:diagpairing}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{CC/pairingmatrix.pdf}
+  \caption{ab-initio progress blah blah blah}
+  \label{fig:pairingmatrix}
+\end{figure}
+
+
+\section{Example: Infinite Matter} \label{section:infinitematter}
+
+Infinite nuclear or neutron matter is a homogeneous system and the one-particle wave functions are given by plane wave functions normalized to a volume $\Omega$ for a box with length $L$ (the limit $L\rightarrow \infty$ is to be taken after we have computed various expectation values)
+\[
+\psi_{\mathbf{k}\sigma}(\mathbf{r})=
+\frac{1}{\sqrt{\Omega}}\exp{(i\mathbf{kr})}\xi_{\sigma}
+\]
+where $\mathbf{k}$ is the wave number and $\xi_{\sigma}$ is the spin
+function for either spin up or down nucleons
+\[ 
+\xi_{\sigma=+1/2}=\left(\begin{array}{c} 1
+  \\ 0 \end{array}\right) \hspace{0.5cm}
+\xi_{\sigma=-1/2}=\left(\begin{array}{c} 0 \\ 1 \end{array}\right).
+\]
+As an interesting aside, the recent works of Binder {\em et al} \cite{binder2016} and McElvain and Haxton
+\cite{haxton2016} offer new perspectives on the construction of effective Hamiltonians and choices of basis functions.
+
+
+We focus first on the kinetic energy operator.  We assume that we have
+periodic boundary conditions which limit the allowed wave numbers to
+\[
+k_i=\frac{2\pi n_i}{L}\hspace{0.5cm} i=x,y,z \hspace{0.5cm} n_i=0,\pm
+1,\pm 2, \dots
+\]
+The operator for the kinetic energy can be written as
+\[
+\hat{T}=\sum_{\mathbf{p}\sigma_p}\frac{\hbar^2k_P^2}{2m}a_{\mathbf{p}\sigma_p}^{\dagger}a_{\mathbf{p}\sigma_p}.
+\]
+When using periodic boundary conditions, the discrete-momentum
+single-particle basis functions (excluding spin and/or isospin degrees
+of freedom) result in the following single-particle energy
+\begin{align*}
+  \varepsilon_{n_{x}, n_{y}, n_{z}} = \frac{\hbar^{2}}{2m} \left(
+  \frac{2\pi }{L}\right)^{2} \left( n_{x}^{2} + n_{y}^{2} +
+  n_{z}^{2}\right)=\frac{\hbar^2}{2m}\left(k_{n_x}^2+k_{n_y}^2+k_{n_z}^2\right),
+\end{align*} 
+for a three-dimensional system with
+\[
+k_{n_i}=\frac{2\pi n_i}{L}, \hspace{0.2cm} n_i = 0, \pm 1, \pm 2,
+\dots,
+\]
+We will select the single-particle basis such that both the occupied
+and unoccupied single-particle states have a closed-shell
+structure. This means that all single-particle states corresponding to
+energies below a chosen cutoff are included in the basis. We study
+only the unpolarized spin phase, in which all orbitals are occupied
+with one spin-up and one spin-down fermion (neutrons and protons in
+our case).  With the kinetic energy rewritten in terms of the
+discretized momenta we can set up a list (assuming
+identical particles one and including spin up and spin down solutions)
+of single-particle energies with momentum quantum numbers such that $n_{x}^{2}+n_{y}^{2}+n_{z}^{2}\le
+3$, as shown in for example Table \ref{tab:table1}
+\begin{table}
+\begin{center}
+\caption{Total number of particle filling $N_{\uparrow \downarrow }$
+  for various $n_{x}^{2}+n_{y}^{2}+n_{z}^{2}$ values for one spin-1/2
+  fermion species.  Borrowing from nuclear shell-model terminology,
+  filled shells corresponds to all single-particle states for one
+  $n_{x}^{2}+n_{y}^{2}+n_{z}^{2}$ value being occupied.  For matter
+  with both protons and neutrons, the filling degree increased with a
+  factor of $2$.} \label{tab:table1}
+\begin{tabular}{ccccc}
+\hline \multicolumn{1}{c}{ $n_{x}^{2}+n_{y}^{2}+n_{z}^{2}$ } &
+\multicolumn{1}{c}{ $n_{x}$ } & \multicolumn{1}{c}{ $n_{y}$ } &
+\multicolumn{1}{c}{ $n_{z}$ } & \multicolumn{1}{c}{ $N_{\uparrow
+    \downarrow }$ } \\ \hline 0 & 0 & 0 & 0 & 2 \\ \hline 1 & -1 & 0 &
+0 & \\ 1 & 1 & 0 & 0 & \\ 1 & 0 & -1 & 0 & \\ 1 & 0 & 1 & 0 & \\ 1 & 0
+& 0 & -1 & \\ 1 & 0 & 0 & 1 & 14 \\ \hline 2 & -1 & -1 & 0 & \\ 2 & -1
+& 1 & 0 & \\ 2 & 1 & -1 & 0 & \\ 2 & 1 & 1 & 0 & \\ 2 & -1 & 0 & -1 &
+\\ 2 & -1 & 0 & 1 & \\ 2 & 1 & 0 & -1 & \\ 2 & 1 & 0 & 1 & \\ 2 & 0 &
+-1 & -1 & \\ 2 & 0 & -1 & 1 & \\ 2 & 0 & 1 & -1 & \\ 2 & 0 & 1 & 1 &
+38 \\ \hline 3 & -1 & -1 & -1 & \\ 3 & -1 & -1 & 1 & \\ 3 & -1 & 1 &
+-1 & \\ 3 & -1 & 1 & 1 & \\ 3 & 1 & -1 & -1 & \\ 3 & 1 & -1 & 1 & \\ 3
+& 1 & 1 & -1 & \\ 3 & 1 & 1 & 1 & 54 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+Continuing in this way we get for $n_{x}^{2}+n_{y}^{2}+n_{z}^{2}=4$ a
+total of 12 additional states, resulting in $66$ as a new magic
+number. For the lowest six energy values the degeneracy in energy
+gives us $2$, $14$, $38$, $54$, $66$ and $114$ as magic numbers. These
+numbers will then define our Fermi level when we compute the energy in
+a Cartesian basis. When performing calculations based on many-body
+perturbation theory, coupled cluster theory or other many-body
+methods, we need then to add states above the Fermi level in order to
+sum over single-particle states which are not occupied.
+
+If we wish to study infinite nuclear matter with both protons and
+neutrons, the above magic numbers become $4, 28, 76, 108, 132, 228,
+\dots$.
+
+Every number of particles for filled shells defines also the number of
+particles to be used in a given calculation. The number of particles
+can in turn be used to define the density $\rho$ (or the Fermi momentum)
+of the system via
+\[
+\rho = g \frac{k_F^3}{6\pi^2},
+\]
+where $k_F$ is the Fermi momentum and the degeneracy $g$, which is two
+for one type of spin-$1/2$ particles and four for symmetric nuclear
+matter.  With the density defined and having fixed the number of
+particles $A$ and the Fermi momentum $k_F$, we can define the length
+$L$ of the box used with periodic boundary contributions via the
+relation
+\[
+  V= L^3= \frac{A}{\rho}.
+\]
+With $L$ we can to define the spacing between various
+$k$-values given by
+\[
+  \Delta k = \frac{2\pi}{L}.
+\]
+Here, $A$ is the number of nucleons. If we deal with the electron
+gas only, this needs to be replaced by the number of electrons $N$.
+Exercise \ref{problem:spbasissetup} deals with the set up of a program
+that establishes the single-particle basis for nuclear matter
+calculations with input a given number of nucleons and a user
+specificied density or Fermi momentum. 
+
+\subsection{Two-body interaction\label{sec:interaction}}
+
+As mentioned above, we will employ a plane wave basis for our
+calculations of infinite matter properties. With a cartesian basis
+we can calculate directly the various matrix elements. 
+However, a cartesian basis
+represents an approximation to the thermodynamical limit. In order to
+compare the stability of our basis with results from the
+thermodynamical limit, it is convenient to rewrite the nucleon-nucleon
+interaction in terms of a partial wave expansion. This will allow us
+to compute the Hartree-Fock energy of the ground state in the
+thermodynamical limit (with the caveat that we need to limit the
+number of partial waves). In order to find the expressions for the
+Hartree-Fock energy in a partial wave basis, we will find it
+convenient to rewrite our two-body force in terms of the relative and
+center-of-mass motion momenta.
+
+The direct matrix element, with single-particle three-dimensional
+momenta $\mathbf{k}_p$, spin $\sigma_p$ and isospin $\tau_p$, is
+defined as
+\[
+\langle \mathbf{k}_p\sigma_p\tau_p \mathbf{k}_q\sigma_q\tau_q \vert
+\hat{v}\vert \mathbf{k}_r\sigma_r\tau_r \mathbf{k}_s\sigma_s\tau_s
+\rangle,
+\]
+or in a more compact form as $\langle \mathbf{p}\mathbf{q}\vert
+\hat{v} \vert \mathbf{r}\mathbf{s} \rangle$ where the boldfaced
+letters $\mathbf{p}$ etc represent the relevant quantum numbers, here
+momentum, spin and isospin. Introducing the relative momentum
+\[
+\mathbf{k} = \frac{1}{2}\left(\mathbf{k}_p-\mathbf{k}_q\right),
+\]
+and the center-of-mass momentum
+\[
+\mathbf{K} = \mathbf{k}_p+\mathbf{k}_q,
+\]
+we have
+\[
+\langle \mathbf{k}_p\sigma_p\tau_p \mathbf{k}_q\sigma_q\tau_q \vert
+\hat{v}\vert \mathbf{k}_r\sigma_r\tau_r \mathbf{k}_s\sigma_s\tau_s
+\rangle=\langle \mathbf{k}\mathbf{K}\sigma_p\tau_p \sigma_q\tau_q
+\vert \hat{v}\vert \mathbf{k}'\mathbf{K}'\sigma_r\tau_r \sigma_s\tau_s
+\rangle.
+\]
+The nucleon-nucleon interaction conserves the total momentum and
+charge, implying that the above uncoupled matrix element reads
+\[
+\langle \mathbf{k}\mathbf{K}\sigma_p\tau_p \sigma_q\tau_q \vert
+\hat{v}\vert \mathbf{k}'\mathbf{K}'\sigma_r\tau_r \sigma_s\tau_s
+\rangle=\delta_{T_z,T_z'}\delta(\mathbf{K}-\mathbf{K}')\langle
+\mathbf{k}T_zS_z=(\sigma_a+\sigma_b) \vert \hat{v}\vert
+\mathbf{k}'T_zS_z'=(\sigma_c+\sigma_d) \rangle,
+\]
+where we have defined the isospin projections $T_z=\tau_p+\tau_q$ and
+$T_z'=\tau_r+\tau_s$.  Defining
+$\hat{v}=\hat{v}(\mathbf{k},\mathbf{k}' )$, we can rewrite the
+previous equation in a more compact form as
+\[
+\delta_{T_z,T_z'}\delta(\mathbf{K}-\mathbf{K}')\langle
+\mathbf{k}T_zS_z=(\sigma_p+\sigma_q) \vert \hat{v}\vert
+\mathbf{k}'T_zS_z'=(\sigma_r+\sigma_s)
+\rangle=\delta_{T_z,T_z'}\delta(\mathbf{K}-\mathbf{K}')\langle
+T_zS_z\vert\hat{v}(\mathbf{k},\mathbf{k}' ) \vert T_zS_z' \rangle.
+\]
+These matrix elements can in turn be rewritten in terms of the total
+two-body quantum numbers for the spin $S$ of two spin-1/2 fermions as
+\[
+\langle \mathbf{k}T_zS_z \vert \hat{v}(\mathbf{k},\mathbf{k}' )\vert
+\mathbf{k}'T_zS_z' \rangle=\sum_{SS'}\langle
+\frac{1}{2}\sigma_p\frac{1}{2}\sigma_q\vert SS_z\rangle \langle
+\frac{1}{2}\sigma_r\frac{1}{2}\sigma_s\vert S'S_z'\rangle \langle
+\mathbf{k}T_zSS_z\vert \hat{v}(\mathbf{k},\mathbf{k}' )\vert
+\mathbf{k}T_zS'S_z' \rangle
+\]
+The coefficients $\langle \frac{1}{2}\sigma_p\frac{1}{2}\sigma_q\vert
+SS_z\rangle$ are so-called Clebsch-Gordan recoupling coefficients.  We
+will assume that our interactions conserve charge. We will refer to $T_z=0$ as the $pn$ (proton-neutron)
+channel, $T_z=-1$ as the $pp$ (proton-proton) channel and $T_z=1$ as
+the $nn$ (neutron-neutron) channel.
+
+The nucleon-nucleon force is often derived and analyzed theoretically
+in terms of a partial wave expansion. A state with linear momentum
+$\mathbf{k}$ can be written in terms of spherical harmonics $Y_{lm}$ as
+\[
+\vert \mathbf{k} \rangle =
+\sum_{l=0}^{\infty}\sum_{m=-l}^{l}\imath^lY_{lm}\langle\hat{k}\vert
+klm_l\rangle.
+\]
+
+In terms of the relative and center-of-mass momenta $\mathbf{k}$ and
+$\mathbf{K}$, the potential in momentum space is related to the
+nonlocal operator $V(\mathbf{r},\mathbf{r}')$ by
+\begin{equation*}
+      \langle \mathbf{k'K'}\vert \hat{v} \vert \mathbf{k'K} \rangle=
+      \int d\mathbf{r}d \mathbf{r'} e^{-\imath
+        \mathbf{k'r'}}V(\mathbf{r'},\mathbf{r}) e^{\imath \mathbf{kr}}
+      \delta(\mathbf{K},\mathbf{K'}).
+\end{equation*}
+We will assume that the interaction is spherically symmetric and use
+the partial wave expansion of the plane waves in terms of spherical
+harmonics.  This means that we can separate the radial part of the
+wave function from its angular dependence. The wave function of the
+relative motion is described in terms of plane waves as
+\begin{equation*}
+       e^{\imath \mathbf{kr}} = \langle\mathbf{r}\vert
+       \mathbf{k}\rangle = 4\pi \sum_{lm} \imath ^{l} j_{l} (kr)
+       Y_{lm}^{*}(\mathbf{\hat{k}}) Y_{lm}(\mathbf{\hat{r}}),
+\end{equation*}
+where $j_l$ is a spherical Bessel function and $Y_{lm}$ the spherical
+harmonic.  This partial wave basis is useful for defining the operator
+for the nucleon-nucleon interaction, which is symmetric with respect
+to rotations, parity and isospin transformations. These symmetries
+imply that the interaction is diagonal with respect to the quantum
+numbers of total angular momentum $J$, spin $S$ and isospin $T$. Using
+the above plane wave expansion, and coupling to final $J$, $S$ and $T$
+we get
+\begin{equation*}
+      \langle \mathbf{k'}\vert V \vert \mathbf{k}\rangle = (4\pi)^2
+      \sum_{JM}\sum_{lm}\sum_{l'm'} \imath ^{l+l'}
+      Y_{lm}^{*}(\mathbf{\hat{k}}) Y_{l'm'}(\mathbf{\hat{k}'}) {\cal
+        C}_{m'M_SM}^{l'SJ}{\cal C}_{mM_SM}^{lSJ} \langle k'l'STJM
+      \vert V \vert klSTJM \rangle,
+\end{equation*}
+where we have defined
+\begin{equation*}
+    \langle k'l'STJM\vert V \vert klSTJM\rangle = \int
+    j_{l'}(k'r')\langle l'STJM\vert V(r',r)\vert lSTJM \rangle j_l(kr)
+    {r'}^2 dr' r^2 dr.
+\end{equation*}
+We have omitted the momentum of the center-of-mass motion $\mathbf{K}$
+and the corresponding orbital momentum $L$, since the interaction is
+diagonal in these variables. 
+
+The interaction we will use for these calculations is a semirealistic
+nucleon-nucleon potential known as the Minnesota potential
+\cite{minnesota} which has the form, $V_{\alpha}\left(
+r\right)=V_{\alpha}\exp{(-\alpha r^{2})}$. The spin and isospin
+dependence of the Minnesota potential is given by,
+\begin{equation*}
+V\left( r\right)=\frac{1}{2}\left( V_{R}+\frac{1}{2}\left(
+1+P_{12}^{\sigma}\right) V_{T}+\frac{1}{2}\left(
+1-P_{12}^{\sigma}\right) V_{S}\right)\left(
+1-P_{12}^{\sigma}P_{12}^{\tau}\right),
+\end{equation*}
+where $P_{12}^{\sigma}=\frac{1}{2}\left(
+1+\sigma_{1}\cdot\sigma_{2}\right)$ and
+$P_{12}^{\tau}=\frac{1}{2}\left( 1+\tau_{1}\cdot\tau_{2}\right)$ are
+the spin and isospin exchange operators, respectively. A Fourier
+transform to momentum space of the radial part $V_{\alpha}\left(
+r\right)$ is rather simple, see problem \ref{problem:fourier}, since
+the radial depends only on the magnitude of the relative distance and
+thereby the relative momentum
+$\vec{q}=\frac{1}{2}\left(\vec{k}_{p}-\vec{k}_{q}-\vec{k}_{r}+\vec{k}_{s}\right)$. Omitting
+spin and isospin dependencies, the momentum space version of the
+interaction reads
+\begin{equation*}
+\langle \mathbf{k}_p \mathbf{k}_q \vert V_{\alpha}\vert
+\mathbf{k}_r\mathbf{k}_s\rangle=\frac{V_{\alpha}}{L^{3}}\left(\frac{\pi}{\alpha}\right)^{3/2}\exp{(\frac{-q^{2}}{4\alpha})}\delta_{\vec{k}_{p}+\vec{k}_{q},\vec{k}_{r}+\vec{k}_{s}}
+\end{equation*}
+The various parameters defining the interaction model used in this
+work are listed in Table \ref{tab:minnesotatab}.
+\begin{table}
+\caption{Parameters used to define the Minnesota interaction model
+  \cite{minnesota}.}\label{tab:minnesotatab}
+\begin{center}
+  \begin{tabular}{| l | l | l |}
+    \hline $\alpha$ & $V_{\alpha}$ in $\mathrm{MeV}$ & $\kappa_{\alpha}$ in $\mathrm{fm}^{-2}$  \\ \hline $R$ &
+    200  & 1.487 \\ \hline $T$ & 178
+     & 0.639 \\ \hline $S$ & 91.85
+    & 0.465  \\ \hline
+  \end{tabular}
+\end{center}
+\end{table}
+
+In these calculations we
+approximated our problem with periodic boundary conditions,
+  $\mathop{\phi(x_{i})}=\mathop{\phi(x_{i}+L)}$, but we could have
+  chosen anti-periodic boundary conditions,
+  $\mathop{\phi(x_{i})}=-\mathop{\phi(x_{i}+L)}$. The difference
+  between these two shows how the correlation energy contains
+  finite-size effects \cite{gros1992,gros1996,shepherd2012,shepherd2016}. One solution to this problem is by integrating
+  over solutions between periodic and anti-periodic conditions, known
+  as twist-averaging \cite{twistaverage}. First, we multiply the single-particle states by
+  a phase for each direction, characterized by a twist-angle,
+  $\theta_{i}$.
+  \begin{equation}
+    \mathop{\phi_{\vec{k}}(\vec{x}+\vec{L})}\rightarrow\mathop{e^{i\vec{\theta}}\phi_{\vec{k}}(\vec{x})}
+  \end{equation}
+  $\theta_{i}=0$ for PBC and $\theta_{i}=\pi$ for APBC
+  \begin{align}
+  \vec{k}\rightarrow\vec{k}+\frac{\vec{\theta}}{L}
+  \\ \epsilon_{\vec{k}}\rightarrow\epsilon_{\vec{k}}+\frac{\pi}{L}\vec{k}\cdot\vec{\theta}+\frac{\pi^{2}}{L^{2}}
+  \end{align}
+  Adding these phases changes the single-particle energies, the
+  correction of which disappear as $L\rightarrow\infty$, depending on
+  $\vec{\theta}$ and thus changes the shell structure so that hole
+  states can jump up to particle states and {\em vice versa}. It is thence
+  necessary to fill hole states separately for each
+  $\vec{\theta}$. Integration over a quantitiy is approximated by a
+  weighted sum, such as Gauss-Legendre quadrature, over the quantity
+  for each set of twist angles. The algorithm becomes then
+\begin{svgraybox}
+  \begin{algorithmic}
+    \State Build mesh points and weights for each direction $i$:
+    $\{\theta_{i},w_{i}\}$ \State $E_{\text{twist}}=0$
+    \For{$\mathop{(\theta_{x},w_{x})}\in\mathop{\{\theta_{x},w_{x}\}}$}
+    \For{$\mathop{(\theta_{y},w_{y})}\in\mathop{\{\theta_{y},w_{y}\}}$}
+    \For{$\mathop{(\theta_{z},w_{z})}\in\mathop{\{\theta_{z},w_{z}\}}$}
+    \State Build Basis States with $k_{i}\rightarrow
+    k_{i}+\frac{\theta_{i}}{L}$ \State Order States by Energy and Fill
+    Holes \State Get Result $E$ (T,HF,CCD) \State
+    $E_{\text{twist}}=E_{\text{twist}}+\frac{1}{\pi^{3}}w_{x}w_{y}w_{z}E$
+    \EndFor \EndFor \EndFor
+  \end{algorithmic}
+\end{svgraybox}
+  This technique gives results which depend much less on the particle
+  number, but requires a full calculation for each set of twist
+  angles, which can grow very quickly. For example, using 10 twist
+  angles in each direction requires 1000 calculations. To see the
+  effects of twist averaging, it is easy to calculate the kinetic
+  energy per particle and the Hartree-Fock energy per particle, which
+  avoids the full CCD calculation. These calculations can be compared
+  to the exact values for infinite matter, which are calculated by
+  integrating the the relevent values up to the fermi surface. The kinetic energy is given by
+  \[
+\text{T}_{\text{inf}}=\frac{3\hbar^{2}k_{f}^{2}}{10m},
+\]
+while the potential energy to first order (corresponding to the Hartree-Fock contribution) reads
+\[
+\text{HF}_{\text{inf}}=\frac{1}{\mathop{(2\pi)^{6}}}\frac{L^{3}}{2\rho}\int_{0}^{k_{f}}d\vec{k}_{1}\int_{0}^{k_{f}}d\vec{k}_{2}\braket{\vec{k}_{1}\vec{k}_{2}|\hat{v}|\vec{k}_{1}\vec{k}_{2}}.
+\]
+Figure \ref{fig:fig3} shows the CCD kinetic energy of pure neutron
+      matter computed with the Minnesota interaction model  \cite{minnesota} as a function of
+      the number of particles for both periodic boundary conditions (PBC)
+      and twist-averaged boundary conditions (TABC5). We see clearly that the 
+twist-averaged boundary conditions soften the dependence on finite size effects. 
+  \begin{figure}
+    \includegraphics[width=\linewidth]{Chapter8-figures/fig3.pdf}
+    \caption{Finite-size effects in the kinetic energy of pure neutron
+      matter computed with the Minnesota interaction model  \cite{minnesota} as a function of
+      the number of particles for both periodic boundary conditions (PBC)
+      and twist-averaged boundary conditions (TABC5).}
+    \label{fig:fig3}
+  \end{figure}
+Similarly, Fig.~\ref{fig:fig4} displays the corresponding Hartree-Fock energy (the reference energy) 
+obtained with Minnesota interaction using both periodic and twist-average boundary conditions.  
+  \begin{figure}
+    \includegraphics[width=\linewidth]{Chapter8-figures/fig4.pdf}
+    \caption{Finite-size effects in the Hartree-Fock energy of pure
+      neutron matter computed with the Minnesota interaction model  \cite{minnesota} as a
+      function of the number of particles for both periodic boundary (PBC)
+      conditions and twist-averaged boundary conditions (TABC5).}
+    \label{fig:fig4}
+  \end{figure}
+The results show again a weaker dependence on finite size effects.
+
+With all these ingredients, we can now compute the final CCD energy and thereby the equation of state for infinite neutron matter.
+Figure \ref{fig:finalccdenergy} displays the total CCD energy (including the reference energy) as well as the reference energy
+obtained with the Minnesota interaction model. The computations have been performed with $N=66$ neutrons and a maximum number of single-particle states constrained by $N_{max}=36$. This corresponds to $2377$ single-particle states. 
+  \begin{figure}
+    \includegraphics[width=\linewidth]{Chapter8-figures/finalccenergy.pdf}
+    \caption{Energy per particle for pure neutron matter as function of density from coupled cluster calculations with doubles correlations  only. The reference energy is included for comparison. The results have been obtained with Minnesota interaction model using periodic  boundary conditions and $N=66$ neutrons and single-particle states up to $N_{max}=36$, resulting in a total of $2377$ single-particle states. }  
+    \label{fig:finalccdenergy}
+  \end{figure}
+We see from this figure that the correlations brought by coupled cluster theory are at the order of $10\%$ roughly of the reference energy. It means that for this system (neutrons only) with the Minnesota potential, higher-order correlations can most likely be treated in a perturbative way. Many-body perturbation theory to second order gives results which are very close to our CCD results, as seen in 
+Table \ref{tab:ecomparison}.
+\begin{table}
+\caption{CCD and MBPT2 results for infinite neutron matter with $N=66$ neutrons and a maximum number of single-particle states constrained by $N_{max}=36$. }\label{tab:ecomparison}
+  \begin{center}
+      \begin{tabular}{| l | l | l |}
+      \hline Density $\rho$ fm$^{-3}$ & $E_{MBPT2}$ & $E_{CCD}$
+      \\ \hline 0.04 & 6.472   & 6.468    \\ \hline
+      0.06 & 7.919  & 7.932   \\ \hline
+      0.08 & 9.075  & 9.136    \\ \hline
+      1.0 & 9.577 &  10.074  \\  \hline
+      1.2 & 10.430 & 10.885   \\ \hline
+      1.4 & 11.212 & 11.565   \\  \hline
+      1.6 & 11.853  & 12.136    \\  \hline
+      1.8 & 12.377 & 12.612   \\ \hline
+      2.0 & 12.799 & 13.004   \\ \hline
+      \end{tabular}
+  \end{center}
+\end{table}
+For low densities we observe a good agreement while higher densities
+bring in particle-particle correlations that become more important as
+the density increases. Coupled cluster theory sums to infinite order for
+example particle-particle correlations and with increasing densities
+this is reflected in differences between the two many-body
+approximations.  The above results agree well with the recent coupled
+cluster calculations of Refs.~\cite{baardsen2013,hagenmatter}, obtained with
+interaction models from effective field theory.  With the inclusion of
+proton correlations as well as other potential models we may expect 
+larger differences between
+different methods and interactions.  In chapters 9, 10 and 11 we compare the above results with 
+those obtained with Monte Carlo methods, the in-medium renormalization group approach and Green's function theory.
+
 
 \end{document}

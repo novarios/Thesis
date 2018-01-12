@@ -2,7 +2,10 @@
 
 \begin{document}
 
+\chapter{Diagrammatic Rules} \label{chapter:appendix_diagrams}
+
 \chapter{Angular Momentum Coupling}
+
 Two angular momenta, $\ket{j_{1}m_{1}}$ and $\ket{j_{2}m_{2}}$, can be coupled into a state with total angular momentum $J$ and projection $M$, $\ket{j_{1}j_{2};JM}$. The coupled state is written as a linear combination of uncoupled states, $\ket{j_{1}m_{1};j_{2}m_{2}}$.
 \begin{equation}
 \ket{j_{1}j_{2};JM}\hspace{1mm}=\hspace{-4mm}\sum_{m_{1}+m_{2}=M}\hspace{-4mm}\braket{j_{1}m_{1};j_{2}m_{2}}{JM}\ket{j_{1}m_{1};j_{2}m_{2}}
@@ -13,6 +16,7 @@ The coefficients in this expansion, $\braket{j_{1}m_{1};j_{2}m_{2}}{JM}$, are ca
 \end{equation}
 
 \chapter{Coupled Two-Body State}
+
 A two-body state relative to some reference vacuum, $\ket{\Phi}$, involving either particles or holes, can be written as the result of acting with the appropriate particle or hole creation operators, $\ket{pq}=p^{\dagger}q^{\dagger}\ket{\Phi}$. The letters $\{p,q,r,s,...\}$ denote generic particle or hole states, $\{a,b,c,d,...\}$ denote particle states, and $\{i,j,k,l,...\}$ denote hole states. These $M$-scheme states, with total angular momentum projection $M$, can be used to build $J$-scheme states which are coupled to a total angular momentum $J$. The generic j-coupled states corresponding to the orbits of $p$ and $q$ are given by $\{\alpha,\beta,\gamma,...\}$.
 \begin{equation}
 \ket{\alpha\beta;JM}=\frac{\sqrt{1+\delta_{\alpha\beta}\left(-1\right)^{J}}}{1+\delta_{\alpha\beta}}\left[\alpha^{\dagger}\beta^{\dagger}\right]_{JM}\ket{\Phi}=\frac{\sqrt{1+\delta_{\alpha\beta}\left(-1\right)^{J}}}{1+\delta_{\alpha\beta}}\sum_{\substack{p\in\alpha \\ q\in\beta}}\braket{j_{p}m_{p}j_{q}m_{q}}{JM}\ p^{\dagger}q^{\dagger}\ket{\Phi}
@@ -23,9 +27,421 @@ When the states $\alpha$ and $\beta$ are coupled in the reverse order, each Cleb
 \end{equation}
 
 \chapter{Convergence Acceleration: Direct-Inversion of the Iterative Subspace}
+
 Direct-Inversion of the Iterative Subspace (DIIS) is an extension to the damping method to help stabilize and accelerate the convergence. In the damping method, the input amplitude vector to iteration $i+1$ is a mixture of the output of the two previous iterations, $\mathbf{\tilde{t}}_{i+1}=\alpha\mathbf{t}_{i}+\left(1-\alpha\right)\mathbf{t}_{i-1}$, where the CCD step is $\mathcal{F}\left(\mathbf{\tilde{t}}_{i}\right)=\mathbf{t}_{i}$. In DIIS, the input amplitude vector to iteration $i+1$ is a linear combination of the last $l$ vectors, $\mathbf{\tilde{t}}_{i+1}=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t}_{m}$. Rewriting the vectors as as the exact solution, $\mathcal{F}\left(\mathbf{t^{*}}\right)=\mathbf{t^{*}}$ or $\mathbf{\tilde{t}}_{i}=\mathbf{t}_{i}$, plus an error term, $\mathbf{t}_{i}=\mathbf{t^{*}}+\mathbf{r}_{i}$, the interpolated vector can be rewritten, $\mathbf{\tilde{t}}_{i+1}=\sum_{m=i-l+1}^{i}c_{m}\left(\mathbf{t^{*}}+\mathbf{r}_{m}\right)=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}+\sum_{m=i-l+1}^{i}c_{m}\mathbf{r}_{m}$. Equating this to the exact solution and minimizing the error vector gives, $\mathbf{t^{*}}=lim\left(\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}+\sum_{m=i-l+1}^{i}c_{m}\mathbf{r}_{m}\right)=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}$, so that $\sum_{m=i-l+1}^{i}c_{m}=1$. Therefore, the task is to minimize the norm of the error vector, $\mathbf{\tilde{r}}_{i+1}^{\dagger}\mathbf{\tilde{r}}_{i+1}=\sum_{m,n=i-l+1}^{i}c_{m}c_{n}\mathbf{r}_{m}^{\dagger}\mathbf{r}_{n}$, with the constraint that the sum of the coefficients is one, $min\left(\sum_{m,n=i-l+1}^{i}c_{m}c_{n}\mathbf{r}_{m}^{\dagger}\mathbf{r}_{n}-\lambda\left(1-\sum_{m=i-l+1}^{i}c_{m}\right)\right)$. This can be rewritten as a matrix equation with matrix $B_{ij}=\mathbf{r}_{i}^{\dagger}\mathbf{r}_{j}$, $\mathcal{L}=\sum_{m,n=i-l+1}^{i}c_{m}c_{n}B_{mn}-\lambda\left(1-\sum_{m=i-l+1}^{i}c_{m}\right)$.
 \begin{gather}
 \frac{\partial\mathcal{L}}{\partial c_{k}}=0=\sum_{n=i-l+1}^{i}c_{n}B_{kn}+\sum_{m=i-l+1}^{i}c_{m}B_{mk}+\lambda=2\sum_{n=i-l+1}^{i}c_{n}B_{kn}+\lambda \\
 \end{gather}
+
+\chapter{CCSD Diagrams}
+
+The following diagrams represent the different contributions to the CCSD cluster amplitudes \textit{without} directly building the effective Hamiltonian, $\EHam$.  The boxed diagrams are automatically zero in a Hartree-Fock basis.
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure0} + \diagram{CCSD_t1/CCSD_t1-figure1} + \diagram{CCSD_t1/CCSD_t1-figure2} \notag \\
+  &= \dboxed{\fint{a}{i}} - \sum\limits_{\mathclap{k}}\fint{k}{i}\tamp{a}{k} + \sum\limits_{\mathclap{c}}\fint{a}{c}\tamp{c}{i}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure3} \notag \\
+  &= -\sum\limits_{\mathclap{kc}}\vint{ka}{ic}\tamp{c}{k}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure4} \notag \\
+  &= \dboxed{\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{ac}{ki}}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure5} + \diagram{CCSD_t1/CCSD_t1-figure6} \notag \\
+  &= \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{cd}{ki} + \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{ca}{kl}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure7} \notag \\
+  &= \dboxed{\sum\limits_{\mathclap{kcd}}\fint{l}{d}\tamp{a}{l}\tamp{d}{i}}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure8} + \diagram{CCSD_t1/CCSD_t1-figure9} \notag \\
+  &= \sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{c}{k}\tamp{d}{i} + \sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{c}{k}\tamp{a}{l}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}\hat{\text{t}}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure10} + \diagram{CCSD_t1/CCSD_t1-figure11} + \diagram{CCSD_t1/CCSD_t1-figure12} \notag \\
+  &= -\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{cd}{ki}\tamp{a}{l} - \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ca}{kl}\tamp{d}{i} + \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ad}{il}\tamp{c}{k}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure13} \notag \\
+  &= -\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{c}{k}\tamp{d}{i}\tamp{a}{l}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  \hat{V}_{N}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure0} \notag \\
+  &= \vint{ab}{ij}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure1} + \diagram{CCSD_t2/CCSD_t2-figure2} \notag \\
+  &= \Perm{ab}\sum\limits_{\mathclap{c}}\fint{b}{c}\tamp{ac}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\fint{k}{j}\tamp{ab}{ik}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure3} + \diagram{CCSD_t2/CCSD_t2-figure4} \notag \\
+  &= -\Perm{ab}\sum\limits_{\mathclap{k}}\vint{kb}{ij}\tamp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\vint{ab}{cj}\tamp{c}{i}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure5} + \diagram{CCSD_t2/CCSD_t2-figure6} + \diagram{CCSD_t2/CCSD_t2-figure7} \notag \\
+  &= \frac{1}{2}\sum\limits_{\mathclap{kl}}\vint{kl}{ij}\tamp{ab}{kl} + \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{cd}{ij} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{ac}{kj}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure8} + \diagram{CCSD_t2/CCSD_t2-figure9} + \diagram{CCSD_t2/CCSD_t2-figure10} \notag \\
+  &= \sum\limits_{\mathclap{kl}}\vint{kl}{ij}\tamp{a}{k}\tamp{b}{l} + \sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{c}{i}\tamp{d}{j} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{a}{k}\tamp{c}{j}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{2}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure11} + \diagram{CCSD_t2/CCSD_t2-figure12} + \diagram{CCSD_t2/CCSD_t2-figure13} \notag \\
+  &+ \diagram{CCSD_t2/CCSD_t2-figure14} \notag \\
+  &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{cd}{ij} + \Perm{ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ac}{lj}\tamp{bd}{ki} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{lj}\tamp{cd}{ki} \notag \\
+  &- \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t2/CCSD_t2-figure15} + \ddiagram{CCSD_t2/CCSD_t2-figure16} \notag \\
+  &= -\dboxed{\Perm{ab}\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{a}{k}\tamp{cb}{ij}} - \dboxed{\Perm{ij}\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{c}{i}\tamp{ab}{kj}}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure17} + \diagram{CCSD_t2/CCSD_t2-figure18} + \diagram{CCSD_t2/CCSD_t2-figure19} \notag \\
+  &+ \diagram{CCSD_t2/CCSD_t2-figure20} + \diagram{CCSD_t2/CCSD_t2-figure21} + \diagram{CCSD_t2/CCSD_t2-figure22} \notag \\
+  &= \Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{bc}{jk}\tamp{d}{i} - \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\tamp{bc}{jk}\tamp{a}{l} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\tamp{cd}{ij}\tamp{a}{k} \notag \\
+  &+ \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\tamp{ab}{kl}\tamp{c}{i} + \Perm{ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{c}{k}\tamp{db}{ij} - \Perm{ij}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\tamp{c}{k}\tamp{ab}{lj}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure23} + \diagram{CCSD_t2/CCSD_t2-figure24} \notag \\
+  &= -\Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\tamp{a}{k}\tamp{c}{i}\tamp{d}{j} + \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\tamp{c}{i}\tamp{a}{k}\tamp{b}{l}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{2}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure25} + \diagram{CCSD_t2/CCSD_t2-figure26} + \diagram{CCSD_t2/CCSD_t2-figure27} \notag \\
+  &+ \diagram{CCSD_t2/CCSD_t2-figure28} + \diagram{CCSD_t2/CCSD_t2-figure29} \notag \\
+  &= \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{c}{i}\tamp{d}{j} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{cd}{ij}\tamp{a}{k}\tamp{b}{l} + \Perm{ij|ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ac}{lj}\tamp{b}{k}\tamp{d}{i} \notag \\
+  &- \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{lj}\tamp{c}{k}\tamp{d}{i} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{c}{k}\tamp{a}{l}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{4}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure30} \notag \\
+  &= \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{a}{k}\tamp{b}{l}\tamp{c}{i}\tamp{d}{j}
+\end{align}
+
+
+
+\chapter{Computational Implementation}
+
+The sums involved in building the CC effective Hamiltonian, solving the CC equations, solving the EOM-CC equations, and building effective operators can all be reformulated as matrix-matrix multiplications and thus performed with efficient LAPACK and BLAS routines.  To take advantage of this efficiency, the various cluster amplitudes and matrix elements must be grouped into structures with similar index structure.  An additional benefit to these structures is that angular-momentum-coupling coefficients are automatically removed by summing over Clebsch-Gordon coefficients ($\sum_{m_{1}m_{2}}C^{j_{1}j_{2}J}_{m_{1}m_{2}M}C^{j_{1}j_{2}J'}_{m_{1}m_{2}M'}=\delta_{JJ'}\delta_{MM'}$).
+
+\section{Structure Definitions}
+
+The matrix structures are based on channels that separate states with different symmetries depending on a system's conserved quantum numbers, given by $\vec{\xi}$, so that $\ket{p} \in \vec{\xi}_{3}$.  This separation can be applied to direct two-body states ($\ket{pq} \rightarrow \vec{\xi}_{p} + \vec{\xi}_{q} \in \vec{\xi}_{1}$) and cross two-body states ($\ket{p\bar{q}} \rightarrow \vec{\xi}_{p} - \vec{\xi}_{q} \in \vec{\xi}_{2}$).  Additionally, cross three-body states can be separated as one-body states ($\ket{pq\bar{s}} \rightarrow \vec{\xi}_{p} + \vec{\xi}_{q} - \vec{\xi}_{r} \in \vec{\xi}_{3}$).
+
+For a one-body operator $A^{p}_{q}\normord{\co{p}\ao{q}}$, there is a direct-channel matrix element and a cross-channel matrix element,
+\begin{equation}
+  \mathbf{A}_{1} = A^{p}_{q} \hspace{1cm} \mathbf{A}_{2} = A^{p\bar{q}}
+\end{equation}
+
+For a two-body operator $A^{pq}_{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}}$, there is a direct-channel matrix element, four cross-channel matrix elements, and four one-channel matrix elements,
+\begin{gather}
+  \mathbf{A}_{1} = A^{pq}_{rs} \notag \\
+  \mathbf{A}_{2_{1}} = A^{p\bar{s}}_{r\bar{q}} \hspace{0.5cm} \mathbf{A}_{2_{2}} = A^{q\bar{r}}_{s\bar{p}} \hspace{0.5cm} \mathbf{A}_{2_{3}} = A^{p\bar{r}}_{s\bar{q}} \hspace{0.5cm} \mathbf{A}_{2_{4}} = A^{q\bar{s}}_{r\bar{p}} \notag \\
+  \mathbf{A}_{3_{1}} = A^{p}_{rs\bar{q}} \hspace{0.5cm} \mathbf{A}_{3_{2}} = A^{q}_{rs\bar{p}} \hspace{0.5cm} \mathbf{A}_{3_{3}} = A^{pq\bar{s}}_{r} \hspace{0.5cm} \mathbf{A}_{3_{4}} = A^{pq\bar{r}}_{s}
+\end{gather}
+
+For an EOM operator of the form $A^{pq}_{r}\normord{\co{p}\co{q}\ao{r}}$, there is a direct-channel matrix element, a one-channel matrix element, and two cross-channel matrix elements,
+\begin{gather}
+  \mathbf{A}_{1} = A^{pq}_{r} \hspace{1cm} \mathbf{A}_{3} = A^{pq\bar{r}} \notag \\
+  \mathbf{A}_{2_{1}} = A^{p}_{r\bar{q}} \hspace{1.0cm} \mathbf{A}_{2_{2}} = A^{q}_{r\bar{p}}
+\end{gather}
+
+EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ has similar structures,
+\begin{gather}
+  \mathbf{A}_{1} = A^{p}_{qr} \hspace{1cm} \mathbf{A}_{3} = A_{qr\bar{p}} \notag \\
+  \mathbf{A}_{2_{1}} = A^{p\bar{r}}_{q} \hspace{1.0cm} \mathbf{A}_{2_{2}} = A^{p\bar{q}}_{r}
+\end{gather}
+
+\section{$\EHam$, Matrix Form}
+
+\begin{align}
+  \xint{i}{a} &= \dboxed{\fint{i}{a}} + \vint{i\bar{a}}{c\bar{k}}\tamp{c\bar{k}}{} \notag \\
+  \bxint{hp}{2} &\longleftarrow \dboxed{\bfint{hp}{2}} + \bvint{hhpp}{2_{3}}\cdot\btamp{}{2}
+\end{align}
+\begin{align}
+  \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\tamp{a}{kl\bar{c}}\vint{kl\bar{c}}{b} + \vint{a\bar{b}}{c\bar{k}}\tamp{c\bar{k}}{} - \tamp{a}{k}\xint{k}{b} \notag \\
+  \bxint{pp}{3} &\longleftarrow -\frac{1}{2}\btamp{}{3_{1}}\cdot\bvint{hhpp}{3_{3}} - \btamp{}{3}\cdot\bxint{hp}{3} \notag \\
+  \bxint{pp}{2} &\longleftarrow \bfint{pp}{2} + \bvint{hppp}{2_{4}}\cdot\btamp{}{2}
+\end{align}
+\begin{align}
+  \xxint{i}{j} &= \fint{i}{j} + \frac{1}{2}\vint{i}{cd\bar{k}}\tamp{cd\bar{k}}{j} + \vint{i\bar{j}}{c\bar{k}}\tamp{c\bar{k}}{} \notag \\
+  \bxxint{hh}{3} &\longleftarrow \frac{1}{2}\bvint{hhpp}{3_{1}}\cdot\btamp{}{3_{3}} \notag \\
+  \bxxint{hh}{2} &\longleftarrow \bfint{hh}{2} + \bvint{hhhp}{2_{3}}\cdot\btamp{}{2}
+\end{align}
+\begin{align}
+  \xint{i}{j} &= \fint{i}{j} + \frac{1}{2}\vint{i}{cd\bar{k}}\tamp{cd\bar{k}}{j} + \vint{i\bar{j}}{c\bar{k}}\tamp{c\bar{k}}{} + \xint{i}{c}\tamp{c}{j} \notag \\
+  \bxint{hh}{3} &\longleftarrow \frac{1}{2}\bvint{hhpp}{3_{1}}\cdot\btamp{}{3_{3}} + \bxint{hp}{3}\cdot\btamp{}{3} \notag \\
+  \bxxint{hh}{2} &\longleftarrow \bfint{hh}{2} + \bvint{hhhp}{2_{3}}\cdot\btamp{}{2}
+\end{align}
+\begin{align}
+  \xint{a}{i} &= \dboxed{\fint{a}{i}} + \xint{a}{c}\tamp{c}{i} - \tamp{a}{k}\xxint{k}{i} - \vint{a\bar{i}}{c\bar{k}}\tamp{c\bar{k}}{} + \frac{1}{2}\vint{a}{cd\bar{k}}\tamp{cd\bar{k}}{i} - \frac{1}{2}\tamp{a}{kl\bar{c}}\vint{kl\bar{c}}{i} + \tamp{a\bar{i}}{k\bar{c}}\xint{k\bar{c}}{} \notag \\
+  \bxint{ph}{3} &\longleftarrow \bxint{pp}{3}\cdot\btamp{}{3} - \btamp{}{3}\cdot\bxxint{hh}{3} + \frac{1}{2}\bvint{hppp}{3_{2}}\cdot\btamp{}{3_{4}} - \frac{1}{2}\btamp{}{3_{1}}\cdot\bvint{hhhp}{3_{3}} \notag \\
+  \bxint{ph}{2} &\longleftarrow \dboxed{\bfint{ph}{2}} - \bvint{hphp}{2_{2}}\cdot\btamp{}{2} + \btamp{}{2_{3}}\cdot\bxint{hp}{2}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  \xxint{ia}{bc} &= \vint{ia}{bc} - \frac{1}{2}\tamp{a}{k}\vint{k}{bc\bar{i}} \notag \\
+  \bxxint{hppp}{3_{2}} &\longleftarrow \bvint{hppp}{3_{2}} - \frac{1}{2}\btamp{}{3}\cdot\bvint{hhpp}{3_{2}}
+\end{align}
+\begin{align}
+  \xint{ia}{bc} &= \vint{ia}{bc} - \tamp{a}{k}\vint{k}{bc\bar{i}} \notag \\
+  \bxint{hppp}{3_{2}} &\longleftarrow \bvint{hppp}{3_{2}} - \btamp{}{3}\cdot\bvint{hhpp}{3_{2}}
+\end{align}
+\begin{align}
+  \xxint{ij}{ka} &= \vint{ij}{ka} + \frac{1}{2}\vint{ij\bar{a}}{c}\tamp{c}{k} \notag \\
+  \bxxint{hhhp}{3_{3}} &\longleftarrow \bvint{ij}{ka} + \frac{1}{2}\bvint{hhpp}{3_{3}}\cdot\btamp{}{3}
+\end{align}
+\begin{align}
+  \xint{ij}{ka} &= \vint{ij}{ka} + \vint{ij\bar{a}}{c}\tamp{c}{k} \notag \\
+  \bxint{hhhp}{3_{3}} &\longleftarrow \bvint{ij}{ka} + \bvint{hhpp}{3_{3}}\cdot\btamp{}{3}
+\end{align}
+\begin{align}
+  \xxint{ab}{cd} &= \vint{ab}{cd} - \Perm{ab}\tamp{a}{k}\xxint{k}{cd\bar{b}} \notag \\
+  \bxxint{pppp}{1} &\longleftarrow \bvint{pppp}{1} \notag \\
+  \bxxint{pppp}{3_{1(2)}} &\longleftarrow \mp\btamp{}{3}\cdot\bxxint{hppp}{3_{1}}
+\end{align}
+\begin{align}
+  \xint{ab}{cd} &= \xxint{ab}{cd} + \frac{1}{2}\tamp{ab}{kl}\vint{kl}{cd} \notag \\
+  \bxint{pppp}{1} &\longleftarrow \bxxint{pppp}{1} + \frac{1}{2}\btamp{}{1}\cdot\bvint{hhpp}{1}
+\end{align}
+\begin{align}
+  \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\vint{ij}{cd}\tamp{cd}{kl} + \Perm{kl}\xxint{ij\bar{k}}{c}\tamp{c}{l} \notag \\
+  \bxint{hhhh}{1} &\longleftarrow \bvint{hhhh}{1} + \frac{1}{2}\bvint{hhpp}{1}\cdot\btamp{}{1} \notag \\
+  \bxint{hhhh}{3_{3(4)}} &\longleftarrow \mp\bxxint{hhhp}{3_{4}}\cdot\btamp{}{3}
+\end{align}
+\begin{align}
+  \xxint{ia}{jb} &= \vint{ia}{jb} + \xxint{ia\bar{b}}{c}\tamp{c}{j} - \frac{1}{2}\tamp{a}{k}\vint{k}{jb\bar{i}} \notag \\
+  \bxxint{hphp}{2_{1}} &\longleftarrow \bvint{hphp}{2_{1}} \notag \\
+  \bxxint{hphp}{3_{3}} &\longleftarrow \bxxint{hppp}{3_{3}}\cdot\btamp{}{3} \notag \\
+  \bxxint{hphp}{3_{2}} &\longleftarrow -\frac{1}{2}\btamp{}{3}\cdot\bvint{hhhp}{3_{2}}
+\end{align}
+\begin{align}
+  \xxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\xxint{ia\bar{b}}{c}\tamp{c}{j} - \frac{1}{2}\tamp{a}{k}\vint{k}{jb\bar{i}} \notag \\
+  \bxxxint{hphp}{2_{1}} &\longleftarrow \bvint{hphp}{2_{1}} \notag \\
+  \bxxxint{hphp}{3_{3}} &\longleftarrow \frac{1}{2}\bxxint{hppp}{3_{3}}\cdot\btamp{}{3} \notag \\
+  \bxxxint{hphp}{3_{2}} &\longleftarrow -\frac{1}{2}\btamp{}{3}\cdot\bvint{hhhp}{3_{2}}
+\end{align}
+\begin{align}
+  \xxxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\xint{ia\bar{b}}{c}\tamp{c}{j} - \tamp{a}{k}\vint{k}{jb\bar{i}} \notag \\
+  \bxxxxint{hphp}{2_{1}} &\longleftarrow \bvint{hphp}{2_{1}} \notag \\
+  \bxxxxint{hphp}{3_{3}} &\longleftarrow \frac{1}{2}\bxxint{hppp}{3_{3}}\cdot\btamp{}{3} \notag \\
+  \bxxxxint{hphp}{3_{2}} &\longleftarrow -\btamp{}{3}\cdot\bvint{hhhp}{3_{2}}
+\end{align}
+\begin{align}
+  \xint{ia}{jb} &= \vint{ia}{jb} + \xint{ia\bar{b}}{c}\tamp{c}{j} - \tamp{a}{k}\vint{k}{jb\bar{i}} - \left(\frac{1}{2}\right)\vint{i\bar{b}}{c\bar{k}}\tamp{c\bar{k}}{j\bar{a}} \notag \\
+  \bxint{hphp}{2_{1}} &\longleftarrow \bvint{hphp}{2_{1}} - \left(\frac{1}{2}\right)\bvint{hhpp}{2_{1}}\btamp{}{2_{1}} \notag \\
+  \bxint{hphp}{3_{3}} &\longleftarrow \bxint{hppp}{3_{3}}\cdot\btamp{}{3} \notag \\
+  \bxint{hphp}{3_{2}} &\longleftarrow -\btamp{}{3}\cdot\bvint{hhhp}{3_{2}}
+\end{align}
+\begin{align}
+  \xxint{ab}{ic} &= \vint{ab}{ic} + \frac{1}{2}\vint{ab\bar{c}}{d}\tamp{d}{i} - \Perm{ab}\tamp{a}{k}\xxxint{k}{ic\bar{b}} \notag \\
+  \bxxint{pphp}{3_{3}} &\longleftarrow \bvint{pphp}{3_{3}} + \frac{1}{2}\bvint{pppp}{3_{3}}\cdot\btamp{}{3} \notag \\
+  \bxxint{pphp}{3_{1(2)}} &\longleftarrow \mp\btamp{}{3}\cdot\bxxxint{hphp}{3_{1}}
+\end{align}
+\begin{align}
+  \xint{ab}{ic} &= \vint{ab}{ic} + \vint{ab\bar{c}}{d}\btamp{d}{i} - \Perm{ab}\tamp{a}{k}\xxint{k}{ic\bar{b}} - \tamp{ab\bar{i}}{k}\xint{k}{c} + \Perm{ab}\tamp{a\bar{i}}{k\bar{d}}\xint{k\bar{d}}{c\bar{b}} + \frac{1}{2}\tamp{ab}{kl}\xint{kl}{ic} \notag \\
+  \bxint{pphp}{3_{3}} &\longleftarrow \bvint{pphp}{3_{3}} + \bvint{pppp}{3_{3}}\cdot\btamp{}{3} \notag \\
+  \bxint{pphp}{3_{1(2)}} &\longleftarrow \mp\btamp{}{3}\cdot\bxxint{hphp}{3_{1}} \notag \\
+  \bxint{pphp}{3_{4}} &\longleftarrow -\btamp{}{3_{4}}\cdot\bxint{hp}{3} \notag \\
+  \bxint{pphp}{2_{2(3)}} &\longleftarrow \mp\btamp{}{2_{3}}\cdot\bxint{hppp}{2_{3}} \notag \\
+  \bxint{pphp}{1} &\longleftarrow \frac{1}{2}\btamp{}{1}\cdot\bxint{hhhp}{1}
+\end{align}
+\begin{align}
+  \xxint{ia}{jk} &= \vint{ia}{jk} - \frac{1}{2}\tamp{a}{l}\vint{l}{jk\bar{i}} \notag \\
+  \bxxint{hphh}{3_{2}} &\longleftarrow \bvint{hphh}{3_{2}} - \frac{1}{2}\btamp{}{3}\cdot\bvint{hhhh}{3_{2}}
+\end{align}
+\begin{align}
+  \xint{ia}{jk} &= \vint{ia}{jk} - \tamp{a}{l}\vint{l}{jk\bar{i}} + \Perm{jk}\xxxxint{ia\bar{j}}{c}\tamp{c}{k} + \Perm{jk}\xint{i\bar{j}}{c\bar{l}}\tamp{c\bar{l}}{k\bar{a}} + \frac{1}{2}\xint{ia}{cd}\tamp{cd}{jk} + \xint{i}{c}\tamp{c}{jk\bar{a}} \notag \\
+  \bxint{hphh}{3_{2}} &\longleftarrow \bvint{hphh}{3_{2}} - \btamp{}{3}\cdot\bvint{hhhh}{3_{2}} \notag \\
+  \bxint{hphh}{3_{3(4)}} &\longleftarrow \mp\bxxxxint{hphp}{3_{4}}\cdot\btamp{}{3} \notag \\
+  \bxint{hphh}{2_{1(3)}} &\longleftarrow \mp\bxint{hhhp}{2_{3}}\cdot\btamp{}{2_{3}} \notag \\
+  \bxint{hphh}{1} &\longleftarrow \frac{1}{2}\bxint{hppp}{1}\cdot\btamp{}{1} \notag \\
+  \bxint{hphh}{3_{1}} &\longleftarrow \bxint{hp}{3}\cdot\btamp{}{3_{1}}  
+\end{align}
+\begin{align}
+  \xint{ab}{ij} &= \vint{ab}{ij} + \Perm{ab}\xint{a}{c}\tamp{c}{ij\bar{b}} - \Perm{ij}\tamp{ab\bar{j}}{k}\xint{k}{i} + \frac{1}{2}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\tamp{ab}{kl}\xint{kl}{ij} - \Perm{ab|ij}\tamp{a\bar{j}}{k\bar{c}}\xint{k\bar{c}}{i\bar{b}} - \Perm{ab}\tamp{a}{k}\xxint{k}{ij\bar{b}} + \Perm{ij}\xxint{ab\bar{i}}{c}\tamp{c}{j} \notag \\
+  \bxint{pphh}{1} &\longleftarrow \bvint{pphh}{1} + \frac{1}{2}\bxxint{pppp}{1}\cdot\btamp{}{1} + \frac{1}{2}\btamp{}{1}\cdot\bxint{hhhh}{1} \notag \\
+  \bxint{pphh}{3_{1(2)}} &\longleftarrow \pm\bxint{pp}{3}\cdot\btamp{}{3_{1}} \mp\btamp{}{3}\bxxint{hphh}{3_{1}} \notag \\
+  \bxint{pphh}{3_{3(4)}} &\longleftarrow \mp\btamp{}{3_{3}}\cdot\bxint{hh}{3} \pm\bxxint{pphp}{3_{4}}\btamp{}{3} \notag \\
+  \bxint{pphh}{2_{1(2)}} &\longleftarrow -\btamp{}{2_{1}}\cdot\bxint{hphp}{2_{1}} \notag \\
+  \bxint{pphh}{2_{3(4)}} &\longleftarrow \btamp{}{2_{1}}\cdot\bxint{hphp}{2_{1}}
+\end{align}
+
+
+\section{$\Lop$, Matrix Form}
+
+\begin{align}
+  0 &= \xint{i}{a} + \lamp{i}{c}\xint{c}{a} - \xint{i}{k}\lamp{k}{a} - \xint{i\bar{a}}{k\bar{c}}\lamp{k\bar{c}}{} - \frac{1}{2}\lamp{i}{cd\bar{k}}\xint{cd\bar{k}}{a} - \frac{1}{2}\xint{i}{kl\bar{c}}\lamp{kl\bar{c}}{a} + \frac{1}{2}\xint{i\bar{a}}{j\bar{k}}\left(\lamp{j}{cd\bar{l}}\tamp{cd\bar{l}}{k}\right)^{j\bar{k}} - \frac{1}{2}\xint{i\bar{a}}{d\bar{c}}\left(\tamp{d}{kl\bar{b}}\lamp{kl\bar{b}}{c}\right)^{d\bar{c}} \notag \\
+  \lamp{}{3} &\leftarrow \xint{hp}{3} + \lamp{}{3}\xint{pp}{3} - \xint{hh}{3}\lamp{}{3} - \frac{1}{2}\lamp{}{3_{1}}\xint{pphp}{3_{4}} - \frac{1}{2}\xint{hphh}{3_{1}}\lamp{}{3_{3}} \notag \\
+  \lamp{}{2} &\leftarrow -\xint{hphp}{2_{1}}\lamp{}{2} + \frac{1}{2}\xint{hhhp}{2_{1}}\left(\lamp{}{3_{1}}\tamp{}{3_{3}}\right)_{2} - \frac{1}{2}\xint{hppp}{2_{3}}\left(\tamp{}{3_{2}}\lamp{}{3_{3}}\right)_{2}
+\end{align}
+\begin{align}
+  0 &= \vint{ij}{ab} + \Perm{ab|ij}\left(\lamp{i}{a}\xint{j}{b}\right)^{ij}_{ab} - \Perm{ab}\xint{ij\bar{b}}{k}\lamp{k}{a} - \Perm{ij}\lamp{i}{c}\xint{c}{ab\bar{j}} - \Perm{ab}\lamp{ij\bar{a}}{c}\xint{c}{b} + \Perm{ij}\xint{j}{k}\lamp{k}{ab\bar{i}} + \frac{1}{2}\lamp{ij}{cd}\xint{cd}{ab} + \frac{1}{2}\xint{ij}{kl}\lamp{kl}{ab} - \Perm{ab|ij}\xint{i\bar{b}}{k\bar{c}}\lamp{k\bar{c}}{a\bar{j}} - \Perm{ab}\frac{1}{2}\vint{ij\bar{b}}{c}\left(\tamp{c}{kl\bar{d}}\lamp{kl\bar{d}}{a}\right) - \Perm{ij}\frac{1}{2}\left(\lamp{i}{cd\bar{l}}\tamp{cd\bar{l}}{k}\right)\vint{k}{ab\bar{j}} \notag \\
+  \lamp{}{1} &\leftarrow \vint{}{\text{hhpp}1} + \Perm{\lamp{}{3}\xint{}{\text{hp}3}}{}_{1} + \frac{1}{2}\lamp{}{1}\xint{}{\text{pppp}1} + \frac{1}{2}\xint{}{\text{hhhh}1}\lamp{}{1} \notag \\
+  \lamp{}{3_{3\left(4\right)}} &\leftarrow \mp\xint{}{\text{hhhp}3_{3}}\lamp{}{3} \pm\lamp{}{3_{3}}\xint{}{\text{pp}3} \mp\frac{1}{2}\vint{}{\text{hhpp}3_{3}}\left(\tamp{}{3_{1}}\lamp{}{3_{3}}\right) \notag \\
+  \lamp{}{3_{1\left(2\right)}} &\leftarrow \mp\lamp{}{3}\xint{}{\text{hppp}3_{2}} \mp\xint{}{\text{hh}3}\lamp{}{3_{1}} \mp\frac{1}{2}\left(\lamp{}{3_{1}}\tamp{}{3_{3}}\right)\vint{}{\text{hhpp}3_{1}} \notag \\
+  \lamp{}{2_{1\left(2\right)}} &\leftarrow -\xint{}{\text{hphp}2_{1}}\lamp{}{2_{1}} \notag \\
+  \lamp{}{2_{3\left(4\right)}} &\leftarrow \xint{}{\text{hphp}2_{1}}\lamp{}{2_{1}} \notag
+\end{align}
+
+
+\section{$\hat{R}^{+}_{k}$, Matrix Form}
+
+\begin{align}
+  \omega_{k}\rop{a}{} &= \xint{a}{c}\rop{c}{} + \rop{a}{k\bar{c}}\xint{k\bar{c}}{} - \frac{1}{2}\xint{a}{cd\bar{k}}\rop{cd\bar{k}}{} \notag \\
+  \omega_{k}\brop{}{} &\longleftarrow \bxint{pp}{3}\cdot\brop{}{} + \brop{}{2_{1}}\cdot\bxint{hp}{2} - \frac{1}{2}\bxint{hppp}{3_{2}}\cdot\brop{}{3}
+\end{align}
+\begin{align}
+  \omega_{k}\rop{ab}{i} &= -\xint{ab\bar{i}}{c}\rop{c}{} + \Perm{ab}\xint{b}{c}\rop{c}{i\bar{a}} - \rop{ab}{k}\xint{k}{i} + \frac{1}{2}\xint{ab}{cd}\rop{cd}{i} - \Perm{ab}\rop{b}{k\bar{c}}\xint{k\bar{c}}{i\bar{a}}  - \frac{1}{2}\amp{ab\bar{i}}{k}\vint{k}{cd\bar{l}}\rop{cd\bar{l}}{} \notag \\
+  \omega_{k}\brop{}{3} &\longleftarrow -\bxint{pphp}{3_{4}}\cdot\brop{}{} - \frac{1}{2}\btamp{}{3_{3}}\cdot\bvint{hhpp}{3_{1}}\cdot\brop{}{3} \notag \\
+  \omega_{k}\brop{}{2_{1(2)}} &\longleftarrow \mp\bxint{pp}{3}\cdot\brop{}{2_{2}} \pm\brop{}{2_{2}}\cdot\bxint{hphp}{2_{1}} \notag \\
+  \omega_{k}\brop{}{1} &\longleftarrow -\brop{}{1}\cdot\bxint{hh}{3} + \frac{1}{2}\bxint{pppp}{1}\cdot\brop{}{1}
+\end{align}
+
+
+\section{$\hat{L}^{+}_{k}$, Matrix Form}
+The difference for the left eigenproblem is that disconnected term is computed as an outer product rather than with matrix-matrix multiplication.
+
+\begin{align}
+  E_{k}\lop{}{a} &= \lop{}{c}\xint{c}{a} - \frac{1}{2}\lop{}{cd\bar{k}}\xint{cd\bar{k}}{a} \notag \\
+  E_{k}\blop{}{} &\longleftarrow \blop{}{}\cdot\bxint{pp}{3} - \frac{1}{2}\blop{}{3}\cdot\bxint{pphp}{3_{4}}
+\end{align} 
+\begin{align}
+  E_{k}\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i\bar{b}}{} - \lop{}{c}\xint{c}{ab\bar{i}} - \xint{i}{k}\lop{k}{ab} + \Perm{ab}\lop{i\bar{a}}{c}\xint{c}{b} + \frac{1}{2}\lop{i}{cd}\xint{cd}{ab} - \Perm{ab}\xint{i\bar{a}}{k\bar{c}}\lop{k\bar{c}}{b} - \frac{1}{2}\lop{}{cd\bar{l}}\tamp{cd\bar{l}}{k}\vint{k}{ab\bar{i}} \notag \\
+  E_{k}\lop{}{3} &\longleftarrow -\blop{}{}\cdot\bxint{hppp}{3_{2}} - \frac{1}{2}\blop{}{3}\cdot\btamp{}{3_{3}}\cdot\bvint{hhpp}{3_{1}} \notag \\
+  E_{k}\blop{}{2_{1(2)}} &\longleftarrow \pm\blop{}{}\otimes\bxint{hp}{2} \mp\blop{}{2_{2}}\cdot\bxint{pp}{3} \pm\bxint{hphp}{2_{1}}\cdot\blop{}{2_{2}} \notag \\
+  E_{k}\blop{}{1} &\longleftarrow -\bxint{hh}{3}\cdot\blop{}{1} + \frac{1}{2}\blop{}{1}\cdot\bxint{pppp}{1}
+\end{align}
+
+
+\section{$\hat{R}^{-}_{k}$, Matrix Form}
+
+\begin{align}
+  \omega_{k}\rop{}{i} &= -\rop{}{k}\xint{k}{i} + \xint{}{c\bar{k}}\rop{c\bar{k}}{i} - \frac{1}{2}\rop{}{kl\bar{c}}\xint{kl\bar{c}}{i} \notag \\
+  \omega_{k}\brop{}{} &\longleftarrow -\brop{}{}\cdot\bxint{hh}{3} + \bxint{hp}{2'}\cdot\brop{}{2_{1}} - \frac{1}{2}\brop{}{3}\cdot\bxint{hhhp}{3_{3}}
+\end{align}
+\begin{align}
+  \omega_{k}\rop{a}{ij} &= -\rop{}{k}\xint{k}{ij\bar{a}} - \Perm{ij}\rop{a\bar{i}}{k}\xint{k}{j} + \xint{a}{c}\rop{c}{ij} + \frac{1}{2}\rop{a}{kl}\xint{kl}{ij} - \Perm{ij}\xint{a\bar{i}}{c\bar{k}}\rop{c\bar{k}}{j} - \frac{1}{2}\rop{}{kl\bar{d}}\vint{kl\bar{d}}{c}\amp{c}{ij\bar{a}} \notag \\
+  \omega_{k}\brop{}{3} &\longleftarrow -\brop{}{}\cdot\bxint{hphh}{3_{1}} - \frac{1}{2}\brop{}{3}\cdot\bvint{hhpp}{3_{3}}\cdot\btamp{}{3_{1}} \notag \\
+  \omega_{k}\brop{}{2_{1(2)}} &\longleftarrow \pm\brop{}{2_{2}}\cdot\bxint{hh}{3} \pm\bxint{hphp}{2_{2}}\cdot\brop{}{2_{2}} \notag \\
+  \omega_{k}\brop{}{1} &\longleftarrow \bxint{pp}{3}\cdot\brop{}{1} + \frac{1}{2}\brop{}{1}\cdot\bxint{hhhh}{1}
+\end{align}
+
+
+\section{$\hat{L}^{-}_{k}$, Matrix Form}
+Again, the disconnected term is computed as an outer product rather than with matrix-matrix multiplication.
+
+\begin{align}
+  E_{k}\lop{i}{} &= -\xint{i}{k}\lop{k}{} - \frac{1}{2}\xint{i}{kl\bar{c}}\lop{kl\bar{c}}{} \notag \\
+  E_{k}\blop{}{} &\longleftarrow -\bxint{HH}{3}\cdot\blop{}{} - \frac{1}{2}\bxint{hphh}{3_{1}}\cdot\blop{}{3}
+\end{align}
+\begin{align}
+  E_{k}\lop{ij}{a} &= \Perm{ij}\lop{i}{}\xint{}{a\bar{j}} - \xint{ij\bar{a}}{k}\lop{k}{} + \lop{ij}{c}\xint{c}{a} - \Perm{ij}\xint{j}{k}\lop{k}{a\bar{i}} + \frac{1}{2}\xint{ij}{kl}\lop{kl}{a} - \Perm{ij}\lop{j}{c\bar{k}}\xint{c\bar{k}}{a\bar{i}} - \frac{1}{2}\vint{ij\bar{a}}{c}\amp{c}{kl\bar{d}}\lop{kl\bar{d}}{} \notag \\
+  E_{k}\lop{}{3} &\longleftarrow -\bxint{hhhp}{3_{3}}\cdot\blop{}{} - \frac{1}{2}\bvint{hhpp}{3_{3}}\cdot\btamp{}{3_{1}}\cdot\blop{}{3} \notag \\
+  E_{k}\blop{}{2_{1(2)}} &\longleftarrow \pm\blop{}{}\otimes\bxint{hp}{2'} \pm\bxint{hh}{3}\cdot\blop{}{2_{2}} \pm\blop{}{2_{2}}\cdot\bxint{hphp}{2_{2}} \notag \\
+  E_{k}\blop{}{1} &\longleftarrow \blop{}{1}\cdot\bxint{pp}{3} + \frac{1}{2}\bxint{hhhh}{1}\cdot\blop{}{1}
+\end{align}
+
+
+\section{${}^{\lambda}\EOp$, Matrix Form}
+
+\begin{align}
+  \oopint{\lambda}{i}{a} &= \opint{\lambda}{i}{a} \notag \\
+  \boopint{\lambda}{hp}{3} &\longleftarrow \bopint{\lambda}{hp}{3}
+\end{align}
+\begin{align}
+  \oopint{\lambda}{a}{b} &= \opint{\lambda}{a}{b} - \tamp{a}{k}\oopint{\lambda}{k}{b} \notag \\
+  \boopint{\lambda}{pp}{3} &\longleftarrow \bopint{\lambda}{pp}{3} - \btamp{}{3}\cdot\boopint{\lambda}{hp}{3}
+\end{align}
+\begin{align}
+  \oopint{\lambda}{i}{j} &= \opint{\lambda}{i}{j} + \oopint{\lambda}{i}{c}\tamp{c}{j} \notag \\
+  \boopint{\lambda}{hh}{3} &\longleftarrow \bopint{\lambda}{hh}{3} + \boopint{\lambda}{hp}{3}\cdot\btamp{}{3}
+\end{align}
+\begin{align}
+  \oopint{\lambda}{a}{i} &= \opint{\lambda}{a}{i} + \oopint{\lambda}{a}{c}\tamp{c}{i} - \tamp{a}{k}\oopint{\lambda}{k}{i} + \tamp{a\bar{i}}{k\bar{c}}\oopint{\lambda}{k\bar{c}}{} \notag \\
+  \boopint{\lambda}{ph}{3} &\longleftarrow \bopint{\lambda}{ph}{3} + \boopint{\lambda}{pp}{3}\cdot\btamp{}{3} - \btamp{}{3}\cdot\boopint{\lambda}{3}{hh} \notag \\
+  \boopint{\lambda}{ph}{2} &\longleftarrow \btamp{}{2_{3}}\cdot\boopint{\lambda}{hp}{2}
+\end{align}
+\begin{align}
+  \oopint{\lambda}{ab}{ic} &= -\tamp{ab\bar{i}}{k}\oopint{\lambda}{k}{c} \notag \\
+  \boopint{\lambda}{pphp}{3_{4}} &\longleftarrow -\btamp{}{3_{4}}\cdot\boopint{\lambda}{hp}{3}
+\end{align}
+\begin{align}
+  \oopint{\lambda}{ia}{jk} &= \oopint{\lambda}{i}{c}\tamp{c}{jk\bar{a}} \notag \\
+  \boopint{\lambda}{hphh}{3_{1}} &\longleftarrow \boopint{\lambda}{hp}{3}\cdot\btamp{}{3_{1}}
+\end{align}
+\begin{align}
+  \oopint{\lambda}{ab}{ij} &= \Perm{ab}\oopint{\lambda}{a}{c}\tamp{c}{ij\bar{b}} - \Perm{ij}\tamp{ab\bar{j}}{k}\oopint{\lambda}{k}{i} \notag \\
+  \boopint{\lambda}{pphh}{3_{1(2)}} &\longleftarrow \pm\boopint{\lambda}{pp}{3}\cdot\btamp{}{3_{1}} \notag \\
+  \boopint{\lambda}{pphh}{3_{3(4)}} &\longleftarrow \mp\btamp{}{3_{3}}\cdot\boopint{\lambda}{hh}{3}
+\end{align}
+
+
+\chapter{Angular Momentum Coupling}
+
+Before deriving useful equations for J-scheme angular momentum coupling, it's neccessary to list some shorthand notations and definitions:
+\begin{gather}
+  \hat{p} \equiv \sqrt{2 j_{p} + 1} \\
+  \sum_{\{ m \}} \equiv \text{sum over all} m
+\end{gather}
+
+Clebsch-Gordan coefficients:
+\begin{gather}
+  \braket{pq}{J} \equiv \braket{j_{p}m_{p} ; j_{q}m_{q}}{JM} \\
+  \braket{p\bar{q}}{J} \equiv \braket{j_{p},m_{p} ; j_{q},-m_{q}}{JM}(-1)^{( q - m_{q} )} \\
+  \sum_{JM} \braket{pq}{J}\braket{p'q'}{J} = \delta_{m_{p}m_{p'}}\delta_{m_{q}m_{q'}} \\
+  \sum_{m_{p}m_{q}} \braket{pq}{J}\braket{pq}{J'} = \delta_{JJ'}\delta_{MM'}
+\end{gather}
+
+Two-body J-scheme matrix elements in terms of M-scheme matrix elements:
+\begin{align}
+  X^{pq^{J}}_{rs^{J}} &= \sum_{\{ m \}} X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}} \braket{pq}{J} \braket{rs}{J} \\
+  X^{p\bar{s}^{J'}}_{r\bar{q}^{J'}} &= \sum_{\{ m \}} X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}} \braket{p\bar{s}}{J'} \braket{r\bar{q}}{J'} \\
+  X^{p}_{rs^{J}\bar{q}} &= \sum_{\{ m \}} X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}} \braket{rs}{J} \braket{J\bar{q}}{p} \\
+  X^{pq^{J}\bar{s}}_{r} &= \sum_{\{ m \}} X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}} \braket{pq}{J} \braket{J\bar{s}}{r} \\
+\end{align}}
+Two-body M-scheme matrix elements in terms of J-scheme matrix elements:
+\begin{align}
+  X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}} &= \sum_{JM} X^{pq^{J}}_{rs^{J}} \braket{pq}{J} \braket{rs}{J} \\
+  &= \sum_{J'M'} X^{p\bar{s}^{J'}}_{r\bar{q}^{J'}} \braket{p\bar{s}}{J'} \braket{r\bar{q}}{J'} \\
+  &= \sum_{JM} X^{p}_{rs^{J}\bar{q}} \braket{rs}{J} \braket{J\bar{q}}{p} \\
+  &= \sum_{JM} X^{pq^{J}\bar{s}}_{r} \braket{pq}{J} \braket{J\bar{s}}{r} \\
+\end{align}
+
+\begin{equation}
+  {}^{\lambda}R^{ab^{J}}_{i} = {}^{\lambda}\mathbb{R}^{ab^{J}}_{i}\frac{\braket{J\bar{i}}{\lambda}}{\hat{\lambda}}(-1)^{2\lambda}
+\end{equation}
+
+\begin{equation}
+  {}^{\lambda}\mathbb{R}^{ab^{J}}_{i} = \sum_{J'}{}^{\lambda}\mathbb{R}^{a}_{i\bar{b}^{J'}}\hat{J}\hat{J}'\sixj{a}{b}{J}{i}{\lambda}{J'}(-1)^{\lambda - a + J'}
+\end{equation}
+
+\begin{equation}
+  {}^{\lambda}\mathbb{R}^{a}_{ij^{J}} = \sum_{J'}{}^{\lambda}\mathbb{R}^{a\bar{j}^{J'}}_{i}\hat{J}\hat{J}'\sixj{i}{j}{J}{a}{\lambda}{J'}(-1)^{\lambda + a - J}
+\end{equation}
 
 \end{document}
