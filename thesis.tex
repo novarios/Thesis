@@ -18,7 +18,7 @@
 
 \def\dheight{2.5cm}
 \def\dscale{1.15}
-\def\sdheight{1.75cm}
+\def\sdheight{1.7cm}
 
 \newcommand*\xbar[1]{
   \hbox{
@@ -47,12 +47,12 @@
 \newcommand{\antisymm}{\mathop{\scalerel*{\mathcal{A}}{\textstyle\sum}}\displaylimits}
 
 \newcommand{\Ecorr}{\Delta E}
-\newcommand{\Ham}{\hat{H}\hspace{-1.5pt}}
-\newcommand{\HamB}[1]{{}^{\left(#1\right)}\hspace{-2pt}\hat{H}\hspace{-2.5pt}}
-\newcommand{\EHam}{\xbar{H}\hspace{-2.5pt}}
+\newcommand{\Ham}{\hat{H}\hspace{-1pt}}
+\newcommand{\HamB}[1]{{}^{\left(#1\right)}\hspace{-2pt}\hat{H}\hspace{-2pt}}
+\newcommand{\EHam}{\xbar{H}\hspace{-2pt}}
 \newcommand{\HamN}{\hat{H}_{\mathrm{N}}}
 \newcommand{\EHamN}{\xbar{H}_{\hspace{-0.75ex}\mathrm{N}}}
-\newcommand{\EOp}{\xbar{O}\hspace{-2.5pt}}
+\newcommand{\EOp}{\xbar{O}\hspace{-2pt}}
 \newcommand{\Top}{\hat{T}\hspace{-2pt}}
 \newcommand{\Vop}{\hat{V}\hspace{-2pt}}
 \newcommand{\Wop}{\hat{W}\hspace{-2pt}}
@@ -62,13 +62,14 @@
 \newcommand{\Vt}{\tilde{V}\hspace{-2pt}}
 \newcommand{\Res}{\hat{R}_{0}\hspace{-2pt}}
 
+\newcommand{\Ref}{\Phi_{0}}
 \newcommand{\statebra}[2]{\bra{\Phi^{#1}_{#2}}}
 \newcommand{\stateket}[2]{\ket{\Phi^{#1}_{#2}}}
 \newcommand{\vacket}{\ket{0}}
-\newcommand{\refket}{\ket{\Phi}}
+\newcommand{\refket}{\ket{\Ref}}
 \newcommand{\corrket}{\ket{\Psi}}
 \newcommand{\vacbra}{\bra{0}}
-\newcommand{\refbra}{\bra{\Phi}}
+\newcommand{\refbra}{\bra{\Ref}}
 \newcommand{\corrbra}{\bra{\Psi}}
 
 \newcommand{\ph}[2]{#1p\hspace{2pt}\text{-}#2h}
@@ -115,8 +116,8 @@
 \newcommand{\diagram}[1]{\hspace{1.15mm}\vcenter{\hbox{\includegraphics[height=\dheight]{diagrams/#1.pdf}}}\hspace{1.15mm}}
 \newcommand{\fdiagram}[1]{\hspace{-0.75mm}\vcenter{\hbox{\includegraphics[height=\dheight]{diagrams/#1.pdf}}}\hspace{1.15mm}}
 \newcommand{\ddiagram}[1]{\hspace{1.15mm}\vcenter{\hbox{\dbox{\includegraphics[height=\dheight]{diagrams/#1.pdf}}}}\hspace{1.15mm}}
-\newcommand{\sdiagram}[1]{\hspace{0.85mm}\vcenter{\hbox{\includegraphics[height=\sdheight]{diagrams/#1.pdf}}}\hspace{0.85mm}}
-\newcommand{\sddiagram}[1]{\hspace{0.85mm}\vcenter{\hbox{\dbox{\includegraphics[height=\sdheight]{diagrams/#1.pdf}}}}\hspace{0.85mm}}
+\newcommand{\sdiagram}[1]{\hspace{0.8mm}\vcenter{\hbox{\includegraphics[height=\sdheight]{diagrams/#1.pdf}}}\hspace{0.8mm}}
+\newcommand{\sddiagram}[1]{\hspace{0.8mm}\vcenter{\hbox{\dbox{\includegraphics[height=\sdheight]{diagrams/#1.pdf}}}}\hspace{0.8mm}}
 
 \newcommand{\dboxed}[1]{\dbox{\ensuremath{#1}}}
 

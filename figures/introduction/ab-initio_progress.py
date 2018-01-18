@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import MultipleLocator
 
-majorLocatorX = MultipleLocator(10)
+majorLocatorX = MultipleLocator(5)
 minorLocatorX = MultipleLocator(5)
 majorLocatorY = MultipleLocator(20)
 minorLocatorY = MultipleLocator(10)
@@ -52,10 +52,10 @@ fig, ax = plt.subplots()
 #ax.scatter(years, masses, 75, marker='o', color=(1.0,0.4,0), edgecolor='black', linewidth = 0.9)
 
 plt.scatter(years, masses, 75, marker='o', color=(1.0,0.4,0), edgecolor='black', linewidth = 0.9)
-plt.plot(x1, y1)
-plt.xlabel(r'Year', fontsize=15)
-plt.ylabel(r'Mass Number (A)', fontsize=15)
-plt.axis([1980, 2020, 0, 160])
+#plt.plot(x1, y1)
+plt.xlabel(r'$\mathrm{Year}$', fontsize=16)
+plt.ylabel(r'$\mathrm{Mass\ Number\ (A)}$', fontsize=16)
+plt.axis([1984, 2015, 0, 150])
 
 ax.xaxis.set_major_locator(majorLocatorX)
 ax.xaxis.set_minor_locator(minorLocatorX)
