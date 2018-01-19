@@ -88,4 +88,58 @@
   \sum_{F} \left[ B_{GT_{-}}^{I,F} - B_{GT_{-}}^{I,F} \right] = 3\left( N_{I} - Z_{I} \right)
 \end{gather}
 
+
+\section{Calculating Beta-Decay Matrix Elements}
+
+Fix these!!!!!!!
+\begin{equation}
+  \mathcal{M}_{\text{F}} \equiv \relement{\mathcal{F}}{\mathbf{\tau}}{\mathcal{I}} = \delta_{J_\mathcal{F}J_{\mathcal{I}}}\sum_{pq}\relement{p}{\mathbf{\hat{\tau}}}{q}\relement{\mathcal{F}}{\co{p}\ao{q}}{\mathcal{I}}
+\end{equation}
+\begin{equation}
+  \mathcal{M}_{\text{GT}} \equiv \relement{\mathcal{F}}{\mathbf{\sigma\tau}}{\mathcal{I}} = \sum_{pq}\relement{p}{\mathbf{\hat{\sigma}\hat{\tau}}}{q}\relement{\mathcal{F}}{\co{p}\ao{q}}{\mathcal{I}}
+\end{equation}
+
+\begin{equation}
+  \relement{p}{\mathbf{\hat{\tau}}}{q} = \delta_{n_{p}n_{q}}\delta_{l_{p}l_{q}}\delta_{j_{p}j_{q}}\delta_{t_{p}t_{q}\pm 1}\ \hat{j}_{p}
+\end{equation}
+\begin{equation}
+  \relement{p}{\mathbf{\hat{\sigma}\hat{\tau}}}{q} = \sqrt{6}\ \delta_{n_{p}n_{q}}\delta_{l_{p}l_{q}}\delta_{t_{p}t_{q}\pm 1}\ \hat{j}_{p}\hat{j}_{q}\mathop{(-1)^{l_{p}+j_{p}+\frac{3}{2}}}\sixj{\frac{1}{2}}{\frac{1}{2}}{1}{j_{q}}{j_{p}}{l_{p}}
+\end{equation}
+
+
+\begin{equation}
+  B_{\text{F}} \equiv \frac{g^{2}_{\text{V}}}{\hat{J}^{2}_{\mathcal{I}}}\lvert\mathcal{M}_{\text{F}}\rvert^{2}
+\end{equation}
+\begin{equation}
+  B_{\text{F}} = \frac{g^{2}_{\text{V}}}{\hat{J}^{2}_{\mathcal{I}}}\sum_{\mathcal{F}\mathcal{I}}\frac{\element{\Lop^{\mathcal{I}}}{\mathbf{\tau}}{\Rop^{\mathcal{F}}}\element{\Lop^{\mathcal{F}}}{\mathbf{\tau}}{\Rop^{\mathcal{I}}}}{\braket{J_{\mathcal{I}}M_{\mathcal{I}};\lambda-\mu}{J_{\mathcal{F}}M_{\mathcal{F}}}^{2}}
+\end{equation}
+
+
+\begin{equation}
+  B_{\text{GT}} \equiv \frac{g^{2}_{\text{A}}}{\hat{J}^{2}_{\mathcal{I}}}\lvert\mathcal{M}_{\text{GT}}\rvert^{2}
+\end{equation}
+\begin{equation}
+  B_{\text{GT}} = \frac{g^{2}_{\text{A}}}{\hat{J}^{2}_{\mathcal{I}}}\sum_{\mathcal{F}\mathcal{I}}\frac{\element{\Lop^{\mathcal{I}}}{\mathbf{\sigma\tau}}{\Rop^{\mathcal{F}}}\element{\Lop^{\mathcal{F}}}{\mathbf{\sigma\tau}}{\Rop^{\mathcal{I}}}}{\braket{J_{\mathcal{I}}M_{\mathcal{I}};\lambda-\mu}{J_{\mathcal{F}}M_{\mathcal{F}}}^{2}}
+\end{equation}
+
+
+\begin{gather}
+  B_{\beta^{-}} = \element{\Ref}{\Lop^{n}\mathop{(\mathbf{\hat{\beta^{-}}})^{\dagger}}\Rop^{p}}{\Ref}\element{\Ref}{\Lop^{p}\mathbf{\hat{\beta^{-}}}\Rop^{n}}{\Ref} \\
+  B_{\beta^{-}} = \element{\Ref}{\Lop_{p}\mathop{(\mathbf{\hat{\beta^{-}}})^{\dagger}}\Rop_{n}}{\Ref}\element{\Ref}{\Lop_{n}\mathbf{\hat{\beta^{-}}}\Rop_{p}}{\Ref} \\
+  B_{\beta^{-}} = \element{\Ref}{\Lop^{n}_{p}\mathop{(\mathbf{\hat{\beta^{-}}})^{\dagger}}\Rop_{0}}{\Ref}\element{\Ref}{\Lop_{0}\mathbf{\hat{\beta^{-}}}\Rop^{n}_{p}}{\Ref} \\
+  B_{\beta^{-}} = \element{\Ref}{\Lop_{0}\mathop{(\mathbf{\hat{\beta^{-}}})^{\dagger}}\Rop^{p}_{n}}{\Ref}\element{\Ref}{\Lop^{p}_{n}\mathbf{\hat{\beta^{-}}}\Rop_{0}}{\Ref}
+\end{gather}
+
+
+\begin{gather}
+  B_{\beta^{+}} = \element{\Ref}{\Lop^{p}\mathop{(\mathbf{\hat{\beta^{+}}})^{\dagger}}\Rop^{n}}{\Ref}\element{\Ref}{\Lop^{n}\mathbf{\hat{\beta^{+}}}\Rop^{p}}{\Ref} \\
+  B_{\beta^{+}} = \element{\Ref}{\Lop_{n}\mathop{(\mathbf{\hat{\beta^{+}}})^{\dagger}}\Rop_{p}}{\Ref}\element{\Ref}{\Lop_{p}\mathbf{\hat{\beta^{+}}}\Rop_{n}}{\Ref} \\
+  B_{\beta^{+}} = \element{\Ref}{\Lop^{p}_{n}\mathop{(\mathbf{\hat{\beta^{+}}})^{\dagger}}\Rop_{0}}{\Ref}\element{\Ref}{\Lop_{0}\mathbf{\hat{\beta^{+}}}\Rop^{p}_{n}}{\Ref} \\
+  B_{\beta^{+}} = \element{\Ref}{\Lop_{0}\mathop{(\mathbf{\hat{\beta^{+}}})^{\dagger}}\Rop^{n}_{p}}{\Ref}\element{\Ref}{\Lop^{n}_{p}\mathbf{\hat{\beta^{+}}}\Rop_{0}}{\Ref}
+\end{gather}
+
+
+Quenching \cite{HARDY2005,TOWNER2008,KUBODERA1978,OSET1979}
+
+
 \end{document}

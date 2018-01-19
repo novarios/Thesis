@@ -16,7 +16,7 @@ for the correlated wave function $\Psi_{\nu}\left(\mathbf{r}_{1},\cdots,\mathbf{
 \end{align}
 Regardless of the system, the one-body term contains the kinetic energy operator $\frac{-\hbar^{2}}{2m}\nabla^{2}_{i}$, while the higher-order terms result from inter-particle interactions.
 
-An intuitive way to formulate the solution to the many-body Schr\"{o}dinger equation is to express the collective wave function in terms of independent single-particle wave functions, or orbitals $\phi\left(\mathbf{r}\right)$.  In this \ittext{independent-particle model}, a selection of single-particle wave functions, known as the single-particle basis, are constructed by solving the Schr\"{o}dinger equation for a single particle in some mean-field potential, for bound systems, or in free space, for infinite systems.  Then a many-body wave function is constructed as a product of these single-particle orbits.  This simple model is justified because it becomes exact when inter-particle interactions are completely suppressed and is useful because it provides an intuitive way to interpret complicated m any-body dynamics as processes involving few single-particle wave functions.
+An intuitive way to formulate the solution to the many-body Schr\"{o}dinger equation is to express the collective wave function in terms of independent single-particle wave functions, or orbitals $\phi\left(\mathbf{r}\right)$.  In this \textit{independent-particle model}, a selection of single-particle wave functions, known as the single-particle basis, are constructed by solving the Schr\"{o}dinger equation for a single particle in some mean-field potential, for bound systems, or in free space, for infinite systems.  Then a many-body wave function is constructed as a product of these single-particle orbits.  This simple model is justified because it becomes exact when inter-particle interactions are completely suppressed and is useful because it provides an intuitive way to interpret complicated m any-body dynamics as processes involving few single-particle wave functions.
 
 A many-body wave function of fermions must be anti-symmetric with respect to particle exchange so that the Pauli exclusion principle is followed, such that no single-particle wave function is occupied by more than one fermion.  This condition is satisfied by a wave function in the form of a \textit{Slater determinant} \cite{SLATER1929},
 \begin{equation} \label{eq:slaterdeterminant}
@@ -82,7 +82,7 @@ This reference determinant defines a new \textit{Fermi vacuum}. States above the
 
 \begin{figure}
   \centering
-  \mbox{$\large \refket\ = $} \vcenter{\hbox{\includegraphics[height=4cm]{manybody/IPM.pdf}}}
+  \mbox{{\large $\refket\ =\ $}} $\vcenter{\hbox{\includegraphics[height=4cm]{manybody/IPM.pdf}}}$
   \caption{A depiction of the closed-shell reference state in the independent particle model.  Each horizontal line represents a shell of single-particle orbits, and the dotted line represents the Fermi level which separates \textit{particle} states from \textit{hole} states.}
   \label{fig:reference_state}
 \end{figure}
@@ -99,13 +99,13 @@ Any other Slater determinant can be constructed relative to this reference state
   \centering
   \begin{subfigure}{\textwidth}
     \centering
-    \ket{\Phi^{a}_{i}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/1p1h.pdf}}} \hspace{2cm} \ket{\Phi^{ab}_{ij}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/2p2h.pdf}}}
+    $\ket{\Phi^{a}_{i}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/1p1h.pdf}}} \hspace{2cm} \ket{\Phi^{ab}_{ij}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/2p2h.pdf}}}$
   \end{subfigure}
   \vspace{0.5cm}
   
   \begin{subfigure}{\textwidth}
     \centering
-    \ket{\Phi^{a}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/PA.pdf}}} \hspace{2cm} \ket{\Phi_{i}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/PR.pdf}}}
+    $\ket{\Phi^{a}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/PA.pdf}}} \hspace{2cm} \ket{\Phi_{i}}\ = \vcenter{\hbox{\includegraphics[height=3cm]{manybody/PR.pdf}}}$
   \end{subfigure}
   \caption{A depiction of $\ph{1}{1}$, $\ph{2}{2}$, $\ph{1}{0}$, and $\ph{0}{1}$ Slater determinants defined relative to the reference state in the independent particle model.}
   \label{fig:excitations}
@@ -144,19 +144,19 @@ Because contracted operators simply represent a Kronecker delta, they can be rem
 \end{equation}
 These different definitions for operator manipulation come together to define the time-independent Wick's theorem, which reformulates a product of operators as the sum of its normal-ordered form and all possible contractions of its normal-ordered form.
 \begin{equation} \label{eq:wick4}
-  \hat{A}\hat{B}\hat{C}\cdots\ &=\ \normord{\hat{A}\hat{B}\hat{C}\cdots}\
+  \hat{A}\hat{B}\hat{C}\cdots\ =\ \normord{\hat{A}\hat{B}\hat{C}\cdots}\
   +\ \sum_{\mathclap{\substack{\text{one-} \\ \text{contractions}}}}
   \contraction[1.0ex]{\{ }{\hat{A}}{\hat{B}\hat{C}}{\cdots}
   \{ \hat{A}\hat{B}\hat{C}\cdots \}\
-   +\ \sum_{\mathclap{\substack{\text{two-} \\ \text{contractions}}}}
-   \contraction[0.8ex]{\{ }{\hat{A}}{\hat{B}\hat{C}}{\cdots}
-   \contraction[1.2ex]{\{ \hat{A}}{\hat{B}}{\hat{C}\cdots}{}
-   \{ \hat{A}\hat{B}\hat{C}\cdots \}\
-   +\ \cdots\ +\ \sum_{\mathclap{\substack{\text{all-} \\ \text{contractions}}}}
-   \contraction[0.6ex]{\{ }{\hat{A}}{\hat{B}\hat{C}}{\cdots}
-   \contraction[1.0ex]{\{ \hat{A}}{\hat{B}}{\hat{C}\cdots}{\ }
-   \contraction[1.4ex]{\{ \hat{A}\hat{B}}{\hat{C}}{\cdots\ \ \ }{}
-   \{ \hat{A}\hat{B}\hat{C}\cdots\ \ \ \}
+  +\ \sum_{\mathclap{\substack{\text{two-} \\ \text{contractions}}}}
+  \contraction[0.8ex]{\{ }{\hat{A}}{\hat{B}\hat{C}}{\cdots}
+  \contraction[1.2ex]{\{ \hat{A}}{\hat{B}}{\hat{C}\cdots}{}
+  \{ \hat{A}\hat{B}\hat{C}\cdots \}\
+  +\ \cdots\ +\ \sum_{\mathclap{\substack{\text{all-} \\ \text{contractions}}}}
+  \contraction[0.6ex]{\{ }{\hat{A}}{\hat{B}\hat{C}}{\cdots}
+  \contraction[1.0ex]{\{ \hat{A}}{\hat{B}}{\hat{C}\cdots}{\ }
+  \contraction[1.4ex]{\{ \hat{A}\hat{B}}{\hat{C}}{\cdots\ \ \ }{}
+  \{ \hat{A}\hat{B}\hat{C}\cdots\ \ \ \}
 \end{equation}
 
 Wick's theorem is incredibly useful in many-body techniques because complicated expressions of operators can be expressed as diagrams that are easy to compute with simple diagrammatic rules which correspond to Eqs.\ \eqref{eq:anticommutation},\eqref{eq:wick2}, and \eqref{eq:wick3}.  These diagrammatic techniques are an integral component to deriving expressions used in this work, and their underlying rules are summarized in \ref{chapter:appendix_diagrams} and are extensively discussed in \cite{SHAVITT2009}.
@@ -358,12 +358,12 @@ The order of each term can be easily identified by counting the numbers of times
 
 A powerful application of diagrammatic techniques known as the \textit{factorization theorem} \cite{HUGENHOLTZ1957481,FRANTZ196016,BRANDOW1967} can immediately be used to simplify these expansions.  By factoring sums of \textit{disconnected} diagrams from the principle terms, where two or more parts of a diagram are not connected with any lines, it can be shown that they exactly cancel with the renormalization terms at each order.
 \begin{gather}
-  \diagram{MBPT/MBPT-figure21}\hspace{-0.3cm} + \hspace{-0.3cm}\diagram{MBPT/MBPT-figure22}\hspace{-0.3cm} = \hspace{-0.5cm}\diagram{MBPT/MBPT-figure23} \notag \\
+  \diagram{MBPT/MBPT-figure21}\hspace{-0.3cm} + \hspace{-0.3cm}\diagram{MBPT/MBPT-figure22}\hspace{-0.3cm} = \hspace{-0.5cm}\diagram{MBPT/MBPT-figure23} \notag \\[5ex]
   \frac{1}{16}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\frac{\vint{ij}{ab}\vint{ab}{ij}\vint{kl}{cd}\vint{cd}{kl}}{\Edenom{ab}{ij}\Edenom{abcd}{ijkl}\Edenom{cd}{kl}} + \frac{1}{16}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\frac{\vint{ij}{ab}\vint{ab}{ij}\vint{kl}{cd}\vint{cd}{kl}}{\Edenom{ab}{ij}\Edenom{abcd}{ijkl}\Edenom{ab}{ij}} = \frac{1}{16}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\vint{ij}{ab}\vint{ab}{ij}\vint{kl}{cd}\vint{cd}{kl}\frac{\Edenom{ab}{ij} + \Edenom{cd}{kl}}{\left(\Edenom{ab}{ij}\right)^{2}\Edenom{abcd}{ijkl}\Edenom{cd}{kl}} \notag \\
   = \frac{1}{4}\sum_{\mathclap{abij}}\frac{\vint{ij}{ab}\vint{ab}{ij}}{\left(\Edenom{ab}{ij}\right)^{2}}\cdot\frac{1}{4}\sum_{\mathclap{cdkl}}\frac{\vint{kl}{cd}\vint{cd}{kl}}{\Edenom{cd}{kl}} = \braket{\Psi^{(1)}_{n}}{\Psi^{(1)}_{n}}E^{(2)}_{n}
 \end{gather}
 \begin{gather}
-  \diagram{MBPT/MBPT-figure24}\hspace{-0.3cm} + \hspace{-0.3cm}\diagram{MBPT/MBPT-figure25}\hspace{-0.3cm} = \hspace{-0.65cm}\diagram{MBPT/MBPT-figure26} \notag \\
+  \diagram{MBPT/MBPT-figure24}\hspace{-0.3cm} + \hspace{-0.3cm}\diagram{MBPT/MBPT-figure25}\hspace{-0.3cm} = \hspace{-0.65cm}\diagram{MBPT/MBPT-figure26} \notag \\[5ex]
   \frac{1}{16}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\frac{\vint{ab}{ij}\vint{kl}{cd}\vint{cd}{kl}}{\Edenom{cd}{kl}\Edenom{abcd}{ijkl}\Edenom{ab}{ij}}\ket{\Phi^{ab}_{ij}} + \frac{1}{16}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\frac{\vint{ab}{ij}\vint{kl}{cd}\vint{cd}{kl}}{\Edenom{ab}{ij}\Edenom{abcd}{ijkl}\Edenom{ab}{ij}}\ket{\Phi^{ab}_{ij}} = \frac{1}{16}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\vint{ab}{ij}\vint{kl}{cd}\vint{cd}{kl}\frac{\Edenom{ab}{ij} + \Edenom{cd}{kl}}{\left(\Edenom{ab}{ij}\right)^{2}\Edenom{abcd}{ijkl}\Edenom{cd}{kl}}\ket{\Phi^{ab}_{ij}} \notag \\
   = \frac{1}{4}\sum_{\mathclap{abij}}\frac{\vint{ab}{ij}}{\left(\Edenom{ab}{ij}\right)^{2}}\ket{\Phi^{ab}_{ij}}\cdot\frac{1}{4}\sum_{\mathclap{cdkl}}\frac{\vint{kl}{cd}\vint{cd}{kl}}{\Edenom{cd}{kl}} = \frac{\ket{\Psi^{(1)}_{n}}}{\Edenom{}{n}}E^{(2)}_{n}
 \end{gather}

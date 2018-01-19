@@ -101,17 +101,14 @@ where $\Edenom{}{}$ are the M\o ller--Plesset denominators from Eq.\ \eqref{eq:m
   \diagram{CCSD_1b/CCSD_1b-figure0} &= \ddiagram{CCSD_1b/CCSD_1b-figure1} + \diagram{CCSD_1b/CCSD_1b-figure2} \notag \\
   \xint{i}{a} &= \dboxed{\fint{i}{a}} + \sum\limits_{kc}\vint{ik}{ac}\tamp{c}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_1b/CCSD_1b-figure3} &= \diagram{CCSD_1b/CCSD_1b-figure4} + \diagram{CCSD_1b/CCSD_1b-figure5} + \diagram{CCSD_1b/CCSD_1b-figure6} + \diagram{CCSD_1b/CCSD_1b-figure7} \notag \\
   \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\tamp{ac}{kl} + \sum\limits_{kc}\vint{ka}{cb}\tamp{c}{k} - \sum\limits_{k}\xint{k}{b}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_1b/CCSD_1b-figure8} &= \diagram{CCSD_1b/CCSD_1b-figure9} + \diagram{CCSD_1b/CCSD_1b-figure10} + \diagram{CCSD_1b/CCSD_1b-figure11} \notag \\
   \xxint{i}{j} &= \fint{i}{j} + \frac{1}{2}\sum\limits_{kcd}\vint{ik}{cd}\tamp{cd}{jk} + \sum\limits_{kc}\vint{ik}{jc}\tamp{c}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_1b/CCSD_1b-figure12} &= \diagram{CCSD_1b/CCSD_1b-figure13} + \diagram{CCSD_1b/CCSD_1b-figure14} \notag \\
   \xint{i}{j} &= \xxint{i}{j} + \sum\limits_{c}\xint{i}{c}\tamp{c}{j}
@@ -132,74 +129,60 @@ where $\Edenom{}{}$ are the M\o ller--Plesset denominators from Eq.\ \eqref{eq:m
   \diagram{CCSD_2b/CCSD_2b-figure0} &= \diagram{CCSD_2b/CCSD_2b-figure1} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure2} \notag \\
   \xxint{ia}{bc} &= \vint{ia}{bc} - \frac{1}{2}\sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure3} &= \diagram{CCSD_2b/CCSD_2b-figure4} + \diagram{CCSD_2b/CCSD_2b-figure5} \notag \\
   \xint{ia}{bc} &= \vint{ia}{bc} - \sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure6} &= \diagram{CCSD_2b/CCSD_2b-figure7} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure8} \notag \\
   \xxint{ij}{ka} &= \vint{ij}{ka} + \frac{1}{2}\sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure9} &= \diagram{CCSD_2b/CCSD_2b-figure10} + \diagram{CCSD_2b/CCSD_2b-figure11} \notag \\
   \xint{ij}{ka} &= \vint{ij}{ka} + \sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure12} &= \diagram{CCSD_2b/CCSD_2b-figure13} + \diagram{CCSD_2b/CCSD_2b-figure14} \notag \\
   \xxint{ab}{cd} &= \vint{ab}{cd} - \Perm{ab}\sum\limits_{k}\xxint{kb}{cd}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure15} &= \diagram{CCSD_2b/CCSD_2b-figure16} + \diagram{CCSD_2b/CCSD_2b-figure17} \notag \\
   \xint{ab}{cd} &= \xxint{ab}{cd} + \frac{1}{2}\sum\limits_{kl}\vint{kl}{cd}\tamp{ab}{kl}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure18} &= \diagram{CCSD_2b/CCSD_2b-figure19} + \diagram{CCSD_2b/CCSD_2b-figure20} + \diagram{CCSD_2b/CCSD_2b-figure21} \notag \\
   \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\sum\limits_{cd}\vint{ij}{cd}\tamp{cd}{kl} + \Perm{kl}\sum\limits_{c}\xxint{ij}{kc}\tamp{c}{l}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure22} &= \diagram{CCSD_2b/CCSD_2b-figure23} + \diagram{CCSD_2b/CCSD_2b-figure24} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure25} \notag \\
   \xxint{ia}{jb} &= \vint{ia}{jb} + \sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure26} &= \diagram{CCSD_2b/CCSD_2b-figure27} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure28} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure29} \notag \\
   \xxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure30} &= \diagram{CCSD_2b/CCSD_2b-figure31} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure32} + \diagram{CCSD_2b/CCSD_2b-figure33} \notag \\
   \xxxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j} - \sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure34} &= \diagram{CCSD_2b/CCSD_2b-figure35} + \left(\frac{1}{2}\hspace{-0.5mm}\right)\fdiagram{CCSD_2b/CCSD_2b-figure36} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure37} \notag \\
   \xint{ia}{jb} &= \xxxxint{ia}{jb} - \left(\frac{1}{2}\right)\sum\limits_{kc}\vint{ik}{cb}\tamp{ca}{jk} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure38} &= \diagram{CCSD_2b/CCSD_2b-figure39} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure40} + \diagram{CCSD_2b/CCSD_2b-figure41} \notag \\
   \xxint{ab}{ic} &= \vint{ab}{ic} + \frac{1}{2}\sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxxint{kb}{ic}\tamp{a}{k}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure42} &= \diagram{CCSD_2b/CCSD_2b-figure43} + \diagram{CCSD_2b/CCSD_2b-figure44} + \diagram{CCSD_2b/CCSD_2b-figure45} \notag \\
   &+ \diagram{CCSD_2b/CCSD_2b-figure46} + \diagram{CCSD_2b/CCSD_2b-figure47} + \diagram{CCSD_2b/CCSD_2b-figure48} \notag \\
   \xint{ab}{ic} &= \vint{ab}{ic} + \sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxint{kb}{ic}\tamp{a}{k} \notag \\
   &- \sum\limits_{k}\xint{k}{c}\tamp{ab}{ik} + \Perm{ab}\sum\limits_{kd}\xint{kb}{dc}\tamp{ad}{ik} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ic}\tamp{ab}{kl}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure49} &= \diagram{CCSD_2b/CCSD_2b-figure50} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure51} \notag \\
   \xxint{ia}{jk} &= \vint{ia}{jk} - \frac{1}{2}\sum\limits_{l}\vint{il}{jk}\tamp{a}{l}
 \end{align}
-
 \begin{align}
   \diagram{CCSD_2b/CCSD_2b-figure52} &= \diagram{CCSD_2b/CCSD_2b-figure53} + \diagram{CCSD_2b/CCSD_2b-figure54} + \diagram{CCSD_2b/CCSD_2b-figure55} \notag \\
   &+ \diagram{CCSD_2b/CCSD_2b-figure56} + \diagram{CCSD_2b/CCSD_2b-figure57} + \diagram{CCSD_2b/CCSD_2b-figure58} \notag \\
@@ -254,16 +237,23 @@ A sum over all the time orderings between a pair of disconnected diagrams is equ
 
 \section{Example: Pairing Model} \label{section:pairingmodel}
 
-It's beneficial to illustrate a simplified example of coupled cluster theory. For this purpose, we turn our attention to the simple pairing model Hamiltonian,
+It's beneficial to illustrate a simplified example of coupled cluster theory.  For this purpose, we turn our attention to the simple pairing model.  This pairing model will use a model space of $N$ shells, each with two opposite spin orbitals.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.35\linewidth]{CC/Pairing_Space.pdf}
+  \caption{Correlation energy for the pairing model with exact diagonalization, MBPT2 and perturbation theory to third order MBPT3 for a range of interaction values. A canonical Hartree-Fock basis has been employed in all MBPT calculations.}
+  \label{fig:pairing_space}
+\end{figure}
+With a closed-shell reference states, the Hamiltonian is restricted to interact only between unbroken pairs, which can be written as,
 \begin{equation} \label{eq:sppairing}
-  \hat{H}_0 = \delta \sum_{p \sigma} (p-1) a^{\dagger}_{p \sigma} a_{p \sigma}
+  \HamB{1} = \delta \sum_{pm_{p}} \mathop{(p-1)} \co{p_{m_{p}}}\ao{p_{m_{p}}}
 \end{equation}
 \begin{equation} \label{eq:intpairing}
-  \hat{V} = -\frac{1}{2}g \sum_{pq} a^{\dagger}_{p+}a^{\dagger}_{p-}a_{q-}a_{q+}
+  \HamB{2} = -\frac{1}{2}g \sum_{pq} \co{p_{+}}\co{p_{-}}\ao{q_{-}}\ao{q_{+}}
 \end{equation}
 which represents a basic pairing model with $p$ levels, each having a spin degeneracy of 2. The form of the coupled cluster equations uses single-particle states that are eigenstates of the Hartree-Fock operator, $\left(\hat{u}+\hat{u}_{\text{HF}}\right)\vert p\rangle=\epsilon_{p}\vert p\rangle$. In the pairing model, this condition is already fulfilled. All we have to do is define the lowest $N_{\mathrm{\mathrm{Fermi}}}$ states as holes and compute the Hartree-Fock energies,
 \begin{equation}\label{eq:pairingsp}
-  \epsilon_q = h_{qq} + \sum_{i} \braket{qi|\hat{v}|qi}.
+  \varepsilon_{p_{m_{p}}} = \Hint{1}{p_{m_{p}}}{p_{m_{p}}} + \sum_{i_{m_{i}}}\Hint{2}{p_{m_{p}}i_{m_{i}}}{p_{m_{p}}i_{m_{i}}}
 \end{equation}
 To be more specific, let us look at the pairing model with four particles and eight single-particle states. These states (with $\delta =1.0$) could be labeled as shown in Table \ref{tab:pairingmodelsp}.
 \begin{table}
@@ -310,14 +300,8 @@ which translates into
 \]
 This expression can be used to check the results
 for any value of $g$ and provides thereby an important test of  our codes.
-Figure \ref{fig:diagpairing} shows the resulting correlation energies for the exact case, MBPT2 and MBPT3.
-\begin{figure}
-  \includegraphics[width=\linewidth]{Chapter8-figures/perturbationtheory.pdf}
-  \caption{Correlation energy for the pairing model with exact diagonalization, MBPT2 and perturbation theory to third order MBPT3 for a range of interaction values. A canonical Hartree-Fock basis has been employed in all MBPT calculations.}
-  \label{fig:diagpairing}
-\end{figure}
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{CC/pairingmatrix.pdf}
   \caption{ab-initio progress blah blah blah}
@@ -328,6 +312,12 @@ Figure \ref{fig:diagpairing} shows the resulting correlation energies for the ex
 \section{Example: Infinite Matter} \label{section:infinitematter}
 
 Infinite nuclear or neutron matter is a homogeneous system and the one-particle wave functions are given by plane wave functions normalized to a volume $\Omega$ for a box with length $L$ (the limit $L\rightarrow \infty$ is to be taken after we have computed various expectation values)
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\linewidth]{CC/Infinite_Space.pdf}
+  \caption{Correlation energy for the pairing model with exact diagonalization, MBPT2 and perturbation theory to third order MBPT3 for a range of interaction values. A canonical Hartree-Fock basis has been employed in all MBPT calculations.}
+  \label{fig:infinite_space}
+\end{figure}
 \[
 \psi_{\mathbf{k}\sigma}(\mathbf{r})=
 \frac{1}{\sqrt{\Omega}}\exp{(i\mathbf{kr})}\xi_{\sigma}
@@ -677,39 +667,17 @@ while the potential energy to first order (corresponding to the Hartree-Fock con
 \[
 \text{HF}_{\text{inf}}=\frac{1}{\mathop{(2\pi)^{6}}}\frac{L^{3}}{2\rho}\int_{0}^{k_{f}}d\vec{k}_{1}\int_{0}^{k_{f}}d\vec{k}_{2}\braket{\vec{k}_{1}\vec{k}_{2}|\hat{v}|\vec{k}_{1}\vec{k}_{2}}.
 \]
-Figure \ref{fig:fig3} shows the CCD kinetic energy of pure neutron
-      matter computed with the Minnesota interaction model  \cite{minnesota} as a function of
-      the number of particles for both periodic boundary conditions (PBC)
-      and twist-averaged boundary conditions (TABC5). We see clearly that the 
-twist-averaged boundary conditions soften the dependence on finite size effects. 
-  \begin{figure}
-    \includegraphics[width=\linewidth]{Chapter8-figures/fig3.pdf}
-    \caption{Finite-size effects in the kinetic energy of pure neutron
-      matter computed with the Minnesota interaction model  \cite{minnesota} as a function of
-      the number of particles for both periodic boundary conditions (PBC)
-      and twist-averaged boundary conditions (TABC5).}
-    \label{fig:fig3}
-  \end{figure}
-Similarly, Fig.~\ref{fig:fig4} displays the corresponding Hartree-Fock energy (the reference energy) 
-obtained with Minnesota interaction using both periodic and twist-average boundary conditions.  
-  \begin{figure}
-    \includegraphics[width=\linewidth]{Chapter8-figures/fig4.pdf}
-    \caption{Finite-size effects in the Hartree-Fock energy of pure
-      neutron matter computed with the Minnesota interaction model  \cite{minnesota} as a
-      function of the number of particles for both periodic boundary (PBC)
-      conditions and twist-averaged boundary conditions (TABC5).}
-    \label{fig:fig4}
-  \end{figure}
-The results show again a weaker dependence on finite size effects.
+
 
 With all these ingredients, we can now compute the final CCD energy and thereby the equation of state for infinite neutron matter.
 Figure \ref{fig:finalccdenergy} displays the total CCD energy (including the reference energy) as well as the reference energy
 obtained with the Minnesota interaction model. The computations have been performed with $N=66$ neutrons and a maximum number of single-particle states constrained by $N_{max}=36$. This corresponds to $2377$ single-particle states. 
-  \begin{figure}
-    \includegraphics[width=\linewidth]{Chapter8-figures/finalccenergy.pdf}
-    \caption{Energy per particle for pure neutron matter as function of density from coupled cluster calculations with doubles correlations  only. The reference energy is included for comparison. The results have been obtained with Minnesota interaction model using periodic  boundary conditions and $N=66$ neutrons and single-particle states up to $N_{max}=36$, resulting in a total of $2377$ single-particle states. }  
-    \label{fig:finalccdenergy}
-  \end{figure}
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{CC/Electronic_Gas.pdf}
+  \caption{Energy per particle for pure neutron matter as function of density from coupled cluster calculations with doubles correlations  only. The reference energy is included for comparison. The results have been obtained with Minnesota interaction model using periodic  boundary conditions and $N=66$ neutrons and single-particle states up to $N_{max}=36$, resulting in a total of $2377$ single-particle states. }  
+  \label{fig:Electronic_Gas}
+\end{figure}
+
 We see from this figure that the correlations brought by coupled cluster theory are at the order of $10\%$ roughly of the reference energy. It means that for this system (neutrons only) with the Minnesota potential, higher-order correlations can most likely be treated in a perturbative way. Many-body perturbation theory to second order gives results which are very close to our CCD results, as seen in 
 Table \ref{tab:ecomparison}.
 \begin{table}
@@ -742,5 +710,12 @@ larger differences between
 different methods and interactions.  In chapters 9, 10 and 11 we compare the above results with 
 those obtained with Monte Carlo methods, the in-medium renormalization group approach and Green's function theory.
 
+
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{CC/fig-gs2.pdf}
+  \caption{Energy per particle for pure neutron matter as function of density from coupled cluster calculations with doubles correlations  only. The reference energy is included for comparison. The results have been obtained with Minnesota interaction model using periodic  boundary conditions and $N=66$ neutrons and single-particle states up to $N_{max}=36$, resulting in a total of $2377$ single-particle states. }  
+  \label{fig:Electronic_Gas}
+\end{figure}
 
 \end{document}

@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.88"
-     inkscape:cx="200.27356"
+     inkscape:cx="113.83739"
      inkscape:cy="156.02823"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -262,7 +262,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -379,6 +379,6 @@
          style="font-size:27.5px"><flowSpan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;font-family:'Lobster Two';-inkscape-font-specification:'Lobster Two'"
            id="flowSpan4407">E </flowSpan><flowSpan
-           style="font-size:22.5px;baseline-shift:sub"
+           style="font-size:22.5px;baseline-shift:sub;-inkscape-font-specification:serif;font-family:serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
            id="flowSpan4405">F</flowSpan></flowPara></flowRoot>  </g>
 </svg>
