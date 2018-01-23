@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.45"
-     inkscape:cx="181.80938"
-     inkscape:cy="158.07486"
+     inkscape:cx="121.40122"
+     inkscape:cy="125.4218"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -631,7 +631,7 @@
        xml:space="preserve"
        id="flowRoot8829-7"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(47.588402,755.47919)"><flowRegion
+       transform="translate(51.888504,755.47919)"><flowRegion
          id="flowRegion8831-5"><rect
            id="rect8833-3"
            width="56.716557"
@@ -639,13 +639,11 @@
            x="43.085106"
            y="271.8085" /></flowRegion><flowPara
          id="flowPara8835-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:serif;-inkscape-font-specification:serif">m<flowSpan
-   style="font-size:64.99999762%;baseline-shift:sub"
-   id="flowSpan4468">s</flowSpan>=-1/2</flowPara></flowRoot>    <flowRoot
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:serif;-inkscape-font-specification:serif">σ=-1/2</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot8829-7-6"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(111.40822,755.47919)"><flowRegion
+       transform="translate(114.9085,755.47919)"><flowRegion
          id="flowRegion8831-5-2"><rect
            id="rect8833-3-9"
            width="59.682663"
@@ -653,9 +651,7 @@
            x="43.085106"
            y="271.8085" /></flowRegion><flowPara
          id="flowPara8835-5-1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:serif;-inkscape-font-specification:serif">m<flowSpan
-   style="font-size:64.99999762%;baseline-shift:sub"
-   id="flowSpan4468-2">s</flowSpan>=+1/2</flowPara></flowRoot>    <flowRoot
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:serif;-inkscape-font-specification:serif">σ=+1/2</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot8829-7-7"
        style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

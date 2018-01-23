@@ -2,6 +2,151 @@
 
 \begin{document}
 
+\begin{align} \label{eq:eff1}
+  \diagram{CCSD_1b/CCSD_1b-figure0} &= \ddiagram{CCSD_1b/CCSD_1b-figure1} + \diagram{CCSD_1b/CCSD_1b-figure2} \notag \\
+  \xint{i}{a} &= \dboxed{\fint{i}{a}} + \sum\limits_{kc}\vint{ik}{ac}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff2}
+  \diagram{CCSD_1b/CCSD_1b-figure3} &= \diagram{CCSD_1b/CCSD_1b-figure4} + \diagram{CCSD_1b/CCSD_1b-figure5} + \diagram{CCSD_1b/CCSD_1b-figure6} + \diagram{CCSD_1b/CCSD_1b-figure7} \notag \\
+  \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\tamp{ac}{kl} + \sum\limits_{kc}\vint{ka}{cb}\tamp{c}{k} - \sum\limits_{k}\xint{k}{b}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff3}
+  \diagram{CCSD_1b/CCSD_1b-figure8} &= \diagram{CCSD_1b/CCSD_1b-figure9} + \diagram{CCSD_1b/CCSD_1b-figure10} + \diagram{CCSD_1b/CCSD_1b-figure11} \notag \\
+  \xxint{i}{j} &= \fint{i}{j} + \frac{1}{2}\sum\limits_{kcd}\vint{ik}{cd}\tamp{cd}{jk} + \sum\limits_{kc}\vint{ik}{jc}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff4}
+  \diagram{CCSD_1b/CCSD_1b-figure12} &= \diagram{CCSD_1b/CCSD_1b-figure13} + \diagram{CCSD_1b/CCSD_1b-figure14} \notag \\
+  \xint{i}{j} &= \xxint{i}{j} + \sum\limits_{c}\xint{i}{c}\tamp{c}{j}
+\end{align}
+\begin{align} \label{eq:eff5}
+  \diagram{CCSD_2b/CCSD_2b-figure0} &= \diagram{CCSD_2b/CCSD_2b-figure1} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure2} \notag \\
+  \xxint{ia}{bc} &= \vint{ia}{bc} - \frac{1}{2}\sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff6}
+  \diagram{CCSD_2b/CCSD_2b-figure3} &= \diagram{CCSD_2b/CCSD_2b-figure4} + \diagram{CCSD_2b/CCSD_2b-figure5} \notag \\
+  \xint{ia}{bc} &= \vint{ia}{bc} - \sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff7}
+  \diagram{CCSD_2b/CCSD_2b-figure6} &= \diagram{CCSD_2b/CCSD_2b-figure7} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure8} \notag \\
+  \xxint{ij}{ka} &= \vint{ij}{ka} + \frac{1}{2}\sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff8}
+  \diagram{CCSD_2b/CCSD_2b-figure9} &= \diagram{CCSD_2b/CCSD_2b-figure10} + \diagram{CCSD_2b/CCSD_2b-figure11} \notag \\
+  \xint{ij}{ka} &= \vint{ij}{ka} + \sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff9}
+  \diagram{CCSD_2b/CCSD_2b-figure12} &= \diagram{CCSD_2b/CCSD_2b-figure13} + \diagram{CCSD_2b/CCSD_2b-figure14} \notag \\
+  \xxint{ab}{cd} &= \vint{ab}{cd} - \Perm{ab}\sum\limits_{k}\xxint{kb}{cd}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff10}
+  \diagram{CCSD_2b/CCSD_2b-figure15} &= \diagram{CCSD_2b/CCSD_2b-figure16} + \diagram{CCSD_2b/CCSD_2b-figure17} \notag \\
+  \xint{ab}{cd} &= \xxint{ab}{cd} + \frac{1}{2}\sum\limits_{kl}\vint{kl}{cd}\tamp{ab}{kl}
+\end{align}
+\begin{align} \label{eq:eff11}
+  \diagram{CCSD_2b/CCSD_2b-figure18} &= \diagram{CCSD_2b/CCSD_2b-figure19} + \diagram{CCSD_2b/CCSD_2b-figure20} + \diagram{CCSD_2b/CCSD_2b-figure21} \notag \\
+  \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\sum\limits_{cd}\vint{ij}{cd}\tamp{cd}{kl} + \Perm{kl}\sum\limits_{c}\xxint{ij}{kc}\tamp{c}{l}
+\end{align}
+\begin{align} \label{eq:eff12}
+  \diagram{CCSD_2b/CCSD_2b-figure22} &= \diagram{CCSD_2b/CCSD_2b-figure23} + \diagram{CCSD_2b/CCSD_2b-figure24} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure25} \notag \\
+  \xxint{ia}{jb} &= \vint{ia}{jb} + \sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff13}
+  \diagram{CCSD_2b/CCSD_2b-figure26} &= \diagram{CCSD_2b/CCSD_2b-figure27} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure28} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure29} \notag \\
+  \xxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff14}
+  \diagram{CCSD_2b/CCSD_2b-figure30} &= \diagram{CCSD_2b/CCSD_2b-figure31} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure32} + \diagram{CCSD_2b/CCSD_2b-figure33} \notag \\
+  \xxxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j} - \sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff15}
+  \diagram{CCSD_2b/CCSD_2b-figure34} &= \diagram{CCSD_2b/CCSD_2b-figure35} + \left(\frac{1}{2}\hspace{-0.5mm}\right)\fdiagram{CCSD_2b/CCSD_2b-figure36} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure37} \notag \\
+  \xint{ia}{jb} &= \xxxxint{ia}{jb} - \left(\frac{1}{2}\right)\sum\limits_{kc}\vint{ik}{cb}\tamp{ca}{jk} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j}
+\end{align}
+\begin{align} \label{eq:eff16}
+  \diagram{CCSD_2b/CCSD_2b-figure38} &= \diagram{CCSD_2b/CCSD_2b-figure39} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure40} + \diagram{CCSD_2b/CCSD_2b-figure41} \notag \\
+  \xxint{ab}{ic} &= \vint{ab}{ic} + \frac{1}{2}\sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxxint{kb}{ic}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff17}
+  \diagram{CCSD_2b/CCSD_2b-figure42} &= \diagram{CCSD_2b/CCSD_2b-figure43} + \diagram{CCSD_2b/CCSD_2b-figure44} + \diagram{CCSD_2b/CCSD_2b-figure45} \notag \\[-1.5ex]
+  &+ \diagram{CCSD_2b/CCSD_2b-figure46} + \diagram{CCSD_2b/CCSD_2b-figure47} + \diagram{CCSD_2b/CCSD_2b-figure48} \notag \\
+  \xint{ab}{ic} &= \vint{ab}{ic} + \sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxint{kb}{ic}\tamp{a}{k} \notag \\
+  &- \sum\limits_{k}\xint{k}{c}\tamp{ab}{ik} + \Perm{ab}\sum\limits_{kd}\xint{kb}{dc}\tamp{ad}{ik} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ic}\tamp{ab}{kl}
+\end{align}
+\begin{align} \label{eq:eff18}
+  \diagram{CCSD_2b/CCSD_2b-figure49} &= \diagram{CCSD_2b/CCSD_2b-figure50} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure51} \notag \\
+  \xxint{ia}{jk} &= \vint{ia}{jk} - \frac{1}{2}\sum\limits_{l}\vint{il}{jk}\tamp{a}{l}
+\end{align}
+\begin{align} \label{eq:eff19}
+  \diagram{CCSD_2b/CCSD_2b-figure52} &= \diagram{CCSD_2b/CCSD_2b-figure53} + \diagram{CCSD_2b/CCSD_2b-figure54} + \diagram{CCSD_2b/CCSD_2b-figure55} \notag \\[-1.5ex]
+  &+ \diagram{CCSD_2b/CCSD_2b-figure56} + \diagram{CCSD_2b/CCSD_2b-figure57} + \diagram{CCSD_2b/CCSD_2b-figure58} \notag \\
+  \xint{ia}{jk} &= \vint{ia}{jk} - \sum\limits_{l}\vint{il}{jk}\tamp{a}{l} + \Perm{jk}\sum\limits_{c}\xxxxint{ia}{jc}\tamp{c}{k} \notag \\
+  &+ \Perm{jk}\sum\limits_{lc}\xint{il}{jc}\tamp{ca}{lk} + \frac{1}{2}\sum\limits_{cd}\xint{ia}{cd}\tamp{cd}{jk} + \sum\limits_{c}\xint{i}{c}\tamp{ca}{jk}
+\end{align}
+
+\begin{align} \label{eq:singles_linear}
+  \diagram{CCSD_1b/CCSD_1b-figure15} = 0 &= \ddiagram{CCSD_1b/CCSD_1b-figure16} + \diagram{CCSD_1b/CCSD_1b-figure17} + \diagram{CCSD_1b/CCSD_1b-figure18} + \diagram{CCSD_1b/CCSD_1b-figure19} \notag \\[-1.5ex]
+  &+ \diagram{CCSD_1b/CCSD_1b-figure20} + \diagram{CCSD_1b/CCSD_1b-figure21} + \diagram{CCSD_1b/CCSD_1b-figure22} \notag \\
+  \xint{a}{i} = 0 &= \dboxed{\fint{a}{i}} + \sum\limits_{\mathclap{c}}\xint{a}{c}\tamp{c}{i} - \sum\limits_{\mathclap{k}}\xxint{k}{i}\tamp{a}{k} + \sum\limits_{\mathclap{kc}}\vint{ka}{ci}\tamp{c}{k} \notag \\
+  &+ \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{cd}{ki} - \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{ac}{kl} + \sum\limits_{\mathclap{kc}}\xint{k}{c}\tamp{ac}{ik}
+\end{align}
+
+\begin{align} \label{eq:double_linear}
+  \diagram{CCSD_2b/CCSD_2b-figure59} = 0 &= \diagram{CCSD_2b/CCSD_2b-figure60} + \diagram{CCSD_2b/CCSD_2b-figure61} + \diagram{CCSD_2b/CCSD_2b-figure62} \notag \\[-1.5ex]
+  &\hspace{-100pt}+ \diagram{CCSD_2b/CCSD_2b-figure63} + \diagram{CCSD_2b/CCSD_2b-figure64} + \diagram{CCSD_2b/CCSD_2b-figure65} + \diagram{CCSD_2b/CCSD_2b-figure66} + \diagram{CCSD_2b/CCSD_2b-figure67} \notag \\
+  \xint{ab}{ij} = 0 &= \vint{ab}{ij} + \Perm{ab}\sum\limits_{\mathclap{c}}\xint{a}{c}\tamp{cb}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\xint{k}{i}\tamp{ab}{kj} \notag \\
+  &\hspace{-100pt}+ \frac{1}{2}\sum\limits_{\mathclap{cd}}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\xint{kl}{ij}\tamp{ab}{kl} - \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\xint{kb}{ic}\tamp{ac}{kj} - \Perm{ab}\sum\limits_{\mathclap{k}}\xxint{kb}{ij}\tamp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\xxint{ab}{ic}\tamp{c}{j}
+\end{align}
+
+
+\begin{equation}
+  E\left( \Top, \Lop \right) = \refbra\Lop \E^{-\Top} \Ham \E^{\Top}\refket = \refbra\Lop \EHam\refket
+\end{equation}
+\begin{equation}
+  \Lop \equiv \lamp{}{0} + \Lop_{1} + \Lop_{2} + \cdots + \Lop_{N}
+\end{equation}
+\begin{equation}
+  \Lop_{k} \equiv \left(\frac{1}{k!}\right)^2 \sum_{\substack{a_1 \ldots a_k \\ i_1 \ldots i_k}} \lamp{i_1 \ldots i_k}{a_1 \ldots a_k}\normord{\hat{i}_{1}^\dagger \ldots \hat{i}_{k}^\dagger \hat{a}_{k}^{} \ldots \hat{a}_{1}^{}},
+\end{equation}
+\begin{align}
+  \refbra \Lop\left[ \EHam, \normord{\hat{a}^{\dagger}\hat{i}^{}} \right] \refket &= 0, \\
+  \refbra \Lop\left[ \EHam, \normord{\hat{a}^{\dagger}\hat{b}^{\dagger}\hat{j}^{}\hat{i}^{}} \right] \refket &= 0. \notag
+\end{align}
+\begin{align}
+  \refbra \Lop\EHam \stateket{a}{i} &= \omega\refbra \Lop \stateket{a}{i}, \\
+  \refbra \Lop\EHam \stateket{ab}{ij} &= \omega\refbra \Lop \stateket{ab}{ij}. \notag
+\end{align}
+\begin{align}
+  \Delta E_{CCSD} &= \diagram{CCSD_dE/CCSD_dE-figure0} + \diagram{CCSD_dE/CCSD_dE-figure1} + \ddiagram{CCSD_dE/CCSD_dE-figure2} \notag \\
+  &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{cd}_{kl} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{c}_{k}t^{d}_{l} + \dboxed{\sum\limits_{\mathclap{kc}}f^{k}_{c}t^{c}_{k}}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  0 &= \diagram{CCSD_L1/CCSD_L1-figure0} + \diagram{CCSD_L1/CCSD_L1-figure1} + \diagram{CCSD_L1/CCSD_L1-figure2} + \diagram{CCSD_L1/CCSD_L1-figure3} + \diagram{CCSD_L1/CCSD_L1-figure4} \notag \\
+  &+ \diagram{CCSD_L1/CCSD_L1-figure5} + \diagram{CCSD_L1/CCSD_L1-figure6} + \diagram{CCSD_L1/CCSD_L1-figure7} \notag \\
+  &= \xint{i}{a} + \sum\limits_{c}\lamp{i}{c}\xint{c}{a} - \sum\limits_{k}\lamp{k}{a}\xint{i}{k} + \sum\limits_{kc}\lamp{k}{c}\xint{ic}{ak} + \frac{1}{2}\sum\limits_{kcd}\lamp{ik}{cd}\xint{cd}{ak} \notag \\
+  &- \frac{1}{2}\sum\limits_{klc}\lamp{kl}{ac}\xint{ic}{kl} - \frac{1}{2}\sum\limits_{jklcd}\lamp{jl}{cd}\xint{ik}{aj}\tamp{cd}{kl} + \frac{1}{2}\sum\limits_{klbcd}\lamp{kl}{bc}\xint{ic}{ad}\tamp{bd}{kl}
+\end{align}
+
+%-----------------
+
+\begin{align}
+  0 &= \diagram{CCSD_L2/CCSD_L2-figure0} + \diagram{CCSD_L2/CCSD_L2-figure1} + \diagram{CCSD_L2/CCSD_L2-figure2} + \diagram{CCSD_L2/CCSD_L2-figure3} \notag \\
+  &+ \diagram{CCSD_L2/CCSD_L2-figure4} + \diagram{CCSD_L2/CCSD_L2-figure5} + \diagram{CCSD_L2/CCSD_L2-figure6} + \diagram{CCSD_L2/CCSD_L2-figure7} \notag \\
+  &+ \diagram{CCSD_L2/CCSD_L2-figure8} + \diagram{CCSD_L2/CCSD_L2-figure9} + \diagram{CCSD_L2/CCSD_L2-figure10} \notag \\
+  &= \vint{ij}{ab} + \Perm{ab|ij}\lamp{i}{a}\xint{j}{b} - \Perm{ab}\sum\limits_{\mathclap{k}}\lamp{k}{a}\xint{ij}{kb} + \Perm{ij}\sum\limits_{\mathclap{c}}\lamp{i}{c}\xint{cj}{ab} \notag \\
+  &+ \Perm{ab}\sum\limits_{\mathclap{c}}\lamp{ij}{ac}\xint{c}{b} - \Perm{ij}\sum\limits_{\mathclap{k}}\lamp{ik}{ab}\xint{j}{k} + \frac{1}{2}\sum\limits_{\mathclap{cd}}\lamp{ij}{cd}\xint{cd}{ab} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\lamp{kl}{ab}\xint{ij}{kl} \notag \\
+  &- \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\lamp{kj}{ac}\xint{ic}{kb} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{kl}{ad}\vint{ij}{cb}\tamp{cd}{kl} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{il}{cd}\vint{kj}{ab}\tamp{cd}{kl}
+\end{align}
+
+
 \chapter{Diagrammatic Rules} \label{chapter:appendix_diagrams}
 
 \chapter{Angular Momentum Coupling}
@@ -142,7 +287,7 @@ The following diagrams represent the different contributions to the CCSD cluster
 
 
 
-\chapter{Computational Implementation}
+\chapter{Computational Implementation} \label{chapter:appendix_computational}
 
 The sums involved in building the CC effective Hamiltonian, solving the CC equations, solving the EOM-CC equations, and building effective operators can all be reformulated as matrix-matrix multiplications and thus performed with efficient LAPACK and BLAS routines.  To take advantage of this efficiency, the various cluster amplitudes and matrix elements must be grouped into structures with similar index structure.  An additional benefit to these structures is that angular-momentum-coupling coefficients are automatically removed by summing over Clebsch-Gordon coefficients ($\sum_{m_{1}m_{2}}C^{j_{1}j_{2}J}_{m_{1}m_{2}M}C^{j_{1}j_{2}J'}_{m_{1}m_{2}M'}=\delta_{JJ'}\delta_{MM'}$).
 

@@ -227,16 +227,16 @@ Because this expression is Hermitian, both terms must vanish independently so th
   \refbra\Ham\ket{\Phi^{a}_{i}} = \bra{\Phi^{a}_{i}}\Ham\refket = 0.
 \end{equation}
 This condition is the result of the \textit{Brillouin theorem} \cite{BRILLOUIN1932}, which states that the Hamiltonian matrix element must vanish between an optimized Hartree-Fock ground state and any single excitation from it. The Brillouin condition is satisfied by diagonalizing the one-body piece of the normal-ordered Hamiltonian $\fint{p}{q}$, known as the \textit{Fock} operator, such that off-diagonal pieces like $\refbra\Ham\ket{\Phi^{a}_{i}} = \fint{i}{a}$ and $\bra{\Phi^{a}_{i}}\Ham\refket = \fint{a}{i}$ vanish.
-\begin{align}
+\begin{align} \label{eq:fock_operator}
   \diagram{Hamiltonian/Hamiltonian-figure3} &= \diagram{Hamiltonian/Hamiltonian-figure4} + \diagram{Hamiltonian/Hamiltonian-figure5} + \diagram{Hamiltonian/Hamiltonian-figure6} \notag \\
   \fint{p}{q} &= \Hint{1}{p}{q} + \sum_{\mathclap{i}}\Hint{2}{pi}{qi} + \frac{1}{2}\sum_{\mathclap{ij}}\Hint{3}{pij}{qij}\ \ \longrightarrow\ \ \varepsilon^{p}_{q}\delta_{pq},
 \end{align}
 where $\varepsilon^{p}_{q}$ is the eigenvalue of the Fock operator.
 
 A practical way of solving this system of equations is to express each new orbital in the unknown Hatree-Fock basis, $\ket{p'} \equiv \phi_{p'}\left(\mathbf{r}\right)$, denoted with primed labels, as a linear combination of the known single-particle basis states, $\ket{p} \equiv \phi_{p}\left(\mathbf{r}\right)$, denoted without primed labels.
-\begin{equation}
+\begin{equation} \label{eq:fock_matrix_prime}
   \ket{p'} = \sum_{p}\braket{p}{p'}\ket{p} = \sum_{p}C^{p}_{p'}\ket{p}
-\end{equation} \label{eq:fock_matrix_prime}
+\end{equation}
 Then the Fock matrix can be written in terms of the Hartree-Fock basis,
 \begin{gather}
   \fint{p'}{q'} = \Hint{1}{p'}{q'} + \sum_{\mathclap{i'}}\Hint{2}{p'i'}{q'i'} + \frac{1}{2}\sum_{\mathclap{i'j'}}\Hint{3}{p'i'j'}{q'i'j'} \notag \\
@@ -288,7 +288,7 @@ Using this form of the wave function in Eq.\ \eqref{eq:ci_expansion}, the Schr\"
   \longrightarrow\ \ \mathbf{C}^{\text{T}}_{\mu}\left(\element{\Phi_{\mu_{i}}}{\HamN}{\Phi_{\nu_{i}}} - \Ecorr_{\nu}\mathbf{I}\right)\mathbf{C}_{\nu} = 0.
 \end{gather}
 In this case, the matrix elements are Hamiltonian terms that connect two Slater determinants, and the eigenvectors are the ground and excited states in the form of Eq.\ \eqref{eq:ci_expansion}.  The matrix elements can be found with the help of the Slater-Condon rules \cite{SLATER1929,CONDON1930} which, because the Hamiltonian is restricted to one- and two-body terms, require that any terms connecting Slater determinants which differ by more than two single-particle states vanish.  Also, because the one-body Hamiltonian is diagonal in the Hatree-Fock basis, it only contributes to diagonal elements the CI matrix.  Some examples of these matrix elements are,
-\begin{gather}
+\begin{gather} \label{eq:slater_condon}
   \element{\Phi^{a}_{i}}{\Ham}{\Phi^{a}_{i}} = \Edenom{}{a} - \Edenom{}{i} - \vint{ia}{ia} \\
   \element{\Phi^{ab}_{ij}}{\Ham}{\Phi^{cd}_{ij}} = \vint{ab}{cd} \\
   \element{\Phi^{abc}_{ijk}}{\Ham}{\Phi^{abd}_{ijl}} = -\vint{lc}{kd}
