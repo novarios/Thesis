@@ -19,6 +19,7 @@
 \def\dheight{2.5cm}
 \def\dscale{1.15}
 \def\sdheight{1.7cm}
+\def\xdheight{2.1cm}
 
 \newcommand*\xbar[1]{
   \hbox{
@@ -52,10 +53,10 @@
 \newcommand{\EHam}{\xbar{H}\hspace{-2pt}}
 \newcommand{\HamN}{\hat{H}_{\mathrm{N}}}
 \newcommand{\EHamN}{\xbar{H}_{\hspace{-0.75ex}\mathrm{N}}}
-\newcommand{\EOp}{\xbar{O}\hspace{-2pt}}
-\newcommand{\Top}{\hat{T}\hspace{-2pt}}
-\newcommand{\Vop}{\hat{V}\hspace{-2pt}}
-\newcommand{\Wop}{\hat{W}\hspace{-2pt}}
+\newcommand{\EOp}{\xbar{O}\hspace{-0.25pt}}
+\newcommand{\Top}{\hat{T}\hspace{-0.25pt}}
+\newcommand{\Vop}{\hat{V}\hspace{-0.25pt}}
+\newcommand{\Wop}{\hat{W}\hspace{-0.25pt}}
 \newcommand{\Rop}{\hat{R}\hspace{-0.1pt}}
 \newcommand{\Lop}{\hat{L}\hspace{-0.1pt}}
 \newcommand{\Lamdaop}{\hat{\Lambda}}
@@ -81,7 +82,7 @@
 \newcommand{\fint}[2]{f^{#1}_{#2}}
 \newcommand{\vint}[2]{\text{V}^{#1}_{#2}}
 \newcommand{\wint}[2]{\text{W}^{#1}_{#2}}
-\newcommand{\KEint}[2]{T^{#1}_{#2}}
+\newcommand{\KEint}[3]{{}^{\left(#1\right)}\hspace{-1pt}T^{#2}_{#3}}
 \newcommand{\Hint}[3]{{}^{\left(#1\right)}\hspace{-2pt}H^{#2}_{#3}}
 \newcommand{\xint}[2]{X^{#1}_{\hspace{0.3pt} #2}}
 \newcommand{\xxint}[2]{X'^{#1}_{\hspace{2.3pt} #2}}
@@ -120,12 +121,15 @@
 \newcommand{\sdiagram}[1]{\hspace{0.8mm}\vcenter{\hbox{\includegraphics[height=\sdheight]{diagrams/#1.pdf}}}\hspace{0.8mm}}
 \newcommand{\sddiagram}[1]{\hspace{0.8mm}\vcenter{\hbox{\dbox{\includegraphics[height=\sdheight]{diagrams/#1.pdf}}}}\hspace{0.8mm}}
 
+\newcommand{\xdiagram}[1]{\hspace{0.9mm}\vcenter{\hbox{\includegraphics[height=\xdheight]{diagrams/#1.pdf}}}\hspace{0.9mm}}
+
 \newcommand{\dboxed}[1]{\dbox{\ensuremath{#1}}}
 
 \newcommand{\sixj}[6]{\begin{Bmatrix} #1 & #2 & #3 \\ #4 & #5 & #6 \end{Bmatrix}}
 
+
 \author{Samuel John Novario}
-\title{Effective Nuclear Operators with the Coupled-Cluster Method}
+\title{Effective Beta-Decay Operators with the Coupled-Cluster Method}
 \date{2017}
 \def\thedegreeprogram{Physics---Doctor of Philosophy}
 
@@ -148,6 +152,9 @@
 
 \chapter{Many-Body Quantum Mechanics} \label{chapter:manybody}
 \subfile{ManyBody}
+
+\chapter{Coupled-Cluster Theory} \label{chapter:cc}
+\subfile{CC}
 
 \bibliographystyle{plain}
 \renewcommand{\bibname}{References}
