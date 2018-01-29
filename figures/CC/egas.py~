@@ -1,0 +1,55 @@
+import sys
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.ticker import MultipleLocator
+
+majorLocatorX = MultipleLocator(2)
+minorLocatorX = MultipleLocator(1)
+majorLocatorY = MultipleLocator(0.5)
+minorLocatorY = MultipleLocator(0.25)
+
+filename = '/home/sam/Documents/thesis/data/Electron_Gas.dat'
+
+x = [[] for i in range(5)]
+y = [[] for i in range(5)]
+
+print(filename)
+
+with open(filename) as f:
+    data = f.read()
+data = data.split('\n')
+
+for num in range(len(data)):
+    line = data[num].split()
+    ind = num - num%15
+    x[ind].append(float(line[0]))
+    y[ind].append(float(line[6]))
+    print(ind, float(line[0]), float(line[6]))
+        
+plt.rc('font', family='serif')
+
+fig, ax = plt.subplots()
+ax.plot(x[0], y[0], '-', marker='o', color='k', label='$\mathrm{N=14}$')
+ax.plot(x[1], y[1], '--', marker='s', color='k', label='$\mathrm{N=54}$')
+ax.plot(x[2], y[2], ':', marker='^', color='k', label='$\mathrm{N=114}$')
+ax.plot(x[3], y[3], '-', marker='o', color='r', label='$\mathrm{N=162}$')
+ax.plot(x[4], y[4], '--', marker='s', color='r', label='$\mathrm{N=246}$')
+ax.legend(loc='upper right')
+
+plt.xlabel(r'$\mathrm{Total Shells}$', fontsize=15)
+plt.ylabel(r'$\mathrm{\Delta E_{k}}$', fontsize=15)
+plt.axis([5, 21, 13.5, 16.5])
+
+annotation_string = r'$\mathrm{\hbar\omega=1.00}$'
+annotation_string += '\n'
+annotation_string += r'$\mathrm{20\ particles}$'
+ax.annotate(annotation_string, fontsize=15, xy=(7, 16))
+
+ax.xaxis.set_major_locator(majorLocatorX)
+ax.xaxis.set_minor_locator(minorLocatorX)
+ax.yaxis.set_major_locator(majorLocatorY)
+ax.yaxis.set_minor_locator(minorLocatorY)
+
+plt.savefig('Electronic_Gas.pdf', format='pdf', bbox_inches='tight')
+plt.show()

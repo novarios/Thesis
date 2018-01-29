@@ -1,0 +1,49 @@
+\documentclass[thesis.tex]{subfiles}
+
+\begin{document}
+
+\begin{itemize}
+\item[$\ph{A}{B}$] $A$-particle, $B$-hole excitation or de-excitation from the reference state
+\item[$\vacuum$] vacuum state
+\item[$\refstate$] reference state
+\item[$\normord{\cdots}$] normal-ordered with respect to the reference state
+\item[$\hbar\omega$] harmonic oscillator energy scale
+\end{itemize}
+
+\begin{itemize}
+\item[CC] coupled cluster
+\item[CCD] coupled cluster with doubles
+\item[CCSD] coupled cluster with singles and doubles
+\item[CCSDT] coupled cluster with singles, doubles, and triples
+\item[CCSD(T)] coupled cluster with singles, doubles, and triples approximation
+\item[$\Lambda$-CCSD(T)] coupled cluster with singles, doubles, and $\Lambda$-triples approximation
+\item[CI] configuration interaction
+\item[FCI] full configuration interaction
+\item[COM] center of mass
+\item[EOM] equations-of-motion
+\item[PA] particle-attached
+\item[PR] particle-removed
+\item[EOM] equations-of-motion
+\item[EOM-CC] equations-of-motion coupled cluster
+\item[PA-EOM-CC] particle-attached equations-of-motion coupled cluster
+\item[PR-EOM-CC] particle-removed equations-of-motion coupled cluster
+\item[EOM-CCSD] equations-of-motion coupled cluster with singles and doubles
+\item[PA-EOM-CCSD] particle-attached equations-of-motion coupled cluster with singles and doubles
+\item[PR-EOM-CCSD] particle-removed equations-of-motion coupled cluster with singles and doubles
+\item[HF] Hartree-Fock
+\item[IM-SRG] in-medium similarity renormalization group
+\item[HO] harmonic oscillator
+\item[LECs] low-energy constants
+\item[MBPT] many-body perturbation theory
+\item[WS] Woods-Saxon
+\item[DIIS] direct-inversion of the iterative subspace
+\item[QCD] quantum chromodynamics
+\item[EFT] effective field theory
+\item[NN] nucleon-nucleon
+\item[3N] three-nucleon
+\item[NLO] next-to leading order
+\item[$\text{N}^{2}$LO] next-to-next-to leading order
+\item[$\text{N}^{3}$LO] next-to-next-to-next-to leading order
+\end{itemize}
+
+\end{document}

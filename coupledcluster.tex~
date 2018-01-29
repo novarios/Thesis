@@ -1,0 +1,255 @@
+\documentclass[../thesis.tex]{subfiles}
+
+\def\dheight{2.65cm}
+\def\dscale{1.15}
+\newcommand{\Perm}[1]{\mathop{\hat{P}\hspace{-2pt}\left( #1\right) }}
+\newcommand{\amp}[2]{\text{t}^{#1}_{#2}}
+\newcommand{\vint}[2]{\text{V}^{#1}_{#2}}
+\newcommand{\fint}[2]{f^{#1}_{#2}}
+\newcommand{\xint}[2]{X^{#1}_{\hspace{0.3pt} #2}}
+\newcommand{\xxint}[2]{X'^{#1}_{\hspace{2.3pt} #2}}
+\newcommand{\xxxint}[2]{X''^{#1}_{\hspace{4.3pt} #2}}
+\newcommand{\xxxxint}[2]{X'''^{#1}_{\hspace{6.3pt} #2}}
+
+\newcommand{\diagram}[1]{\hspace{1.15mm}\vcenter{\hbox{\includegraphics[height=\dheight]{diagrams/#1.pdf}}}\hspace{1.15mm}}
+\newcommand{\fdiagram}[1]{\hspace{-0.75mm}\vcenter{\hbox{\includegraphics[height=\dheight]{diagrams/#1.pdf}}}\hspace{1.15mm}}
+\newcommand{\ddiagram}[1]{\hspace{1.15mm}\vcenter{\hbox{\dbox{\includegraphics[height=\dheight]{diagrams/#1.pdf}}}}\hspace{1.15mm}}
+
+\begin{document}
+
+\section{Coupled Cluster Theory}
+
+\begin{align}
+  \Delta E_{CCSD} &= \diagram{CCSD_dE-figure0} + \diagram{CCSD_dE-figure1} + \ddiagram{CCSD_dE-figure2} \notag \\
+  &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{cd}_{kl} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{c}_{k}t^{d}_{l} + \dboxed{\sum\limits_{\mathclap{kc}}f^{k}_{c}t^{c}_{k}}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1-figure0} + \diagram{CCSD_t1-figure1} + \diagram{CCSD_t1-figure2}  \notag \\
+  &= \dboxed{\fint{a}{i}} - \sum\limits_{\mathclap{k}}\fint{k}{i}\amp{a}{k} + \sum\limits_{\mathclap{c}}\fint{a}{c}\amp{c}{i}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1-figure3} \notag \\
+    &= -\sum\limits_{\mathclap{kc}}\vint{ka}{ic}\amp{c}{k}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1-figure4} \notag \\
+    &= \dboxed{\sum\limits_{\mathclap{kc}}\fint{k}{c}\amp{ac}{ki}}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1-figure5} + \diagram{CCSD_t1-figure6} \notag \\
+    &= \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\amp{cd}{ki} + \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\amp{ca}{kl}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1-figure7} \notag \\
+  &= \dboxed{\sum\limits_{\mathclap{kcd}}\fint{l}{d}\amp{a}{l}\amp{d}{i}}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1-figure8} + \diagram{CCSD_t1-figure9} \notag \\
+  &= \sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\amp{c}{k}\amp{d}{i} + \sum\limits_{\mathclap{klc}}\vint{kl}{ic}\amp{c}{k}\amp{a}{l}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}\hat{\text{t}}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1-figure10} + \diagram{CCSD_t1-figure11} + \diagram{CCSD_t1-figure12} \notag \\
+  &= -\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{cd}{ki}\amp{a}{l} - \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ca}{kl}\amp{d}{i} + \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ad}{il}\amp{c}{k}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1-figure13} \notag \\
+  &= -\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{c}{k}\amp{d}{i}\amp{a}{l}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  \hat{V}_{N}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure0} \notag \\
+  &= \vint{ab}{ij}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure1} + \diagram{CCSD_t2-figure2} \notag \\
+  &= \Perm{ab}\sum\limits_{\mathclap{c}}\fint{b}{c}\amp{ac}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\fint{k}{j}\amp{ab}{ik}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure3} + \diagram{CCSD_t2-figure4} \notag \\
+  &= -\Perm{ab}\sum\limits_{\mathclap{k}}\vint{kb}{ij}\amp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\vint{ab}{cj}\amp{c}{i}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure5} + \diagram{CCSD_t2-figure6} + \diagram{CCSD_t2-figure7} \notag \\
+  &= \frac{1}{2}\sum\limits_{\mathclap{kl}}\vint{kl}{ij}\amp{ab}{kl} + \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\amp{cd}{ij} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\amp{ac}{kj}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure8} + \diagram{CCSD_t2-figure9} + \diagram{CCSD_t2-figure10} \notag \\
+  &= \sum\limits_{\mathclap{kl}}\vint{kl}{ij}\amp{a}{k}\amp{b}{l} + \sum\limits_{\mathclap{cd}}\vint{ab}{cd}\amp{c}{i}\amp{d}{j} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\amp{a}{k}\amp{c}{j}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{2}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure11} + \diagram{CCSD_t2-figure12} + \diagram{CCSD_t2-figure13} \notag \\
+  &+ \diagram{CCSD_t2-figure14} \notag \\
+  &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ab}{kl}\amp{cd}{ij} + \Perm{ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ac}{lj}\amp{bd}{ki} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ab}{lj}\amp{cd}{ki} \notag \\
+  &- \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{db}{ij}\amp{ca}{kl}
+\end{align}
+
+\begin{align}
+  \hat{f}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t2-figure15} + \ddiagram{CCSD_t2-figure16} \notag \\
+  &= -\dboxed{\Perm{ab}\sum\limits_{\mathclap{kc}}\fint{k}{c}\amp{a}{k}\amp{cb}{ij}} - \dboxed{\Perm{ij}\sum\limits_{\mathclap{kc}}\fint{k}{c}\amp{c}{i}\amp{ab}{kj}}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure17} + \diagram{CCSD_t2-figure18} + \diagram{CCSD_t2-figure19} \notag \\
+  &+ \diagram{CCSD_t2-figure20} + \diagram{CCSD_t2-figure21} + \diagram{CCSD_t2-figure22} \notag \\
+  &= \Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\amp{bc}{jk}\amp{d}{i} - \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\amp{bc}{jk}\amp{a}{l} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\amp{cd}{ij}\amp{a}{k} \notag \\
+  &+ \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\amp{ab}{kl}\amp{c}{i} + \Perm{ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\amp{c}{k}\amp{db}{ij} - \Perm{ij}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\amp{c}{k}\amp{ab}{lj}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure23} + \diagram{CCSD_t2-figure24} \notag \\
+  &= -\Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\amp{a}{k}\amp{c}{i}\amp{d}{j} + \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\amp{c}{i}\amp{a}{k}\amp{b}{l}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{2}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure25} + \diagram{CCSD_t2-figure26} + \diagram{CCSD_t2-figure27} \notag \\
+  &+ \diagram{CCSD_t2-figure28} + \diagram{CCSD_t2-figure29} \notag \\
+  &= \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ab}{kl}\amp{c}{i}\amp{d}{j} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{cd}{ij}\amp{a}{k}\amp{b}{l} + \Perm{ij|ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ac}{lj}\amp{b}{k}\amp{d}{i} \notag \\
+  &- \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{ab}{lj}\amp{c}{k}\amp{d}{i} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{db}{ij}\amp{c}{k}\amp{a}{l}
+\end{align}
+
+\begin{align}
+  \hat{V}_{N}\hat{t}_{1}^{4}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2-figure30} \notag \\
+  &= \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\amp{a}{k}\amp{b}{l}\amp{c}{i}\amp{d}{j}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  \diagram{CCSD_1b-figure0} &= \ddiagram{CCSD_1b-figure1} + \diagram{CCSD_1b-figure2} \notag \\
+  \xint{i}{a} &= \dboxed{\fint{i}{a}} + \sum\limits_{kc}\vint{ik}{ac}\amp{c}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_1b-figure3} &= \diagram{CCSD_1b-figure4} + \diagram{CCSD_1b-figure5} + \diagram{CCSD_1b-figure6} + \diagram{CCSD_1b-figure7} \notag \\
+  \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\amp{ac}{kl} + \sum\limits_{kc}\vint{ka}{cb}\amp{c}{k} - \sum\limits_{k}\xint{k}{b}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_1b-figure8} &= \diagram{CCSD_1b-figure9} + \diagram{CCSD_1b-figure10} + \diagram{CCSD_1b-figure11} \notag \\
+  \xxint{i}{j} &= \fint{i}{j} + \frac{1}{2}\sum\limits_{kcd}\vint{ik}{cd}\amp{cd}{jk} + \sum\limits_{kc}\vint{ik}{jc}\amp{c}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_1b-figure12} &= \diagram{CCSD_1b-figure13} + \diagram{CCSD_1b-figure14} \notag \\
+  \xint{i}{j} &= \xxint{i}{j} + \sum\limits_{c}\xint{i}{c}\amp{c}{j}
+\end{align}
+
+%-----------------
+
+\begin{align}
+  \diagram{CCSD_1b-figure15} = 0 &= \ddiagram{CCSD_1b-figure16} + \diagram{CCSD_1b-figure17} + \diagram{CCSD_1b-figure18} + \diagram{CCSD_1b-figure19} \notag \\
+  &+ \diagram{CCSD_1b-figure20} + \diagram{CCSD_1b-figure21} + \diagram{CCSD_1b-figure22} \notag \\
+  \xint{a}{i} = 0 &= \dboxed{\fint{a}{i}} + \sum\limits_{\mathclap{c}}\xint{a}{c}\amp{c}{i} - \sum\limits_{\mathclap{k}}\xxint{k}{i}\amp{a}{k} + \sum\limits_{\mathclap{kc}}\vint{ka}{ci}\amp{c}{k} \notag \\
+  &+ \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\amp{cd}{ki} - \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\amp{ac}{kl} + \sum\limits_{\mathclap{kc}}\xint{k}{c}\amp{ac}{ik}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  \diagram{CCSD_2b-figure0} &= \diagram{CCSD_2b-figure1} + \frac{1}{2}\fdiagram{CCSD_2b-figure2} \notag \\
+  \xxint{ia}{bc} &= \vint{ia}{bc} - \frac{1}{2}\sum\limits_{k}\vint{ik}{bc}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure3} &= \diagram{CCSD_2b-figure4} + \diagram{CCSD_2b-figure5} \notag \\
+  \xint{ia}{bc} &= \vint{ia}{bc} - \sum\limits_{k}\vint{ik}{bc}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure6} &= \diagram{CCSD_2b-figure7} + \frac{1}{2}\fdiagram{CCSD_2b-figure8} \notag \\
+  \xxint{ij}{ka} &= \vint{ij}{ka} + \frac{1}{2}\sum\limits_{c}\vint{ij}{ca}\amp{c}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure9} &= \diagram{CCSD_2b-figure10} + \diagram{CCSD_2b-figure11} \notag \\
+  \xint{ij}{ka} &= \vint{ij}{ka} + \sum\limits_{c}\vint{ij}{ca}\amp{c}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure12} &= \diagram{CCSD_2b-figure13} + \diagram{CCSD_2b-figure14} \notag \\
+  \xxint{ab}{cd} &= \vint{ab}{cd} - \Perm{ab}\sum\limits_{k}\xxint{kb}{cd}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure15} &= \diagram{CCSD_2b-figure16} + \diagram{CCSD_2b-figure17} \notag \\
+  \xint{ab}{cd} &= \xxint{ab}{cd} + \frac{1}{2}\sum\limits_{kl}\vint{kl}{cd}\amp{ab}{kl}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure18} &= \diagram{CCSD_2b-figure19} + \diagram{CCSD_2b-figure20} + \diagram{CCSD_2b-figure21} \notag \\
+  \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\sum\limits_{cd}\vint{ij}{cd}\amp{cd}{kl} + \Perm{kl}\sum\limits_{c}\xxint{ij}{kc}\amp{c}{l}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure22} &= \diagram{CCSD_2b-figure23} + \diagram{CCSD_2b-figure24} + \frac{1}{2}\fdiagram{CCSD_2b-figure25} \notag \\
+  \xxint{ia}{jb} &= \vint{ia}{jb} + \sum\limits_{c}\xxint{ia}{cb}\amp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure26} &= \diagram{CCSD_2b-figure27} + \frac{1}{2}\fdiagram{CCSD_2b-figure28} + \frac{1}{2}\fdiagram{CCSD_2b-figure29} \notag \\
+  \xxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xxint{ia}{cb}\amp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure30} &= \diagram{CCSD_2b-figure31} + \frac{1}{2}\fdiagram{CCSD_2b-figure32} + \diagram{CCSD_2b-figure33} \notag \\
+  \xxxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\amp{c}{j} - \sum\limits_{k}\vint{ik}{jb}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure34} &= \diagram{CCSD_2b-figure35} + \left(\frac{1}{2}\hspace{-0.5mm}\right)\fdiagram{CCSD_2b-figure36} + \frac{1}{2}\fdiagram{CCSD_2b-figure37} \notag \\
+  \xint{ia}{jb} &= \xxxxint{ia}{jb} - \left(\frac{1}{2}\right)\sum\limits_{kc}\vint{ik}{cb}\amp{ca}{jk} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\amp{c}{j}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure38} &= \diagram{CCSD_2b-figure39} + \frac{1}{2}\fdiagram{CCSD_2b-figure40} + \diagram{CCSD_2b-figure41} \notag \\
+  \xxint{ab}{ic} &= \vint{ab}{ic} + \frac{1}{2}\sum\limits_{d}\vint{ab}{dc}\amp{d}{i} - \Perm{ab}\sum\limits_{k}\xxxint{kb}{ic}\amp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure42} &= \diagram{CCSD_2b-figure43} + \diagram{CCSD_2b-figure44} + \diagram{CCSD_2b-figure45} \notag \\
+  &+ \diagram{CCSD_2b-figure46} + \diagram{CCSD_2b-figure47} + \diagram{CCSD_2b-figure48} \notag \\
+  \xint{ab}{ic} &= \vint{ab}{ic} + \sum\limits_{d}\vint{ab}{dc}\amp{d}{i} - \Perm{ab}\sum\limits_{k}\xxint{kb}{ic}\amp{a}{k} \notag \\
+  &- \sum\limits_{k}\xint{k}{c}\amp{ab}{ik} + \Perm{ab}\sum\limits_{kd}\xint{kb}{dc}\amp{ad}{ik} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ic}\amp{ab}{kl}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure49} &= \diagram{CCSD_2b-figure50} + \frac{1}{2}\fdiagram{CCSD_2b-figure51} \notag \\
+  \xxint{ia}{jk} &= \vint{ia}{jk} - \frac{1}{2}\sum\limits_{l}\vint{il}{jk}\amp{a}{l}
+\end{align}
+
+\begin{align}
+  \diagram{CCSD_2b-figure58} &= \diagram{CCSD_2b-figure53} + \diagram{CCSD_2b-figure54} + \diagram{CCSD_2b-figure55} \notag \\
+  &+ \diagram{CCSD_2b-figure56} + \diagram{CCSD_2b-figure57} + \diagram{CCSD_2b-figure60} \notag \\
+  \xint{ia}{jk} &= \vint{ia}{jk} - \sum\limits_{l}\vint{il}{jk}\amp{a}{l} + \Perm{jk}\sum\limits_{c}\xxxxint{ia}{jc}\amp{c}{k} \notag \\
+  &+ \Perm{jk}\sum\limits_{lc}\xint{il}{jc}\amp{ca}{lk} + \frac{1}{2}\sum\limits_{cd}\xint{ia}{cd}\amp{cd}{jk} + \sum\limits_{c}\xint{i}{c}\amp{ca}{jk}
+\end{align}
+
+%-----------------
+
+\begin{align}
+  \diagram{CCSD_2b-figure61} = 0 &= \diagram{CCSD_2b-figure62} + \diagram{CCSD_2b-figure63} + \diagram{CCSD_2b-figure64} \notag \\
+  &+ \diagram{CCSD_2b-figure65} + \diagram{CCSD_2b-figure66} + \diagram{CCSD_2b-figure67} \notag \\
+  &+ \diagram{CCSD_2b-figure68} + \diagram{CCSD_2b-figure69} \notag \\
+  \xint{ab}{ij} = 0 &= \vint{ab}{ij} + \Perm{ab}\sum\limits_{\mathclap{c}}\xint{a}{c}\amp{cb}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\xint{k}{i}\amp{ab}{kj} \notag \\
+  &+ \frac{1}{2}\sum\limits_{\mathclap{cd}}\xxint{ab}{cd}\amp{cd}{ij} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\xint{kl}{ij}\amp{ab}{kl} - \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\xint{kb}{ic}\amp{ac}{kj} \notag \\
+  &- \Perm{ab}\sum\limits_{\mathclap{k}}\xxint{kb}{ij}\amp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\xxint{ab}{ic}\amp{c}{j}
+\end{align}
+
+\end{document}

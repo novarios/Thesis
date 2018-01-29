@@ -1,0 +1,115 @@
+import sys
+import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+import re
+from matplotlib.ticker import MultipleLocator
+from matplotlib import gridspec
+
+#majorLocatorX = MultipleLocator(2)
+#minorLocatorX = MultipleLocator(1)
+#majorLocatorY = MultipleLocator(0.05)
+#minorLocatorY = MultipleLocator(0.025)
+
+filename1 = '/home/sam/Documents/thesis/data/21N_levels.dat'
+
+e1 = []
+jp1 = []
+j1 = []
+p1 = []
+
+with open(filename1) as f1:
+    data1 = f1.read()
+data1 = data1.split('\n')
+
+#linecolors = {'5/2+':'k',
+#              '1/2+':'b',
+#              '1/2-':'g',
+#              '3/2-':'m',
+#              '5/2-':'r',
+#              '3/2+':'c'}
+
+num_states = 10
+
+num = 1
+while(num < num_states and num < len(data1)-1):
+    line = data1[num].split("\t")
+    e1.append([float(line[4])/1000.0,float(line[4])/1000.0])
+    jp = str(line[6])
+    jp = jp.replace('(','').replace(')','').replace(' ','')
+
+    if( len(jp) != 0 ):
+        if(jp not in jp1):
+            jp1.append(jp)
+        else:
+            jp1.append('')
+    else:
+        if('J^{\pi}' not in jp1):
+            jp1.append('J^{\pi}')
+        else:
+            jp1.append('')
+
+    if( len(jp) == 0 ):
+        p1.append('-')
+    elif( jp[-1] == '-' ):
+        p1.append('--')
+    else:
+        p1.append('-')
+
+    if( len(jp) == 0 ):
+        j1.append('k')
+    else:
+        jp = jp[:-1]
+
+    if( jp == '1/2' ):
+        j1.append('k')
+    elif( jp == '3/2' ):
+        j1.append('b')
+    elif( jp == '5/2' ):
+        j1.append('g')
+    elif( jp == '7/2' ):
+        j1.append('m')
+    elif( jp == '9/2' ):
+        j1.append('c')
+
+    num = num + 1
+    
+xa = [-14.0,-10.0]
+xb = [-6.0,-2.0]
+xc = [2.0,6.0]
+xd = [10.0,14.0]
+
+plt.rc('font', family='serif')
+
+fig = plt.figure(figsize=(12, 6))
+gs = gridspec.GridSpec(1, 1)
+
+ax1 = plt.subplot(gs[0])
+for num in range(len(e1)):
+    if( jp1[num] == '' ):
+        labelstring = ""
+    else:
+        labelstring = r'$\mathrm{' + jp1[num] + '}$'
+
+    if(p1[num] == '--'):
+        ax1.plot(xd, e1[num], linestyle=p1[num], dashes=(7,1), color=j1[num], linewidth=1.5, label=labelstring)
+    else:
+        ax1.plot(xd, e1[num], linestyle=p1[num], color=j1[num], linewidth=1.5, label=labelstring)
+ax1.axis([-16.0, 18.0, -1.0, 7.0], fontsize=18)
+ax1.tick_params(axis='x',labelsize=16)
+ax1.set_ylabel(r'$\mathrm{E\ (MeV)}$', fontsize=15)
+annotation_string = r'$\mathrm{^{21}N}$'
+ax1.annotate(annotation_string, fontsize=16, xy=(0.04, 0.9), xycoords='axes fraction')
+plt.setp(ax1, xticks=[-12.0,-4.0,4.0,12.0], xticklabels=[r'$\beta=0$',r'$\beta=2$',r'$\beta=4$',r'$\mathrm{Exp.}$'])
+
+
+ax1.legend(loc='upper right', frameon=False, fontsize='small', labelspacing=0.0)
+
+#ax.xaxis.set_major_locator(majorLocatorX)
+#ax.xaxis.set_minor_locator(minorLocatorX)
+#ax.yaxis.set_major_locator(majorLocatorY)
+#ax.yaxis.set_minor_locator(minorLocatorY)
+
+plt.tight_layout()
+plt.savefig('N21_PA_1.pdf', format='pdf', bbox_inches='tight')
+plt.show()

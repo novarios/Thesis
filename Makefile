@@ -1,5 +1,7 @@
 all: thesis.pdf
 
+temp: thesis_temp.pdf
+
 clean:
 	rm -fr *.aux *.bbl *.blg *.dep *.fdb_latexmk *.fls *.lof *.log *.lot *.pdf *.toc
 

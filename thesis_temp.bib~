@@ -1,0 +1,1798 @@
+%%%%%  Everywhere  %%%%%%
+
+@book{SHAVITT2009,
+author = "Shavitt, I. and Bartlett, R. J.",
+publisher = "Cambridge University Press",
+series = "{Cambridge Molecular Science}",
+title = "{Many-Body Methods in Chemistry and Physics: MBPT and Coupled-Cluster Theory}",
+year = "2009"
+}
+
+@book{FETTER2003043536,
+  title={Quantum Theory of Many-particle Systems},
+  author={Fetter, A.L. and Walecka, J.D.},
+  isbn={9780486428277},
+  lccn={2003043536},
+  series={Dover Books on Physics},
+  url={https://books.google.com/books?id=0wekf1s83b0C},
+  year={2003},
+  publisher={Dover Publications}
+}
+
+
+%%%%  Many-body  %%%%
+
+@article{SLATER1929,
+  title = {The Theory of Complex Spectra},
+  author = {Slater, J. C.},
+  journal = {Phys. Rev.},
+  volume = {34},
+  issue = {10},
+  pages = {1293--1322},
+  numpages = {0},
+  year = {1929},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.34.1293},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.34.1293}
+}
+
+@article{CONDON1930,
+  title = {The Theory of Complex Spectra},
+  author = {Condon, E. U.},
+  journal = {Phys. Rev.},
+  volume = {36},
+  issue = {7},
+  pages = {1121--1133},
+  numpages = {0},
+  year = {1930},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.36.1121},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.36.1121}
+}
+
+@article{WICK1950,
+  title = {The Evaluation of the Collision Matrix},
+  author = {Wick, G. C.},
+  journal = {Phys. Rev.},
+  volume = {80},
+  issue = {2},
+  pages = {268--272},
+  numpages = {0},
+  year = {1950},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.80.268},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.80.268}
+}
+
+%% HF %%
+
+@article{HARTREE1928,
+  title={The Wave Mechanics of an Atom with a Non-Coulomb Central Field. Part I. Theory and Methods},
+  volume={24},
+  DOI={10.1017/S0305004100011919},
+  number={1},
+  journal={Mathematical Proceedings of the Cambridge Philosophical Society},
+  publisher={Cambridge University Press},
+  author={Hartree, D. R.},
+  year={1928},
+  pages={89–110}
+}
+
+@Article{FOCK1930,
+  author="Fock, V.",
+  title="N{\"a}herungsmethode zur L{\"o}sung des quantenmechanischen Mehrk{\"o}rperproblems",
+  journal="Zeitschrift f{\"u}r Physik",
+  year="1930",
+  month="Jan",
+  day="01",
+  volume="61",
+  number="1",
+  pages="126--148",
+  issn="0044-3328",
+  doi="10.1007/BF01340294",
+  url="https://doi.org/10.1007/BF01340294"
+}
+
+@article{THOULESS1960225,
+title = "Stability conditions and nuclear rotations in the Hartree-Fock theory",
+journal = "Nuclear Physics",
+volume = "21",
+pages = "225 - 232",
+year = "1960",
+issn = "0029-5582",
+doi = "https://doi.org/10.1016/0029-5582(60)90048-1",
+url = "http://www.sciencedirect.com/science/article/pii/0029558260900481",
+author = "D.J. Thouless"
+}
+
+@Article{BRILLOUIN1932,
+author={Brillouin, L.},
+title={Les probl{\`e}mes de perturbations et les champs self-consistents},
+journal={Le journal de physique et le radium},
+year={1932},
+volume={3},
+number={9},
+pages={373-389},
+issn={0368-3842},
+doi={10.1051/jphysrad:0193200309037300}
+}
+
+
+%%%  CISD  %%%
+
+@incollection{SHERRILL1999143,
+  title = "The Configuration Interaction Method: Advances in Highly Correlated Approaches",
+  editor = "Per-Olov Löwdin and John R. Sabin and Michael C. Zerner and Erkki Brändas",
+  series = "Advances in Quantum Chemistry",
+  publisher = "Academic Press",
+  volume = "34",
+  pages = "143 - 269",
+  year = "1999",
+  issn = "0065-3276",
+  doi = "https://doi.org/10.1016/S0065-3276(08)60532-8",
+  url = "http://www.sciencedirect.com/science/article/pii/S0065327608605328",
+  author = "C. David Sherrill and Henry F. Schaefer"
+}
+
+
+%%%  MBPT   %%%
+
+@article{MOLLER1934,
+  title = {Note on an Approximation Treatment for Many-Electron Systems},
+  author = {M\o{}ller, Chr. and Plesset, M. S.},
+  journal = {Phys. Rev.},
+  volume = {46},
+  issue = {7},
+  pages = {618--622},
+  numpages = {0},
+  year = {1934},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.46.618},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.46.618}
+}
+
+@article{FRANTZ196016,
+title = "Many-body basis for the optical model",
+journal = "Nuclear Physics",
+volume = "15",
+pages = "16 - 32",
+year = "1960",
+issn = "0029-5582",
+doi = "https://doi.org/10.1016/0029-5582(60)90278-9",
+url = "http://www.sciencedirect.com/science/article/pii/0029558260902789",
+author = "Lee M. Frantz and Robert L. Mills"
+}
+
+@article{BRANDOW1967,
+  title = {Linked-Cluster Expansions for the Nuclear Many-Body Problem},
+  author = {Brandow, Baird H.},
+  journal = {Rev. Mod. Phys.},
+  volume = {39},
+  issue = {4},
+  pages = {771--828},
+  numpages = {0},
+  year = {1967},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/RevModPhys.39.771},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.39.771}
+}
+
+
+%%%%%  NCSM  %%%%%%
+
+@article{NAVRATIL2000054311,
+  title = {Large-basis ab initio no-core shell model and its application to ${}^{12}\mathbf{C}$},
+  author = {Navr\'atil, P. and Vary, J. P. and Barrett, B. R.},
+  journal = {Phys. Rev. C},
+  volume = {62},
+  issue = {5},
+  pages = {054311},
+  numpages = {14},
+  year = {2000},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.62.054311},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.62.054311}
+}
+
+@article{NAVRATIL2009083101,
+  author={Petr Navrátil and Sofia Quaglioni and Ionel Stetcu and Bruce R Barrett},
+  title={Recent developments in no-core shell-model calculations},
+  journal={Journal of Physics G: Nuclear and Particle Physics},
+  volume={36},
+  number={8},
+  pages={083101},
+  url={http://stacks.iop.org/0954-3899/36/i=8/a=083101},
+  year={2009},
+}
+
+@article{BARRETT2013131,
+title = "Ab initio no core shell model",
+journal = "Progress in Particle and Nuclear Physics",
+volume = "69",
+number = "Supplement C",
+pages = "131 - 181",
+year = "2013",
+issn = "0146-6410",
+doi = "https://doi.org/10.1016/j.ppnp.2012.10.003",
+url = "http://www.sciencedirect.com/science/article/pii/S0146641012001184",
+author = "Bruce R. Barrett and Petr Navrátil and James P. Vary",
+keywords = "Nuclei, Potentials, Theory, Predictions, Structure, Reactions"
+}
+
+
+%%%%%  QMC  %%%%%%
+
+@article{PUDLINER19971720,
+  title = {Quantum Monte Carlo calculations of nuclei with $A\leq7$},
+  author = {Pudliner, B. S. and Pandharipande, V. R. and Carlson, J. and Pieper, Steven C. and Wiringa, R. B.},
+  journal = {Phys. Rev. C},
+  volume = {56},
+  issue = {4},
+  pages = {1720--1750},
+  numpages = {0},
+  year = {1997},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.56.1720},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.56.1720}
+}
+
+@article{PIEPER200153,
+author = { Steven C. Pieper and  and  R. B. Wiringa},
+title = {QUANTUM MONTE CARLO CALCULATIONS OF LIGHT NUCLEI},
+journal = {Annual Review of Nuclear and Particle Science},
+volume = {51},
+number = {1},
+pages = {53-90},
+year = {2001},
+doi = {10.1146/annurev.nucl.51.101701.132506},
+URL = {         https://doi.org/10.1146/annurev.nucl.51.101701.132506},
+eprint = { https://doi.org/10.1146/annurev.nucl.51.101701.132506  },
+abstract = { ▪ Abstract Accurate quantum Monte Carlo calculations of ground states and low-lying excited states of light p-shell nuclei are now possible for realistic nuclear Hamiltonians that fit nucleon-nucleon scattering data. Results for more than 30 different (Jπ;T) states, plus isobaric analogs, in A ≤ 8 nuclei have been obtained with an excellent reproduction of the experimental energy spectrum. These microscopic calculations show that nuclear structure, including both single-particle and clustering aspects, can be explained starting from elementary two- and three-nucleon interactions. Various density and momentum distributions, electromagnetic form factors, and spectroscopic factors have also been computed, as well as electroweak capture reactions of astrophysical interest. }
+}
+
+@article{CARLSON20151067,
+  title = {Quantum Monte Carlo methods for nuclear physics},
+  author = {Carlson, J. and Gandolfi, S. and Pederiva, F. and Pieper, Steven C. and Schiavilla, R. and Schmidt, K. E. and Wiringa, R. B.},
+  journal = {Rev. Mod. Phys.},
+  volume = {87},
+  issue = {3},
+  pages = {1067--1118},
+  numpages = {52},
+  year = {2015},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/RevModPhys.87.1067},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.87.1067}
+}
+
+
+%%%%%  Early CI  %%%%%%
+
+@article{SLATER19291293,
+  title = {The Theory of Complex Spectra},
+  author = {Slater, J. C.},
+  journal = {Phys. Rev.},
+  volume = {34},
+  issue = {10},
+  pages = {1293--1322},
+  numpages = {0},
+  year = {1929},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.34.1293},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.34.1293}
+}
+
+@article{CONDON19301121,
+  title = {The Theory of Complex Spectra},
+  author = {Condon, E. U.},
+  journal = {Phys. Rev.},
+  volume = {36},
+  issue = {7},
+  pages = {1121--1133},
+  numpages = {0},
+  year = {1930},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.36.1121},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.36.1121}
+}
+
+@article{BACHER1933264,
+  title = {The Interaction of Configurations: $sd\ensuremath{-}{p}^{2}$},
+  author = {Bacher, R. F.},
+  journal = {Phys. Rev.},
+  volume = {43},
+  issue = {4},
+  pages = {264--269},
+  numpages = {0},
+  year = {1933},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.43.264},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.43.264}
+}
+
+@article{UFFORD1933732,
+  title = {Configuration Interaction in Complex Spectra},
+  author = {Ufford, C. W.},
+  journal = {Phys. Rev.},
+  volume = {44},
+  issue = {9},
+  pages = {732--739},
+  numpages = {0},
+  year = {1933},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.44.732},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.44.732}
+}
+
+
+
+%%%%%  MBPT  %%%%%%
+
+@article{HUBBARD1957539,
+ ISSN = {00804630},
+ URL = {http://www.jstor.org/stable/100058},
+ author = {J. Hubbard},
+ journal = {Proceedings of the Royal Society of London. Series A, Mathematical and Physical Sciences},
+ number = {1223},
+ pages = {539-560},
+ publisher = {The Royal Society},
+ title = {The Description of Collective Motions in Terms of Many-Body Perturbation Theory},
+ volume = {240},
+ year = {1957}
+}
+
+@article{HUGENHOLTZ1957481,
+title = "Perturbation theory of large quantum systems",
+journal = "Physica",
+volume = "23",
+number = "1",
+pages = "481 - 532",
+year = "1957",
+issn = "0031-8914",
+doi = "https://doi.org/10.1016/S0031-8914(57)92950-6",
+url = "http://www.sciencedirect.com/science/article/pii/S0031891457929506",
+author = "N.M. Hugenholtz"
+}
+
+@book{SCHAEFER1984,
+  title={Quantum chemistry: the development of ab initio methods in molecular electronic structure theory},
+  author={Schaefer, H.F.},
+  isbn={9780198551836},
+  lccn={lc84000925},
+  series={Oxford science publications},
+  url={https://books.google.com/books?id=SgDwAAAAMAAJ},
+  year={1984},
+  publisher={Clarendon Press}
+}
+
+
+%%%%%  Phenomenological  %%%%%%
+
+%%% Shell Model
+
+@article{KUO196640,
+title = "Structure of finite nuclei and the free nucleon-nucleon interaction: An application to 18O and 18F",
+journal = "Nuclear Physics",
+volume = "85",
+number = "1",
+pages = "40 - 86",
+year = "1966",
+issn = "0029-5582",
+doi = "https://doi.org/10.1016/0029-5582(66)90131-3",
+url = "http://www.sciencedirect.com/science/article/pii/0029558266901313",
+author = "T.T.S. Kuo and G.E. Brown"
+}
+
+@article{RICHTER2008064302,
+  title = {$\mathit{sd}$-shell observables for the USDA and USDB Hamiltonians},
+  author = {Richter, W. A. and Mkhize, S. and Brown, B. Alex},
+  journal = {Phys. Rev. C},
+  volume = {78},
+  issue = {6},
+  pages = {064302},
+  numpages = {7},
+  year = {2008},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.78.064302},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.78.064302}
+}
+
+%%% DFT
+
+@article{NEGELE19721472,
+  title = {Density-Matrix Expansion for an Effective Nuclear Hamiltonian},
+  author = {Negele, J. W. and Vautherin, D.},
+  journal = {Phys. Rev. C},
+  volume = {5},
+  issue = {5},
+  pages = {1472--1493},
+  numpages = {0},
+  year = {1972},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.5.1472},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.5.1472}
+}
+
+@article{SKYRME1958615,
+title = "The effective nuclear potential",
+journal = "Nuclear Physics",
+volume = "9",
+number = "4",
+pages = "615 - 634",
+year = "1958",
+issn = "0029-5582",
+doi = "https://doi.org/10.1016/0029-5582(58)90345-6",
+url = "http://www.sciencedirect.com/science/article/pii/0029558258903456",
+author = "T.H.R. Skyrme"
+}
+
+
+@article{VAUTHERIAN1972626,
+  title = {Hartree-Fock Calculations with Skyrme's Interaction. I. Spherical Nuclei},
+  author = {Vautherin, D. and Brink, D. M.},
+  journal = {Phys. Rev. C},
+  volume = {5},
+  issue = {3},
+  pages = {626--647},
+  numpages = {0},
+  year = {1972},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.5.626},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.5.626}
+}
+
+
+%%%%%  EFT  %%%%%%
+
+@article{EPELBAUM20091773,
+  title = {Modern theory of nuclear forces},
+  author = {Epelbaum, E. and Hammer, H.-W. and Mei\ss{}ner, Ulf-G.},
+  journal = {Rev. Mod. Phys.},
+  volume = {81},
+  issue = {4},
+  pages = {1773--1825},
+  numpages = {0},
+  year = {2009},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/RevModPhys.81.1773},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.81.1773}
+}
+
+@article{MACHLEIDT20111,
+title = "Chiral effective field theory and nuclear forces",
+journal = "Physics Reports",
+volume = "503",
+number = "1",
+pages = "1 - 75",
+year = "2011",
+issn = "0370-1573",
+doi = "https://doi.org/10.1016/j.physrep.2011.02.001",
+url = "http://www.sciencedirect.com/science/article/pii/S0370157311000457",
+author = "R. Machleidt and D.R. Entem",
+keywords = "Low-energy QCD, Effective field theory, Chiral perturbation theory, Nuclear forces, Nucleon–nucleon scattering"
+}
+
+
+%%%%%  RG Methods  %%%%%
+
+@article{BOGNER201094,
+title = "From low-momentum interactions to nuclear structure",
+journal = "Progress in Particle and Nuclear Physics",
+volume = "65",
+number = "1",
+pages = "94 - 147",
+year = "2010",
+issn = "0146-6410",
+doi = "https://doi.org/10.1016/j.ppnp.2010.03.001",
+url = "http://www.sciencedirect.com/science/article/pii/S0146641010000347",
+author = "S.K. Bogner and R.J. Furnstahl and A. Schwenk",
+keywords = "Nuclear forces, Nuclear structure, Renormalization group"
+}
+
+@article{ROTH2011072501,
+  title = {Similarity-Transformed Chiral $NN+3N$ Interactions for the Ab Initio Description of $^{12}\mathbf{C}$ and $^{16}\mathbf{O}$},
+  author = {Roth, Robert and Langhammer, Joachim and Calci, Angelo and Binder, Sven and Navr\'atil, Petr},
+  journal = {Phys. Rev. Lett.},
+  volume = {107},
+  issue = {7},
+  pages = {072501},
+  numpages = {5},
+  year = {2011},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.107.072501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.107.072501}
+}
+
+%%%%%  IMSRG  %%%%%
+
+@article{TSUKIYAMA2011222502,
+  title = {In-Medium Similarity Renormalization Group For Nuclei},
+  author = {Tsukiyama, K. and Bogner, S. K. and Schwenk, A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {106},
+  issue = {22},
+  pages = {222502},
+  numpages = {4},
+  year = {2011},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.106.222502},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.106.222502}
+}
+
+@article{TSUKIYAMA2012061304,
+  title = {In-medium similarity renormalization group for open-shell nuclei},
+  author = {Tsukiyama, K. and Bogner, S. K. and Schwenk, A.},
+  journal = {Phys. Rev. C},
+  volume = {85},
+  issue = {6},
+  pages = {061304},
+  numpages = {4},
+  year = {2012},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.85.061304},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.85.061304}
+}
+
+@article{HERGERT2013242501,
+  title = {Ab initio calculations of even oxygen isotopes with chiral two-plus-three-nucleon interactions},
+  author = {Hergert, H. and Binder, S. and Calci, A. and Langhammer, J. and Roth, R.},
+  journal = {Phys. Rev. Lett.},
+  volume = {110},
+  issue = {24},
+  pages = {242501},
+  numpages = {6},
+  year = {2013},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.110.242501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.110.242501}
+}
+
+@article{BOGNER2014142501,
+  title = {Nonperturbative Shell-Model Interactions from the In-Medium Similarity Renormalization Group},
+  author = {Bogner, S. K. and Hergert, H. and Holt, J. D. and Schwenk, A. and Binder, S. and Calci, A. and Langhammer, J. and Roth, R.},
+  journal = {Phys. Rev. Lett.},
+  volume = {113},
+  issue = {14},
+  pages = {142501},
+  numpages = {5},
+  year = {2014},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.113.142501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.113.142501}
+}
+
+@article{HERGERT2014041302,
+  title = {Ab initio multireference in-medium similarity renormalization group calculations of even calcium and nickel isotopes},
+  author = {Hergert, H. and Bogner, S. K. and Morris, T. D. and Binder, S. and Calci, A. and Langhammer, J. and Roth, R.},
+  journal = {Phys. Rev. C},
+  volume = {90},
+  issue = {4},
+  pages = {041302},
+  numpages = {6},
+  year = {2014},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.90.041302},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.90.041302}
+}
+
+@article{HERGERT2017023002,
+  author={H Hergert},
+  title={In-medium similarity renormalization group for closed and open-shell nuclei},
+  journal={Physica Scripta},
+  volume={92},
+  number={2},
+  pages={023002},
+  url={http://stacks.iop.org/1402-4896/92/i=2/a=023002},
+  year={2017},
+}
+
+@article{STROBERG2016051301,
+  title = {Ground and excited states of doubly open-shell nuclei from ab initio valence-space Hamiltonians},
+  author = {Stroberg, S. R. and Hergert, H. and Holt, J. D. and Bogner, S. K. and Schwenk, A.},
+  journal = {Phys. Rev. C},
+  volume = {93},
+  issue = {5},
+  pages = {051301},
+  numpages = {6},
+  year = {2016},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.93.051301},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.93.051301}
+}
+
+@article{STROBERG2017032502,
+  title = {Nucleus-Dependent Valence-Space Approach to Nuclear Structure},
+  author = {Stroberg, S. R. and Calci, A. and Hergert, H. and Holt, J. D. and Bogner, S. K. and Roth, R. and Schwenk, A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {118},
+  issue = {3},
+  pages = {032502},
+  numpages = {6},
+  year = {2017},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.118.032502},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.118.032502}
+}
+
+
+%%%%%  SCGF   %%%%%
+
+@article{SOMA2013011303,
+  title = {Ab initio Gorkov-Green's function calculations of open-shell nuclei},
+  author = {Som\`a, V. and Barbieri, C. and Duguet, T.},
+  journal = {Phys. Rev. C},
+  volume = {87},
+  issue = {1},
+  pages = {011303},
+  numpages = {5},
+  year = {2013},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.87.011303},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.87.011303}
+}
+
+@article{SOMA2014024323,
+  title = {Ab initio self-consistent Gorkov-Green's function calculations of semi-magic nuclei: Numerical implementation at second order with a two-nucleon interaction},
+  author = {Som\`a, V. and Barbieri, C. and Duguet, T.},
+  journal = {Phys. Rev. C},
+  volume = {89},
+  issue = {2},
+  pages = {024323},
+  numpages = {16},
+  year = {2014},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.89.024323},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.89.024323}
+}
+
+@article{SOMA2014061301,
+  title = {Chiral two- and three-nucleon forces along medium-mass isotope chains},
+  author = {Som\`a, V. and Cipollone, A. and Barbieri, C. and Navr\'atil, P. and Duguet, T.},
+  journal = {Phys. Rev. C},
+  volume = {89},
+  issue = {6},
+  pages = {061301},
+  numpages = {5},
+  year = {2014},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.89.061301},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.89.061301}
+}
+
+
+
+%%%%%  Coupled Cluster  %%%%%%
+
+%%% Modern Papers
+
+@article{WLOCH2005212501,
+  title = {Ab-Initio Coupled-Cluster Study of $^{16}\mathbf{O}$},
+  author = {W\l{}och, M. and Dean, D. J. and Gour, J. R. and Hjorth-Jensen, M. and Kowalski, K. and Papenbrock, T. and Piecuch, P.},
+  journal = {Phys. Rev. Lett.},
+  volume = {94},
+  issue = {21},
+  pages = {212501},
+  numpages = {4},
+  year = {2005},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.94.212501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.94.212501}
+}
+
+@article{WLOCH2005S1291,
+  author={Marta Włoch and Jeffrey R Gour and Piotr Piecuch and David J Dean and Morten Hjorth-Jensen and Thomas Papenbrock},
+  title={Coupled-cluster calculations for ground and excited states of closed- and open-shell nuclei using methods of quantum chemistry},
+  journal={Journal of Physics G: Nuclear and Particle Physics},
+  volume={31},
+  number={8},
+  pages={S1291},
+  url={http://stacks.iop.org/0954-3899/31/i=8/a=007},
+  year={2005},
+  abstract={We discuss large-scale ab initio calculations of ground and excited states of 16 O and preliminary calculations for 15 O and 17 O using coupled-cluster methods and algorithms developed in quantum chemistry. By using realistic two-body interactions and the renormalized form of the Hamiltonian obtained with a no-core G-matrix approach, we are able to obtain the virtually converged results for 16 O and promising results for 15 O and 17 O at the level of two-body interactions. The calculated properties other than binding and excitation energies include charge radius and charge form factor. The relatively low costs of coupled-cluster calculations, which are characterized by the low-order polynomial scaling with the system size, enable us to probe large model spaces with up to seven or eight major oscillator shells, for which nontruncated shell-model calculations for nuclei with A = 15–17 active particles are presently not possible.}
+}
+
+@article{JANSEN2014142502,
+  title = {Ab-initio coupled-cluster effective interactions for the shell model: Application to neutron-rich oxygen and carbon isotopes},
+  author = {Jansen, G. R. and Engel, J. and Hagen, G. and Navratil, P. and Signoracci, A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {113},
+  issue = {14},
+  pages = {142502},
+  numpages = {5},
+  year = {2014},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.113.142502},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.113.142502}
+}
+
+@article{JANSEN2016011301,
+  title = {Open $sd$-shell nuclei from first principles},
+  author = {Jansen, G. R. and Schuster, M. D. and Signoracci, A. and Hagen, G. and Navr\'atil, P.},
+  journal = {Phys. Rev. C},
+  volume = {94},
+  issue = {1},
+  pages = {011301},
+  numpages = {6},
+  year = {2016},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.94.011301},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.94.011301}
+}
+
+@Article{HAGEN2015186,
+author={Hagen, G. and Ekstr{\"o}m, A. and Forss{\'e}n, C. and Jansen, G. R. and Nazarewicz, W. and Papenbrock, T. and Wendt, K. A. and Bacca, S. and Barnea, N. and Carlsson, B. and Drischler, C. and Hebeler, K. and Hjorth-Jensen, M. and Miorelli, M. and Orlandini, G. and Schwenk, A. and Simonis, J.},
+title={Neutron and weak-charge distributions of the $^{48}$Ca nucleus},
+journal={Nature Physics},
+year={2015},
+month={Nov},
+day={02},
+publisher={Nature Publishing Group SN  -},
+volume={12},
+pages={186 EP  -},
+note={Article},
+url={http://dx.doi.org/10.1038/nphys3529}
+}
+
+@article{KOWALSKI2004132501,
+  title = {Coupled Cluster Calculations of Ground and Excited States of Nuclei},
+  author = {Kowalski, K. and Dean, D. J. and Hjorth-Jensen, M. and Papenbrock, T. and Piecuch, P.},
+  journal = {Phys. Rev. Lett.},
+  volume = {92},
+  issue = {13},
+  pages = {132501},
+  numpages = {4},
+  year = {2004},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.92.132501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.92.132501}
+}
+
+@article{GOUR2006024310,
+  title = {Coupled-cluster calculations for valence systems around $^{16}\mathrm{O}$},
+  author = {Gour, J. R. and Piecuch, P. and Hjorth-Jensen, M. and W\l{}och, M. and Dean, D. J.},
+  journal = {Phys. Rev. C},
+  volume = {74},
+  issue = {2},
+  pages = {024310},
+  numpages = {18},
+  year = {2006},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.74.024310},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.74.024310}
+}
+
+@article{BINDER2013054319,
+  title = {Extension of coupled-cluster theory with a noniterative treatment of connected triply excited clusters to three-body Hamiltonians},
+  author = {Binder, Sven and Piecuch, Piotr and Calci, Angelo and Langhammer, Joachim and Navr\'atil, Petr and Roth, Robert},
+  journal = {Phys. Rev. C},
+  volume = {88},
+  issue = {5},
+  pages = {054319},
+  numpages = {21},
+  year = {2013},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.88.054319},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.88.054319}
+}
+
+
+	
+
+%%% intro
+
+@misc{HERGERTPRIVATE,
+author = {Heiko Hergert},
+title = {Private Communication}
+}
+
+@article{CIZEK19664256,
+author = {Jiri Cizek},
+title = {On the Correlation Problem in Atomic and Molecular Systems. Calculation of Wavefunction Components in Ursell‐Type Expansion Using Quantum‐Field Theoretical Methods},
+journal = {The Journal of Chemical Physics},
+volume = {45},
+number = {11},
+pages = {4256-4266},
+year = {1966},
+doi = {10.1063/1.1727484},
+URL = {         https://doi.org/10.1063/1.1727484},
+eprint = {https://doi.org/10.1063/1.1727484}
+}
+
+
+@article {CIZEK1971359,
+author = {Cizek, J. and Paldus, J.},
+title = {Correlation problems in atomic and molecular systems III. Rederivation of the coupled-pair many-electron theory using the traditional quantum chemical methodst},
+journal = {International Journal of Quantum Chemistry},
+volume = {5},
+number = {4},
+publisher = {Interscience Publishers, a division of John Wiley & Sons, Inc.},
+issn = {1097-461X},
+url = {http://dx.doi.org/10.1002/qua.560050402},
+doi = {10.1002/qua.560050402},
+pages = {359--379},
+year = {1971},
+}
+
+@article{CIZEK1980251,
+  author={J. Cizek and J. Paldus},
+  title={Coupled Cluster Approach},
+  journal={Physica Scripta},
+  volume={21},
+  number={3-4},
+  pages={251},
+  url={http://iopscience.iop.org/1402-4896/21/3-4/006},
+  year={1980},
+  abstract={A brief overview concerning the motivations and the development of the coupled cluster approach to the many-electron correlation problem for both closed and open shell systems is given. The basic characteristics and applications of this approach are briefly summarized as well as its relationship to other approaches.}
+}
+
+@article{PIECUCH2002527,
+author = { Piotr   Piecuch  and  Karol   Kowalski  and  Ian S. O.   Pimienta  and  Michael J.   Mcguire },
+title = {Recent advances in electronic structure theory: Method of moments of coupled-cluster equations and renormalized coupled-cluster approaches},
+journal = {International Reviews in Physical Chemistry},
+volume = {21},
+number = {4},
+pages = {527-655},
+year  = {2002},
+publisher = {Taylor & Francis},
+doi = {10.1080/0144235021000053811},
+URL = {         https://doi.org/10.1080/0144235021000053811},
+eprint = {https://doi.org/10.1080/0144235021000053811}
+}
+
+%% cc for nuclear
+@article{BRUECKNER19551344,
+  title = {Approximate Reduction of the Many-Body Problem for Strongly Interacting Particles to a Problem of Self-Consistent Fields},
+  author = {Brueckner, K. A. and Levinson, C. A.},
+  journal = {Phys. Rev.},
+  volume = {97},
+  issue = {5},
+  pages = {1344--1352},
+  numpages = {0},
+  year = {1955},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.97.1344},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.97.1344}
+}
+
+@article{BETHE19561353,
+  title = {Nuclear Many-Body Problem},
+  author = {Bethe, H. A.},
+  journal = {Phys. Rev.},
+  volume = {103},
+  issue = {5},
+  pages = {1353--1390},
+  numpages = {0},
+  year = {1956},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRev.103.1353},
+  url = {https://link.aps.org/doi/10.1103/PhysRev.103.1353}
+}
+
+@article{GOLDSTONE1957267,
+	title = {Derivation of the Brueckner many-body theory},
+	volume = {239},
+	number = {1217},
+	pages = {267--279},
+	year = {1957},
+	doi = {10.1098/rspa.1957.0037},
+	publisher = {The Royal Society},
+	abstract = {An exact formal solution is obtained to the problem of a system of fermions in interaction. This solution is expressed in a form which avoids the problem of unlinked clusters in manybody theory. The technique of Feynman graphs is used to derive the series and to define linked terms. The graphs are those appropriate to a system of many fermions and are used to give a new derivation of the Hartree-Fock and Brueckner methods for this problem.},
+	issn = {0080-4630},
+	URL = {http://rspa.royalsocietypublishing.org/content/239/1217/267},
+	eprint = {http://rspa.royalsocietypublishing.org/content/239/1217/267.full.pdf},
+	journal = {Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences}
+}
+
+
+@article{COESTER1958421,
+title = "Bound states of a many-particle system",
+journal = "Nuclear Physics",
+volume = "7",
+number = "Supplement C",
+pages = "421 - 424",
+year = "1958",
+issn = "0029-5582",
+doi = "https://doi.org/10.1016/0029-5582(58)90280-3",
+url = "http://www.sciencedirect.com/science/article/pii/0029558258902803",
+author = "F. Coester"
+}
+
+@article{COESTER1960477,
+title = "Short-range correlations in nuclear wave functions",
+journal = "Nuclear Physics",
+volume = "17",
+number = "Supplement C",
+pages = "477 - 485",
+year = "1960",
+issn = "0029-5582",
+doi = "https://doi.org/10.1016/0029-5582(60)90140-1",
+url = "http://www.sciencedirect.com/science/article/pii/0029558260901401",
+author = "F. Coester and H. Kümmel"
+}
+
+@article{KUMMEL19781,
+title = "Many-fermion theory in expS- (or coupled cluster) form",
+journal = "Physics Reports",
+volume = "36",
+number = "1",
+pages = "1 - 63",
+year = "1978",
+issn = "0370-1573",
+doi = "https://doi.org/10.1016/0370-1573(78)90081-9",
+url = "http://www.sciencedirect.com/science/article/pii/0370157378900819",
+author = "H. Kümmel and K.H. Lührmann and J.G. Zabolitzky"
+}
+
+
+%%%%%  Introduction  %%%%%%
+
+%% Nuclear Astrophysics
+@article{APRAHAMIAN2005535,
+title = "Nuclear structure aspects in nuclear astrophysics",
+journal = "Progress in Particle and Nuclear Physics",
+volume = "54",
+number = "2",
+pages = "535 - 613",
+year = "2005",
+issn = "0146-6410",
+doi = "https://doi.org/10.1016/j.ppnp.2004.09.002",
+url = "http://www.sciencedirect.com/science/article/pii/S0146641004001103",
+author = "A. Aprahamian and K. Langanke and M. Wiescher",
+keywords = "Nuclear structure, Nuclear reactions, Nuclear astrophysics, Stellar evolution, Stellar explosion"
+}
+
+@article{SCHATZ1998167,
+title = "rp-process nucleosynthesis at extreme temperature and density conditions",
+journal = "Physics Reports",
+volume = "294",
+number = "4",
+pages = "167 - 263",
+year = "1998",
+issn = "0370-1573",
+doi = "https://doi.org/10.1016/S0370-1573(97)00048-3",
+url = "http://www.sciencedirect.com/science/article/pii/S0370157397000483",
+author = "H. Schatz and A. Aprahamian and J. Görres and M. Wiescher and T. Rauscher and J.F. Rembges and F.-K. Thielemann and B. Pfeiffer and P. Möller and K.-L. Kratz and H. Herndl and B.A. Brown and H. Rebel",
+keywords = "Thermonuclear reaction rates, Mass models, X-ray burst, Black hole"
+}
+
+@article{LANGANKE20011657,
+  author={K Langanke and M Wiescher},
+  title={Nuclear reactions and stellar processes},
+  journal={Reports on Progress in Physics},
+  volume={64},
+  number={12},
+  pages={1657},
+  url={http://stacks.iop.org/0034-4885/64/i=12/a=202},
+  year={2001},
+}
+
+%% Nuclear Reactions
+@article{NAVRATIL2016053002,
+  author={Petr Navrátil and Sofia Quaglioni and Guillaume Hupin and Carolina Romero-Redondo and Angelo Calci},
+  title={Unified ab initio approaches to nuclear structure and reactions},
+  journal={Physica Scripta},
+  volume={91},
+  number={5},
+  pages={053002},
+  url={http://stacks.iop.org/1402-4896/91/i=5/a=053002},
+  year={2016},
+}
+
+@article{exampleref1,
+  author = "Doe, Jane and Smith, John",
+  journal = "Lor. Ips.",
+  pages = "123",
+  title = "{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}",
+  volume = "45",
+  year = "2000"
+}
+
+%% CKM Matrix
+@article{CABBIBO1963531,
+  title = {Unitary Symmetry and Leptonic Decays},
+  author = {Cabibbo, Nicola},
+  journal = {Phys. Rev. Lett.},
+  volume = {10},
+  issue = {12},
+  pages = {531--533},
+  numpages = {0},
+  year = {1963},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.10.531},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.10.531}
+}
+
+@article{KOBAYASHI1973652,
+author = {Kobayashi, Makoto and Maskawa, Toshihide},
+title = {CP-Violation in the Renormalizable Theory of Weak Interaction},
+journal = {Progress of Theoretical Physics},
+volume = {49},
+number = {2},
+pages = {652-657},
+year = {1973},
+doi = {10.1143/PTP.49.652},
+URL = { + http://dx.doi.org/10.1143/PTP.49.652},
+eprint = {/oup/backfile/content_public/journal/ptp/49/2/10.1143/ptp.49.652/2/49-2-652.pdf}
+}
+
+@article{TOWNER2003197,
+  author={I S Towner and J C Hardy},
+  title={The evaluation of V ud , experiment and theory},
+  journal={Journal of Physics G: Nuclear and Particle Physics},
+  volume={29},
+  number={1},
+  pages={197},
+  url={http://stacks.iop.org/0954-3899/29/i=1/a=321},
+  year={2003},
+}
+
+@article{GULYUZ2016012501,
+  title = {High Precision Determination of the $\ensuremath{\beta}$ Decay ${Q}_{\mathrm{EC}}$ Value of $^{11}\mathrm{C}$ and Implications on the Tests of the Standard Model},
+  author = {Gulyuz, K. and Bollen, G. and Brodeur, M. and Bryce, R. A. and Cooper, K. and Eibach, M. and Izzo, C. and Kwan, E. and Manukyan, K. and Morrissey, D. J. and Naviliat-Cuncic, O. and Redshaw, M. and Ringle, R. and Sandler, R. and Schwarz, S. and Sumithrarachchi, C. S. and Valverde, A. A. and Villari, A. C. C.},
+  journal = {Phys. Rev. Lett.},
+  volume = {116},
+  issue = {1},
+  pages = {012501},
+  numpages = {5},
+  year = {2016},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.116.012501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.116.012501}
+}
+
+@article{TOWNER2008025501,
+author         = "Towner, I. S. and Hardy, J. C.",
+title          = "{An Improved calculation of the isospin-symmetry-breaking
+                        corrections to superallowed Fermi beta decay}",
+journal        = "Phys. Rev.",
+volume         = "C77",
+year           = "2008",
+pages          = "025501",
+doi            = "10.1103/PhysRevC.77.025501",
+eprint         = "0710.3181",
+archivePrefix  = "arXiv",
+primaryClass   = "nucl-th",
+SLACcitation   = "%%CITATION = ARXIV:0710.3181;%%"
+}
+
+@article{TOWNER199413,
+title = "Quenching of spin operators in the calculation of radiative corrections for nuclear beta decay",
+journal = "Physics Letters B",
+volume = "333",
+number = "1",
+pages = "13 - 16",
+year = "1994",
+issn = "0370-2693",
+doi = "https://doi.org/10.1016/0370-2693(94)91000-6",
+url = "http://www.sciencedirect.com/science/article/pii/0370269394910006",
+author = "I.S. Towner"
+}
+
+@article{TOWNER1992478,
+title = "The nuclear-structure dependence of radiative corrections in superallowed Fermi beta-decay",
+journal = "Nuclear Physics A",
+volume = "540",
+number = "3",
+pages = "478 - 500",
+year = "1992",
+issn = "0375-9474",
+doi = "https://doi.org/10.1016/0375-9474(92)90170-O",
+url = "http://www.sciencedirect.com/science/article/pii/037594749290170O",
+author = "I.S. Towner"
+}
+
+@article{BARKER1992501,
+title = "Determination of |Vud| from Fermi decays and the unitarity of the KM-mixing matrix",
+journal = "Nuclear Physics A",
+volume = "540",
+number = "3",
+pages = "501 - 519",
+year = "1992",
+issn = "0375-9474",
+doi = "https://doi.org/10.1016/0375-9474(92)90171-F",
+url = "http://www.sciencedirect.com/science/article/pii/037594749290171F",
+author = "F.C. Barker and B.A. Brown and W. Jaus and G. Rasche"
+}
+
+@article{JAUS1990166,
+  title = {Nuclear-structure dependence of $O(\ensuremath{\alpha})$ corrections to Fermi decays and the value of the Kobayashi-Maskawa matrix element ${V}_{\mathrm{ud}}$},
+  author = {Jaus, W. and Rasche, G.},
+  journal = {Phys. Rev. D},
+  volume = {41},
+  issue = {1},
+  pages = {166--176},
+  numpages = {0},
+  year = {1990},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.41.166},
+  url = {https://link.aps.org/doi/10.1103/PhysRevD.41.166}
+}
+
+@article{HARDY2005055501,
+  title = {Superallowed ${0}^{+}\ensuremath{\rightarrow}{0}^{+}$ nuclear $\ensuremath{\beta}$ decays: A critical survey with tests of the conserved vector current hypothesis and the standard model},
+  author = {Hardy, J. C. and Towner, I. S.},
+  journal = {Phys. Rev. C},
+  volume = {71},
+  issue = {5},
+  pages = {055501},
+  numpages = {29},
+  year = {2005},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.71.055501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.71.055501}
+}
+
+
+
+%% Double B-decay
+@article{SUHONEN1998123,
+title = "Weak-interaction and nuclear-structure aspects of nuclear double beta decay",
+journal = "Physics Reports",
+volume = "300",
+number = "3",
+pages = "123 - 214",
+year = "1998",
+issn = "0370-1573",
+doi = "https://doi.org/10.1016/S0370-1573(97)00087-2",
+url = "http://www.sciencedirect.com/science/article/pii/S0370157397000872",
+author = "Jouni Suhonen and Osvaldo Civitarese",
+keywords = "Weak interactions, Double beta decay, Nuclear matrix elements"
+}
+
+@article{AVIGNONE2008481,
+  title = {Double beta decay, Majorana neutrinos, and neutrino mass},
+  author = {Avignone, Frank T. and Elliott, Steven R. and Engel, Jonathan},
+  journal = {Rev. Mod. Phys.},
+  volume = {80},
+  issue = {2},
+  pages = {481--516},
+  numpages = {0},
+  year = {2008},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/RevModPhys.80.481},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.80.481}
+}
+
+@article{ELLIOTT19872020,
+  title = {Direct evidence for two-neutrino double-beta decay in $^{82}\mathrm{Se}$},
+  author = {Elliott, S. R. and Hahn, A. A. and Moe, M. K.},
+  journal = {Phys. Rev. Lett.},
+  volume = {59},
+  issue = {18},
+  pages = {2020--2023},
+  numpages = {0},
+  year = {1987},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.59.2020},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.59.2020}
+}
+
+@article{MILEY19903092,
+  title = {Suggestive evidence for the two-neutrino double-\ensuremath{\beta} decay of $^{76}\mathrm{Ge}$},
+  author = {Miley, H. S. and Avignone, F. T. and Brodzinski, R. L. and Collar, J. I. and Reeves, J. H.},
+  journal = {Phys. Rev. Lett.},
+  volume = {65},
+  issue = {25},
+  pages = {3092--3095},
+  numpages = {0},
+  year = {1990},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.65.3092},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.65.3092}
+}
+
+
+@article{LINCOLN2013012501,
+  title = {First Direct Double-$\ensuremath{\beta}$ Decay $Q$-Value Measurement of $^{82}\mathrm{Se}$ in Support of Understanding the Nature of the Neutrino},
+  author = {Lincoln, David L. and Holt, Jason D. and Bollen, Georg and Brodeur, Maxime and Bustabad, Scott and Engel, Jonathan and Novario, Samuel J. and Redshaw, Matthew and Ringle, Ryan and Schwarz, Stefan},
+  journal = {Phys. Rev. Lett.},
+  volume = {110},
+  issue = {1},
+  pages = {012501},
+  numpages = {5},
+  year = {2013},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.110.012501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.110.012501}
+}
+
+@article{GULYUZ2015055501,
+  title = {Determination of the direct  double-$\ensuremath{\beta}$-decay $Q$ value of $^{96}\mathrm{Zr}$ and atomic masses of $^{90\ensuremath{-}92,94,96}\mathrm{Zr}$ and $^{92,94\ensuremath{-}98,100}\mathrm{Mo}$},
+  author = {Gulyuz, K. and Ariche, J. and Bollen, G. and Bustabad, S. and Eibach, M. and Izzo, C. and Novario, S. J. and Redshaw, M. and Ringle, R. and Sandler, R. and Schwarz, S. and Valverde, A. A.},
+  journal = {Phys. Rev. C},
+  volume = {91},
+  issue = {5},
+  pages = {055501},
+  numpages = {7},
+  year = {2015},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.91.055501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.91.055501}
+}
+
+@article{REDSHAW2012041306,
+  title = {Atomic mass and double-$\ensuremath{\beta}$-decay $Q$ value of ${}^{48}$Ca},
+  author = {Redshaw, Matthew and Bollen, Georg and Brodeur, Maxime and Bustabad, Scott and Lincoln, David L. and Novario, Samuel J. and Ringle, Ryan and Schwarz, Stefan},
+  journal = {Phys. Rev. C},
+  volume = {86},
+  issue = {4},
+  pages = {041306},
+  numpages = {4},
+  year = {2012},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.86.041306},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.86.041306}
+}
+
+@article{BUSTABAD2013022501,
+  title = {First direct determination of the ${}^{48}\mathbf{Ca}$ double-$\ensuremath{\beta}$ decay $Q$ value},
+  author = {Bustabad, S. and Bollen, G. and Brodeur, M. and Lincoln, D. L. and Novario, S. J. and Redshaw, M. and Ringle, R. and Schwarz, S. and Valverde, A. A.},
+  journal = {Phys. Rev. C},
+  volume = {88},
+  issue = {2},
+  pages = {022501},
+  numpages = {4},
+  year = {2013},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.88.022501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.88.022501}
+}
+
+
+
+%% Neutrino Detection
+@article{HIRATA19871490,
+  title = {Observation of a neutrino burst from the supernova SN1987A},
+  author = {Hirata, K. and Kajita, T. and Koshiba, M. and Nakahata, M. and Oyama, Y. and Sato, N. and Suzuki, A. and Takita, M. and Totsuka, Y. and Kifune, T. and Suda, T. and Takahashi, K. and Tanimori, T. and Miyano, K. and Yamada, M. and Beier, E. W. and Feldscher, L. R. and Kim, S. B. and Mann, A. K. and Newcomer, F. M. and Van, R. and Zhang, W. and Cortez, B. G.},
+  journal = {Phys. Rev. Lett.},
+  volume = {58},
+  issue = {14},
+  pages = {1490--1493},
+  numpages = {0},
+  year = {1987},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.58.1490},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.58.1490}
+}
+
+@article{BIONTA19871494,
+  title = {Observation of a neutrino burst in coincidence with supernova 1987A in the Large Magellanic Cloud},
+  author = {Bionta, R. M. and Blewitt, G. and Bratton, C. B. and Casper, D. and Ciocio, A. and Claus, R. and Cortez, B. and Crouch, M. and Dye, S. T. and Errede, S. and Foster, G. W. and Gajewski, W. and Ganezer, K. S. and Goldhaber, M. and Haines, T. J. and Jones, T. W. and Kielczewska, D. and Kropp, W. R. and Learned, J. G. and LoSecco, J. M. and Matthews, J. and Miller, R. and Mudan, M. S. and Park, H. S. and Price, L. R. and Reines, F. and Schultz, J. and Seidel, S. and Shumard, E. and Sinclair, D. and Sobel, H. W. and Stone, J. L. and Sulak, L. R. and Svoboda, R. and Thornton, G. and van der Velde, J. C. and Wuest, C.},
+  journal = {Phys. Rev. Lett.},
+  volume = {58},
+  issue = {14},
+  pages = {1494--1496},
+  numpages = {0},
+  year = {1987},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.58.1494},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.58.1494}
+}
+
+@article{KOLBE20032569,
+  author={E Kolbe and K Langanke and G Martínez-Pinedo and P Vogel},
+  title={Neutrino–nucleus reactions and nuclear structure},
+  journal={Journal of Physics G: Nuclear and Particle Physics},
+  volume={29},
+  number={11},
+  pages={2569},
+  url={http://stacks.iop.org/0954-3899/29/i=11/a=010},
+  year={2003},
+  abstract={The methods used in the evaluation of the neutrino–nucleus cross section are reviewed. Results are shown for a variety of targets of practical importance. Many of the described reactions are accessible in future experiments with neutrino sources from the pion and muon decays at rest, which might be available at the neutron spallation facilities. Detailed comparison between the experimental and theoretical results would establish benchmarks needed for verification and/or parameter adjustment of the nuclear models. Having a reliable tool for such calculation is of great importance in a variety of applications, e.g. the neutrino oscillation studies, detection of supernova neutrinos, description of the neutrino transport in supernovae and description of the r-process nucleosynthesis.}
+}
+
+@article{BENHAR2005053005,
+  title = {Electron- and neutrino-nucleus scattering in the impulse approximation regime},
+  author = {Benhar, Omar and Farina, Nicola and Nakamura, Hiroki and Sakuda, Makoto and Seki, Ryoichi},
+  journal = {Phys. Rev. D},
+  volume = {72},
+  issue = {5},
+  pages = {053005},
+  numpages = {13},
+  year = {2005},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.72.053005},
+  url = {https://link.aps.org/doi/10.1103/PhysRevD.72.053005}
+}
+
+@article{HARGROVE1996183,
+title = "A lead astronomical neutrino detector: LAND",
+journal = "Astroparticle Physics",
+volume = "5",
+number = "2",
+pages = "183 - 196",
+year = "1996",
+issn = "0927-6505",
+doi = "https://doi.org/10.1016/0927-6505(96)00019-9",
+url = "http://www.sciencedirect.com/science/article/pii/0927650596000199",
+author = "C.K. Hargrove and I. Batkin and M.K. Sundaresan and J. Dubeau"
+}
+
+@article{CLINE1994720,
+  title = {Prospects for detection of a cosmologically significant neutrino mass from a galactic supernova neutrino burst using a neutral-current-based detector},
+  author = {Cline, D. B. and Fuller, G. M. and Hong, W. P. and Meyer, B. and Wilson, J.},
+  journal = {Phys. Rev. D},
+  volume = {50},
+  issue = {2},
+  pages = {720--729},
+  numpages = {0},
+  year = {1994},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.50.720},
+  url = {https://link.aps.org/doi/10.1103/PhysRevD.50.720}
+}
+
+@article{EWAN1992373,
+title = "The Sudbury Neutrino Observatory",
+journal = "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",
+volume = "314",
+number = "2",
+pages = "373 - 379",
+year = "1992",
+issn = "0168-9002",
+doi = "https://doi.org/10.1016/0168-9002(92)90981-9",
+url = "http://www.sciencedirect.com/science/article/pii/0168900292909819",
+author = "G.T. Ewan"
+}
+
+@article{LANGANKE19962629,
+  title = {Signal for Supernova ${\ensuremath{\nu}}_{\ensuremath{\mu}}$ and ${\ensuremath{\nu}}_{\ensuremath{\tau}}$ Neutrinos in Water \ifmmode \check{C}\else \v{C}\fi{}erenkov Detectors},
+  author = {Langanke, K. and Vogel, P. and Kolbe, E.},
+  journal = {Phys. Rev. Lett.},
+  volume = {76},
+  issue = {15},
+  pages = {2629--2632},
+  numpages = {0},
+  year = {1996},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.76.2629},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.76.2629}
+}
+
+
+
+%%%%%  Many-Body  %%%%%%
+
+%% HF
+@article{PULAY1980393,
+title = "Convergence acceleration of iterative sequences. the case of scf iteration",
+journal = "Chem. Phys. Lett.",
+volume = "73",
+number = "2",
+pages = "393 - 398",
+year = "1980",
+note = "",
+issn = "0009-2614",
+doi = "10.1016/0009-2614(80)80396-4",
+url = "https://doi.org/10.1016/0009-2614(80)80396-4",
+author = "P{\'e}ter Pulay",
+}
+
+@article {PULAY1982556,
+author = {Pulay, P.},
+title = {Improved SCF convergence acceleration},
+journal = {J. Comput. Chem.},
+volume = {3},
+number = {4},
+publisher = {John Wiley & Sons, Inc.},
+issn = {1096-987X},
+url = {https://doi.org/10.1002/jcc.540030413},
+doi = {10.1002/jcc.540030413},
+pages = {556--560},
+year = {1982},
+}
+
+@article{BROYDEN1965557,
+  title={A class of methods for solving nonlinear simultaneous equations},
+  author={Broyden, Charles G},
+  journal={Math. Comput.},
+  volume={19},
+  number={92},
+  pages={577--593},
+  year={1965},
+  publisher={JSTOR},
+  doi={10.1090/S0025-5718-1965-0198670-6}
+}
+
+%%%%%  Coupled Cluster  %%%%%%
+
+@article{BARTLETT2007291,
+title = {Coupled-cluster theory in quantum chemistry},
+author = {Bartlett, Rodney J. and Musia\l{}, Monika},
+journal = {Rev. Mod. Phys.},
+volume = {79},
+issue = {1},
+pages = {291--352},
+numpages = {0},
+year = {2007},
+month = {Feb},
+publisher = {American Physical Society},
+doi = {10.1103/RevModPhys.79.291},
+url = {https://doi.org/10.1103/RevModPhys.79.291}
+}
+
+@article{HAGEN2014096302,
+author = {{Hagen}, G. and {Papenbrock}, T. and {Hjorth-Jensen}, M. and {Dean}, D.~J.},
+title = {Coupled-cluster computations of atomic nuclei},
+journal = {Rep. Prog. in Phys.},
+archivePrefix = "arXiv",
+eprint = {1312.7872},
+primaryClass = "nucl-th",
+year = {2014},
+month = {Sep},
+volume = {77},
+number = {9},
+eid = {096302},
+pages = {096302},
+doi = {10.1088/0034-4885/77/9/096302},
+adsurl = {http://adsabs.harvard.edu/abs/2014RPPh...77i6302H},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+%%%%%  EOM  %%%%%%
+
+@article{PARZUCHOWSKI2017044304,
+  title = {Ab initio excited states from the in-medium similarity renormalization group},
+  author = {Parzuchowski, N. M. and Morris, T. D. and Bogner, S. K.},
+  journal = {Phys. Rev. C},
+  volume = {95},
+  issue = {4},
+  pages = {044304},
+  numpages = {15},
+  year = {2017},
+  month = {Apr},
+  publisher = {American Physical Society},
+  archiveprefix = "arXiv",
+  eprint = {1611.00661},
+  doi = {10.1103/PhysRevC.95.044304},
+  url = {https://doi.org/10.1103/PhysRevC.95.044304}
+}
+
+
+%%%%%  Center-of-Mass  %%%%%%
+@article{BISHOP19901341,
+  title = {Translationally invariant coupled cluster theory for simple finite systems},
+  author = {Bishop, R. F. and Flynn, M. F. and Bosc\'a, M. C. and Buenda, E. and Guardiola, R.},
+  journal = {Phys. Rev. C},
+  volume = {42},
+  issue = {4},
+  pages = {1341--1360},
+  numpages = {0},
+  year = {1990},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.42.1341},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.42.1341}
+}
+
+@article{NOGGA2002054003,
+  title = {The \ensuremath{\alpha} particle based on modern nuclear forces},
+  author = {Nogga, A. and Kamada, H. and Gl\"ockle, W. and Barrett, B. R.},
+  journal = {Phys. Rev. C},
+  volume = {65},
+  issue = {5},
+  pages = {054003},
+  numpages = {18},
+  year = {2002},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.65.054003},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.65.054003}
+}
+
+@article{HAGEN2009062503,
+  title = {Solution of the Center-Of-Mass Problem in Nuclear Structure Calculations},
+  author = {Hagen, G. and Papenbrock, T. and Dean, D. J.},
+  journal = {Phys. Rev. Lett.},
+  volume = {103},
+  issue = {6},
+  pages = {062503},
+  numpages = {4},
+  year = {2009},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.103.062503},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.103.062503}
+}
+
+@article{GLOECKNER1974313,
+title = "Spurious center-of-mass motion",
+journal = "Physics Letters B",
+volume = "53",
+number = "4",
+pages = "313 - 318",
+year = "1974",
+issn = "0370-2693",
+doi = "https://doi.org/10.1016/0370-2693(74)90390-6",
+url = "http://www.sciencedirect.com/science/article/pii/0370269374903906",
+author = "D.H. Gloeckner and R.D. Lawson"
+}
+
+
+%%%%%  Beta Decay  %%%%%%
+
+@article{FERMI1934,
+   author = {{Fermi}, E.},
+    title = "{Versuch einer Theorie der {$\beta$}-Strahlen. I}",
+  journal = {Zeitschrift fur Physik},
+     year = 1934,
+    month = mar,
+   volume = 88,
+    pages = {161-177},
+      doi = {10.1007/BF01351864},
+   adsurl = {http://adsabs.harvard.edu/abs/1934ZPhy...88..161F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{WILSON1968,
+  author = {Fred L. Wilson},
+  title = {Fermi's Theory of Beta Decay},
+  journal = {American Journal of Physics},
+  volume = {36},
+  number = {12},
+  pages = {1150-1160},
+  year = {1968},
+  doi = {10.1119/1.1974382},
+  URL = {https://doi.org/10.1119/1.1974382},
+  eprint = {https://doi.org/10.1119/1.1974382}
+}
+
+%% Quenching
+@article{SUHONEN2013153,
+  title = "Probing the quenching of gA by single and double beta decays",
+  journal = "Physics Letters B",
+  volume = "725",
+  number = "1",
+  pages = "153 - 157",
+  year = "2013",
+  issn = "0370-2693",
+  doi = "https://doi.org/10.1016/j.physletb.2013.06.042",
+  url = "http://www.sciencedirect.com/science/article/pii/S0370269313005170",
+  author = "Jouni Suhonen and Osvaldo Civitarese",
+  keywords = "Quasiparticle random-phase approximation, Two-neutrino double beta decays, Beta decays, Electron-capture decays, Axial-vector coupling constant"
+}
+
+@Article{ENGEL2015,
+  author={Engel, Jonathan},
+  title={Nuclear matrix elements for double-b decay},
+  journal={XXVI International Conference on Neutrino Physics and Astrophysics (Neutrino 2014)},
+  year={2015},
+  volume={1666},
+  doi={10.1063/1.4915596}
+}
+
+
+
+@article{TOWNER1979,
+  title = {Quenching of Allowed Gamow-Teller $\ensuremath{\beta}$ Transitions in Mirror Nuclei},
+  author = {Towner, I. S. and Khanna, F. C.},
+  journal = {Phys. Rev. Lett.},
+  volume = {42},
+  issue = {1},
+  pages = {51--54},
+  numpages = {0},
+  year = {1979},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.42.51},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.42.51}
+}
+
+
+@article{WILDENTHAL1983,
+  title = {Predicted features of the beta decay of neutron-rich $\mathrm{sd}$-shell nuclei},
+  author = {Wildenthal, B. H. and Curtin, M. S. and Brown, B. A.},
+  journal = {Phys. Rev. C},
+  volume = {28},
+  issue = {3},
+  pages = {1343--1366},
+  numpages = {0},
+  year = {1983},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.28.1343},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.28.1343}
+}
+
+@article{BROWN1983,
+  title = {Corrections to the free-nucleon values of the single-particle matrix elements of the $M1$ and Gamow-Teller operators, from a comparison of shell-model predictions with $\mathrm{sd}$-shell data},
+  author = {Brown, B. A. and Wildenthal, B. H.},
+  journal = {Phys. Rev. C},
+  volume = {28},
+  issue = {6},
+  pages = {2397--2413},
+  numpages = {0},
+  year = {1983},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.28.2397},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.28.2397}
+}
+
+@article{WARBURTON1992,
+  title = {Effective interactions for the 0p1s0d nuclear shell-model space},
+  author = {Warburton, E. K. and Brown, B. A.},
+  journal = {Phys. Rev. C},
+  volume = {46},
+  issue = {3},
+  pages = {923--944},
+  numpages = {0},
+  year = {1992},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.46.923},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.46.923}
+}
+
+@article{ORMAND1995,
+  title = {Isospin-mixing corrections for fp-shell Fermi transitions},
+  author = {Ormand, W. E. and Brown, B. A.},
+  journal = {Phys. Rev. C},
+  volume = {52},
+  issue = {5},
+  pages = {2455--2460},
+  numpages = {0},
+  year = {1995},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.52.2455},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.52.2455}
+}
+
+@article{HARDY2005,
+  title = {Superallowed ${0}^{+}\ensuremath{\rightarrow}{0}^{+}$ nuclear $\ensuremath{\beta}$ decays: A critical survey with tests of the conserved vector current hypothesis and the standard model},
+  author = {Hardy, J. C. and Towner, I. S.},
+  journal = {Phys. Rev. C},
+  volume = {71},
+  issue = {5},
+  pages = {055501},
+  numpages = {29},
+  year = {2005},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.71.055501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.71.055501}
+}
+
+@article{TOWNER2008,
+  title = {Improved calculation of the isospin-symmetry-breaking corrections to superallowed Fermi \ensuremath{\beta} decay},
+  author = {Towner, I. S. and Hardy, J. C.},
+  journal = {Phys. Rev. C},
+  volume = {77},
+  issue = {2},
+  pages = {025501},
+  numpages = {15},
+  year = {2008},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevC.77.025501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevC.77.025501}
+}
+
+@article{KUBODERA1978,
+  title = {Axial Currents in Nuclei},
+  author = {Kubodera, Kuniharu and Delorme, Jean and Rho, Mannque},
+  journal = {Phys. Rev. Lett.},
+  volume = {40},
+  issue = {12},
+  pages = {755--758},
+  numpages = {0},
+  year = {1978},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.40.755},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.40.755}
+}
+
+@article{OSET1979,
+  title = {Axial Currents in Nuclei: The Gamow-Teller Matrix Element},
+  author = {Oset, Eulogio and Rho, Mannque},
+  journal = {Phys. Rev. Lett.},
+  volume = {42},
+  issue = {1},
+  pages = {47--50},
+  numpages = {0},
+  year = {1979},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.42.47},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.42.47}
+}
+
+
+%% CC beta decay
+
+@article{JANSEN2014,
+  title = {Effects of Three-Nucleon Forces and Two-Body Currents on Gamow-Teller Strengths},
+  author = {Ekstr\"om, A. and Jansen, G. R. and Wendt, K. A. and Hagen, G. and Papenbrock, T. and Bacca, S. and Carlsson, B. and Gazit, D.},
+  journal = {Phys. Rev. Lett.},
+  volume = {113},
+  issue = {26},
+  pages = {262504},
+  numpages = {6},
+  year = {2014},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.113.262504},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.113.262504}
+}
+
+%% imsrg eff int
+
+@article{BOGNER2014,
+  title = {Nonperturbative Shell-Model Interactions from the In-Medium Similarity Renormalization Group},
+  author = {Bogner, S. K. and Hergert, H. and Holt, J. D. and Schwenk, A. and Binder, S. and Calci, A. and Langhammer, J. and Roth, R.},
+  journal = {Phys. Rev. Lett.},
+  volume = {113},
+  issue = {14},
+  pages = {142501},
+  numpages = {5},
+  year = {2014},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.113.142501},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.113.142501}
+}
+
+
+
+
+
+%%% FCI Scaling %%%
+@article{SHAO2016,
+  title={Accelerating Nuclear Configuration Interaction Calculations through a Preconditioned Block Iterative Eigensolver},
+  author={Meiyue Shao and Hasan Metin Aktulga and Chao Yang and Esmond G. Ng and Pieter Maris and James P. Vary},
+  journal={CoRR},
+  year={2016},
+  volume={abs/1609.01689}
+}

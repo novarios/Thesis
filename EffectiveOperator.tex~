@@ -1,0 +1,42 @@
+\documentclass[thesis.tex]{subfiles}
+
+\begin{document}
+
+\begin{align}
+  \diagram{Eff_1b/Eff_1b-figure0} &= \diagram{Eff_1b/Eff_1b-figure1} \notag \\
+  \oopint{\lambda}{i}{a} &= \opint{\lambda}{i}{a}
+\end{align}
+
+\begin{align}
+  \diagram{Eff_1b/Eff_1b-figure2} &= \diagram{Eff_1b/Eff_1b-figure3} + \diagram{Eff_1b/Eff_1b-figure4} \notag \\
+  \oopint{\lambda}{\lambda}{a}{b} &= \opint{\lambda}{\lambda}{a}{b} - \sum\limits_{k}\oopint{\lambda}{k}{b}\tamp{a}{k}
+\end{align}
+
+\begin{align}
+  \diagram{Eff_1b/Eff_1b-figure5} &= \diagram{Eff_1b/Eff_1b-figure6} + \diagram{Eff_1b/Eff_1b-figure7} \notag \\
+  \oopint{\lambda}{i}{j} &= \opint{\lambda}{i}{j} + \sum\limits_{c}\oopint{\lambda}{i}{c}\tamp{c}{j}
+\end{align}
+
+\begin{align}
+  \diagram{Eff_1b/Eff_1b-figure8} &= \diagram{Eff_1b/Eff_1b-figure7} + \diagram{Eff_1b/Eff_1b-figure8} + \diagram{Eff_1b/Eff_1b-figure9} + \diagram{Eff_1b/Eff_1b-figure10} \notag \\
+  \oopint{\lambda}{a}{i} &= \opint{\lambda}{a}{i} + \sum\limits_{\mathclap{c}}\oopint{\lambda}{a}{c}\tamp{c}{i} - \sum\limits_{\mathclap{k}}\oopint{\lambda}{k}{i}\tamp{a}{k} + \sum\limits_{\mathclap{kc}}\oopint{\lambda}{k}{c}\tamp{ac}{ik}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+  \diagram{Eff_2b/Eff_2b-figure0} &= \diagram{Eff_2b/Eff_2b-figure1} \notag \\
+  \oopint{\lambda}{ab}{ic} &= -\sum\limits_{k}\oopint{\lambda}{k}{c}\tamp{ab}{ik}
+\end{align}
+
+\begin{align}
+  \diagram{Eff_2b/Eff_2b-figure2} &= \diagram{Eff_2b/Eff_2b-figure3} \notag \\
+  \oopint{\lambda}{ia}{jk} &= \sum\limits_{c}\oopint{\lambda}{i}{c}\tamp{ca}{jk}
+\end{align}
+
+\begin{align}
+  \diagram{Eff_2b/Eff_2b-figure4} &= \diagram{Eff_2b/Eff_2b-figure5} + \diagram{Eff_2b/Eff_2b-figure6} \notag \\
+  \oopint{\lambda}{ab}{ij} &= \Perm{ab}\sum\limits_{\mathclap{c}}\oopint{\lambda}{a}{c}\tamp{cb}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\oopint{\lambda}{k}{i}\tamp{ab}{kj}
+\end{align}
+
+\end{document}

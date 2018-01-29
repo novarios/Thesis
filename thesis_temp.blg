@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis_temp.aux
+The style file: plain.bst
+Database file #1: thesis_temp.bib
+I was expecting an "="---line 1028 of file thesis_temp.bib
+ :   article 
+ :           NUMBER = {26},
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in GOLDSTONE1957267
+Warning--to sort, need author or key in blas
+Warning--empty author in GOLDSTONE1957267
+Warning--empty author in blas
+Warning--empty booktitle in SHERRILL1999143
+You've used 125 entries,
+            2118 wiz_defined-function locations,
+            1307 strings with 29579 characters,
+and the built_in function-call counts, 52133 in all, are:
+= -- 4782
+> -- 3554
+< -- 2
++ -- 1429
+- -- 1288
+* -- 4652
+:= -- 9091
+add.period$ -- 377
+call.type$ -- 125
+change.case$ -- 1014
+chr.to.int$ -- 0
+cite$ -- 130
+duplicate$ -- 1388
+empty$ -- 3275
+format.name$ -- 1288
+if$ -- 10173
+int.to.chr$ -- 0
+int.to.str$ -- 125
+missing$ -- 129
+newline$ -- 626
+num.names$ -- 246
+pop$ -- 805
+preamble$ -- 1
+purify$ -- 894
+quote$ -- 0
+skip$ -- 913
+stack$ -- 0
+substring$ -- 3291
+swap$ -- 137
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 490
+warning$ -- 5
+while$ -- 403
+width$ -- 128
+write$ -- 1370
+(There was 1 error message)

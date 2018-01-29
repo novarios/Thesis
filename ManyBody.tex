@@ -197,7 +197,7 @@ where $\Ecorr$ is known as the \textit{correlation energy}.
 
 Now that the many-body quantum problem has been formulated, different approaches to solving that problem can be proposed and analyzed.  Because taking account of correlations from all particles simultaneously is a demanding--and for some systems, computationally impossible--endeavor, methods for solving the many-body Schr\"{o}dinger equation should be systematically improvable. Successful methods with this quality incorporate the most dominant correlations in lower-order solutions and approach the exact solution when more and more orders are included.
 
-\section{Hartree--Fock Method}
+\section{Hartree--Fock Method} \label{section:hartree-fock}
 A successful, first-order approximation to any many-body method comes from noticing that each individual particle feels a mean-field potential from the cumulative interactions with all the other particles.  The \textit{Hartree-Fock} (HF) method \cite{HARTREE1928,FOCK1930} aims to transform the original single-particle basis to a Hartree-Fock basis where each orbital is the eigenfunction of its corresponding mean-field.  Because the transformation of a single orbital changes its effect on every other particle, this process must be performed iteratively until self-consistency between all the orbitals is reached, which is why this method is also known as the \textit{Self-Consistent Field} (SCF) method.
 
 This mean-field picture results from the following procedure.  It begins by minimizing the reference energy with respect to the reference state.  This functional is just the zero-body piece of the normal-ordered Hamiltonian,

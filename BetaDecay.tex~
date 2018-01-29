@@ -1,0 +1,41 @@
+\documentclass[thesis.tex]{subfiles}
+
+\begin{document}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}
+    \centering
+    \includegraphics[height=3.5cm]{betadecay/BetaDecay-figure0.pdf}
+  \end{subfigure}
+  \begin{subfigure}
+    \centering
+    \includegraphics[height=3.5cm]{betadecay/BetaDecay-figure1.pdf}
+  \end{subfigure}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}
+    \centering
+    \includegraphics[height=3.5cm]{betadecay/BetaDecay-figure2.pdf}
+  \end{subfigure}
+  \begin{subfigure}
+    \centering
+    \includegraphics[height=3.5cm]{betadecay/BetaDecay-figure3.pdf}
+  \end{subfigure}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}
+    \centering
+    \includegraphics[height=3.5cm]{betadecay/BetaDecay-figure4.pdf}
+  \end{subfigure}
+  \begin{subfigure}
+    \centering
+    \includegraphics[height=3.5cm]{betadecay/BetaDecay-figure5.pdf}
+  \end{subfigure}
+\end{figure}
+
+\end{document}
