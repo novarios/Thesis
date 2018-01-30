@@ -6,7 +6,7 @@ Coupled-cluster theory is a powerful method for approximating solutions to the m
 
 \section{Exponential Ansatz} \label{section:exponentialansatz}
 
-Coupled cluster theory is based on expressing the $A$-particle correlated wave function $\corrket$ using the exponential ansatz,
+Coupled cluster theory is based on expressing the $A$-particle correlated wave function $\corrket$ using the exponential ansatz \cite{COESTER1960477,CIZEK19664256},
 \begin{equation} \label{eq:cc_ansatz}
   \corrket = \E^{\Top}\refket.
 \end{equation}
@@ -36,7 +36,7 @@ The effective Hamiltonian in Eq.\ \eqref{eq:cc_heff0} can be rewritten with comm
 \begin{align*}
   \EHam = \Ham + [\Ham, \Top] + \frac{1}{2!} [[\Ham, \Top], \Top] + \frac{1}{3!} [[[\Ham, \Top], \Top], \Top] + \frac{1}{4!} [[[[\Ham, \Top], \Top], \Top], \Top] + \cdots,
 \end{align*}
-which terminates at four-nested commutators when using a two-body  interaction.  This commutator expression ensures that CC is size-extensive and contains only connected terms.  In addition, because $\Top$ is an excitation operator, terms of the form $\Top\Ham$ are necessarily disconnected and thus vanish \cite{SHAVITT2009}.  Therefore the CC effective Hamiltonian can be further reduced to
+which terminates at four-nested commutators when using a two-body  interaction.  This commutator expression ensures that CC theory is size-extensive and contains only connected terms.  In addition, because $\Top$ is an excitation operator, terms of the form $\Top\Ham$ are necessarily disconnected and thus vanish \cite{SHAVITT2009}.  Therefore the CC effective Hamiltonian can be further reduced to
 \begin{align} \label{eq:cc_heff1}
   \EHam = \left(\Ham e^{\Top}\right)_{\mathrm{c}},
 \end{align}
@@ -58,7 +58,7 @@ The unknown cluster amplitudes in CCSD, $\amp{a}{i}$ and $\amp{ab}{ij}$, can be 
 After the Fock matrix has been diagonalized, the diagonal components of Eq.\ \eqref{eq:ccsd1} can be separated and, after expanding the exponent in Eq.\ \eqref{eq:cc_heff1}, the non-vanishing terms of the CCSD amplitude equations become,
 \begin{gather} \label{eq:ccsd2}
   \statebra{a}{i} \left[ \Ham_{2} \left(\Top_{1} + \Top_{2} + \Top_{1}\Top_{2} + \frac{1}{2!} \Top_{1}^{2} + \frac{1}{3!} \Top_{1}^{3}\right) \right]_{\mathrm{c}} \refket = \Edenom{a}{i}\amp{a}{i} \\
-  \statebra{ab}{ij} \left[ \Ham_{2} \left(1 + \hat{T}_1 + \hat{T}_2 + \frac{1}{2} \hat{T}_1^{2} + \hat{T}_1\hat{T}_2 + \frac{1}{2!} \hat{T}_2^{2} + \frac{1}{3!} \hat{T}_1^{3} + \frac{1}{2!} \hat{T}_1^{2} \hat{T}_2 + \frac{1}{4!} \hat{T}_1^{4}\right) \right]_{\mathrm{c}} \refket = \Edenom{ab}{ij}\amp{ab}{ij} \notag
+  \statebra{ab}{ij} \left[ \Ham_{2} \left(1 + \hat{T}_1 + \hat{T}_2 + \frac{1}{2} \hat{T}_1^{2} + \hat{T}_1\hat{T}_2 + \frac{1}{2!} \hat{T}_2^{2} + \frac{1}{3!} \hat{T}_1^{3} + \frac{1}{2!} \hat{T}_1^{2} \hat{T}_2 + \frac{1}{4!} \hat{T}_1^{4}\right) \right]_{\mathrm{c}} \refket = \Edenom{ab}{ij}\amp{ab}{ij}, \notag
 \end{gather}
 where $\Edenom{}{}$ are equivalent to the MBPT energy denominators from Eq.\ \eqref{eq:energy_denominators}.
 
@@ -86,38 +86,58 @@ These non-linear equations are solved using an iterative procedure where the clu
 
 The exponential ansatz in Eq.\ \eqref{eq:cc_ansatz} and the cluster amplitudes in Eq.\ \eqref{eq:cc_amps} are not just useful mathematical constructs for solving the many-body problem. They represent physical many-body dynamics and can be derived from the results of many-body perturbation theory, see section \ref{section:MBPT}.  The \textit{linked-cluster theorem} \cite{HUGENHOLTZ1957481,FRANTZ196016,BRANDOW1967} states that the sum of all time orderings of a disconnected diagram is equal to the product of the two subdiagrams.  Using the results and techniques from the factorization theorem, \ref{section:factorization_theorem}, the linked-cluster theorem can be used to factorize specific MBPT terms such that they can be analytically summed to infinite order.  This infinite summation is the main principle behind coupled cluster theory and can be shown to lead naturally to the exponential ansatz.
 
-The first step in deriving the exponential ansatz is to group all the linked MBPT diagrams of Eq.\ \eqref{eq:linked_MBPT} into classes according to their number of disconnected pieces.  The first class, where all the terms are connected, can be defined as the cluster excitation operator $\Top$.  The connected terms can then be characterized by their excitation type such that $\Top_{k}$ corresponds to $\ph{k}{k}$ excitations.  The $\Top_{1}$, $\Top_{2}$, and $\Top_{3}$ cluster amplitudes are shown in terms of the connected MBPT diagrams (only first-order $\Top^{(1)}$ and second-order $\Top^{(2)}$ terms are shown and resolvant lines are removed for clarity).
-\begin{align}
+The first step in deriving the exponential ansatz is to group all the linked MBPT diagrams of Eq.\ \eqref{eq:linked_MBPT} into classes according to their number of disconnected pieces.  The first class, where all the terms are connected, can be defined as the cluster excitation operator $\Top$, depicted by the vertex type \raisebox{-5pt}{\mbox{\includegraphics[height=20pt]{diagrams/CCSD_dE/CCSD_dE-figure3.pdf}}}.  The connected terms can then be characterized by their excitation type such that $\Top_{k}$ corresponds to $\ph{k}{k}$ excitations.
+
+The $\Top_{1}$ operator represents the class of all connected $\ph{1}{1}$ MBPT diagrams, which are determined by the number of particle-hole pairs (or pair of up- and down-lines) at the top of the diagram,
+\begin{align} \label{eq:t1_def}
   \Top_{1}\refket \equiv \sdiagram{CC_Amps/CC_Amps-figure0} &= \left(\Top^{(1)}_{1} + \Top^{(2)}_{1} + \cdots\right)\refket = \sdiagram{MBPT_linked/MBPT_linked-figure0} + \sdiagram{MBPT_linked/MBPT_linked-figure4} + \sdiagram{MBPT_linked/MBPT_linked-figure8} \notag \\
-  &+ \sdiagram{MBPT_linked/MBPT_linked-figure10} + \sdiagram{MBPT_linked/MBPT_linked-figure11} + \sdiagram{MBPT_linked/MBPT_linked-figure16} + \sdiagram{MBPT_linked/MBPT_linked-figure17} + \cdots
+  &+ \sdiagram{MBPT_linked/MBPT_linked-figure10} + \sdiagram{MBPT_linked/MBPT_linked-figure11} + \sdiagram{MBPT_linked/MBPT_linked-figure16} + \sdiagram{MBPT_linked/MBPT_linked-figure17} + \cdots,
 \end{align}
-\begin{align}
+where only first-order $\Top^{(1)}$ and second-order $\Top^{(2)}$ terms are shown while resolvant lines and labels are removed for clarity.
+The $\Top_{2}$ operator similarly represents the class of all connected $\ph{2}{2}$ MBPT diagrams.  The first- and second-order terms that belong to this class are,
+\begin{align} \label{eq:t2_def}
   \Top_{2}\refket \equiv \sdiagram{CC_Amps/CC_Amps-figure1} &= \left(\Top^{(1)}_{2} + \Top^{(2)}_{2} + \cdots\right)\refket = \sdiagram{MBPT_linked/MBPT_linked-figure1} + \sdiagram{MBPT_linked/MBPT_linked-figure2} + \sdiagram{MBPT_linked/MBPT_linked-figure3} \notag \\
-  &+ \sdiagram{MBPT_linked/MBPT_linked-figure6} + \sdiagram{MBPT_linked/MBPT_linked-figure7} + \sdiagram{MBPT_linked/MBPT_linked-figure13} + \sdiagram{MBPT_linked/MBPT_linked-figure14} + \sdiagram{MBPT_linked/MBPT_linked-figure15} + \cdots
+  &+ \sdiagram{MBPT_linked/MBPT_linked-figure6} + \sdiagram{MBPT_linked/MBPT_linked-figure7} + \sdiagram{MBPT_linked/MBPT_linked-figure13} + \sdiagram{MBPT_linked/MBPT_linked-figure14} + \sdiagram{MBPT_linked/MBPT_linked-figure15} + \cdots.
 \end{align}
+Additionally, the $\Top_{3}$ operator represents the class of all connected $\ph{3}{3}$ MBPT diagrams, of which there is only two second-order terms,
 \begin{align}
-  \Top_{3}\refket \equiv \sdiagram{CC_Amps/CC_Amps-figure2} &= \left(\Top^{(2)}_{3} + \cdots\right)\refket = \sdiagram{MBPT_linked/MBPT_linked-figure18} + \sdiagram{MBPT_linked/MBPT_linked-figure19} + \cdots
+  \Top_{3}\refket \equiv \sdiagram{CC_Amps/CC_Amps-figure2} &= \left(\Top^{(2)}_{3} + \cdots\right)\refket = \sdiagram{MBPT_linked/MBPT_linked-figure18} + \sdiagram{MBPT_linked/MBPT_linked-figure19} + \cdots.
+\end{align}
+So far, this is merely a redefinition of the connected class of MBPT diagrams up to all orders and is not particularly useful.  But the disconnected diagrams, neglected up to this point, can be recombined using the factorization theorem \ref{section:factorization_theorem} to provide a powerful simplification (see \cite{SHAVITT2009} for a more thorough derivation).
+
+As an example, the remaining disconnected first- and second-order diagrams can be written as the product of connected diagrams.  First, the second-order disconnected diagram from the term $\fop^{2}\refket$ can be rewritten by adding a duplicate with the left and right subdiagrams exchanged, which doesn't change the value because the state labels are generic.  Then, the two disconnected diagrams can be rewritten using the factorization theorem following the example of Eq.\ \eqref{eq:factorization2},
+\begin{equation}
+  \xdiagram{MBPT/MBPT-figure12} &= \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure12} + \xdiagram{MBPT/MBPT-figure13} \right) = \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure0} \right)^{2}.
+\end{equation}
+The resulting product involves the first-order component of the $\Top_{1}$ operator in Eq.\ \eqref{eq:t1_def}, $\Top^{(1)}_{1}$.  Algebraicly, this process is written below,
+\begin{align} \label{eq:t1_factorization}
+  \sum_{\mathclap{abij}}\frac{\fint{a}{i}\fint{b}{j}}{\Edenom{ab}{ij}\Edenom{a}{i}}\ket{\Phi^{ab}_{ij}} &= \frac{1}{2}\sum_{\mathclap{abij}}\frac{\fint{a}{i}\fint{b}{j}}{\Edenom{ab}{ij}\Edenom{a}{i}}\ket{\Phi^{ab}_{ij}} + \frac{1}{2}\sum_{\mathclap{abij}}\frac{\fint{a}{i}\fint{b}{j}}{\Edenom{ab}{ij}\Edenom{b}{j}}\ket{\Phi^{ab}_{ij}} = \frac{1}{2}\sum_{\mathclap{abij}}\fint{a}{i}\fint{b}{j}\frac{\Edenom{b}{j} + \Edenom{a}{i}}{\Edenom{ab}{ij}\Edenom{a}{i}\Edenom{b}{j}}\ket{\Phi^{ab}_{ij}} \notag \\
+  &= \frac{1}{2}\left(\sum_{\mathclap{ai}}\frac{\fint{a}{i}}{\Edenom{a}{i}}\ket{\Phi^{a}_{i}}\right)\left(\sum_{\mathclap{bj}}\frac{\fint{b}{j}}{\Edenom{b}{j}}\ket{\Phi^{b}_{j}}\right) = \frac{1}{2}\left(\Top^{(1)}_{1}\right)^{2}.
 \end{align}
 
-So far, this is merely a redefinition of the connected class of MBPT diagrams up to all orders and is not particularly useful.  But the disconnected diagrams, neglected up to this point, can be recombined using the factorization theorem to provide a powerful simplification.  As an example, the remaining disconnected first- and second-order diagrams can be written as the product of connected diagrams,
-\begin{align}
-  \xdiagram{MBPT/MBPT-figure12} &= \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure12} + \xdiagram{MBPT/MBPT-figure13} \right) = \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure0} \right)^{2} \notag \\
-  \sum_{\mathclap{abij}}\frac{\fint{a}{i}\fint{b}{j}}{\Edenom{ab}{ij}\Edenom{a}{i}}\ket{\Phi^{ab}_{ij}} &= \frac{1}{2}\sum_{\mathclap{abij}}\frac{\fint{a}{i}\fint{b}{j}}{\Edenom{ab}{ij}\Edenom{a}{i}}\ket{\Phi^{ab}_{ij}} + \frac{1}{2}\sum_{\mathclap{abij}}\frac{\fint{a}{i}\fint{b}{j}}{\Edenom{ab}{ij}\Edenom{b}{j}}\ket{\Phi^{ab}_{ij}} = \frac{1}{2}\sum_{\mathclap{abij}}\fint{a}{i}\fint{b}{j}\frac{\Edenom{b}{j} + \Edenom{a}{i}}{\Edenom{ab}{ij}\Edenom{a}{i}\Edenom{b}{j}}\ket{\Phi^{ab}_{ij}} \notag \\
-  &= \frac{1}{2}\left(\sum_{\mathclap{ai}}\frac{\fint{a}{i}}{\Edenom{a}{i}}\ket{\Phi^{a}_{i}}\right)\left(\sum_{\mathclap{bj}}\frac{\fint{b}{j}}{\Edenom{b}{j}}\ket{\Phi^{b}_{j}}\right) = \frac{1}{2}\left(\Top^{(1)}_{1}\right)^{2}
-\end{align}
+This procedure can be repeated for the single second-order disconnected term from $\Vop^{2}\refket$,
 \begin{align}
   \xdiagram{MBPT/MBPT-figure21} &= \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure21} + \xdiagram{MBPT/MBPT-figure22} \right) \notag \\
-  &\hspace{140pt} = \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure1} \right)^{2} \notag \\
+  &\hspace{140pt} = \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure1} \right)^{2}.
+\end{align}
+A similar results gives the product involving the first-order component of the $\Top_{2}$ operator in Eq.\ \eqref{eq:t2_def}, $\Top^{(1)}_{2}$.  Again, the factorization process is written algebraicly,
+\begin{align} \label{eq:t2_factorization}
   \frac{1}{16}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\frac{\vint{ab}{ij}\vint{cd}{kl}}{\Edenom{abcd}{ijkl}\Edenom{ab}{ij}}\ket{\Phi^{abcd}_{ijkl}} &= \frac{1}{32}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\frac{\vint{ab}{ij}\vint{cd}{kl}}{\Edenom{abcd}{ijkl}\Edenom{ab}{ij}}\ket{\Phi^{abcd}_{ijkl}} + \frac{1}{32}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\frac{\vint{ab}{ij}\vint{cd}{kl}}{\Edenom{abcd}{ijkl}\Edenom{cd}{kl}}\ket{\Phi^{abcd}_{ijkl}} \notag \\
   &= \frac{1}{32}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\vint{ab}{ij}\vint{cd}{kl}\frac{\Edenom{cd}{kl} + \Edenom{ab}{ij}}{\Edenom{abcd}{ijkl}\Edenom{ab}{ij}\Edenom{cd}{kl}}\ket{\Phi^{abcd}_{ijkl}} \notag \\
-  &= \frac{1}{2}\left(\frac{1}{4}\sum_{\mathclap{abij}}\frac{\vint{ab}{ij}}{\Edenom{ab}{ij}}\ket{\Phi^{ab}_{ij}}\right)\left(\frac{1}{4}\sum_{\mathclap{cdkl}}\frac{\vint{cd}{kl}}{\Edenom{cd}{kl}}\ket{\Phi^{cd}_{kl}}\right) = \frac{1}{2}\left(\Top^{(1)}_{2}\right)^{2}
+  &= \frac{1}{2}\left(\frac{1}{4}\sum_{\mathclap{abij}}\frac{\vint{ab}{ij}}{\Edenom{ab}{ij}}\ket{\Phi^{ab}_{ij}}\right)\left(\frac{1}{4}\sum_{\mathclap{cdkl}}\frac{\vint{cd}{kl}}{\Edenom{cd}{kl}}\ket{\Phi^{cd}_{kl}}\right) = \frac{1}{2}\left(\Top^{(1)}_{2}\right)^{2}.
 \end{align}
-\begin{align}
-  \xdiagram{MBPT/MBPT-figure5} &+ \xdiagram{MBPT/MBPT-figure9} = \xdiagram{MBPT/MBPT-figure29} \notag \\
+
+Lastly, for the disconnected terms from $\Vop\fop\refket$ and $\fop\Vop\refket$, the first duplication step can be skipped and the diagrams can be factorized following the procedure in Eq.\ \eqref{eq:factorization2},
+\begin{equation}
+  \xdiagram{MBPT/MBPT-figure5} &+ \xdiagram{MBPT/MBPT-figure9} = \xdiagram{MBPT/MBPT-figure29}.
+\end{equation}
+This factorization results in a mixed term between the the first-order components from the $\Top_{1}$ and $\Top_{2}$ operators,
+\begin{align} \label{eq:t1t2_factorization}
   \frac{1}{4}\sum_{\mathclap{\substack{abc \\ ijk}}}\frac{\vint{ab}{ij}\fint{c}{k}}{\Edenom{abc}{ijk}\Edenom{ab}{ij}}\ket{\Phi^{abc}_{ijk}} &+ \frac{1}{4}\sum_{\mathclap{\substack{abc \\ ijk}}}\frac{\vint{ab}{ij}\fint{c}{k}}{\Edenom{abc}{ijk}\Edenom{c}{k}}\ket{\Phi^{abc}_{ijk}} = \frac{1}{4}\sum_{\mathclap{\substack{abcd \\ ijkl}}}\vint{ab}{ij}\fint{c}{k}\frac{\Edenom{c}{k} + \Edenom{ab}{ij}}{\Edenom{abc}{ijk}\Edenom{ab}{ij}\Edenom{c}{k}}\ket{\Phi^{abc}_{ijk}} \notag \\
   &= \left(\sum_{\mathclap{ck}}\frac{\fint{c}{k}}{\Edenom{c}{k}}\ket{\Phi^{c}_{k}}\right)\left(\frac{1}{4}\sum_{\mathclap{abij}}\frac{\vint{ab}{ij}}{\Edenom{ab}{ij}}\ket{\Phi^{ab}_{ij}}\right) = \Top^{(1)}_{1}\Top^{(1)}_{2}
 \end{align}
-Adding these factorized contributions gives $\frac{1}{2}\left(\Top^{(1)}_{1}\right)^{2} + \Top^{(1)}_{1}\Top^{(1)}_{2} + \frac{1}{2}\left(\Top^{(1)}_{2}\right)^{2} = \frac{1}{2}\left(\Top^{(1)}_{1} + \Top^{(1)}_{2}\right)^{2}$.  Repeating this procedure for all diagrams with two disconnected parts ($\mathrm{L}=2$) adds similar terms of all orders. The final contribution from this class of diagrams is,
+
+Adding these factorized contributions from Eqs.\ \eqref{eq:t1_factorization}, \eqref{eq:t2_factorization}, and \eqref{eq:t1t2_factorization} gives $\frac{1}{2}\left(\Top^{(1)}_{1}\right)^{2} + \Top^{(1)}_{1}\Top^{(1)}_{2} + \frac{1}{2}\left(\Top^{(1)}_{2}\right)^{2} = \frac{1}{2}\left(\Top^{(1)}_{1} + \Top^{(1)}_{2}\right)^{2}$.  Repeating this procedure for all diagrams with two disconnected parts ($\mathrm{L}=2$) adds similar terms of all orders. The final contribution from the $\mathrm{L}=2$ class of diagrams with two disconnected parts is,
 \begin{equation}
   \sum_{n=0}^{\infty}\left[\hat{R}_{0}\mathop{(\hat{V} - \Delta E_{0})}\right]^{n}\refket_{\mathrm{L=2}} = \frac{1}{2}\Top^{2}.
 \end{equation}
@@ -134,7 +154,7 @@ This equation shows the true strength and elegance of coupled cluster theory.  B
 
 \section{Example: Pairing Model} \label{section:pairingmodel}
 
-It's beneficial to illustrate a simplified example of coupled cluster theory.  For this purpose, we turn our attention to the simple pairing model.  This system uses a model space of $N$ shells, each with two opposite spin orbitals.
+It's beneficial to illustrate a simplified example of coupled cluster theory.  For this purpose, we turn our attention to the simple pairing model.  This system uses a model space of $N$ shells, or degenerate groups of single-particle states, each with two opposite spin orbitals.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.35\linewidth]{CC/Pairing_Space.pdf}
@@ -173,18 +193,18 @@ Lastly, the CCD correlation energy can be found with the $\Top_{2}$ term of Eq.\
 The correlation energies for a specific case, with $\delta = 1.0$, $N = 4$, and $A = 4$, were calculated for a number of different interaction strengths, $g$.  The results are shown in Fig.\ \ref{fig:pairingplot} along with the MBPT correlation energies to third (MBPT3) and fourth (MBPT4) orders for comparison.  The MBPT expressions for second and third order are,
 \begin{align} \label{eq:mbpt_2_3}
   \Ecorr_{\text{MBPT2}} &= \frac{1}{4}\sum\limits_{\mathclap{ijab}}\frac{\vint{ij}{ab}\vint{ab}{ij}}{\Edenom{ab}{ij}}, \\
-  \Ecorr_{\text{MBPT3}} &= \Ecorr_{\text{MBPT2}} + \frac{1}{8}\sum\limits_{\mathclap{ijabcd}}\frac{\vint{ij}{ab}\vint{ab}{cd}\vint{cd}{ij}}{\Edenom{ab}{ij}\Edenom{cd}{ij}} + \frac{1}{8}\sum\limits_{\mathclap{ijklab}}\frac{\vint{ij}{ab}\vint{kl}{ij}\vint{ab}{kl}}{\Edenom{ab}{ij}\Edenom{ab}{kl}} - \sum\limits_{\mathclap{ijkabc}}\frac{\vint{ij}{ab}\vint{kb}{ic}\vint{ac}{kj}}{\Edenom{ab}{ij}\Edenom{ac}{kj}}.
+  \Ecorr_{\text{MBPT3}} &= \Ecorr_{\text{MBPT2}} + \frac{1}{8}\sum\limits_{\mathclap{ijabcd}}\frac{\vint{ij}{ab}\vint{ab}{cd}\vint{cd}{ij}}{\Edenom{ab}{ij}\Edenom{cd}{ij}} + \frac{1}{8}\sum\limits_{\mathclap{ijklab}}\frac{\vint{ij}{ab}\vint{kl}{ij}\vint{ab}{kl}}{\Edenom{ab}{ij}\Edenom{ab}{kl}}.
 \end{align}
-The fourth-order expression contains 39 additional terms, so the expression for MBPT4 is omitted.
+Generally, the fourth-order expression contains 39 additional terms.  However, most of these vanish in this case because of the form of the pairing interaction.
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth]{CC/CCDMBPT4theory.pdf}
   \caption{Correlation energy for the pairing model with exact diagonalization, CCD, and perturbation theory to third (MBPT3) and fourth order (MBPT4) for a range of interaction values, $g$.}
   \label{fig:pairingplot}
 \end{figure}
 
-Also shown are the exact results from the CI method.  With an example this small, it's possible to diagonalize, and even show explicitly, the full CI Hamiltonian matrix for an exact result.  There are six possible Slater determinants with no broken pairs, one representing the reference state, four representing various $\ph{2}{2}$ excitations, one representing a $\ph{4}{4}$ excitation.  The diagonal elements of the matrix include the single-particle energies of the constituent states, and the matrix elements between Slater determinants with no overlap vanish in accordance with the Slater-Condon rules, see Eq.\ \eqref{eq:slater_condon} and \cite{SLATER1929,CONDON1930}.
+Also shown are the exact results from the CI method.  With an example this small, it's possible to diagonalize, and even show explicitly, the full CI Hamiltonian matrix for an exact result.  There are six possible Slater determinants with no broken pairs, one representing the reference state, four representing various $\ph{2}{2}$ excitations, one representing a $\ph{4}{4}$ excitation.  The diagonal elements of the matrix include the single-particle energies of the constituent states, and the matrix elements between Slater determinants with no overlap vanish in accordance with the Slater-Condon rules, see Eq.\ \eqref{eq:slater_condon} and \cite{SLATER1929,CONDON1930}.  The full Hamiltonian matrix to be diagonalized is,
 \begin{equation}
   H = \begin{bmatrix}
     2\delta -g & -g/2 & -g/2 & -g/2 & -g/2 & 0 \\ -g/2 & 4\delta -g &
@@ -192,7 +212,7 @@ Also shown are the exact results from the CI method.  With an example this small
     -g/2 \\ -g/2 & -g/2 & 0 & 6\delta-g & -g/2 & -g/2 \\ -g/2 & 0 & -g/2
     & -g/2 & 8\delta-g & -g/2 \\ 0 & -g/2 & -g/2 & -g/2 & -g/2 &
     10\delta -g
-  \end{bmatrix}
+  \end{bmatrix}.
 \end{equation}
 
 As methods to obtain the ground-state correlation energy, both CI and CC decouple, to some degree, the reference state and excitations from it.  This decoupling has the effect of shuffling correlations into the reference state and suppressing matrix elements connected to it.  Full decoupling between the reference state and all other Slater determinants can only be achieved with untruncated versions of these techniques, while decoupling of the strongest correlations can be approximately obtained with appropriate truncations.  However, unlike other many-body methods, the most unique aspect of the CC similarity transformation is that because of its non-unitarity, the resulting Hamiltonian will not be Hermitian.  This decoupling and non-Hermiticity can be seen in Fig.\ \ref{fig:pairingmatrix}, which shows the effect of the CC similarity transformation on the Hamiltonian for a pairing case with $N = 6$ and $A = 4$.
@@ -231,34 +251,55 @@ For CCSD calculations, useful types of channels include the direct two-body chan
   \vec{\xi}_{pq} = \vec{\xi}_{p} + \vec{\xi}_{q}\ \ \longrightarrow\ \ \ket{pq} \in \Sigma_{\vec{\xi}_{1}=\vec{\xi}_{pq}} \\
   \vec{\xi}_{p\bar{q}} = \vec{\xi}_{p} - \vec{\xi}_{q} = \vec{\xi}_{p} + \vec{\xi}_{\bar{q}}\ \ \longrightarrow\ \ \ket{p\bar{q}} \in \Sigma_{\vec{\xi}_{2}=\vec{\xi}_{p\bar{q}}}
 \end{gather}
-Also useful is the one-body channels, $\Sigma_{\vec{\xi}_{3}}$, which categorizes both single-particle states by their conserved quantum numbers.  These one-body channels can also characterize a special type of three-body state: the vector difference between the quantum numbers of a direct two-body state and a single-particle state or, equivalently, the vector sum of the quantum numbers of a two-body direct state and a time-reversed single-particle state.
+Also useful is the one-body channels, $\Sigma_{\vec{\xi}_{3}}$, which categorizes both single-particle states by their conserved quantum numbers.  These one-body channels can also characterize a special type of three-body state: the vector difference between the quantum numbers of a direct two-body state and a single-particle state or, equivalently, the vector sum of the quantum numbers of a two-body direct state and a time-reversed single-particle state,
 \begin{gather}
   \vec{\xi}_{p}\ \ \longrightarrow\ \ \ket{p} \in \Sigma_{\vec{\xi}_{3}=\vec{\xi}_{p}} \\
-  \vec{\xi}_{pq\bar{r}} = \vec{\xi}_{p} + \vec{\xi}_{q} - \vec{\xi}_{r} = \vec{\xi}_{p} + \vec{\xi}_{q} + \vec{\xi}_{\bar{r}}\ \ \longrightarrow\ \ \ket{pq\bar{r}} \in \Sigma_{\vec{\xi}_{3}=\vec{\xi}_{pq\bar{r}}}
+  \vec{\xi}_{pq\bar{r}} = \vec{\xi}_{p} + \vec{\xi}_{q} - \vec{\xi}_{r} = \vec{\xi}_{p} + \vec{\xi}_{q} + \vec{\xi}_{\bar{r}}\ \ \longrightarrow\ \ \ket{pq\bar{r}} \in \Sigma_{\vec{\xi}_{3}=\vec{\xi}_{pq\bar{r}}}.
 \end{gather}
 
-Using these channel structures, the interaction matrix elements and cluster amplitudes can be built in different ways.  The full applicability of these structures are shown in detail in the appendix \ref{chapter:appendix_computational}, but a few examples using sums in the CCD equations \eqref{eq:ccd_equations} are shown here.
-\begin{gather} \label{eq:channel_sums}
-  \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{cd}{ij} = \frac{1}{2}\sum\limits_{\mathclap{\ket{cd}}}\vint{ab}{cd}\tamp{cd}{ij}\ \ \text{for}\ \ket{cd} \in \Sigma_{\vec{\xi}_{ab}}=\Sigma_{\vec{\xi}_{ij}} \notag \\
-  \sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{ac}{kj} = \sum\limits_{\mathclap{\ket{k\bar{c}}}}\vint{k\bar{c}}{i\bar{b}}\tamp{a\bar{j}}{k\bar{c}}\ \ \text{for}\ \ket{k\bar{c}} \in \Sigma_{\vec{\xi}_{i\bar{b}}}=\Sigma_{\vec{\xi}_{a\bar{j}}} \notag \\
-  \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl} = \frac{1}{2}\sum\limits_{\mathclap{\substack{\ket{kl\bar{c}} \\ \ket{d}}}}\vint{kl\bar{c}}{d}\tamp{d}{ij\bar{b}}\tamp{a}{kl\bar{c}}\ \ \text{for}\ \ket{kl\bar{c}},\ket{d} \in \Sigma_{\vec{\xi}_{ij\bar{b}}}=\Sigma_{\vec{\xi}_{a}}
-\end{gather}
+Using these channel structures, the interaction matrix elements and cluster amplitudes can be built in different ways.  The full applicability of these structures are shown in detail in the appendix \ref{chapter:appendix_computational}, but a few examples using sums in the CCD equations \eqref{eq:ccd_equations} are shown here.  The direct two-body channels can be used when two summed indices appear in the bra- or ket-state of multiple matrix-elements,
+\begin{equation} \label{eq:channel_sums_1}
+  \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{cd}{ij} = \frac{1}{2}\sum\limits_{\mathclap{\ket{cd}}}\vint{ab}{cd}\tamp{cd}{ij}\ \ \text{for}\ \ket{cd} \in \Sigma_{\vec{\xi}_{ab}}=\Sigma_{\vec{\xi}_{ij}}.
+\end{equation}
+The cross two-body channels are used when two summed indices appear in the opposite corresponding bra- and ket-states of multiple matrix-matrix elements,
+\begin{equation} \label{eq:channel_sums_2}
+  \sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{ac}{kj} = \sum\limits_{\mathclap{\ket{k\bar{c}}}}\vint{k\bar{c}}{i\bar{b}}\tamp{a\bar{j}}{k\bar{c}}\ \ \text{for}\ \ket{k\bar{c}} \in \Sigma_{\vec{\xi}_{i\bar{b}}}=\Sigma_{\vec{\xi}_{a\bar{j}}}.
+\end{equation}
+Lastly, the one- and three-body channels are used when a single summed index appears opposite a direct two-body state in multiple matrix elements,
+\begin{equation} \label{eq:channel_sums_3}
+  \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl} = \frac{1}{2}\sum\limits_{\mathclap{\substack{\ket{kl\bar{c}} \\ \ket{d}}}}\vint{kl\bar{c}}{d}\tamp{d}{ij\bar{b}}\tamp{a}{kl\bar{c}}\ \ \text{for}\ \ket{kl\bar{c}},\ket{d} \in \Sigma_{\vec{\xi}_{ij\bar{b}}}=\Sigma_{\vec{\xi}_{a}}.
+\end{equation}
 
 
 \subsection{Matrix Structures and Intermediates} \label{section:maxtrix_intermediates}
 
 Symmetry channels not only provide an organized structure for the interaction matrix elements and cluster amplitudes, and remove any terms that violate the underlying symmetry of a problem, but they also naturally provide an efficient way of performing sums using matrix-matrix multiplications.  For example, the sums in Eq.\ \eqref{eq:channel_sums} can be reformulated as matrix-matrix multiplications by structuring the channel-separated interaction matrix elements and cluster amplitudes into individual matrices.  These operations can be performed very quickly using highly optimized linear algebra algorithms like those found in BLAS (Basic Linear Algebra Subprograms) \cite{blas}.  The matrices can be reordered so that the summed indices correspond to the internal columns and rows of those matrices.
-\begin{gather} \label{eq:channel_matrices}
-  \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{cd}{ij} = \frac{1}{2}\bvint{ab}{cd}\cdot\btamp{cd}{ij}\ \ \text{for}\ \ket{ab},\ket{ij},\ket{cd} \in \Sigma_{\vec{\xi}_{1}} \notag \\
-  \sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{ac}{kj} = \btamp{a\bar{j}}{k\bar{c}}\cdot\bvint{k\bar{c}}{i\bar{b}}\ \ \text{for}\ \ket{a\bar{j}},\ket{i\bar{b}},\ket{k\bar{c}} \in \Sigma_{\vec{\xi}_{2}} \notag \\
-  \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl} = \frac{1}{2}\btamp{a}{kl\bar{c}}\cdot\bvint{kl\bar{c}}{d}\cdot\btamp{d}{ij\bar{b}}\ \ \text{for}\ \ket{a},\ket{ij\bar{b}},\ket{kl\bar{c}},\ket{d} \in \Sigma_{\vec{\xi}_{3}}
-\end{gather}
-These sums correspond to different components of the updated cluster amplitudes according to Eq.\ \eqref{eq:cc_algorithm}.  So the different channel structures of the matrix-matrix multiplications in Eq.\ \eqref{eq:channel_matrices} correspond to different amplitude structures according to the sum's external indices.
-\begin{gather} \label{eq:amp_matrices}
-  \btamp{ab}{ij}\ \leftarrow\ \frac{1}{2}\bvint{ab}{cd}\cdot\btamp{cd}{ij}\ \ \text{for}\ \ket{ab},\ket{ij},\ket{cd} \in \Sigma_{\vec{\xi}_{1}} \notag \\
-  \btamp{a\bar{j}}{i\bar{b}}\ \leftarrow\ \btamp{a\bar{j}}{k\bar{c}}\cdot\bvint{k\bar{c}}{i\bar{b}}\ \ \text{for}\ \ket{a\bar{j}},\ket{i\bar{b}},\ket{k\bar{c}} \in \Sigma_{\vec{\xi}_{2}} \notag \\
-  \btamp{a}{ij\bar{b}}\ \leftarrow\ \frac{1}{2}\btamp{a}{kl\bar{c}}\cdot\bvint{kl\bar{c}}{d}\cdot\btamp{d}{ij\bar{b}}\ \ \text{for}\ \ket{a},\ket{ij\bar{b}},\ket{kl\bar{c}},\ket{d} \in \Sigma_{\vec{\xi}_{3}}
-\end{gather}
+
+For the direct two-body case of Eq.\ \eqref{eq:channel_sums_1}, the structures are already in the correct order such that the state $\ket{cd}$, indexed by the columns of $\bvint{}{}$ and the rows of $\btamp{}{}$, is summed by multiplying the two matrices,
+\begin{equation} \label{eq:channel_matrices_1}
+  \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{cd}{ij} = \frac{1}{2}\bvint{ab}{cd}\cdot\btamp{cd}{ij}\ \ \text{for}\ \ket{ab},\ket{ij},\ket{cd} \in \Sigma_{\vec{\xi}_{1}}.
+\end{equation}
+For the cross two-body case of Eq.\ \eqref{eq:channel_sums_2}, the states $\ket{j}$, $\ket{b}$, and $\ket{c}$ are time reversed so that the summed variables are collected in a state $\ket{k\bar{c}}$.  Then the matrix structures are reordered so this state is indexed by columns and rows of $\btamp{}{}$ and $\bvint{}{}$, respectively,
+\begin{equation} \label{eq:channel_matrices_2}
+  \sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{ac}{kj} = \btamp{a\bar{j}}{k\bar{c}}\cdot\bvint{k\bar{c}}{i\bar{b}}\ \ \text{for}\ \ket{a\bar{j}},\ket{i\bar{b}},\ket{k\bar{c}} \in \Sigma_{\vec{\xi}_{2}}.
+\end{equation}
+Lastly, for the case of Eq.\ \eqref{eq:channel_sums_3}, the states $\ket{b}$ and $\ket{c}$ are time-reversed so that the states $\ket{d}$ and $\ket{kl\bar{c}}$ appear in two different matrix elements.  Then, the matrix structures are reorganized so the summed states occur in the appropriate rows and columns for matrix-matrix multiplication,
+\begin{equation} \label{eq:channel_matrices_3}
+  \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl} = \frac{1}{2}\btamp{a}{kl\bar{c}}\cdot\bvint{kl\bar{c}}{d}\cdot\btamp{d}{ij\bar{b}}\ \ \text{for}\ \ket{a},\ket{ij\bar{b}},\ket{kl\bar{c}},\ket{d} \in \Sigma_{\vec{\xi}_{3}}.
+\end{equation}
+
+These sums correspond to different components of the updated cluster amplitudes according to Eq.\ \eqref{eq:cc_algorithm}.  So the different channel structures of the matrix-matrix multiplications correspond to different amplitude structures according to the sum's external indices.  The two external direct two-body states of Eq.\ \eqref{eq:channel_matrices_1}, $\ket{ab}$ and $\ket{ij}$, naturally map to the direct amplitude structure,
+\begin{equation} \label{eq:amp_matrices_1}
+  \btamp{ab}{ij}\ \leftarrow\ \frac{1}{2}\bvint{ab}{cd}\cdot\btamp{cd}{ij}\ \ \text{for}\ \ket{ab},\ket{ij},\ket{cd} \in \Sigma_{\vec{\xi}_{1}}.
+\end{equation}
+Similarly, the two external cross two-body states of Eq.\ \eqref{eq:channel_matrices_2}, $\ket{a\bar{j}}$ and $\ket{i\bar{b}}$, naturally map to the cross amplitude structure,
+\begin{equation} \label{eq:amp_matrices_2}
+  \btamp{a\bar{j}}{i\bar{b}}\ \leftarrow\ \btamp{a\bar{j}}{k\bar{c}}\cdot\bvint{k\bar{c}}{i\bar{b}}\ \ \text{for}\ \ket{a\bar{j}},\ket{i\bar{b}},\ket{k\bar{c}} \in \Sigma_{\vec{\xi}_{2}}.
+\end{equation}
+Lastly, the one- and three-body external states of of Eq.\ \eqref{eq:channel_matrices_3}, $\ket{a}$ and $\ket{i\bar{b}}$, naturally map to the one-body amplitude structure characterized by the index $a$,
+\begin{equation} \label{eq:amp_matrices_3}
+  \btamp{a}{ij\bar{b}}\ \leftarrow\ \frac{1}{2}\btamp{a}{kl\bar{c}}\cdot\bvint{kl\bar{c}}{d}\cdot\btamp{d}{ij\bar{b}}\ \ \text{for}\ \ket{a},\ket{ij\bar{b}},\ket{kl\bar{c}},\ket{d} \in \Sigma_{\vec{\xi}_{3}}.
+\end{equation}
 
 The last summation in the matrix-matrix form of Eqs.\ \eqref{eq:channel_matrices} and \eqref{eq:amp_matrices} involves two multiplications, which suggests the need for an \textit{intermediate} matrix to hold the result of the first operation.  This is the last main ingredient to an efficient CC algorithm.  To see the benefit of intermediate structures, it's helpful to examine an expensive sum from the CCD equations.  For typical calculations, particle states outnumber hole states by an order of magnitude, $n_{p} \sim 10n_{h}$, which means that one of the most expensive sums is,
 \begin{equation}
@@ -269,35 +310,38 @@ Because this term must be computed for each $\tamp{ab}{ij}$, its computational c
   \frac{1}{4}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{cd}{ij} = \frac{1}{4}\btamp{ab}{kl}\cdot\left(\bvint{kl}{cd}\cdot\btamp{cd}{ij}\right) = \frac{1}{4}\btamp{ab}{kl}\cdot\bxint{kl}{ij}\ \rightarrow\ \btamp{ab}{ij}.
 \end{equation}
 this term is now computed as the combination of two sums, each scaling as $\mathcal{O}\left( N_{h}^{4}N_{p}^{2}\right)$.  These intermediates can also be used as a way to combine similar sums.  For example, the last step of Eq.\ \ref{eq:intermediate} has a very similar structure to the first sum in Eq.\ \ref{eq:ccd_equations}.  Therefore, the two sums can be written with a common intermediate as,
-\begin{gather}
+\begin{gather} \label{eq:intermediate_2}
   \frac{1}{2}\sum\limits_{\mathclap{kl}}\vint{kl}{ij}\tamp{ab}{kl} + \frac{1}{4}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{cd}{ij} = \frac{1}{2}\btamp{ab}{kl}\cdot\left[ \bvint{kl}{ij} + \frac{1}{2}\bvint{kl}{cd}\cdot\btamp{cd}{ij} \right] = \frac{1}{4}\btamp{ab}{kl}\cdot\bxint{kl}{ij}\ \rightarrow\ \btamp{ab}{ij}, \notag \\
   \text{where},\hspace{10pt} \bxint{kl}{ij} = \bvint{kl}{ij} + \frac{1}{2}\bvint{kl}{cd}\cdot\btamp{cd}{ij}
 \end{gather}
 
-It just so happens that this form of the intermediate $\xint{kl}{ij}$ is equivalent to the $hhhh$ component of the CCD similarity transformed Hamiltonian, $\EHam$.  Constructing other intermediates in this way gives similar results, so it's a natural extension to actually construct the effective Hamiltonian at each iteration for the express purpose of using it as different intermediate components for the CC equations.  This has the added benefit of having already computed the effective Hamiltonian for post-CC methods.  The different components of the CCD effective Hamiltonian, $\EHam_{\text{CCD}} = \left(\Ham\E^{\Top_{2}}\right)_{\mathrm{c}}$, are
+It just so happens that this form of the intermediate $\xint{kl}{ij}$ is equivalent to the $\mathrm{hhhh}$ component of the CCD similarity transformed Hamiltonian, $\EHam$.  Constructing other intermediates in this way gives similar results, so it's a natural extension to actually construct the effective Hamiltonian at each iteration for the express purpose of using it as different intermediate components for the CC equations.  This has the added benefit of having already computed the effective Hamiltonian for post-CC methods.  The different components of the CCD effective Hamiltonian, $\EHam_{\mathrm{CCD}} = \left(\Ham\E^{\Top_{2}}\right)_{\mathrm{c}}$, are written below in both algebraic and diagrammatic form.  The $\mathrm{pp}$, one-body component of $\EHam_{\mathrm{CCD}}$ is,
 \begin{align} \label{eq:ccd_eff1}
   \diagram{CCSD_1b/CCSD_1b-figure3} &= \diagram{CCSD_1b/CCSD_1b-figure4} + \diagram{CCSD_1b/CCSD_1b-figure5} \notag \\
-  \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\tamp{ac}{kl}
+  \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\tamp{ac}{kl}.
 \end{align}
+The $\mathrm{hh}$, one-body component is,
 \begin{align} \label{eq:ccd_eff2}
   \diagram{CCSD_1b/CCSD_1b-figure12} &= \diagram{CCSD_1b/CCSD_1b-figure9} + \diagram{CCSD_1b/CCSD_1b-figure10} \notag \\
-  \xint{i}{j} &= \fint{i}{j} + \frac{1}{2}\sum\limits_{kcd}\vint{ik}{cd}\tamp{cd}{jk}
+  \xint{i}{j} &= \fint{i}{j} + \frac{1}{2}\sum\limits_{kcd}\vint{ik}{cd}\tamp{cd}{jk}.
 \end{align}
+The $\mathrm{hhhh}$, two-body component, which appears as the intermediate in Eqs.\ \eqref{eq:intermediate} and \eqref{eq:intermediate_2}, is,
 \begin{align} \label{eq:ccd_eff3}
   \diagram{CCSD_2b/CCSD_2b-figure18} &= \diagram{CCSD_2b/CCSD_2b-figure19} + \diagram{CCSD_2b/CCSD_2b-figure20} \notag \\
-  \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\sum\limits_{cd}\vint{ij}{cd}\tamp{cd}{kl}
+  \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\sum\limits_{cd}\vint{ij}{cd}\tamp{cd}{kl}.
 \end{align}
+Lastly, the $\mathrm{hphp}$, two-body component is,
 \begin{align} \label{eq:ccd_eff4}
   \diagram{CCSD_2b/CCSD_2b-figure34} &= \diagram{CCSD_2b/CCSD_2b-figure31} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure36} \notag \\
-  \xint{ia}{jb} &= \vint{ia}{jb} - \frac{1}{2}\sum\limits_{kc}\vint{ik}{cb}\tamp{ca}{jk}
+  \xint{ia}{jb} &= \vint{ia}{jb} - \frac{1}{2}\sum\limits_{kc}\vint{ik}{cb}\tamp{ca}{jk}.
 \end{align}
 
-Using these terms, the CCSD equations can be written in pseudo-linear form.  These also explicitly show the decoupling of the effective Hamiltonian with $\ph{1}{1}$ and $\ph{2}{2}$ excitations,
+Using these terms, the CCD equations can be written in pseudo-linear form using the $\ph{2}{2}$ component of effective Hamiltonian form of the equations, Eq.\ \eqref{eq:ccsd1}.  This also explicitly shows the decoupling of the effective Hamiltonian with $\ph{2}{2}$ excitations.  The $\mathrm{pphh}$, two-body component, which should vanish when the CCS amplitudes have converged, is,
 \begin{align} \label{eq:ccd_double_linear}
   \diagram{CCSD_2b/CCSD_2b-figure59} = 0 &= \diagram{CCSD_2b/CCSD_2b-figure60} + \diagram{CCSD_2b/CCSD_2b-figure61} + \diagram{CCSD_2b/CCSD_2b-figure62} \notag \\[-1.5ex]
   &+ \diagram{CCSD_t2/CCSD_t2-figure6} + \diagram{CCSD_2b/CCSD_2b-figure64} + \diagram{CCSD_2b/CCSD_2b-figure65} \notag \\
   \xint{ab}{ij} = 0 &= \vint{ab}{ij} + \Perm{ab}\sum\limits_{\mathclap{c}}\xint{a}{c}\tamp{cb}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\xint{k}{i}\tamp{ab}{kj} \notag \\
-  &+ \frac{1}{2}\sum\limits_{\mathclap{cd}}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\xint{kl}{ij}\tamp{ab}{kl} - \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\xint{kb}{ic}\tamp{ac}{kj}
+  &+ \frac{1}{2}\sum\limits_{\mathclap{cd}}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\xint{kl}{ij}\tamp{ab}{kl} - \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\xint{kb}{ic}\tamp{ac}{kj}.
 \end{align}
 The components and intermediates of the CCSD effective Hamiltonian are much more complicated and are shown with their corresponding sums in the appendix \ref{chapter:appendix_diagrams}.
 
@@ -306,7 +350,7 @@ The components and intermediates of the CCSD effective Hamiltonian are much more
 
 \section{Example: Homogeneous Electron Gas} \label{section:electrongas}
 
-Another relatively simple calculation using the CCD approximation is the homogeneous electron gas.  This example aims to calculate the ground state energy of a three-dimensional gas of electrons subject to Coulomb repulsion.  This is an approximate model of the valence electrons in a metal, subject to a uniform background of positive charge from the nuclei and core electrons \cite{GROSS1991}.  As will be explained below, this calculation employs pure-momentum eigenstates such that $\ph{1}{1}$ excitations from the reference state are forbidden by momentum conservation.  This means that the problem reduces to the doubles approximation.  To obtain realistic results, a sufficiently-sized basis with a sufficient number of electrons must be used.  Therefore, the improvements discussed in Section \ref{section:solvingcc} are necessary to keep the computation time managable as the system size increases.
+Another relatively simple calculation using the CCD approximation is the homogeneous electron gas.  This example aims to calculate the ground state energy of a three-dimensional gas of electrons subject to Coulomb repulsion.  This is an approximate model of the valence electrons in a metal, subject to a uniform background of positive charge from the nuclei and core electrons \cite{GROSS1991}.  As will be explained below, this calculation employs pure-momentum eigenstates such that $\ph{1}{1}$ excitations from the reference state are forbidden by momentum conservation.  This means that the problem reduces to the doubles approximation.  To obtain realistic results, a sufficiently-sized basis with a sufficient number of electrons must be used.  Therefore, the improvements discussed in Section \ref{section:solvingcc} are necessary to keep the computation time manageable as the system size increases.
 
 With a uniform background potential, the electron gas can be constructed using eigenfunctions of the kinetic energy operator, $\HamB{1} = \Top = \frac{-\hbar^{2}}{2m}\nabla^{2}$.  In an infinite volume, however, there are an unlistable number of plane wave modes which satisfy this condition due to the continuous nature of the linear momentum eigenstates.  Therefore, the single-particle orbits will be constructed in a finite box of volume $\Omega$ and length $L$, and then the limit $L\rightarrow \infty$ can be taken after various expectation values have been computed.
 \begin{gather} \label{eq:plane_wave}
@@ -337,7 +381,7 @@ A state can therefore be characterized by the quantum numbers $n_{x}$, $n_{x}$, 
 
 Now that the single-particle orbits are established, a particular basis consisting of these orbits can be chosen such that all states are included up to a closed shell.  This basis is then filled with electrons until a closed Fermi level is obtained.  Additionally, only the unpolarized case, in which all orbitals are occupied with one spin-up and one spin-down electron, will be considered here.  For this spherical-type level structure, the number of electrons required for closed shells increases quickly.  For example, the first six shells contain $2$, $14$, $38$, $54$, $66$ and $114$ states, respectively.
 
-A finite number of electrons $A$ in a finite box of volume $\Omega$ naturally leads to the characterization of an infite system by its number density density $\rho = A/\Omega$.  The average inter-electron distance, or \textit{Wigner-Seitz radius}, is defined as
+A finite number of electrons $A$ in a finite box of volume $\Omega$ naturally leads to the characterization of an infinite system by its number density density $\rho = A/\Omega$.  The average inter-electron distance, or \textit{Wigner-Seitz radius}, is defined as
 \begin{equation} \label{wigner-seitz}
   \frac{4}{3}\pi r_{s}^{3} = \frac{1}{\rho},\hspace{0.5cm} r_{s} = \left(\frac{3}{4\pi\rho}\right)^{1/3}.
 \end{equation}
@@ -360,16 +404,16 @@ The integral is relatively simple given the form of the basis functions. The res
   \Hint{2}{pq}{rs} = \frac{4\pi \hbar c \alpha}{\Omega}\left[ \frac{\delta_{\sigma_{p}\sigma_{r}}\delta_{\sigma_{q}\sigma_{s}}}{\lvert \mathbf{q}_{1} \rvert^{2}} - \frac{\delta_{\sigma_{p}\sigma_{s}}\delta_{\sigma_{q}\sigma_{r}}}{\lvert \mathbf{q}_{2} \rvert^{2}} \right]
 \end{equation}
 
-The last preparation step before performing the coupled cluster algorithm is the Hartree-Fock transformation.  As with the pairing model, the single-particle orbitals are already eigenfunctions of the Fock operator, and thus the transformation consists simply of redefining the single-particle energies while the two-body interaction is left unchanged.
+The last preparation step before performing the coupled cluster algorithm is the Hartree-Fock transformation.  As with the pairing model, the single-particle orbitals are already eigenfunctions of the Fock operator, in this case because the translational invariance of the plane wave basis functions ensure that the HF terms of the form $\Hint{2}{pi}{qi}$ vanish due to momentum conservation, see Eq.\ \eqref{eq:fock_operator}.  Therefore, the HF transformation consists simply of redefining the single-particle energies while the two-body interaction is left unchanged.
 \begin{gather}\label{eq:infinite_hf}
   \varepsilon_{p} = \epsilon_{\mathbf{k}_{p}} + \sum_{i}\Hint{2}{pi}{pi} \notag \\
   \vint{pq}{rs} = \Hint{2}{pq}{rs}
 \end{gather}
 
-As mentioned above, in the plane-wave basis, any single excitation from the reference state vanishes automatically due to momentum conservation, $\tamp{a}{i} = 0$.  Therefore, it's necessary to include only double excitations (before adding triples, etc.).  Using the pseudo-linear form of the CCD equations \eqref{eq:double_linear} and an effective Hamiltonian that excludes single excitations in Eqns.\ \eqref{eq:ccd_eff1}-\eqref{eq:eff4}.  The total energy per electron can now be calculated and plotted as a function of the Wigner-Seitz radius.
+As mentioned above, in the plane-wave basis, any single excitation from the reference state vanishes automatically due to momentum conservation so that $\tamp{a}{i} = 0$.  Therefore, it's necessary to include only double excitations (before adding triples, etc.).  Therefore, calculations for the electron gas use the pseudo-linear form of the CCD equations \eqref{eq:double_linear} and an effective Hamiltonian that excludes single excitations in Eqns.\ \eqref{eq:ccd_eff1}-\eqref{eq:eff4}.  To explore the HEG equation-of-state, the total energy per electron can be calculated as a function of the Wigner-Seitz radius.
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{CC/Electronic_Gas.pdf}
-  \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (QMC) results from \cite{LOPEZ2006}.}  
+  \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (VMC) results from \cite{LOPEZ2006}.}  
   \label{fig:Electronic_Gas}
 \end{figure}
 In the limit $N,L \rightarrow \infty$, the plot in Fig.\ \ref{fig:Electronic_Gas} represents the equation-of-state for a 3D electron gas at absolute zero.  This curve can reveal many thermodynamic properties of the electron gas including the saturation density and saturation energy, which occur at the lowest point on the curve.  The CCD results are compared with the quasi-exact results from variational quantum Monte Carlo calculations from \cite{LOPEZ2006}.  The discrepancies between the saturation energies from the two methods can be partially attributed to an insufficient basis size.  However, even an appropriate extrapolation to an infinite basis won't be able to recover all of the required correlations, which suggests that CCSDT might be necessary.  Regardless of the value to the saturation energy, these CCD results do qualitatively reproduce the saturation radius at $r_{s} \approx 5.0$.
@@ -387,7 +431,7 @@ Calculations of finite nuclei follow the basic structure of the algorithms used 
   V\left(r\right) = \frac{1}{2}m\omega^{2}r^{2}.
 \end{equation}
 
-An eigenstate of the harmonic oscillator potential is defined by its principal quantum number $n$ and its orbital angular momentum quantum number $l$, which is denoted by the letters s, p, d, f... for the values $l=0,1,2,3...$ respectively.  Because of spin-orbit terms in the nuclear Hamiltonian, the orbital angular momentum is coupled to a particle spin to a total angular momentum of $j = \lvert \mathbf{l} + \mathbf{s} \rvert$, which results in a degeneracy of $2j + 1$ for each orbit.  This basis does not provide any simplification to eliminate single excitations, so CCSD will be used for all the following calculations.  A schematic version of this single-particle basis is shown in Fig.\ \ref{fig:Harmonic_Oscillator}.  The shell structure of this basis is characterizes by the energy quantum numbers, $e = 2n + l$, of the HO single-particle spectrum.  This can be used to define the maximum-energy shell and the size of a HO basis with the number $e_{\mathrm{max}}$.
+An eigenstate of the harmonic oscillator potential is defined by its principal quantum number $n$ and its orbital angular momentum quantum number $l$, which is denoted by the letters s, p, d, f... for the values $l=0,1,2,3...$ respectively.  Because of spin-orbit terms in the nuclear Hamiltonian, the orbital angular momentum is coupled to a particle spin to a total angular momentum of $j = \lvert \mathbf{l} + \mathbf{s} \rvert$, which results in a degeneracy of $2j + 1$ for each orbit.  This basis does not provide any simplification to eliminate single excitations, so CCSD will be used for all the following calculations.  A schematic version of this single-particle basis is shown in Fig.\ \ref{fig:Harmonic_Oscillator}.  The shell structure of this basis is characterized by the energy quantum numbers, $e = 2n + l$, of the HO single-particle spectrum.  This can be used to define the maximum-energy shell and the size of a HO basis with the parameter $e_{\mathrm{max}}$.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\linewidth]{CC/HO.pdf}
@@ -401,8 +445,8 @@ One issue with this construction, is that while the single-particle orbits are e
 \end{equation}
 The one-body piece is just a scaled form of the original kinetic energy operator, and the two-body piece is given in a similar form to the original two-body Hamiltonian.  Both can be integrated into matrix elements like Eq.\ \eqref{eq:braket_integration},
 \begin{gather} \label{eq:ke_integration}
-    \KEint{1}{p}{q} \equiv \int d\mathbf{r}_{1}\  \phi^{*}_{p}\left(\mathbf{r}_{1}\right) \frac{\mathbf{p}^{2}_{1}}{2mA} \phi_{q}\left(\mathbf{r}_{1}\right) \notag \\
-    \KEint{2}{pq}{rs} \equiv \int d\mathbf{r}_{1} d\mathbf{r}_{2}\  \phi^{*}_{p}\left(\mathbf{r}_{1}\right)\phi^{*}_{q}\left(\mathbf{r}_{2}\right) \frac{\mathbf{p}_{1}\cdot\mathbf{p}_{2}}{mA} \left[\phi_{r}\left(\mathbf{r}_{1}\right)\phi_{s}\left(\mathbf{r}_{2}\right) - \phi_{s}\left(\mathbf{r}_{1}\right)\phi_{r}\left(\mathbf{r}_{2}\right)\right]
+    \KEint{1}{p}{q} \equiv \int d\mathbf{r}_{1}\  \phi^{*}_{p}\left(\mathbf{r}_{1}\right) \frac{\mathbf{p}^{2}_{1}}{2mA} \phi_{q}\left(\mathbf{r}_{1}\right), \notag \\
+    \KEint{2}{pq}{rs} \equiv \int d\mathbf{r}_{1} d\mathbf{r}_{2}\  \phi^{*}_{p}\left(\mathbf{r}_{1}\right)\phi^{*}_{q}\left(\mathbf{r}_{2}\right) \frac{\mathbf{p}_{1}\cdot\mathbf{p}_{2}}{mA} \left[\phi_{r}\left(\mathbf{r}_{1}\right)\phi_{s}\left(\mathbf{r}_{2}\right) - \phi_{s}\left(\mathbf{r}_{1}\right)\phi_{r}\left(\mathbf{r}_{2}\right)\right].
 \end{gather}
 Subtracting the COM kinetic energy results in the \textit{intrinsic} Hamiltonian for finite nuclear systems,
 \begin{align} \label{eq:intrinsic_hamiltonian}
@@ -411,14 +455,14 @@ Subtracting the COM kinetic energy results in the \textit{intrinsic} Hamiltonian
 \end{align}
 This form of the bare Hamiltonian (up to the three-body force) is used in the Hartree-Fock transformation.  Then, after normal-ordering, the three-body piece is discarded, which is referred to as a NN+3N-induced interaction.  The use of a localized external potential has further complications involving the COM wave function that are discussed in section \ref{section:CoM}.
 
-A special property of this single-particle basis that can be exploited to reduce the computational complexity of the problem is the degeneracy of each orbital, due to the angular momentum projection of each single-particle state, $m_{j} = \{ -j, -j+1, \cdots , j-1, j \}$.  According to the Wigner-Eckart theorem, the geometrical component of a wave function, dependent on its projection $m_{j}$, can be isolated as a Clebsch-Gordon coefficient.  Because these coefficients have compact summation rules, any diagram and corresponding sum can be written in terms of the $j$-orbitals instead of the single-particle $m_{j}$ states, commonly known as $J$-scheme and $M$-scheme, respectively.  Calculations in $J$-scheme require complicated angular momentum coupling, detailed in the appendix \ref{chapter:angular_momentum}, but involve roughly an order of magnitude fewer states compared with an $M$-scheme calculation in the same model space.
+A special property of this single-particle basis that can be exploited to reduce the computational complexity of the problem is the degeneracy of each orbital, due to the angular momentum projection of each single-particle state, $m_{j} = \{ -j, -j+1, \cdots , j-1, j \}$.  According to the Wigner-Eckart theorem \cite{WIGNER1959,ECKART1930}, the geometrical component of a wave function, dependent on its projection $m_{j}$, can be isolated as a Clebsch-Gordon coefficient.  Because these coefficients have compact summation rules, any diagram and corresponding sum can be written in terms of the $j$-orbitals instead of the single-particle $m_{j}$ states, commonly known as $J$-scheme and $M$-scheme, respectively.  Calculations in $J$-scheme require complicated angular momentum coupling, detailed in the appendix \ref{chapter:angular_momentum}, but involve roughly an order of magnitude fewer states compared with an $M$-scheme calculation in the same model space.
 
 
 \subsection{The Nuclear Interaction} \label{section:nuclear_interaction}
 
-Perhaps the most important component in nuclear structure calculations, and also perhaps the most easily overlooked component from a many-body perspective, is the nuclear Hamiltonian.  Further complicated by the composite nature of protons and neutrons, bound by gluon exchange within the nucleon, the inter-nucleon interaction is a residual force of virtual pion exchanges and other, more exotic processes.  Early ab initio calculations avoided this complexity by using phenomenological interactions, tuned to reproduce certain properties of a nucleus.  These phenomenological forces were effectively used for calculations using shell-model CI and density-functional theory, but were restricted by the conditions of the fitted parameters.
+Perhaps the most important component in nuclear structure calculations, and also perhaps the most easily overlooked component from a many-body perspective, is the nuclear Hamiltonian.  Further complicated by the composite nature of protons and neutrons, bound by gluon exchange within the nucleon, the inter-nucleon interaction is a residual force of virtual pion exchanges and other, more exotic processes.  Early \emph{ab initio} calculations avoided this complexity by using phenomenological interactions, tuned to reproduce certain properties of a nucleus.  These phenomenological forces were effectively used for calculations using shell-model CI and density-functional theory, but were restricted by the conditions of the fitted parameters.
 
-These problems, along with the success of quantum field theories in high-energy physics, motivated the effort to describe the inter-nucleon interaction in terms of the underlying quantum chromodynamics (QCD).  However, while calculations of nuclei in terms of their constituent quarks using lattice QCD have made some progress with increases in computing power, they have been confined to few nucleon systems \cite{BEANE2012}.  The problem is finding a way to express the high-energy QCD interactions as low-energy forces between nucleons.  Such a problem, containing two vastly different scales, can be rewritten as an effective theory.
+These problems, along with the success of quantum field theories in high-energy physics, motivated the effort to describe the inter-nucleon interaction in terms of the underlying theory of the strong force, quantum chromodynamics (QCD) \cite{HATSUDA1994221,LEPAGE1980}.  However, while calculations of nuclei in terms of their constituent quarks using lattice QCD have made some progress with increases in computing power, they have been confined to few nucleon systems \cite{BEANE2012}.  The problem is finding a way to express the high-energy QCD interactions as low-energy forces between nucleons.  Such a problem, containing two vastly different scales, can be rewritten as an effective theory.
 
 \begin{figure}[h]
   \centering
@@ -429,14 +473,14 @@ These problems, along with the success of quantum field theories in high-energy 
 
 Chiral effective field theory ($\Chi$EFT), which exploits the large difference in scales between the low-energy regime of nuclear physics and the high-energy regime of QCD, is built from a general Lagrangian consistent with the broken chiral symmetry of QCD \cite{EPELBAUM20091773,MACHLEIDT2016}.  This broken symmetry, a consequence of non-zero quark masses, results in several hadronic structures including protons, neutrons, and mesons, the lightest of which is the pion, $m_{\pi}\approx 140\mathrm{MeV}/c^{2}$ \cite{BERINGER2012}.  This can be exploited by systematically writing a Lagrangian as the sum of pion exchanges of increasing order.  Additional contact interactions, which represent exchanges of heavier mesons, are also included and must be fit to to low-energy nuclear data.  The hierarchy of $\Chi$EFT terms, which contain 3N and higher many-body forces, are ordered by power counting the expansion term $(m_{\pi}/\Lambda)$, where $\Lambda$ is an energy cutoff between the low- and high-energy scales, and is shown up to N$^{3}$LO in Fig.\ \ref{fig:Chiral_Forces}.
 
-This work exclusively employs the NN force of the N$^{3}$L0 interaction from Entem and Machleidt with a cutoff of $\Lambda=500\ \mathrm{MeV}$ \cite{ENTEM2003}.  For most calculations, this interaction is coupled with the N$^{3}$LO 3N interaction from Navr\'{a}til with a cutoff of $\Lambda=400\ \mathrm{MeV}$ \cite{NAVRATIL2007}.  This NN+3N(400) interaction is successful at reproducing low- and medium-mass nuclei, but begins to overbind beyond the $sd$-shell.  As mentioned in the introduction, these bare Hamiltonians exhibit strong repulsion at short ranges among high-momentum states.  Therefore to soften the interaction, the similarity renormalization group method is used to integrate high-momentum modes out of the interaction while preserving observables \cite{BOGNER201094,ROTH2011072501}.
+This work exclusively employs the NN force of the N$^{3}$LO interaction from Entem and Machleidt with a cutoff of $\Lambda=500\ \mathrm{MeV}$ \cite{ENTEM2003}.  For most calculations, this interaction is coupled with the N$^{2}$LO 3N interaction from Navr\'{a}til with a cutoff of $\Lambda=400\ \mathrm{MeV}$ \cite{NAVRATIL2007}.  This NN+3N(400) interaction is successful at reproducing low- and medium-mass nuclei, but begins to overbind beyond the $sd$-shell.  As mentioned in the introduction, these bare Hamiltonians exhibit strong repulsion at short ranges among high-momentum states.  Therefore to soften the interaction, the similarity renormalization group method is used to integrate high-momentum modes out of the interaction while preserving observables \cite{BOGNER201094,ROTH2011072501}.
 
 
 \subsection{Ground-State Results for Nuclei} \label{section:nuclear_results}
 
 The main object of this section is to demonstrate the validity of the all the ingredients which have been discussed so far: the harmonic oscillator basis, the NN+3N(400) chiral interaction, and the $J$-scheme CCSD algorithm.  To accomplish this, calculations for different nuclei will be compared to the corresponding experimental values.  Additionally, results for different input parameters will be presented to verify that the observables are independent of non-physical variables.  Once again, all results are computed with a HF-optimized basis, see section \ref{section:hartree-fock}.
 
-First, the ground-state energies should be independent of the SRG cutoff parameter $\lambda_{\mathrm{SRG}}$.  While the SRG evolution should preserve any observables, the renormalization process induces 3N and higher-body forces which can be missed by truncations of the many-body method in both the cluster amplitudes and the Hamiltonian.  The trade-off here is that larger cutoff parameters produce interactions that contain higher-momentum components, which reduce a system's convergence properties, but induce fewer many-body forces, so that systems can be accurately described with fewer correlations.  Conversely, a smaller cutoff parameter means that solutions can be more easily converged but necessitates a many-body method that includes more correlations or higher-order forces \cite{ROTH2012}.  To show this effect, the ground state for oxygen-16 is shown for different cutoff parameters and for both the NN and NN+3N-induced interactions.  
+First, the ground-state energies should be independent of the SRG cutoff parameter $\lambda_{\mathrm{SRG}}$.  While the SRG evolution should preserve any observables, the renormalization process induces 3N and higher-body forces which can be missed by truncations of the many-body method in both the cluster amplitudes and the Hamiltonian.  The trade-off here is that larger cutoff parameters produce interactions that contain higher-momentum components, which reduce a system's convergence properties, but induce fewer many-body forces, so that systems can be accurately described with fewer correlations.  Conversely, a smaller cutoff parameter means that solutions can be more easily converged, but it also requires a many-body method that includes more correlations or higher-order forces \cite{ROTH2012}.  To show this effect, the ground state for oxygen-16 is shown for different cutoff parameters and for both the NN and NN+3N-induced interactions.  
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{CC/ground_state_srg.pdf}
@@ -445,7 +489,7 @@ First, the ground-state energies should be independent of the SRG cutoff paramet
 \end{figure}
 Accounting for both the small dependence on the SRG cutoff parameter and the minor inaccuracies from the truncations made to the cluster operator and the Hamiltonian, the rest of this work will use the NN+3N(400)-induced interaction with an SRG cutoff parameter of $\lambda_{\mathrm{SRG}}=2.0\ \mathrm{fm}^{-1}$.
 
-Next, any nuclear observables calculated with this framework should be independent of the fictitious confining potential.  This can be verified by showing the ground-state energies of various nuclei as a function of the underlying harmonic oscillator energy, $\hbar\omega$.  Convergence is reached by increasing the size of the model space until the resulting curve is flat.  Fig.\ \ref{fig:Ground_State1} shows the convergence for the \textit{doubly-magic}, $N=Z$ nuclei, ${}^{4}$He, ${}^{16}$O, ${}^{20}$Ca, and ${}^{56}$Ni, where both protons and neutrons fill the same major shell closure.
+Next, any nuclear observables calculated with this framework should be independent of the fictitious confining potential.  This can be verified by showing the ground-state energies of various nuclei as a function of the underlying harmonic oscillator energy, $\hbar\omega$.  Convergence is reached by increasing the size of the model space until the resulting curve is flat.  Figure\ \ref{fig:Ground_State1} shows the convergence for the \textit{doubly-magic}, $N=Z$ nuclei, ${}^{4}$He, ${}^{16}$O, ${}^{20}$Ca, and ${}^{56}$Ni, where both protons and neutrons fill the same major shell closure.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{CC/ground_state1.pdf}
@@ -454,7 +498,7 @@ Next, any nuclear observables calculated with this framework should be independe
 \end{figure}
 All the results converge to a variance of $<1\%$ at $e_{\mathrm{max}}=12$ for intermediate values of $\hbar\omega$.  While a larger model space is always desirable, this level of variance justifies the use of $e_{\mathrm{max}}=12$ for post-CC calculations.  Additionally, these results show the limitations of the NN+3N(400) interaction, as overbinding increases with the system size, where the ground-state energies of ${}^{20}$Ca and ${}^{56}$Ni differ from their experimental binding energies by $\sim 8\%$ and $\sim 13\%$, respectively.
 
-The ground-state results are also shown for singly-magic nuclei, where either the protons or neutrons fill a sub-shell closure.  This has the potential complication of a vanishing energy gap between the hole and particle states, like the picture in Fig.\ \ref{Harmonic_Oscillator}, which causes undefined behavior in the CC algorithm (see section \ref{section:solvingcc}).  However, the subshell orbitals repel each other when transformed during the Hartree-Fock algorithm, so these systems are valid in some cases.  The ground-state energies for ${}^{14}$C, ${}^{22}$O, and ${}^{34}$Si are plotted as a function of the underlying oscillator potential in Fig.\ \ref{fig:Ground_State2}.  The smaller energy gap involved in these systems results in stronger excitations missed by the CCSD approximation, which cause further deviations from the experimental values.
+The ground-state results are also shown for singly-magic nuclei, where either the protons or neutrons fill a sub-shell closure.  This has the potential complication of a vanishing energy gap between the hole and particle states, like the picture in Fig.\ \ref{Harmonic_Oscillator}, which causes undefined behavior in the CC algorithm (see section \ref{section:solvingcc}).  However, the subshell orbitals repel each other when transformed during the Hartree-Fock algorithm \cite{LEVIT1999}, so these systems are valid in some cases.  The ground-state energies for ${}^{14}$C, ${}^{22}$O, and ${}^{34}$Si are plotted as a function of the underlying oscillator potential in Fig.\ \ref{fig:Ground_State2}.  The smaller energy gap involved in these systems results in stronger excitations missed by the CCSD approximation, causing further deviations from the experimental values.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\linewidth]{CC/ground_state2.pdf}
@@ -465,7 +509,7 @@ The ground-state results are also shown for singly-magic nuclei, where either th
 \section{Ground-State Center-of-Mass Factorization} \label{section:CoM}
 While an intrinsic Hamiltonian can be built by removing the center-of-mass (COM) kinetic energy, Eq.\ \eqref{eq:intrinsic_hamiltonian}, there is still an inconsistency between the translational invariance of the underlying harmonic oscillator basis and translationally-invariant nuclear many-body states \cite{LIPKIN1958,GLOECKNER1974313}.  This inconsistency can materialize in certain calculations in the form of spurious, non-physical states.
 
-Of course, this problem can be avoided by using more complicated basis states that obey translational invariance, such as the use of Jacobi coordinates. but such methods are limited to few-body problems \cite{BISHOP19901341,NOGGA2002054003}.  Another possible solution is to use the harmonic oscillator basis in an untruncated space of Slater determinants up to a certain harmonic oscillator shell.  Known as the $N_{\mathrm{max}}$ space, this treatment can be successfully applied within no-core shell model calculations \cite{NAVRATIL2009083101}. However, the factorial scaling of this method restricts its use to light nuclei.  It can be shown that in the $N_{\mathrm{max}}$ space, the eigenstates of the intrisic Hamiltonian are also eigenstates of the COM Hamiltonian, and any state perfectly factorizes into a COM component and a translationally-invariant, intrinsic component,
+Of course, this problem can be avoided by using more complicated basis states that obey translational invariance, such as the use of Jacobi coordinates, but such methods are limited to few-body problems \cite{BISHOP19901341,NOGGA2002054003}.  Another possible solution is to use the harmonic oscillator basis in an untruncated space of Slater determinants up to a certain harmonic oscillator shell.  Known as the $N_{\mathrm{max}}$ space, this treatment can be successfully applied within no-core shell model calculations \cite{NAVRATIL2009083101}. However, the factorial scaling of this method restricts its use to light nuclei.  It can be shown that in the $N_{\mathrm{max}}$ space, the eigenstates of the intrisic Hamiltonian are also eigenstates of the COM Hamiltonian, and any state perfectly factorizes into a COM component and a translationally-invariant, intrinsic component,
 \begin{equation} \label{eq:com_factorize}
   \corrket = \ket{\Corr_{\mathrm{in}}}\ket{\Corr_{\mathrm{cm}}}.
 \end{equation}
@@ -494,8 +538,8 @@ Using the known value $\element{\Corr}{\Top_{\mathrm{cm}}}{\Corr} = \frac{3}{4}\
 The ground-state COM energies are plotted for ${}^{16}$O and ${}^{40}$Ca using the COM Hamiltonian with two different oscillator strengths in Fig.\ \ref{fig:CoM_Ground_State}: that of the underlying basis, $\hbar\omega$, and one of the two solutions to Eq.\ \eqref{eq:com_hw}, $\hbar\widetilde{\omega}_{\pm}$.  Of the two $\hbar\widetilde{\omega}_{\pm}$, which are shown as the solutions to Eq.\ \eqref{eq:com_hw} in the inset, one typically results in a large COM energy while the other vanishes, which is plotted.  Because the COM energies approximately vanish regardless of the underlying basis frequency, the COM wave function is in its ground state and approximately factorized from the intrinsic nuclear wave function.
 \begin{figure}[h]
   \centering
-  \includegraphics[\textwidth]{EOM/CoM1.pdf}
-  \caption{Ground-state COM energies, Eq.\ \eqref{eq:com_hamiltonian}, for ${}^{16}O$ and ${}^{40}Ca$ at varies harmonic oscillator frequencies with the NN+3N(400)-induced with $\lambda_{\mathrm{SRG}}=2.0\ \mathrm{fm}^{-1}$ at $e_{\mathrm{max}}=12$.  Using the proper COM oscillator frequencies shows the approximate factorization of Eq.\ \eqref{eq:com_factorize}.}
+  \includegraphics[\textwidth]{CC/CoM1.pdf}
+  \caption{Ground-state COM energies, Eq.\ \eqref{eq:com_hamiltonian}, for ${}^{16}$O and ${}^{40}$Ca at varies harmonic oscillator frequencies with the NN+3N(400)-induced with $\lambda_{\mathrm{SRG}}=2.0\ \mathrm{fm}^{-1}$ at $e_{\mathrm{max}}=12$.  Using the proper COM oscillator frequencies shows the approximate factorization of Eq.\ \eqref{eq:com_factorize}.}
   \label{fig:CoM_Ground_State}
 \end{figure}
 

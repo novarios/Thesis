@@ -1,0 +1,1288 @@
+#===Dependents for thesis.tex:
+thesis.pdf thesis.dep :\
+    /etc/texmf/web2c/texmf.cnf\
+    /usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst\
+    /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm\
+    /usr/share/texlive/texmf-dist/fonts/type1/impallari/lobster2/LobsterTwo.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb\
+    /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb\
+    /usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii\
+    /usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty\
+    /usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex\
+    /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd\
+    /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd\
+    /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo\
+    /usr/share/texlive/texmf-dist/tex/latex/base/book.cls\
+    /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd\
+    /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/dashbox/dashbox.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def\
+    /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def\
+    /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg\
+    /usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg\
+    /usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg\
+    /usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def\
+    /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/simplewick/simplewick.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/totcount/totcount.sty\
+    /usr/share/texlive/texmf-dist/tex/latex/url/url.sty\
+    /usr/share/texlive/texmf-dist/web2c/texmf.cnf\
+    /usr/share/texmf/web2c/texmf.cnf\
+    /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map\
+    /var/lib/texmf/web2c/pdftex/pdflatex.fmt\
+    Appendix.tex\
+    BetaDecay.tex\
+    CC.tex\
+    EOM.tex\
+    EffectiveOperator.tex\
+    ManyBody.tex\
+    SymbolsAbbreviations.tex\
+    figures/CC/CCDMBPT4theory.pdf\
+    figures/CC/CoM1.pdf\
+    figures/CC/Electronic_Gas.pdf\
+    figures/CC/HO.pdf\
+    figures/CC/Infinite_Space.pdf\
+    figures/CC/Pairing_Space.pdf\
+    figures/CC/chiralforces.pdf\
+    figures/CC/ground_state1.pdf\
+    figures/CC/ground_state2.pdf\
+    figures/CC/ground_state_srg.pdf\
+    figures/CC/pairingmatrix.pdf\
+    figures/EOM/F17_PA_1.pdf\
+    figures/EOM/F23_PA_1.pdf\
+    figures/EOM/N15_PA_1.pdf\
+    figures/EOM/N21_PA_1.pdf\
+    figures/EOM/O15_PA_1.pdf\
+    figures/EOM/O17_PA_1.pdf\
+    figures/EOM/O21_PA_1.pdf\
+    figures/EOM/fig-add2.pdf\
+    figures/EOM/fig-gs2.pdf\
+    figures/EOM/fig-rm2.pdf\
+    figures/EOM/fig-shell-structure-v2.pdf\
+    figures/betadecay/BetaDecay-figure0.pdf\
+    figures/betadecay/BetaDecay-figure1.pdf\
+    figures/betadecay/BetaDecay-figure2.pdf\
+    figures/betadecay/BetaDecay-figure3.pdf\
+    figures/betadecay/BetaDecay-figure4.pdf\
+    figures/betadecay/BetaDecay-figure5.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure11.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure13.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure14.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure15.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure16.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure17.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure18.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure2.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure6.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure7.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure8.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure9.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure0.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure1.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure11.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure12.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure13.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure14.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure15.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure16.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure17.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure18.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure19.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure2.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure22.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure24.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure25.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure26.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure27.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure28.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure29.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure3.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure30.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure32.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure33.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure35.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure36.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure38.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure39.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure4.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure41.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure42.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure43.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure44.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure45.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure46.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure47.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure48.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure49.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure5.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure50.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure51.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure52.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure53.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure54.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure55.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure56.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure57.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure58.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure6.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure60.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure62.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure63.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure64.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure66.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure67.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure7.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf\
+    figures/diagrams/CCSD_2b/CCSD_2b-figure9.pdf\
+    figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf\
+    figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf\
+    figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf\
+    figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure0.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure1.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure2.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure3.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure4.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure5.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure6.pdf\
+    figures/diagrams/CCSD_L1/CCSD_L1-figure7.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure0.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure1.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure10.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure2.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure3.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure4.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure5.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure6.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure7.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure8.pdf\
+    figures/diagrams/CCSD_L2/CCSD_L2-figure9.pdf\
+    figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf\
+    figures/diagrams/CCSD_dE/CCSD_dE-figure1.pdf\
+    figures/diagrams/CCSD_dE/CCSD_dE-figure2.pdf\
+    figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure10.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure11.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure12.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure13.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure3.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure4.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure5.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure8.pdf\
+    figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure0.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure1.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure10.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure11.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure12.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure14.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure16.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure17.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure18.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure20.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure21.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure22.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure23.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure24.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure25.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure26.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure29.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure3.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure30.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure4.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure5.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf\
+    figures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf\
+    figures/diagrams/CC_Amps/CC_Amps-figure0.pdf\
+    figures/diagrams/CC_Amps/CC_Amps-figure1.pdf\
+    figures/diagrams/CC_Amps/CC_Amps-figure2.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure0.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure1.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure10.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure11.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure12.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure2.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure3.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure4.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure5.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure6.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure7.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure8.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure9.pdf\
+    figures/diagrams/Eff_2b/Eff_2b-figure0.pdf\
+    figures/diagrams/Eff_2b/Eff_2b-figure1.pdf\
+    figures/diagrams/Eff_2b/Eff_2b-figure2.pdf\
+    figures/diagrams/Eff_2b/Eff_2b-figure3.pdf\
+    figures/diagrams/Eff_2b/Eff_2b-figure4.pdf\
+    figures/diagrams/Eff_2b/Eff_2b-figure5.pdf\
+    figures/diagrams/Eff_2b/Eff_2b-figure6.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure12.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure13.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure2.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure3.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure4.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure5.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure6.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure7.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure8.pdf\
+    figures/diagrams/Hamiltonian/Hamiltonian-figure9.pdf\
+    figures/diagrams/MBPT/MBPT-figure0.pdf\
+    figures/diagrams/MBPT/MBPT-figure1.pdf\
+    figures/diagrams/MBPT/MBPT-figure12.pdf\
+    figures/diagrams/MBPT/MBPT-figure13.pdf\
+    figures/diagrams/MBPT/MBPT-figure21.pdf\
+    figures/diagrams/MBPT/MBPT-figure22.pdf\
+    figures/diagrams/MBPT/MBPT-figure23.pdf\
+    figures/diagrams/MBPT/MBPT-figure24.pdf\
+    figures/diagrams/MBPT/MBPT-figure25.pdf\
+    figures/diagrams/MBPT/MBPT-figure26.pdf\
+    figures/diagrams/MBPT/MBPT-figure27.pdf\
+    figures/diagrams/MBPT/MBPT-figure28.pdf\
+    figures/diagrams/MBPT/MBPT-figure29.pdf\
+    figures/diagrams/MBPT/MBPT-figure5.pdf\
+    figures/diagrams/MBPT/MBPT-figure9.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure0.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure1.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure10.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure11.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure13.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure14.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure15.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure16.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure17.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure18.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure19.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure2.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure3.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure4.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure6.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure7.pdf\
+    figures/diagrams/MBPT_linked/MBPT_linked-figure8.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure0.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure1.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure10.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure11.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure14.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure15.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure16.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure17.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure18.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure19.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure6.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure8.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure1.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure10.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure11.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure12.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure13.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure14.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure15.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure16.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure17.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure18.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure20.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure21.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure4.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure5.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure8.pdf\
+    figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf\
+    figures/introduction/ab-initio_nuclear_chart_2005.pdf\
+    figures/introduction/ab-initio_nuclear_chart_2017.pdf\
+    figures/introduction/ab-initio_progress.pdf\
+    figures/manybody/1p1h.pdf\
+    figures/manybody/2p2h.pdf\
+    figures/manybody/FCIscaling.png\
+    figures/manybody/IPM.pdf\
+    figures/manybody/PA.pdf\
+    figures/manybody/PR.pdf\
+    introduction.tex\
+    msudissertation.cls\
+    thesis.bib\
+    thesis.tex
+#===End dependents for thesis.tex:
+
+#===Phony rules for thesis.tex:
+
+/etc/texmf/web2c/texmf.cnf :
+
+/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst :
+
+/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/type1/impallari/lobster2/LobsterTwo.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb :
+
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb :
+
+/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii :
+
+/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty :
+
+/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo :
+
+/usr/share/texlive/texmf-dist/tex/latex/base/book.cls :
+
+/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd :
+
+/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/dashbox/dashbox.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def :
+
+/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def :
+
+/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg :
+
+/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg :
+
+/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg :
+
+/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def :
+
+/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/simplewick/simplewick.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/totcount/totcount.sty :
+
+/usr/share/texlive/texmf-dist/tex/latex/url/url.sty :
+
+/usr/share/texlive/texmf-dist/web2c/texmf.cnf :
+
+/usr/share/texmf/web2c/texmf.cnf :
+
+/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map :
+
+/var/lib/texmf/web2c/pdftex/pdflatex.fmt :
+
+Appendix.tex :
+
+BetaDecay.tex :
+
+CC.tex :
+
+EOM.tex :
+
+EffectiveOperator.tex :
+
+ManyBody.tex :
+
+SymbolsAbbreviations.tex :
+
+figures/CC/CCDMBPT4theory.pdf :
+
+figures/CC/CoM1.pdf :
+
+figures/CC/Electronic_Gas.pdf :
+
+figures/CC/HO.pdf :
+
+figures/CC/Infinite_Space.pdf :
+
+figures/CC/Pairing_Space.pdf :
+
+figures/CC/chiralforces.pdf :
+
+figures/CC/ground_state1.pdf :
+
+figures/CC/ground_state2.pdf :
+
+figures/CC/ground_state_srg.pdf :
+
+figures/CC/pairingmatrix.pdf :
+
+figures/EOM/F17_PA_1.pdf :
+
+figures/EOM/F23_PA_1.pdf :
+
+figures/EOM/N15_PA_1.pdf :
+
+figures/EOM/N21_PA_1.pdf :
+
+figures/EOM/O15_PA_1.pdf :
+
+figures/EOM/O17_PA_1.pdf :
+
+figures/EOM/O21_PA_1.pdf :
+
+figures/EOM/fig-add2.pdf :
+
+figures/EOM/fig-gs2.pdf :
+
+figures/EOM/fig-rm2.pdf :
+
+figures/EOM/fig-shell-structure-v2.pdf :
+
+figures/betadecay/BetaDecay-figure0.pdf :
+
+figures/betadecay/BetaDecay-figure1.pdf :
+
+figures/betadecay/BetaDecay-figure2.pdf :
+
+figures/betadecay/BetaDecay-figure3.pdf :
+
+figures/betadecay/BetaDecay-figure4.pdf :
+
+figures/betadecay/BetaDecay-figure5.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure11.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure13.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure14.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure15.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure16.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure17.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure18.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure2.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure6.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure7.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure8.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure9.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure0.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure1.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure11.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure12.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure13.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure14.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure15.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure16.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure17.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure18.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure19.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure2.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure22.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure24.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure25.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure26.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure27.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure28.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure29.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure3.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure30.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure32.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure33.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure35.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure36.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure38.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure39.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure4.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure41.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure42.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure43.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure44.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure45.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure46.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure47.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure48.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure49.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure5.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure50.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure51.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure52.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure53.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure54.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure55.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure56.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure57.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure58.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure6.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure60.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure62.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure63.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure64.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure66.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure67.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure7.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf :
+
+figures/diagrams/CCSD_2b/CCSD_2b-figure9.pdf :
+
+figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf :
+
+figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf :
+
+figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf :
+
+figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure0.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure1.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure2.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure3.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure4.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure5.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure6.pdf :
+
+figures/diagrams/CCSD_L1/CCSD_L1-figure7.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure0.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure1.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure10.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure2.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure3.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure4.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure5.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure6.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure7.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure8.pdf :
+
+figures/diagrams/CCSD_L2/CCSD_L2-figure9.pdf :
+
+figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf :
+
+figures/diagrams/CCSD_dE/CCSD_dE-figure1.pdf :
+
+figures/diagrams/CCSD_dE/CCSD_dE-figure2.pdf :
+
+figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure10.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure11.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure12.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure13.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure3.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure4.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure5.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure8.pdf :
+
+figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure0.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure1.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure10.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure11.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure12.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure14.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure16.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure17.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure18.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure20.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure21.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure22.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure23.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure24.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure25.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure26.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure29.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure3.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure30.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure4.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure5.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf :
+
+figures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf :
+
+figures/diagrams/CC_Amps/CC_Amps-figure0.pdf :
+
+figures/diagrams/CC_Amps/CC_Amps-figure1.pdf :
+
+figures/diagrams/CC_Amps/CC_Amps-figure2.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure0.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure1.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure10.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure11.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure12.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure2.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure3.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure4.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure5.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure6.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure7.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure8.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure9.pdf :
+
+figures/diagrams/Eff_2b/Eff_2b-figure0.pdf :
+
+figures/diagrams/Eff_2b/Eff_2b-figure1.pdf :
+
+figures/diagrams/Eff_2b/Eff_2b-figure2.pdf :
+
+figures/diagrams/Eff_2b/Eff_2b-figure3.pdf :
+
+figures/diagrams/Eff_2b/Eff_2b-figure4.pdf :
+
+figures/diagrams/Eff_2b/Eff_2b-figure5.pdf :
+
+figures/diagrams/Eff_2b/Eff_2b-figure6.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure12.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure13.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure2.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure3.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure4.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure5.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure6.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure7.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure8.pdf :
+
+figures/diagrams/Hamiltonian/Hamiltonian-figure9.pdf :
+
+figures/diagrams/MBPT/MBPT-figure0.pdf :
+
+figures/diagrams/MBPT/MBPT-figure1.pdf :
+
+figures/diagrams/MBPT/MBPT-figure12.pdf :
+
+figures/diagrams/MBPT/MBPT-figure13.pdf :
+
+figures/diagrams/MBPT/MBPT-figure21.pdf :
+
+figures/diagrams/MBPT/MBPT-figure22.pdf :
+
+figures/diagrams/MBPT/MBPT-figure23.pdf :
+
+figures/diagrams/MBPT/MBPT-figure24.pdf :
+
+figures/diagrams/MBPT/MBPT-figure25.pdf :
+
+figures/diagrams/MBPT/MBPT-figure26.pdf :
+
+figures/diagrams/MBPT/MBPT-figure27.pdf :
+
+figures/diagrams/MBPT/MBPT-figure28.pdf :
+
+figures/diagrams/MBPT/MBPT-figure29.pdf :
+
+figures/diagrams/MBPT/MBPT-figure5.pdf :
+
+figures/diagrams/MBPT/MBPT-figure9.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure0.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure1.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure10.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure11.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure13.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure14.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure15.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure16.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure17.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure18.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure19.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure2.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure3.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure4.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure6.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure7.pdf :
+
+figures/diagrams/MBPT_linked/MBPT_linked-figure8.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure0.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure1.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure10.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure11.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure14.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure15.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure16.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure17.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure18.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure19.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure6.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure8.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure1.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure10.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure11.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure12.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure13.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure14.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure15.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure16.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure17.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure18.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure20.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure21.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure4.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure5.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure8.pdf :
+
+figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf :
+
+figures/introduction/ab-initio_nuclear_chart_2005.pdf :
+
+figures/introduction/ab-initio_nuclear_chart_2017.pdf :
+
+figures/introduction/ab-initio_progress.pdf :
+
+figures/manybody/1p1h.pdf :
+
+figures/manybody/2p2h.pdf :
+
+figures/manybody/FCIscaling.png :
+
+figures/manybody/IPM.pdf :
+
+figures/manybody/PA.pdf :
+
+figures/manybody/PR.pdf :
+
+introduction.tex :
+
+msudissertation.cls :
+
+thesis.bib :
+
+thesis.tex :
+
+#===End phony rules for thesis.tex:

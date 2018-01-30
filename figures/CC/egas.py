@@ -48,7 +48,7 @@ ax.plot(x[1], y[1], '-.', marker='s', color='b', label='$\mathrm{N=54}$')
 #ax.plot(x[2], y[2], '--', marker='v', color='g', label='$\mathrm{N=114}$')
 #ax.plot(x[3], y[3], '-', marker='o', color='r', label='$\mathrm{N=162}$')
 ax.plot(x[4], y[4], '-', marker='^', color='k', label='$\mathrm{N=246}$')
-ax.plot(x1, y1, '--', marker='v', color='g', label='$\mathrm{QMC}$')
+ax.plot(x1, y1, '--', marker='v', color='g', label='$\mathrm{VMC}$')
 ax.legend(loc='upper right')
 
 plt.xlabel(r'$\mathrm{Wigner-Seitz\ Radius\ (r_{s})}$', fontsize=15)

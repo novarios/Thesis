@@ -4,7 +4,7 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage{subfiles}  % provides ability to use subfiles for sections
-\usepackage{graphicx}
+\usepackage{graphicx,calc}
 \usepackage{subcaption}
 \graphicspath{{figures/}{../figures/}}
 \usepackage{framed}
@@ -15,6 +15,12 @@
 \usepackage{hyperref}  % provides hyperlinks (\url) and PDF bookmarks
 \usepackage{pdflscape} % provides \begin{landscape} ... \end{landscape}
 \usepackage{titling}   % provides \thetitle, \theauthor, \thedate
+
+\newlength\myheight
+\newlength\mydepth
+\settototalheight\myheight{Xygp}
+\settodepth\mydepth{Xygp}
+\setlength\fboxsep{0pt}
 
 \def\dheight{2.5cm}
 \def\dscale{1.15}
@@ -55,6 +61,7 @@
 \newcommand{\EHamN}{\xbar{H}_{\hspace{-0.75ex}\mathrm{N}}}
 \newcommand{\EOp}{\xbar{O}\hspace{-0.25pt}}
 \newcommand{\Top}{\hat{T}\hspace{-0.25pt}}
+\newcommand{\fop}{\hat{f}\hspace{-0.25pt}}
 \newcommand{\Vop}{\hat{V}\hspace{-0.25pt}}
 \newcommand{\Wop}{\hat{W}\hspace{-0.25pt}}
 \newcommand{\Rop}{\hat{R}\hspace{-0.1pt}}
@@ -327,35 +334,6 @@ Suspendisse aliquet vel orci volutpat imperdiet. Aenean et ex a nisl volutpat ul
 \end{landscape}
 
 \appendix
-
-\chapter{Etiam a Convallis}
-
-Your appendix goes here.
-
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, ex vitae sagittis tempor, risus ipsum ultrices elit, vel eleifend magna ex in tellus. Proin congue mattis sem, eget gravida tellus iaculis nec. Sed consectetur varius quam convallis tincidunt. Aliquam congue augue vitae lacus dignissim, efficitur condimentum magna lacinia.
-
-Etiam a convallis quam, in feugiat purus. Mauris porta magna ipsum, ac pharetra nisl tristique ac. Nullam consectetur finibus tortor, eget ultrices libero auctor a. Cras facilisis sapien metus, at accumsan ex auctor a. Pellentesque varius non dolor vitae rhoncus. Cras eget ante vitae magna aliquam condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec molestie est consequat maximus dictum.\cite{exampleref1}
-
-\section{Nunc Nec Ultrices Justo}
-
-Nunc nec ultrices justo, nec rhoncus urna. Proin sagittis tempor purus, nec pulvinar leo varius eget. Etiam a nisi nec neque dignissim molestie. Ut tincidunt vel diam sed imperdiet. Praesent a auctor turpis, in semper ipsum. Sed eu erat interdum, sagittis lectus nec, fringilla felis. Nunc lacus lacus, scelerisque eu mollis ac, ultrices a leo. Aliquam mattis felis enim, in cursus augue dignissim eget. Aenean fermentum mi id facilisis pulvinar.\cite{exampleref1}
-
-Aliquam aliquam, lorem elementum mollis ornare, augue felis tristique est, a blandit velit dui a orci. Sed id nisl dictum, tincidunt dui quis, gravida felis. Curabitur vitae erat at lacus volutpat iaculis ut ut enim. Nullam vel venenatis metus. Sed rutrum est at lectus elementum viverra. Nulla sed enim risus.
-
-\chapter{Nulla Feugiat}
-
-\begin{table}[h]
-  \centering
-  \begin{tabular}{l c r}
-    1 & 2 & 3 \\
-    4 & 5 & 6 \\
-    7 & 8 & 9 \\
-  \end{tabular}
-  \caption{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat ante quis consectetur pellentesque. In tincidunt orci in justo tempor, non tempor metus congue.\cite{exampleref1}}
-\end{table}
-
 \subfile{Appendix}
 
 \bibliographystyle{plain}

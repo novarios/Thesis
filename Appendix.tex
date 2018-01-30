@@ -2,100 +2,7 @@
 
 \begin{document}
 
-\begin{align} \label{eq:eff1}
-  \diagram{CCSD_1b/CCSD_1b-figure0} &= \ddiagram{CCSD_1b/CCSD_1b-figure1} + \diagram{CCSD_1b/CCSD_1b-figure2} \notag \\
-  \xint{i}{a} &= \dboxed{\fint{i}{a}} + \sum\limits_{kc}\vint{ik}{ac}\tamp{c}{k}
-\end{align}
-\begin{align} \label{eq:eff2}
-  \diagram{CCSD_1b/CCSD_1b-figure3} &= \diagram{CCSD_1b/CCSD_1b-figure4} + \diagram{CCSD_1b/CCSD_1b-figure5} + \diagram{CCSD_1b/CCSD_1b-figure6} + \diagram{CCSD_1b/CCSD_1b-figure7} \notag \\
-  \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\tamp{ac}{kl} + \sum\limits_{kc}\vint{ka}{cb}\tamp{c}{k} - \sum\limits_{k}\xint{k}{b}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff3}
-  \diagram{CCSD_1b/CCSD_1b-figure8} &= \diagram{CCSD_1b/CCSD_1b-figure9} + \diagram{CCSD_1b/CCSD_1b-figure10} + \diagram{CCSD_1b/CCSD_1b-figure11} \notag \\
-  \xxint{i}{j} &= \fint{i}{j} + \frac{1}{2}\sum\limits_{kcd}\vint{ik}{cd}\tamp{cd}{jk} + \sum\limits_{kc}\vint{ik}{jc}\tamp{c}{k}
-\end{align}
-\begin{align} \label{eq:eff4}
-  \diagram{CCSD_1b/CCSD_1b-figure12} &= \diagram{CCSD_1b/CCSD_1b-figure13} + \diagram{CCSD_1b/CCSD_1b-figure14} \notag \\
-  \xint{i}{j} &= \xxint{i}{j} + \sum\limits_{c}\xint{i}{c}\tamp{c}{j}
-\end{align}
-\begin{align} \label{eq:eff5}
-  \diagram{CCSD_2b/CCSD_2b-figure0} &= \diagram{CCSD_2b/CCSD_2b-figure1} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure2} \notag \\
-  \xxint{ia}{bc} &= \vint{ia}{bc} - \frac{1}{2}\sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff6}
-  \diagram{CCSD_2b/CCSD_2b-figure3} &= \diagram{CCSD_2b/CCSD_2b-figure4} + \diagram{CCSD_2b/CCSD_2b-figure5} \notag \\
-  \xint{ia}{bc} &= \vint{ia}{bc} - \sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff7}
-  \diagram{CCSD_2b/CCSD_2b-figure6} &= \diagram{CCSD_2b/CCSD_2b-figure7} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure8} \notag \\
-  \xxint{ij}{ka} &= \vint{ij}{ka} + \frac{1}{2}\sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
-\end{align}
-\begin{align} \label{eq:eff8}
-  \diagram{CCSD_2b/CCSD_2b-figure9} &= \diagram{CCSD_2b/CCSD_2b-figure10} + \diagram{CCSD_2b/CCSD_2b-figure11} \notag \\
-  \xint{ij}{ka} &= \vint{ij}{ka} + \sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
-\end{align}
-\begin{align} \label{eq:eff9}
-  \diagram{CCSD_2b/CCSD_2b-figure12} &= \diagram{CCSD_2b/CCSD_2b-figure13} + \diagram{CCSD_2b/CCSD_2b-figure14} \notag \\
-  \xxint{ab}{cd} &= \vint{ab}{cd} - \Perm{ab}\sum\limits_{k}\xxint{kb}{cd}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff10}
-  \diagram{CCSD_2b/CCSD_2b-figure15} &= \diagram{CCSD_2b/CCSD_2b-figure16} + \diagram{CCSD_2b/CCSD_2b-figure17} \notag \\
-  \xint{ab}{cd} &= \xxint{ab}{cd} + \frac{1}{2}\sum\limits_{kl}\vint{kl}{cd}\tamp{ab}{kl}
-\end{align}
-\begin{align} \label{eq:eff11}
-  \diagram{CCSD_2b/CCSD_2b-figure18} &= \diagram{CCSD_2b/CCSD_2b-figure19} + \diagram{CCSD_2b/CCSD_2b-figure20} + \diagram{CCSD_2b/CCSD_2b-figure21} \notag \\
-  \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\sum\limits_{cd}\vint{ij}{cd}\tamp{cd}{kl} + \Perm{kl}\sum\limits_{c}\xxint{ij}{kc}\tamp{c}{l}
-\end{align}
-\begin{align} \label{eq:eff12}
-  \diagram{CCSD_2b/CCSD_2b-figure22} &= \diagram{CCSD_2b/CCSD_2b-figure23} + \diagram{CCSD_2b/CCSD_2b-figure24} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure25} \notag \\
-  \xxint{ia}{jb} &= \vint{ia}{jb} + \sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff13}
-  \diagram{CCSD_2b/CCSD_2b-figure26} &= \diagram{CCSD_2b/CCSD_2b-figure27} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure28} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure29} \notag \\
-  \xxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff14}
-  \diagram{CCSD_2b/CCSD_2b-figure30} &= \diagram{CCSD_2b/CCSD_2b-figure31} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure32} + \diagram{CCSD_2b/CCSD_2b-figure33} \notag \\
-  \xxxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j} - \sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff15}
-  \diagram{CCSD_2b/CCSD_2b-figure34} &= \diagram{CCSD_2b/CCSD_2b-figure35} + \left(\frac{1}{2}\hspace{-0.5mm}\right)\fdiagram{CCSD_2b/CCSD_2b-figure36} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure37} \notag \\
-  \xint{ia}{jb} &= \xxxxint{ia}{jb} - \left(\frac{1}{2}\right)\sum\limits_{kc}\vint{ik}{cb}\tamp{ca}{jk} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j}
-\end{align}
-\begin{align} \label{eq:eff16}
-  \diagram{CCSD_2b/CCSD_2b-figure38} &= \diagram{CCSD_2b/CCSD_2b-figure39} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure40} + \diagram{CCSD_2b/CCSD_2b-figure41} \notag \\
-  \xxint{ab}{ic} &= \vint{ab}{ic} + \frac{1}{2}\sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxxint{kb}{ic}\tamp{a}{k}
-\end{align}
-\begin{align} \label{eq:eff17}
-  \diagram{CCSD_2b/CCSD_2b-figure42} &= \diagram{CCSD_2b/CCSD_2b-figure43} + \diagram{CCSD_2b/CCSD_2b-figure44} + \diagram{CCSD_2b/CCSD_2b-figure45} \notag \\[-1.5ex]
-  &+ \diagram{CCSD_2b/CCSD_2b-figure46} + \diagram{CCSD_2b/CCSD_2b-figure47} + \diagram{CCSD_2b/CCSD_2b-figure48} \notag \\
-  \xint{ab}{ic} &= \vint{ab}{ic} + \sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxint{kb}{ic}\tamp{a}{k} \notag \\
-  &- \sum\limits_{k}\xint{k}{c}\tamp{ab}{ik} + \Perm{ab}\sum\limits_{kd}\xint{kb}{dc}\tamp{ad}{ik} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ic}\tamp{ab}{kl}
-\end{align}
-\begin{align} \label{eq:eff18}
-  \diagram{CCSD_2b/CCSD_2b-figure49} &= \diagram{CCSD_2b/CCSD_2b-figure50} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure51} \notag \\
-  \xxint{ia}{jk} &= \vint{ia}{jk} - \frac{1}{2}\sum\limits_{l}\vint{il}{jk}\tamp{a}{l}
-\end{align}
-\begin{align} \label{eq:eff19}
-  \diagram{CCSD_2b/CCSD_2b-figure52} &= \diagram{CCSD_2b/CCSD_2b-figure53} + \diagram{CCSD_2b/CCSD_2b-figure54} + \diagram{CCSD_2b/CCSD_2b-figure55} \notag \\[-1.5ex]
-  &+ \diagram{CCSD_2b/CCSD_2b-figure56} + \diagram{CCSD_2b/CCSD_2b-figure57} + \diagram{CCSD_2b/CCSD_2b-figure58} \notag \\
-  \xint{ia}{jk} &= \vint{ia}{jk} - \sum\limits_{l}\vint{il}{jk}\tamp{a}{l} + \Perm{jk}\sum\limits_{c}\xxxxint{ia}{jc}\tamp{c}{k} \notag \\
-  &+ \Perm{jk}\sum\limits_{lc}\xint{il}{jc}\tamp{ca}{lk} + \frac{1}{2}\sum\limits_{cd}\xint{ia}{cd}\tamp{cd}{jk} + \sum\limits_{c}\xint{i}{c}\tamp{ca}{jk}
-\end{align}
 
-\begin{align} \label{eq:singles_linear}
-  \diagram{CCSD_1b/CCSD_1b-figure15} = 0 &= \ddiagram{CCSD_1b/CCSD_1b-figure16} + \diagram{CCSD_1b/CCSD_1b-figure17} + \diagram{CCSD_1b/CCSD_1b-figure18} + \diagram{CCSD_1b/CCSD_1b-figure19} \notag \\[-1.5ex]
-  &+ \diagram{CCSD_1b/CCSD_1b-figure20} + \diagram{CCSD_1b/CCSD_1b-figure21} + \diagram{CCSD_1b/CCSD_1b-figure22} \notag \\
-  \xint{a}{i} = 0 &= \dboxed{\fint{a}{i}} + \sum\limits_{\mathclap{c}}\xint{a}{c}\tamp{c}{i} - \sum\limits_{\mathclap{k}}\xxint{k}{i}\tamp{a}{k} + \sum\limits_{\mathclap{kc}}\vint{ka}{ci}\tamp{c}{k} \notag \\
-  &+ \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{cd}{ki} - \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{ac}{kl} + \sum\limits_{\mathclap{kc}}\xint{k}{c}\tamp{ac}{ik}
-\end{align}
-
-\begin{align} \label{eq:double_linear}
-  \diagram{CCSD_2b/CCSD_2b-figure59} = 0 &= \diagram{CCSD_2b/CCSD_2b-figure60} + \diagram{CCSD_2b/CCSD_2b-figure61} + \diagram{CCSD_2b/CCSD_2b-figure62} \notag \\[-1.5ex]
-  &\hspace{-100pt}+ \diagram{CCSD_2b/CCSD_2b-figure63} + \diagram{CCSD_2b/CCSD_2b-figure64} + \diagram{CCSD_2b/CCSD_2b-figure65} + \diagram{CCSD_2b/CCSD_2b-figure66} + \diagram{CCSD_2b/CCSD_2b-figure67} \notag \\
-  \xint{ab}{ij} = 0 &= \vint{ab}{ij} + \Perm{ab}\sum\limits_{\mathclap{c}}\xint{a}{c}\tamp{cb}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\xint{k}{i}\tamp{ab}{kj} \notag \\
-  &\hspace{-100pt}+ \frac{1}{2}\sum\limits_{\mathclap{cd}}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\xint{kl}{ij}\tamp{ab}{kl} - \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\xint{kb}{ic}\tamp{ac}{kj} - \Perm{ab}\sum\limits_{\mathclap{k}}\xxint{kb}{ij}\tamp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\xxint{ab}{ic}\tamp{c}{j}
-\end{align}
 
 
 \begin{equation}
@@ -147,153 +54,229 @@
 \end{align}
 
 
-\chapter{Diagrammatic Rules} \label{chapter:appendix_diagrams}
-
-\chapter{Angular Momentum Coupling} \label{chapter:angular_momentum}
-
-Two angular momenta, $\ket{j_{1}m_{1}}$ and $\ket{j_{2}m_{2}}$, can be coupled into a state with total angular momentum $J$ and projection $M$, $\ket{j_{1}j_{2};JM}$. The coupled state is written as a linear combination of uncoupled states, $\ket{j_{1}m_{1};j_{2}m_{2}}$.
-\begin{equation}
-\ket{j_{1}j_{2};JM}\hspace{1mm}=\hspace{-4mm}\sum_{m_{1}+m_{2}=M}\hspace{-4mm}\braket{j_{1}m_{1};j_{2}m_{2}}{JM}\ket{j_{1}m_{1};j_{2}m_{2}}
-\end{equation}
-The coefficients in this expansion, $\braket{j_{1}m_{1};j_{2}m_{2}}{JM}$, are called the Clebsch-Gordon coefficients. They have the symmetry property that introduces a relative phase between states with different coupling orders.
-\begin{equation}
-\braket{j_{2}m_{2};j_{1}m_{1}}{JM}=\left(-1\right)^{j_{1}+j_{2}-J}\braket{j_{1}m_{1};j_{2}m_{2}}{JM}
-\end{equation}
-
-\chapter{Coupled Two-Body State}
-
-A two-body state relative to some reference vacuum, $\ket{\Phi}$, involving either particles or holes, can be written as the result of acting with the appropriate particle or hole creation operators, $\ket{pq}=p^{\dagger}q^{\dagger}\ket{\Phi}$. The letters $\{p,q,r,s,...\}$ denote generic particle or hole states, $\{a,b,c,d,...\}$ denote particle states, and $\{i,j,k,l,...\}$ denote hole states. These $M$-scheme states, with total angular momentum projection $M$, can be used to build $J$-scheme states which are coupled to a total angular momentum $J$. The generic j-coupled states corresponding to the orbits of $p$ and $q$ are given by $\{\alpha,\beta,\gamma,...\}$.
-\begin{equation}
-\ket{\alpha\beta;JM}=\frac{\sqrt{1+\delta_{\alpha\beta}\left(-1\right)^{J}}}{1+\delta_{\alpha\beta}}\left[\alpha^{\dagger}\beta^{\dagger}\right]_{JM}\ket{\Phi}=\frac{\sqrt{1+\delta_{\alpha\beta}\left(-1\right)^{J}}}{1+\delta_{\alpha\beta}}\sum_{\substack{p\in\alpha \\ q\in\beta}}\braket{j_{p}m_{p}j_{q}m_{q}}{JM}\ p^{\dagger}q^{\dagger}\ket{\Phi}
-\end{equation}
-When the states $\alpha$ and $\beta$ are coupled in the reverse order, each Clebsch-Gordon coefficient acquires the same phase factor as Eqn. (2) when $p$ and $q$ are switched. Therefore the coupled states show a similar symmetry property as the Clebsch-Gordon coefficients depending on the order of $\alpha$ and $\beta$. An additional factor of $\left(-1\right)$ comes from anti-commutating the creation operators involved, which must commute because they are only of the particle/hole creation type.
-\begin{equation}
-\ket{\beta\alpha;JM}=\left(-1\right)^{j_{\alpha}+j_{\beta}-J+1}\ket{\alpha\beta;JM}
-\end{equation}
-
-\chapter{Convergence Acceleration: Direct-Inversion of the Iterative Subspace}
-
-Direct-Inversion of the Iterative Subspace (DIIS) is an extension to the damping method to help stabilize and accelerate the convergence. In the damping method, the input amplitude vector to iteration $i+1$ is a mixture of the output of the two previous iterations, $\mathbf{\tilde{t}}_{i+1}=\alpha\mathbf{t}_{i}+\left(1-\alpha\right)\mathbf{t}_{i-1}$, where the CCD step is $\mathcal{F}\left(\mathbf{\tilde{t}}_{i}\right)=\mathbf{t}_{i}$. In DIIS, the input amplitude vector to iteration $i+1$ is a linear combination of the last $l$ vectors, $\mathbf{\tilde{t}}_{i+1}=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t}_{m}$. Rewriting the vectors as as the exact solution, $\mathcal{F}\left(\mathbf{t^{*}}\right)=\mathbf{t^{*}}$ or $\mathbf{\tilde{t}}_{i}=\mathbf{t}_{i}$, plus an error term, $\mathbf{t}_{i}=\mathbf{t^{*}}+\mathbf{r}_{i}$, the interpolated vector can be rewritten, $\mathbf{\tilde{t}}_{i+1}=\sum_{m=i-l+1}^{i}c_{m}\left(\mathbf{t^{*}}+\mathbf{r}_{m}\right)=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}+\sum_{m=i-l+1}^{i}c_{m}\mathbf{r}_{m}$. Equating this to the exact solution and minimizing the error vector gives, $\mathbf{t^{*}}=lim\left(\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}+\sum_{m=i-l+1}^{i}c_{m}\mathbf{r}_{m}\right)=\sum_{m=i-l+1}^{i}c_{m}\mathbf{t^{*}}$, so that $\sum_{m=i-l+1}^{i}c_{m}=1$. Therefore, the task is to minimize the norm of the error vector, $\mathbf{\tilde{r}}_{i+1}^{\dagger}\mathbf{\tilde{r}}_{i+1}=\sum_{m,n=i-l+1}^{i}c_{m}c_{n}\mathbf{r}_{m}^{\dagger}\mathbf{r}_{n}$, with the constraint that the sum of the coefficients is one, $min\left(\sum_{m,n=i-l+1}^{i}c_{m}c_{n}\mathbf{r}_{m}^{\dagger}\mathbf{r}_{n}-\lambda\left(1-\sum_{m=i-l+1}^{i}c_{m}\right)\right)$. This can be rewritten as a matrix equation with matrix $B_{ij}=\mathbf{r}_{i}^{\dagger}\mathbf{r}_{j}$, $\mathcal{L}=\sum_{m,n=i-l+1}^{i}c_{m}c_{n}B_{mn}-\lambda\left(1-\sum_{m=i-l+1}^{i}c_{m}\right)$.
-\begin{gather}
-\frac{\partial\mathcal{L}}{\partial c_{k}}=0=\sum_{n=i-l+1}^{i}c_{n}B_{kn}+\sum_{m=i-l+1}^{i}c_{m}B_{mk}+\lambda=2\sum_{n=i-l+1}^{i}c_{n}B_{kn}+\lambda \\
-\end{gather}
-
 \chapter{CCSD Diagrams}
 
-The following diagrams represent the different contributions to the CCSD cluster amplitudes \textit{without} directly building the effective Hamiltonian, $\EHam$.  The boxed diagrams are automatically zero in a Hartree-Fock basis.
-
-\begin{align}
+The following diagrams and their corresponding algebraic expressions comprise the different contributions to the CCSD cluster amplitudes \textit{without} directly building the effective Hamiltonian, $\EHam$.  The boxed diagrams are automatically zero in a Hartree-Fock basis.  The contributions to the CCSD singles equation, \eqref{eq:ccsd2}, are given by Eqs.\ \eqref{eq:ccsd_t1_1}-\eqref{eq:ccsd_t1_8}.
+\begin{align} \label{eq:ccsd_t1_1}
   \hat{f}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure0} + \diagram{CCSD_t1/CCSD_t1-figure1} + \diagram{CCSD_t1/CCSD_t1-figure2} \notag \\
   &= \dboxed{\fint{a}{i}} - \sum\limits_{\mathclap{k}}\fint{k}{i}\tamp{a}{k} + \sum\limits_{\mathclap{c}}\fint{a}{c}\tamp{c}{i}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t1_2}
   \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure3} \notag \\
   &= -\sum\limits_{\mathclap{kc}}\vint{ka}{ic}\tamp{c}{k}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t1_3}
   \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure4} \notag \\
   &= \dboxed{\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{ac}{ki}}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t1_4}
   \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure5} + \diagram{CCSD_t1/CCSD_t1-figure6} \notag \\
   &= \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{cd}{ki} + \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{ca}{kl}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t1_5}
   \hat{f}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t1/CCSD_t1-figure7} \notag \\
   &= \dboxed{\sum\limits_{\mathclap{kcd}}\fint{l}{d}\tamp{a}{l}\tamp{d}{i}}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t1_6}
   \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure8} + \diagram{CCSD_t1/CCSD_t1-figure9} \notag \\
   &= \sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{c}{k}\tamp{d}{i} + \sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{c}{k}\tamp{a}{l}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t1_7}
   \hat{V}_{N}\hat{t}_{1}\hat{\text{t}}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure10} + \diagram{CCSD_t1/CCSD_t1-figure11} + \diagram{CCSD_t1/CCSD_t1-figure12} \notag \\
   &= -\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{cd}{ki}\tamp{a}{l} - \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ca}{kl}\tamp{d}{i} + \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ad}{il}\tamp{c}{k}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t1_8}
   \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t1/CCSD_t1-figure13} \notag \\
   &= -\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{c}{k}\tamp{d}{i}\tamp{a}{l}
 \end{align}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{align}
+The contributions to the CCSD doubles equation, \eqref{eq:ccsd2}, are given by Eqs.\ \eqref{eq:ccsd_t2_1}-\eqref{eq:ccsd_t2_11}.
+\begin{align} \label{eq:ccsd_t2_1}
   \hat{V}_{N}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure0} \notag \\
   &= \vint{ab}{ij}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_2}
   \hat{f}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure1} + \diagram{CCSD_t2/CCSD_t2-figure2} \notag \\
   &= \Perm{ab}\sum\limits_{\mathclap{c}}\fint{b}{c}\tamp{ac}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\fint{k}{j}\tamp{ab}{ik}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_3}
   \hat{V}_{N}\hat{t}_{1}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure3} + \diagram{CCSD_t2/CCSD_t2-figure4} \notag \\
   &= -\Perm{ab}\sum\limits_{\mathclap{k}}\vint{kb}{ij}\tamp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\vint{ab}{cj}\tamp{c}{i}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_4}
   \hat{V}_{N}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure5} + \diagram{CCSD_t2/CCSD_t2-figure6} + \diagram{CCSD_t2/CCSD_t2-figure7} \notag \\
   &= \frac{1}{2}\sum\limits_{\mathclap{kl}}\vint{kl}{ij}\tamp{ab}{kl} + \frac{1}{2}\sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{cd}{ij} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{ac}{kj}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_5}
   \hat{V}_{N}\hat{t}_{1}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure8} + \diagram{CCSD_t2/CCSD_t2-figure9} + \diagram{CCSD_t2/CCSD_t2-figure10} \notag \\
   &= \sum\limits_{\mathclap{kl}}\vint{kl}{ij}\tamp{a}{k}\tamp{b}{l} + \sum\limits_{\mathclap{cd}}\vint{ab}{cd}\tamp{c}{i}\tamp{d}{j} - \Perm{ij|ab}\sum\limits_{\mathclap{kc}}\vint{kb}{ic}\tamp{a}{k}\tamp{c}{j}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_6}
   \hat{V}_{N}\hat{t}_{2}^{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure11} + \diagram{CCSD_t2/CCSD_t2-figure12} + \diagram{CCSD_t2/CCSD_t2-figure13} \notag \\
   &+ \diagram{CCSD_t2/CCSD_t2-figure14} \notag \\
   &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{cd}{ij} + \Perm{ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ac}{lj}\tamp{bd}{ki} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{lj}\tamp{cd}{ki} \notag \\
   &- \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_7}
   \hat{f}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \ddiagram{CCSD_t2/CCSD_t2-figure15} + \ddiagram{CCSD_t2/CCSD_t2-figure16} \notag \\
   &= -\dboxed{\Perm{ab}\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{a}{k}\tamp{cb}{ij}} - \dboxed{\Perm{ij}\sum\limits_{\mathclap{kc}}\fint{k}{c}\tamp{c}{i}\tamp{ab}{kj}}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_8}
   \hat{V}_{N}\hat{t}_{1}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure17} + \diagram{CCSD_t2/CCSD_t2-figure18} + \diagram{CCSD_t2/CCSD_t2-figure19} \notag \\
   &+ \diagram{CCSD_t2/CCSD_t2-figure20} + \diagram{CCSD_t2/CCSD_t2-figure21} + \diagram{CCSD_t2/CCSD_t2-figure22} \notag \\
   &= \Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{bc}{jk}\tamp{d}{i} - \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\tamp{bc}{jk}\tamp{a}{l} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\tamp{cd}{ij}\tamp{a}{k} \notag \\
   &+ \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\tamp{ab}{kl}\tamp{c}{i} + \Perm{ab}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{c}{k}\tamp{db}{ij} - \Perm{ij}\sum\limits_{\mathclap{klc}}\vint{kl}{ci}\tamp{c}{k}\tamp{ab}{lj}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_9}
   \hat{V}_{N}\hat{t}_{1}^{3}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure23} + \diagram{CCSD_t2/CCSD_t2-figure24} \notag \\
   &= -\Perm{ij|ab}\sum\limits_{\mathclap{kcd}}\vint{kb}{cd}\tamp{a}{k}\tamp{c}{i}\tamp{d}{j} + \Perm{ij|ab}\sum\limits_{\mathclap{klc}}\vint{kl}{cj}\tamp{c}{i}\tamp{a}{k}\tamp{b}{l}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_10}
   \hat{V}_{N}\hat{t}_{1}^{2}\hat{t}_{2}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure25} + \diagram{CCSD_t2/CCSD_t2-figure26} + \diagram{CCSD_t2/CCSD_t2-figure27} \notag \\
   &+ \diagram{CCSD_t2/CCSD_t2-figure28} + \diagram{CCSD_t2/CCSD_t2-figure29} \notag \\
   &= \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{kl}\tamp{c}{i}\tamp{d}{j} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{cd}{ij}\tamp{a}{k}\tamp{b}{l} + \Perm{ij|ab}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ac}{lj}\tamp{b}{k}\tamp{d}{i} \notag \\
   &- \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{ab}{lj}\tamp{c}{k}\tamp{d}{i} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{c}{k}\tamp{a}{l}
 \end{align}
-
-\begin{align}
+\begin{align} \label{eq:ccsd_t2_11}
   \hat{V}_{N}\hat{t}_{1}^{4}|\Phi_{0}\rangle_{c}\ &= \diagram{CCSD_t2/CCSD_t2-figure30} \notag \\
   &= \sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{a}{k}\tamp{b}{l}\tamp{c}{i}\tamp{d}{j}
 \end{align}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The following diagrams and their corresponding algebraic expressions comprise the different components of the CCSD effective Hamiltonian, $\EHam$.  Because some components are used as intermediates to build other components, they must be built in the order written.  Some intermediate components overcount some diagrams which motivates the need for further intermediates, denoted by $\xxint{}{}, \xxxint{}{}$, and $\xxxxint{}{}$.  The boxed diagrams are automatically zero in a Hartree-Fock basis.  The one-body components to the CCSD effective Hamiltonian, Eq.\ \eqref{eq:cc_heff1}, are given by Eqs.\ \eqref{eq:eff1}-\eqref{eq:eff4}.
+\begin{align} \label{eq:eff1}
+  \diagram{CCSD_1b/CCSD_1b-figure0} &= \ddiagram{CCSD_1b/CCSD_1b-figure1} + \diagram{CCSD_1b/CCSD_1b-figure2} \notag \\
+  \xint{i}{a} &= \dboxed{\fint{i}{a}} + \sum\limits_{kc}\vint{ik}{ac}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff2}
+  \diagram{CCSD_1b/CCSD_1b-figure3} &= \diagram{CCSD_1b/CCSD_1b-figure4} + \diagram{CCSD_1b/CCSD_1b-figure5} + \diagram{CCSD_1b/CCSD_1b-figure6} + \diagram{CCSD_1b/CCSD_1b-figure7} \notag \\
+  \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\tamp{ac}{kl} + \sum\limits_{kc}\vint{ka}{cb}\tamp{c}{k} - \sum\limits_{k}\xint{k}{b}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff3}
+  \diagram{CCSD_1b/CCSD_1b-figure8} &= \diagram{CCSD_1b/CCSD_1b-figure9} + \diagram{CCSD_1b/CCSD_1b-figure10} + \diagram{CCSD_1b/CCSD_1b-figure11} \notag \\
+  \xxint{i}{j} &= \fint{i}{j} + \frac{1}{2}\sum\limits_{kcd}\vint{ik}{cd}\tamp{cd}{jk} + \sum\limits_{kc}\vint{ik}{jc}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff4}
+  \diagram{CCSD_1b/CCSD_1b-figure12} &= \diagram{CCSD_1b/CCSD_1b-figure13} + \diagram{CCSD_1b/CCSD_1b-figure14} \notag \\
+  \xint{i}{j} &= \xxint{i}{j} + \sum\limits_{c}\xint{i}{c}\tamp{c}{j}
+\end{align}
+
+Once the one-body components have been constructed, the pseudo-linear form for the CCSD singles equation, Eq.\ \eqref{eq:ccsd1}, can be evaluated,
+\begin{align} \label{eq:singles_linear}
+  \diagram{CCSD_1b/CCSD_1b-figure15} = 0 &= \ddiagram{CCSD_1b/CCSD_1b-figure16} + \diagram{CCSD_1b/CCSD_1b-figure17} + \diagram{CCSD_1b/CCSD_1b-figure18} + \diagram{CCSD_1b/CCSD_1b-figure19} \notag \\[-1.5ex]
+  &+ \diagram{CCSD_1b/CCSD_1b-figure20} + \diagram{CCSD_1b/CCSD_1b-figure21} + \diagram{CCSD_1b/CCSD_1b-figure22} \notag \\
+  \xint{a}{i} = 0 &= \dboxed{\fint{a}{i}} + \sum\limits_{\mathclap{c}}\xint{a}{c}\tamp{c}{i} - \sum\limits_{\mathclap{k}}\xxint{k}{i}\tamp{a}{k} + \sum\limits_{\mathclap{kc}}\vint{ka}{ci}\tamp{c}{k} \notag \\
+  &+ \frac{1}{2}\sum\limits_{\mathclap{kcd}}\vint{ka}{cd}\tamp{cd}{ki} - \frac{1}{2}\sum\limits_{\mathclap{klc}}\vint{kl}{ic}\tamp{ac}{kl} + \sum\limits_{\mathclap{kc}}\xint{k}{c}\tamp{ac}{ik}.
+\end{align}
+During a CC iteration, it's possible to use these updated singles amplitues $\Top_{1}$ when evaluating the doubles amplitudes $\Top_{2}$ in the same iteration, which can accelerate the convergence.
+
+The two-body components to the CCSD effective Hamiltonian, Eq.\ \eqref{eq:cc_heff1}, are given by Eqs.\ \eqref{eq:eff5}-\eqref{eq:eff19}.
+\begin{align} \label{eq:eff5}
+  \diagram{CCSD_2b/CCSD_2b-figure0} &= \diagram{CCSD_2b/CCSD_2b-figure1} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure2} \notag \\
+  \xxint{ia}{bc} &= \vint{ia}{bc} - \frac{1}{2}\sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff6}
+  \diagram{CCSD_2b/CCSD_2b-figure3} &= \diagram{CCSD_2b/CCSD_2b-figure4} + \diagram{CCSD_2b/CCSD_2b-figure5} \notag \\
+  \xint{ia}{bc} &= \vint{ia}{bc} - \sum\limits_{k}\vint{ik}{bc}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff7}
+  \diagram{CCSD_2b/CCSD_2b-figure6} &= \diagram{CCSD_2b/CCSD_2b-figure7} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure8} \notag \\
+  \xxint{ij}{ka} &= \vint{ij}{ka} + \frac{1}{2}\sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff8}
+  \diagram{CCSD_2b/CCSD_2b-figure9} &= \diagram{CCSD_2b/CCSD_2b-figure10} + \diagram{CCSD_2b/CCSD_2b-figure11} \notag \\
+  \xint{ij}{ka} &= \vint{ij}{ka} + \sum\limits_{c}\vint{ij}{ca}\tamp{c}{k}
+\end{align}
+\begin{align} \label{eq:eff9}
+  \diagram{CCSD_2b/CCSD_2b-figure12} &= \diagram{CCSD_2b/CCSD_2b-figure13} + \diagram{CCSD_2b/CCSD_2b-figure14} \notag \\
+  \xxint{ab}{cd} &= \vint{ab}{cd} - \Perm{ab}\sum\limits_{k}\xxint{kb}{cd}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff10}
+  \diagram{CCSD_2b/CCSD_2b-figure15} &= \diagram{CCSD_2b/CCSD_2b-figure16} + \diagram{CCSD_2b/CCSD_2b-figure17} \notag \\
+  \xint{ab}{cd} &= \xxint{ab}{cd} + \frac{1}{2}\sum\limits_{kl}\vint{kl}{cd}\tamp{ab}{kl}
+\end{align}
+\begin{align} \label{eq:eff11}
+  \diagram{CCSD_2b/CCSD_2b-figure18} &= \diagram{CCSD_2b/CCSD_2b-figure19} + \diagram{CCSD_2b/CCSD_2b-figure20} + \diagram{CCSD_2b/CCSD_2b-figure21} \notag \\
+  \xint{ij}{kl} &= \vint{ij}{kl} + \frac{1}{2}\sum\limits_{cd}\vint{ij}{cd}\tamp{cd}{kl} + \Perm{kl}\sum\limits_{c}\xxint{ij}{kc}\tamp{c}{l}
+\end{align}
+\begin{align} \label{eq:eff12}
+  \diagram{CCSD_2b/CCSD_2b-figure22} &= \diagram{CCSD_2b/CCSD_2b-figure23} + \diagram{CCSD_2b/CCSD_2b-figure24} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure25} \notag \\
+  \xxint{ia}{jb} &= \vint{ia}{jb} + \sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff13}
+  \diagram{CCSD_2b/CCSD_2b-figure26} &= \diagram{CCSD_2b/CCSD_2b-figure27} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure28} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure29} \notag \\
+  \xxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xxint{ia}{cb}\tamp{c}{j} - \frac{1}{2}\sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff14}
+  \diagram{CCSD_2b/CCSD_2b-figure30} &= \diagram{CCSD_2b/CCSD_2b-figure31} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure32} + \diagram{CCSD_2b/CCSD_2b-figure33} \notag \\
+  \xxxxint{ia}{jb} &= \vint{ia}{jb} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j} - \sum\limits_{k}\vint{ik}{jb}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff15}
+  \diagram{CCSD_2b/CCSD_2b-figure34} &= \diagram{CCSD_2b/CCSD_2b-figure35} + \left(\frac{1}{2}\hspace{-0.5mm}\right)\fdiagram{CCSD_2b/CCSD_2b-figure36} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure37} \notag \\
+  \xint{ia}{jb} &= \xxxxint{ia}{jb} - \left(\frac{1}{2}\right)\sum\limits_{kc}\vint{ik}{cb}\tamp{ca}{jk} + \frac{1}{2}\sum\limits_{c}\xint{ia}{cb}\tamp{c}{j}
+\end{align}
+The factor of $\left(\frac{1}{2}\right)$ is applied when solving the CCSD equations but omitted when applying the effective Hamiltonian in post-CC methods.
+\begin{align} \label{eq:eff16}
+  \diagram{CCSD_2b/CCSD_2b-figure38} &= \diagram{CCSD_2b/CCSD_2b-figure39} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure40} + \diagram{CCSD_2b/CCSD_2b-figure41} \notag \\
+  \xxint{ab}{ic} &= \vint{ab}{ic} + \frac{1}{2}\sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxxint{kb}{ic}\tamp{a}{k}
+\end{align}
+\begin{align} \label{eq:eff17}
+  \diagram{CCSD_2b/CCSD_2b-figure42} &= \diagram{CCSD_2b/CCSD_2b-figure43} + \diagram{CCSD_2b/CCSD_2b-figure44} + \diagram{CCSD_2b/CCSD_2b-figure45} \notag \\[-1.5ex]
+  &+ \diagram{CCSD_2b/CCSD_2b-figure46} + \diagram{CCSD_2b/CCSD_2b-figure47} + \diagram{CCSD_2b/CCSD_2b-figure48} \notag \\
+  \xint{ab}{ic} &= \vint{ab}{ic} + \sum\limits_{d}\vint{ab}{dc}\tamp{d}{i} - \Perm{ab}\sum\limits_{k}\xxint{kb}{ic}\tamp{a}{k} \notag \\
+  &- \sum\limits_{k}\xint{k}{c}\tamp{ab}{ik} + \Perm{ab}\sum\limits_{kd}\xint{kb}{dc}\tamp{ad}{ik} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ic}\tamp{ab}{kl}
+\end{align}
+\begin{align} \label{eq:eff18}
+  \diagram{CCSD_2b/CCSD_2b-figure49} &= \diagram{CCSD_2b/CCSD_2b-figure50} + \frac{1}{2}\fdiagram{CCSD_2b/CCSD_2b-figure51} \notag \\
+  \xxint{ia}{jk} &= \vint{ia}{jk} - \frac{1}{2}\sum\limits_{l}\vint{il}{jk}\tamp{a}{l}
+\end{align}
+\begin{align} \label{eq:eff19}
+  \diagram{CCSD_2b/CCSD_2b-figure52} &= \diagram{CCSD_2b/CCSD_2b-figure53} + \diagram{CCSD_2b/CCSD_2b-figure54} + \diagram{CCSD_2b/CCSD_2b-figure55} \notag \\[-1.5ex]
+  &+ \diagram{CCSD_2b/CCSD_2b-figure56} + \diagram{CCSD_2b/CCSD_2b-figure57} + \diagram{CCSD_2b/CCSD_2b-figure58} \notag \\
+  \xint{ia}{jk} &= \vint{ia}{jk} - \sum\limits_{l}\vint{il}{jk}\tamp{a}{l} + \Perm{jk}\sum\limits_{c}\xxxxint{ia}{jc}\tamp{c}{k} \notag \\
+  &+ \Perm{jk}\sum\limits_{lc}\xint{il}{jc}\tamp{ca}{lk} + \frac{1}{2}\sum\limits_{cd}\xint{ia}{cd}\tamp{cd}{jk} + \sum\limits_{c}\xint{i}{c}\tamp{ca}{jk}
+\end{align}
+
+
+\begin{align} \label{eq:double_linear}
+  \diagram{CCSD_2b/CCSD_2b-figure59} = 0 &= \diagram{CCSD_2b/CCSD_2b-figure60} + \diagram{CCSD_2b/CCSD_2b-figure61} + \diagram{CCSD_2b/CCSD_2b-figure62} \notag \\[-1.5ex]
+  &\hspace{-100pt}+ \diagram{CCSD_2b/CCSD_2b-figure63} + \diagram{CCSD_2b/CCSD_2b-figure64} + \diagram{CCSD_2b/CCSD_2b-figure65} + \diagram{CCSD_2b/CCSD_2b-figure66} + \diagram{CCSD_2b/CCSD_2b-figure67} \notag \\
+  \xint{ab}{ij} = 0 &= \vint{ab}{ij} + \Perm{ab}\sum\limits_{\mathclap{c}}\xint{a}{c}\tamp{cb}{ij} - \Perm{ij}\sum\limits_{\mathclap{k}}\xint{k}{i}\tamp{ab}{kj} \notag \\
+  &\hspace{-100pt}+ \frac{1}{2}\sum\limits_{\mathclap{cd}}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\xint{kl}{ij}\tamp{ab}{kl} - \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\xint{kb}{ic}\tamp{ac}{kj} - \Perm{ab}\sum\limits_{\mathclap{k}}\xxint{kb}{ij}\tamp{a}{k} + \Perm{ij}\sum\limits_{\mathclap{c}}\xxint{ab}{ic}\tamp{c}{j}
+\end{align}
 
 
 \chapter{Computational Implementation} \label{chapter:appendix_computational}
 
-The sums involved in building the CC effective Hamiltonian, solving the CC equations, solving the EOM-CC equations, and building effective operators can all be reformulated as matrix-matrix multiplications and thus performed with efficient LAPACK and BLAS routines.  To take advantage of this efficiency, the various cluster amplitudes and matrix elements must be grouped into structures with similar index structure.  An additional benefit to these structures is that angular-momentum-coupling coefficients are automatically removed by summing over Clebsch-Gordon coefficients ($\sum_{m_{1}m_{2}}C^{j_{1}j_{2}J}_{m_{1}m_{2}M}C^{j_{1}j_{2}J'}_{m_{1}m_{2}M'}=\delta_{JJ'}\delta_{MM'}$).
+The sums involved in building the CC effective Hamiltonian, solving the CC equations, solving the EOM-CC equations, and building effective operators can all be reformulated as matrix-matrix multiplications and thus performed with efficient LAPACK and BLAS routines.  To take advantage of this efficiency, the various cluster amplitudes and matrix elements must be grouped into structures with similar index organization so that summed indices map to the same states and matrix elements.  An additional benefit to these structures is that angular-momentum-coupling coefficients are automatically removed by summing over Clebsch-Gordon coefficients ($\sum_{m_{1}m_{2}}C^{j_{1}j_{2}J}_{m_{1}m_{2}M}C^{j_{1}j_{2}J'}_{m_{1}m_{2}M'}=\delta_{JJ'}\delta_{MM'}$).
+
+\section{Channel Definitions}
+
+Each matrix structure is separated into different symmetry channels for different perutations of its indices.  The channels are denoted as $\Sigma_{\vec{\xi}}$, where $\vec{\xi}$ represents the relevant quantum numbers of a certain channel.  There are four different channel types that are relevant for the structures used in this work.
+
+The direct two-body channel categorizes the vector sum of two single-particle-state quantum numbers, $\Sigma_{\vec{\xi}_{1}}$,
+\begin{equation}
+  \vec{\xi}_{pq} = \vec{\xi}_{p} + \vec{\xi}_{q}\ \ \longrightarrow\ \ \ket{pq} \in \Sigma_{\vec{\xi}_{1}=\vec{\xi}_{pq}}.
+\end{equation}
+The cross two-body channel categorizes the vector difference of two single-particle-state quantum numbers or, equivalently, the vector sum of a the quantum numbers of a single-particle state and a time-reversed single-particle state, $\Sigma_{\vec{\xi}_{2}}$,
+\begin{equation}
+  \vec{\xi}_{p\bar{q}} = \vec{\xi}_{p} - \vec{\xi}_{q} = \vec{\xi}_{p} + \vec{\xi}_{\bar{q}}\ \ \longrightarrow\ \ \ket{p\bar{q}} \in \Sigma_{\vec{\xi}_{2}}.
+\end{equation}
+The one-body channel categorizes single-particle states by their vector quantum numbers, $\Sigma_{\vec{\xi}_{3}}$,
+\begin{equation}
+  \vec{\xi}_{p}\ \ \longrightarrow\ \ \ket{p} \in \Sigma_{\vec{\xi}_{3}}.
+\end{equation}
+The cross three-body state categorizes the vector difference between the quantum numbers of a direct two-body state and a single-particle state or, equivalently, the vector sum of the quantum numbers of a two-body direct state and a time-reversed single-particle state, $\Sigma_{\vec{\xi}_{3}}$,
+\begin{equation}
+  \vec{\xi}_{pq\bar{r}} = \vec{\xi}_{p} + \vec{\xi}_{q} - \vec{\xi}_{r} = \vec{\xi}_{p} + \vec{\xi}_{q} + \vec{\xi}_{\bar{r}}\ \ \longrightarrow\ \ \ket{pq\bar{r}} \in \Sigma_{\vec{\xi}_{3}=\vec{\xi}_{pq\bar{r}}}.
+\end{gather}
 
 \section{Structure Definitions}
-
-The matrix structures are based on channels that separate states with different symmetries depending on a system's conserved quantum numbers, given by $\vec{\xi}$, so that $\ket{p} \in \vec{\xi}_{3}$.  This separation can be applied to direct two-body states ($\ket{pq} \rightarrow \vec{\xi}_{p} + \vec{\xi}_{q} \in \vec{\xi}_{1}$) and cross two-body states ($\ket{p\bar{q}} \rightarrow \vec{\xi}_{p} - \vec{\xi}_{q} \in \vec{\xi}_{2}$).  Additionally, cross three-body states can be separated as one-body states ($\ket{pq\bar{s}} \rightarrow \vec{\xi}_{p} + \vec{\xi}_{q} - \vec{\xi}_{r} \in \vec{\xi}_{3}$).
+Different matrix structures are indexed by their channel type: $1$ for direct channels, $2$ for cross channels, and $3$ for one-/three-body channels.  Matrices with more than one structure of the same type, there is an additional index that depends on the specific permutation involved.
 
 For a one-body operator $A^{p}_{q}\normord{\co{p}\ao{q}}$, there is a direct-channel matrix element and a cross-channel matrix element,
 \begin{equation}
@@ -428,29 +411,13 @@ EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ has similar s
   \bxint{hphh}{3_{1}} &\longleftarrow \bxint{hp}{3}\cdot\btamp{}{3_{1}}  
 \end{align}
 \begin{align}
-  \xint{ab}{ij} &= \vint{ab}{ij} + \Perm{ab}\xint{a}{c}\tamp{c}{ij\bar{b}} - \Perm{ij}\tamp{ab\bar{j}}{k}\xint{k}{i} + \frac{1}{2}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\tamp{ab}{kl}\xint{kl}{ij} - \Perm{ab|ij}\tamp{a\bar{j}}{k\bar{c}}\xint{k\bar{c}}{i\bar{b}} - \Perm{ab}\tamp{a}{k}\xxint{k}{ij\bar{b}} + \Perm{ij}\xxint{ab\bar{i}}{c}\tamp{c}{j} \notag \\
+  \xint{ab}{ij} &= \vint{ab}{ij} + \Perm{ab}\xint{a}{c}\tamp{c}{ij\bar{b}} - \Perm{ij}\tamp{ab\bar{j}}{k}\xint{k}{i} + \frac{1}{2}\xxint{ab}{cd}\tamp{cd}{ij} + \frac{1}{2}\tamp{ab}{kl}\xint{kl}{ij} \notag \\
+  &- \Perm{ab|ij}\tamp{a\bar{j}}{k\bar{c}}\xint{k\bar{c}}{i\bar{b}} - \Perm{ab}\tamp{a}{k}\xxint{k}{ij\bar{b}} + \Perm{ij}\xxint{ab\bar{i}}{c}\tamp{c}{j} \notag \\
   \bxint{pphh}{1} &\longleftarrow \bvint{pphh}{1} + \frac{1}{2}\bxxint{pppp}{1}\cdot\btamp{}{1} + \frac{1}{2}\btamp{}{1}\cdot\bxint{hhhh}{1} \notag \\
   \bxint{pphh}{3_{1(2)}} &\longleftarrow \pm\bxint{pp}{3}\cdot\btamp{}{3_{1}} \mp\btamp{}{3}\bxxint{hphh}{3_{1}} \notag \\
   \bxint{pphh}{3_{3(4)}} &\longleftarrow \mp\btamp{}{3_{3}}\cdot\bxint{hh}{3} \pm\bxxint{pphp}{3_{4}}\btamp{}{3} \notag \\
   \bxint{pphh}{2_{1(2)}} &\longleftarrow -\btamp{}{2_{1}}\cdot\bxint{hphp}{2_{1}} \notag \\
   \bxint{pphh}{2_{3(4)}} &\longleftarrow \btamp{}{2_{1}}\cdot\bxint{hphp}{2_{1}}
-\end{align}
-
-
-\section{$\Lop$, Matrix Form}
-
-\begin{align}
-  0 &= \xint{i}{a} + \lamp{i}{c}\xint{c}{a} - \xint{i}{k}\lamp{k}{a} - \xint{i\bar{a}}{k\bar{c}}\lamp{k\bar{c}}{} - \frac{1}{2}\lamp{i}{cd\bar{k}}\xint{cd\bar{k}}{a} - \frac{1}{2}\xint{i}{kl\bar{c}}\lamp{kl\bar{c}}{a} + \frac{1}{2}\xint{i\bar{a}}{j\bar{k}}\left(\lamp{j}{cd\bar{l}}\tamp{cd\bar{l}}{k}\right)^{j\bar{k}} - \frac{1}{2}\xint{i\bar{a}}{d\bar{c}}\left(\tamp{d}{kl\bar{b}}\lamp{kl\bar{b}}{c}\right)^{d\bar{c}} \notag \\
-  \lamp{}{3} &\leftarrow \xint{hp}{3} + \lamp{}{3}\xint{pp}{3} - \xint{hh}{3}\lamp{}{3} - \frac{1}{2}\lamp{}{3_{1}}\xint{pphp}{3_{4}} - \frac{1}{2}\xint{hphh}{3_{1}}\lamp{}{3_{3}} \notag \\
-  \lamp{}{2} &\leftarrow -\xint{hphp}{2_{1}}\lamp{}{2} + \frac{1}{2}\xint{hhhp}{2_{1}}\left(\lamp{}{3_{1}}\tamp{}{3_{3}}\right)_{2} - \frac{1}{2}\xint{hppp}{2_{3}}\left(\tamp{}{3_{2}}\lamp{}{3_{3}}\right)_{2}
-\end{align}
-\begin{align}
-  0 &= \vint{ij}{ab} + \Perm{ab|ij}\left(\lamp{i}{a}\xint{j}{b}\right)^{ij}_{ab} - \Perm{ab}\xint{ij\bar{b}}{k}\lamp{k}{a} - \Perm{ij}\lamp{i}{c}\xint{c}{ab\bar{j}} - \Perm{ab}\lamp{ij\bar{a}}{c}\xint{c}{b} + \Perm{ij}\xint{j}{k}\lamp{k}{ab\bar{i}} + \frac{1}{2}\lamp{ij}{cd}\xint{cd}{ab} + \frac{1}{2}\xint{ij}{kl}\lamp{kl}{ab} - \Perm{ab|ij}\xint{i\bar{b}}{k\bar{c}}\lamp{k\bar{c}}{a\bar{j}} - \Perm{ab}\frac{1}{2}\vint{ij\bar{b}}{c}\left(\tamp{c}{kl\bar{d}}\lamp{kl\bar{d}}{a}\right) - \Perm{ij}\frac{1}{2}\left(\lamp{i}{cd\bar{l}}\tamp{cd\bar{l}}{k}\right)\vint{k}{ab\bar{j}} \notag \\
-  \lamp{}{1} &\leftarrow \vint{}{\text{hhpp}1} + \Perm{\lamp{}{3}\xint{}{\text{hp}3}}{}_{1} + \frac{1}{2}\lamp{}{1}\xint{}{\text{pppp}1} + \frac{1}{2}\xint{}{\text{hhhh}1}\lamp{}{1} \notag \\
-  \lamp{}{3_{3\left(4\right)}} &\leftarrow \mp\xint{}{\text{hhhp}3_{3}}\lamp{}{3} \pm\lamp{}{3_{3}}\xint{}{\text{pp}3} \mp\frac{1}{2}\vint{}{\text{hhpp}3_{3}}\left(\tamp{}{3_{1}}\lamp{}{3_{3}}\right) \notag \\
-  \lamp{}{3_{1\left(2\right)}} &\leftarrow \mp\lamp{}{3}\xint{}{\text{hppp}3_{2}} \mp\xint{}{\text{hh}3}\lamp{}{3_{1}} \mp\frac{1}{2}\left(\lamp{}{3_{1}}\tamp{}{3_{3}}\right)\vint{}{\text{hhpp}3_{1}} \notag \\
-  \lamp{}{2_{1\left(2\right)}} &\leftarrow -\xint{}{\text{hphp}2_{1}}\lamp{}{2_{1}} \notag \\
-  \lamp{}{2_{3\left(4\right)}} &\leftarrow \xint{}{\text{hphp}2_{1}}\lamp{}{2_{1}} \notag
 \end{align}
 
 
@@ -476,7 +443,8 @@ The difference for the left eigenproblem is that disconnected term is computed a
   E_{k}\blop{}{} &\longleftarrow \blop{}{}\cdot\bxint{pp}{3} - \frac{1}{2}\blop{}{3}\cdot\bxint{pphp}{3_{4}}
 \end{align} 
 \begin{align}
-  E_{k}\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i\bar{b}}{} - \lop{}{c}\xint{c}{ab\bar{i}} - \xint{i}{k}\lop{k}{ab} + \Perm{ab}\lop{i\bar{a}}{c}\xint{c}{b} + \frac{1}{2}\lop{i}{cd}\xint{cd}{ab} - \Perm{ab}\xint{i\bar{a}}{k\bar{c}}\lop{k\bar{c}}{b} - \frac{1}{2}\lop{}{cd\bar{l}}\tamp{cd\bar{l}}{k}\vint{k}{ab\bar{i}} \notag \\
+  E_{k}\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i\bar{b}}{} - \lop{}{c}\xint{c}{ab\bar{i}} - \xint{i}{k}\lop{k}{ab} + \Perm{ab}\lop{i\bar{a}}{c}\xint{c}{b} + \frac{1}{2}\lop{i}{cd}\xint{cd}{ab} \notag \\
+  &- \Perm{ab}\xint{i\bar{a}}{k\bar{c}}\lop{k\bar{c}}{b} - \frac{1}{2}\lop{}{cd\bar{l}}\tamp{cd\bar{l}}{k}\vint{k}{ab\bar{i}} \notag \\
   E_{k}\lop{}{3} &\longleftarrow -\blop{}{}\cdot\bxint{hppp}{3_{2}} - \frac{1}{2}\blop{}{3}\cdot\btamp{}{3_{3}}\cdot\bvint{hhpp}{3_{1}} \notag \\
   E_{k}\blop{}{2_{1(2)}} &\longleftarrow \pm\blop{}{}\otimes\bxint{hp}{2} \mp\blop{}{2_{2}}\cdot\bxint{pp}{3} \pm\bxint{hphp}{2_{1}}\cdot\blop{}{2_{2}} \notag \\
   E_{k}\blop{}{1} &\longleftarrow -\bxint{hh}{3}\cdot\blop{}{1} + \frac{1}{2}\blop{}{1}\cdot\bxint{pppp}{1}
@@ -505,44 +473,11 @@ Again, the disconnected term is computed as an outer product rather than with ma
   E_{k}\blop{}{} &\longleftarrow -\bxint{HH}{3}\cdot\blop{}{} - \frac{1}{2}\bxint{hphh}{3_{1}}\cdot\blop{}{3}
 \end{align}
 \begin{align}
-  E_{k}\lop{ij}{a} &= \Perm{ij}\lop{i}{}\xint{}{a\bar{j}} - \xint{ij\bar{a}}{k}\lop{k}{} + \lop{ij}{c}\xint{c}{a} - \Perm{ij}\xint{j}{k}\lop{k}{a\bar{i}} + \frac{1}{2}\xint{ij}{kl}\lop{kl}{a} - \Perm{ij}\lop{j}{c\bar{k}}\xint{c\bar{k}}{a\bar{i}} - \frac{1}{2}\vint{ij\bar{a}}{c}\amp{c}{kl\bar{d}}\lop{kl\bar{d}}{} \notag \\
+  E_{k}\lop{ij}{a} &= \Perm{ij}\lop{i}{}\xint{}{a\bar{j}} - \xint{ij\bar{a}}{k}\lop{k}{} + \lop{ij}{c}\xint{c}{a} - \Perm{ij}\xint{j}{k}\lop{k}{a\bar{i}} + \frac{1}{2}\xint{ij}{kl}\lop{kl}{a} \notag \\
+  &- \Perm{ij}\lop{j}{c\bar{k}}\xint{c\bar{k}}{a\bar{i}} - \frac{1}{2}\vint{ij\bar{a}}{c}\amp{c}{kl\bar{d}}\lop{kl\bar{d}}{} \notag \\
   E_{k}\lop{}{3} &\longleftarrow -\bxint{hhhp}{3_{3}}\cdot\blop{}{} - \frac{1}{2}\bvint{hhpp}{3_{3}}\cdot\btamp{}{3_{1}}\cdot\blop{}{3} \notag \\
   E_{k}\blop{}{2_{1(2)}} &\longleftarrow \pm\blop{}{}\otimes\bxint{hp}{2'} \pm\bxint{hh}{3}\cdot\blop{}{2_{2}} \pm\blop{}{2_{2}}\cdot\bxint{hphp}{2_{2}} \notag \\
   E_{k}\blop{}{1} &\longleftarrow \blop{}{1}\cdot\bxint{pp}{3} + \frac{1}{2}\bxint{hhhh}{1}\cdot\blop{}{1}
-\end{align}
-
-
-\section{${}^{\lambda}\EOp$, Matrix Form}
-
-\begin{align}
-  \oopint{\lambda}{i}{a} &= \opint{\lambda}{i}{a} \notag \\
-  \boopint{\lambda}{hp}{3} &\longleftarrow \bopint{\lambda}{hp}{3}
-\end{align}
-\begin{align}
-  \oopint{\lambda}{a}{b} &= \opint{\lambda}{a}{b} - \tamp{a}{k}\oopint{\lambda}{k}{b} \notag \\
-  \boopint{\lambda}{pp}{3} &\longleftarrow \bopint{\lambda}{pp}{3} - \btamp{}{3}\cdot\boopint{\lambda}{hp}{3}
-\end{align}
-\begin{align}
-  \oopint{\lambda}{i}{j} &= \opint{\lambda}{i}{j} + \oopint{\lambda}{i}{c}\tamp{c}{j} \notag \\
-  \boopint{\lambda}{hh}{3} &\longleftarrow \bopint{\lambda}{hh}{3} + \boopint{\lambda}{hp}{3}\cdot\btamp{}{3}
-\end{align}
-\begin{align}
-  \oopint{\lambda}{a}{i} &= \opint{\lambda}{a}{i} + \oopint{\lambda}{a}{c}\tamp{c}{i} - \tamp{a}{k}\oopint{\lambda}{k}{i} + \tamp{a\bar{i}}{k\bar{c}}\oopint{\lambda}{k\bar{c}}{} \notag \\
-  \boopint{\lambda}{ph}{3} &\longleftarrow \bopint{\lambda}{ph}{3} + \boopint{\lambda}{pp}{3}\cdot\btamp{}{3} - \btamp{}{3}\cdot\boopint{\lambda}{3}{hh} \notag \\
-  \boopint{\lambda}{ph}{2} &\longleftarrow \btamp{}{2_{3}}\cdot\boopint{\lambda}{hp}{2}
-\end{align}
-\begin{align}
-  \oopint{\lambda}{ab}{ic} &= -\tamp{ab\bar{i}}{k}\oopint{\lambda}{k}{c} \notag \\
-  \boopint{\lambda}{pphp}{3_{4}} &\longleftarrow -\btamp{}{3_{4}}\cdot\boopint{\lambda}{hp}{3}
-\end{align}
-\begin{align}
-  \oopint{\lambda}{ia}{jk} &= \oopint{\lambda}{i}{c}\tamp{c}{jk\bar{a}} \notag \\
-  \boopint{\lambda}{hphh}{3_{1}} &\longleftarrow \boopint{\lambda}{hp}{3}\cdot\btamp{}{3_{1}}
-\end{align}
-\begin{align}
-  \oopint{\lambda}{ab}{ij} &= \Perm{ab}\oopint{\lambda}{a}{c}\tamp{c}{ij\bar{b}} - \Perm{ij}\tamp{ab\bar{j}}{k}\oopint{\lambda}{k}{i} \notag \\
-  \boopint{\lambda}{pphh}{3_{1(2)}} &\longleftarrow \pm\boopint{\lambda}{pp}{3}\cdot\btamp{}{3_{1}} \notag \\
-  \boopint{\lambda}{pphh}{3_{3(4)}} &\longleftarrow \mp\btamp{}{3_{3}}\cdot\boopint{\lambda}{hh}{3}
 \end{align}
 
 
