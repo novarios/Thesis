@@ -38,14 +38,14 @@ while(num < num_states and num < len(data1)-1):
     jp = str(line[6])
     jp = jp.replace('(','').replace(')','').replace(' ','')
 
-    if( len(jp) != 0 ):
-        if(jp not in jp1):
-            jp1.append(jp)
+    if( len(jp) > 6 or len(jp) == 0):
+        if('J^{\pi}' not in jp1):
+            jp1.append('J^{\pi}')
         else:
             jp1.append('')
     else:
-        if('J^{\pi}' not in jp1):
-            jp1.append('J^{\pi}')
+        if(jp not in jp1):
+            jp1.append(jp)
         else:
             jp1.append('')
 

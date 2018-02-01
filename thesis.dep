@@ -63,7 +63,6 @@ thesis.pdf thesis.dep :\
     /usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo\
     /usr/share/texlive/texmf-dist/tex/latex/base/book.cls\
     /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty\
-    /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd\
     /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty\
     /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty\
     /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty\
@@ -109,9 +108,17 @@ thesis.pdf thesis.dep :\
     BetaDecay.tex\
     CC.tex\
     EOM.tex\
+    EOM/F17_PA_1.pdf\
+    EOM/F23_PA_1.pdf\
+    EOM/N15_PA_1.pdf\
+    EOM/N21_PA_1.pdf\
+    EOM/O15_PA_1.pdf\
+    EOM/O17_PA_1.pdf\
+    EOM/O21_PA_1.pdf\
     EffectiveOperator.tex\
     ManyBody.tex\
     SymbolsAbbreviations.tex\
+    acknowledgments.tex\
     figures/CC/CCDMBPT4theory.pdf\
     figures/CC/CoM1.pdf\
     figures/CC/Electronic_Gas.pdf\
@@ -123,13 +130,11 @@ thesis.pdf thesis.dep :\
     figures/CC/ground_state2.pdf\
     figures/CC/ground_state_srg.pdf\
     figures/CC/pairingmatrix.pdf\
-    figures/EOM/F17_PA_1.pdf\
-    figures/EOM/F23_PA_1.pdf\
-    figures/EOM/N15_PA_1.pdf\
-    figures/EOM/N21_PA_1.pdf\
-    figures/EOM/O15_PA_1.pdf\
-    figures/EOM/O17_PA_1.pdf\
-    figures/EOM/O21_PA_1.pdf\
+    figures/EOM/EOM-CoM.pdf\
+    figures/EOM/N15_O15_EOM_2.pdf\
+    figures/EOM/N21_O21_EOM_2.pdf\
+    figures/EOM/O17_F17_EOM_2.pdf\
+    figures/EOM/O23_F23_EOM_2.pdf\
     figures/EOM/fig-add2.pdf\
     figures/EOM/fig-gs2.pdf\
     figures/EOM/fig-rm2.pdf\
@@ -156,6 +161,8 @@ thesis.pdf thesis.dep :\
     figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf\
+    figures/diagrams/CCSD_1b/CCSD_1b-figure24.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf\
@@ -385,6 +392,8 @@ thesis.pdf thesis.dep :\
     figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf\
     figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf\
     figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure22.pdf\
+    figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf\
     figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf\
     figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf\
     figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf\
@@ -557,8 +566,6 @@ thesis.pdf thesis.dep :\
 
 /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty :
 
-/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd :
-
 /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty :
 
 /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty :
@@ -649,11 +656,27 @@ CC.tex :
 
 EOM.tex :
 
+EOM/F17_PA_1.pdf :
+
+EOM/F23_PA_1.pdf :
+
+EOM/N15_PA_1.pdf :
+
+EOM/N21_PA_1.pdf :
+
+EOM/O15_PA_1.pdf :
+
+EOM/O17_PA_1.pdf :
+
+EOM/O21_PA_1.pdf :
+
 EffectiveOperator.tex :
 
 ManyBody.tex :
 
 SymbolsAbbreviations.tex :
+
+acknowledgments.tex :
 
 figures/CC/CCDMBPT4theory.pdf :
 
@@ -677,19 +700,15 @@ figures/CC/ground_state_srg.pdf :
 
 figures/CC/pairingmatrix.pdf :
 
-figures/EOM/F17_PA_1.pdf :
+figures/EOM/EOM-CoM.pdf :
 
-figures/EOM/F23_PA_1.pdf :
+figures/EOM/N15_O15_EOM_2.pdf :
 
-figures/EOM/N15_PA_1.pdf :
+figures/EOM/N21_O21_EOM_2.pdf :
 
-figures/EOM/N21_PA_1.pdf :
+figures/EOM/O17_F17_EOM_2.pdf :
 
-figures/EOM/O15_PA_1.pdf :
-
-figures/EOM/O17_PA_1.pdf :
-
-figures/EOM/O21_PA_1.pdf :
+figures/EOM/O23_F23_EOM_2.pdf :
 
 figures/EOM/fig-add2.pdf :
 
@@ -742,6 +761,10 @@ figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf :
 figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf :
 
 figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf :
+
+figures/diagrams/CCSD_1b/CCSD_1b-figure24.pdf :
 
 figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf :
 
@@ -1200,6 +1223,10 @@ figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf :
 figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf :
 
 figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure22.pdf :
+
+figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf :
 
 figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf :
 

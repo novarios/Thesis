@@ -32,7 +32,7 @@ data1 = data1.split('\n')
 num_states = 10
 
 num = 1
-while(num < num_states):
+while(num < num_states and num < len(data1)-1):
     line = data1[num].split("\t")
     e1.append([float(line[4])/1000.0,float(line[4])/1000.0])
     jp = str(line[6])

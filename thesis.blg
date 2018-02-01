@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: thesis.bib
-I was expecting an "="---line 1109 of file thesis.bib
+I was expecting an "="---line 1137 of file thesis.bib
  :   article 
  :           NUMBER = {26},
 I'm skipping whatever remains of this entry
@@ -14,55 +14,50 @@ Warning--I didn't find a database entry for "BIRMAN20131"
 Warning--I didn't find a database entry for "tarucha1996"
 Warning--I didn't find a database entry for "lohne2010coupled"
 Warning--I didn't find a database entry for "NIST:DLMF"
-Warning--I didn't find a database entry for "IMSRG"
-Warning--I didn't find a database entry for "0022-3700-7-18-010"
-Warning--I didn't find a database entry for "Kvasnicka1974"
-Warning--I didn't find a database entry for "hoegberget2013thesis"
-Warning--I didn't find a database entry for "olsen2013thesis"
 Warning--to sort, need author or key in GOLDSTONE1957267
 Warning--to sort, need author or key in blas
 Warning--empty author in GOLDSTONE1957267
 Warning--empty author in blas
 Warning--empty booktitle in SHERRILL1999143
-You've used 138 entries,
+You've used 141 entries,
             2118 wiz_defined-function locations,
-            1397 strings with 31394 characters,
-and the built_in function-call counts, 56154 in all, are:
-= -- 5187
-> -- 3715
+            1405 strings with 31831 characters,
+and the built_in function-call counts, 57003 in all, are:
+= -- 5263
+> -- 3776
 < -- 3
-+ -- 1494
-- -- 1338
-* -- 4946
-:= -- 9774
-add.period$ -- 418
-call.type$ -- 138
-change.case$ -- 1076
++ -- 1520
+- -- 1360
+* -- 5003
+:= -- 9935
+add.period$ -- 426
+call.type$ -- 141
+change.case$ -- 1096
 chr.to.int$ -- 0
-cite$ -- 143
-duplicate$ -- 1533
-empty$ -- 3605
-format.name$ -- 1338
-if$ -- 11004
+cite$ -- 146
+duplicate$ -- 1556
+empty$ -- 3657
+format.name$ -- 1360
+if$ -- 11166
 int.to.chr$ -- 0
-int.to.str$ -- 138
+int.to.str$ -- 141
 missing$ -- 144
-newline$ -- 691
-num.names$ -- 272
-pop$ -- 851
+newline$ -- 705
+num.names$ -- 278
+pop$ -- 874
 preamble$ -- 1
-purify$ -- 945
+purify$ -- 962
 quote$ -- 0
-skip$ -- 1009
+skip$ -- 1028
 stack$ -- 0
-substring$ -- 3596
-swap$ -- 151
+substring$ -- 3615
+swap$ -- 152
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 538
+type$ -- 550
 warning$ -- 5
-while$ -- 444
-width$ -- 141
-write$ -- 1513
+while$ -- 450
+width$ -- 144
+write$ -- 1543
 (There was 1 error message)

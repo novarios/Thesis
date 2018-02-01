@@ -120,7 +120,7 @@ These results can be exploited to simplify expressions involving strings of crea
 where $\sigma$ is the number of two-state permutations required to do the normal ordering.
 
 
-\section{Wick's Theorem}
+\section{Wick's Theorem} \label{section:wicks_theorem}
 At this point, the many-body problem has been reduced to computing long strings of creation and annihilation operators between the normal-ordered Hamiltonian and the correlated wave function using Eq.\ \eqref{eq:anticommutation}.  Instead of using a brute-force approach by permuting over and over, a further simplification known as \textit{Wick's theorem} \cite{WICK1950} can be introduced.  A Wick contraction of two operators with respect to the reference state is defined as
 \begin{equation} \label{eq:wick1}
   \contraction[1.0ex]{}{\hat{A}}{}{\hat{B}}
@@ -165,16 +165,23 @@ A powerful application of Wick's theorem is to rewrite the Hamiltonian in Eq.\ \
 \begin{equation} \label{eq:HamN}
   \Ham = E_{0} + \sum_{\mathclap{pq}}\fint{p}{q}\normord{\co{p}\ao{q}} + \frac{1}{4}\sum_{\mathclap{pqrs}}\vint{pq}{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}} + \frac{1}{36}\sum_{\mathclap{pqrstu}}\wint{pqr}{stu}\normord{\co{p}\co{q}\co{r}\ao{u}\ao{t}\ao{s}} + \cdots.
 \end{equation}
+This form of the Hamiltonian can be split into a zero-body component $E_{0}$, known as the \textit{reference energy}, and the remaining \textit{normal-ordered Hamiltonian}, $\HamN$,
+\begin{equation} \label{eq:HamN1}
+  \HamN = \sum_{\mathclap{pq}}\fint{p}{q}\normord{\co{p}\ao{q}} + \frac{1}{4}\sum_{\mathclap{pqrs}}\vint{pq}{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}} + \frac{1}{36}\sum_{\mathclap{pqrstu}}\wint{pqr}{stu}\normord{\co{p}\co{q}\co{r}\ao{u}\ao{t}\ao{s}} + \cdots.
+\end{equation}
 
-The first component, $E_{0}$, contains fully-contracted terms, and because the Hamiltonian operators are ordered so that the creation operators appear before the annihilations operators, only terms that contract \textit{hole} states in the form $\contraction[0.6ex]{\{ \cdots}{\co{i}}{\cdots}{\ao{j}}\{ \cdots\co{i}\cdots\ao{j}\cdots \}$ are nonzero.  Therefore, the zero-body component of the normal ordered Hamiltonian can be written as a sums over all hole states for each component of the original Hamiltonian,
+The reference energy, $E_{0}$, contains fully-contracted terms, and because the Hamiltonian operators are ordered so that the creation operators appear before the annihilations operators, only terms that contract \textit{hole} states in the form $\contraction[0.8ex]{\{ \cdots}{\hat{a}}{^{\dagger}_{i}\cdots}{\hat{a}}\{ \cdots\co{i}\cdots\ao{j}\cdots \}$ are nonzero.  Therefore, the zero-body component of the normal ordered Hamiltonian can be written as a sums over all hole states for each component of the original Hamiltonian,
 \begin{equation} \label{eq:HamN_0}
   E_{0} = \sum_{\mathclap{i}}\Hint{1}{i}{i} + \frac{1}{2}\sum_{\mathclap{ij}}\Hint{2}{ij}{ij} + \frac{1}{6}\sum_{\mathclap{ijk}}\Hint{3}{ijk}{ijk} \cdots.
 \end{equation}
 In a compact diagrammatic form, this sum can be drawn as the sum of connected vertices (\raisebox{-5pt}{\mbox{\includegraphics[height=15pt]{diagrams/Hamiltonian/Hamiltonian-figure12.pdf}}}, \raisebox{-5pt}{\mbox{\includegraphics[height=15pt]{diagrams/Hamiltonian/Hamiltonian-figure13.pdf}}}, etc...) corresponding to the components of the original Hamiltonian in Eq.\ \eqref{eq:hamiltonian},
 \begin{equation}
-  E_{0} &= \diagram{Hamiltonian/Hamiltonian-figure0} + \diagram{Hamiltonian/Hamiltonian-figure1} + \diagram{Hamiltonian/Hamiltonian-figure2} + \cdots.
+  E_{0} = \diagram{Hamiltonian/Hamiltonian-figure0} + \diagram{Hamiltonian/Hamiltonian-figure1} + \diagram{Hamiltonian/Hamiltonian-figure2} + \cdots.
 \end{equation}
-The number of lines connected to each vertex defines its type such that the single vertex corresponds to the one-body Hamiltonian, the double vertex corresponds to the two-body Hamiltonian, etc...  The looped lines represent a sum over all hole states,
+The number of lines connected to each vertex defines its type such that the single vertex corresponds to the one-body Hamiltonian, the double vertex corresponds to the two-body Hamiltonian, etc...  The looped lines represent a sum over all hole states.  The reference energy is also equivalent to the Hamiltonian expectation value for the reference state,
+\begin{equation} \label{eq:E_ref}
+  E_{0} = \element{\Ref}{\Ham}{\Ref}.
+\end{equation}
 
 The second component of the normal-ordered Hamiltonian, $\fint{p}{q}\normord{\co{p}\ao{q}}$, contains terms that have all operators contracted except for one pair.  Like the fully-contracted term, these contractions must involve only hole states,
 \begin{equation} \label{eq:HamN_1}
@@ -182,7 +189,7 @@ The second component of the normal-ordered Hamiltonian, $\fint{p}{q}\normord{\co
 \end{equation}
 In diagrammatic notation, the uncontracted pair of operators is represented as two external lines connected to each vertex which, because they are generic states, are drawn as unoriented lines,
 \begin{equation}
-  \diagram{Hamiltonian/Hamiltonian-figure3} &= \diagram{Hamiltonian/Hamiltonian-figure4} + \diagram{Hamiltonian/Hamiltonian-figure5} + \diagram{Hamiltonian/Hamiltonian-figure6} + \cdots.
+  \diagram{Hamiltonian/Hamiltonian-figure3} = \diagram{Hamiltonian/Hamiltonian-figure4} + \diagram{Hamiltonian/Hamiltonian-figure5} + \diagram{Hamiltonian/Hamiltonian-figure6} + \cdots.
 \end{equation}
 When a line represents a particle state, it will contain an arrow directed upwards while a line representing a hole state will contain an arrow directed downwards.
 
@@ -192,13 +199,9 @@ The two-body term, $\vint{pq}{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}}$, follows in
   \diagram{Hamiltonian/Hamiltonian-figure7} &= \diagram{Hamiltonian/Hamiltonian-figure8} + \diagram{Hamiltonian/Hamiltonian-figure9} + \cdots.
 \end{align}
 
-Three- and four-body normal-ordered terms can also be calculated by following the same procedure, but in practice are truncated at the two- or three-body level.  Because normal ordering the Hamiltonian has the effect of shuffling higher-order interactions into lower-order terms, and makes it feasible to include computationally expensive many-body interactions as normal-ordered few-body interactions.  Also, it reorganizes many-body correlations into the reference state so that additional correlations around the Fermi surface can be treated as a perturbation.  Therefore, from this point forward, the many-body problem will be formulated in terms of the normal-ordered Hamiltonian, and the bare interactions will be truncated beyond the three-body level for computational feasibility.  Electronic systems are naturally truncated at the the level of the two-body Coulomb interaction, while nuclear systems can be successfully described with the two-body normal-ordered piece of the three-body force, in the form of Eq.\ \eqref{eq:HamN_2}.
+Three- and four-body normal-ordered terms can also be calculated by following the same procedure, but in practice are truncated at the two- or three-body level.  Because normal ordering the Hamiltonian has the effect of shuffling higher-order interactions into lower-order terms, and makes it feasible to include computationally expensive many-body interactions as normal-ordered few-body interactions.  Also, it reorganizes many-body correlations into the reference state so that additional correlations around the Fermi surface can be treated as a perturbation.  Therefore, from this point forward, the many-body problem will be formulated in terms of the normal-ordered terms in Eq.\ \eqref{eq:HamN}, and the bare interactions will be truncated beyond the three-body level for computational feasibility.  Electronic systems are naturally truncated at the the level of the two-body Coulomb interaction, while nuclear systems can be successfully described with the two-body normal-ordered piece of the three-body force, in the form of Eq.\ \eqref{eq:HamN_2}.
 
-The normal-ordered Hamiltonian (Eq.\ \eqref{eq:HamN}) is written is as a sum of the \textit{reference energy}, $E_{0}$, which is the fully-contracted expectation value of the Hamiltonian with respect to the reference state,
-\begin{equation} \label{eq:E_ref}
-  E_{0} = \element{\Phi}{\Ham}{\Phi},
-\end{equation}
-and the remaining normal-ordered pieces of the Hamiltonian, $\HamN$.  Rewriting the many-body Schr\"{o}dinger equation for the ground state, $\ket{\Psi}$, and using this partition gives,
+With this new partition, the many-body Schr\"{o}dinger equation for the ground state $\ket{\Corr}$ can be written in terms of the normal-ordered Hamiltonian as,
 \begin{gather} \label{eq:normal_schrodinger}
   \Ham\ket{\Psi} = (E_{0} + \HamN)\ket{\Psi} = E\ket{\Psi} \notag \\
   \longrightarrow\ \ \HamN\ket{\Psi} = (E - E_{0})\ket{\Psi} = \Ecorr\ket{\Psi},
@@ -270,7 +273,7 @@ and the matrix of coefficients, $\hat{C} = C^{p}_{p'}$, is the unitary operator 
 \end{equation}
 The iterative nature of the solution comes from the dependence of the Fock matrix on the transformation coefficients. These Hartree-Fock equations are solved numerically by using an iterative algorithm where the Fock matrix is built using a known set of coefficients and diagonalized to obtain an updated set of coefficients.  This process is repeated until the unitary set of coefficients is unchanged within a certain tolerance.  For most calculations, using the identity matrix as an initial guess for the coefficients is sufficient.  To improve the rate of convergence, techniques such as the direct inversion of the iterative subspace (DIIS) \cite{PULAY1980393,PULAY1982556} or Broyden's method \cite{BROYDEN1965557} can be implemented.  And, to avoid any oscillatory behavior around the solution, techniques such as the level-shifting method or \textit{ad hoc} linear mixing can be implemented to dampen the large changes between iterations.
 
-To make use of the HF solution as the reference state for post-HF calculations, the Hamiltonian matrix elements must be transformed to the new basis and the normal-ordered version redefined to account for the additional reordering of one-particle correlations into the HF energy.  The one-body piece from Eq.\ \eqref{eq:HamN_1} is simply the resulting eigenvalues of the diagonalized Fock matrix,
+To make use of the HF solution as the reference state for post-HF calculations, the Hamiltonian matrix elements must be transformed to the new basis and the normal-ordered pieces redefined to account for the additional reordering of one-particle correlations into the HF energy.  The one-body piece from Eq.\ \eqref{eq:HamN_1} is simply the resulting eigenvalues of the diagonalized Fock matrix,
 \begin{equation} \label{eq:HF_Ham_1}
   \fint{p'}{q'} = \varepsilon^{p'}_{q'}\delta_{p'q'}.
 \end{equation}
@@ -281,7 +284,7 @@ For the two-body term, Eq.\ \eqref{eq:HamN_2}, first the density-dependent compo
 The reference energy from Eqns.\ \eqref{eq:HamN_0} and \eqref{eq:E_ref} can be written in terms of the transformed one- and two-body Hamiltonian, Eqns.\ \eqref{eq:HamN_1} and \eqref{eq:HamN_2}, and the original three-body term using first-order density matrices,
 \begin{equation} \label{eq:EF_Ham_0}
   E_{0} = \sum_{\mathclap{i'}}\varepsilon^{i'}_{i'} - \frac{1}{2}\sum_{\mathclap{i'j'}}\vint{i'j'}{i'j'} + \frac{1}{6}\ \sum_{\mathclap{pqrstu}}\Hint{3}{pqr}{stu}\gamma^{s}_{p}\gamma^{t}_{q}\gamma^{r}_{u}
-\end{gather}
+\end{equation}
 Additionally, any operators that are constructed in the original basis must be transformed in a similar manner.  For example, a one-body operator $\hat{O}$ in the Hartree-Fock basis is,
 \begin{gather}
   \hat{O} = \sum_{\mathclap{p'q'}}\opint{}{p'}{q'}\normord{\co{p'}\ao{q'}} = \sum_{\mathclap{p'q'pq}}C^{p'*}_{p}\opint{}{p}{q}C^{q}_{q'}\normord{\co{p'}\ao{q'}} \notag \\
@@ -291,12 +294,12 @@ Additionally, any operators that are constructed in the original basis must be t
 Because the Hartree-Fock basis is diagonal in the one-body piece of the Hamiltonian, any terms that include off-diagonal elements automatically vanish, greatly simplifying any post-Hartree-Fock methods.  From this point on, all calculations will use the Hartree-Fock basis unless stated otherwise, and prime symbols will be omitted.
 
 
-\section{Configuration-Interaction}
-The most generic way to write a correlated wave function in a given basis is as a linear combination of all possible Slater determinants.  In normal-ordered form, this expansion can, in principle, consist of the $\ph{0}{0}$ reference state and all possible $\ph{N}{N}$ excitations up to $\ph{A}{A}$ excitations,
+\section{Configuration-Interaction} \label{section:configuration_interaction}
+The most generic way to write a correlated wave function in a given basis is as a linear combination of all possible Slater determinants.  This expansion can, in principle, consist of the $\ph{0}{0}$ reference state and all possible $\ph{N}{N}$ excitations up to $\ph{A}{A}$ excitations,
 \begin{equation} \label{eq:ci_expansion}
   \ket{\Psi_{\nu}} = \sum_{\nu_{i}}^{\mathcal{N}}C_{\nu_{i}}\ket{\Phi_{\nu_{i}}} = C_{0}\ket{\Phi_{0}} + \sum_{N=1}^{A}\left(\frac{1}{N!}\right)^2 \sum_{\substack{a_{1} \ldots a_{N} \\ i_{1} \ldots i_{N}}} C^{a_{1} \ldots a_{N}}_{i_{1} \ldots i_{N}}\ket{\Phi^{a_{1} \ldots a_{N}}_{i_{1} \ldots i_{N}}}.
 \end{equation}
-Using this form of the wave function in Eq.\ \eqref{eq:ci_expansion}, the Schr\"{o}dinger equation can be reformulated as a standard matrix eigenvalue problem,
+Using this form of the wave function in Eq.\ \eqref{eq:ci_expansion}, the normal-ordered Schr\"{o}dinger equation can be reformulated as a standard matrix eigenvalue problem,
 \begin{gather}
   \HamN\ket{\Psi_{\nu}} = \Ecorr_{\nu}\ket{\Psi_{\nu}}\ \ \longrightarrow\ \ \element{\Psi_{\mu}}{\HamN}{\Psi_{\nu}} = \Ecorr_{\nu}\braket{\Psi_{\mu}}{\Psi_{\nu}} \notag \\
   = \sum_{\mathclap{\mu_{i}\nu_{i}}}C^{*}_{\mu_{i}}\element{\Phi_{\mu_{i}}}{\HamN}{\Phi_{\nu_{i}}}C_{\nu_{i}} = \Ecorr_{\nu}\sum_{\mathclap{\mu_{i}\nu_{i}}}C^{*}_{\mu_{i}}C_{\nu_{i}}\delta_{\mu_{i}\nu_{i}} \notag \\

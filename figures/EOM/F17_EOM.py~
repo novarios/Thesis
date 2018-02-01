@@ -11,7 +11,7 @@ from matplotlib import gridspec
 #majorLocatorY = MultipleLocator(0.05)
 #minorLocatorY = MultipleLocator(0.025)
 
-filename1 = '/home/sam/Documents/thesis/data/15N_levels.dat'
+filename1 = '/home/sam/Documents/thesis/data/17F_levels.dat'
 
 e1 = []
 jp1 = []
@@ -98,7 +98,7 @@ for num in range(len(e1)):
 ax1.axis([-16.0, 18.0, -1.0, 7.0], fontsize=18)
 ax1.tick_params(axis='x',labelsize=16)
 ax1.set_ylabel(r'$\mathrm{E\ (MeV)}$', fontsize=15)
-annotation_string = r'$\mathrm{^{15}N}$'
+annotation_string = r'$\mathrm{^{17}F}$'
 ax1.annotate(annotation_string, fontsize=16, xy=(0.04, 0.9), xycoords='axes fraction')
 plt.setp(ax1, xticks=[-12.0,-4.0,4.0,12.0], xticklabels=[r'$\beta=0$',r'$\beta=2$',r'$\beta=4$',r'$\mathrm{Exp.}$'])
 
@@ -111,5 +111,5 @@ ax1.legend(loc='upper right', frameon=False, fontsize='small', labelspacing=0.0)
 #ax.yaxis.set_minor_locator(minorLocatorY)
 
 plt.tight_layout()
-plt.savefig('N15_PA_1.pdf', format='pdf', bbox_inches='tight')
+plt.savefig('F17_PA_1.pdf', format='pdf', bbox_inches='tight')
 plt.show()

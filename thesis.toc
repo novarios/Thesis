@@ -1,6 +1,6 @@
-\contentsline {chapter}{\MakeUppercase {List of Tables}}{ix}{section*.9}
-\contentsline {chapter}{\MakeUppercase {List of Figures}}{x}{section*.11}
-\contentsline {chapter}{\MakeUppercase {Key to Symbols and Abbreviations}}{xiv}{section*.13}
+\contentsline {chapter}{\MakeUppercase {List of Tables}}{viii}{section*.6}
+\contentsline {chapter}{\MakeUppercase {List of Figures}}{ix}{section*.8}
+\contentsline {chapter}{\MakeUppercase {Key to Symbols and Abbreviations}}{xiv}{section*.10}
 \contentsline {chapter}{\numberline {Chapter{} 1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}A Brief History of Nuclear Structure Theory}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Electroweak Theory and Nuclear Structure}{4}{section.1.2}
@@ -11,48 +11,44 @@
 \contentsline {section}{\numberline {2.2}Second Quantization}{12}{section.2.2}
 \contentsline {section}{\numberline {2.3}Normal Ordering}{14}{section.2.3}
 \contentsline {section}{\numberline {2.4}Wick's Theorem}{16}{section.2.4}
-\contentsline {section}{\numberline {2.5}Hartree--Fock Method}{20}{section.2.5}
+\contentsline {section}{\numberline {2.5}Hartree--Fock Method}{21}{section.2.5}
 \contentsline {section}{\numberline {2.6}Configuration-Interaction}{26}{section.2.6}
 \contentsline {section}{\numberline {2.7}Many-Body Perturbation Theory}{28}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Factorization Theorem}{32}{subsection.2.7.1}
-\contentsline {chapter}{\numberline {Chapter{} 3}Coupled-Cluster Theory}{34}{chapter.3}
-\contentsline {section}{\numberline {3.1}Exponential Ansatz}{34}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}The Coupled Cluster Equations}{36}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Linked-Cluster Theorem and MBPT}{38}{section.3.2}
-\contentsline {section}{\numberline {3.3}Example: Pairing Model}{42}{section.3.3}
-\contentsline {section}{\numberline {3.4}Solving the Coupled Cluster Equations}{48}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Symmetry Channels}{49}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Matrix Structures and Intermediates}{51}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Example: Homogeneous Electron Gas}{56}{section.3.5}
-\contentsline {section}{\numberline {3.6}Coupled Cluster for Finite Nuclei}{62}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Harmonic Oscillator Basis}{62}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}The Nuclear Interaction}{65}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Ground-State Results for Nuclei}{67}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}Ground-State Center-of-Mass Factorization}{71}{section.3.7}
-\contentsline {chapter}{\numberline {Chapter{} 4}Equation-of-Motion Method}{76}{chapter.4}
-\contentsline {section}{\numberline {4.1}Equations-of-Motion Method}{77}{section.4.1}
-\contentsline {section}{\numberline {4.2}Equation-of-Motion States}{77}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Induced Three-Body Interaction}{81}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}CC-EOM for 2D Quantum Dots}{86}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Quantum Dot Formalism}{86}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Quantum Dot Results}{89}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}CC-EOM for 2D Quantum Dots}{90}{section.4.4}
-\contentsline {chapter}{\numberline {Chapter{} 5}Effective Operators}{95}{chapter.5}
-\contentsline {section}{\numberline {5.1}Beta Decay}{97}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sum Rules}{98}{section.5.2}
-\contentsline {section}{\numberline {5.3}Calculating Beta-Decay Matrix Elements}{99}{section.5.3}
-\contentsline {chapter}{\numberline {Chapter{} 6}Conclusions and Perspectives}{101}{chapter.6}
-\contentsline {chapter}{\numberline {Chapter{} 7}Instructions}{102}{chapter.7}
-\contentsline {section}{\numberline {7.1}Preamble}{102}{section.7.1}
-\contentsline {section}{\numberline {7.2}Front matter}{103}{section.7.2}
-\contentsline {section}{\numberline {7.3}Main matter}{103}{section.7.3}
-\contentsline {chapter}{\numberline {Chapter{} 8}Appendix}{104}{chapter.8}
-\contentsline {chapter}{\numberline {Chapter{} 9}Lorem ipsum}{105}{chapter.9}
-\contentsline {section}{\numberline {9.1}Pellentesque Scelerisque}{105}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Fusce Convallis}{106}{subsection.9.1.1}
-\contentsline {section}{\numberline {9.2}Curabitur}{107}{section.9.2}
-\contentsline {chapter}{\MakeUppercase {Appendices}}{109}{section*.48}
-\contentsline {section}{Appendix{} A{} CCSD Diagrams}{113}{appendix.A}
-\contentsline {section}{Appendix{} B{} Computational Implementation}{127}{appendix.B}
-\contentsline {section}{Appendix{} C{} Angular Momentum Coupling}{138}{appendix.C}
-\contentsline {chapter}{\MakeUppercase {References}}{141}{section*.56}
+\contentsline {chapter}{\numberline {Chapter{} 3}Coupled-Cluster Theory}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Exponential Ansatz}{35}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}The Coupled Cluster Equations}{38}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Linked-Cluster Theorem and MBPT}{39}{section.3.2}
+\contentsline {section}{\numberline {3.3}Example: Pairing Model}{44}{section.3.3}
+\contentsline {section}{\numberline {3.4}Solving the Coupled Cluster Equations}{49}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Symmetry Channels}{50}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Matrix Structures and Intermediates}{52}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Example: Homogeneous Electron Gas}{58}{section.3.5}
+\contentsline {section}{\numberline {3.6}Coupled Cluster for Finite Nuclei}{63}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Harmonic Oscillator Basis}{63}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}The Nuclear Interaction}{66}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Ground-State Results for Nuclei}{69}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.7}Ground-State Center-of-Mass Factorization}{72}{section.3.7}
+\contentsline {chapter}{\numberline {Chapter{} 4}Equation-of-Motion Method}{77}{chapter.4}
+\contentsline {section}{\numberline {4.1}Equation-of-Motion States}{78}{section.4.1}
+\contentsline {section}{\numberline {4.2}Dual Solutions}{81}{section.4.2}
+\contentsline {section}{\numberline {4.3}Solving the EOM equations}{83}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Induced Three-Body Interaction}{88}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}EOM-CC for 2D Quantum Dots}{89}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Quantum Dot Formalism}{90}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Quantum Dot Results}{92}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Quality of EOM Solutions}{93}{section.4.5}
+\contentsline {section}{\numberline {4.6}EOM-CC for Finite Nuclei}{95}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}One-Particle-Attached Nuclei}{95}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}One-Particle-Removed Nuclei}{95}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Center-of-Mass Treatment of EOM States}{95}{subsection.4.6.3}
+\contentsline {chapter}{\numberline {Chapter{} 5}Effective Operators}{106}{chapter.5}
+\contentsline {section}{\numberline {5.1}Beta Decay}{108}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sum Rules}{109}{section.5.2}
+\contentsline {section}{\numberline {5.3}Calculating Beta-Decay Matrix Elements}{110}{section.5.3}
+\contentsline {chapter}{\numberline {Chapter{} 6}Conclusions and Perspectives}{112}{chapter.6}
+\contentsline {chapter}{\MakeUppercase {Appendices}}{113}{section*.47}
+\contentsline {section}{Appendix{} A{} CCSD Diagrams}{117}{appendix.A}
+\contentsline {section}{Appendix{} B{} Computational Implementation}{131}{appendix.B}
+\contentsline {section}{Appendix{} C{} Angular Momentum Coupling}{142}{appendix.C}
+\contentsline {chapter}{\MakeUppercase {References}}{145}{section*.55}

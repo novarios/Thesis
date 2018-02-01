@@ -235,11 +235,6 @@ Geerd~H.F. Diercksen, Björn~O. Roos, and Andrzej~J. Sadlej.
   case of limited ci functions. dipole moments.
 \newblock {\em Chemical Physics}, 59(1):29 -- 39, 1981.
 
-\bibitem{exampleref1}
-Jane Doe and John Smith.
-\newblock {Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
-\newblock {\em Lor. Ips.}, 45:123, 2000.
-
 \bibitem{ECKART1930}
 Carl Eckart.
 \newblock The application of group theory to the quantum dynamics of monatomic
@@ -423,6 +418,12 @@ K.~Hirata, T.~Kajita, M.~Koshiba, M.~Nakahata, Y.~Oyama, N.~Sato, A.~Suzuki,
 \newblock Observation of a neutrino burst from the supernova sn1987a.
 \newblock {\em Phys. Rev. Lett.}, 58:1490--1493, Apr 1987.
 
+\bibitem{HOGBERGET2013}
+J{\o}rgen H{\o}gberget.
+\newblock Quantum {Monte}-{Carlo} {Studies} of {Generalized} {Many}-body
+  {Systems}.
+\newblock Master's thesis, University of Oslo, 2013.
+
 \bibitem{HUBBARD1957539}
 J.~Hubbard.
 \newblock The description of collective motions in terms of many-body
@@ -509,6 +510,12 @@ David~L. Lincoln, Jason~D. Holt, Georg Bollen, Maxime Brodeur, Scott Bustabad,
   of $^{82}\mathrm{Se}$ in support of understanding the nature of the neutrino.
 \newblock {\em Phys. Rev. Lett.}, 110:012501, Jan 2013.
 
+\bibitem{LINDGREN1974}
+I~Lindgren.
+\newblock The rayleigh-schrodinger perturbation and the linked-diagram theorem
+  for a multi-configurational model space.
+\newblock {\em J. Phys. Pt. B Atom. M. P.}, 7(18):2441, 1974.
+
 \bibitem{LIPKIN1958}
 H.~J. Lipkin.
 \newblock Center-of-mass motion in the nuclear shell model.
@@ -551,6 +558,11 @@ Chr. M\o{}ller and M.~S. Plesset.
 \newblock Note on an approximation treatment for many-electron systems.
 \newblock {\em Phys. Rev.}, 46:618--622, Oct 1934.
 
+\bibitem{MORRIS2017}
+T.~D. Morris, J.~Simonis, S.~R. Stroberg, C.~Stumpf, G.~Hagen, J.~D. Holt,
+  G.~R. Jansen, T.~Papenbrock, R.~Roth, and A.~Schwenk.
+\newblock Structure of the lightest tin isotopes, 2017.
+
 \bibitem{NAVRATIL2007}
 P.~Navr{\'a}til.
 \newblock Local three-nucleon interaction from chiral effective field theory.
@@ -572,6 +584,11 @@ Petr Navrátil, Sofia Quaglioni, Ionel Stetcu, and Bruce~R Barrett.
 A.~Nogga, H.~Kamada, W.~Gl\"ockle, and B.~R. Barrett.
 \newblock The \ensuremath{\alpha} particle based on modern nuclear forces.
 \newblock {\em Phys. Rev. C}, 65:054003, May 2002.
+
+\bibitem{OLSEN2013}
+Veronica K.~Berglyd Olsen.
+\newblock Full {Configuration} {Interaction} {Simulation} of {Quantum} {Dots}.
+\newblock Master's thesis, University of Oslo, 2013.
 
 \bibitem{ORMAND1995}
 W.~E. Ormand and B.~A. Brown.

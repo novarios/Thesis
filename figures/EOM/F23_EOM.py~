@@ -98,7 +98,7 @@ for num in range(len(e1)):
 ax1.axis([-16.0, 18.0, -1.0, 7.0], fontsize=18)
 ax1.tick_params(axis='x',labelsize=16)
 ax1.set_ylabel(r'$\mathrm{E\ (MeV)}$', fontsize=15)
-annotation_string = r'$\mathrm{^{17}O}$'
+annotation_string = r'$\mathrm{^{23}V}$'
 ax1.annotate(annotation_string, fontsize=16, xy=(0.04, 0.9), xycoords='axes fraction')
 plt.setp(ax1, xticks=[-12.0,-4.0,4.0,12.0], xticklabels=[r'$\beta=0$',r'$\beta=2$',r'$\beta=4$',r'$\mathrm{Exp.}$'])
 

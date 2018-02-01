@@ -38,14 +38,29 @@ while(num < num_states):
     jp = str(line[6])
     jp = jp.replace('(','').replace(')','').replace(' ','')
 
-    jp1.append(jp)
+    if( len(jp) != 0 ):
+        if(jp not in jp1):
+            jp1.append(jp)
+        else:
+            jp1.append('')
+    else:
+        if('J^{\pi}' not in jp1):
+            jp1.append('J^{\pi}')
+        else:
+            jp1.append('')
 
-    if( jp[-1] == '-' ):
+    if( len(jp) == 0 ):
+        p1.append('-')
+    elif( jp[-1] == '-' ):
         p1.append('--')
     else:
         p1.append('-')
 
-    jp = jp[:-1]
+    if( len(jp) == 0 ):
+        j1.append('k')
+    else:
+        jp = jp[:-1]
+
     if( jp == '1/2' ):
         j1.append('k')
     elif( jp == '3/2' ):
@@ -71,7 +86,11 @@ gs = gridspec.GridSpec(1, 1)
 
 ax1 = plt.subplot(gs[0])
 for num in range(len(e1)):
-    labelstring = '$\mathbf{' + jp1[num] + '}$'
+    if( jp1[num] == '' ):
+        labelstring = ""
+    else:
+        labelstring = r'$\mathrm{' + jp1[num] + '}$'
+
     if(p1[num] == '--'):
         ax1.plot(xd, e1[num], linestyle=p1[num], dashes=(7,1), color=j1[num], linewidth=1.5, label=labelstring)
     else:
@@ -79,7 +98,7 @@ for num in range(len(e1)):
 ax1.axis([-16.0, 18.0, -1.0, 7.0], fontsize=18)
 ax1.tick_params(axis='x',labelsize=16)
 ax1.set_ylabel(r'$\mathrm{E\ (MeV)}$', fontsize=15)
-annotation_string = r'$\mathrm{^{17}O}$'
+annotation_string = r'$\mathrm{^{15}N}$'
 ax1.annotate(annotation_string, fontsize=16, xy=(0.04, 0.9), xycoords='axes fraction')
 plt.setp(ax1, xticks=[-12.0,-4.0,4.0,12.0], xticklabels=[r'$\beta=0$',r'$\beta=2$',r'$\beta=4$',r'$\mathrm{Exp.}$'])
 
@@ -92,5 +111,5 @@ ax1.legend(loc='upper right', frameon=False, fontsize='small', labelspacing=0.0)
 #ax.yaxis.set_minor_locator(minorLocatorY)
 
 plt.tight_layout()
-plt.savefig('PA_1.pdf', format='pdf', bbox_inches='tight')
+plt.savefig('N15_PA_1.pdf', format='pdf', bbox_inches='tight')
 plt.show()

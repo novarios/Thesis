@@ -3,121 +3,191 @@
 \begin{document}
 Once the ground state energy and the effective Hamiltonian has been calculated, any further properties of the ground state can be calculated using the correlated wave function written as a Slater determinant expansion in the form of Eqn.\ \cite{eq:cc_ansatz}.  However, many of the most interesting processes in nuclear physics involve excited-state properties.  Additionally, because the coupled cluster method requires a doubly closed-shell reference state, most topics in nuclear phyics that can benefit from an ab initio description are unreachable with the standard coupled cluster approach alone.
 
-These restrictions motivates a class of techniques known as \texit{equations-of-motion} methods (EOM).  Applied with the CC effective Hamiltonian, the \textit{coupled cluster equation-of-motion} (CC-EOM) method begins with a standard CC calculation of a closed-shell ground state.  Then, EOM \texit{target states} are built onto the correlated ground-state wave function in the same way that CI states were built from the reference state, Eqn.\ \eqref{eq:ci_expansion}.  Unfortunately, because the CCSD similarity transformation only decouples the ground state from $\ph{1}{1}$ and $\ph{2}{2}$ excitations, these target states are still coupled to each other.  Therefore, capturing the relevant correlations to describe EOM states involves a CI-like diagonalization of the effective Hamiltonian.
+These restrictions motivates a class of techniques known as \textit{equations-of-motion} methods (EOM).  Applied with the CC effective Hamiltonian, the \textit{coupled cluster equation-of-motion} (CC-EOM) method begins with a standard CC calculation of a closed-shell ground state.  Then, EOM \textit{target states} are built onto the correlated ground-state wave function in the same way that CI states were built from the reference state, Eqn.\ \eqref{eq:ci_expansion}.  Unfortunately, because the CCSD similarity transformation only decouples the ground state from $\ph{1}{1}$ and $\ph{2}{2}$ excitations, these target states are still coupled to each other.  Therefore, capturing the relevant correlations to describe EOM states involves a CI-like diagonalization of the effective Hamiltonian.
 
 
 \section{Equation-of-Motion States} \label{section:eom_target_states}
 
-The CC equations-of-motion states are built by applying a particular type of excitation operator to the correlated ground-state wave function.
-\begin{equation}\label{eq:ladder_def}
-  \ket{\Psi_{\mu}} = \Rop_{\mu}\corrket = \Rop_{\mu}\E^{\Top}\refket,
+The CC equations-of-motion states are built by applying a particular type of excitation operator to the correlated ground-state wave function in the same way that the correlated ground-state wave function was built by applying the exponential cluster operator to the reference state,
+\begin{equation}\label{eq:eom_def}
+  \ket{\Psi_{\mu}} = \Rop_{\mu}\corrket = \Rop_{\mu}\E^{\Top}\refket.
 \end{equation}
-where $\Rop_{\mu}$ can be written as a linear combination of strings of creation and annihilation operators.  The form of these strings is determined by the structure of the desired target state.  For example, excited states maintain the particle number of the reference state and ground state so that the constiuent operator strings are $\ph{k}{k}$ operators.  The $A$-particle excited-state EOM operator $\Rop^{A}_{\mu}$ is,
+The EOM excitation operator can be written as a linear combination of strings composed of particle creation operators and hole annihilation operators in increasing order, $\Rop_{\mu} = \RopB{0}_{\mu} + \RopB{1}_{\mu} + \RopB{2}_{\mu} + \cdots$.  The form of these strings is determined by the structure of the desired target state.  For example, excited states maintain the particle number of the reference state and ground state so that the constiuent operator strings are $\ph{k}{k}$ operators.  The $A$-particle excited-state EOM operator $\Rop^{A}_{\mu}$ is,
 \begin{equation}
-  \Rop^{A}_{\mu} = \rint{\mu}{}{0} + \sum_{ai}\rint{\mu}{a}{i}\normord{\co{a}\ao{i}} + \frac{1}{4}\sum_{abij}\rint{\mu}{ab}{ij}\normord{\co{a}\co{b}\ao{j}\ao{i}} + \cdots.
+  \Rop^{A}_{\mu} = \rint{\mu}{}{0} + \sum_{ai}\rint{\mu}{a}{i}\normord{\co{a}\ao{i}} + \frac{1}{4}\sum_{abij}\rint{\mu}{ab}{ij}\normord{\co{a}\co{b}\ao{j}\ao{i}} + \cdots,
 \end{equation}
-Additionally, particle-attached states can be reached with strings of the form $\mathrm{p,pph,ppphh,}$ etc...  These operator strings increase the number of particles by one and gives the \textit{particle-attached equation-of-motion} PA-EOM operator $\Rop^{A+1}_{\mu}$,
+where $\RopB{0}_{\mu} = \rint{\mu}{}{0}$ represents the ground-state component of an excited state with the same conserved quantum numbers and the matrix elements, $\rint{\mu}{a}{i}, \rint{\mu}{ab}{ij}, \cdots$, are the normal-ordered components of $\Rop_{\mu}$.
+
+In addition to excited states, particle-attached (PA) states can be reached by applying strings of the form $\mathrm{p,pph,ppphh,}$ etc. to the ground state.  These operator strings increase the number of particles by one and gives the \textit{particle-attached equation-of-motion} PA-EOM operator $\Rop^{A+1}_{\mu} = \RopB{1}^{A+1}_{\mu} + \RopB{2}^{A+1}_{\mu} + \cdots $,
 \begin{equation}
   \Rop^{A+1}_{\mu} = \sum_{a}\rint{\mu}{a}{}\normord{\co{a}} + \frac{1}{2}\sum_{abi}\rint{\mu}{ab}{i}\normord{\co{a}\co{b}\ao{i}} + \cdots.
 \end{equation}
-Lastly, particle-removed states can be reached with strings of the form $\mathrm{h,hhp,hhhpp,}$ etc...  These operator strings decrease the number of particles by one and gives the \textit{particle-removed equation-of-motion} PR-EOM operator $\Rop^{A-1}_{\mu}$,
+Lastly, particle-removed (PR) states can be reached by applying strings of the form $\mathrm{h,hhp,hhhpp,}$ etc. to the ground state.  These operator strings decrease the number of particles by one and gives the \textit{particle-removed equation-of-motion} PR-EOM operator $\Rop^{A-1}_{\mu} = \RopB{1}^{A-1}_{\mu} + \RopB{2}^{A-1}_{\mu} + \cdots $,
 \begin{equation}
   \Rop^{A-1}_{\mu} = \sum_{i}\rint{\mu}{}{i}\normord{\ao{i}} + \frac{1}{2}\sum_{aij}\rint{\mu}{a}{ij}\normord{\co{a}\ao{j}\ao{i}} + \cdots.
 \end{equation}
 
-\begin{equation}
-  \Lop^{A+1}_{\mu} = \sum_{a}\lint{\mu}{}{a}\normord{\ao{a}} + \frac{1}{2}\sum_{abi}\lint{\mu}{i}{ab}\normord{\co{i}\ao{b}\ao{}} + \cdots
-\end{equation}
-
-\begin{equation}
-  \Lop^{A-1}_{\mu} = \sum_{i}\lint{\mu}{i}{}\normord{\co{i}} + \frac{1}{2}\sum_{aij}\lint{\mu}{ij}{a}\normord{\co{i}\co{j}\ao{a}} + \cdots
-\end{equation}
-
-\begin{equation}
-  \braket{\Lop_{\mu}}{\Rop_{\nu}} = \delta_{\mu\nu}
-\end{equation}
-
-Here, $\rint{\mu}{}{}$ are the normal-ordered matrix elements of $\Rop_{\mu}$.
-
-Substitution of Eq.\ \eqref{eq:ladder_def} into the energy eigenvalue problem
-\begin{equation}
-  \Ham\ket{\Psi_{\mu}} = E_{\mu}\ket{\Psi_{\mu}},
-\end{equation}
+With these target states, the Schr\"odinger equation can be written by applying the Hamiltonian to Eq.\ \eqref{eq:eom_def},
 \begin{gather}
-  \HamN\ket{\Psi_{\mu}} = \Ecorr_{\mu}\ket{\Psi_{\mu}} \notag \\
-  \HamN\Rop_{\mu}\E^{\Top}\refket = \Ecorr_{\mu}\Rop_{\mu}\E^{\Top}\refket \notag \\
-  \E^{-\Top}\HamN\Rop_{\mu}\E^{\Top}\refket = \E^{-\Top}\Ecorr_{\mu}\Rop_{\mu}\E^{\Top}\refket
+  \Ham\ket{\Psi_{\mu}} = E_{\mu}\ket{\Psi_{\mu}}, \notag \\
+  \Ham\Rop_{\mu}\E^{\Top}\refket = E_{\mu}\Rop_{\mu}\E^{\Top}\refket
 \end{gather}
+This equation can be written in terms of the effective Hamiltonian by multiplying with the operator $\E^{-\Top}$,
+\begin{equation} \label{eq:eom_schrodinger}
+  \E^{-\Top}\Ham\Rop_{\mu}\E^{\Top}\refket = \EHam\refket = E_{\mu}\E^{-\Top}\Rop_{\mu}\E^{\Top}\refket.
+\end{equation}
+Because both $\Rop_{\mu}$ and $\Top$ are excitation operators, containing only particle creation operators and hole annihilation operators, no nonzero contractions can occur between them (see section \ref{section:wicks_theorem}).  This means that the order of the two operators is inconsequential such that they commute with each other ($\Rop_{\mu}\Top = \Top\Rop_{\mu}$), which is also true for the exponential cluster operator ($\Rop_{\mu}\E^{\Top} = \E^{\Top}\Rop_{\mu}$).  This property can be used to rewrite Eq.\ \eqref{eq:eom_schrodinger} in terms of the effective Hamiltonian,
+\begin{align} \label{eq:eom_schrodinger1}
+  \E^{-\Top}\Ham\E^{\Top}\Rop_{\mu}\refket &= E_{\mu}\E^{-\Top}\E^{\Top}\Rop_{\mu}\refket \notag \\
+  \EHam\Rop_{\mu}\refket &= E_{\mu}\Rop_{\mu}\refket.
+\end{align}
+Using the normal-ordered Hamiltonian, the equation can be rewritten as,
+\begin{equation} \label{eq:eom_schrodinger2}
+  \EHamN\Rop_{\mu}\refket = \Ecorr_{\mu}\Rop_{\mu}\refket.
+\end{equation}
+
+Up to this point, extending the CC method from the ground state to excited and open-shell states amounts to an energy eigenvalue problem involving the normal-ordered effective Hamiltonian and the EOM excitation operators $\Rop_{\mu}$.  The signature component of EOM methods is reached by multiplying the normal-ordred ground-state Schr\"odinger equation, Eq.\ \eqref{eq:normal_schrodinger}, with $\Rop_{\mu}$ and subtracting the result from Eq.\ \eqref{eom_schrodinger2},
+\begin{equation} \label{eq:eom_schrodinger3}
+  \left(\EHamN\Rop_{\mu} - \Rop_{\mu}\EHamN\right)\refket = \left(\Ecorr_{\mu} - \Ecorr\right)\Rop_{\mu}\refket.
+\end{equation}
+The right-hand side of this equation can be rewritten as the commutator $\left[ \EHamN,\Rop_{\mu} \right]$ and the energy difference can be defined as $\omega_{\mu} \equiv \Ecorr_{\mu} - \Ecorr$ so that the fundamental EOM equation is,
+\begin{equation} \label{eq:eom_schrodinger4}
+  \left[ \EHamN,\Rop_{\mu} \right]\refket = \omega_{\mu}\Rop_{\mu}\refket.
+\end{equation}
+The name \textit{equation-of-motion} refers to the resemblance of this equation with the commutator-based Heisenberg representation of quantum mechanics.  The objective behind this formulation is to reduce the dependence of EOM states on the ground state by removing common terms between them.  This reduction is accomplished by noticing that, like the commutator between $\EHamN$ and $\Rop_{\mu}$, the commutator between uncontracted terms of $\left[ \EHamN,\Rop_{\mu} \right]$ vanishes.  This simplifies the commutator in Eq.\ \eqref{eq:eom_schrodinger4} to only connected terms just as the effective Hamilontian was simplified in Eq.\ \eqref{eq:cc_heff1},
+\begin{equation} \label{eq:eom_schrodinger4}
+  \left( \EHamN\Rop_{\mu} \right)_{\mathrm{c}}\refket = \omega_{\mu}\Rop_{\mu}\refket.
+\end{equation}
+
+Equation\ \eqref{eq:eom_schrodinger} constitutes a generalized eigenvalue problem which solves for the components of the EOM operator, $\rint{\mu}{}{}$, and the energy difference, $\omega_{\mu}$.  If only the energy of excited or openshell states are required, solving this equation is sufficient for such a task.  However, computing properties of EOM states requires the Hermitian conjugate of the EOM operator $\Rop^{\dagger}_{\mu}$, and as encountered before, the non-Hermiticity of the effective Hamiltonian complicates this effort.
+
+
+\section{Dual Solutions} \label{section:eom_dual}
+
+Because the CC effective Hamiltonian is non-Hermitian ($\EHamN^{\dagger} \neq \EHamN$), the eigenvalue problem in Eq.\ \eqref{eq:eom_schrodinger2} has a corresponding left-eigenvalue problem,
+\begin{equation} \label{eq:eom_dual1}
+  \refbra\Lop_{\mu}\EHamN = \refbra\Lop_{\mu}\Ecorr_{\mu}.
+\end{equation}
+The operators $\Lop_{\mu}$ are de-excitation operators analagous to the corresponding right operators $\Rop_{\mu}$.  The left EOM operator for particle-attached states has the form,
+\begin{equation}
+  \Lop^{A+1}_{\mu} = \sum_{a}\lint{\mu}{}{a}\normord{\ao{a}} + \frac{1}{2}\sum_{abi}\lint{\mu}{i}{ab}\normord{\co{i}\ao{b}\ao{}} + \cdots,
+\end{equation}
+and the left EOM operator for particle-removed states has the form,
+\begin{equation}
+  \Lop^{A-1}_{\mu} = \sum_{i}\lint{\mu}{i}{}\normord{\co{i}} + \frac{1}{2}\sum_{aij}\lint{\mu}{ij}{a}\normord{\co{i}\co{j}\ao{a}} + \cdots.
+\end{equation}
+Again, the matrix elements $\lint{\mu}{}{}$ are the normal-ordered components of $\Lop_{\mu}$ and map to a corresponding $\rint{\mu}{}{}$.  Because of there is not a corresponding left eigenvalue problem for the ground state in the form of Eq.\ \eqref{eq:normal_schrodinger}, the EOM eigenvalue problem for $\Lop_{\mu}$ cannot be reduced to the form of Eq.\ \eqref{eq:eom_schrodinger4}.  This amounts to calculating additional non-contracted terms between the Hamiltonian and the left EOM state and computing the energy difference directly from $\omega_{\mu} \equiv \Ecorr_{\mu} - \Ecorr$.
+
+The corresponding right and left EOM operators form a bi-orthogonal basis such that,
+\begin{equation}
+  \element{\Ref}{\Lop_{\mu}\Rop_{\nu}}{\Ref} = \delta_{\mu\nu}.
+\end{equation}
+When this condition is fulfilled, any scaling of the right and left solutions by the factors $\alpha$ and $1/\alpha$, respectively, also fulfills the condition.  Therefore, because the normalization of each solution is not determined uniquely, both solutions must be used when computing properties of EOM states.  This is accomplished by applying the bi-orthogonal solutions as the identity operator,
 \begin{gather}
-  \E^{-\Top}\HamN\E^{\Top}\Rop_{\mu}\refket = \Ecorr_{\mu}\E^{-\Top}\E^{\Top}\Rop_{\mu}\refket \notag \\
-  \EHamN\Rop_{\mu}\refket = \Ecorr_{\mu}\Rop_{\mu}\refket
+  \hat{1} = \sum_{\mu} \Rop_{\mu}\refket\refbra\Lop_{\mu}.
 \end{gather}
+
+
+\section{Solving the EOM equations} \label{section:eom_solve}
+
+At this point, after solving for the CC ground-state wave function with a truncated cluster operator, a full accounting of the remaing many-body correlations would scale factorially like the full CI method, see section \ref{section:configuration_interaction} and Fig.\ \ref{fig:fciscaling}.  Therefore it's neccesary to truncated the EOM operators with the assumptions that the lower-order excitations will dominate the EOM states.  In this work, the particle-attached and particle-removed operators are truncated at the $\ph{2}{1}$ and $\ph{1}{2}$ levels, respectively, which is referred to as the EOM(2) truncation.  For the PA-EOM(2) method, the EOM operators have the form, 
+\begin{gather} \label{eq:pa-eom2}
+  \Rop^{A+1}_{\mu} = \sum_{a}\rint{\mu}{a}{}\normord{\co{a}} + \frac{1}{2}\sum_{abi}\rint{\mu}{ab}{i}\normord{\co{a}\co{b}\ao{i}} \ \ \text{and} \notag \\
+  \Lop^{A+1}_{\mu} = \sum_{a}\lint{\mu}{}{a}\normord{\ao{a}} + \frac{1}{2}\sum_{abi}\lint{\mu}{i}{ab}\normord{\co{i}\ao{b}\ao{}}.
+\end{gather}
+Likewise, the PR-EOM(2) method, the EOM operators have the form,
+\begin{gather} \label{eq:pr-eom2}
+  \Rop^{A-1}_{\mu} = \sum_{i}\rint{\mu}{}{i}\normord{\ao{i}} + \frac{1}{2}\sum_{aij}\rint{\mu}{a}{ij}\normord{\co{a}\ao{j}\ao{i}} \ \ \text{and} \notag \\
+  \Lop^{A-1}_{\mu} = \sum_{i}\lint{\mu}{i}{}\normord{\co{i}} + \frac{1}{2}\sum_{aij}\lint{\mu}{ij}{a}\normord{\co{i}\co{j}\ao{a}}.
+\end{gather}
+
+%In operator form, the coupled-cluster EOM eigenvalue equations are,
+%\begin{gather}
+%  \left( \EHamN\Rop_{\mu} \right)_{\mathrm{c}} = \omega_{\mu}\Rop_{\mu} \notag \\
+%  \Lop_{\mu}\EHamN = \Lop_{\mu}\Ecorr_{\mu}.
+%\end{gather}
+The EOM matrix eigenvalue equation can be solved in a computationally practical way with power-iteration methods.  Traditionally, the Lanczos algorithm is used to produce the lowest energy eigenvalues and their corresponding eigenvectors from a Hermitian matrix.  In this case, with a non-Hermitian matrix, the generalized Arnoldi algorithm.  These methods remove the need to build the entire matrix, $\element{\Ref}{\Lop_{\mu}\EHamN\Rop_{\mu}}{\Ref}$, to be diagonalized, instead relying on matrix-vector products performed as a step in an iterative proccess.  The matrix is simply the effective normal-ordered Hamiltonian $\EHamN$ and the vectors are EOM operators.  Like the coupled cluster equations, this matrix-vector product is best computed with diagrammatic techniques and are shown below.
+
+The matrix-vector product for the right eigenvalue problem of the PA-EOM(2) method consists of two components which can be seen clearly by left-multiplying Eq.\ \eqref{eq:eom_schrodinger4} with the particle-attached bra states, $\statebra{a}{}$ and $\statebra{ab}{i}$, respectively.  This has the effect of projecting out the corresponding components $\rint{\mu}{}{}$,
+\begin{gather}
+  \label{eq:pa_1-body}
+  \statebra{a}{}\left( \EHamN\Rop_{\mu} \right)_{\mathrm{c}}\refket = \omega_{\mu}\rint{\mu}{a}{}, \\
+  \label{eq:pa_2-body}
+  \statebra{ab}{i}\left( \EHamN\Rop_{\mu} \right)_{\mathrm{c}}\refket = \omega_{\mu}\rint{\mu}{ab}{i}.
+\end{gather}
+Like the coupled-cluster equations, the EOM equations are best derived with diagrammatic techniques.  For these purposes, the right EOM excitation operators are depicted by the vertex type \raisebox{-8pt}{\mbox{\includegraphics[height=20pt]{diagrams/PA_EOM1/PA_EOM1-figure22.pdf}}}.  Equation\ \eqref{eq:pa_1-body} generates the following expressions and corresponding diagrams, supressing the state identifier $\mu$ for clarity,
 \begin{align}
-  \EHamN\Rop_{\mu}\refket &= \Ecorr_{\mu}\Rop_{\mu}\refket \notag \\
-  -\Rop_{\mu}\EHamN\refket &= \Rop_{\mu}\Ecorr\refket \notag \\
-  \longrightarrow\ \ [\EHamN,\Rop_{\mu}]\refket &= (\Ecorr_{\mu} - \Ecorr)\Rop_{\mu}\refket = \omega_{\mu}\Rop_{\mu}\refket
+  \omega\rop{a}{} &= \sum\limits_{c}\xint{a}{c}\rop{c}{} + \sum\limits_{kc}\xint{k}{c}\rop{ac}{k} + \frac{1}{2}\sum\limits_{kcd}\xint{ak}{cd}\rop{cd}{k} \notag \\
+  \diagram{PA_EOM1/PA_EOM1-figure0} &= \diagram{PA_EOM1/PA_EOM1-figure1} + \diagram{PA_EOM1/PA_EOM1-figure2} + \diagram{PA_EOM1/PA_EOM1-figure3}.
 \end{align}
-
-
-\begin{equation}\label{eq:ladder_def}
-  \bra{\Psi_{\mu}} = \refbra\Lop_{\mu}
-\end{equation}
-\begin{gather}
-  \bra{\Psi_{\mu}}\EHamN = \bra{\Psi_{\mu}}\Ecorr_{\mu} \notag \\
-  \refbra\Lop_{\mu}\EHamN = \refbra\Lop_{\mu}\Ecorr_{\mu},
-\end{gather}
-
-
-\begin{gather}
-  [\EHamN,\Rop_{\mu}] = \omega_{\mu}\Rop_{\mu} \notag \\
-  \Lop_{\mu}\EHamN = \Lop_{\mu}\Ecorr_{\mu}
-\end{gather}
-
-
-gives
-\begin{equation}\label{eq:EOM}
-  [\Ham, \Rop_{\mu}] \corrket = \pm \varepsilon^{(\pm)}_u \hat{X}^{(N \pm 1)}_u \ket{\Psi^{(N)}_0},
-\end{equation}
-which constitutes a generalized eigenvalue problem for the amplitudes $x$, where $\varepsilon^{(\pm)}_u$ are the single-particle addition ($+$) and removal ($-$) energies. The quality of this calculation depends on the ansatz for the $N$-particle ground state, as well as the systematically improvable truncation on the ladder operators. In this work we include 1p and 2p1h excitations in the $N + 1$ ladder operator and likewise 1h and 2h1p operators for the $N - 1$ ladder operators.
-
-After a single-reference ground state IM-SRG calculation, the Hamiltonian has been rotated such that the reference state is an eigenfunction with corresponding eigenvalue $E^{(N)}_0$, which is the correlated $N$-particle ground state energy. The EOM equation is therefore
-\begin{align} \label{eq:EOMIMSRG}
-  [\bar{H},\bar{X}^{(N \pm 1)}_u] \ket{\Phi^{(N)}_0} = \pm \varepsilon^{(\pm)}_u \bar{X}^{(N \pm 1)}_u \ket{\Phi^{(N)}_0},
-\end{align}
-where bars denote rotated operators. Now the reference state is used in place of the bare correlated ground state. The ground state IM-SRG procedure has implicitly re-summed contributions from higher order excitations (3-particle-2-hole, 2-particle-3-hole, 2-particle-3-hole, 4-particle-3-hole, \ldots) into the lower order amplitudes of the ladder operators (1-particle-0-hole, 0-particle-1-hole, 2-particle-1-hole, 1-particle-2-hole).
-
-Despite these gains, the EOM calculation is still a partial diagonalization method, limited by the truncation to 2-particle-1-hole and 1-particle-2-hole operators. We expect $N + 1$ (or $N - 1$) states to be described appropriately by EOM-IM-SRG if their wavefunctions are dominated by 1-particle-0-hole (or 0-particle-1-hole) contributions in the rotated frame. We use partial norms of the EOM ladder operators to estimate these contributions:
+The corresponding expressions and diagrams for Eq.\ \eqref{eq:pa_2-body} are,
 \begin{align}
-  \label{eq:partial_norms_p}
-  n_{\text{1-particle}} &= \sqrt{\sum_a | \rint{\mu}{a}{} |^2},\\
-  \label{eq:partial_norms_h}
-  n_{\text{1-hole}} &= \sqrt{\sum_i | \rint{\mu}{a}{} |^2}.
+  \omega\rop{ab}{i} &= \sum\limits_{c}\xint{ab}{ci}\rop{c}{} + \Perm{ab}\sum\limits_{c}\xint{b}{c}\rop{ac}{i} - \sum\limits_{k}\xint{k}{i}\rop{ab}{k} + \frac{1}{2}\sum\limits_{cd}\xint{ab}{cd}\rop{cd}{i} \notag \\
+  &-\Perm{ab}\sum\limits_{kc}\xint{ak}{ci}\rop{cb}{k} - \frac{1}{2}\sum\limits_{klcd}\vint{kl}{cd}\amp{ab}{ki}\rop{cd}{l} \notag \\
+  \diagram{PA_EOM1/PA_EOM1-figure4} &= \diagram{PA_EOM1/PA_EOM1-figure5} + \diagram{PA_EOM1/PA_EOM1-figure6} + \diagram{PA_EOM1/PA_EOM1-figure7} + \diagram{PA_EOM1/PA_EOM1-figure8} \notag \\
+  &+ \diagram{PA_EOM1/PA_EOM1-figure9} + \diagram{PA_EOM1/PA_EOM1-figure10}.
 \end{align}
-Large single particle partial norms indicate that the EOM truncation is reasonable for the relevant state. States with lower single particle norms should be treated with a higher EOM approximation, which can be accomplished directly or perturbatively \cite{PARZUCHOWSKI2017044304}.
 
-Like EOM-IM-SRG, the equations-of-motion technique can be applied after a CC ground-state calculation, by using the CC effective Hamiltonian.  Here, the non-Hermitian nature of $\bar{H}_{\mathrm{CC}}$ becomes apparent.  In this case, in addition to constructing excitation ladder operators Eq.\ \eqref{eq:gen_attached} and Eq.\ \eqref{eq:gen_removed} that correspond to the right-eigenvectors of the generalized eigenvalue problem Eq.\ \eqref{eq:EOMIMSRG}, there exist analogous de-excitation ladder operators, $\hat{L}^{(N + 1)}$ and $\hat{L}^{(N - 1)}$, that correspond to the left-eigenvectors,
-\begin{align*}
-    \hat{L}^{(N + 1)}_u &= \sum_a l^{(u, +)}_a \normord{\hat{a}_a^{}} + \frac{1}{2} \sum_{i a b} l^{(u, +)}_{i a b} \normord{\hat{a}^\dagger_i \hat{a}_b^{} \hat{a}_a^{}} + \cdots, \\
-    \hat{L}^{(N - 1)}_u &= \sum_i l_i^{(u, -)} \normord{\hat{a}^\dagger_i} + \frac{1}{2} \sum_{i j a} l^{(u, -)}_{i j a} \normord{\hat{a}^\dagger_i \hat{a}^\dagger_j \hat{a}_a^{}} + \cdots,
-\end{align*}
-where $l^{(u, \pm)}_p$ and $l^{(u, \pm)}_{p q r}$ are likewise the normal-ordered matrix elements of $\hat{L}^{(N \pm 1)}_u$.  These left-eigenvectors satisfy the left-eigenvalue problem, with left-eigenvalues $\varepsilon^{(\pm)}_u$, analogous to Eq.\ \eqref{eq:EOMIMSRG},
-\begin{align*}
-  \bra{\Phi^{(N)}_0} [\bar{H}, \bar{L}^{(N \pm 1)}_u] = \pm \varepsilon^{(\pm)}_u \bra{\Phi^{(N)}_0} \bar{L}^{(N \pm 1)}_u
-\end{align*}
-and form a bi-orthogonal set with the right-eigenvectors, $\braket{\bar{L}^{(N \pm 1)}_u}{\bar{X}^{(N \pm 1)}_v} = \delta_{u v}$.
+The vector-matrix product for the left eigenvalue problem of the PA-EOM(2) method also consists of two components achieved in a similar fashion by right-multiplying Eq.\ \eqref{eq:eom_dual1} with the particle-attached ket states, $\statebra{a}{}$ and $\statebra{ab}{i}$, respectively, which has the effect of projecting out the corresponding components $\lint{\mu}{}{}$,
+\begin{gather}
+  \label{eq:pa_l_1-body}
+  \refbra\Lop_{\mu}\EHamN\stateket{a}{} = \Ecorr_{\mu}\lint{\mu}{}{a}, \\
+  \label{eq:pa_l_2-body}
+  \refbra\Lop_{\mu}\EHamN\stateket{ab}{i} = \Ecorr_{\mu}\lint{\mu}{i}{ab}.
+\end{gather}
+Because Eqns.\ \eqref{eq:pa_l_1-body} and \eqref{eq:pa_l_2-body} do not use commutator between $\EHamN$ and $\Lop_{\mu}$, the diagrams which describe these equations include disconnected diagrams and corresponding expressions with matrix elements that share no indices.  For these diagrams, the left EOM de-excitation operators are depicted by the vertex type \raisebox{-8pt}{\mbox{\includegraphics[height=20pt]{diagrams/PA_EOM1/PA_EOM1-figure23.pdf}}}.  Equation\ \eqref{eq:pa_l_1-body} generates the following expressions and diagrams, again supressing the state identifier $\mu$,
+\begin{align}
+  E\lop{}{a} &= \sum\limits_{c}\lop{}{c}\xint{c}{a} + \frac{1}{2}\sum\limits_{kcd}\lop{k}{cd}\xint{cd}{ak} \notag \\
+  \diagram{PA_EOM1/PA_EOM1-figure11} &= \diagram{PA_EOM1/PA_EOM1-figure12} + \diagram{PA_EOM1/PA_EOM1-figure13}.
+\end{align}
+The corresponding expressions and diagrams for Eq.\ \eqref{eq:pa_l_2-body} are,
+\begin{align}
+  E\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i}{b} + \sum\limits_{c}\lop{}{c}\xint{ci}{ab} - \sum\limits_{k}\lop{k}{ab}\xint{i}{k} + \Perm{ab}\sum\limits_{c}\lop{i}{ac}\xint{c}{b} \notag \\
+  &+ \frac{1}{2}\sum\limits_{cd}\lop{i}{cd}\xint{cd}{ab} - \Perm{ab}\sum\limits_{kc}\lop{k}{cb}\xint{ci}{ak} - \frac{1}{2}\sum\limits_{klcd}\lop{l}{cd}\vint{ki}{ab}\amp{cd}{kl} \notag \\
+  \diagram{PA_EOM1/PA_EOM1-figure14} &= \diagram{PA_EOM1/PA_EOM1-figure15} + \diagram{PA_EOM1/PA_EOM1-figure16} + \diagram{PA_EOM1/PA_EOM1-figure17} + \diagram{PA_EOM1/PA_EOM1-figure18} \notag \\
+  &+ \diagram{PA_EOM1/PA_EOM1-figure19} + \diagram{PA_EOM1/PA_EOM1-figure20} + \diagram{PA_EOM1/PA_EOM1-figure21}.
+\end{align}
 
-In this paper, because the effective Hamiltonian is real, the corresponding left- and right-eigenvalues are equal. In addition, while the the left- and right-eigenvectors are generally not equivalent, the differences in their single-particle Eq.\ \eqref{eq:partial_norms_p} or single-hole Eq.\ \eqref{eq:partial_norms_h} natures are, in practice, not significant.  Therefore, only the right-eigenvectors are used in this paper.
+The particle-removed equations are generated in exactly the same way.  The matrix-vector product for the right eigenvalue problem of the PR-EOM(2) method consists of two components corresponding to the particle-removed bra states, $\statebra{}{i}$ and $\statebra{a}{ij}$, respectively,
+\begin{gather}
+  \label{eq:pr_1-body}
+  \statebra{}{i}\left( \EHamN\Rop_{\mu} \right)_{\mathrm{c}}\refket = \omega_{\mu}\rint{\mu}{}{i}, \\
+  \label{eq:pr_2-body}
+  \statebra{a}{ij}\left( \EHamN\Rop_{\mu} \right)_{\mathrm{c}}\refket = \omega_{\mu}\rint{\mu}{a}{ij}.
+\end{gather}
+Equation\ \eqref{eq:pr_1-body} generates the following expressions and diagrams,
+\begin{align}
+  \omega\rop{}{i} &= -\sum\limits_{k}\xint{k}{i}\rop{}{k} + \sum\limits_{kc}\xint{k}{c}\rop{c}{ik} - \frac{1}{2}\sum\limits_{klc}\xint{kl}{ic}\rop{c}{kl} \notag \\
+  \diagram{PR_EOM1/PR_EOM1-figure0} &= \diagram{PR_EOM1/PR_EOM1-figure1} + \diagram{PR_EOM1/PR_EOM1-figure2} + \diagram{PR_EOM1/PR_EOM1-figure3}.
+\end{align}
+The corresponding expressions and diagrams for Eq.\ \eqref{eq:pr_2-body} are,
+\begin{align}
+  \omega_{k}\rop{a}{ij} &= -\sum\limits_{k}\xint{ka}{ij}\rop{}{k} - \Perm{ij}\sum\limits_{k}\xint{k}{j}\rop{a}{ik} + \sum\limits_{c}\xint{a}{c}\rop{c}{ij} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ij}\rop{a}{kl} \notag \\
+  &-\Perm{ij}\sum\limits_{kc}\xint{ak}{ci}\rop{c}{kj} - \frac{1}{2}\sum\limits_{klcd}\vint{kl}{cd}\amp{ca}{ij}\rop{d}{kl} \notag \\
+  \diagram{PR_EOM1/PR_EOM1-figure4} &= \diagram{PR_EOM1/PR_EOM1-figure5} + \diagram{PR_EOM1/PR_EOM1-figure6} + \diagram{PR_EOM1/PR_EOM1-figure7} + \diagram{PR_EOM1/PR_EOM1-figure8} \notag \\
+  &+ \diagram{PR_EOM1/PR_EOM1-figure9} + \diagram{PR_EOM1/PR_EOM1-figure10}.
+\end{align}
 
+Finally, the vector-matrix product for the left eigenvalue problem of the PA-EOM(2) method consists of two components which correspond with the particle-removed ket states, $\statebra{}{i}$ and $\statebra{a}{ij}$, respectively,
+\begin{gather}
+  \label{eq:pr_l_1-body}
+  \refbra\Lop_{\mu}\EHamN\stateket{}{i} = \Ecorr_{\mu}\lint{\mu}{i}{}, \\
+  \label{eq:pr_l_2-body}
+  \refbra\Lop_{\mu}\EHamN\stateket{a}{ij} = \Ecorr_{\mu}\lint{\mu}{ij}{a}.
+\end{gather}
+Again, Eqns.\ \eqref{eq:pr_l_1-body} and \eqref{eq:pr_l_2-body} do not remove disconnected diagrams with commutator between $\EHamN$ and $\Lop_{\mu}$.  Equation\ \eqref{eq:pr_l_1-body} generates the following expressions and diagrams,
+\begin{align}
+  E\lop{i}{} &= -\sum\limits_{k}\lop{k}{}\xint{i}{k} - \frac{1}{2}\sum\limits_{klc}\lop{kl}{c}\xint{ic}{kl} \notag \\
+  \diagram{PR_EOM1/PR_EOM1-figure11} &= \diagram{PR_EOM1/PR_EOM1-figure12} + \diagram{PR_EOM1/PR_EOM1-figure13}.
+\end{align}
+The corresponding expressions and diagrams for Eq.\ \eqref{eq:pr_l_2-body} are,
+\begin{align}
+  E_{k}\lop{ij}{a} &= \Perm{ij}\lop{i}{}\xint{j}{a} - \sum\limits_{k}\lop{k}{}\xint{ij}{ka} + \sum\limits_{c}\lop{ij}{c}\xint{c}{a} - \Perm{ij}\sum\limits_{k}\lop{ik}{a}\xint{j}{k} \notag \\
+  &+ \frac{1}{2}\sum\limits_{cd}\lop{kl}{a}\xint{ij}{kl} - \Perm{ij}\sum\limits_{kc}\lop{kj}{c}\xint{ci}{ak} - \frac{1}{2}\sum\limits_{klcd}\lop{kl}{d}\vint{ij}{ca}\amp{cd}{kl} \notag \\
+  \diagram{PR_EOM1/PR_EOM1-figure14} &= \diagram{PR_EOM1/PR_EOM1-figure15} + \diagram{PR_EOM1/PR_EOM1-figure16} + \diagram{PR_EOM1/PR_EOM1-figure17} + \diagram{PR_EOM1/PR_EOM1-figure18} \notag \\
+  &+ \diagram{PR_EOM1/PR_EOM1-figure19} + \diagram{PR_EOM1/PR_EOM1-figure20} + \diagram{PR_EOM1/PR_EOM1-figure21}.
+\end{align}
 
-%\begin{align}
-%  \langle\Phi_{0}|\hat{L}^{+1}_{\nu}\bar{H}_{N}\hat{R}^{+1}_{\nu}|\Phi_{0}\rangle_{c} &= \diagram{PA_EOM/PA_EOM-figure0} + \diagram{PA_EOM/PA_EOM-figure1} + \diagram{PA_EOM/PA_EOM-figure2} + \diagram{PA_EOM/PA_EOM-figure3} \notag \\
-%  &\hspace{-2cm} + \diagram{PA_EOM/PA_EOM-figure4} + \diagram{PA_EOM/PA_EOM-figure5} + \diagram{PA_EOM/PA_EOM-figure6} + \diagram{PA_EOM/PA_EOM-figure7} \notag \\
-%\end{align}
-
-%\begin{align}
-%  \langle\Phi_{0}|\hat{L}^{-1}_{\nu}\bar{H}_{N}\hat{R}^{-1}_{\nu}|\Phi_{0}\rangle_{c}\ &= \diagram{PR_EOM/PR_EOM-figure0} + \diagram{PR_EOM/PR_EOM-figure1} + \diagram{PR_EOM/PR_EOM-figure2} + \diagram{PR_EOM/PR_EOM-figure3} \notag \\
-%  &\hspace{-2cm} + \diagram{PR_EOM/PR_EOM-figure4} + \diagram{PR_EOM/PR_EOM-figure5} + \diagram{PR_EOM/PR_EOM-figure6} + \diagram{PR_EOM/PR_EOM-figure7} \notag \\
-%\end{align}
 
 \subsection{Induced Three-Body Interaction}
 
@@ -135,53 +205,9 @@ Likewise, the effective $\mathrm{hhphhp}$ three-body interaction couples two par
 Because the $\mathrm{pphpph}$ structure in Eq.\ \eqref{eq:threebody1} scales as $\mathcal{O}(n_{h}^{2}n_{p}^{4})$, it can quickly overtake a calculation's memory allocation.  Therefore, these structures are never actually built.  Instead, the different compoenents are summed as special intermediates when they are needed during PA-EOM-CC or PR-EOM-CC calculations.
 
 
-\begin{align}
-  \diagram{PA_EOM1/PA_EOM1-figure0} &= \diagram{PA_EOM1/PA_EOM1-figure1} + \diagram{PA_EOM1/PA_EOM1-figure2} + \diagram{PA_EOM1/PA_EOM1-figure3} \notag \\
-  \omega_{k}\rop{a}{} &= \sum\limits_{c}\xint{a}{c}\rop{c}{} + \sum\limits_{kc}\xint{k}{c}\rop{ac}{k} + \frac{1}{2}\sum\limits_{kcd}\xint{ak}{cd}\rop{cd}{k}
-\end{align}
-\begin{align}
-  \diagram{PA_EOM1/PA_EOM1-figure4} &= \diagram{PA_EOM1/PA_EOM1-figure5} + \diagram{PA_EOM1/PA_EOM1-figure6} + \diagram{PA_EOM1/PA_EOM1-figure7} + \diagram{PA_EOM1/PA_EOM1-figure8} \notag \\
-  &+ \diagram{PA_EOM1/PA_EOM1-figure9} + \diagram{PA_EOM1/PA_EOM1-figure10} \notag \\
-  \omega_{k}\rop{ab}{i} &= \sum\limits_{c}\xint{ab}{ci}\rop{c}{} + \Perm{ab}\sum\limits_{c}\xint{b}{c}\rop{ac}{i} - \sum\limits_{k}\xint{k}{i}\rop{ab}{k} + \frac{1}{2}\sum\limits_{cd}\xint{ab}{cd}\rop{cd}{i} \notag \\
-  &-\Perm{ab}\sum\limits_{kc}\xint{ak}{ci}\rop{cb}{k} - \frac{1}{2}\sum\limits_{klcd}\vint{kl}{cd}\amp{ab}{ki}\rop{cd}{l}
-\end{align}
-
-\begin{align}
-  \diagram{PA_EOM1/PA_EOM1-figure11} &= \diagram{PA_EOM1/PA_EOM1-figure12} + \diagram{PA_EOM1/PA_EOM1-figure13} \notag \\
-  E_{k}\lop{}{a} &= \sum\limits_{c}\lop{}{c}\xint{c}{a} + \frac{1}{2}\sum\limits_{kcd}\lop{k}{cd}\xint{cd}{ak}
-\end{align}
-\begin{align}
-  \diagram{PA_EOM1/PA_EOM1-figure14} &= \diagram{PA_EOM1/PA_EOM1-figure15} + \diagram{PA_EOM1/PA_EOM1-figure16} + \diagram{PA_EOM1/PA_EOM1-figure17} + \diagram{PA_EOM1/PA_EOM1-figure18} \notag \\
-  &+ \diagram{PA_EOM1/PA_EOM1-figure19} + \diagram{PA_EOM1/PA_EOM1-figure20} + \diagram{PA_EOM1/PA_EOM1-figure21} \notag \\
-  E_{k}\lop{i}{ab} &= \Perm{ab}\lop{}{a}\xint{i}{b} + \sum\limits_{c}\lop{}{c}\xint{ci}{ab} - \sum\limits_{k}\lop{k}{ab}\xint{i}{k} + \Perm{ab}\sum\limits_{c}\lop{i}{ac}\xint{c}{b} \notag \\
-  &+ \frac{1}{2}\sum\limits_{cd}\lop{i}{cd}\xint{cd}{ab} - \Perm{ab}\sum\limits_{kc}\lop{k}{cb}\xint{ci}{ak} - \frac{1}{2}\sum\limits_{klcd}\lop{l}{cd}\vint{ki}{ab}\amp{cd}{kl}
-\end{align}
 
 
-\begin{align}
-  \diagram{PR_EOM1/PR_EOM1-figure0} &= \diagram{PR_EOM1/PR_EOM1-figure1} + \diagram{PR_EOM1/PR_EOM1-figure2} + \diagram{PR_EOM1/PR_EOM1-figure3} \notag \\
-  \omega_{k}\rop{}{i} &= -\sum\limits_{k}\xint{k}{i}\rop{}{k} + \sum\limits_{kc}\xint{k}{c}\rop{c}{ik} - \frac{1}{2}\sum\limits_{klc}\xint{kl}{ic}\rop{c}{kl}
-\end{align}
-\begin{align}
-  \diagram{PR_EOM1/PR_EOM1-figure4} &= \diagram{PR_EOM1/PR_EOM1-figure5} + \diagram{PR_EOM1/PR_EOM1-figure6} + \diagram{PR_EOM1/PR_EOM1-figure7} + \diagram{PR_EOM1/PR_EOM1-figure8} \notag \\
-  &+ \diagram{PR_EOM1/PR_EOM1-figure9} + \diagram{PR_EOM1/PR_EOM1-figure10} \notag \\
-  \omega_{k}\rop{a}{ij} &= -\sum\limits_{k}\xint{ka}{ij}\rop{}{k} - \Perm{ij}\sum\limits_{k}\xint{k}{j}\rop{a}{ik} + \sum\limits_{c}\xint{a}{c}\rop{c}{ij} + \frac{1}{2}\sum\limits_{kl}\xint{kl}{ij}\rop{a}{kl} \notag \\
-  &-\Perm{ij}\sum\limits_{kc}\xint{ak}{ci}\rop{c}{kj} - \frac{1}{2}\sum\limits_{klcd}\vint{kl}{cd}\amp{ca}{ij}\rop{d}{kl}
-\end{align}
-
-\begin{align}
-  \diagram{PR_EOM1/PR_EOM1-figure11} &= \diagram{PR_EOM1/PR_EOM1-figure12} + \diagram{PR_EOM1/PR_EOM1-figure13} \notag \\
-  E_{k}\lop{i}{} &= -\sum\limits_{k}\lop{k}{}\xint{i}{k} - \frac{1}{2}\sum\limits_{klc}\lop{kl}{c}\xint{ic}{kl}
-\end{align}
-\begin{align}
-  \diagram{PR_EOM1/PR_EOM1-figure14} &= \diagram{PR_EOM1/PR_EOM1-figure15} + \diagram{PR_EOM1/PR_EOM1-figure16} + \diagram{PR_EOM1/PR_EOM1-figure17} + \diagram{PR_EOM1/PR_EOM1-figure18} \notag \\
-  &+ \diagram{PR_EOM1/PR_EOM1-figure19} + \diagram{PR_EOM1/PR_EOM1-figure20} + \diagram{PR_EOM1/PR_EOM1-figure21} \notag \\
-  E_{k}\lop{ij}{a} &= \Perm{ij}\lop{i}{}\xint{j}{a} - \sum\limits_{k}\lop{k}{}\xint{ij}{ka} + \sum\limits_{c}\lop{ij}{c}\xint{c}{a} - \Perm{ij}\sum\limits_{k}\lop{ik}{a}\xint{j}{k} \notag \\
-  &+ \frac{1}{2}\sum\limits_{cd}\lop{kl}{a}\xint{ij}{kl} - \Perm{ij}\sum\limits_{kc}\lop{kj}{c}\xint{ci}{ak} - \frac{1}{2}\sum\limits_{klcd}\lop{kl}{d}\vint{ij}{ca}\amp{cd}{kl}
-\end{align}
-
-
-\section{CC-EOM for 2D Quantum Dots} \label{section:eom_target_states}
+\section{EOM-CC for 2D Quantum Dots} \label{section:eom_qd}
 
 To examine some properties of the CC-EOM method, it's useful to focus on the results from the two-dimensional quantum dot.  This system, also known as an ``artificial atom'', consists of a $A$ electrons confined within a 2D harmonic oscillator and subject to the inter-electron Coulomb force.  These nanoscale structures are easily tunable which makes them relevant for probing many different quantum phenomena in experiments and theoretical models \cite{reimann2002,engel1993,BIRMAN20131}, and because the quantum dot shell structure is similar to those of atomic nuclei, they provide a useful system to test  allows experiments to quantify the impact of quantum effects at different levels of correlation \cite{tarucha1996}.
 
@@ -189,7 +215,7 @@ To examine some properties of the CC-EOM method, it's useful to focus on the res
 
 The circular quantum dot system is characterized by a harmonic-oscillator potential of the form $V(r) = m \omega^2r^2 / 2$, where $\omega$ is its angular frequency, $r$ is the radial distance from the center, and $m$ is the electron mass.  The single-particle states can be constructed as eigenfunctions of the 2D quantum harmonic oscillator,
 \begin{equation} \label{eq:2d_ho}
-  \left(\frac{-\hbar^{2}}{2m}\nabla^{2} + \frac{1}{2} m\omega^{2}\hat{\bm{r}}^2\right)\phi_{n m_{\ell} \sigma}(\mathbf{r}) = \epsilon_{n m_{\ell}}\phi_{n m_{\ell} \sigma}(\mathbf{r}).
+  \left(\frac{-\hbar^{2}}{2m}\nabla^{2} + \frac{1}{2} m\omega^{2}r^{2}\right)\phi_{n m_{\ell} \sigma}(\mathbf{r}) = \epsilon_{n m_{\ell}}\phi_{n m_{\ell} \sigma}(\mathbf{r}).
 \end{equation}
 These states are characterized by a radial quantum number $n$, a spin quantum number $\sigma$, and because this systems conserves orbital angular momentum, a corresponding angular momentum projection number, $m_{\ell}$.  The energy of each single-particle state $\phi_{n m_{\ell} \sigma}(\mathbf{r})$, independent of the spin quantum projection, is given by,
 \begin{align} \label{eq:energysingleparticlestate}
@@ -218,13 +244,13 @@ Like the homogeneous electron gas, (see section \ref{section:electrongas}), the 
 \begin{equation} \label{eq:coloumb_integral}
   \Hint{2}{pq}{rs} \equiv \int d\mathbf{r}_{1} d\mathbf{r}_{2}\ \phi^{*}_{p}(\mathbf{r_{1}})\phi^{*}_{q}(\mathbf{r}_{2}) \frac{1}{\lvert \mathbf{r}_{1} - \mathbf{r}_{2} \rvert} \left[\phi_{r}(\mathbf{r}_{1})\phi_{s}(\mathbf{r}_{2}) - \phi_{s}(\mathbf{r}_{1})\phi_{r}(\mathbf{r}_{2})\right],
 \end{equation}
-where $\phi_{p}(\mathbf{r})$ is shorthand for $\phi_{n_{p} m_{\ell}_{p}\sigma_{p}}(\mathbf{r})$.
+where $\phi_{p}(\mathbf{r})$ is shorthand for $\phi_{n_{p} m_{\ell_{p}}\sigma_{p}}(\mathbf{r})$.
 
 With these ingredients in hand, the ground state energy, as well as particle-attached and particle-removed energies, can be calculated for different values of the oscillator frequency, $\omega$, and the number of shells, $K$.
 
 \subsection{Quantum Dot Results}
 
-Here, CC results are shown along with results from the in-medium similarity renormalization group (IM-SRG) method \cite{IMSRG} and quasidegenerate perturbation theory (QDPT) \cite{0022-3700-7-18-010,Kvasnicka1974}.  As for all calculations in this work, each method applies a Hartree-Fock transformation of the basis states from Eq.\ \eqref{eq:2d_ho} before employing the primary many-body method.  Before analyzing the EOM results, the ground state energies calculated using HF + IM-SRG(2) and HF + CCSD are show in Fig. \ref{fig:QDground}.  Also included are results from M\o ller--Plesset perturbation theory to second order (MP2), DMC \cite{hoegberget2013thesis}, and FCI \cite{olsen2013thesis} for comparison where available.
+Here, CC results are shown along with results from the in-medium similarity renormalization group (IM-SRG) method, and quasidegenerate perturbation theory (QDPT) \cite{LINDGREN1974}.  As for all calculations in this work, each method applies a Hartree-Fock transformation of the basis states from Eq.\ \eqref{eq:2d_ho} before employing the primary many-body method.  Before analyzing the EOM results, the ground state energies calculated using CCSD and IM-SRG(2) are shown in Fig. \ref{fig:QDground}.  Also included are results from M\o ller--Plesset perturbation theory to second order (MP2), DMC \cite{HOGBERGET2013}, and full CI \cite{OLSEN2013} for comparison where available.
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{EOM/fig-gs2.pdf}
@@ -237,22 +263,39 @@ With respect to the number of shells, both IM-SRG(2) and CCSD appear to converge
 The results for addition and removal energy calculations are summarized in Fig.\ \ref{fig:QDadd} and Fig.\ \ref{fig:QDrm} respectively.
 \begin{figure}
   \centering
-  \includegraphics[\textwidth]{EOM/fig-add2.pdf}
+  \includegraphics[width=\textwidth]{EOM/fig-add2.pdf}
   \caption{Particle-attached energy (in Hartrees) of quantum dots with $N$ particles and an oscillator frequency of $\omega$ calculated with several different methods.}
   \label{fig:QDadd}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[\textwidth]{EOM/fig-rm2.pdf}
+  \includegraphics[width=\textwidth]{EOM/fig-rm2.pdf}
   \caption{Particle-removed energy (in Hartrees) of quantum dots with $N$ particles and an oscillator frequency of $\omega$ calculated with several different methods.}
   \label{fig:QDrm}
 \end{figure}
 
 Not only do these results reaffirm the validity of the CCSD method amongst other \emph{ab initio} methods, they also provide benchmark calculations for the following CC-EOM calculations of open-shell finite nuclei.
 
+\section{Quality of EOM Solutions} \label{section:eom_quality}
 
-\section{CC-EOM for 2D Quantum Dots} \label{section:eom_target_states}
+Applying the CC similarity transformation to the Hamiltonian implicitly re-sums contributions from higher order excitations beyond the EOM(2)-CC truncation ($\ph{3}{2}$, $\ph{4}{3}$, \ldots for PA-EOM and $\ph{2}{3}$, $\ph{3}{4}$, \ldots for PR-EOM) into the lower-order excitations which comprise the EOM(2)-CC operators ($\ph{1}{0}$, $\ph{2}{1}$, \ldots for PA-EOM and $\ph{0}{1}$, $\ph{1}{2}$, \ldots for PR-EOM).  This means that EOM states are weighted towards few-body excitations when compared to the corresponding state calculated with the CI method and the bare Hamiltonian.
+
+Despite this improvement on the corresponding CI method, the EOM(2) truncation of Eqs.\ \eqref{eq:pa-eom2} and \eqref{eq:pr-eom2} is not guaranteed to capture the primary components of certain collective states.  Therefore, the quality of the solution can be judged by the measuring the amount of overlap between the EOM solution and $\ph{1}{0}$ states for PA-EOM or $\ph{0}{1}$ states for PR-EOM.  This overlap can be computed with partial norms,
+\begin{align}
+  \label{eq:partial_norms_p}
+  n_{\text{1-particle}} &= \sqrt{\sum_{a} \statebra{a}{}\Rop_{\mu}\refket\refbra\Lop_{\mu}\stateket{a}{} } = \sqrt{\sum_{a} \lvert \rint{}{a}{}\lint{}{}{a} \rvert },\\
+  \label{eq:partial_norms_h}
+  n_{\text{1-hole}} &= \sqrt{\sum_{i} \statebra{}{i}\Rop_{\mu}\refket\refbra\Lop_{\mu}\stateket{}{i} } = \sqrt{\sum_{i} \lvert \rint{}{}{i}\lint{}{i}{} \rvert }.
+\end{align}
+If the single-particle overlap is small, the state is dominated by higher-order excitations and requires a less-restricted truncation to describe, which can be accomplished directly or perturbatively \cite{PARZUCHOWSKI2017044304,MORRIS2017}.  On the other hand, large single-particle partial norms indicate that the EOM truncation is reasonable for the relevant state.
+
+
+\section{EOM-CC for Finite Nuclei} \label{section:eom_nuclei}
+
+\subsection{One-Particle-Attached Nuclei} \label{section:eom_nuclei}
+
+\subsection{One-Particle-Removed Nuclei} \label{section:eom_nuclei}
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{EOM/O17_PA_1.pdf}
@@ -292,6 +335,38 @@ Not only do these results reaffirm the validity of the CCSD method amongst other
 
 \begin{figure}[h]
   \includegraphics[width=\linewidth]{EOM/O21_PA_1.pdf}
+  \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (QMC) results from \cite{LOPEZ2006}.}
+  \label{fig:QDground}
+\end{figure}
+
+\subsection{Center-of-Mass Treatment of EOM States} \label{section:eom_nuclei}
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{EOM/EOM-CoM.pdf}
+  \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (QMC) results from \cite{LOPEZ2006}.}
+  \label{fig:QDground}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{EOM/O17_F17_EOM_2.pdf}
+  \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (QMC) results from \cite{LOPEZ2006}.}
+  \label{fig:QDground}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{EOM/O23_F23_EOM_2.pdf}
+  \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (QMC) results from \cite{LOPEZ2006}.}
+  \label{fig:QDground}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{EOM/N15_O15_EOM_2.pdf}
+  \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (QMC) results from \cite{LOPEZ2006}.}
+  \label{fig:QDground}
+\end{figure}
+
+\begin{figure}[h]
+  \includegraphics[width=\linewidth]{EOM/N21_O21_EOM_2.pdf}
   \caption{CCD energy per electron in Hartrees for the 3D homogeneous electron gas as function of the Wigner-Seitz radius in units of Bohr radii. The calculation used periodic boundary conditions and a basis with 25 shells, resulting in a total of $1238$ single-particle states. Also plotted are the variational quantum Monte Carlo (QMC) results from \cite{LOPEZ2006}.}
   \label{fig:QDground}
 \end{figure}

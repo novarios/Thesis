@@ -28,9 +28,17 @@ where the \textit{coupled cluster effective Hamiltonian} is defined as,
 \begin{align} \label{eq:cc_heff0}
   \EHam \equiv \E^{-\Top} \Ham \E^{\Top},
 \end{align}
-in which the wave operator, $\E^{\Top}$, acts as a similarity transform on the Hamiltonian.
+in which the wave operator, $\E^{\Top}$, acts as a similarity transform on the Hamiltonian.  Using the normal-ordered Hamiltonian $\EHamN$ and the correlation energy $\Ecorr$ from Eq.\ \eqref{eq:normal_schrodinger}, this can rewritten as,
+\begin{align} \label{eq:cc_heff1}
+  \HamN \E^{\Top} \refket = \Ecorr \E^{\Top} \refket \notag \\
+  \hspace{-1.0cm}\longrightarrow \ \ \refbra\EHamN\refket = \Ecorr,
+\end{align}
+where the \textit{normal-ordered effective Hamiltonian} is constructed equivalently to Eq.\ \eqref{eq:cc_heff0},
+\begin{align} \label{eq:cc_heff0}
+  \EHamN \equiv \E^{-\Top} \HamN \E^{\Top}.
+\end{align}
 
-An important characteristic of the effective Hamiltonian, $\EHam$, is that because the cluster operator, which contains no de-excitations, is not Hermitian, the exponential wave operator cannot be unitary, and thus $\EHam$ is not Hermitian.  This initially seems like an explicit contradiction to any standard quantum mechanics formulation where observables are associated with the real eigenvalues of Hermitian matrices. Technically, the existence and reality of the CC solution is only guaranteed when the full cluster operator is used $\Top = \Top_{1} + \cdots + \Top_{A}$, see \cite{ZIVKOVIC1977,MOISEYEV2011}.  However, while the non-Hermiticity does require some special considerations which will be discussed, this fundamental problem does not materialize in this work.
+An important characteristic of the effective Hamiltonian, $\EHam$ and $\EHamN$, is that because the cluster operator, which contains no de-excitations, is not Hermitian, the exponential wave operator cannot be unitary, and thus $\EHam$ is not Hermitian.  This initially seems like an explicit contradiction to any standard quantum mechanics formulation where observables are associated with the real eigenvalues of Hermitian matrices. Technically, the existence and reality of the CC solution is only guaranteed when the full cluster operator is used $\Top = \Top_{1} + \cdots + \Top_{A}$, see \cite{ZIVKOVIC1977,MOISEYEV2011}.  However, while the non-Hermiticity does require some special considerations which will be discussed, this fundamental problem does not materialize in this work.
 
 The effective Hamiltonian in Eq.\ \eqref{eq:cc_heff0} can be rewritten with commutators ($[ \hat{A},\hat{B} ] = \hat{A}\hat{B} - \hat{B}\hat{A}$) according to the Baker--Campbell--Hausdorff expansion as,
 \begin{align*}
@@ -107,7 +115,7 @@ So far, this is merely a redefinition of the connected class of MBPT diagrams up
 
 As an example, the remaining disconnected first- and second-order diagrams can be written as the product of connected diagrams.  First, the second-order disconnected diagram from the term $\fop^{2}\refket$ can be rewritten by adding a duplicate with the left and right subdiagrams exchanged, which doesn't change the value because the state labels are generic.  Then, the two disconnected diagrams can be rewritten using the factorization theorem following the example of Eq.\ \eqref{eq:factorization2},
 \begin{equation}
-  \xdiagram{MBPT/MBPT-figure12} &= \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure12} + \xdiagram{MBPT/MBPT-figure13} \right) = \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure0} \right)^{2}.
+  \xdiagram{MBPT/MBPT-figure12} = \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure12} + \xdiagram{MBPT/MBPT-figure13} \right) = \frac{1}{2}\left( \xdiagram{MBPT/MBPT-figure0} \right)^{2}.
 \end{equation}
 The resulting product involves the first-order component of the $\Top_{1}$ operator in Eq.\ \eqref{eq:t1_def}, $\Top^{(1)}_{1}$.  Algebraicly, this process is written below,
 \begin{align} \label{eq:t1_factorization}
@@ -129,7 +137,7 @@ A similar results gives the product involving the first-order component of the $
 
 Lastly, for the disconnected terms from $\Vop\fop\refket$ and $\fop\Vop\refket$, the first duplication step can be skipped and the diagrams can be factorized following the procedure in Eq.\ \eqref{eq:factorization2},
 \begin{equation}
-  \xdiagram{MBPT/MBPT-figure5} &+ \xdiagram{MBPT/MBPT-figure9} = \xdiagram{MBPT/MBPT-figure29}.
+  \xdiagram{MBPT/MBPT-figure5} + \xdiagram{MBPT/MBPT-figure9} = \xdiagram{MBPT/MBPT-figure29}.
 \end{equation}
 This factorization results in a mixed term between the the first-order components from the $\Top_{1}$ and $\Top_{2}$ operators,
 \begin{align} \label{eq:t1t2_factorization}
@@ -273,7 +281,7 @@ Lastly, the one- and three-body channels are used when a single summed index app
 
 \subsection{Matrix Structures and Intermediates} \label{section:maxtrix_intermediates}
 
-Symmetry channels not only provide an organized structure for the interaction matrix elements and cluster amplitudes, and remove any terms that violate the underlying symmetry of a problem, but they also naturally provide an efficient way of performing sums using matrix-matrix multiplications.  For example, the sums in Eq.\ \eqref{eq:channel_sums} can be reformulated as matrix-matrix multiplications by structuring the channel-separated interaction matrix elements and cluster amplitudes into individual matrices.  These operations can be performed very quickly using highly optimized linear algebra algorithms like those found in BLAS (Basic Linear Algebra Subprograms) \cite{blas}.  The matrices can be reordered so that the summed indices correspond to the internal columns and rows of those matrices.
+Symmetry channels not only provide an organized structure for the interaction matrix elements and cluster amplitudes, and remove any terms that violate the underlying symmetry of a problem, but they also naturally provide an efficient way of performing sums using matrix-matrix multiplications.  For example, the sums in Eqs.\ \eqref{eq:channel_sums_1}--\eqref{eq:channel_sums_3} can be reformulated as matrix-matrix multiplications by structuring the channel-separated interaction matrix elements and cluster amplitudes into individual matrices.  These operations can be performed very quickly using highly optimized linear algebra algorithms like those found in BLAS (Basic Linear Algebra Subprograms) \cite{blas}.  The matrices can be reordered so that the summed indices correspond to the internal columns and rows of those matrices.
 
 For the direct two-body case of Eq.\ \eqref{eq:channel_sums_1}, the structures are already in the correct order such that the state $\ket{cd}$, indexed by the columns of $\bvint{}{}$ and the rows of $\btamp{}{}$, is summed by multiplying the two matrices,
 \begin{equation} \label{eq:channel_matrices_1}
@@ -315,7 +323,7 @@ this term is now computed as the combination of two sums, each scaling as $\math
   \text{where},\hspace{10pt} \bxint{kl}{ij} = \bvint{kl}{ij} + \frac{1}{2}\bvint{kl}{cd}\cdot\btamp{cd}{ij}
 \end{gather}
 
-It just so happens that this form of the intermediate $\xint{kl}{ij}$ is equivalent to the $\mathrm{hhhh}$ component of the CCD similarity transformed Hamiltonian, $\EHam$.  Constructing other intermediates in this way gives similar results, so it's a natural extension to actually construct the effective Hamiltonian at each iteration for the express purpose of using it as different intermediate components for the CC equations.  This has the added benefit of having already computed the effective Hamiltonian for post-CC methods.  The different components of the CCD effective Hamiltonian, $\EHam_{\mathrm{CCD}} = \left(\Ham\E^{\Top_{2}}\right)_{\mathrm{c}}$, are written below in both algebraic and diagrammatic form.  The $\mathrm{pp}$, one-body component of $\EHam_{\mathrm{CCD}}$ is,
+It just so happens that this form of the intermediate $\xint{kl}{ij}$ is equivalent to the $\mathrm{hhhh}$ component of the CCD similarity transformed Hamiltonian, $\EHam$.  Constructing other intermediates in this way gives similar results, so it's a natural extension to actually construct the effective Hamiltonian at each iteration for the express purpose of using it as different intermediate components for the CC equations.  This has the added benefit of having already computed the effective Hamiltonian for post-CC methods.  The different components of the CCD effective Hamiltonian, $\EHam_{\mathrm{CCD}} = \left(\Ham\E^{\Top_{2}}\right)_{\mathrm{c}}$, are written below in both algebraic and diagrammatic form.  One-body components correspond to the vertex type \raisebox{-5pt}{\mbox{\includegraphics[height=20pt]{diagrams/CCSD_1b/CCSD_1b-figure23.pdf}}} and two-body terms correspond to the vertex type \raisebox{-5pt}{\mbox{\includegraphics[height=20pt]{diagrams/CCSD_1b/CCSD_1b-figure24.pdf}}}.  The $\mathrm{pp}$, one-body component of $\EHam_{\mathrm{CCD}}$ is,
 \begin{align} \label{eq:ccd_eff1}
   \diagram{CCSD_1b/CCSD_1b-figure3} &= \diagram{CCSD_1b/CCSD_1b-figure4} + \diagram{CCSD_1b/CCSD_1b-figure5} \notag \\
   \xint{a}{b} &= \fint{a}{b} - \frac{1}{2}\sum\limits_{klc}\vint{kl}{bc}\tamp{ac}{kl}.
@@ -435,7 +443,7 @@ An eigenstate of the harmonic oscillator potential is defined by its principal q
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\linewidth]{CC/HO.pdf}
-  \caption{A schematic illustration of the harmonic oscillator basis used for calculations of nuclei. Shown is an example of a initial reference state for carbon-14, with 6 protons filled to the $p3/2$-subshell closure and 8 neutrons filled to the $p1\2$-shell closure.  See text for details on the single-particle states.}
+  \caption{A schematic illustration of the harmonic oscillator basis used for calculations of nuclei. Shown is an example of a initial reference state for carbon-14, with 6 protons filled to the p$3/2$-subshell closure and 8 neutrons filled to the p$1/2$-shell closure.  See text for details on the single-particle states.}
   \label{fig:Harmonic_Oscillator}
 \end{figure}
 
@@ -471,7 +479,7 @@ These problems, along with the success of quantum field theories in high-energy 
   \label{fig:Chiral_Forces}
 \end{figure}
 
-Chiral effective field theory ($\Chi$EFT), which exploits the large difference in scales between the low-energy regime of nuclear physics and the high-energy regime of QCD, is built from a general Lagrangian consistent with the broken chiral symmetry of QCD \cite{EPELBAUM20091773,MACHLEIDT2016}.  This broken symmetry, a consequence of non-zero quark masses, results in several hadronic structures including protons, neutrons, and mesons, the lightest of which is the pion, $m_{\pi}\approx 140\mathrm{MeV}/c^{2}$ \cite{BERINGER2012}.  This can be exploited by systematically writing a Lagrangian as the sum of pion exchanges of increasing order.  Additional contact interactions, which represent exchanges of heavier mesons, are also included and must be fit to to low-energy nuclear data.  The hierarchy of $\Chi$EFT terms, which contain 3N and higher many-body forces, are ordered by power counting the expansion term $(m_{\pi}/\Lambda)$, where $\Lambda$ is an energy cutoff between the low- and high-energy scales, and is shown up to N$^{3}$LO in Fig.\ \ref{fig:Chiral_Forces}.
+Chiral effective field theory ($\chi$EFT), which exploits the large difference in scales between the low-energy regime of nuclear physics and the high-energy regime of QCD, is built from a general Lagrangian consistent with the broken chiral symmetry of QCD \cite{EPELBAUM20091773,MACHLEIDT2016}.  This broken symmetry, a consequence of non-zero quark masses, results in several hadronic structures including protons, neutrons, and mesons, the lightest of which is the pion, $m_{\pi}\approx 140\mathrm{MeV}/c^{2}$ \cite{BERINGER2012}.  This can be exploited by systematically writing a Lagrangian as the sum of pion exchanges of increasing order.  Additional contact interactions, which represent exchanges of heavier mesons, are also included and must be fit to to low-energy nuclear data.  The hierarchy of $\chi$EFT terms, which contain 3N and higher many-body forces, are ordered by power counting the expansion term $(m_{\pi}/\Lambda)$, where $\Lambda$ is an energy cutoff between the low- and high-energy scales, and is shown up to N$^{3}$LO in Fig.\ \ref{fig:Chiral_Forces}.
 
 This work exclusively employs the NN force of the N$^{3}$LO interaction from Entem and Machleidt with a cutoff of $\Lambda=500\ \mathrm{MeV}$ \cite{ENTEM2003}.  For most calculations, this interaction is coupled with the N$^{2}$LO 3N interaction from Navr\'{a}til with a cutoff of $\Lambda=400\ \mathrm{MeV}$ \cite{NAVRATIL2007}.  This NN+3N(400) interaction is successful at reproducing low- and medium-mass nuclei, but begins to overbind beyond the $sd$-shell.  As mentioned in the introduction, these bare Hamiltonians exhibit strong repulsion at short ranges among high-momentum states.  Therefore to soften the interaction, the similarity renormalization group method is used to integrate high-momentum modes out of the interaction while preserving observables \cite{BOGNER201094,ROTH2011072501}.
 
@@ -538,7 +546,7 @@ Using the known value $\element{\Corr}{\Top_{\mathrm{cm}}}{\Corr} = \frac{3}{4}\
 The ground-state COM energies are plotted for ${}^{16}$O and ${}^{40}$Ca using the COM Hamiltonian with two different oscillator strengths in Fig.\ \ref{fig:CoM_Ground_State}: that of the underlying basis, $\hbar\omega$, and one of the two solutions to Eq.\ \eqref{eq:com_hw}, $\hbar\widetilde{\omega}_{\pm}$.  Of the two $\hbar\widetilde{\omega}_{\pm}$, which are shown as the solutions to Eq.\ \eqref{eq:com_hw} in the inset, one typically results in a large COM energy while the other vanishes, which is plotted.  Because the COM energies approximately vanish regardless of the underlying basis frequency, the COM wave function is in its ground state and approximately factorized from the intrinsic nuclear wave function.
 \begin{figure}[h]
   \centering
-  \includegraphics[\textwidth]{CC/CoM1.pdf}
+  \includegraphics[width=\textwidth]{CC/CoM1.pdf}
   \caption{Ground-state COM energies, Eq.\ \eqref{eq:com_hamiltonian}, for ${}^{16}$O and ${}^{40}$Ca at varies harmonic oscillator frequencies with the NN+3N(400)-induced with $\lambda_{\mathrm{SRG}}=2.0\ \mathrm{fm}^{-1}$ at $e_{\mathrm{max}}=12$.  Using the proper COM oscillator frequencies shows the approximate factorization of Eq.\ \eqref{eq:com_factorize}.}
   \label{fig:CoM_Ground_State}
 \end{figure}
