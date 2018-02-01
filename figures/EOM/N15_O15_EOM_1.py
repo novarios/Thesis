@@ -19,10 +19,11 @@ jp1 = []
 j1 = []
 p1 = []
 
-e2 = [[] for num in range(3)]
-jp2 = [[] for num in range(3)]
-j2 = [[] for num in range(3)]
-p2 = [[] for num in range(3)]
+e2 = [[] for num in range(2)]
+jp2 = [[] for num in range(2)]
+j2 = [[] for num in range(2)]
+p2 = [[] for num in range(2)]
+n2 = [[] for num in range(2)]
 
 with open(filename1) as f1:
     data1 = f1.read()
@@ -79,44 +80,28 @@ for num in [1,4]:
 
 indices = {0:0, 1:1, 4:2}
 
-num1 = [1, 1, 1]
-num2 = 1
-while((num1[0] < num_states or num1[1] < num_states or num1[2] < num_states) and num2 < len(data2)-1):
-    line = data2[num2].split()
-    if(  float(line[0]) != 16.0 ):
-        num2 = num2 + 1
-        continue
-    index = indices[int(line[2])]
+for num in range(12):
+    line = data2[num].split()
+    index = indices[(num - num%6)/6]
+
     e2[index].append([float(line[11]),float(line[11])])
-    jp = str(line[6])[1:-1]
+    n2[index].append(float(line[13]))
 
-    if( jp[0] == 'p' or jp[0] == 'f'):
+    if( index == 0 ):
         p2[index].append('--')
-        jp = jp + '-'
-    else:
-        p2[index].append('-')
-        jp = jp + '+'
-
-    jp = jp[1:]
-
-    if(jp not in jp2[0] and jp not in jp2[1] and jp not in jp2[2] and jp not in jp1):
-        jp2[index].append(jp)
-    else:
-        jp2[index].append('')
-
-    if( jp[:-1] == '1/2' ):
         j2[index].append('b')
-    elif( jp[:-1] == '3/2' ):
-        j2[index].append('r')
-    elif( jp[:-1] == '5/2' ):
-        j2[index].append('g')
-    elif( jp[:-1] == '7/2' ):
-        j2[index].append('m')
-    elif( jp[:-1] == '9/2' ):
-        j2[index].append('c')
+        if( num == 5 ):
+            jp2[index].append('1/2-')
+        else:
+            jp2[index].append('')
 
-    num1[index] = num1[index] + 1
-    num2 = num2 + 1
+    if( index == 1 ):
+        p2[index].append('--')
+        j2[index].append('r')
+        if( num == 5 ):
+            jp2[index].append('3/2-')
+        else:
+            jp2[index].append('')
 
 
 filename3 = '/home/sam/Documents/thesis/data/15O_levels.dat'

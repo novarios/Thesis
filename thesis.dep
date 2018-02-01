@@ -115,7 +115,6 @@ thesis.pdf thesis.dep :\
     EOM/O15_PA_1.pdf\
     EOM/O17_PA_1.pdf\
     EOM/O21_PA_1.pdf\
-    EffectiveOperator.tex\
     ManyBody.tex\
     SymbolsAbbreviations.tex\
     acknowledgments.tex\
@@ -242,28 +241,7 @@ thesis.pdf thesis.dep :\
     figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf\
     figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf\
     figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure0.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure1.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure2.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure3.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure4.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure5.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure6.pdf\
-    figures/diagrams/CCSD_L1/CCSD_L1-figure7.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure0.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure1.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure10.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure2.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure3.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure4.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure5.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure6.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure7.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure8.pdf\
-    figures/diagrams/CCSD_L2/CCSD_L2-figure9.pdf\
     figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf\
-    figures/diagrams/CCSD_dE/CCSD_dE-figure1.pdf\
-    figures/diagrams/CCSD_dE/CCSD_dE-figure2.pdf\
     figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf\
     figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf\
     figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf\
@@ -670,8 +648,6 @@ EOM/O17_PA_1.pdf :
 
 EOM/O21_PA_1.pdf :
 
-EffectiveOperator.tex :
-
 ManyBody.tex :
 
 SymbolsAbbreviations.tex :
@@ -924,49 +900,7 @@ figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf :
 
 figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf :
 
-figures/diagrams/CCSD_L1/CCSD_L1-figure0.pdf :
-
-figures/diagrams/CCSD_L1/CCSD_L1-figure1.pdf :
-
-figures/diagrams/CCSD_L1/CCSD_L1-figure2.pdf :
-
-figures/diagrams/CCSD_L1/CCSD_L1-figure3.pdf :
-
-figures/diagrams/CCSD_L1/CCSD_L1-figure4.pdf :
-
-figures/diagrams/CCSD_L1/CCSD_L1-figure5.pdf :
-
-figures/diagrams/CCSD_L1/CCSD_L1-figure6.pdf :
-
-figures/diagrams/CCSD_L1/CCSD_L1-figure7.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure0.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure1.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure10.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure2.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure3.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure4.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure5.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure6.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure7.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure8.pdf :
-
-figures/diagrams/CCSD_L2/CCSD_L2-figure9.pdf :
-
 figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf :
-
-figures/diagrams/CCSD_dE/CCSD_dE-figure1.pdf :
-
-figures/diagrams/CCSD_dE/CCSD_dE-figure2.pdf :
 
 figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf :
 

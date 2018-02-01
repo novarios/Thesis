@@ -2,58 +2,6 @@
 
 \begin{document}
 
-
-
-
-\begin{equation}
-  E\left( \Top, \Lop \right) = \refbra\Lop \E^{-\Top} \Ham \E^{\Top}\refket = \refbra\Lop \EHam\refket
-\end{equation}
-\begin{equation}
-  \Lop \equiv \lamp{}{0} + \Lop_{1} + \Lop_{2} + \cdots + \Lop_{N}
-\end{equation}
-\begin{equation}
-  \Lop_{k} \equiv \left(\frac{1}{k!}\right)^2 \sum_{\substack{a_1 \ldots a_k \\ i_1 \ldots i_k}} \lamp{i_1 \ldots i_k}{a_1 \ldots a_k}\normord{\hat{i}_{1}^\dagger \ldots \hat{i}_{k}^\dagger \hat{a}_{k}^{} \ldots \hat{a}_{1}^{}},
-\end{equation}
-\begin{align}
-  \refbra \Lop\left[ \EHam, \normord{\hat{a}^{\dagger}\hat{i}^{}} \right] \refket &= 0, \\
-  \refbra \Lop\left[ \EHam, \normord{\hat{a}^{\dagger}\hat{b}^{\dagger}\hat{j}^{}\hat{i}^{}} \right] \refket &= 0. \notag
-\end{align}
-\begin{align}
-  \refbra \Lop\EHam \stateket{a}{i} &= \omega\refbra \Lop \stateket{a}{i}, \\
-  \refbra \Lop\EHam \stateket{ab}{ij} &= \omega\refbra \Lop \stateket{ab}{ij}. \notag
-\end{align}
-\begin{align}
-  \Delta E_{CCSD} &= \diagram{CCSD_dE/CCSD_dE-figure0} + \diagram{CCSD_dE/CCSD_dE-figure1} + \ddiagram{CCSD_dE/CCSD_dE-figure2} \notag \\
-  &= \frac{1}{4}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{cd}_{kl} + \frac{1}{2}\sum\limits_{\mathclap{klcd}}V^{kl}_{cd}t^{c}_{k}t^{d}_{l} + \dboxed{\sum\limits_{\mathclap{kc}}f^{k}_{c}t^{c}_{k}}
-\end{align}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{align}
-  0 &= \diagram{CCSD_L1/CCSD_L1-figure0} + \diagram{CCSD_L1/CCSD_L1-figure1} + \diagram{CCSD_L1/CCSD_L1-figure2} + \diagram{CCSD_L1/CCSD_L1-figure3} + \diagram{CCSD_L1/CCSD_L1-figure4} \notag \\
-  &+ \diagram{CCSD_L1/CCSD_L1-figure5} + \diagram{CCSD_L1/CCSD_L1-figure6} + \diagram{CCSD_L1/CCSD_L1-figure7} \notag \\
-  &= \xint{i}{a} + \sum\limits_{c}\lamp{i}{c}\xint{c}{a} - \sum\limits_{k}\lamp{k}{a}\xint{i}{k} + \sum\limits_{kc}\lamp{k}{c}\xint{ic}{ak} + \frac{1}{2}\sum\limits_{kcd}\lamp{ik}{cd}\xint{cd}{ak} \notag \\
-  &- \frac{1}{2}\sum\limits_{klc}\lamp{kl}{ac}\xint{ic}{kl} - \frac{1}{2}\sum\limits_{jklcd}\lamp{jl}{cd}\xint{ik}{aj}\tamp{cd}{kl} + \frac{1}{2}\sum\limits_{klbcd}\lamp{kl}{bc}\xint{ic}{ad}\tamp{bd}{kl}
-\end{align}
-
-%-----------------
-
-\begin{align}
-  0 &= \diagram{CCSD_L2/CCSD_L2-figure0} + \diagram{CCSD_L2/CCSD_L2-figure1} + \diagram{CCSD_L2/CCSD_L2-figure2} + \diagram{CCSD_L2/CCSD_L2-figure3} \notag \\
-  &+ \diagram{CCSD_L2/CCSD_L2-figure4} + \diagram{CCSD_L2/CCSD_L2-figure5} + \diagram{CCSD_L2/CCSD_L2-figure6} + \diagram{CCSD_L2/CCSD_L2-figure7} \notag \\
-  &+ \diagram{CCSD_L2/CCSD_L2-figure8} + \diagram{CCSD_L2/CCSD_L2-figure9} + \diagram{CCSD_L2/CCSD_L2-figure10} \notag \\
-  &= \vint{ij}{ab} + \Perm{ab|ij}\lamp{i}{a}\xint{j}{b} - \Perm{ab}\sum\limits_{\mathclap{k}}\lamp{k}{a}\xint{ij}{kb} + \Perm{ij}\sum\limits_{\mathclap{c}}\lamp{i}{c}\xint{cj}{ab} \notag \\
-  &+ \Perm{ab}\sum\limits_{\mathclap{c}}\lamp{ij}{ac}\xint{c}{b} - \Perm{ij}\sum\limits_{\mathclap{k}}\lamp{ik}{ab}\xint{j}{k} + \frac{1}{2}\sum\limits_{\mathclap{cd}}\lamp{ij}{cd}\xint{cd}{ab} + \frac{1}{2}\sum\limits_{\mathclap{kl}}\lamp{kl}{ab}\xint{ij}{kl} \notag \\
-  &- \Perm{ab|ij}\sum\limits_{\mathclap{kc}}\lamp{kj}{ac}\xint{ic}{kb} - \Perm{ab}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{kl}{ad}\vint{ij}{cb}\tamp{cd}{kl} - \Perm{ij}\frac{1}{2}\sum\limits_{\mathclap{klcd}}\lamp{il}{cd}\vint{kj}{ab}\tamp{cd}{kl}
-\end{align}
-
-
 \chapter{CCSD Diagrams}
 
 The following diagrams and their corresponding algebraic expressions comprise the different contributions to the CCSD cluster amplitudes \textit{without} directly building the effective Hamiltonian, $\EHam$.  The boxed diagrams are automatically zero in a Hartree-Fock basis.  The contributions to the CCSD singles equation, \eqref{eq:ccsd2}, are given by Eqs.\ \eqref{eq:ccsd_t1_1}-\eqref{eq:ccsd_t1_8}.

@@ -42,13 +42,12 @@
 \contentsline {subsection}{\numberline {4.6.1}One-Particle-Attached Nuclei}{95}{subsection.4.6.1}
 \contentsline {subsection}{\numberline {4.6.2}One-Particle-Removed Nuclei}{95}{subsection.4.6.2}
 \contentsline {subsection}{\numberline {4.6.3}Center-of-Mass Treatment of EOM States}{95}{subsection.4.6.3}
-\contentsline {chapter}{\numberline {Chapter{} 5}Effective Operators}{106}{chapter.5}
-\contentsline {section}{\numberline {5.1}Beta Decay}{108}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sum Rules}{109}{section.5.2}
-\contentsline {section}{\numberline {5.3}Calculating Beta-Decay Matrix Elements}{110}{section.5.3}
+\contentsline {chapter}{\numberline {Chapter{} 5}Beta--Decay Operators}{106}{chapter.5}
+\contentsline {section}{\numberline {5.1}Sum Rules}{109}{section.5.1}
+\contentsline {section}{\numberline {5.2}Calculating Beta-Decay Matrix Elements}{110}{section.5.2}
 \contentsline {chapter}{\numberline {Chapter{} 6}Conclusions and Perspectives}{112}{chapter.6}
 \contentsline {chapter}{\MakeUppercase {Appendices}}{113}{section*.47}
-\contentsline {section}{Appendix{} A{} CCSD Diagrams}{117}{appendix.A}
-\contentsline {section}{Appendix{} B{} Computational Implementation}{131}{appendix.B}
-\contentsline {section}{Appendix{} C{} Angular Momentum Coupling}{142}{appendix.C}
-\contentsline {chapter}{\MakeUppercase {References}}{145}{section*.55}
+\contentsline {section}{Appendix{} A{} CCSD Diagrams}{114}{appendix.A}
+\contentsline {section}{Appendix{} B{} Computational Implementation}{128}{appendix.B}
+\contentsline {section}{Appendix{} C{} Angular Momentum Coupling}{139}{appendix.C}
+\contentsline {chapter}{\MakeUppercase {References}}{142}{section*.55}

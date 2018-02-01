@@ -7,7 +7,6 @@ I was expecting an "="---line 1137 of file thesis.bib
  :   article 
  :           NUMBER = {26},
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "eq:cc_ansatz"
 Warning--I didn't find a database entry for "reimann2002"
 Warning--I didn't find a database entry for "engel1993"
 Warning--I didn't find a database entry for "BIRMAN20131"
@@ -21,7 +20,7 @@ Warning--empty author in blas
 Warning--empty booktitle in SHERRILL1999143
 You've used 141 entries,
             2118 wiz_defined-function locations,
-            1405 strings with 31831 characters,
+            1404 strings with 31819 characters,
 and the built_in function-call counts, 57003 in all, are:
 = -- 5263
 > -- 3776
