@@ -1,62 +1,56 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-The style file: plain.bst
+The style file: ieeetr.bst
 Database file #1: thesis.bib
-I was expecting an "="---line 1137 of file thesis.bib
+I was expecting an "="---line 1312 of file thesis.bib
  :   article 
  :           NUMBER = {26},
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "reimann2002"
-Warning--I didn't find a database entry for "engel1993"
-Warning--I didn't find a database entry for "BIRMAN20131"
-Warning--I didn't find a database entry for "tarucha1996"
 Warning--I didn't find a database entry for "lohne2010coupled"
 Warning--I didn't find a database entry for "NIST:DLMF"
-Warning--to sort, need author or key in GOLDSTONE1957267
-Warning--to sort, need author or key in blas
 Warning--empty author in GOLDSTONE1957267
-Warning--empty author in blas
 Warning--empty booktitle in SHERRILL1999143
-You've used 141 entries,
-            2118 wiz_defined-function locations,
-            1404 strings with 31819 characters,
-and the built_in function-call counts, 57003 in all, are:
-= -- 5263
-> -- 3776
-< -- 3
-+ -- 1520
-- -- 1360
-* -- 5003
-:= -- 9935
-add.period$ -- 426
-call.type$ -- 141
-change.case$ -- 1096
+Warning--empty author in blas
+You've used 155 entries,
+            1876 wiz_defined-function locations,
+            1454 strings with 33628 characters,
+and the built_in function-call counts, 52016 in all, are:
+= -- 5156
+> -- 2432
+< -- 0
++ -- 879
+- -- 724
+* -- 3850
+:= -- 7232
+add.period$ -- 164
+call.type$ -- 155
+change.case$ -- 147
 chr.to.int$ -- 0
-cite$ -- 146
-duplicate$ -- 1556
-empty$ -- 3657
-format.name$ -- 1360
-if$ -- 11166
+cite$ -- 158
+duplicate$ -- 2683
+empty$ -- 4092
+format.name$ -- 724
+if$ -- 12721
 int.to.chr$ -- 0
-int.to.str$ -- 141
-missing$ -- 144
-newline$ -- 705
-num.names$ -- 278
-pop$ -- 874
+int.to.str$ -- 155
+missing$ -- 159
+newline$ -- 478
+num.names$ -- 153
+pop$ -- 267
 preamble$ -- 1
-purify$ -- 962
+purify$ -- 0
 quote$ -- 0
-skip$ -- 1028
+skip$ -- 2452
 stack$ -- 0
-substring$ -- 3615
-swap$ -- 152
-text.length$ -- 3
+substring$ -- 3523
+swap$ -- 1537
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 550
-warning$ -- 5
-while$ -- 450
-width$ -- 144
-write$ -- 1543
+type$ -- 0
+warning$ -- 3
+while$ -- 424
+width$ -- 158
+write$ -- 1589
 (There was 1 error message)

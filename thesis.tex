@@ -139,7 +139,9 @@
 
 \newcommand{\dboxed}[1]{\dbox{\ensuremath{#1}}}
 
+\renewcommand{\arraystretch}{0.6}
 \newcommand{\sixj}[6]{\begin{Bmatrix} #1 & #2 & #3 \\ #4 & #5 & #6 \end{Bmatrix}}
+%\newcommand{\sixj}[6]{ \singlespacing \left \{ \begin{tabular}{ccc} #1 & #2 & #3 \\ #4 & #5 & #6 \end{tabular} \right \} \vspace[0.5cm] \doublespacing }
 
 \author{Samuel John Novario}
 \title{Effective Beta--Decay Operators with Coupled Cluster Theory}
@@ -153,21 +155,7 @@
 
 
 \chapter{Abstract}
-
-Your abstract goes here.  This is a preview of the dissertation/thesis template.  General instructions for the template can be found in Chapter \ref{chapter:instructions}.
-
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique pretium ipsum nec bibendum. Vestibulum eleifend viverra dui, non molestie libero tincidunt a. Duis commodo odio eget rhoncus cursus. Quisque mattis scelerisque purus in facilisis. Ut consectetur luctus venenatis. Phasellus pulvinar congue tellus, eu tempor augue congue at. In hac habitasse platea dictumst. In accumsan tristique neque quis convallis. Duis quis porttitor orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed sit amet elit sit amet elit scelerisque mattis. Nam a cursus sapien.
-
-
-\chapter{Dedication}
-
-Your dedication goes here.  It is optional.
-
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis mauris vitae massa aliquet, at accumsan lorem lobortis.
+\subfile{abstract}
 
 \chapter{Acknowledgments}
 \subfile{acknowledgments}
@@ -197,11 +185,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis mauris vit
 \subfile{BetaDecay}
 
 \chapter{Conclusions and Perspectives} \label{chapter:conclusions}
+\subfile{conclusions}
 
 \appendix
 \subfile{Appendix}
 
-\bibliographystyle{plain}
+\bibliographystyle{ieeetr}
 \renewcommand{\bibname}{References}
 \bibliography{thesis}
 

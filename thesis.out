@@ -1,11 +1,11 @@
 \BOOKMARK [0][-]{msudissertation@tableofcontents.0}{Table of Contents}{}% 1
-\BOOKMARK [0][-]{section*.6}{List of Tables}{}% 2
-\BOOKMARK [0][-]{section*.8}{List of Figures}{}% 3
-\BOOKMARK [0][-]{section*.10}{Key to Symbols and Abbreviations}{}% 4
+\BOOKMARK [0][-]{section*.5}{List of Tables}{}% 2
+\BOOKMARK [0][-]{section*.7}{List of Figures}{}% 3
+\BOOKMARK [0][-]{section*.9}{Key to Symbols and Abbreviations}{}% 4
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
 \BOOKMARK [1][-]{section.1.1}{A Brief History of Nuclear Structure Theory}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.2}{Electroweak Theory and Nuclear Structure}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.3}{Ab-Initio Descriptions of \040Decay}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Ab-Initio Descriptions of Beta Decay}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.4}{Thesis Structure}{chapter.1}% 9
 \BOOKMARK [0][-]{chapter.2}{Many-Body Quantum Mechanics}{}% 10
 \BOOKMARK [1][-]{section.2.1}{Independent-Particle Model}{chapter.2}% 11
@@ -33,22 +33,22 @@
 \BOOKMARK [0][-]{chapter.4}{Equation-of-Motion Method}{}% 33
 \BOOKMARK [1][-]{section.4.1}{Equation-of-Motion States}{chapter.4}% 34
 \BOOKMARK [1][-]{section.4.2}{Dual Solutions}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.3}{Solving the EOM equations}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.3.1}{Induced Three-Body Interaction}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.2.1}{Induced Three-Body Interaction}{section.4.2}% 36
+\BOOKMARK [1][-]{section.4.3}{Solving the EOM equations}{chapter.4}% 37
 \BOOKMARK [1][-]{section.4.4}{EOM-CC for 2D Quantum Dots}{chapter.4}% 38
 \BOOKMARK [2][-]{subsection.4.4.1}{Quantum Dot Formalism}{section.4.4}% 39
 \BOOKMARK [2][-]{subsection.4.4.2}{Quantum Dot Results}{section.4.4}% 40
 \BOOKMARK [1][-]{section.4.5}{Quality of EOM Solutions}{chapter.4}% 41
 \BOOKMARK [1][-]{section.4.6}{EOM-CC for Finite Nuclei}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.6.1}{One-Particle-Attached Nuclei}{section.4.6}% 43
-\BOOKMARK [2][-]{subsection.4.6.2}{One-Particle-Removed Nuclei}{section.4.6}% 44
-\BOOKMARK [2][-]{subsection.4.6.3}{Center-of-Mass Treatment of EOM States}{section.4.6}% 45
-\BOOKMARK [0][-]{chapter.5}{Beta\205Decay Operators}{}% 46
-\BOOKMARK [1][-]{section.5.1}{Sum Rules}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.2}{Calculating Beta-Decay Matrix Elements}{chapter.5}% 48
-\BOOKMARK [0][-]{chapter.6}{Conclusions and Perspectives}{}% 49
-\BOOKMARK [0][-]{section*.47}{Appendices}{}% 50
-\BOOKMARK [1][-]{appendix.A}{Appendix A CCSD Diagrams}{section*.47}% 51
-\BOOKMARK [1][-]{appendix.B}{Appendix B Computational Implementation}{section*.47}% 52
-\BOOKMARK [1][-]{appendix.C}{Appendix C Angular Momentum Coupling}{section*.47}% 53
-\BOOKMARK [0][-]{section*.55}{References}{}% 54
+\BOOKMARK [0][-]{chapter.5}{Beta\205Decay Operators}{}% 43
+\BOOKMARK [1][-]{section.5.1}{Sum Rules}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.2}{Calculating Beta-Decay Matrix Elements}{chapter.5}% 45
+\BOOKMARK [0][-]{chapter.6}{Conclusions and Perspectives}{}% 46
+\BOOKMARK [1][-]{section.6.1}{Summary and Conclusions}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.2}{Future Perspectives}{chapter.6}% 48
+\BOOKMARK [0][-]{section*.42}{Appendices}{}% 49
+\BOOKMARK [1][-]{appendix.A}{Appendix A CCSD Diagrams}{section*.42}% 50
+\BOOKMARK [1][-]{appendix.B}{Appendix B Effective Hamiltonian Diagrams}{section*.42}% 51
+\BOOKMARK [1][-]{appendix.C}{Appendix C Computational Implementation}{section*.42}% 52
+\BOOKMARK [1][-]{appendix.D}{Appendix D Angular Momentum Coupling}{section*.42}% 53
+\BOOKMARK [0][-]{section*.50}{References}{}% 54

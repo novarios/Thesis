@@ -242,9 +242,9 @@ for num in range(len(e1)):
         labelstring = r'$\mathrm{' + jp1[num] + '}$'
 
     if(p1[num] == '--'):
-        ax1.plot(xa[3], e1[num], linestyle=p1[num], dashes=(7,1), color=j1[num], linewidth=1.75, label=labelstring)
+        ax1.plot(xa[3], e1[num], linestyle=p1[num], dashes=(7,1), color=j1[num], linewidth=2.5, label=labelstring)
     else:
-        ax1.plot(xa[3], e1[num], linestyle=p1[num], color=j1[num], linewidth=1.75, label=labelstring)
+        ax1.plot(xa[3], e1[num], linestyle=p1[num], color=j1[num], linewidth=2.5, label=labelstring)
 
 for index in range(3):
     offset = e2[index][0][0]
@@ -260,27 +260,28 @@ for index in [0,1]:
             labelstring = r'$\mathrm{' + jp2[index][num] + '}$'
 
         if(p2[index][num] == '--'):
-            ax1.plot(xa[index], e2[index][num], linestyle=p2[index][num], dashes=(7,1), color=j2[index][num], linewidth=1.75, label=labelstring)
+            ax1.plot(xa[index], e2[index][num], linestyle=p2[index][num], dashes=(7,1), color=j2[index][num], linewidth=2.5, label=labelstring)
         else:
-            ax1.plot(xa[index], e2[index][num], linestyle=p2[index][num], color=j2[index][num], linewidth=1.75, label=labelstring)
+            ax1.plot(xa[index], e2[index][num], linestyle=p2[index][num], color=j2[index][num], linewidth=2.5, label=labelstring)
 
-ax1.plot([xa[0][1], xa[1][0]], [e2[0][0], e2[1][0]], linestyle=':', color='b', linewidth=1.65)
-ax1.plot([xa[1][1], xa[3][0]], [e2[1][0], e1[0]], linestyle=':', color='b', linewidth=1.65)
+ax1.plot([xa[0][1], xa[1][0]], [e2[0][0], e2[1][0]], linestyle=':', color='b', linewidth=2.5)
+ax1.plot([xa[1][1], xa[3][0]], [e2[1][0], e1[0]], linestyle=':', color='b', linewidth=2.5)
 
-ax1.plot([xa[0][1], xa[1][0]], [e2[0][2], e2[1][1]], linestyle=':', color='r', linewidth=1.65)
-ax1.plot([xa[1][1], xa[3][0]], [e2[1][1], e1[1]], linestyle=':', color='r', linewidth=1.65)
+ax1.plot([xa[0][1], xa[1][0]], [e2[0][2], e2[1][1]], linestyle=':', color='r', linewidth=2.5)
+ax1.plot([xa[1][1], xa[3][0]], [e2[1][1], e1[1]], linestyle=':', color='r', linewidth=2.5)
 
-#ax1.plot([xa[0][1], xa[1][0]], [e2[0][4], e2[1][2]], linestyle=':', color='r', linewidth=1.65)
-#ax1.plot([xa[1][1], xa[3][0]], [e2[1][2], e1[2]], linestyle=':', color='r', linewidth=1.65)
+#ax1.plot([xa[0][1], xa[1][0]], [e2[0][4], e2[1][2]], linestyle=':', color='r', linewidth=2.5)
+#ax1.plot([xa[1][1], xa[3][0]], [e2[1][2], e1[2]], linestyle=':', color='r', linewidth=2.5)
 
-ax1.axis([-13.0, 15.0, -0.5, 12.0], fontsize=18)
-ax1.tick_params(axis='x',labelsize=16)
-ax1.set_ylabel(r'$\mathrm{E\ (MeV)}$', fontsize=18)
+ax1.axis([-13.0, 15.0, -0.5, 12.0], fontsize=22)
+ax1.tick_params(axis='x',labelsize=20)
+ax1.tick_params(axis='y',labelsize=16)
+ax1.set_ylabel(r'$\mathrm{E\ (MeV)}$', fontsize=20)
 annotation_string = r'$\mathrm{^{15}N}$'
-ax1.annotate(annotation_string, fontsize=22, xy=(0.915, 0.1), xycoords='axes fraction')
+ax1.annotate(annotation_string, fontsize=24, xy=(0.9, 0.05), xycoords='axes fraction')
 plt.setp(ax1, xticks=[-9.0,0.0,9.0], xticklabels=[r'$\beta=0$',r'$\beta=1$',r'$\mathrm{Exp.}$'])
 
-ax1.legend(loc='upper right', frameon=False, fontsize=15, labelspacing=0.0)
+ax1.legend(loc='upper right', frameon=False, fontsize=18, labelspacing=0.0)
 
 
 
@@ -292,9 +293,9 @@ for num in range(len(e3)):
         labelstring = r'$\mathrm{' + jp3[num] + '}$'
 
     if(p3[num] == '--'):
-        ax2.plot(xa[3], e3[num], linestyle=p3[num], dashes=(7,1), color=j3[num], linewidth=1.75, label=labelstring)
+        ax2.plot(xa[3], e3[num], linestyle=p3[num], dashes=(7,1), color=j3[num], linewidth=2.5, label=labelstring)
     else:
-        ax2.plot(xa[3], e3[num], linestyle=p3[num], color=j3[num], linewidth=1.75, label=labelstring)
+        ax2.plot(xa[3], e3[num], linestyle=p3[num], color=j3[num], linewidth=2.5, label=labelstring)
 
 for index in range(3):
     offset = e4[index][0][0]
@@ -310,28 +311,28 @@ for index in [0,1]:
             labelstring = r'$\mathrm{' + jp4[index][num] + '}$'
 
         if(p4[index][num] == '--'):
-            ax2.plot(xa[index], e4[index][num], linestyle=p4[index][num], dashes=(7,1), color=j4[index][num], linewidth=1.75, label=labelstring)
+            ax2.plot(xa[index], e4[index][num], linestyle=p4[index][num], dashes=(7,1), color=j4[index][num], linewidth=2.5, label=labelstring)
         else:
-            ax2.plot(xa[index], e4[index][num], linestyle=p4[index][num], color=j4[index][num], linewidth=1.75, label=labelstring)
+            ax2.plot(xa[index], e4[index][num], linestyle=p4[index][num], color=j4[index][num], linewidth=2.5, label=labelstring)
 
-ax2.plot([xa[0][1], xa[1][0]], [e4[0][0], e4[1][0]], linestyle=':', color='b', linewidth=1.65)
-ax2.plot([xa[1][1], xa[3][0]], [e4[1][0], e3[0]], linestyle=':', color='b', linewidth=1.65)
+ax2.plot([xa[0][1], xa[1][0]], [e4[0][0], e4[1][0]], linestyle=':', color='b', linewidth=2.5)
+ax2.plot([xa[1][1], xa[3][0]], [e4[1][0], e3[0]], linestyle=':', color='b', linewidth=2.5)
 
-ax2.plot([xa[0][1], xa[1][0]], [e4[0][2], e4[1][1]], linestyle=':', color='r', linewidth=1.65)
-ax2.plot([xa[1][1], xa[3][0]], [e4[1][1], e3[1]], linestyle=':', color='r', linewidth=1.65)
+ax2.plot([xa[0][1], xa[1][0]], [e4[0][2], e4[1][1]], linestyle=':', color='r', linewidth=2.5)
+ax2.plot([xa[1][1], xa[3][0]], [e4[1][1], e3[1]], linestyle=':', color='r', linewidth=2.5)
 
-#ax2.plot([xa[0][1], xa[1][0]], [e4[0][4], e4[1][2]], linestyle=':', color='r', linewidth=1.65)
-#ax2.plot([xa[1][1], xa[3][0]], [e4[1][2], e3[2]], linestyle=':', color='r', linewidth=1.65)
+#ax2.plot([xa[0][1], xa[1][0]], [e4[0][4], e4[1][2]], linestyle=':', color='r', linewidth=2.5)
+#ax2.plot([xa[1][1], xa[3][0]], [e4[1][2], e3[2]], linestyle=':', color='r', linewidth=2.5)
 
 
-ax2.axis([-13.0, 15.0, -0.5, 12.0], fontsize=18)
-ax2.tick_params(axis='x',labelsize=16)
+ax2.axis([-13.0, 15.0, -0.5, 12.0], fontsize=22)
+ax2.tick_params(axis='x',labelsize=20)
 plt.setp(ax2.get_yticklabels(), visible=False)
 annotation_string = r'$\mathrm{^{15}O}$'
-ax2.annotate(annotation_string, fontsize=22, xy=(0.915, 0.1), xycoords='axes fraction')
+ax2.annotate(annotation_string, fontsize=24, xy=(0.9, 0.05), xycoords='axes fraction')
 plt.setp(ax2, xticks=[-9.0,0.0,9.0], xticklabels=[r'$\beta=0$',r'$\beta=1$',r'$\mathrm{Exp.}$'])
 
-ax2.legend(loc='upper right', frameon=False, fontsize=15, labelspacing=0.0)
+ax2.legend(loc='upper right', frameon=False, fontsize=18, labelspacing=0.0)
 
 
 
