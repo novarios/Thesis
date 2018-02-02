@@ -205,7 +205,7 @@ The factor of $\left(\frac{1}{2}\right)$ is applied when solving the CCSD equati
 
 The sums involved in building the CC effective Hamiltonian, solving the CC equations, solving the EOM-CC equations, and building effective operators can all be reformulated as matrix-matrix multiplications and thus performed with efficient LAPACK and BLAS routines.  To take advantage of this efficiency, the various cluster amplitudes and matrix elements must be grouped into structures with similar index organization so that summed indices map to the same states and matrix elements.  An additional benefit to these structures is that angular-momentum-coupling coefficients are automatically removed by summing over Clebsch-Gordon coefficients, see chapter \ref{chapter:angular_momentum}.
 
-\section{Channel Definitions}
+\section{Symmetry Channels}
 
 Each matrix structure is separated into different symmetry channels for different perutations of its indices.  The channels are denoted as $\Sigma_{\vec{\xi}}$, where $\vec{\xi}$ represents the relevant quantum numbers of a certain channel.  There are four different channel types that are relevant for the structures used in this work.
 
@@ -226,7 +226,8 @@ The cross three-body state categorizes the vector difference between the quantum
   \vec{\xi}_{pq\bar{r}} = \vec{\xi}_{p} + \vec{\xi}_{q} - \vec{\xi}_{r} = \vec{\xi}_{p} + \vec{\xi}_{q} + \vec{\xi}_{\bar{r}}\ \ \longrightarrow\ \ \ket{pq\bar{r}} \in \Sigma_{\vec{\xi}_{3}=\vec{\xi}_{pq\bar{r}}}.
 \end{gather}
 
-\section{Structure Definitions}
+\section{Channel-Partitioned Structures} \label{section:channel_matrices}
+
 Different matrix structures are indexed by their channel type: $1$ for direct channels, $2$ for cross channels, and $3$ for one-/three-body channels.  Matrices with more than one structure of the same type, there is an additional index that depends on the specific permutation involved.
 
 For a one-body operator $A^{p}_{q}\normord{\co{p}\ao{q}}$, there is a direct-channel matrix element and a cross-channel matrix element,
@@ -253,7 +254,7 @@ EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ has similar s
   \mathbf{A}_{2_{1}} = A^{p\bar{r}}_{q} \hspace{1.0cm} \mathbf{A}_{2_{2}} = A^{p\bar{q}}_{r}
 \end{gather}
 
-\section{$\EHam$, Matrix Form}
+\section{Matrix Form of $\EHam = \left(\HamN\E^{\Top}\right)_{\mathrm{c}}$}
 
 \begin{align}
   \xint{i}{a} &= \dboxed{\fint{i}{a}} + \vint{i\bar{a}}{c\bar{k}}\tamp{c\bar{k}}{} \notag \\
@@ -372,7 +373,7 @@ EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ has similar s
 \end{align}
 
 
-\section{$\hat{R}^{+}_{k}$, Matrix Form}
+\section{Matrix Form of $\left(\EHamN\Rop^{A+1}_{\mu}\right)_{\mathrm{c}} = \omega_{\mu}\Rop^{A+1}_{\mu}$}
 
 \begin{align}
   \omega_{k}\rop{a}{} &= \xint{a}{c}\rop{c}{} + \rop{a}{k\bar{c}}\xint{k\bar{c}}{} - \frac{1}{2}\xint{a}{cd\bar{k}}\rop{cd\bar{k}}{} \notag \\
@@ -386,7 +387,7 @@ EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ has similar s
 \end{align}
 
 
-\section{$\hat{L}^{+}_{k}$, Matrix Form}
+\section{Matrix Form of $\Lop^{A+1}_{\mu}\EHamN = E_{\mu}\Lop^{A+1}_{\mu}$}
 The difference for the left eigenproblem is that disconnected term is computed as an outer product rather than with matrix-matrix multiplication.
 
 \begin{align}
@@ -402,7 +403,7 @@ The difference for the left eigenproblem is that disconnected term is computed a
 \end{align}
 
 
-\section{$\hat{R}^{-}_{k}$, Matrix Form}
+\section{Matrix Form of $\left(\EHamN\Rop^{A-1}_{\mu}\right)_{\mathrm{c}} = \omega_{\mu}\Rop^{A-1}_{\mu}$}
 
 \begin{align}
   \omega_{k}\rop{}{i} &= -\rop{}{k}\xint{k}{i} + \xint{}{c\bar{k}}\rop{c\bar{k}}{i} - \frac{1}{2}\rop{}{kl\bar{c}}\xint{kl\bar{c}}{i} \notag \\
@@ -416,7 +417,7 @@ The difference for the left eigenproblem is that disconnected term is computed a
 \end{align}
 
 
-\section{$\hat{L}^{-}_{k}$, Matrix Form}
+\section{Matrix Form of $\Lop^{A-1}_{\mu}\EHamN = E_{\mu}\Lop^{A-1}_{\mu}$}
 Again, the disconnected term is computed as an outer product rather than with matrix-matrix multiplication.
 
 \begin{align}
@@ -432,6 +433,7 @@ Again, the disconnected term is computed as an outer product rather than with ma
 \end{align}
 
 
+
 \chapter{Angular Momentum Coupling} \label{chapter:angular_momentum}
 
 Before deriving useful equations for J-scheme angular momentum coupling, it's neccessary to list some shorthand notations, definitions, and useful relationships:
@@ -445,11 +447,13 @@ Clebsch-Gordan coefficients:
   \braket{pq}{J} \equiv \braket{j_{p}m_{p} ; j_{q}m_{q}}{JM} \\
   \braket{p\bar{q}}{J} \equiv \braket{j_{p},m_{p} ; j_{q},-m_{q}}{JM}(-1)^{( q - m_{q} )} \\
   \sum_{JM} \braket{pq}{J}\braket{p'q'}{J} = \delta_{m_{p}m_{p'}}\delta_{m_{q}m_{q'}} \\
+  \label{eq:cgc_identity}
   \sum_{m_{p}m_{q}} \braket{pq}{J}\braket{pq}{J'} = \delta_{JJ'}\delta_{MM'} \\
 \end{gather}
 
 Clebsch-Gordan coefficient symmetries:
 \begin{align}
+  \label{eq:cgc1}
   \braket{j_{p}m_{p} ; j_{q}m_{q}}{JM} &= (-1)^{j_{p}+j_{q}-J}\braket{j_{p}m_{p} ; j_{q}m_{q}}{JM} \\
   \label{eq:cgc2}
   &= (-1)^{j_{p}+j_{q}-J}\braket{j_{q}m_{q} ; j_{p}m_{p}}{JM} \\
@@ -484,55 +488,37 @@ Two-body M-scheme matrix elements in terms of J-scheme, scalar matrix elements:
   X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}} &= \sum_{JM} X^{pq^{J}}_{rs^{J}} \braket{pq}{J} \braket{rs}{J} \\
   \label{eq:mscheme2}
   &= \sum_{J'M'} X^{p\bar{s}^{J'}}_{r\bar{q}^{J'}} \braket{p\bar{s}}{J'} \braket{r\bar{q}}{J'} \\
+  \label{eq:mscheme3}
   &= \sum_{JM} X^{p}_{rs^{J}\bar{q}} \braket{rs}{J} \braket{J\bar{q}}{p} \\
   &= \sum_{JM} X^{pq^{J}\bar{s}}_{r} \braket{pq}{J} \braket{J\bar{s}}{r}
 \end{align}
 
-To find the relationship between the scalar matrix elements of $\Top$, $\Ham$, and $\EHam$ with different couplings, the M-scheme expressions are written in terms of their different couplings, then the Clebsch-Gordon coefficients are reorganized using Eqs.\ \eqref{eq:cgc_symmetries}--\eqref{eq:pandya2} so that they have the same form.  A few examples of this recoupling are shown below with the relevant equation used at each step. The shorthand $X \equiv X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}}$ is used for clarity.  The relationship between $X^{pq^{J}}_{rs^{J}}$ and $X^{p\bar{s}^{J'}}_{r\bar{q}^{J'}}$ is,
-\begin{align}
-  X^{pq^{J}}_{rs^{J}} &= \sum_{\mathclap{ M\{ m \} }} X \braket{pq}{J}\braket{rs}{J} \notag \\
-  &= \sum_{\mathclap{ J'M'\{ m \} }} X \hat{J}^{2}\sixj{p}{q}{J}{r}{s}{J'}\braket{p\bar{s}}{J'}\braket{r\bar{q}}{J'}\ \hspace{0.5cm} \eqref{eq:pandya2}  \notag \\
-  &= \sum_{\mathclap{ J }} X^{p\bar{s}^{J'}}_{r\bar{q}^{J'}} \hat{J}^{2}\sixj{p}{q}{J}{r}{s}{J'}\ \hspace{0.5cm} \eqref{eq:jscheme2} \notag
+To find the relationship between the scalar matrix elements of $\Top$, $\Ham$, and $\EHam$ with different couplings, the M-scheme expressions are written in terms of their different couplings, then the Clebsch-Gordon coefficients are reorganized using Eqs.\ \eqref{eq:cgc1}--\eqref{eq:pandya2} so that they have the same form.  A few examples of this recoupling are shown below with the relevant equation used at each step. The shorthand $X \equiv X^{p_{m_{p}} q_{m_{q}}}_{r_{m_{r}} s_{m_{s}}}$ is used for clarity.  The relationship between $X^{pq^{J}}_{rs^{J}}$ and $X^{p\bar{s}^{J'}}_{r\bar{q}^{J'}}$ is,
+\begin{align} \label{eq:structure_trans1}
+  X^{pq^{J}}_{rs^{J}} &= \sum_{\mathclap{ M\{ m \} }} X \braket{pq}{J}\braket{rs}{J} = \sum_{\mathclap{ J'M'\{ m \} }} X \hat{J}^{2}\sixj{p}{q}{J}{r}{s}{J'}\braket{p\bar{s}}{J'}\braket{r\bar{q}}{J'}\ \hspace{0.5cm} \eqref{eq:pandya2}  \notag \\
+  &= \sum_{\mathclap{ J }} X^{p\bar{s}^{J'}}_{r\bar{q}^{J'}} \hat{J}^{2}\sixj{p}{q}{J}{r}{s}{J'}\ \hspace{0.5cm} \eqref{eq:jscheme2}
 \end{align}
 As another example, the relationship between $X^{pq^{J}}_{rs^{J}}$ and $X^{p}_{rs^{J}\bar{q}}$ is,
-\begin{align}
-  X^{pq^{J}}_{rs^{J}} &= \sum_{\mathclap{ \{ m \} }} X \braket{pq}{J}\braket{rs}{J} \notag \\
-  &= \sum_{\mathclap{ \{ m \} }} X \braket{qp}{J}\braket{rs}{J}(-1)^{j_{p}+j_{q}-J}\ \hspace{0.5cm} \eqref{eq:cgc2}  \notag \\
+\begin{align} \label{eq:structure_trans2}
+  X^{pq^{J}}_{rs^{J}} &= \sum_{\mathclap{ \{ m \} }} X \braket{pq}{J}\braket{rs}{J} = \sum_{\mathclap{ \{ m \} }} X \braket{qp}{J}\braket{rs}{J}(-1)^{j_{p}+j_{q}-J}\ \hspace{0.5cm} \eqref{eq:cgc2}  \notag \\
   &= \sum_{\mathclap{ \{ m \} }} X \frac{\hat{J}}{\hat{p}}\braket{J\bar{q}}{p}\braket{rs}{J}(-1)^{j_{p}+j_{q}-J}\ \hspace{0.5cm} \eqref{eq:cgc5}  \notag \\
-  &= X^{p}_{rs^{J}\bar{q}} \frac{\hat{J}}{\hat{p}}(-1)^{j_{p}+j_{q}-J}\ \hspace{0.5cm} \eqref{eq:jscheme2} \notag
+  &= X^{p}_{rs^{J}\bar{q}} \frac{\hat{J}}{\hat{p}}(-1)^{j_{p}+j_{q}-J}\ \hspace{0.5cm} \eqref{eq:jscheme2}
 \end{align}
 
-The matrix-matrix expressions that 
-  
-\begin{flalign}
-  &= \sum_{\mathclap{J'M'}}t_{i\overline{a},J'}^{b\overline{j},J'}\mathop{\langle b_{m_{b}}j_{-m_{j}}|J'_{M'}\rangle}\mathop{\langle i_{m_{i}}a_{-m_{a}}|J'_{M'}\rangle}\mathop{\left( -1\right)^{j-m_{j}+a-m_{a}}}\mathop{\{ b_{m_{b}}^{\dagger}j_{m_{j}}a_{m_{a}}^{\dagger}i_{m_{i}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= \sum_{\mathclap{J'JM}}t_{i\overline{a},J'}^{b\overline{j},J'}\hat{J'}^{2}\sixj{b}{a}{J}{i}{j}{J'}\mathop{\left( -1\right)^{a+b-J}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[0.3cm]
-  &= \sum_{\mathclap{J'M'}}t_{j\overline{b},J'}^{a\overline{i},J'}\mathop{\langle a_{m_{a}}i_{-m_{i}}|J'_{M'}\rangle}\mathop{\langle j_{m_{j}}b_{-m_{b}}|J'_{M'}\rangle}\mathop{\left( -1\right)^{i-m_{i}+b-m_{b}}}\mathop{\{ a_{m_{a}}^{\dagger}i_{m_{i}}b_{m_{b}}^{\dagger}j_{m_{j}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= \sum_{\mathclap{J'JM}}t_{j\overline{b},J'}^{a\overline{i},J'}\hat{J'}^{2}\sixj{a}{b}{J}{j}{i}{J'}\mathop{\left( -1\right)^{i+j-J}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[0.3cm]
-  &= \sum_{\mathclap{J'M'}}t_{i\overline{b},J'}^{a\overline{j},J'}\mathop{\langle a_{m_{a}}j_{-m_{j}}|J'_{M'}\rangle}\mathop{\langle i_{m_{i}}b_{-m_{b}}|J'_{M'}\rangle}\mathop{\left( -1\right)^{j-m_{j}+b-m_{b}}}\mathop{\{ a_{m_{a}}^{\dagger}j_{m_{j}}b_{m_{b}}^{\dagger}i_{m_{i}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= -\sum_{\mathclap{J'JM}}t_{i\overline{b},J'}^{a\overline{j},J'}\hat{J'}^{2}\sixj{a}{b}{J}{i}{j}{J'}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[0.3cm]
-  &= \sum_{\mathclap{J'M'}}t_{j\overline{a},J'}^{b\overline{i},J'}\mathop{\langle b_{m_{b}}i_{-m_{i}}|J'_{M'}\rangle}\mathop{\langle j_{m_{j}}a_{-m_{a}}|J'_{M'}\rangle}\mathop{\left( -1\right)^{i-m_{i}+a-m_{a}}}\mathop{\{ b_{m_{b}}^{\dagger}i_{m_{i}}a_{m_{a}}^{\dagger}j_{m_{j}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= -\sum_{\mathclap{J'JM}}t_{j\overline{a},J'}^{b\overline{i},J'}\hat{J'}^{2}\sixj{b}{a}{J}{j}{i}{J'}\mathop{\left( -1\right)^{i+j+a+b}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[0.3cm]
-  &= \sum_{\mathclap{JM}}t_{i,J}^{ab\overline{j}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle J_{M}j_{-m_{j}}|i_{m_{i}}\rangle}\mathop{\left( -1\right) ^{j-m_{j}}}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= \sum_{\mathclap{JM}}t_{i,J}^{ab\overline{j}}\frac{\hat{i}}{\hat{J}}\mathop{\left( -1\right)^{i+j-J}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[0.3cm]
-  &= \sum_{\mathclap{JM}}t_{j,J}^{ab\overline{i}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle J_{M}i_{-m_{i}}|j_{m_{j}}\rangle}\mathop{\left( -1\right) ^{i-m_{i}}}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}i_{m_{i}}j_{m_{j}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= -\sum_{\mathclap{JM}}t_{j,J}^{ab\overline{i}}\frac{\hat{j}}{\hat{J}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[0.3cm]
-  &= \sum_{\mathclap{JM}}t_{ij\overline{b}}^{a,J}\mathop{\langle J_{M}b_{-m_{b}}|a_{m_{a}}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\left( -1\right) ^{b-m_{b}}}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= \sum_{\mathclap{JM}}t_{ij\overline{b}}^{a,J}\frac{\hat{a}}{\hat{J}}\mathop{\left( -1\right)^{a+b-J}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[0.3cm]
-  &= \sum_{\mathclap{JM}}t_{ij\overline{a}}^{b,J}\mathop{\langle J_{M}a_{-m_{a}}|b_{m_{b}}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\left( -1\right) ^{a-m_{a}}}\mathop{\{ b_{m_{b}}^{\dagger}a_{m_{a}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag \\[-0.2cm]
-  &\hspace{1cm}= -\sum_{\mathclap{JM}}t_{ij\overline{a}}^{b,J}\frac{\hat{b}}{\hat{J}}\mathop{\langle a_{m_{a}}b_{m_{b}}|J_{M}\rangle}\mathop{\langle i_{m_{i}}j_{m_{j}}|J_{M}\rangle}\mathop{\{ a_{m_{a}}^{\dagger}b_{m_{b}}^{\dagger}j_{m_{j}}i_{m_{i}}\} } \notag
-\end{flalign}
-
+When sums are formulated in the terms of channel-partitioned matrices like those in sections \ref{section:maxtrix_intermediates} and \ref{section:channel_matrices}, the factors related to a structure's angluar momentum coupling are automatically summed with the identity Eq.\ \eqref{eq:cgc_identity}.  To demonstrate this, an example is shown here.  First, from the CCSD equations the sum in Eq.\ \eqref{eq:amp_matrices_3} is rewritten in terms of the J-scheme structures.  The indices represent single-particle states in the M-scheme expression but represent degenerate shells in J-scheme,
+\begin{gather}
+  \frac{1}{2}\sum\limits_{\mathclap{klcd}}\vint{kl}{cd}\tamp{db}{ij}\tamp{ca}{kl}\ \longrightarrow\ \frac{1}{2}\sum\limits_{\mathclap{\substack{klcd \\ J_{1}J_{2}J_{3} \\ \{ m \} }}} \tamp{a}{kl^{J_{1}}\bar{c}}\braket{kl}{J_{1}}\braket{J_{1}\bar{c}}{a} \vint{kl^{J_{2}}\bar{c}}{d}\braket{kl}{J_{2}}\braket{J_{2}\bar{c}}{d} \tamp{d}{ij^{J_{3}}\bar{b}}\braket{ij}{J_{3}}\braket{J_{3}\bar{b}}{d} \notag \\
+  =\frac{1}{2}\sum\limits_{\mathclap{\substack{klcd \\ J_{1}J_{2}J_{3} \\ \{ m \} }}} \tamp{a}{kl^{J_{1}}\bar{c}} \vint{kl^{J_{2}}\bar{c}}{d} \tamp{d}{ij^{J_{3}}\bar{b}} \left[ \sum\limits_{m_{k}m_{l}} \braket{kl}{J_{1}}\braket{kl}{J_{2}} \right] \braket{J_{1}\bar{c}}{a} \braket{J_{2}\bar{c}}{d} \braket{ij}{J_{3}} \braket{J_{3}\bar{b}}{d} \notag \\
+  =\frac{1}{2}\sum\limits_{\mathclap{\substack{klcd \\ J_{1}J_{2}J_{3} \\ \{ m \} }}} \tamp{a}{kl^{J_{1}}\bar{c}} \vint{kl^{J_{2}}\bar{c}}{d} \tamp{d}{ij^{J_{3}}\bar{b}} \left[ \delta_{J_{1}J_{2}}\delta_{M_{1}M_{2}} \right] \braket{J_{1}\bar{c}}{a} \braket{J_{2}\bar{c}}{d} \braket{ij}{J_{3}} \braket{J_{3}\bar{b}}{d} \notag \\
+  =\frac{1}{2}\sum\limits_{\mathclap{\substack{klcd \\ J_{1}J_{3} \\ \{ m \} }}} \tamp{a}{kl^{J_{1}}\bar{c}} \vint{kl^{J_{1}}\bar{c}}{d} \tamp{d}{ij^{J_{3}}\bar{b}} \left[ \sum\limits_{M_{1}m_{c}} \braket{J_{1}\bar{c}}{a} \braket{J_{1}\bar{c}}{d} \right] \braket{ij}{J_{3}} \braket{J_{3}\bar{b}}{d} \notag \\
+  =\frac{1}{2}\sum\limits_{\mathclap{\substack{klcd \\ J_{1}J_{3} \\ \{ m \} }}} \tamp{a}{kl^{J_{1}}\bar{c}} \vint{kl^{J_{1}}\bar{c}}{d} \tamp{d}{ij^{J_{3}}\bar{b}} \left[ \delta_{j_{a}j_{d}}\delta_{m_{a}m_{d}} \right] \braket{ij}{J_{3}} \braket{J_{3}\bar{b}}{d} \notag \\
+  =\frac{1}{2}\sum\limits_{\mathclap{\substack{klcd \\ J_{1}J_{3} \\ \{ m \} }}} \tamp{a}{kl^{J_{1}}\bar{c}} \vint{kl^{J_{1}}\bar{c}}{d} \tamp{d}{ij^{J_{3}}\bar{b}} \braket{ij}{J_{3}} \braket{J_{3}\bar{b}}{a}
+\end{gather}
+This final form has the same structure as Eq.\ \eqref{eq:mscheme3} so that the sum can be collected into the following structure with no angular-momenutm coupling coefficients,
 \begin{equation}
-  {}^{\lambda}R^{ab^{J}}_{i} = {}^{\lambda}\mathbb{R}^{ab^{J}}_{i}\frac{\braket{J\bar{i}}{\lambda}}{\hat{\lambda}}(-1)^{2\lambda}
+  \tamp{a}{ij^{J}\bar{b}}\ \leftarrow \frac{1}{2}\sum\limits_{\mathclap{\substack{klcd \\ J_{1}J_{3} }}} \tamp{a}{kl^{J_{1}}\bar{c}}\vint{kl^{J_{1}}\bar{c}}{d}\tamp{d}{ij^{J_{3}}\bar{b}}.
 \end{equation}
+Amplitudes of different coupling structures are then gathered using relationships like those in Eq.\ \eqref{eq:structure_trans1} and \eqref{eq:structure_trans2}.
 
-\begin{equation}
-  {}^{\lambda}\mathbb{R}^{ab^{J}}_{i} = \sum_{J'}{}^{\lambda}\mathbb{R}^{a}_{i\bar{b}^{J'}}\hat{J}\hat{J}'\sixj{a}{b}{J}{i}{\lambda}{J'}(-1)^{\lambda - a + J'}
-\end{equation}
-
-\begin{equation}
-  {}^{\lambda}\mathbb{R}^{a}_{ij^{J}} = \sum_{J'}{}^{\lambda}\mathbb{R}^{a\bar{j}^{J'}}_{i}\hat{J}\hat{J}'\sixj{i}{j}{J}{a}{\lambda}{J'}(-1)^{\lambda + a - J}
-\end{equation}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  2 FEB 2018 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  2 FEB 2018 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5301,7 +5301,7 @@ So I shall assume that you typed `$$' both times.
 
 ] [137]
 ! Extra }, or forgotten \endgroup.
-l.481 \end{align}}
+l.485 \end{align}}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -5309,20 +5309,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-
-LaTeX Warning: Reference `eq:cgc_symmetries' on page 138 undefined on input lin
-e 491.
-
-[138]
-Overfull \hbox (13.20544pt too wide) in paragraph at lines 524--524
-[] 
- []
-
-[139]
-Overfull \vbox (57.52396pt too high) has occurred while \output is active []
-
-
-[140]) [141] [142
+[138] [139]) [140] [141
 
 ] (./thesis.bbl
 Missing character: There is no Ã in font cmr12!
@@ -5331,7 +5318,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
- [143
+ [142
 
 
 ]
@@ -5343,23 +5330,24 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [144]
+ [143]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [145]
+ [144]
 Missing character: There is no Å in font cmr12!
 Missing character: There is no ‚ in font cmr12!
- [146] [147]
+ [145] [146]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [148]
+ [147]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [149]
+
+[148]
 Underfull \hbox (badness 10000) in paragraph at lines 485--488
 []\OT1/cmr/m/n/12 V. Fock, ``N^^?aherungsmethode zur l^^?osung des quan-ten-mec
 h-a-nis-chen
@@ -5369,18 +5357,18 @@ Missing character: There is no Å in font cmr12!
 Missing character: There is no ½ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ‡ in font cmr12!
-[150]
+[149]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [151] [152] [153]
+ [150] [151] [152]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
- [154]
+ [153]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
@@ -5396,10 +5384,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12041 strings out of 493029
- 219207 string characters out of 6136234
- 313547 words of memory out of 5000000
- 14332 multiletter control sequences out of 15000+600000
+ 12046 strings out of 493029
+ 219302 string characters out of 6136234
+ 301513 words of memory out of 5000000
+ 14337 multiletter control sequences out of 15000+600000
  12477 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,44p,1652b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5420,10 +5408,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (167 pages, 5117999 bytes).
+Output written on thesis.pdf (166 pages, 5117317 bytes).
 PDF statistics:
- 4972 PDF objects out of 5155 (max. 8388607)
- 3659 compressed objects within 37 object streams
+ 4977 PDF objects out of 5155 (max. 8388607)
+ 3665 compressed objects within 37 object streams
  740 named destinations out of 1000 (max. 500000)
  1908 words of extra memory for PDF output out of 10000 (max. 10000000)
 

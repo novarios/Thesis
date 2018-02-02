@@ -50,4 +50,4 @@
 \contentsline {section}{Appendix{} B{} Effective Hamiltonian Diagrams}{118}{appendix.B}
 \contentsline {section}{Appendix{} C{} Computational Implementation}{125}{appendix.C}
 \contentsline {section}{Appendix{} D{} Angular Momentum Coupling}{136}{appendix.D}
-\contentsline {chapter}{\MakeUppercase {References}}{142}{section*.50}
+\contentsline {chapter}{\MakeUppercase {References}}{141}{section*.50}
