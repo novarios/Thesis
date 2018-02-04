@@ -2,7 +2,7 @@
 
 \begin{document}
 
-\chapter{CCSD Diagrams}
+\chapter{CCSD Diagrams} \label{chapter:ccsd_appendix}
 
 The following diagrams and their corresponding algebraic expressions comprise the different contributions to the CCSD cluster amplitudes \textit{without} directly building the effective Hamiltonian, $\EHam$.  The boxed diagrams are automatically zero in a Hartree-Fock basis.  The contributions to the CCSD singles equation, \eqref{eq:ccsd2}, are given by Eqs.\ \eqref{eq:ccsd_t1_1}-\eqref{eq:ccsd_t1_8}.
 \begin{align} \label{eq:ccsd_t1_1}
@@ -95,7 +95,7 @@ The contributions to the CCSD doubles equation, \eqref{eq:ccsd2}, are given by E
 
 
 
-\chapter{Effective Hamiltonian Diagrams}
+\chapter{Effective Hamiltonian Diagrams} \label{chapter:eff_ham_diagrams}
 
 The following diagrams and their corresponding algebraic expressions comprise the different components of the CCSD effective Hamiltonian, $\EHam$.  Because some components are used as intermediates to build other components, they must be built in the order written.  Some intermediate components overcount some diagrams which motivates the need for further intermediates, denoted by $\xxint{}{}, \xxxint{}{}$, and $\xxxxint{}{}$.  The boxed diagrams are automatically zero in a Hartree-Fock basis.  The one-body components to the CCSD effective Hamiltonian, Eq.\ \eqref{eq:cc_heff1}, are given by Eqs.\ \eqref{eq:eff1}-\eqref{eq:eff4}.
 \begin{align} \label{eq:eff1}
@@ -228,30 +228,30 @@ The cross three-body state categorizes the vector difference between the quantum
 
 \section{Channel-Partitioned Structures} \label{section:channel_matrices}
 
-Different matrix structures are indexed by their channel type: $1$ for direct channels, $2$ for cross channels, and $3$ for one-/three-body channels.  Matrices with more than one structure of the same type, there is an additional index that depends on the specific permutation involved.
+Different matrix structures are indexed by their channel type: $1$ for direct channels, $2$ for cross channels, and $3$ for one-/three-body channels.  For matrices with more than one structure of the same type, there is an additional index that depends on the specific permutation involved.
 
 For a one-body operator $A^{p}_{q}\normord{\co{p}\ao{q}}$, there is a direct-channel matrix element and a cross-channel matrix element,
 \begin{equation}
-  \mathbf{A}_{1} = A^{p}_{q} \hspace{1cm} \mathbf{A}_{2} = A^{p\bar{q}}
+  \mathbf{A}_{1} = A^{p}_{q}, \hspace{1cm} \mathbf{A}_{2} = A^{p\bar{q}}.
 \end{equation}
 
 For a two-body operator $A^{pq}_{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}}$, there is a direct-channel matrix element, four cross-channel matrix elements, and four one-channel matrix elements,
 \begin{gather}
-  \mathbf{A}_{1} = A^{pq}_{rs} \notag \\
-  \mathbf{A}_{2_{1}} = A^{p\bar{s}}_{r\bar{q}} \hspace{0.5cm} \mathbf{A}_{2_{2}} = A^{q\bar{r}}_{s\bar{p}} \hspace{0.5cm} \mathbf{A}_{2_{3}} = A^{p\bar{r}}_{s\bar{q}} \hspace{0.5cm} \mathbf{A}_{2_{4}} = A^{q\bar{s}}_{r\bar{p}} \notag \\
-  \mathbf{A}_{3_{1}} = A^{p}_{rs\bar{q}} \hspace{0.5cm} \mathbf{A}_{3_{2}} = A^{q}_{rs\bar{p}} \hspace{0.5cm} \mathbf{A}_{3_{3}} = A^{pq\bar{s}}_{r} \hspace{0.5cm} \mathbf{A}_{3_{4}} = A^{pq\bar{r}}_{s}
+  \mathbf{A}_{1} = A^{pq}_{rs}, \notag \\
+  \mathbf{A}_{2_{1}} = A^{p\bar{s}}_{r\bar{q}}, \hspace{0.5cm} \mathbf{A}_{2_{2}} = A^{q\bar{r}}_{s\bar{p}}, \hspace{0.5cm} \mathbf{A}_{2_{3}} = A^{p\bar{r}}_{s\bar{q}}, \hspace{0.5cm} \mathbf{A}_{2_{4}} = A^{q\bar{s}}_{r\bar{p}}, \notag \\
+  \mathbf{A}_{3_{1}} = A^{p}_{rs\bar{q}}, \hspace{0.5cm} \mathbf{A}_{3_{2}} = A^{q}_{rs\bar{p}}, \hspace{0.5cm} \mathbf{A}_{3_{3}} = A^{pq\bar{s}}_{r}, \hspace{0.5cm} \mathbf{A}_{3_{4}} = A^{pq\bar{r}}_{s}.
 \end{gather}
 
 For an EOM operator of the form $A^{pq}_{r}\normord{\co{p}\co{q}\ao{r}}$, there is a direct-channel matrix element, a one-channel matrix element, and two cross-channel matrix elements,
 \begin{gather}
-  \mathbf{A}_{1} = A^{pq}_{r} \hspace{1cm} \mathbf{A}_{3} = A^{pq\bar{r}} \notag \\
-  \mathbf{A}_{2_{1}} = A^{p}_{r\bar{q}} \hspace{1.0cm} \mathbf{A}_{2_{2}} = A^{q}_{r\bar{p}}
+  \mathbf{A}_{1} = A^{pq}_{r}, \hspace{1cm} \mathbf{A}_{3} = A^{pq\bar{r}}, \notag \\
+  \mathbf{A}_{2_{1}} = A^{p}_{r\bar{q}}, \hspace{1.0cm} \mathbf{A}_{2_{2}} = A^{q}_{r\bar{p}}.
 \end{gather}
 
-EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ has similar structures,
+EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ have similar structures,
 \begin{gather}
-  \mathbf{A}_{1} = A^{p}_{qr} \hspace{1cm} \mathbf{A}_{3} = A_{qr\bar{p}} \notag \\
-  \mathbf{A}_{2_{1}} = A^{p\bar{r}}_{q} \hspace{1.0cm} \mathbf{A}_{2_{2}} = A^{p\bar{q}}_{r}
+  \mathbf{A}_{1} = A^{p}_{qr}, \hspace{1cm} \mathbf{A}_{3} = A_{qr\bar{p}}, \notag \\
+  \mathbf{A}_{2_{1}} = A^{p\bar{r}}_{q}, \hspace{1.0cm} \mathbf{A}_{2_{2}} = A^{p\bar{q}}_{r}.
 \end{gather}
 
 \section{Matrix Form of $\EHam = \left(\HamN\E^{\Top}\right)_{\mathrm{c}}$}
@@ -388,7 +388,7 @@ EOM operators of the form $A^{p}_{qr}\normord{\co{p}\ao{r}\ao{q}}$ has similar s
 
 
 \section{Matrix Form of $\Lop^{A+1}_{\mu}\EHamN = E_{\mu}\Lop^{A+1}_{\mu}$}
-The difference for the left eigenproblem is that disconnected term is computed as an outer product rather than with matrix-matrix multiplication.
+One main difference for the left eigenproblem is that the disconnected term is computed as an outer product rather than with matrix-matrix multiplication.
 
 \begin{align}
   E_{k}\lop{}{a} &= \lop{}{c}\xint{c}{a} - \frac{1}{2}\lop{}{cd\bar{k}}\xint{cd\bar{k}}{a} \notag \\
@@ -436,7 +436,7 @@ Again, the disconnected term is computed as an outer product rather than with ma
 
 \chapter{Angular Momentum Coupling} \label{chapter:angular_momentum}
 
-Before deriving useful equations for J-scheme angular momentum coupling, it's neccessary to list some shorthand notations, definitions, and useful relationships:
+Before deriving useful equations for J-scheme angular momentum coupling, it's necessary to list some shorthand notations, definitions, and useful relationships:
 \begin{gather}
   \hat{p} \equiv \sqrt{2 j_{p} + 1} \\
   \sum_{\{ m \}} \equiv \text{sum over all}\ m

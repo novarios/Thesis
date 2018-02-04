@@ -87,13 +87,22 @@ This reference determinant defines a new \textit{Fermi vacuum}. States above the
   \label{fig:reference_state}
 \end{figure}
 
-Any other Slater determinant can be constructed relative to this reference state by adding particles and/or removing holes.  A Slater determinant with $A$ particles added and $B$ holes removed from reference state is known as a $\ph{A}{B}$ excitation.
-\begin{align} \label{eq:ket_states}
-  \ket{\Phi^{a}_{i}} &\equiv \co{a}\ao{i}\ket{\Phi} \hspace{2cm} \notag \\
-  \ket{\Phi^{ab}_{ij}} &\equiv \co{a}\co{b}\ao{j}\ao{i}\ket{\Phi} \notag \\
-  \ket{\Phi^{a}} &\equiv \co{a}\ket{\Phi} \notag \\
-  \ket{\Phi_{i}} &\equiv \ao{i}\ket{\Phi}
-\end{align}
+Any other Slater determinant can be constructed relative to this reference state by adding particles and/or removing holes.  A Slater determinant with $A$ particles added and $B$ holes removed from reference state is known as a $\ph{A}{B}$ excitation.  A $\ph{1}{1}$ state is constructed by removing a particle in the occupied state $i$ and adding a particle in the unoccupied state $a$,
+\begin{equation} \label{eq:1p1h_ket_states}
+  \ket{\Phi^{a}_{i}} &\equiv \co{a}\ao{i}\ket{\Phi}.
+\end{equation}
+Equivalently, a $\ph{2}{2}$ state is constructed by removing particles in states $i$ and $j$ then adding them to states $b$ and $a$,
+\begin{equation} \label{eq:2p2h_ket_states}
+  \ket{\Phi^{ab}_{ij}} &\equiv \co{a}\co{b}\ao{j}\ao{i}\ket{\Phi}.
+\end{equation}
+The number of creation and annihilation operators doesn't neccessarily have to be equal.  For instance, a single particle can be added on top of the reference state with a single creation operator,
+\begin{equation} \label{eq:1p_ket_states}
+  \ket{\Phi^{a}} &\equiv \co{a}\ket{\Phi},
+\end{equation}
+and a particle can be removed with a single annihilation operator,
+\begin{equation} \label{eq:1h_ket_states}
+  \ket{\Phi_{i}} &\equiv \ao{i}\ket{\Phi}.
+\end{equation}
 
 \begin{figure}
   \centering
@@ -142,7 +151,7 @@ Because contracted operators simply represent a Kronecker delta, they can be rem
   \contraction[1.0ex]{}{\hat{B}}{}{\hat{C}}
   \hat{B}\hat{C}\{ \hat{A}\cdots\hat{D} \}.
 \end{equation}
-These different definitions for operator manipulation come together to define the time-independent Wick's theorem, which reformulates a product of operators as the sum of its normal-ordered form and all possible contractions of its normal-ordered form.
+These different definitions for operator manipulation come together to define the time-independent Wick's theorem, which reformulates a product of operators as the sum of its normal-ordered form and all possible contractions of its normal-ordered form,
 \begin{equation} \label{eq:wick4}
   \hat{A}\hat{B}\hat{C}\cdots\ =\ \normord{\hat{A}\hat{B}\hat{C}\cdots}\
   +\ \sum_{\mathclap{\substack{\text{one-} \\ \text{contractions}}}}
@@ -156,7 +165,7 @@ These different definitions for operator manipulation come together to define th
   \contraction[0.6ex]{\{ }{\hat{A}}{\hat{B}\hat{C}}{\cdots}
   \contraction[1.0ex]{\{ \hat{A}}{\hat{B}}{\hat{C}\cdots}{\ }
   \contraction[1.4ex]{\{ \hat{A}\hat{B}}{\hat{C}}{\cdots\ \ \ }{}
-  \{ \hat{A}\hat{B}\hat{C}\cdots\ \ \ \}
+  \{ \hat{A}\hat{B}\hat{C}\cdots\ \ \ \}.
 \end{equation}
 
 Wick's theorem is incredibly useful in many-body techniques because complicated expressions of operators can be expressed as diagrams that are easy to compute with simple diagrammatic rules which correspond to Eqs.\ \eqref{eq:anticommutation},\eqref{eq:wick2}, and \eqref{eq:wick3}.  These diagrammatic techniques are an integral component to deriving expressions used in this work, and their underlying rules are extensively discussed in \cite{SHAVITT2009}.
@@ -199,7 +208,7 @@ The two-body term, $\vint{pq}{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}}$, follows in
   \diagram{Hamiltonian/Hamiltonian-figure7} &= \diagram{Hamiltonian/Hamiltonian-figure8} + \diagram{Hamiltonian/Hamiltonian-figure9} + \cdots.
 \end{align}
 
-Three- and four-body normal-ordered terms can also be calculated by following the same procedure, but in practice are truncated at the two- or three-body level.  Because normal ordering the Hamiltonian has the effect of shuffling higher-order interactions into lower-order terms, and makes it feasible to include computationally expensive many-body interactions as normal-ordered few-body interactions.  Also, it reorganizes many-body correlations into the reference state so that additional correlations around the Fermi surface can be treated as a perturbation.  Therefore, from this point forward, the many-body problem will be formulated in terms of the normal-ordered terms in Eq.\ \eqref{eq:HamN}, and the bare interactions will be truncated beyond the three-body level for computational feasibility.  Electronic systems are naturally truncated at the the level of the two-body Coulomb interaction, while nuclear systems can be successfully described with the two-body normal-ordered piece of the three-body force, in the form of Eq.\ \eqref{eq:HamN_2}.
+Three- and four-body normal-ordered terms can also be calculated by following the same procedure, but in practice are truncated at the two- or three-body level.  Because normal ordering the Hamiltonian has the effect of shuffling higher-order interactions into lower-order terms, it becomes feasible to include computationally expensive many-body interactions as normal-ordered few-body interactions.  Also, it reorganizes many-body correlations into the reference state so that additional correlations around the Fermi surface can be treated as a perturbation.  Therefore, from this point forward, the many-body problem will be formulated in terms of the normal-ordered terms in Eq.\ \eqref{eq:HamN}, and the bare interactions will be truncated beyond the three-body level for computational feasibility.  Electronic systems are naturally truncated at the level of the two-body Coulomb interaction, while nuclear systems can be successfully described with the two-body normal-ordered piece of the three-body force, in the form of Eq.\ \eqref{eq:HamN_2}.
 
 With this new partition, the many-body Schr\"{o}dinger equation for the ground state $\ket{\Corr}$ can be written in terms of the normal-ordered Hamiltonian as,
 \begin{gather} \label{eq:normal_schrodinger}
@@ -283,7 +292,7 @@ For the two-body term, Eq.\ \eqref{eq:HamN_2}, first the density-dependent compo
 \end{equation}
 The reference energy from Eqns.\ \eqref{eq:HamN_0} and \eqref{eq:E_ref} can be written in terms of the transformed one- and two-body Hamiltonian, Eqns.\ \eqref{eq:HamN_1} and \eqref{eq:HamN_2}, and the original three-body term using first-order density matrices,
 \begin{equation} \label{eq:EF_Ham_0}
-  E_{0} = \sum_{\mathclap{i'}}\varepsilon^{i'}_{i'} - \frac{1}{2}\sum_{\mathclap{i'j'}}\vint{i'j'}{i'j'} + \frac{1}{6}\ \sum_{\mathclap{pqrstu}}\Hint{3}{pqr}{stu}\gamma^{s}_{p}\gamma^{t}_{q}\gamma^{r}_{u}
+  E_{0} = \sum_{\mathclap{i'}}\varepsilon^{i'}_{i'} - \frac{1}{2}\sum_{\mathclap{i'j'}}\vint{i'j'}{i'j'} + \frac{1}{6}\ \sum_{\mathclap{pqrstu}}\Hint{3}{pqr}{stu}\gamma^{s}_{p}\gamma^{t}_{q}\gamma^{r}_{u}.
 \end{equation}
 Additionally, any operators that are constructed in the original basis must be transformed in a similar manner.  For example, a one-body operator $\hat{O}$ in the Hartree-Fock basis is,
 \begin{gather}
@@ -305,18 +314,18 @@ Using this form of the wave function in Eq.\ \eqref{eq:ci_expansion}, the normal
   = \sum_{\mathclap{\mu_{i}\nu_{i}}}C^{*}_{\mu_{i}}\element{\Phi_{\mu_{i}}}{\HamN}{\Phi_{\nu_{i}}}C_{\nu_{i}} = \Ecorr_{\nu}\sum_{\mathclap{\mu_{i}\nu_{i}}}C^{*}_{\mu_{i}}C_{\nu_{i}}\delta_{\mu_{i}\nu_{i}} \notag \\
   \longrightarrow\ \ \mathbf{C}^{\text{T}}_{\mu}\left(\element{\Phi_{\mu_{i}}}{\HamN}{\Phi_{\nu_{i}}} - \Ecorr_{\nu}\mathbf{I}\right)\mathbf{C}_{\nu} = 0.
 \end{gather}
-In this case, the matrix elements are Hamiltonian terms that connect two Slater determinants, and the eigenvectors are the ground and excited states in the form of Eq.\ \eqref{eq:ci_expansion}.  The matrix elements can be found with the help of the Slater-Condon rules \cite{SLATER1929,CONDON1930} which, because the Hamiltonian is restricted to one- and two-body terms, require that any terms connecting Slater determinants which differ by more than two single-particle states vanish.  Also, because the one-body Hamiltonian is diagonal in the Hatree-Fock basis, it only contributes to diagonal elements the CI matrix.  Some examples of these matrix elements are,
+In this case, the matrix elements are Hamiltonian terms that connect two Slater determinants, and the eigenvectors are the ground and excited states in the form of Eq.\ \eqref{eq:ci_expansion}.  The matrix elements can be found with the help of the Slater-Condon rules \cite{SLATER1929,CONDON1930} which, because the Hamiltonian is restricted to one- and two-body terms, require that any terms connecting Slater determinants which differ by more than two single-particle states vanish.  Also, because the one-body Hamiltonian is diagonal in the Hartree-Fock basis, it only contributes to diagonal elements of the CI matrix.  Some examples of these matrix elements are,
 \begin{gather} \label{eq:slater_condon}
-  \element{\Phi^{a}_{i}}{\Ham}{\Phi^{a}_{i}} = \Edenom{}{a} - \Edenom{}{i} - \vint{ia}{ia} \\
-  \element{\Phi^{ab}_{ij}}{\Ham}{\Phi^{cd}_{ij}} = \vint{ab}{cd} \\
-  \element{\Phi^{abc}_{ijk}}{\Ham}{\Phi^{abd}_{ijl}} = -\vint{lc}{kd}
+  \element{\Phi^{a}_{i}}{\Ham}{\Phi^{a}_{i}} = \Edenom{}{a} - \Edenom{}{i} - \vint{ia}{ia}, \notag \\
+  \element{\Phi^{ab}_{ij}}{\Ham}{\Phi^{cd}_{ij}} = \vint{ab}{cd}, \notag \\
+  \element{\Phi^{abc}_{ijk}}{\Ham}{\Phi^{abd}_{ijl}} = -\vint{lc}{kd}.
 \end{gather}
 
-Because the configuration-interaction method exhaustively captures all the correlations of a many-body system, it is considered an ``exact'' method within a certain model space and becomes truly exact as the number of single-particle states is increased to infinity.  However, there is a price to pay for this exactness.  The number of Slater determinants, $\mathcal{N}$, in model space scales factorially according to Eq.\ \eqref{eq:factorialscaling} and the configuration-interaction matrix scales as $\mathcal{N}^{2}$.  For sufficiently-sized model spaces, the memory required for this matrix quickly becomes unimaginable even for the largest supercomputers, see Fig.\ \ref{fig:fciscaling}.
+Because the configuration-interaction method exhaustively captures all the correlations of a many-body system, it is considered an ``exact'' method within a certain model space and becomes truly exact as the number of single-particle states is increased to infinity.  However, there is a price to pay for this exactness.  The number of Slater determinants in a certain model space, $\mathcal{N}$, scales factorially according to Eq.\ \eqref{eq:factorialscaling} and the configuration-interaction matrix scales as $\mathcal{N}^{2}$.  For sufficiently-sized model spaces, the memory required for this matrix quickly becomes unmanagable even for the largest supercomputers, see Fig.\ \ref{fig:fciscaling}.
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{manybody/FCIscaling.png}
-  \caption{Scaling of the matrix size and number of non-zero matrix elements for nuclear CI calculations of light nuclei.  Even for modest $N_{\text{max}}$, the memory requirements approach the limit of petascale supercomputers ($~10^{10}$).  Figure taken from \cite{SHAO2016}.}
+  \caption{Scaling of the matrix size and number of non-zero matrix elements for nuclear CI calculations of light nuclei.  Even for modestly-sized model spaces, the memory requirements approach the limit of petascale supercomputers ($\sim 10^{10}$).  Figure taken from \cite{SHAO2016}.}
   \label{fig:fciscaling}
 \end{figure}
 
@@ -332,7 +341,7 @@ One many-body method that is both size-extensive and systematically improvable t
 \begin{gather} \label{eq:mbpt_hamiltonian}
   \Ham = \Ham_{0} + \hat{V},\ \ \text{with} \notag \\
   \Ham_{0} = E_{0} + \sum_{\mathclap{p}}\fint{p}{p}\normord{\co{p}\ao{p}}\ \ \text{and} \notag \\
-  \hat{V} = \frac{1}{4}\sum_{\mathclap{pqrs}}\vint{pq}{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}}
+  \hat{V} = \frac{1}{4}\sum_{\mathclap{pqrs}}\vint{pq}{rs}\normord{\co{p}\co{q}\ao{s}\ao{r}}.
 \end{gather}
 When not in the Hartree-Fock basis, the interaction piece has the additional off-diagonal Fock term, $\sum_{p\neq q}\fint{p}{q}\normord{\co{p}\ao{q}}$.  This means that the reference state is an eigenstate of the zero-order piece of the Hamiltonian,
 \begin{equation}
@@ -355,13 +364,15 @@ The $\hat{P}$ operator isolates the reference-state component of any Slater dete
   \hat{Q}\mathop{(E^{(0)} - \Ham_{0})}\ket{\Psi} = \hat{Q}\mathop{(E^{(0)} + \hat{V} - E)}\ket{\Psi} \notag \\
   \hat{Q}\mathop{(E^{(0)} - \Ham_{0})}\hat{Q}\ket{\Psi} = \hat{Q}\mathop{(\hat{V} - \Delta E_{0})}\ket{\Psi},
 \end{gather}
-where $\Delta E_{0} \equiv E - E^{(0)} = \refbra\hat{V}\corrket$.  The operator $\hat{Q}\mathop{(E^{(0)} - \Ham_{0})}\hat{Q}$ is invertible because $\mathop{(E^{(0)} - \Ham_{0})^{-1}}$ is never singular in $Q$-space.  Therefore, the operator $\hat{R}_{0} = \hat{Q}\mathop{(E^{(0)} - \Ham_{0})^{-1}}\hat{Q}$, known as the \textit{resolvent}, can be applied to both sides to result in the generating equation for RSPT,
-\begin{gather}
-  \hat{Q}\mathop{(E^{(0)} - \Ham_{0})^{-1}}\mathop{(E^{(0)} - \Ham_{0})}\hat{Q}\ket{\Psi} = \hat{Q}\mathop{(E^{(0)} - \Ham_{0})^{-1}}\hat{Q}\mathop{(\hat{V} - \Delta E_{0})}\ket{\Psi} \notag \\
-  \hat{Q}\ket{\Psi} = \hat{R}_{0}\mathop{(\hat{V} - \Delta E_{0})}\ket{\Psi} \notag \\
-  \ket{\Psi} = \ket{\Phi} + \hat{R}_{0}\mathop{(\hat{V} - \Delta E_{0})}\ket{\Psi} \label{eq:MBPT_Q}
-\end{gather}
-Because the single-particle states are eigenfunctions of the zeroth-order Hamiltonian, they are also eigenfunctions of the resolvant, with the resulting eigenvalues, $\Edenom{}{}$, are known as \textit{energy denominators}.  Applying the resolvent operator to any orthogonal state to the reference determinant in the form of Eq.\ \eqref{eq:ket_states} gives the following relation,
+where $\Delta E_{0} \equiv E - E^{(0)} = \refbra\hat{V}\corrket$.  The operator $\hat{Q}\mathop{(E^{(0)} - \Ham_{0})}\hat{Q}$ is invertible because $\mathop{(E^{(0)} - \Ham_{0})^{-1}}$ is never singular in $Q$-space.  Therefore, the operator $\hat{R}_{0} = \hat{Q}\mathop{(E^{(0)} - \Ham_{0})^{-1}}\hat{Q}$, known as the \textit{resolvent}, can be applied to both sides which gives,
+\begin{equation}
+  \hat{Q}\ket{\Psi} = \hat{R}_{0}\mathop{(\hat{V} - \Delta E_{0})}\ket{\Psi}.
+\end{equation}
+The left-hand side of this equation can be rewritten as $\hat{Q}\ket{\Psi} = \corrket - \refket$ to result in the generating equation for RSPT,
+\begin{equation} \label{eq:MBPT_Q}
+  \ket{\Psi} = \ket{\Phi} + \hat{R}_{0}\mathop{(\hat{V} - \Delta E_{0})}\ket{\Psi}.
+\end{equation}
+Because the single-particle states are eigenfunctions of the zeroth-order Hamiltonian, they are also eigenfunctions of the resolvent, with the resulting eigenvalues, $\Edenom{}{}$, are known as \textit{energy denominators}.  Applying the resolvent operator to any state orthogonal to the reference state, see Eqs.\ \eqref{eq:1p1h_ket_states} - \eqref{eq:1h_ket_states}, gives the following relation,
 \begin{gather} \label{eq:energy_denominators}
   \hat{R}_{0}\stateket{a_{1}\cdots a_{N}}{i_{1}\cdots i_{N}} = \frac{1}{\Edenom{a_{1}\cdots a_{N}}{i_{1}\cdots i_{N}}}\stateket{a_{1}\cdots a_{N}}{i_{1}\cdots i_{N}},\ \ \text{where} \notag \\
   \Edenom{a_{1}\cdots a_{N}}{i_{1}\cdots i_{N}} = \varepsilon_{i_{1}} + \cdots + \varepsilon_{i_{N}} - \varepsilon_{a_{1}} - \cdots - \varepsilon_{a_{N}}.
@@ -376,7 +387,7 @@ Applying this form of the correlated wave function into Eq.\ \eqref{eq:mbpt_schr
   \Delta E_{0} = \refbra\hat{V}\corrket = \sum_{n=0}^{\infty}\refbra\hat{V}\left[\hat{R}_{0}\mathop{(\hat{V} - \Delta E_{0})}\right]^{n}\refket
 \end{equation}
 
-The immediate problem with this equation is that the right-hand side of the equations contain the target energy difference $\Delta E_{0}$ for which these equations are meant to solve.  This can be remedied by expanding the right-hand sides and rearranging terms.  Using the fact that $\hat{R}_{0}\Delta E_{0}\refket = \Delta E_{0}\hat{R}_{0}\refket = 0$, the first-order energy $E^{(1)} = \element{\Ref}{\hat{V}}{\Ref}$, and the shifted term $\widetilde{V} \equiv \hat{V} - E^{(1)}$, these simplify to,
+The immediate problem with these equations is that the right-hand sides contain the target energy difference $\Delta E_{0}$ for which these equations are meant to solve.  This can be remedied by expanding the right-hand sides and rearranging terms.  Using the fact that $\hat{R}_{0}\Delta E_{0}\refket = \Delta E_{0}\hat{R}_{0}\refket = 0$, the first-order energy $E^{(1)} = \element{\Ref}{\hat{V}}{\Ref}$, and the shifted term $\widetilde{V} \equiv \hat{V} - E^{(1)}$, these simplify to,
 \begin{align}
   \ket{\Psi} - \refket &= \hat{R}_{0}\hat{V}\refket + \hat{R}_{0}\widetilde{V}\hat{R}_{0}\hat{V}\refket \notag \\
   &+ \hat{R}_{0}\widetilde{V}\hat{R}_{0}\widetilde{V}\hat{R}_{0}\hat{V}\refket - \element{\Ref}{\hat{V}\hat{R}_{0}\hat{V}}{\Ref}\hat{R}^{2}_{0}\hat{V}\refket + \cdots \\

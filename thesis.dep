@@ -16,6 +16,7 @@ thesis.pdf thesis.dep :\
     /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm\
     /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm\
     /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm\
+    /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm\
     /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm\
     /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm\
     /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm\
@@ -140,6 +141,9 @@ thesis.pdf thesis.dep :\
     figures/betadecay/BetaDecay-figure3.pdf\
     figures/betadecay/BetaDecay-figure4.pdf\
     figures/betadecay/BetaDecay-figure5.pdf\
+    figures/betadecay/BetaDecay-figure6.pdf\
+    figures/betadecay/BetaDecay-figure7.pdf\
+    figures/betadecay/BetaDecay-figure8.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf\
     figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf\
@@ -304,9 +308,6 @@ thesis.pdf thesis.dep :\
     figures/diagrams/Eff_2b/Eff_2b-figure1.pdf\
     figures/diagrams/Eff_2b/Eff_2b-figure2.pdf\
     figures/diagrams/Eff_2b/Eff_2b-figure3.pdf\
-    figures/diagrams/Eff_2b/Eff_2b-figure4.pdf\
-    figures/diagrams/Eff_2b/Eff_2b-figure5.pdf\
-    figures/diagrams/Eff_2b/Eff_2b-figure6.pdf\
     figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf\
     figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf\
     figures/diagrams/Hamiltonian/Hamiltonian-figure12.pdf\
@@ -445,6 +446,8 @@ thesis.pdf thesis.dep :\
 /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm :
 
 /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm :
+
+/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm :
 
 /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm :
 
@@ -693,6 +696,12 @@ figures/betadecay/BetaDecay-figure3.pdf :
 figures/betadecay/BetaDecay-figure4.pdf :
 
 figures/betadecay/BetaDecay-figure5.pdf :
+
+figures/betadecay/BetaDecay-figure6.pdf :
+
+figures/betadecay/BetaDecay-figure7.pdf :
+
+figures/betadecay/BetaDecay-figure8.pdf :
 
 figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf :
 
@@ -1021,12 +1030,6 @@ figures/diagrams/Eff_2b/Eff_2b-figure1.pdf :
 figures/diagrams/Eff_2b/Eff_2b-figure2.pdf :
 
 figures/diagrams/Eff_2b/Eff_2b-figure3.pdf :
-
-figures/diagrams/Eff_2b/Eff_2b-figure4.pdf :
-
-figures/diagrams/Eff_2b/Eff_2b-figure5.pdf :
-
-figures/diagrams/Eff_2b/Eff_2b-figure6.pdf :
 
 figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf :
 
