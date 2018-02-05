@@ -41,9 +41,9 @@ where the \textit{normal-ordered effective Hamiltonian} is constructed equivalen
 An important characteristic of the effective Hamiltonian, $\EHam$ and $\EHamN$, is that because the cluster operator, which contains no de-excitations, is not Hermitian, the exponential wave operator cannot be unitary, and thus $\EHam$ is not Hermitian.  This initially seems like an explicit contradiction to any standard quantum mechanics formulation where observables are associated with the real eigenvalues of Hermitian matrices. Technically, the existence and reality of the CC solution is only guaranteed when the full cluster operator is used $\Top = \Top_{1} + \cdots + \Top_{A}$, see \cite{ZIVKOVIC1977,MOISEYEV2011}.  However, while the non-Hermiticity does require some special considerations which will be discussed, this fundamental problem does not materialize in this work.
 
 The effective Hamiltonian in Eq.\ \eqref{eq:cc_heff0} can be rewritten with commutators ($[ \hat{A},\hat{B} ] = \hat{A}\hat{B} - \hat{B}\hat{A}$) according to the Baker--Campbell--Hausdorff expansion as,
-\begin{align*} \label{eq:bch-cc}
+\begin{align} \label{eq:bch-cc}
   \EHam = \Ham + [\Ham, \Top] + \frac{1}{2!} [[\Ham, \Top], \Top] + \frac{1}{3!} [[[\Ham, \Top], \Top], \Top] + \frac{1}{4!} [[[[\Ham, \Top], \Top], \Top], \Top] + \cdots,
-\end{align*}
+\end{align}
 which terminates at four-nested commutators when using a two-body  interaction.  This commutator expression ensures that CC theory is size-extensive and contains only connected terms.  In addition, because $\Top$ is an excitation operator, terms of the form $\Top\Ham$ are necessarily disconnected and thus vanish \cite{SHAVITT2009}.  Therefore the CC effective Hamiltonian can be further reduced to
 \begin{align} \label{eq:cc_heff1}
   \EHam = \left(\Ham e^{\Top}\right)_{\mathrm{c}},
@@ -72,23 +72,6 @@ where $\Edenom{}{}$ are equivalent to the MBPT energy denominators from Eq.\ \eq
 
 These non-linear equations are solved using an iterative procedure where the cluster amplitudes on the right-hand side of Eq.\ \eqref{eq:ccsd1} and Eq.\ \eqref{eq:ccsd2} are updated by calculating the terms on the left-hand side until a fixed point is reached.  Like the HF iterative procedure, employing convergence acceleration techniques can reduce the number of CC iterations required.  Detailed techniques for solving these equations are discussed in section \ref{section:solvingcc}.
 
-%An alternative way to derive the CC equations involves the Hellmann-Feynman theorem, where the ground-state energy is found by the variation of an energy functional with respect to the cluster amplitudes and a new operator, $\Lambdaop$,
-%\begin{equation} \label{eq:lambda1}
-%  E\left(\Top,\Lambdaop\right) = \element{\Ref}{\left(1+\Lambdaop\right)e^{-\Top}\Ham e^{\Top}}{\Ref} = \element{\Ref}{\left(1+\Lambdaop\right)\EHam}{\Ref}.
-%\end{equation}
-%The asymmetry of this functional again shows the non-Hermiticity of the underlying transformation.  The $\Lambdaop$-operator is a composed de-excitation terms analogous to $\Top$, $\Lambdaop \equiv \Lambdaop_{1} + \Lambdaop_{2} + \cdots + \Lambdaop_{A}$, where the corresponding amplitudes are also analogous to the cluster amplitudes,
-%\begin{gather} \label{eq:lambda2}
-%  \Lambdaop_{1} \equiv \sum_{ai} \lamp{i}{a}\normord{\co{i}\ao{a}}, \notag \\
-%  \Lambdaop_{2} \equiv \frac{1}{4}\sum_{abij} \lamp{ij}{ab}\normord{\co{i}\co{j}\ao{b}\ao{a}}, \notag \\
-%  \vdots \notag \\
-%  \Lambdaop_{k} \equiv \left(\frac{1}{k!}\right)^2 \sum_{\substack{a_1 \ldots a_k \\ i_1 \ldots i_k}} \lamp{i_1 \cdots i_k}{a_1 \cdots a_k}\normord{\co{i}_{1} \cdots \co{i}_{k} \ao{a}_{k} \cdots \ao{a}_{1}}.
-%\end{gather}  
-
-%For CCSD, the $\lambdaop$-operator is also truncated to $\Lambdaop \equiv \Lambdaop_{1} + \Lambdaop_{2}$, and varying the energy functional \eqref{eq:lambda1} in this approximation yields the CCSD equations, Eq.\ \eqref{eq:ccsd1}.  With the normalization $\element{\Ref}{\left(1+\Lambdaop\right)e^{-\Top}e^{\Top}}{\Ref} = 1$, the second term results in the left-eigenvalue problem for the effective Hamiltonian,
-%\begin{equation} \label{eq:lambda3}
-%  E = \element{\Ref}{\left(1+\Lop\right)\EHam}{\Ref},
-%\end{equation}
-%so that $\refbra\left(1+\Lop\right)$ is the left ground-state eigenfunction for $\EHam$.  These $\Lambdaop$-equations are irrelevant for solving 
 
 \section{Linked-Cluster Theorem and MBPT} \label{section:linkedcluster}
 

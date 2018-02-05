@@ -42,12 +42,11 @@
 \contentsline {chapter}{\numberline {Chapter{} 5}Beta--Decay Effective Operators}{103}{chapter.5}
 \contentsline {section}{\numberline {5.1}Beta-Decay Properties}{103}{section.5.1}
 \contentsline {section}{\numberline {5.2}Coupled Cluster Effective Operators}{107}{section.5.2}
-\contentsline {section}{\numberline {5.3}Calculating Beta-Decay Matrix Elements}{112}{section.5.3}
 \contentsline {chapter}{\numberline {Chapter{} 6}Conclusions and Perspectives}{114}{chapter.6}
 \contentsline {section}{\numberline {6.1}Summary and Conclusions}{114}{section.6.1}
-\contentsline {chapter}{\MakeUppercase {Appendices}}{116}{section*.42}
+\contentsline {chapter}{\MakeUppercase {Appendices}}{116}{section*.43}
 \contentsline {section}{Appendix{} A{} CCSD Diagrams}{117}{appendix.A}
 \contentsline {section}{Appendix{} B{} Effective Hamiltonian Diagrams}{124}{appendix.B}
 \contentsline {section}{Appendix{} C{} Computational Implementation}{131}{appendix.C}
 \contentsline {section}{Appendix{} D{} Angular Momentum Coupling}{142}{appendix.D}
-\contentsline {chapter}{\MakeUppercase {References}}{147}{section*.50}
+\contentsline {chapter}{\MakeUppercase {References}}{147}{section*.51}

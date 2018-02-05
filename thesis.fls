@@ -1035,6 +1035,9 @@ INPUT figures/diagrams/Eff_2b/Eff_2b-figure2.pdf
 INPUT ./figures/diagrams/Eff_2b/Eff_2b-figure2.pdf
 INPUT figures/diagrams/Eff_2b/Eff_2b-figure3.pdf
 INPUT ./figures/diagrams/Eff_2b/Eff_2b-figure3.pdf
+INPUT figures/EOM/BetaMEs.pdf
+INPUT ./figures/EOM/BetaMEs.pdf
+INPUT ./figures/EOM/BetaMEs.pdf
 INPUT conclusions.tex
 INPUT conclusions.tex
 INPUT Appendix.tex
