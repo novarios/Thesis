@@ -30,7 +30,7 @@ Lastly, particle-removed (PR) states can be reached by applying strings of the f
 With these target states, the Schr\"odinger equation can be written by applying the Hamiltonian to Eq.\ \eqref{eq:eom_def},
 \begin{gather}
   \Ham\ket{\Psi_{\mu}} = E_{\mu}\ket{\Psi_{\mu}}, \notag \\
-  \Ham\Rop_{\mu}\E^{\Top}\refket = E_{\mu}\Rop_{\mu}\E^{\Top}\refket
+  \Ham\Rop_{\mu}\E^{\Top}\refket = E_{\mu}\Rop_{\mu}\E^{\Top}\refket.
 \end{gather}
 This equation can be written in terms of the effective Hamiltonian by multiplying with the operator $\E^{-\Top}$,
 \begin{equation} \label{eq:eom_schrodinger}
@@ -146,7 +146,7 @@ The vector-matrix product for the left eigenvalue problem of the PA-EOM(2) metho
   \label{eq:pa_l_2-body}
   \refbra\Lop_{\mu}\EHamN\stateket{ab}{i} = \Ecorr_{\mu}\lint{\mu}{i}{ab}.
 \end{gather}
-Because Eqns.\ \eqref{eq:pa_l_1-body} and \eqref{eq:pa_l_2-body} do not use commutators between $\EHamN$ and $\Lop_{\mu}$, the diagrams which describe these equations include disconnected diagrams and corresponding expressions with matrix elements that share no indices.  For these diagrams, the left EOM de-excitation operators are depicted by the vertex type \raisebox{-8pt}{\mbox{\includegraphics[height=20pt]{diagrams/PA_EOM1/PA_EOM1-figure23.pdf}}}.  Equation\ \eqref{eq:pa_l_1-body} generates the following expressions and diagrams, again supressing the state identifier $\mu$,
+Because Eqns.\ \eqref{eq:pa_l_1-body} and \eqref{eq:pa_l_2-body} do not use commutators between $\EHamN$ and $\Lop_{\mu}$, the diagrams which describe these equations include disconnected diagrams and corresponding expressions with matrix elements that share no indices.  For these diagrams, the left EOM de-excitation operators are depicted by the vertex type \raisebox{-8pt}{\mbox{\includegraphics[height=20pt]{diagrams/PA_EOM1/PA_EOM1-figure23.pdf}}}.  Equation\ \eqref{eq:pa_l_1-body} generates the following expressions and diagrams, again suppressing the state identifier $\mu$,
 \begin{align} \label{eq:pa_l_1-body-diagrams}
   E\lop{}{a} &= \sum\limits_{c}\lop{}{c}\xint{c}{a} + \frac{1}{2}\sum\limits_{kcd}\lop{k}{cd}\xint{cd}{ak} \notag \\
   \diagram{PA_EOM1/PA_EOM1-figure11} &= \diagram{PA_EOM1/PA_EOM1-figure12} + \diagram{PA_EOM1/PA_EOM1-figure13}.
@@ -186,7 +186,7 @@ Finally, the vector-matrix product for the left eigenvalue problem of the PA-EOM
   \label{eq:pr_l_2-body}
   \refbra\Lop_{\mu}\EHamN\stateket{a}{ij} = \Ecorr_{\mu}\lint{\mu}{ij}{a}.
 \end{gather}
-Again, Eqns.\ \eqref{eq:pr_l_1-body} and \eqref{eq:pr_l_2-body} do not remove disconnected diagrams with commutator between $\EHamN$ and $\Lop_{\mu}$.  Equation\ \eqref{eq:pr_l_1-body} generates the following expressions and diagrams,
+Again, Eqns.\ \eqref{eq:pr_l_1-body} and \eqref{eq:pr_l_2-body} do not remove disconnected diagrams with commutators between $\EHamN$ and $\Lop_{\mu}$.  Equation\ \eqref{eq:pr_l_1-body} generates the following expressions and diagrams,
 \begin{align} \label{eq:pr_l_1-body-diagrams}
   E\lop{i}{} &= -\sum\limits_{k}\lop{k}{}\xint{i}{k} - \frac{1}{2}\sum\limits_{klc}\lop{kl}{c}\xint{ic}{kl} \notag \\
   \diagram{PR_EOM1/PR_EOM1-figure11} &= \diagram{PR_EOM1/PR_EOM1-figure12} + \diagram{PR_EOM1/PR_EOM1-figure13}.
@@ -199,7 +199,7 @@ The corresponding expressions and diagrams for Eq.\ \eqref{eq:pr_l_2-body} are,
   &+ \diagram{PR_EOM1/PR_EOM1-figure19} + \diagram{PR_EOM1/PR_EOM1-figure20} + \diagram{PR_EOM1/PR_EOM1-figure21}.
 \end{align}
 
-These expressions must be computed for every iteration of the Arnoldi algorithm and contain expensive sums that can benefit from the techniques of section \ref{section:solvingcc}.  The major difference in this case is that while the cluster operators and the Hamiltonian are scalar operators that define the conserve quantum numbers of a symmetry channel \ref{section:symmetry_channels}, the EOM operators 
+These expressions must be computed for every iteration of the Arnoldi algorithm and contain expensive sums that can benefit from the techniques of section \ref{section:solvingcc}.  The major difference in this case is that while the cluster operators and the Hamiltonian are scalar operators that define the conserved quantum numbers of a symmetry channel, see section \ref{section:symmetry_channels}, the EOM operators are tensor operators that carry their own quantum numbers and can change the symmetry of the reference state to that of the target state.
 
 
 \section{EOM-CC for 2D Quantum Dots} \label{section:eom_qd}
@@ -276,14 +276,14 @@ Additionally, the results for addition and removal energy calculations are summa
 
 Applying the CC similarity transformation to the Hamiltonian implicitly re-sums contributions from higher order excitations beyond the EOM(2)-CC truncation ($\ph{3}{2}$, $\ph{4}{3}$, \ldots for PA-EOM and $\ph{2}{3}$, $\ph{3}{4}$, \ldots for PR-EOM) into the lower-order excitations which comprise the EOM(2)-CC operators ($\ph{1}{0}$, $\ph{2}{1}$, \ldots for PA-EOM and $\ph{0}{1}$, $\ph{1}{2}$, \ldots for PR-EOM).  This means that EOM states are weighted towards few-body excitations when compared to the corresponding state calculated with the CI method and the bare Hamiltonian.
 
-Despite this improvement on the corresponding CI method, the EOM(2) truncation of Eqs.\ \eqref{eq:pa-eom2} and \eqref{eq:pr-eom2} is not guaranteed to capture the primary components of certain collective states.  Therefore, the quality of the solution can be judged by the measuring the amount of overlap between the EOM solution and $\ph{1}{0}$ states for PA-EOM or $\ph{0}{1}$ states for PR-EOM.  This overlap can be computed with partial norms,
+Despite this improvement on the corresponding CI method, the EOM(2) truncation of Eqs.\ \eqref{eq:pa-eom2} and \eqref{eq:pr-eom2} is not guaranteed to capture the primary components of certain collective states.  Therefore, the quality of the solution can be judged by measuring the amount of overlap between the EOM solution and $\ph{1}{0}$ states for PA-EOM or $\ph{0}{1}$ states for PR-EOM.  This overlap can be computed with partial norms,
 \begin{align}
   \label{eq:partial_norms_p}
   n_{\text{1-particle}} &= \sqrt{\sum_{a} \statebra{a}{}\Rop_{\mu}\refket\refbra\Lop_{\mu}\stateket{a}{} } = \sqrt{\sum_{a} \lvert \rint{}{a}{}\lint{}{}{a} \rvert },\\
   \label{eq:partial_norms_h}
   n_{\text{1-hole}} &= \sqrt{\sum_{i} \statebra{}{i}\Rop_{\mu}\refket\refbra\Lop_{\mu}\stateket{}{i} } = \sqrt{\sum_{i} \lvert \rint{}{}{i}\lint{}{i}{} \rvert }.
 \end{align}
-If the single-particle overlap is small, the state is dominated by higher-order excitations and requires a less-restricted truncation to describe, which can be accomplished directly or perturbatively \cite{PARZUCHOWSKI2017044304,MORRIS2017}.  On the other hand, large single-particle partial norms indicate that the EOM truncation is reasonable for the relevant state.
+If the single-particle overlap is small, the state is dominated by higher-order excitations and requires a less-restricted truncation in order to describe it properly, which can be accomplished directly or perturbatively \cite{PARZUCHOWSKI2017044304,MORRIS2017}.  On the other hand, large single-particle partial norms indicate that the EOM truncation is reasonable for the relevant state.
 
 Figure \ref{fig:EOM-Quality} shows this relationship using the difference between EOM-CC and full CI energies for quantum dot particle-attached and particle-removed states, $\mathrm{\Delta E/E}$, as function of the single-particle overlap.  The energy difference with the exact FCI result grows as the single-particle character of the wave function shrinks.  Therefore, care should be taken when encountering unphysical states with a small single-particle overlap.
 \begin{figure}[h]
@@ -296,7 +296,7 @@ Figure \ref{fig:EOM-Quality} shows this relationship using the difference betwee
 
 \section{EOM-CC for Finite Nuclei} \label{section:eom_nuclei}
 
-Like its ground-state counterpart, the EOM extension to coupled cluster theory was first applied to nuclear systems \cite{EMRICH1981379,EMRICH1981397,EMRICH1981439}.  However the progress was again halted by the non-perturbative nucleon-nucleon interaction, so again it quickly gained prominance in quantum chemistry \cite{STANTON1993,SHAVITT2009}.  Since the intruduction of SRG-softened chiral interaction, the EOM-CC method has been established as a powerful and reliable method for reaching open-shell systems and excited states \cite{WLOCH2005212501,GOUR2006024310,JANSEN2013,HAGEN2012,EKSTROM2015}.  This section shows results for the PA-EOM-CC and PR-EOM-CC methods calculated with the NN+3N(400) interaction, SRG softened with $\lambda_{\mathrm{SRG}}=2.0\ \mathrm{fm}^{-1}$.  The initial closed-shell calculations were performed for $^{16}$O and $^{22}$O.
+Like its ground-state counterpart, the EOM extension to coupled cluster theory was first applied to nuclear systems \cite{EMRICH1981379,EMRICH1981397,EMRICH1981439}.  However the progress was again halted by the non-perturbative nucleon-nucleon interaction, so again it quickly gained prominence in quantum chemistry \cite{STANTON1993,SHAVITT2009}.  Since the introduction of SRG-softened chiral interactions, the EOM-CC method has been established as a powerful and reliable method for reaching open-shell systems and excited states \cite{WLOCH2005212501,GOUR2006024310,JANSEN2013,HAGEN2012,EKSTROM2015}.  This section shows results for the PA-EOM-CC and PR-EOM-CC methods calculated with the NN+3N(400) interaction, SRG softened with $\lambda_{\mathrm{SRG}}=2.0\ \mathrm{fm}^{-1}$.  The initial closed-shell calculations were performed for $^{16}$O and $^{22}$O.
 
 The ground-state energies for particle-attached nuclei are shown in Fig. \ref{fig:PA-Nuclei}.  Unlike the ground states for closed-shell nuclei, which is uniquely determined, the particle-attached ground state must be identified as the state corresponding to the lowest eigenvalue of the converged solution.  All the results are in close agreement with the experimental values while the subshell nuclei, $^{23}$O and $^{23}$F, are slightly underbound like their closed-shell counterpart, $^{16}$O (see Fig.\ \ref{fig:Ground_State2}).
 \begin{figure}[h]

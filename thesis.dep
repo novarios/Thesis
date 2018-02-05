@@ -123,7 +123,6 @@ thesis.pdf thesis.dep :\
     figures/CC/ground_state2.pdf\
     figures/CC/ground_state_srg.pdf\
     figures/CC/pairingmatrix.pdf\
-    figures/EOM/BetaMEs.pdf\
     figures/EOM/EOM-CoM.pdf\
     figures/EOM/N15_O15_EOM_2.pdf\
     figures/EOM/N21_O21_EOM_2.pdf\
@@ -664,8 +663,6 @@ figures/CC/ground_state2.pdf :
 figures/CC/ground_state_srg.pdf :
 
 figures/CC/pairingmatrix.pdf :
-
-figures/EOM/BetaMEs.pdf :
 
 figures/EOM/EOM-CoM.pdf :
 
