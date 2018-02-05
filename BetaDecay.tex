@@ -2,7 +2,7 @@
 
 \begin{document}
 
-Now with the ability to calculate open-shell states, properties of and transitions between these states can be obtained.  In particular, this chapter focuses on beta-decay transitions between two particle-attached states and between two particle-removed states.  However, because these techniques are formulated in a general way, they can be applied to any type of one-body operator and any type of EOM-CC state.  First, this chapter describes beta-decay proccesses in detail and the relevant operators are introduced.  Then, these operators are used to construct effective coupled cluster operators that take important correlations from the ground-state wave function into account.  Finally, the effective operators are applied to EOM-CC states to calculate transition amplitudes for the corresponding processes.  These amplitudes can then be used to calculate observables like decay strengths and half-lives.
+Now with the ability to calculate open-shell states, properties of and transitions between these states can be obtained.  In particular, this chapter focuses on beta-decay transitions between two particle-attached states and between two particle-removed states.  However, because these techniques are formulated in a general way, they can be applied to any type of one-body operator and any type of EOM-CC state.  First, this chapter describes beta-decay processes in detail and the relevant operators are introduced.  Then, these operators are used to construct effective coupled cluster operators that take important correlations from the ground-state wave function into account.  Finally, the effective operators are applied to EOM-CC states to calculate transition amplitudes for the corresponding processes.  These amplitudes can then be used to calculate observables like decay strengths and half-lives.
 
 \section{Beta-Decay Properties} \label{section:betaproperties}
 
@@ -45,12 +45,12 @@ These three processes are schematically represented in Fig.\ \ref{fig:beta-0}.
     \caption{}
     \label{fig:beta-ec-0}
   \end{subfigure}
-  \caption{Schematic representations of the three free-space weak processes in this work: $\beta^{-}$ decay (a), $\beta^{+}$ decay (b), and electron-capture (c).}
+  \caption{Schematic representations of the three free-space weak processes in this work: $\beta^{-}$ decay (a), $\beta^{+}$ decay (b), and electron-capture (c).  The coupling constant for the point interation vertex is the weak-interaction coupling constant $g_{W}$.}
   \label{fig:beta-0}
 \end{figure}
 
 
-The \textit{Q-value} is a measure of the net energy of these processes.  In free space, only the $\beta^{-}$ decay has a positive Q-value and can occur spontaneously.  However, within a nucleus, correlations between nucleons cause the relatively simple, one-step exchanges in Fig.\ \ref{fig:beta-0} to take on more complicated, higer-order processes involving pion exchanges between different nucleons, see Fig.\ \ref{fig:beta-2}.  This also has the effect of changing the energetics of the $\beta^{+}$ decay and electron-capture processes such that their Q-values are positive and can occur within certain nuclei.  As a first approximation to these higher-order processes, it can be assumed that at the weak interaction occurs at very short length and time scales  due to the large mass of the $\mathrm{W}$ boson.  Known as the \textit{impulse approximation}, this treatment of beta-decay processes involves one nucleon as a spectator to the other nucleons, shown in Fig.\ \ref{fig:beta-1}.
+The decay $Q$-value is a measure of the net energy of these processes.  In free space, only $\beta^{-}$ decay has a positive $Q$-value and can occur spontaneously.  However, within a nucleus, correlations between nucleons cause the relatively-simple exchanges in Fig.\ \ref{fig:beta-0} to take on more complicated, higher-order processes involving pion exchanges between different nucleons, see Fig.\ \ref{fig:beta-2}.  This also has the effect of changing the energetics of the $\beta^{+}$ decay and electron-capture processes such that their Q-values are positive and can occur within certain nuclei.  However, these complicated processes can be approximated by assuming that the weak interaction occurs at very short length and time scales  due to the large mass of the $\mathrm{W}$ boson, $m_{W}$.  Known as the \textit{impulse approximation}, this treatment of beta-decay reduces the many-body processes involves one nucleon as a spectator to the other nucleons, shown in Fig.\ \ref{fig:beta-1}.  In addition, this motivates the simplification of the $\mathrm{W}$ boson exchanges in Fig.\ \ref{fig:beta-0}, with coupling constant $g_{W}$, to a point interaction, shown in Figs.\ \ref{fig:beta-1} and \ref{fig:beta-2}, with an effictive coupling constant $G_{F} = \sqrt{2}g_{W}^{2}/8(m_{W}c^{2})^{2}$.
 
 \begin{figure}
   \centering
@@ -77,7 +77,7 @@ The \textit{Q-value} is a measure of the net energy of these processes.  In free
     \caption{}
     \label{fig:beta-ec-2}
   \end{subfigure}
-  \caption{Schematic representations of a higher-order weak interactions involving pion-exchange that occur within a nucleus, for $\beta^{-}$ decay (a), $\beta^{+}$ decay (b), and electron-capture (c).  These processes are not included in the impulse approximation.}
+  \caption{Schematic representations of a higher-order weak interactions involving pion-exchange that occur within a nucleus, for $\beta^{-}$ decay (a), $\beta^{+}$ decay (b), and electron-capture (c).  These processes are not included in the impulse approximation.    The coupling constant for the point interation vertex is the effective weak-interaction coupling constant $G_{F}$.}
   \label{fig:beta-2}
 \end{figure}
 
@@ -106,12 +106,12 @@ The \textit{Q-value} is a measure of the net energy of these processes.  In free
     \caption{}
     \label{fig:beta-ec-1}
   \end{subfigure}
-  \caption{Schematic representations of the impulse approximations to the different weak processes within an $A$-body nucleus: $\beta^{-}$ decay (a), $\beta^{+}$ decay (b), and electron-capture (c).  The active nucleon doesn't interact with the initial and final nuclei during the weak process. }
+  \caption{Schematic representations of the impulse approximations to the different weak processes within an $A$-body nucleus: $\beta^{-}$ decay (a), $\beta^{+}$ decay (b), and electron-capture (c).  The active nucleon doesn't interact with the initial and final nuclei during the weak process.  The coupling constant for each interation vertex is the weak-interaction coupling constant $G_{F}$.}
   \label{fig:beta-1}
 \end{figure}
 
-These beta-decay processes can be further characterized by the character of their angular momentum.  \textit{Allowed} beta decays involve an electron-antineutrino or positron-neutrino pair with no angular momenum, $L=0$.  In this case, there can be no parity change between the initial and final nuclear states.  Also, each pair spin-$\frac{1}{2}$ leptons carry a coupled spin of either $S=0$ or $S=1$.  Therefore, the initial and final nuclear states must have angular momenta that only differ by $0$ or $1$, ($\Delta J = 0, 1$).  Additionally, parity must be conserved for these interactions.  Transitions when the nuclear states are coupled to leptons with $S=0$ are known as \textit{Fermi transitions}, and transitions when the spin changes $S=1$ are known as \textit{Gamow-Teller transitions} (GT).  The summary of these selection rules are shown in table\ \ref{tab:beta-selection}.
-\begin{table}
+These beta-decay processes can be further characterized by the character of their angular momentum.  \textit{Allowed} beta decays involve an electron-antineutrino or positron-neutrino pair with no angular momenum, $L=0$.  In this case, there can be no parity change between the initial and final nuclear states.  Also, each pair of spin-$\frac{1}{2}$ leptons carries a coupled spin of either $S=0$ or $S=1$.  Therefore, the initial and final nuclear states must have angular momenta that only differ by $0$ or $1$, ($\Delta J = 0, 1$).  Additionally, parity must be conserved for these interactions.  \textit{Fermi transitions} (F) occur when the nuclear states are coupled to leptons with $S=0$, and \textit{Gamow-Teller transitions} (GT) occur when the the lepton have a spin $S=1$.  The summary of these selection rules are shown in table\ \ref{tab:beta-selection}.
+\begin{table}[h]
   \centering
   \begin{tabular}{ l @{\hskip 50pt} l @{\hskip 50pt} l } \hline
     \vspace{0.1mm} \\
@@ -121,11 +121,15 @@ These beta-decay processes can be further characterized by the character of thei
     Gamow-Teller   & $1    (J_{F}=0\ \text{or}\ J_{I}=0)$   & +1 \\
     Gamow-Teller   & $0,1  (J_{F}>0\ \text{and}\ J_{I}>0)$  & +1 \vspace{1mm} \\ \hline
   \end{tabular}
-  \caption{.}
+  \caption{Summary of the selection rules for allowed beta decays according to the angular momentum $J$ and parity $\pi$ of the initial ($I$) and final ($F$) states.}
   \label{tab:beta-selection}
 \end{table}
 
-The half-life of these processes $T_{1/2}$ can be calculated using a combination of both the Fermi and Gamow-Teller type transitions in the form of their reduced transition amplitudes, $B_{\text{F}}$ and $B_{\text{GT}}$, respectively.  These are measures of the overlap integral between the initial and final nuclear states for the different transitions and will be discussed in the next section.  Inserting these reduced transition amplitudes into the standard result from time-dependent perturbation theory gives the decay half-life,
+The half-life of these processes $T_{1/2}$ can be calculated using a combination of both the Fermi and Gamow-Teller type transitions in the form of their reduced transition amplitudes, $B_{\text{F}}$ and $B_{\text{GT}}$, respectively,
+\begin{equation} \label{eq:RTAmps}
+  B_{\text{F}} = \frac{g_{V}^{2} \lvert M_{F} \rvert^{2}}{2J_{i} + 1} \hspace{0.75cm} B_{\text{GT}} = \frac{g_{A}^{2} \lvert M_{GT} \rvert^{2}}{2J_{i} + 1},
+\end{equation}
+where $J_{i}$ is the final state angular momentum.  The factor $g_{V}$ is the vector coupling constant, and its value is can be shown to be exactly $g_{V}=1.0$.  The axial-vector coupling constant $g_{A}$ has a free-space value of $g_{A}=-g_{V}$, but is altered within nuclei due to nucleon-nucleon correlations.  The exact problem of how to treat this constant has been a widely studied topic for decades, but this work will use the value $g_{A}/g_{V} = 1.261(8)$.  The transition matrix elements $M_{F}$ and $M_{GT}$ are measures of the overlap integral between the initial and final nuclear states for the different transitions and will be discussed in the next section.  Inserting these reduced transition amplitudes into the standard result from time-dependent perturbation theory gives the decay half-life,
 \begin{equation}
   T_{1/2} = \frac{f}{K_{0}\left( B_{\text{F}} + B_{\text{GT}} \right)}.
 \end{equation}
@@ -133,13 +137,56 @@ The factor $f$ represents a phase-space integral over the final nuclear and lept
 \begin{equation}
   K_{0} = \frac{2\pi^{3}\hbar^{7}\ln 2}{m_{e}^{5}c^{4}G_{F}^{2}} \approx 6147 sec,
 \end{equation}
-where $m_{e}$ is the electron mass, and $G_{F}$ is the effective coupling constant of the impulse approximation.  The next section describes the process of using coupled cluster theory to include more correlations into this crude approximation.
+where $m_{e}$ is the electron mass, and $G_{F}$ is the effective coupling constant.  The next section describes the process of improving upon the impulse approximation by using coupled cluster theory to include higher-body interactions with the CC similarity transformation.
 
 
 \section{Coupled Cluster Effective Operators} \label{section:cc-operators}
 
+The main step in calculating dynamic properties within an \emph{ab initio} framework is to calculate the transition matrix elements of the relevant operator between two correlated many-body states.  In this cases considered in this thesis, the correlated many-body states are given by right and left expansions for the PA-EOM(2) and PR-EOM(2) operators in Eqs.\ \eqref{eq:pa-eom2} and \eqref{eq:pr-eom2}, respectively.  Beta-decay properties are computed with the Fermi and Gamow-Teller operators which are one-body operators that change a neutron to a proton or vice versa and carry the quantum number, $\lambda$, according to table \ref{tab:beta-selection}.
 
-The one-body beta-decay operators can be split into $\mathrm{hp}$, $\mathrm{hh}$, $\mathrm{pp}$, and $\mathrm{ph}$ components which are analagous to the one-body components of the effective Hamiltonian, see \ref{chapter:eff_ham_diagrams}.  The $\mathrm{hp}$ component has no connected terms in Eq.\ \eqref{}, and so it is unchanged by the similarity transformation,
+In the impulse approximation, the Fermi operator, which has no spin component, is simply equivalent to the isospin raising operator for the $\beta^{-}$ Fermi transition, which changes a neutron to a proton, or the lowering operator for the $\beta^{+}$ transition, which changes a proton to a neutron,
+\begin{equation}
+  \Oop{}_{F^{\mp}} = \sum_{pq}\relement{p}{\mathbf{\hat{\tau}_{\pm}}}{q} \normord{\co{p}\ao{q}}.
+\end{equation}
+The reduced matrix element, see appendix \ref{chapter:angular_momentum}, $\relement{p}{\mathbf{\hat{\tau}_{\pm}}}{q}$, is given for harmonic-oscillator basis states as,
+\begin{equation}
+  \relement{p}{\mathbf{\hat{\tau}_{\pm}}}{q} = \sqrt{2j_{p} + 1}\ \delta_{n_{p}n_{q}}\delta_{l_{p}l_{q}}\delta_{j_{p}j_{q}}\delta_{t_{p}t_{q}\pm 1}\ .
+\end{equation}
+Similarly, the Gamow-Teller operator also includes the isospin raising/lowering operator in addition to the spin operator $\hat{\sigma}$,
+\begin{equation}
+  \Oop{}_{GT^{\mp}} = \sum_{pq}\relement{p}{\mathbf{\hat{\sigma}\hat{\tau}_{\pm}}}{q} \normord{\co{p}\ao{q}}.
+\end{equation}
+Here, the reduced matrix element, $\relement{p}{\mathbf{\hat{\sigma}\hat{\tau}_{\pm}}}{q}$, is also given for the harmonic-oscillator basis,
+\begin{equation}
+  \relement{p}{\mathbf{\hat{\sigma}\hat{\tau}_{\pm}}}{q} = \sqrt{6(2j_{p} + 1)(2j_{q} + 1)}\sixj{\frac{1}{2}}{\frac{1}{2}}{1}{j_{q}}{j_{p}}{l_{p}} \mathop{(-1)^{l_{p}+j_{p}+\frac{3}{2}}} \delta_{n_{p}n_{q}}\delta_{l_{p}l_{q}}\delta_{t_{p}t_{q}\pm 1}.
+\end{equation}
+
+These operators can now be used to calculate the transition matrix elements in Eq.\ \eqref{eq:RTAmps} by applying them between an initial state, $\ket{\Corr_{\mathrm{i}}}$, and a final state, $\bra{\Corr_{\mathrm{f}}}$.  The Fermi reduced transition amplitude is,
+\begin{equation} \label{eq:fermi-ME}
+  M_{F} = \relement{\Corr_{\mathrm{f}}}{\Oop{}_{F^{\mp}}}{\Corr_{\mathrm{i}}} = \delta_{J_\mathrm{f}J_{\mathrm{i}}}\sum_{pq}\relement{p}{\mathbf{\hat{\tau}_{\pm}}}{q}\relement{\Corr_{\mathrm{f}}}{\normord{\co{p}\ao{q}}}{\Corr_{\mathrm{i}}}.
+\end{equation}
+Similarly, the Gamow-Teller reduced transition amplited is,
+\begin{equation} \label{eq:gamowteller-ME}
+  M_{GT} = \relement{\Corr_{\mathrm{f}}}{\Oop{}_{GT^{\mp}}}{\Corr_{\mathrm{i}}} = \sum_{pq}\relement{p}{\mathbf{\hat{\sigma}\hat{\tau}_{\pm}}}{q}\relement{\Corr_{\mathrm{f}}}{\normord{\co{p}\ao{q}}}{\Corr_{\mathrm{i}}}.
+\end{equation}
+
+Within the coupled cluster framework, the initial and final states take the form of PA-EOM or PR-EOM states given generically in Eq.\ \eqref{eq:eom_def}.  According to Eqs.\ \eqref{eq:eom_schrodinger1} and \eqref{eq:eom_dual1}, the left and right eigenstates of the bare Hamiltonian can be given by $\bra{\Corr_{\mathrm{f}}} = \refbra\Lop_{\mathrm{f}}\E^{-\Top}$ and $\ket{\Corr_{\mathrm{i}}} = \E^{\Top}\Rop_{\mathrm{i}}\refket$.  Inserting these EOM states into Eq.\ \eqref{eq:fermi-ME}, for example, gives,
+\begin{equation} \label{eq:fermi-ME-EOM}
+  M_{F} = \delta_{J_\mathrm{f}J_{\mathrm{i}}}\sum_{pq}\relement{p}{\mathbf{\hat{\tau}_{\pm}}}{q}\refbra\Lop_{\mathrm{f}}\E^{-\Top}}\normord{\co{p}\ao{q}}\E^{\Top}\Rop_{\mathrm{i}}\refket.
+\end{equation}
+
+This equation's resemblance to Eq.\ \eqref{eq:cc_heff0} motivates the construction of an \texit{effective operator}, $\EOop{\lambda}$.  The Fermi and Gamow-Teller effective operators have the form,
+\begin{gather}
+  \EOop{}_{F^{\mp}} = \sum_{pq}\relement{p}{\mathbf{\hat{\tau}_{\pm}}}{q} \E^{-\Top}\normord{\co{p}\ao{q}}\E^{\Top}, \\
+  \EOop{}_{GT^{\mp}} = \sum_{pq}\relement{p}{\mathbf{\hat{\sigma}\hat{\tau}_{\pm}}}{q} \E^{-\Top}\normord{\co{p}\ao{q}}\E^{\Top}.
+\end{gather}
+The similarity-transformed component, $\E^{-\Top}\normord{\co{p}\ao{q}}\E^{\Top}$, is known as the \textit{one-body density matrix}.  Using the Baker-Campbell-Housedorf expansion like Eq.\ \eqref{eq:bch-cc} and the reduction to connected diagrams like Eq.\ \eqref{eq:cc_heff1}, the one-body density matrix can be reduced to the form,
+\begin{equation} \label{eq:eff_OBD}
+  \E^{-\Top}\normord{\co{p}\ao{q}}\E^{\Top} = \left(\normord{\co{p}\ao{q}} e^{\Top}\right)_{\mathrm{c}}.
+\end{equation}
+The effective operators are best calculated using diagrammatic techniques like those used for the effective Hamiltonian.  In this case, the bare one-body operators are depicted by the vertex type \raisebox{-5pt}{\mbox{\includegraphics[height=17pt]{diagrams/Eff_1b/Eff_1b-figure13.pdf}}} while the effective one- and two-body operators are depicted by \raisebox{-5pt}{\mbox{\includegraphics[height=17pt]{diagrams/Eff_1b/Eff_1b-figure14.pdf}}} and \raisebox{-5pt}{\mbox{\includegraphics[height=17pt]{diagrams/Eff_1b/Eff_1b-figure15.pdf}}}, respectively.
+
+The one-body beta-decay operators can be split into $\mathrm{hp}$, $\mathrm{hh}$, $\mathrm{pp}$, and $\mathrm{ph}$ components which are analagous to the one-body components of the effective Hamiltonian, see \ref{chapter:eff_ham_diagrams}.  The $\mathrm{hp}$ component has no connected terms in Eq.\ \eqref{eq:eff_OBD}, and so it is unchanged by the similarity transformation,
 \begin{align}
   \diagram{Eff_1b/Eff_1b-figure0} &= \diagram{Eff_1b/Eff_1b-figure1} \notag \\
   \oopint{\lambda}{i}{a} &= \opint{\lambda}{i}{a}.
@@ -177,19 +224,9 @@ Similarly, the $\mathrm{hphh}$ component is represented by the following diagram
 \section{Calculating Beta-Decay Matrix Elements}
 
 Fix these!!!!!!!
-\begin{equation}
-  \mathcal{M}_{\text{F}} \equiv \relement{\mathcal{F}}{\mathbf{\tau}}{\mathcal{I}} = \delta_{J_\mathcal{F}J_{\mathcal{I}}}\sum_{pq}\relement{p}{\mathbf{\hat{\tau}}}{q}\relement{\mathcal{F}}{\co{p}\ao{q}}{\mathcal{I}}
-\end{equation}
-\begin{equation}
-  \mathcal{M}_{\text{GT}} \equiv \relement{\mathcal{F}}{\mathbf{\sigma\tau}}{\mathcal{I}} = \sum_{pq}\relement{p}{\mathbf{\hat{\sigma}\hat{\tau}}}{q}\relement{\mathcal{F}}{\co{p}\ao{q}}{\mathcal{I}}
-\end{equation}
 
-\begin{equation}
-  \relement{p}{\mathbf{\hat{\tau}}}{q} = \delta_{n_{p}n_{q}}\delta_{l_{p}l_{q}}\delta_{j_{p}j_{q}}\delta_{t_{p}t_{q}\pm 1}\ \hat{j}_{p}
-\end{equation}
-\begin{equation}
-  \relement{p}{\mathbf{\hat{\sigma}\hat{\tau}}}{q} = \sqrt{6}\ \delta_{n_{p}n_{q}}\delta_{l_{p}l_{q}}\delta_{t_{p}t_{q}\pm 1}\ \hat{j}_{p}\hat{j}_{q}\mathop{(-1)^{l_{p}+j_{p}+\frac{3}{2}}}\sixj{\frac{1}{2}}{\frac{1}{2}}{1}{j_{q}}{j_{p}}{l_{p}}
-\end{equation}
+
+
 
 
 \begin{equation}

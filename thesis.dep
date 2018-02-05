@@ -296,6 +296,9 @@ thesis.pdf thesis.dep :\
     figures/diagrams/Eff_1b/Eff_1b-figure10.pdf\
     figures/diagrams/Eff_1b/Eff_1b-figure11.pdf\
     figures/diagrams/Eff_1b/Eff_1b-figure12.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure13.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure14.pdf\
+    figures/diagrams/Eff_1b/Eff_1b-figure15.pdf\
     figures/diagrams/Eff_1b/Eff_1b-figure2.pdf\
     figures/diagrams/Eff_1b/Eff_1b-figure3.pdf\
     figures/diagrams/Eff_1b/Eff_1b-figure4.pdf\
@@ -1006,6 +1009,12 @@ figures/diagrams/Eff_1b/Eff_1b-figure10.pdf :
 figures/diagrams/Eff_1b/Eff_1b-figure11.pdf :
 
 figures/diagrams/Eff_1b/Eff_1b-figure12.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure13.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure14.pdf :
+
+figures/diagrams/Eff_1b/Eff_1b-figure15.pdf :
 
 figures/diagrams/Eff_1b/Eff_1b-figure2.pdf :
 

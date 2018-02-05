@@ -1,6 +1,6 @@
 \contentsline {chapter}{\MakeUppercase {List of Tables}}{vii}{section*.5}
 \contentsline {chapter}{\MakeUppercase {List of Figures}}{viii}{section*.7}
-\contentsline {chapter}{\MakeUppercase {Key to Symbols and Abbreviations}}{xii}{section*.9}
+\contentsline {chapter}{\MakeUppercase {Key to Symbols and Abbreviations}}{xiii}{section*.9}
 \contentsline {chapter}{\numberline {Chapter{} 1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}A Brief History of Nuclear Structure Theory}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Electroweak Theory and Nuclear Structure}{4}{section.1.2}
@@ -42,13 +42,13 @@
 \contentsline {chapter}{\numberline {Chapter{} 5}Beta--Decay Effective Operators}{103}{chapter.5}
 \contentsline {section}{\numberline {5.1}Beta-Decay Properties}{103}{section.5.1}
 \contentsline {section}{\numberline {5.2}Coupled Cluster Effective Operators}{107}{section.5.2}
-\contentsline {section}{\numberline {5.3}Calculating Beta-Decay Matrix Elements}{109}{section.5.3}
-\contentsline {chapter}{\numberline {Chapter{} 6}Conclusions and Perspectives}{111}{chapter.6}
-\contentsline {section}{\numberline {6.1}Summary and Conclusions}{111}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Perspectives}{111}{section.6.2}
-\contentsline {chapter}{\MakeUppercase {Appendices}}{112}{section*.42}
-\contentsline {section}{Appendix{} A{} CCSD Diagrams}{113}{appendix.A}
-\contentsline {section}{Appendix{} B{} Effective Hamiltonian Diagrams}{120}{appendix.B}
-\contentsline {section}{Appendix{} C{} Computational Implementation}{127}{appendix.C}
-\contentsline {section}{Appendix{} D{} Angular Momentum Coupling}{138}{appendix.D}
-\contentsline {chapter}{\MakeUppercase {References}}{143}{section*.50}
+\contentsline {section}{\numberline {5.3}Calculating Beta-Decay Matrix Elements}{112}{section.5.3}
+\contentsline {chapter}{\numberline {Chapter{} 6}Conclusions and Perspectives}{114}{chapter.6}
+\contentsline {section}{\numberline {6.1}Summary and Conclusions}{114}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Perspectives}{114}{section.6.2}
+\contentsline {chapter}{\MakeUppercase {Appendices}}{115}{section*.42}
+\contentsline {section}{Appendix{} A{} CCSD Diagrams}{116}{appendix.A}
+\contentsline {section}{Appendix{} B{} Effective Hamiltonian Diagrams}{123}{appendix.B}
+\contentsline {section}{Appendix{} C{} Computational Implementation}{130}{appendix.C}
+\contentsline {section}{Appendix{} D{} Angular Momentum Coupling}{141}{appendix.D}
+\contentsline {chapter}{\MakeUppercase {References}}{146}{section*.50}
