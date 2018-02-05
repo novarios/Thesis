@@ -45,7 +45,6 @@
 \contentsline {section}{\numberline {5.3}Calculating Beta-Decay Matrix Elements}{112}{section.5.3}
 \contentsline {chapter}{\numberline {Chapter{} 6}Conclusions and Perspectives}{114}{chapter.6}
 \contentsline {section}{\numberline {6.1}Summary and Conclusions}{114}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Perspectives}{114}{section.6.2}
 \contentsline {chapter}{\MakeUppercase {Appendices}}{115}{section*.42}
 \contentsline {section}{Appendix{} A{} CCSD Diagrams}{116}{appendix.A}
 \contentsline {section}{Appendix{} B{} Effective Hamiltonian Diagrams}{123}{appendix.B}

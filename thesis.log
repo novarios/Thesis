@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  4 FEB 2018 21:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  4 FEB 2018 21:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,7 +647,7 @@ t di-ag-o-nal-iza-tion, CCD,
 
 
 ]
-<figures/introduction/ab-initio_nuclear_chart_2005.pdf, id=581, 1204.5pt x 725.
+<figures/introduction/ab-initio_nuclear_chart_2005.pdf, id=576, 1204.5pt x 725.
 71124pt>
 File: figures/introduction/ab-initio_nuclear_chart_2005.pdf Graphic file (type 
 pdf)
@@ -656,7 +656,7 @@ Package pdftex.def Info: figures/introduction/ab-initio_nuclear_chart_2005.pdf
 used on input line 20.
 (pdftex.def)             Requested size: 328.82707pt x 198.11505pt.
 
-<figures/introduction/ab-initio_nuclear_chart_2017.pdf, id=582, 1204.5pt x 725.
+<figures/introduction/ab-initio_nuclear_chart_2017.pdf, id=577, 1204.5pt x 725.
 71124pt>
 File: figures/introduction/ab-initio_nuclear_chart_2017.pdf Graphic file (type 
 pdf)
@@ -675,7 +675,7 @@ pdfTeX warning: pdflatex (file ./figures/introduction/ab-initio_nuclear_chart_2
 017.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
 >]
-<figures/introduction/ab-initio_progress.pdf, id=655, 525.96812pt x 397.59479pt
+<figures/introduction/ab-initio_progress.pdf, id=650, 525.96812pt x 397.59479pt
 >
 File: figures/introduction/ab-initio_progress.pdf Graphic file (type pdf)
  <use figures/introduction/ab-initio_progress.pdf>
@@ -690,7 +690,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 (./ManyBody.tex [8
 
 ] [9] [10] [11] [12]
-<figures/manybody/IPM.pdf, id=854, 300.58762pt x 180.75449pt>
+<figures/manybody/IPM.pdf, id=849, 300.58762pt x 180.75449pt>
 File: figures/manybody/IPM.pdf Graphic file (type pdf)
 
 <use figures/manybody/IPM.pdf>
@@ -738,28 +738,28 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-<figures/manybody/1p1h.pdf, id=876, 300.58762pt x 180.75449pt>
+<figures/manybody/1p1h.pdf, id=871, 300.58762pt x 180.75449pt>
 File: figures/manybody/1p1h.pdf Graphic file (type pdf)
 
 <use figures/manybody/1p1h.pdf>
 Package pdftex.def Info: figures/manybody/1p1h.pdf used on input line 111.
 (pdftex.def)             Requested size: 141.95042pt x 85.35826pt.
 
-<figures/manybody/2p2h.pdf, id=877, 300.58762pt x 180.75449pt>
+<figures/manybody/2p2h.pdf, id=872, 300.58762pt x 180.75449pt>
 File: figures/manybody/2p2h.pdf Graphic file (type pdf)
 
 <use figures/manybody/2p2h.pdf>
 Package pdftex.def Info: figures/manybody/2p2h.pdf used on input line 111.
 (pdftex.def)             Requested size: 141.95042pt x 85.35826pt.
 
-<figures/manybody/PA.pdf, id=878, 300.58762pt x 180.75449pt>
+<figures/manybody/PA.pdf, id=873, 300.58762pt x 180.75449pt>
 File: figures/manybody/PA.pdf Graphic file (type pdf)
 
 <use figures/manybody/PA.pdf>
 Package pdftex.def Info: figures/manybody/PA.pdf used on input line 117.
 (pdftex.def)             Requested size: 141.95042pt x 85.35826pt.
 
-<figures/manybody/PR.pdf, id=879, 300.58762pt x 180.75449pt>
+<figures/manybody/PR.pdf, id=874, 300.58762pt x 180.75449pt>
 File: figures/manybody/PR.pdf Graphic file (type pdf)
 
 <use figures/manybody/PR.pdf>
@@ -778,7 +778,7 @@ ple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./figures/manybody/PR.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >] [15] [16]
-<figures/diagrams/Hamiltonian/Hamiltonian-figure12.pdf, id=958, 33.44194pt x 12
+<figures/diagrams/Hamiltonian/Hamiltonian-figure12.pdf, id=953, 33.44194pt x 12
 .35516pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure12.pdf Graphic file (type 
 pdf)
@@ -787,7 +787,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure12.pdf
 used on input line 186.
 (pdftex.def)             Requested size: 40.60262pt x 15.0pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure13.pdf, id=959, 31.68137pt x 12
+<figures/diagrams/Hamiltonian/Hamiltonian-figure13.pdf, id=954, 31.68137pt x 12
 .35516pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure13.pdf Graphic file (type 
 pdf)
@@ -796,7 +796,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure13.pdf
 used on input line 186.
 (pdftex.def)             Requested size: 38.46507pt x 15.0pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf, id=961, 43.7083pt x 63.5
+<figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf, id=956, 43.7083pt x 63.5
 6949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf Graphic file (type p
 df)
@@ -805,7 +805,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure0.pdf u
 sed on input line 188.
 (pdftex.def)             Requested size: 48.91292pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf, id=962, 52.48608pt x 63.
+<figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf, id=957, 52.48608pt x 63.
 56949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf Graphic file (type p
 df)
@@ -814,7 +814,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf u
 sed on input line 188.
 (pdftex.def)             Requested size: 58.73593pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure2.pdf, id=963, 75.24812pt x 63.
+<figures/diagrams/Hamiltonian/Hamiltonian-figure2.pdf, id=958, 75.24812pt x 63.
 56949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure2.pdf Graphic file (type p
 df)
@@ -826,7 +826,7 @@ sed on input line 188.
 ams/Hamiltonian/Hamiltonian-figure13.pdf> <./figures/diagrams/Hamiltonian/Hamil
 tonian-figure0.pdf> <./figures/diagrams/Hamiltonian/Hamiltonian-figure1.pdf> <.
 /figures/diagrams/Hamiltonian/Hamiltonian-figure2.pdf>]
-<figures/diagrams/Hamiltonian/Hamiltonian-figure3.pdf, id=988, 49.3865pt x 63.5
+<figures/diagrams/Hamiltonian/Hamiltonian-figure3.pdf, id=983, 49.3865pt x 63.5
 6949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure3.pdf Graphic file (type p
 df)
@@ -835,7 +835,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure3.pdf u
 sed on input line 201.
 (pdftex.def)             Requested size: 55.26727pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure4.pdf, id=989, 49.3865pt x 63.5
+<figures/diagrams/Hamiltonian/Hamiltonian-figure4.pdf, id=984, 49.3865pt x 63.5
 6949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure4.pdf Graphic file (type p
 df)
@@ -844,7 +844,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure4.pdf u
 sed on input line 201.
 (pdftex.def)             Requested size: 55.26727pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure5.pdf, id=990, 58.1633pt x 63.5
+<figures/diagrams/Hamiltonian/Hamiltonian-figure5.pdf, id=985, 58.1633pt x 63.5
 6949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure5.pdf Graphic file (type p
 df)
@@ -853,7 +853,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure5.pdf u
 sed on input line 201.
 (pdftex.def)             Requested size: 65.08917pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure6.pdf, id=991, 80.92635pt x 63.
+<figures/diagrams/Hamiltonian/Hamiltonian-figure6.pdf, id=986, 80.92635pt x 63.
 56949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure6.pdf Graphic file (type p
 df)
@@ -862,7 +862,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure6.pdf u
 sed on input line 201.
 (pdftex.def)             Requested size: 90.56279pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure7.pdf, id=992, 63.56949pt x 63.
+<figures/diagrams/Hamiltonian/Hamiltonian-figure7.pdf, id=987, 63.56949pt x 63.
 56949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure7.pdf Graphic file (type p
 df)
@@ -871,7 +871,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure7.pdf u
 sed on input line 209.
 (pdftex.def)             Requested size: 71.13911pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure8.pdf, id=993, 63.56949pt x 63.
+<figures/diagrams/Hamiltonian/Hamiltonian-figure8.pdf, id=988, 63.56949pt x 63.
 56949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure8.pdf Graphic file (type p
 df)
@@ -880,7 +880,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure8.pdf u
 sed on input line 209.
 (pdftex.def)             Requested size: 71.13911pt x 71.13188pt.
 
-<figures/diagrams/Hamiltonian/Hamiltonian-figure9.pdf, id=994, 80.92635pt x 63.
+<figures/diagrams/Hamiltonian/Hamiltonian-figure9.pdf, id=989, 80.92635pt x 63.
 56949pt>
 File: figures/diagrams/Hamiltonian/Hamiltonian-figure9.pdf Graphic file (type p
 df)
@@ -972,7 +972,7 @@ Package pdftex.def Info: figures/diagrams/Hamiltonian/Hamiltonian-figure6.pdf u
 sed on input line 255.
 (pdftex.def)             Requested size: 90.56279pt x 71.13188pt.
  [21] [22] [23]
-[24] [25] <figures/manybody/FCIscaling.png, id=1113, 3236.09pt x 1279.27937pt>
+[24] [25] <figures/manybody/FCIscaling.png, id=1108, 3236.09pt x 1279.27937pt>
 File: figures/manybody/FCIscaling.png Graphic file (type png)
 
 <use figures/manybody/FCIscaling.png>
@@ -990,7 +990,7 @@ Overfull \hbox (4.04439pt too wide) in paragraph at lines 366--368
  []
 
 [29] [30]
-<figures/diagrams/MBPT/MBPT-figure23.pdf, id=1174, 120.05754pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure23.pdf, id=1169, 120.05754pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure23.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure23.pdf>
@@ -998,7 +998,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure23.pdf used on input
 line 407.
 (pdftex.def)             Requested size: 112.85042pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure24.pdf, id=1175, 123.47029pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure24.pdf, id=1170, 123.47029pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure24.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure24.pdf>
@@ -1006,7 +1006,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure24.pdf used on input
 line 407.
 (pdftex.def)             Requested size: 116.0583pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure25.pdf, id=1176, 148.09326pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure25.pdf, id=1171, 148.09326pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure25.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure25.pdf>
@@ -1014,7 +1014,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure25.pdf used on input
 line 407.
 (pdftex.def)             Requested size: 139.20316pt x 59.75095pt.
  [31]
-<figures/diagrams/MBPT/MBPT-figure26.pdf, id=1184, 137.12932pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure26.pdf, id=1179, 137.12932pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure26.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure26.pdf>
@@ -1022,7 +1022,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure26.pdf used on input
 line 416.
 (pdftex.def)             Requested size: 128.89737pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure27.pdf, id=1185, 137.12932pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure27.pdf, id=1180, 137.12932pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure27.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure27.pdf>
@@ -1030,7 +1030,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure27.pdf used on input
 line 416.
 (pdftex.def)             Requested size: 128.89737pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure28.pdf, id=1186, 153.78354pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure28.pdf, id=1181, 153.78354pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure28.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure28.pdf>
@@ -1066,13 +1066,27 @@ PT/MBPT-figure26.pdf> <./figures/diagrams/MBPT/MBPT-figure27.pdf> <./figures/di
 agrams/MBPT/MBPT-figure28.pdf>]) [33] (./CC.tex [34
 
 ] [35] [36]
+
+! Package amsmath Error: Multiple \label's: label 'eq:bch-cc' will be lost.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{align}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 Overfull \hbox (4.58005pt too wide) in paragraph at lines 61--62
 []\OT1/cmr/m/n/12 The un-known clus-ter am-pli-tudes in CCSD, $[][]$ and $[][]$
 , can be cal-cu-lated by left-multiplying
  []
 
 [37]
-<figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf, id=1313, 18.04543pt x 12.35516pt
+<figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf, id=1308, 18.04543pt x 12.35516pt
 >
 File: figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf>
@@ -1080,7 +1094,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_dE/CCSD_dE-figure3.pdf used on i
 nput line 97.
 (pdftex.def)             Requested size: 29.21468pt x 20.0pt.
  [38]
-<figures/diagrams/CC_Amps/CC_Amps-figure0.pdf, id=1319, 29.712pt x 63.56949pt>
+<figures/diagrams/CC_Amps/CC_Amps-figure0.pdf, id=1314, 29.712pt x 63.56949pt>
 File: figures/diagrams/CC_Amps/CC_Amps-figure0.pdf Graphic file (type pdf)
 
 <use figures/diagrams/CC_Amps/CC_Amps-figure0.pdf>
@@ -1088,7 +1102,7 @@ Package pdftex.def Info: figures/diagrams/CC_Amps/CC_Amps-figure0.pdf used on i
 nput line 103.
 (pdftex.def)             Requested size: 22.60854pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure0.pdf, id=1320, 41.56227pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure0.pdf, id=1315, 41.56227pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure0.pdf Graphic file (type p
 df)
@@ -1097,7 +1111,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure0.pdf u
 sed on input line 103.
 (pdftex.def)             Requested size: 31.6257pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure4.pdf, id=1321, 75.13672pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure4.pdf, id=1316, 75.13672pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure4.pdf Graphic file (type p
 df)
@@ -1106,7 +1120,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure4.pdf u
 sed on input line 103.
 (pdftex.def)             Requested size: 57.17326pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure8.pdf, id=1322, 50.15639pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure8.pdf, id=1317, 50.15639pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure8.pdf Graphic file (type p
 df)
@@ -1115,7 +1129,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure8.pdf u
 sed on input line 103.
 (pdftex.def)             Requested size: 38.16515pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure10.pdf, id=1323, 46.75468pt x 6
+<figures/diagrams/MBPT_linked/MBPT_linked-figure10.pdf, id=1318, 46.75468pt x 6
 3.56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure10.pdf Graphic file (type 
 pdf)
@@ -1124,7 +1138,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure10.pdf
 used on input line 103.
 (pdftex.def)             Requested size: 35.57672pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure11.pdf, id=1324, 46.75468pt x 6
+<figures/diagrams/MBPT_linked/MBPT_linked-figure11.pdf, id=1319, 46.75468pt x 6
 3.56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure11.pdf Graphic file (type 
 pdf)
@@ -1133,7 +1147,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure11.pdf
 used on input line 103.
 (pdftex.def)             Requested size: 35.57672pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure16.pdf, id=1325, 55.91891pt x 6
+<figures/diagrams/MBPT_linked/MBPT_linked-figure16.pdf, id=1320, 55.91891pt x 6
 3.56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure16.pdf Graphic file (type 
 pdf)
@@ -1142,7 +1156,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure16.pdf
 used on input line 103.
 (pdftex.def)             Requested size: 42.54999pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure17.pdf, id=1326, 55.91891pt x 6
+<figures/diagrams/MBPT_linked/MBPT_linked-figure17.pdf, id=1321, 55.91891pt x 6
 3.56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure17.pdf Graphic file (type 
 pdf)
@@ -1206,7 +1220,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure17.pdf
 used on input line 103.
 (pdftex.def)             Requested size: 42.54999pt x 48.36958pt.
 
-<figures/diagrams/CC_Amps/CC_Amps-figure1.pdf, id=1327, 63.85556pt x 63.56949pt
+<figures/diagrams/CC_Amps/CC_Amps-figure1.pdf, id=1322, 63.85556pt x 63.56949pt
 >
 File: figures/diagrams/CC_Amps/CC_Amps-figure1.pdf Graphic file (type pdf)
  <use figures/diagrams/CC_Amps/CC_Amps-figure1.pdf>
@@ -1214,7 +1228,7 @@ Package pdftex.def Info: figures/diagrams/CC_Amps/CC_Amps-figure1.pdf used on i
 nput line 109.
 (pdftex.def)             Requested size: 48.58917pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure1.pdf, id=1328, 53.61229pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure1.pdf, id=1323, 53.61229pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure1.pdf Graphic file (type p
 df)
@@ -1223,7 +1237,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure1.pdf u
 sed on input line 109.
 (pdftex.def)             Requested size: 40.79483pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure2.pdf, id=1329, 80.89824pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure2.pdf, id=1324, 80.89824pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure2.pdf Graphic file (type p
 df)
@@ -1232,7 +1246,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure2.pdf u
 sed on input line 109.
 (pdftex.def)             Requested size: 61.55734pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure3.pdf, id=1330, 80.89824pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure3.pdf, id=1325, 80.89824pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure3.pdf Graphic file (type p
 df)
@@ -1241,7 +1255,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure3.pdf u
 sed on input line 109.
 (pdftex.def)             Requested size: 61.55734pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure6.pdf, id=1331, 58.09303pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure6.pdf, id=1326, 58.09303pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure6.pdf Graphic file (type p
 df)
@@ -1250,7 +1264,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure6.pdf u
 sed on input line 109.
 (pdftex.def)             Requested size: 44.20433pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure7.pdf, id=1332, 58.09303pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure7.pdf, id=1327, 58.09303pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure7.pdf Graphic file (type p
 df)
@@ -1259,7 +1273,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure7.pdf u
 sed on input line 109.
 (pdftex.def)             Requested size: 44.20433pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure13.pdf, id=1333, 63.85556pt x 6
+<figures/diagrams/MBPT_linked/MBPT_linked-figure13.pdf, id=1328, 63.85556pt x 6
 3.56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure13.pdf Graphic file (type 
 pdf)
@@ -1268,7 +1282,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure13.pdf
 used on input line 109.
 (pdftex.def)             Requested size: 48.58917pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure14.pdf, id=1334, 63.85556pt x 6
+<figures/diagrams/MBPT_linked/MBPT_linked-figure14.pdf, id=1329, 63.85556pt x 6
 3.56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure14.pdf Graphic file (type 
 pdf)
@@ -1277,7 +1291,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure14.pdf
 used on input line 109.
 (pdftex.def)             Requested size: 48.58917pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure15.pdf, id=1335, 63.85556pt x 6
+<figures/diagrams/MBPT_linked/MBPT_linked-figure15.pdf, id=1330, 63.85556pt x 6
 3.56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure15.pdf Graphic file (type 
 pdf)
@@ -1353,14 +1367,14 @@ Overfull \hbox (1.61923pt too wide) in paragraph at lines 109--109
  []
 
 
-<figures/diagrams/CC_Amps/CC_Amps-figure2.pdf, id=1336, 86.6176pt x 63.56949pt>
+<figures/diagrams/CC_Amps/CC_Amps-figure2.pdf, id=1331, 86.6176pt x 63.56949pt>
 File: figures/diagrams/CC_Amps/CC_Amps-figure2.pdf Graphic file (type pdf)
 <use figures/diagrams/CC_Amps/CC_Amps-figure2.pdf>
 Package pdftex.def Info: figures/diagrams/CC_Amps/CC_Amps-figure2.pdf used on i
 nput line 113.
 (pdftex.def)             Requested size: 65.90935pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure18.pdf, id=1337, 86.6176pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure18.pdf, id=1332, 86.6176pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure18.pdf Graphic file (type 
 pdf)
@@ -1369,7 +1383,7 @@ Package pdftex.def Info: figures/diagrams/MBPT_linked/MBPT_linked-figure18.pdf
 used on input line 113.
 (pdftex.def)             Requested size: 65.90935pt x 48.36958pt.
 
-<figures/diagrams/MBPT_linked/MBPT_linked-figure19.pdf, id=1338, 86.6176pt x 63
+<figures/diagrams/MBPT_linked/MBPT_linked-figure19.pdf, id=1333, 86.6176pt x 63
 .56949pt>
 File: figures/diagrams/MBPT_linked/MBPT_linked-figure19.pdf Graphic file (type 
 pdf)
@@ -1410,7 +1424,7 @@ d-figure3.pdf> <./figures/diagrams/MBPT_linked/MBPT_linked-figure6.pdf> <./figu
 res/diagrams/MBPT_linked/MBPT_linked-figure7.pdf> <./figures/diagrams/MBPT_link
 ed/MBPT_linked-figure13.pdf> <./figures/diagrams/MBPT_linked/MBPT_linked-figure
 14.pdf> <./figures/diagrams/MBPT_linked/MBPT_linked-figure15.pdf>]
-<figures/diagrams/MBPT/MBPT-figure12.pdf, id=1366, 83.1125pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure12.pdf, id=1361, 83.1125pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure12.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure12.pdf>
@@ -1424,7 +1438,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure12.pdf used on input
 line 118.
 (pdftex.def)             Requested size: 78.12321pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure13.pdf, id=1367, 85.91498pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure13.pdf, id=1362, 85.91498pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure13.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure13.pdf>
@@ -1432,7 +1446,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure13.pdf used on input
 line 118.
 (pdftex.def)             Requested size: 80.75745pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure0.pdf, id=1368, 60.34947pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure0.pdf, id=1363, 60.34947pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure0.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure0.pdf>
@@ -1443,7 +1457,7 @@ ine 118.
 linked/MBPT_linked-figure18.pdf> <./figures/diagrams/MBPT_linked/MBPT_linked-fi
 gure19.pdf> <./figures/diagrams/MBPT/MBPT-figure12.pdf> <./figures/diagrams/MBP
 T/MBPT-figure13.pdf> <./figures/diagrams/MBPT/MBPT-figure0.pdf>]
-<figures/diagrams/MBPT/MBPT-figure21.pdf, id=1400, 137.12932pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure21.pdf, id=1395, 137.12932pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure21.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure21.pdf>
@@ -1457,7 +1471,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure21.pdf used on input
 line 130.
 (pdftex.def)             Requested size: 128.89737pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure22.pdf, id=1401, 137.27185pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure22.pdf, id=1396, 137.27185pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure22.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure22.pdf>
@@ -1465,7 +1479,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure22.pdf used on input
 line 130.
 (pdftex.def)             Requested size: 129.03134pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure1.pdf, id=1402, 80.22472pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure1.pdf, id=1397, 80.22472pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure1.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure1.pdf>
@@ -1497,7 +1511,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure1.pdf used on input l
 ine 130.
 (pdftex.def)             Requested size: 75.40877pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure5.pdf, id=1405, 114.40944pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure5.pdf, id=1400, 114.40944pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure5.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure5.pdf>
@@ -1505,7 +1519,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure5.pdf used on input l
 ine 140.
 (pdftex.def)             Requested size: 107.54138pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure9.pdf, id=1406, 114.40944pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure9.pdf, id=1401, 114.40944pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure9.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure9.pdf>
@@ -1513,7 +1527,7 @@ Package pdftex.def Info: figures/diagrams/MBPT/MBPT-figure9.pdf used on input l
 ine 140.
 (pdftex.def)             Requested size: 107.54138pt x 59.75095pt.
 
-<figures/diagrams/MBPT/MBPT-figure29.pdf, id=1407, 131.0215pt x 63.56949pt>
+<figures/diagrams/MBPT/MBPT-figure29.pdf, id=1402, 131.0215pt x 63.56949pt>
 File: figures/diagrams/MBPT/MBPT-figure29.pdf Graphic file (type pdf)
 
 <use figures/diagrams/MBPT/MBPT-figure29.pdf>
@@ -1529,14 +1543,14 @@ and [] gives $[] [][] +
 
 [42 <./figures/diagrams/MBPT/MBPT-figure5.pdf> <./figures/diagrams/MBPT/MBPT-fi
 gure9.pdf> <./figures/diagrams/MBPT/MBPT-figure29.pdf>]
-<figures/CC/Pairing_Space.pdf, id=1474, 176.05165pt x 240.80211pt>
+<figures/CC/Pairing_Space.pdf, id=1469, 176.05165pt x 240.80211pt>
 File: figures/CC/Pairing_Space.pdf Graphic file (type pdf)
 
 <use figures/CC/Pairing_Space.pdf>
 Package pdftex.def Info: figures/CC/Pairing_Space.pdf used on input line 168.
 (pdftex.def)             Requested size: 164.41711pt x 224.89162pt.
  [43 <./figures/CC/Pairing_Space.pdf>]
-<figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf, id=1509, 81.30475pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf, id=1504, 81.30475pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf>
@@ -1544,7 +1558,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf used on i
 nput line 194.
 (pdftex.def)             Requested size: 90.98624pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure1.pdf, id=1510, 80.89824pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure1.pdf, id=1505, 80.89824pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure1.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure1.pdf>
@@ -1552,14 +1566,14 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure1.pdf used on i
 nput line 194.
 (pdftex.def)             Requested size: 90.53133pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure0.pdf, id=1511, 59.2353pt x 63.56949pt>
+<figures/diagrams/CCSD_t2/CCSD_t2-figure0.pdf, id=1506, 59.2353pt x 63.56949pt>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure0.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_t2/CCSD_t2-figure0.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure0.pdf used on i
 nput line 194.
 (pdftex.def)             Requested size: 66.28885pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure5.pdf, id=1512, 64.26208pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure5.pdf, id=1507, 64.26208pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure5.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure5.pdf>
@@ -1567,7 +1581,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure5.pdf used on i
 nput line 194.
 (pdftex.def)             Requested size: 71.9142pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf, id=1513, 63.94992pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf, id=1508, 63.94992pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf>
@@ -1575,7 +1589,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf used on i
 nput line 194.
 (pdftex.def)             Requested size: 71.56485pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf, id=1514, 64.35744pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf, id=1509, 64.35744pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf>
@@ -1583,7 +1597,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf used on i
 nput line 194.
 (pdftex.def)             Requested size: 72.0209pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure11.pdf, id=1515, 98.56725pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure11.pdf, id=1510, 98.56725pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure11.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure11.pdf>
@@ -1591,7 +1605,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure11.pdf used on
 input line 194.
 (pdftex.def)             Requested size: 110.3043pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure12.pdf, id=1516, 98.56725pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure12.pdf, id=1511, 98.56725pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure12.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure12.pdf>
@@ -1599,7 +1613,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure12.pdf used on
 input line 194.
 (pdftex.def)             Requested size: 110.3043pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf, id=1517, 101.5805pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf, id=1512, 101.5805pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf>
@@ -1607,7 +1621,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf used on
 input line 194.
 (pdftex.def)             Requested size: 113.67638pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure14.pdf, id=1518, 101.48213pt x 63.56949
+<figures/diagrams/CCSD_t2/CCSD_t2-figure14.pdf, id=1513, 101.48213pt x 63.56949
 pt>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure14.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure14.pdf>
@@ -1675,7 +1689,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure14.pdf used on
 input line 194.
 (pdftex.def)             Requested size: 113.56628pt x 71.13188pt.
  [44]
-<figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf, id=1527, 62.57779pt x 63.56949pt
+<figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf, id=1522, 62.57779pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf>
@@ -1689,14 +1703,14 @@ figure6.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf> <./figures/diagra
 ms/CCSD_t2/CCSD_t2-figure11.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-figure12.p
 df> <./figures/diagrams/CCSD_t2/CCSD_t2-figure13.pdf> <./figures/diagrams/CCSD_
 t2/CCSD_t2-figure14.pdf> <./figures/diagrams/CCSD_dE/CCSD_dE-figure0.pdf>]
-<figures/CC/CCDMBPT4theory.pdf, id=1580, 578.16pt x 433.62pt>
+<figures/CC/CCDMBPT4theory.pdf, id=1575, 578.16pt x 433.62pt>
 File: figures/CC/CCDMBPT4theory.pdf Graphic file (type pdf)
 
 <use figures/CC/CCDMBPT4theory.pdf>
 Package pdftex.def Info: figures/CC/CCDMBPT4theory.pdf used on input line 210.
 (pdftex.def)             Requested size: 375.80544pt x 281.84966pt.
  [46 <./figures/CC/CCDMBPT4theory.pdf>]
-<figures/CC/pairingmatrix.pdf, id=1641, 999.19373pt x 387.62329pt>
+<figures/CC/pairingmatrix.pdf, id=1636, 999.19373pt x 387.62329pt>
 File: figures/CC/pairingmatrix.pdf Graphic file (type pdf)
 
 <use figures/CC/pairingmatrix.pdf>
@@ -1707,7 +1721,7 @@ Package pdftex.def Info: figures/CC/pairingmatrix.pdf used on input line 229.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47] [48 <./figures/CC/pairingmatrix.pdf>] [49] [50] [51] [52] [53]
-<figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf, id=1770, 33.44194pt x 18.04543p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf, id=1765, 33.44194pt x 18.04543p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf>
@@ -1715,7 +1729,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf used on
 input line 326.
 (pdftex.def)             Requested size: 37.06483pt x 20.0pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure24.pdf, id=1771, 31.68137pt x 18.04543p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure24.pdf, id=1766, 31.68137pt x 18.04543p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure24.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure24.pdf>
@@ -1723,21 +1737,21 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure24.pdf used on
 input line 326.
 (pdftex.def)             Requested size: 35.11354pt x 20.0pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf, id=1772, 41.3284pt x 63.56949pt>
+<figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf, id=1767, 41.3284pt x 63.56949pt>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure3.pdf used on i
 nput line 330.
 (pdftex.def)             Requested size: 46.24962pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf, id=1773, 41.3284pt x 63.56949pt>
+<figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf, id=1768, 41.3284pt x 63.56949pt>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure4.pdf used on i
 nput line 330.
 (pdftex.def)             Requested size: 46.24962pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf, id=1774, 67.11273pt x 63.56949pt
+<figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf, id=1769, 67.11273pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf>
@@ -1764,7 +1778,7 @@ nput line 330.
 (pdftex.def)             Requested size: 75.10428pt x 71.13188pt.
  [54 <./figures/diagrams/CCSD_1b/CCSD_1b-figure23.pdf> <./figures/diagrams/CCSD
 _1b/CCSD_1b-figure24.pdf>]
-<figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf, id=1783, 41.01624pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf, id=1778, 41.01624pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf>
@@ -1772,7 +1786,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf used on
 input line 335.
 (pdftex.def)             Requested size: 45.9003pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure9.pdf, id=1784, 41.01624pt x 63.56949pt
+<figures/diagrams/CCSD_1b/CCSD_1b-figure9.pdf, id=1779, 41.01624pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure9.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure9.pdf>
@@ -1780,7 +1794,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure9.pdf used on i
 nput line 335.
 (pdftex.def)             Requested size: 45.9003pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf, id=1785, 67.72603pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf, id=1780, 67.72603pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf>
@@ -1806,7 +1820,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf used on
 input line 335.
 (pdftex.def)             Requested size: 75.79062pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure18.pdf, id=1788, 52.87454pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure18.pdf, id=1783, 52.87454pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure18.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure18.pdf>
@@ -1814,7 +1828,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure18.pdf used on
 input line 340.
 (pdftex.def)             Requested size: 59.17064pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure19.pdf, id=1789, 52.87454pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure19.pdf, id=1784, 52.87454pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure19.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure19.pdf>
@@ -1822,7 +1836,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure19.pdf used on
 input line 340.
 (pdftex.def)             Requested size: 59.17064pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf, id=1790, 71.87854pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf, id=1785, 71.87854pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf>
@@ -1848,7 +1862,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf used on
 input line 340.
 (pdftex.def)             Requested size: 80.43758pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf, id=1791, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf, id=1786, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf>
@@ -1856,7 +1870,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf used on
 input line 345.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf, id=1792, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf, id=1787, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf>
@@ -1864,7 +1878,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf used on
 input line 345.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure36.pdf, id=1793, 71.92671pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure36.pdf, id=1788, 71.92671pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure36.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure36.pdf>
@@ -1895,7 +1909,7 @@ ures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf> <./figures/diagrams/CCSD_1b/CCSD_1b
 -figure9.pdf> <./figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf> <./figures/diag
 rams/CCSD_2b/CCSD_2b-figure18.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure19
 .pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf>]
-<figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf, id=1839, 59.2353pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf, id=1834, 59.2353pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf>
@@ -1903,7 +1917,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf used on
 input line 353.
 (pdftex.def)             Requested size: 66.28885pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure60.pdf, id=1840, 59.2353pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure60.pdf, id=1835, 59.2353pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure60.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure60.pdf>
@@ -1911,7 +1925,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure60.pdf used on
 input line 353.
 (pdftex.def)             Requested size: 66.28885pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf, id=1841, 80.99258pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf, id=1836, 80.99258pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf>
@@ -1919,7 +1933,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf used on
 input line 353.
 (pdftex.def)             Requested size: 90.6369pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure62.pdf, id=1842, 80.89824pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure62.pdf, id=1837, 80.89824pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure62.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure62.pdf>
@@ -1933,7 +1947,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure6.pdf used on i
 nput line 353.
 (pdftex.def)             Requested size: 71.56485pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure64.pdf, id=1843, 64.26208pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure64.pdf, id=1838, 64.26208pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure64.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure64.pdf>
@@ -1941,7 +1955,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure64.pdf used on
 input line 353.
 (pdftex.def)             Requested size: 71.9142pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf, id=1844, 64.35744pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf, id=1839, 64.35744pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf>
@@ -1996,7 +2010,7 @@ figures/diagrams/CCSD_2b/CCSD_2b-figure59.pdf> <./figures/diagrams/CCSD_2b/CCSD
 _2b-figure60.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure61.pdf> <./figures/
 diagrams/CCSD_2b/CCSD_2b-figure62.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figu
 re64.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf>] [57]
-<figures/CC/Infinite_Space.pdf, id=1897, 345.42365pt x 145.11632pt>
+<figures/CC/Infinite_Space.pdf, id=1892, 345.42365pt x 145.11632pt>
 File: figures/CC/Infinite_Space.pdf Graphic file (type pdf)
 
 <use figures/CC/Infinite_Space.pdf>
@@ -2015,13 +2029,13 @@ cmr/m/n/12 (\OT1/cmr/bx/n/12 r[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ^^^[]\OT1/cmr
  []
 
 [59 <./figures/CC/Infinite_Space.pdf>]
-<figures/CC/Electronic_Gas.pdf, id=1938, 532.22588pt x 403.94664pt>
+<figures/CC/Electronic_Gas.pdf, id=1933, 532.22588pt x 403.94664pt>
 File: figures/CC/Electronic_Gas.pdf Graphic file (type pdf)
 
 <use figures/CC/Electronic_Gas.pdf>
 Package pdftex.def Info: figures/CC/Electronic_Gas.pdf used on input line 423.
 (pdftex.def)             Requested size: 469.75502pt x 356.5343pt.
- [60] [61 <./figures/CC/Electronic_Gas.pdf>] [62] <figures/CC/HO.pdf, id=2028, 
+ [60] [61 <./figures/CC/Electronic_Gas.pdf>] [62] <figures/CC/HO.pdf, id=2023, 
 352.63516pt x 238.3009pt>
 File: figures/CC/HO.pdf Graphic file (type pdf)
 
@@ -2033,7 +2047,7 @@ Package pdftex.def Info: figures/CC/HO.pdf used on input line 445.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [63] [64 <./figures/CC/HO.pdf>] [65]
-<figures/CC/chiralforces.pdf, id=2070, 9274.65pt x 8322.09125pt>
+<figures/CC/chiralforces.pdf, id=2065, 9274.65pt x 8322.09125pt>
 File: figures/CC/chiralforces.pdf Graphic file (type pdf)
 
 <use figures/CC/chiralforces.pdf>
@@ -2044,7 +2058,7 @@ Package pdftex.def Info: figures/CC/chiralforces.pdf used on input line 477.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [66] [67 <./figures/CC/chiralforces.pdf>]
-<figures/CC/ground_state_srg.pdf, id=2099, 561.89801pt x 489.75032pt>
+<figures/CC/ground_state_srg.pdf, id=2094, 561.89801pt x 489.75032pt>
 File: figures/CC/ground_state_srg.pdf Graphic file (type pdf)
 
 <use figures/CC/ground_state_srg.pdf>
@@ -2055,7 +2069,7 @@ Package pdftex.def Info: figures/CC/ground_state_srg.pdf used on input line 494
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/CC/ground_state1.pdf, id=2101, 562.02036pt x 489.75032pt>
+<figures/CC/ground_state1.pdf, id=2096, 562.02036pt x 489.75032pt>
 File: figures/CC/ground_state1.pdf Graphic file (type pdf)
 
 <use figures/CC/ground_state1.pdf>
@@ -2066,7 +2080,7 @@ Package pdftex.def Info: figures/CC/ground_state1.pdf used on input line 503.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [69 <./figures/CC/ground_state_srg.pdf>]
-<figures/CC/ground_state2.pdf, id=2192, 850.99994pt x 272.94032pt>
+<figures/CC/ground_state2.pdf, id=2187, 850.99994pt x 272.94032pt>
 File: figures/CC/ground_state2.pdf Graphic file (type pdf)
 
 <use figures/CC/ground_state2.pdf>
@@ -2074,7 +2088,7 @@ Package pdftex.def Info: figures/CC/ground_state2.pdf used on input line 512.
 (pdftex.def)             Requested size: 469.75502pt x 150.66737pt.
  [70 <./figures/CC/ground_state1.pdf>]
 [71 <./figures/CC/ground_state2.pdf>] [72]
-<figures/CC/CoM1.pdf, id=2365, 489.75974pt x 562.02036pt>
+<figures/CC/CoM1.pdf, id=2360, 489.75974pt x 562.02036pt>
 File: figures/CC/CoM1.pdf Graphic file (type pdf)
 
 <use figures/CC/CoM1.pdf>
@@ -2099,7 +2113,7 @@ fers to the re-sem-blance of this equa-tion with the commutator-
  []
 
 [79] [80] [81]
-<figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf, id=2517, 75.98286pt x 63.56949pt
+<figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf, id=2512, 75.98286pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf>
@@ -2107,7 +2121,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf used on i
 nput line 97.
 (pdftex.def)             Requested size: 85.03064pt x 71.13188pt.
 
-<figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf, id=2518, 95.16653pt x 63.56949pt
+<figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf, id=2513, 95.16653pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf>
@@ -2127,14 +2141,14 @@ Package pdftex.def Info: figures/diagrams/CCSD_3b/CCSD_3b-figure1.pdf used on i
 nput line 97.
 (pdftex.def)             Requested size: 106.49864pt x 71.13188pt.
 
-<figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf, id=2519, 76.6594pt x 63.56949pt>
+<figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf, id=2514, 76.6594pt x 63.56949pt>
 File: figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf used on i
 nput line 102.
 (pdftex.def)             Requested size: 85.78773pt x 71.13188pt.
 
-<figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf, id=2520, 95.84407pt x 63.56949pt
+<figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf, id=2515, 95.84407pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf>
@@ -2156,7 +2170,7 @@ nput line 102.
  [82 <./figures/diagrams/CCSD_3b/CCSD_3b-figure0.pdf> <./figures/diagrams/CCSD_
 3b/CCSD_3b-figure1.pdf> <./figures/diagrams/CCSD_3b/CCSD_3b-figure2.pdf> <./fig
 ures/diagrams/CCSD_3b/CCSD_3b-figure3.pdf>] [83]
-<figures/diagrams/PA_EOM1/PA_EOM1-figure22.pdf, id=2557, 29.42593pt x 12.35516p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure22.pdf, id=2552, 29.42593pt x 12.35516p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure22.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure22.pdf>
@@ -2164,7 +2178,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure22.pdf used on
 input line 129.
 (pdftex.def)             Requested size: 47.63918pt x 20.0pt.
  [84]
-<figures/diagrams/PA_EOM1/PA_EOM1-figure0.pdf, id=2569, 18.52321pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure0.pdf, id=2564, 18.52321pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure0.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure0.pdf>
@@ -2172,7 +2186,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure0.pdf used on i
 nput line 133.
 (pdftex.def)             Requested size: 20.72887pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure1.pdf, id=2570, 35.63814pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure1.pdf, id=2565, 35.63814pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure1.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure1.pdf>
@@ -2180,7 +2194,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure1.pdf used on i
 nput line 133.
 (pdftex.def)             Requested size: 39.88179pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf, id=2571, 64.09145pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf, id=2566, 64.09145pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf>
@@ -2188,7 +2202,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure2.pdf used on i
 nput line 133.
 (pdftex.def)             Requested size: 71.72324pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf, id=2572, 52.31044pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf, id=2567, 52.31044pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf>
@@ -2220,7 +2234,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure3.pdf used on i
 nput line 133.
 (pdftex.def)             Requested size: 58.53937pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf, id=2574, 58.50056pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf, id=2569, 58.50056pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf>
@@ -2228,7 +2242,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure4.pdf used on i
 nput line 140.
 (pdftex.def)             Requested size: 65.46661pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf, id=2575, 49.90143pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf, id=2570, 49.90143pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf>
@@ -2236,7 +2250,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure5.pdf used on i
 nput line 140.
 (pdftex.def)             Requested size: 55.8435pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure6.pdf, id=2576, 75.54323pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure6.pdf, id=2571, 75.54323pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure6.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure6.pdf>
@@ -2244,7 +2258,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure6.pdf used on i
 nput line 140.
 (pdftex.def)             Requested size: 84.53865pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf, id=2577, 75.54323pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf, id=2572, 75.54323pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf>
@@ -2252,7 +2266,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf used on i
 nput line 140.
 (pdftex.def)             Requested size: 84.53865pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure8.pdf, id=2578, 58.50056pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure8.pdf, id=2573, 58.50056pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure8.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure8.pdf>
@@ -2260,7 +2274,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure8.pdf used on i
 nput line 140.
 (pdftex.def)             Requested size: 65.46661pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf, id=2579, 58.50056pt x 63.56949pt
+<figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf, id=2574, 58.50056pt x 63.56949pt
 >
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf>
@@ -2268,7 +2282,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf used on i
 nput line 140.
 (pdftex.def)             Requested size: 65.46661pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure10.pdf, id=2580, 93.53746pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure10.pdf, id=2575, 93.53746pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure10.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure10.pdf>
@@ -2325,7 +2339,7 @@ ams/PA_EOM1/PA_EOM1-figure5.pdf> <./figures/diagrams/PA_EOM1/PA_EOM1-figure6.pd
 f> <./figures/diagrams/PA_EOM1/PA_EOM1-figure7.pdf> <./figures/diagrams/PA_EOM1
 /PA_EOM1-figure8.pdf> <./figures/diagrams/PA_EOM1/PA_EOM1-figure9.pdf> <./figur
 es/diagrams/PA_EOM1/PA_EOM1-figure10.pdf>]
-<figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf, id=2635, 29.42593pt x 12.35516p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf, id=2630, 29.42593pt x 12.35516p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf>
@@ -2333,7 +2347,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf used on
 input line 149.
 (pdftex.def)             Requested size: 47.63918pt x 20.0pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure11.pdf, id=2637, 18.52321pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure11.pdf, id=2632, 18.52321pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure11.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure11.pdf>
@@ -2341,7 +2355,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure11.pdf used on
 input line 153.
 (pdftex.def)             Requested size: 20.72887pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf, id=2638, 35.63814pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf, id=2633, 35.63814pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf>
@@ -2349,7 +2363,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf used on
 input line 153.
 (pdftex.def)             Requested size: 39.88179pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf, id=2639, 52.31044pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf, id=2634, 52.31044pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf>
@@ -2375,7 +2389,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf used on
 input line 153.
 (pdftex.def)             Requested size: 58.53937pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure14.pdf, id=2641, 58.50056pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure14.pdf, id=2636, 58.50056pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure14.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure14.pdf>
@@ -2383,7 +2397,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure14.pdf used on
 input line 160.
 (pdftex.def)             Requested size: 65.46661pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure15.pdf, id=2642, 58.40018pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure15.pdf, id=2637, 58.40018pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure15.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure15.pdf>
@@ -2391,7 +2405,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure15.pdf used on
 input line 160.
 (pdftex.def)             Requested size: 65.35425pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure16.pdf, id=2643, 49.58124pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure16.pdf, id=2638, 49.58124pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure16.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure16.pdf>
@@ -2399,7 +2413,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure16.pdf used on
 input line 160.
 (pdftex.def)             Requested size: 55.48518pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure17.pdf, id=2644, 75.54323pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure17.pdf, id=2639, 75.54323pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure17.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure17.pdf>
@@ -2407,7 +2421,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure17.pdf used on
 input line 160.
 (pdftex.def)             Requested size: 84.53865pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure18.pdf, id=2645, 75.54323pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure18.pdf, id=2640, 75.54323pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure18.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure18.pdf>
@@ -2415,7 +2429,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure18.pdf used on
 input line 160.
 (pdftex.def)             Requested size: 84.53865pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure19.pdf, id=2646, 58.50056pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure19.pdf, id=2641, 58.50056pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure19.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure19.pdf>
@@ -2423,7 +2437,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure19.pdf used on
 input line 160.
 (pdftex.def)             Requested size: 65.46661pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf, id=2647, 58.50056pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf, id=2642, 58.50056pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf>
@@ -2431,7 +2445,7 @@ Package pdftex.def Info: figures/diagrams/PA_EOM1/PA_EOM1-figure20.pdf used on
 input line 160.
 (pdftex.def)             Requested size: 65.46661pt x 71.13188pt.
 
-<figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf, id=2648, 92.04689pt x 63.56949p
+<figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf, id=2643, 92.04689pt x 63.56949p
 t>
 File: figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf Graphic file (type pdf)
  <use figures/diagrams/PA_EOM1/PA_EOM1-figure21.pdf>
@@ -2489,7 +2503,7 @@ input line 160.
  [86 <./figures/diagrams/PA_EOM1/PA_EOM1-figure23.pdf> <./figures/diagrams/PA_E
 OM1/PA_EOM1-figure11.pdf> <./figures/diagrams/PA_EOM1/PA_EOM1-figure12.pdf> <./
 figures/diagrams/PA_EOM1/PA_EOM1-figure13.pdf>]
-<figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf, id=2671, 18.04543pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf, id=2666, 18.04543pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf>
@@ -2497,14 +2511,14 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf used on i
 nput line 173.
 (pdftex.def)             Requested size: 20.1942pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure1.pdf, id=2672, 35.6793pt x 63.56949pt>
+<figures/diagrams/PR_EOM1/PR_EOM1-figure1.pdf, id=2667, 35.6793pt x 63.56949pt>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure1.pdf Graphic file (type pdf)
 <use figures/diagrams/PR_EOM1/PR_EOM1-figure1.pdf>
 Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure1.pdf used on i
 nput line 173.
 (pdftex.def)             Requested size: 39.92786pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf, id=2673, 63.33662pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf, id=2668, 63.33662pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf>
@@ -2512,7 +2526,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf used on i
 nput line 173.
 (pdftex.def)             Requested size: 70.87852pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf, id=2674, 51.92801pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf, id=2669, 51.92801pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf>
@@ -2544,7 +2558,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf used on i
 nput line 173.
 (pdftex.def)             Requested size: 58.11142pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure4.pdf, id=2676, 58.15326pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure4.pdf, id=2671, 58.15326pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure4.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure4.pdf>
@@ -2552,14 +2566,14 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure4.pdf used on i
 nput line 180.
 (pdftex.def)             Requested size: 65.07794pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure5.pdf, id=2677, 50.6974pt x 63.56949pt>
+<figures/diagrams/PR_EOM1/PR_EOM1-figure5.pdf, id=2672, 50.6974pt x 63.56949pt>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure5.pdf Graphic file (type pdf)
 <use figures/diagrams/PR_EOM1/PR_EOM1-figure5.pdf>
 Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure5.pdf used on i
 nput line 180.
 (pdftex.def)             Requested size: 56.73427pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf, id=2678, 74.78941pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf, id=2673, 74.78941pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf>
@@ -2567,7 +2581,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf used on i
 nput line 180.
 (pdftex.def)             Requested size: 83.69508pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf, id=2679, 74.78941pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf, id=2674, 74.78941pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf>
@@ -2575,7 +2589,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf used on i
 nput line 180.
 (pdftex.def)             Requested size: 83.69508pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure8.pdf, id=2680, 58.94823pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure8.pdf, id=2675, 58.94823pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure8.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure8.pdf>
@@ -2583,7 +2597,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure8.pdf used on i
 nput line 180.
 (pdftex.def)             Requested size: 65.96756pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf, id=2681, 58.63707pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf, id=2676, 58.63707pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf>
@@ -2591,7 +2605,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf used on i
 nput line 180.
 (pdftex.def)             Requested size: 65.61935pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure10.pdf, id=2682, 93.4953pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure10.pdf, id=2677, 93.4953pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure10.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure10.pdf>
@@ -2648,7 +2662,7 @@ diagrams/PA_EOM1/PA_EOM1-figure20.pdf> <./figures/diagrams/PA_EOM1/PA_EOM1-figu
 re21.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-figure0.pdf> <./figures/diagrams/
 PR_EOM1/PR_EOM1-figure1.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-figure2.pdf> <
 ./figures/diagrams/PR_EOM1/PR_EOM1-figure3.pdf>]
-<figures/diagrams/PR_EOM1/PR_EOM1-figure11.pdf, id=2742, 18.04543pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure11.pdf, id=2737, 18.04543pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure11.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure11.pdf>
@@ -2656,7 +2670,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure11.pdf used on
 input line 193.
 (pdftex.def)             Requested size: 20.1942pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure12.pdf, id=2743, 35.6793pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure12.pdf, id=2738, 35.6793pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure12.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure12.pdf>
@@ -2664,7 +2678,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure12.pdf used on
 input line 193.
 (pdftex.def)             Requested size: 39.92786pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure13.pdf, id=2744, 51.92801pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure13.pdf, id=2739, 51.92801pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure13.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure13.pdf>
@@ -2694,7 +2708,7 @@ M1/PR_EOM1-figure5.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-figure6.pdf> <./fig
 ures/diagrams/PR_EOM1/PR_EOM1-figure7.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-
 figure8.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-figure9.pdf> <./figures/diagra
 ms/PR_EOM1/PR_EOM1-figure10.pdf>]
-<figures/diagrams/PR_EOM1/PR_EOM1-figure14.pdf, id=2782, 58.15326pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure14.pdf, id=2776, 58.15326pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure14.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure14.pdf>
@@ -2702,7 +2716,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure14.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 65.07794pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure15.pdf, id=2783, 57.9224pt x 63.56949pt
+<figures/diagrams/PR_EOM1/PR_EOM1-figure15.pdf, id=2777, 57.9224pt x 63.56949pt
 >
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure15.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure15.pdf>
@@ -2710,7 +2724,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure15.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 64.8196pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure16.pdf, id=2784, 50.37721pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure16.pdf, id=2778, 50.37721pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure16.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure16.pdf>
@@ -2718,7 +2732,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure16.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 56.37595pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure17.pdf, id=2785, 74.78941pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure17.pdf, id=2779, 74.78941pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure17.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure17.pdf>
@@ -2726,7 +2740,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure17.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 83.69508pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure18.pdf, id=2786, 74.78941pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure18.pdf, id=2780, 74.78941pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure18.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure18.pdf>
@@ -2734,7 +2748,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure18.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 83.69508pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf, id=2787, 58.94823pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf, id=2781, 58.94823pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf>
@@ -2742,7 +2756,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 65.96756pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure20.pdf, id=2788, 58.63707pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure20.pdf, id=2782, 58.63707pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure20.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure20.pdf>
@@ -2750,7 +2764,7 @@ Package pdftex.def Info: figures/diagrams/PR_EOM1/PR_EOM1-figure20.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 65.61935pt x 71.13188pt.
 
-<figures/diagrams/PR_EOM1/PR_EOM1-figure21.pdf, id=2789, 92.00372pt x 63.56949p
+<figures/diagrams/PR_EOM1/PR_EOM1-figure21.pdf, id=2783, 92.00372pt x 63.56949p
 t>
 File: figures/diagrams/PR_EOM1/PR_EOM1-figure21.pdf Graphic file (type pdf)
  <use figures/diagrams/PR_EOM1/PR_EOM1-figure21.pdf>
@@ -2813,7 +2827,7 @@ diagrams/PR_EOM1/PR_EOM1-figure17.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-figu
 re18.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-figure19.pdf> <./figures/diagrams
 /PR_EOM1/PR_EOM1-figure20.pdf> <./figures/diagrams/PR_EOM1/PR_EOM1-figure21.pdf
 >] [90]
-<figures/EOM/fig-shell-structure-v2.pdf, id=2858, 246.82794pt x 129.43518pt>
+<figures/EOM/fig-shell-structure-v2.pdf, id=2853, 246.82794pt x 129.43518pt>
 File: figures/EOM/fig-shell-structure-v2.pdf Graphic file (type pdf)
 
 <use figures/EOM/fig-shell-structure-v2.pdf>
@@ -2821,7 +2835,7 @@ Package pdftex.def Info: figures/EOM/fig-shell-structure-v2.pdf used on input l
 ine 226.
 (pdftex.def)             Requested size: 352.31625pt x 184.76305pt.
  [91 <./figures/EOM/fig-shell-structure-v2.pdf>] <figures/EOM/fig-gs2.pdf, id=2
-909, 469.755pt x 216.81pt>
+904, 469.755pt x 216.81pt>
 File: figures/EOM/fig-gs2.pdf Graphic file (type pdf)
 
 <use figures/EOM/fig-gs2.pdf>
@@ -2831,14 +2845,14 @@ Package pdftex.def Info: figures/EOM/fig-gs2.pdf used on input line 251.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[92] <figures/EOM/fig-add2.pdf, id=2922, 469.755pt x 216.81pt>
+[92] <figures/EOM/fig-add2.pdf, id=2917, 469.755pt x 216.81pt>
 File: figures/EOM/fig-add2.pdf Graphic file (type pdf)
 
 <use figures/EOM/fig-add2.pdf>
 Package pdftex.def Info: figures/EOM/fig-add2.pdf used on input line 262.
 (pdftex.def)             Requested size: 469.75502pt x 216.80946pt.
 
-<figures/EOM/fig-rm2.pdf, id=2923, 469.755pt x 216.81pt>
+<figures/EOM/fig-rm2.pdf, id=2918, 469.755pt x 216.81pt>
 File: figures/EOM/fig-rm2.pdf Graphic file (type pdf)
 
 <use figures/EOM/fig-rm2.pdf>
@@ -2849,7 +2863,7 @@ OM/fig-rm2.pdf
 
 pdfTeX warning: pdflatex (file ./figures/EOM/fig-rm2.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] <figures/EOM/QD_EOM.pdf, id=3097, 707.17514pt x 420.53706pt>
+>] <figures/EOM/QD_EOM.pdf, id=3092, 707.17514pt x 420.53706pt>
 File: figures/EOM/QD_EOM.pdf Graphic file (type pdf)
 
 <use figures/EOM/QD_EOM.pdf>
@@ -2859,21 +2873,21 @@ Package pdftex.def Info: figures/EOM/QD_EOM.pdf used on input line 291.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[95] <figures/EOM/PA-EOM.pdf, id=3120, 561.80704pt x 489.75032pt>
+[95] <figures/EOM/PA-EOM.pdf, id=3115, 561.80704pt x 489.75032pt>
 File: figures/EOM/PA-EOM.pdf Graphic file (type pdf)
 
 <use figures/EOM/PA-EOM.pdf>
 Package pdftex.def Info: figures/EOM/PA-EOM.pdf used on input line 304.
 (pdftex.def)             Requested size: 469.75502pt x 409.51923pt.
  [96 <./figures/EOM/QD_EOM.pdf>]
-<figures/EOM/PR-EOM.pdf, id=3187, 561.80704pt x 489.75032pt>
+<figures/EOM/PR-EOM.pdf, id=3182, 561.80704pt x 489.75032pt>
 File: figures/EOM/PR-EOM.pdf Graphic file (type pdf)
 
 <use figures/EOM/PR-EOM.pdf>
 Package pdftex.def Info: figures/EOM/PR-EOM.pdf used on input line 312.
 (pdftex.def)             Requested size: 469.75502pt x 409.51923pt.
  [97 <./figures/EOM/PA-EOM.pdf>]
-<figures/EOM/EOM-CoM.pdf, id=3264, 778.80211pt x 706.56036pt>
+<figures/EOM/EOM-CoM.pdf, id=3259, 778.80211pt x 706.56036pt>
 File: figures/EOM/EOM-CoM.pdf Graphic file (type pdf)
 
 <use figures/EOM/EOM-CoM.pdf>
@@ -2883,7 +2897,7 @@ Package pdftex.def Info: figures/EOM/EOM-CoM.pdf used on input line 319.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/EOM/O17_F17_EOM_2.pdf, id=3343, 1140.50346pt x 419.24316pt>
+<figures/EOM/O17_F17_EOM_2.pdf, id=3338, 1140.50346pt x 419.24316pt>
 File: figures/EOM/O17_F17_EOM_2.pdf Graphic file (type pdf)
 
 <use figures/EOM/O17_F17_EOM_2.pdf>
@@ -2893,7 +2907,7 @@ Package pdftex.def Info: figures/EOM/O17_F17_EOM_2.pdf used on input line 327.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/EOM/O23_F23_EOM_2.pdf, id=3346, 1140.39049pt x 418.884pt>
+<figures/EOM/O23_F23_EOM_2.pdf, id=3341, 1140.39049pt x 418.884pt>
 File: figures/EOM/O23_F23_EOM_2.pdf Graphic file (type pdf)
 
 <use figures/EOM/O23_F23_EOM_2.pdf>
@@ -2903,7 +2917,7 @@ Package pdftex.def Info: figures/EOM/O23_F23_EOM_2.pdf used on input line 333.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/EOM/N15_O15_EOM_2.pdf, id=3349, 1140.5662pt x 418.884pt>
+<figures/EOM/N15_O15_EOM_2.pdf, id=3344, 1140.5662pt x 418.884pt>
 File: figures/EOM/N15_O15_EOM_2.pdf Graphic file (type pdf)
 
 <use figures/EOM/N15_O15_EOM_2.pdf>
@@ -2913,7 +2927,7 @@ Package pdftex.def Info: figures/EOM/N15_O15_EOM_2.pdf used on input line 339.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/EOM/N21_O21_EOM_2.pdf, id=3352, 1140.5662pt x 419.24316pt>
+<figures/EOM/N21_O21_EOM_2.pdf, id=3347, 1140.5662pt x 419.24316pt>
 File: figures/EOM/N21_O21_EOM_2.pdf Graphic file (type pdf)
 
 <use figures/EOM/N21_O21_EOM_2.pdf>
@@ -3004,7 +3018,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<figures/betadecay/BetaDecay-figure0.pdf, id=3646, 76.59816pt x 67.2643pt>
+<figures/betadecay/BetaDecay-figure0.pdf, id=3641, 76.59816pt x 67.2643pt>
 File: figures/betadecay/BetaDecay-figure0.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure0.pdf>
@@ -3012,7 +3026,7 @@ Package pdftex.def Info: figures/betadecay/BetaDecay-figure0.pdf used on input
 line 28.
 (pdftex.def)             Requested size: 113.41374pt x 99.58464pt.
 
-<figures/betadecay/BetaDecay-figure1.pdf, id=3647, 76.45966pt x 67.2643pt>
+<figures/betadecay/BetaDecay-figure1.pdf, id=3642, 76.45966pt x 67.2643pt>
 File: figures/betadecay/BetaDecay-figure1.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure1.pdf>
@@ -3020,7 +3034,7 @@ Package pdftex.def Info: figures/betadecay/BetaDecay-figure1.pdf used on input
 line 36.
 (pdftex.def)             Requested size: 113.20866pt x 99.58464pt.
 
-<figures/betadecay/BetaDecay-figure2.pdf, id=3648, 76.59816pt x 67.2643pt>
+<figures/betadecay/BetaDecay-figure2.pdf, id=3643, 76.59816pt x 67.2643pt>
 File: figures/betadecay/BetaDecay-figure2.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure2.pdf>
@@ -3032,7 +3046,7 @@ line 44.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [104]
-<figures/betadecay/BetaDecay-figure6.pdf, id=3659, 88.01784pt x 69.35913pt>
+<figures/betadecay/BetaDecay-figure6.pdf, id=3654, 88.01784pt x 69.35913pt>
 File: figures/betadecay/BetaDecay-figure6.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure6.pdf>
@@ -3040,7 +3054,7 @@ Package pdftex.def Info: figures/betadecay/BetaDecay-figure6.pdf used on input
 line 60.
 (pdftex.def)             Requested size: 126.38698pt x 99.58464pt.
 
-<figures/betadecay/BetaDecay-figure7.pdf, id=3660, 88.01784pt x 69.35913pt>
+<figures/betadecay/BetaDecay-figure7.pdf, id=3655, 88.01784pt x 69.35913pt>
 File: figures/betadecay/BetaDecay-figure7.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure7.pdf>
@@ -3048,7 +3062,7 @@ Package pdftex.def Info: figures/betadecay/BetaDecay-figure7.pdf used on input
 line 68.
 (pdftex.def)             Requested size: 126.38698pt x 99.58464pt.
 
-<figures/betadecay/BetaDecay-figure8.pdf, id=3661, 76.6363pt x 69.35913pt>
+<figures/betadecay/BetaDecay-figure8.pdf, id=3656, 76.6363pt x 69.35913pt>
 File: figures/betadecay/BetaDecay-figure8.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure8.pdf>
@@ -3056,7 +3070,7 @@ Package pdftex.def Info: figures/betadecay/BetaDecay-figure8.pdf used on input
 line 76.
 (pdftex.def)             Requested size: 110.04395pt x 99.58464pt.
 
-<figures/betadecay/BetaDecay-figure3.pdf, id=3662, 70.94606pt x 69.35913pt>
+<figures/betadecay/BetaDecay-figure3.pdf, id=3657, 70.94606pt x 69.35913pt>
 File: figures/betadecay/BetaDecay-figure3.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure3.pdf>
@@ -3064,7 +3078,7 @@ Package pdftex.def Info: figures/betadecay/BetaDecay-figure3.pdf used on input
 line 89.
 (pdftex.def)             Requested size: 101.87318pt x 99.58464pt.
 
-<figures/betadecay/BetaDecay-figure4.pdf, id=3663, 70.94606pt x 69.35913pt>
+<figures/betadecay/BetaDecay-figure4.pdf, id=3658, 70.94606pt x 69.35913pt>
 File: figures/betadecay/BetaDecay-figure4.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure4.pdf>
@@ -3072,7 +3086,7 @@ Package pdftex.def Info: figures/betadecay/BetaDecay-figure4.pdf used on input
 line 97.
 (pdftex.def)             Requested size: 101.87318pt x 99.58464pt.
 
-<figures/betadecay/BetaDecay-figure5.pdf, id=3664, 60.0393pt x 69.35913pt>
+<figures/betadecay/BetaDecay-figure5.pdf, id=3659, 60.0393pt x 69.35913pt>
 File: figures/betadecay/BetaDecay-figure5.pdf Graphic file (type pdf)
 
 <use figures/betadecay/BetaDecay-figure5.pdf>
@@ -3107,28 +3121,28 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `eq:bch-cc' on page 109 undefined on input line 183.
 
 [109]
-<figures/diagrams/Eff_1b/Eff_1b-figure13.pdf, id=3855, 32.53656pt x 12.35516pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure13.pdf, id=3850, 32.53656pt x 12.35516pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure13.pdf Graphic file (type pdf)
 <use figures/diagrams/Eff_1b/Eff_1b-figure13.pdf>
 Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure13.pdf used on in
 put line 187.
 (pdftex.def)             Requested size: 44.77388pt x 17.0pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure14.pdf, id=3856, 32.53656pt x 12.35516pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure14.pdf, id=3851, 32.53656pt x 12.35516pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure14.pdf Graphic file (type pdf)
 <use figures/diagrams/Eff_1b/Eff_1b-figure14.pdf>
 Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure14.pdf used on in
 put line 187.
 (pdftex.def)             Requested size: 44.77388pt x 17.0pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure15.pdf, id=3857, 31.68137pt x 12.35516pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure15.pdf, id=3852, 31.68137pt x 12.35516pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure15.pdf Graphic file (type pdf)
 <use figures/diagrams/Eff_1b/Eff_1b-figure15.pdf>
 Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure15.pdf used on in
 put line 187.
 (pdftex.def)             Requested size: 43.59703pt x 17.0pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure0.pdf, id=3860, 43.73239pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure0.pdf, id=3855, 43.73239pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure0.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure0.pdf>
@@ -3136,7 +3150,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure0.pdf used on inp
 ut line 193.
 (pdftex.def)             Requested size: 48.93988pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure1.pdf, id=3861, 42.87016pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure1.pdf, id=3856, 42.87016pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure1.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure1.pdf>
@@ -3156,7 +3170,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure1.pdf used on inp
 ut line 193.
 (pdftex.def)             Requested size: 47.97498pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure2.pdf, id=3862, 40.42302pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure2.pdf, id=3857, 40.42302pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure2.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure2.pdf>
@@ -3164,7 +3178,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure2.pdf used on inp
 ut line 198.
 (pdftex.def)             Requested size: 45.23645pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure3.pdf, id=3863, 40.42302pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure3.pdf, id=3858, 40.42302pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure3.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure3.pdf>
@@ -3172,7 +3186,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure3.pdf used on inp
 ut line 198.
 (pdftex.def)             Requested size: 45.23645pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure4.pdf, id=3864, 49.68562pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure4.pdf, id=3859, 49.68562pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure4.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure4.pdf>
@@ -3198,7 +3212,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure4.pdf used on inp
 ut line 198.
 (pdftex.def)             Requested size: 55.60202pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure5.pdf, id=3865, 40.11086pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure5.pdf, id=3860, 40.11086pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure5.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure5.pdf>
@@ -3206,7 +3220,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure5.pdf used on inp
 ut line 203.
 (pdftex.def)             Requested size: 44.8871pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure6.pdf, id=3866, 40.11086pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure6.pdf, id=3861, 40.11086pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure6.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure6.pdf>
@@ -3214,7 +3228,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure6.pdf used on inp
 ut line 203.
 (pdftex.def)             Requested size: 44.8871pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure7.pdf, id=3867, 49.37346pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure7.pdf, id=3862, 49.37346pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure7.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure7.pdf>
@@ -3244,7 +3258,7 @@ b/Eff_1b-figure14.pdf> <./figures/diagrams/Eff_1b/Eff_1b-figure15.pdf> <./figur
 es/diagrams/Eff_1b/Eff_1b-figure0.pdf> <./figures/diagrams/Eff_1b/Eff_1b-figure
 1.pdf> <./figures/diagrams/Eff_1b/Eff_1b-figure2.pdf> <./figures/diagrams/Eff_1
 b/Eff_1b-figure3.pdf> <./figures/diagrams/Eff_1b/Eff_1b-figure4.pdf>]
-<figures/diagrams/Eff_1b/Eff_1b-figure8.pdf, id=3898, 43.62398pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure8.pdf, id=3893, 43.62398pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure8.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure8.pdf>
@@ -3252,7 +3266,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure8.pdf used on inp
 ut line 208.
 (pdftex.def)             Requested size: 48.81856pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure9.pdf, id=3899, 43.62398pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure9.pdf, id=3894, 43.62398pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure9.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_1b/Eff_1b-figure9.pdf>
@@ -3260,21 +3274,21 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure9.pdf used on inp
 ut line 208.
 (pdftex.def)             Requested size: 48.81856pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure10.pdf, id=3900, 45.77803pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure10.pdf, id=3895, 45.77803pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure10.pdf Graphic file (type pdf)
 <use figures/diagrams/Eff_1b/Eff_1b-figure10.pdf>
 Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure10.pdf used on in
 put line 208.
 (pdftex.def)             Requested size: 51.22911pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure11.pdf, id=3901, 46.18555pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure11.pdf, id=3896, 46.18555pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure11.pdf Graphic file (type pdf)
 <use figures/diagrams/Eff_1b/Eff_1b-figure11.pdf>
 Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure11.pdf used on in
 put line 208.
 (pdftex.def)             Requested size: 51.68517pt x 71.13188pt.
 
-<figures/diagrams/Eff_1b/Eff_1b-figure12.pdf, id=3902, 74.23132pt x 63.56949pt>
+<figures/diagrams/Eff_1b/Eff_1b-figure12.pdf, id=3897, 74.23132pt x 63.56949pt>
 File: figures/diagrams/Eff_1b/Eff_1b-figure12.pdf Graphic file (type pdf)
 <use figures/diagrams/Eff_1b/Eff_1b-figure12.pdf>
 Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure12.pdf used on in
@@ -3311,7 +3325,7 @@ Package pdftex.def Info: figures/diagrams/Eff_1b/Eff_1b-figure12.pdf used on in
 put line 208.
 (pdftex.def)             Requested size: 83.07053pt x 71.13188pt.
 
-<figures/diagrams/Eff_2b/Eff_2b-figure0.pdf, id=3903, 55.21027pt x 63.56949pt>
+<figures/diagrams/Eff_2b/Eff_2b-figure0.pdf, id=3898, 55.21027pt x 63.56949pt>
 File: figures/diagrams/Eff_2b/Eff_2b-figure0.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_2b/Eff_2b-figure0.pdf>
@@ -3319,7 +3333,7 @@ Package pdftex.def Info: figures/diagrams/Eff_2b/Eff_2b-figure0.pdf used on inp
 ut line 214.
 (pdftex.def)             Requested size: 61.7845pt x 71.13188pt.
 
-<figures/diagrams/Eff_2b/Eff_2b-figure1.pdf, id=3904, 79.99286pt x 63.56949pt>
+<figures/diagrams/Eff_2b/Eff_2b-figure1.pdf, id=3899, 79.99286pt x 63.56949pt>
 File: figures/diagrams/Eff_2b/Eff_2b-figure1.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_2b/Eff_2b-figure1.pdf>
@@ -3345,7 +3359,7 @@ df> <./figures/diagrams/Eff_1b/Eff_1b-figure10.pdf> <./figures/diagrams/Eff_1b/
 Eff_1b-figure11.pdf> <./figures/diagrams/Eff_1b/Eff_1b-figure12.pdf> <./figures
 /diagrams/Eff_2b/Eff_2b-figure0.pdf> <./figures/diagrams/Eff_2b/Eff_2b-figure1.
 pdf>]
-<figures/diagrams/Eff_2b/Eff_2b-figure2.pdf, id=3952, 56.03435pt x 63.56949pt>
+<figures/diagrams/Eff_2b/Eff_2b-figure2.pdf, id=3947, 56.03435pt x 63.56949pt>
 File: figures/diagrams/Eff_2b/Eff_2b-figure2.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_2b/Eff_2b-figure2.pdf>
@@ -3353,7 +3367,7 @@ Package pdftex.def Info: figures/diagrams/Eff_2b/Eff_2b-figure2.pdf used on inp
 ut line 219.
 (pdftex.def)             Requested size: 62.70671pt x 71.13188pt.
 
-<figures/diagrams/Eff_2b/Eff_2b-figure3.pdf, id=3953, 80.39937pt x 63.56949pt>
+<figures/diagrams/Eff_2b/Eff_2b-figure3.pdf, id=3948, 80.39937pt x 63.56949pt>
 File: figures/diagrams/Eff_2b/Eff_2b-figure3.pdf Graphic file (type pdf)
 
 <use figures/diagrams/Eff_2b/Eff_2b-figure3.pdf>
@@ -3379,7 +3393,7 @@ ut line 219.
 ] [115
 
 ] (./Appendix.tex
-<figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf, id=4004, 44.52936pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf, id=3999, 44.52936pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf>
@@ -3387,14 +3401,14 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf used on i
 nput line 11.
 (pdftex.def)             Requested size: 49.83176pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf, id=4005, 47.1622pt x 63.56949pt>
+<figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf, id=4000, 47.1622pt x 63.56949pt>
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure1.pdf used on i
 nput line 11.
 (pdftex.def)             Requested size: 52.7781pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf, id=4006, 46.75468pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf, id=4001, 46.75468pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf>
@@ -3420,7 +3434,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf used on i
 nput line 11.
 (pdftex.def)             Requested size: 52.32207pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure3.pdf, id=4007, 59.70506pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure3.pdf, id=4002, 59.70506pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure3.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure3.pdf>
@@ -3434,7 +3448,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure3.pdf used on i
 nput line 15.
 (pdftex.def)             Requested size: 66.81454pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure4.pdf, id=4008, 75.13672pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure4.pdf, id=4003, 75.13672pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure4.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure4.pdf>
@@ -3453,7 +3467,7 @@ nput line 19.
  <./figures/diagrams/CCSD_t1/CCSD_t1-figure0.pdf> <./figures/diagrams/CCSD_t1/C
 CSD_t1-figure1.pdf> <./figures/diagrams/CCSD_t1/CCSD_t1-figure2.pdf> <./figures
 /diagrams/CCSD_t1/CCSD_t1-figure3.pdf>]
-<figures/diagrams/CCSD_t1/CCSD_t1-figure5.pdf, id=4032, 62.93312pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure5.pdf, id=4027, 62.93312pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure5.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure5.pdf>
@@ -3461,7 +3475,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure5.pdf used on i
 nput line 23.
 (pdftex.def)             Requested size: 70.42697pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf, id=4033, 63.33963pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf, id=4028, 63.33963pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf>
@@ -3481,7 +3495,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf used on i
 nput line 23.
 (pdftex.def)             Requested size: 70.8819pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf, id=4034, 64.1627pt x 63.56949pt>
+<figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf, id=4029, 64.1627pt x 63.56949pt>
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf used on i
@@ -3494,7 +3508,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf used on i
 nput line 27.
 (pdftex.def)             Requested size: 71.80298pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure8.pdf, id=4035, 62.93312pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure8.pdf, id=4030, 62.93312pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure8.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure8.pdf>
@@ -3502,7 +3516,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure8.pdf used on i
 nput line 31.
 (pdftex.def)             Requested size: 70.42697pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf, id=4036, 63.33963pt x 63.56949pt
+<figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf, id=4031, 63.33963pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf>
@@ -3522,7 +3536,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf used on i
 nput line 31.
 (pdftex.def)             Requested size: 70.8819pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure10.pdf, id=4037, 77.98936pt x 63.56949p
+<figures/diagrams/CCSD_t1/CCSD_t1-figure10.pdf, id=4032, 77.98936pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure10.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure10.pdf>
@@ -3530,7 +3544,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure10.pdf used on
 input line 35.
 (pdftex.def)             Requested size: 87.27608pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure11.pdf, id=4038, 77.58286pt x 63.56949p
+<figures/diagrams/CCSD_t1/CCSD_t1-figure11.pdf, id=4033, 77.58286pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure11.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure11.pdf>
@@ -3538,7 +3552,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t1/CCSD_t1-figure11.pdf used on
 input line 35.
 (pdftex.def)             Requested size: 86.82117pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t1/CCSD_t1-figure12.pdf, id=4039, 82.84953pt x 63.56949p
+<figures/diagrams/CCSD_t1/CCSD_t1-figure12.pdf, id=4034, 82.84953pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure12.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure12.pdf>
@@ -3567,7 +3581,7 @@ input line 35.
 _t1/CCSD_t1-figure5.pdf> <./figures/diagrams/CCSD_t1/CCSD_t1-figure6.pdf> <./fi
 gures/diagrams/CCSD_t1/CCSD_t1-figure7.pdf> <./figures/diagrams/CCSD_t1/CCSD_t1
 -figure8.pdf> <./figures/diagrams/CCSD_t1/CCSD_t1-figure9.pdf>]
-<figures/diagrams/CCSD_t1/CCSD_t1-figure13.pdf, id=4072, 75.14374pt x 63.56949p
+<figures/diagrams/CCSD_t1/CCSD_t1-figure13.pdf, id=4067, 75.14374pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t1/CCSD_t1-figure13.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t1/CCSD_t1-figure13.pdf>
@@ -3617,7 +3631,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure2.pdf used on i
 nput line 51.
 (pdftex.def)             Requested size: 90.98624pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure3.pdf, id=4076, 61.47668pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure3.pdf, id=4071, 61.47668pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure3.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure3.pdf>
@@ -3625,7 +3639,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure3.pdf used on i
 nput line 55.
 (pdftex.def)             Requested size: 68.79712pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure4.pdf, id=4077, 60.97078pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure4.pdf, id=4072, 60.97078pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure4.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure4.pdf>
@@ -3683,7 +3697,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure7.pdf used on i
 nput line 59.
 (pdftex.def)             Requested size: 72.0209pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf, id=4103, 64.26208pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf, id=4098, 64.26208pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf>
@@ -3691,7 +3705,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf used on i
 nput line 63.
 (pdftex.def)             Requested size: 71.9142pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf, id=4104, 63.94992pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf, id=4099, 63.94992pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf>
@@ -3699,7 +3713,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf used on i
 nput line 63.
 (pdftex.def)             Requested size: 71.56485pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure10.pdf, id=4105, 64.35744pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure10.pdf, id=4100, 64.35744pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure10.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure10.pdf>
@@ -3776,7 +3790,7 @@ input line 69.
 _t2/CCSD_t2-figure4.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-figure8.pdf> <./fi
 gures/diagrams/CCSD_t2/CCSD_t2-figure9.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2
 -figure10.pdf>]
-<figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf, id=4134, 85.3318pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf, id=4129, 85.3318pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf>
@@ -3784,7 +3798,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf used on
 input line 73.
 (pdftex.def)             Requested size: 95.49281pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure16.pdf, id=4135, 85.23343pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure16.pdf, id=4130, 85.23343pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure16.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure16.pdf>
@@ -3804,7 +3818,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure16.pdf used on
 input line 73.
 (pdftex.def)             Requested size: 95.38272pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure17.pdf, id=4136, 80.86812pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure17.pdf, id=4131, 80.86812pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure17.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure17.pdf>
@@ -3812,7 +3826,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure17.pdf used on
 input line 79.
 (pdftex.def)             Requested size: 90.49762pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure18.pdf, id=4137, 80.01494pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure18.pdf, id=4132, 80.01494pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure18.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure18.pdf>
@@ -3820,7 +3834,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure18.pdf used on
 input line 79.
 (pdftex.def)             Requested size: 89.54283pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf, id=4138, 77.18034pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf, id=4133, 77.18034pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf>
@@ -3828,7 +3842,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf used on
 input line 79.
 (pdftex.def)             Requested size: 86.3707pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure20.pdf, id=4139, 77.08197pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure20.pdf, id=4134, 77.08197pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure20.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure20.pdf>
@@ -3836,7 +3850,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure20.pdf used on
 input line 79.
 (pdftex.def)             Requested size: 86.26062pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure21.pdf, id=4140, 78.81847pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure21.pdf, id=4135, 78.81847pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure21.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure21.pdf>
@@ -3844,7 +3858,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure21.pdf used on
 input line 79.
 (pdftex.def)             Requested size: 88.2039pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure22.pdf, id=4141, 78.7201pt x 63.56949pt
+<figures/diagrams/CCSD_t2/CCSD_t2-figure22.pdf, id=4136, 78.7201pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure22.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure22.pdf>
@@ -3889,7 +3903,7 @@ input line 79.
 (pdftex.def)             Requested size: 88.0938pt x 71.13188pt.
  [120 <./figures/diagrams/CCSD_t2/CCSD_t2-figure15.pdf> <./figures/diagrams/CCS
 D_t2/CCSD_t2-figure16.pdf>]
-<figures/diagrams/CCSD_t2/CCSD_t2-figure23.pdf, id=4156, 77.17934pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure23.pdf, id=4151, 77.17934pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure23.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure23.pdf>
@@ -3897,7 +3911,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure23.pdf used on
 input line 83.
 (pdftex.def)             Requested size: 86.36958pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure24.pdf, id=4157, 77.08098pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure24.pdf, id=4152, 77.08098pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure24.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure24.pdf>
@@ -3917,7 +3931,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure24.pdf used on
 input line 83.
 (pdftex.def)             Requested size: 86.25952pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure25.pdf, id=4158, 98.56725pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure25.pdf, id=4153, 98.56725pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure25.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure25.pdf>
@@ -3925,7 +3939,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure25.pdf used on
 input line 89.
 (pdftex.def)             Requested size: 110.3043pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure26.pdf, id=4159, 98.56725pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure26.pdf, id=4154, 98.56725pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure26.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure26.pdf>
@@ -3933,7 +3947,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure26.pdf used on
 input line 89.
 (pdftex.def)             Requested size: 110.3043pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf, id=4160, 98.56725pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf, id=4155, 98.56725pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf>
@@ -3941,7 +3955,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf used on
 input line 89.
 (pdftex.def)             Requested size: 110.3043pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf, id=4161, 101.5805pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf, id=4156, 101.5805pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf>
@@ -3949,7 +3963,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf used on
 input line 89.
 (pdftex.def)             Requested size: 113.67638pt x 71.13188pt.
 
-<figures/diagrams/CCSD_t2/CCSD_t2-figure29.pdf, id=4162, 101.48213pt x 63.56949
+<figures/diagrams/CCSD_t2/CCSD_t2-figure29.pdf, id=4157, 101.48213pt x 63.56949
 pt>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure29.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure29.pdf>
@@ -3992,7 +4006,7 @@ D_t2/CCSD_t2-figure18.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-figure19.pdf> <.
 D_t2-figure21.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-figure22.pdf> <./figures
 /diagrams/CCSD_t2/CCSD_t2-figure23.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-fig
 ure24.pdf>]
-<figures/diagrams/CCSD_t2/CCSD_t2-figure30.pdf, id=4201, 98.56725pt x 63.56949p
+<figures/diagrams/CCSD_t2/CCSD_t2-figure30.pdf, id=4196, 98.56725pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_t2/CCSD_t2-figure30.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_t2/CCSD_t2-figure30.pdf>
@@ -4009,7 +4023,7 @@ input line 93.
 D_t2/CCSD_t2-figure26.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-figure27.pdf> <.
 /figures/diagrams/CCSD_t2/CCSD_t2-figure28.pdf> <./figures/diagrams/CCSD_t2/CCS
 D_t2-figure29.pdf> <./figures/diagrams/CCSD_t2/CCSD_t2-figure30.pdf>]
-<figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf, id=4235, 43.77554pt x 63.56949pt
+<figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf, id=4230, 43.77554pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf>
@@ -4017,7 +4031,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure0.pdf used on i
 nput line 104.
 (pdftex.def)             Requested size: 48.98817pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf, id=4236, 43.77554pt x 63.56949pt
+<figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf, id=4231, 43.77554pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf>
@@ -4025,7 +4039,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure1.pdf used on i
 nput line 104.
 (pdftex.def)             Requested size: 48.98817pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure2.pdf, id=4237, 60.76804pt x 63.56949pt
+<figures/diagrams/CCSD_1b/CCSD_1b-figure2.pdf, id=4232, 60.76804pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure2.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure2.pdf>
@@ -4069,7 +4083,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure5.pdf used on i
 nput line 108.
 (pdftex.def)             Requested size: 75.10428pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure6.pdf, id=4238, 58.00069pt x 63.56949pt
+<figures/diagrams/CCSD_1b/CCSD_1b-figure6.pdf, id=4233, 58.00069pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure6.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure6.pdf>
@@ -4077,7 +4091,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure6.pdf used on i
 nput line 108.
 (pdftex.def)             Requested size: 64.9072pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure7.pdf, id=4239, 50.591pt x 63.56949pt>
+<figures/diagrams/CCSD_1b/CCSD_1b-figure7.pdf, id=4234, 50.591pt x 63.56949pt>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure7.pdf Graphic file (type pdf)
 
 <use figures/diagrams/CCSD_1b/CCSD_1b-figure7.pdf>
@@ -4115,7 +4129,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure7.pdf used on i
 nput line 108.
 (pdftex.def)             Requested size: 56.6152pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure8.pdf, id=4240, 41.01624pt x 63.56949pt
+<figures/diagrams/CCSD_1b/CCSD_1b-figure8.pdf, id=4235, 41.01624pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure8.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure8.pdf>
@@ -4135,7 +4149,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure10.pdf used on
 input line 112.
 (pdftex.def)             Requested size: 75.79062pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure11.pdf, id=4241, 57.68953pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure11.pdf, id=4236, 57.68953pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure11.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure11.pdf>
@@ -4179,7 +4193,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure12.pdf used on
 input line 116.
 (pdftex.def)             Requested size: 45.9003pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure13.pdf, id=4268, 41.01624pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure13.pdf, id=4263, 41.01624pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure13.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure13.pdf>
@@ -4187,7 +4201,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure13.pdf used on
 input line 116.
 (pdftex.def)             Requested size: 45.9003pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure14.pdf, id=4269, 50.27884pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure14.pdf, id=4264, 50.27884pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure14.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure14.pdf>
@@ -4213,7 +4227,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure14.pdf used on
 input line 116.
 (pdftex.def)             Requested size: 56.26585pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure15.pdf, id=4271, 44.52936pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure15.pdf, id=4266, 44.52936pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure15.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure15.pdf>
@@ -4221,7 +4235,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure15.pdf used on
 input line 124.
 (pdftex.def)             Requested size: 49.83176pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure16.pdf, id=4272, 44.52936pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure16.pdf, id=4267, 44.52936pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure16.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure16.pdf>
@@ -4229,7 +4243,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure16.pdf used on
 input line 124.
 (pdftex.def)             Requested size: 49.83176pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure17.pdf, id=4273, 46.68341pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure17.pdf, id=4268, 46.68341pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure17.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure17.pdf>
@@ -4237,7 +4251,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure17.pdf used on
 input line 124.
 (pdftex.def)             Requested size: 52.24231pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure18.pdf, id=4274, 47.09093pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure18.pdf, id=4269, 47.09093pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure18.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure18.pdf>
@@ -4245,7 +4259,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure18.pdf used on
 input line 124.
 (pdftex.def)             Requested size: 52.69833pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf, id=4275, 59.70506pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf, id=4270, 59.70506pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf>
@@ -4253,7 +4267,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf used on
 input line 124.
 (pdftex.def)             Requested size: 66.81454pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf, id=4276, 62.93312pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf, id=4271, 62.93312pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf>
@@ -4261,7 +4275,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure20.pdf used on
 input line 124.
 (pdftex.def)             Requested size: 70.42697pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf, id=4277, 63.33963pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf, id=4272, 63.33963pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf>
@@ -4269,7 +4283,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf used on
 input line 124.
 (pdftex.def)             Requested size: 70.8819pt x 71.13188pt.
 
-<figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf, id=4278, 75.13672pt x 63.56949p
+<figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf, id=4273, 75.13672pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf>
@@ -4332,21 +4346,21 @@ diagrams/CCSD_1b/CCSD_1b-figure17.pdf> <./figures/diagrams/CCSD_1b/CCSD_1b-figu
 re18.pdf> <./figures/diagrams/CCSD_1b/CCSD_1b-figure19.pdf> <./figures/diagrams
 /CCSD_1b/CCSD_1b-figure20.pdf> <./figures/diagrams/CCSD_1b/CCSD_1b-figure21.pdf
 > <./figures/diagrams/CCSD_1b/CCSD_1b-figure22.pdf>]
-<figures/diagrams/CCSD_2b/CCSD_2b-figure0.pdf, id=4336, 55.5927pt x 63.56949pt>
+<figures/diagrams/CCSD_2b/CCSD_2b-figure0.pdf, id=4331, 55.5927pt x 63.56949pt>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure0.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_2b/CCSD_2b-figure0.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure0.pdf used on i
 nput line 131.
 (pdftex.def)             Requested size: 62.21248pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure1.pdf, id=4337, 55.5927pt x 63.56949pt>
+<figures/diagrams/CCSD_2b/CCSD_2b-figure1.pdf, id=4332, 55.5927pt x 63.56949pt>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure1.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_2b/CCSD_2b-figure1.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure1.pdf used on i
 nput line 131.
 (pdftex.def)             Requested size: 62.21248pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure2.pdf, id=4338, 65.17448pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure2.pdf, id=4333, 65.17448pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure2.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure2.pdf>
@@ -4372,21 +4386,21 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure2.pdf used on i
 nput line 131.
 (pdftex.def)             Requested size: 72.93524pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure3.pdf, id=4339, 55.5927pt x 63.56949pt>
+<figures/diagrams/CCSD_2b/CCSD_2b-figure3.pdf, id=4334, 55.5927pt x 63.56949pt>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure3.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_2b/CCSD_2b-figure3.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure3.pdf used on i
 nput line 135.
 (pdftex.def)             Requested size: 62.21248pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure4.pdf, id=4340, 55.5927pt x 63.56949pt>
+<figures/diagrams/CCSD_2b/CCSD_2b-figure4.pdf, id=4335, 55.5927pt x 63.56949pt>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure4.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_2b/CCSD_2b-figure4.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure4.pdf used on i
 nput line 135.
 (pdftex.def)             Requested size: 62.21248pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure5.pdf, id=4341, 65.17448pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure5.pdf, id=4336, 65.17448pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure5.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure5.pdf>
@@ -4412,7 +4426,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure5.pdf used on i
 nput line 135.
 (pdftex.def)             Requested size: 72.93524pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure6.pdf, id=4342, 56.88753pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure6.pdf, id=4337, 56.88753pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure6.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure6.pdf>
@@ -4420,7 +4434,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure6.pdf used on i
 nput line 139.
 (pdftex.def)             Requested size: 63.6615pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure7.pdf, id=4343, 56.88753pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure7.pdf, id=4338, 56.88753pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure7.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure7.pdf>
@@ -4428,7 +4442,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure7.pdf used on i
 nput line 139.
 (pdftex.def)             Requested size: 63.6615pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf, id=4344, 66.9702pt x 63.56949pt>
+<figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf, id=4339, 66.9702pt x 63.56949pt>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf used on i
@@ -4453,7 +4467,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf used on i
 nput line 139.
 (pdftex.def)             Requested size: 74.9448pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure9.pdf, id=4345, 56.88753pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure9.pdf, id=4340, 56.88753pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure9.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure9.pdf>
@@ -4461,7 +4475,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure9.pdf used on i
 nput line 143.
 (pdftex.def)             Requested size: 63.6615pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf, id=4346, 56.88753pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf, id=4341, 56.88753pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf>
@@ -4469,7 +4483,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf used on
 input line 143.
 (pdftex.def)             Requested size: 63.6615pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure11.pdf, id=4347, 66.9702pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure11.pdf, id=4342, 66.9702pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure11.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure11.pdf>
@@ -4495,7 +4509,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure11.pdf used on
 input line 143.
 (pdftex.def)             Requested size: 74.9448pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure12.pdf, id=4348, 53.05823pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure12.pdf, id=4343, 53.05823pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure12.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure12.pdf>
@@ -4503,7 +4517,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure12.pdf used on
 input line 147.
 (pdftex.def)             Requested size: 59.3762pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure13.pdf, id=4349, 53.05823pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure13.pdf, id=4344, 53.05823pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure13.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure13.pdf>
@@ -4511,7 +4525,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure13.pdf used on
 input line 147.
 (pdftex.def)             Requested size: 59.3762pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure14.pdf, id=4350, 62.31982pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure14.pdf, id=4345, 62.31982pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure14.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure14.pdf>
@@ -4544,7 +4558,7 @@ ams/CCSD_2b/CCSD_2b-figure6.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure7.pd
 f> <./figures/diagrams/CCSD_2b/CCSD_2b-figure8.pdf> <./figures/diagrams/CCSD_2b
 /CCSD_2b-figure9.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure10.pdf> <./figu
 res/diagrams/CCSD_2b/CCSD_2b-figure11.pdf>]
-<figures/diagrams/CCSD_2b/CCSD_2b-figure15.pdf, id=4410, 53.05823pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure15.pdf, id=4405, 53.05823pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure15.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure15.pdf>
@@ -4552,7 +4566,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure15.pdf used on
 input line 151.
 (pdftex.def)             Requested size: 59.3762pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure16.pdf, id=4411, 53.05823pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure16.pdf, id=4406, 53.05823pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure16.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure16.pdf>
@@ -4560,7 +4574,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure16.pdf used on
 input line 151.
 (pdftex.def)             Requested size: 59.3762pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure17.pdf, id=4412, 72.68053pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure17.pdf, id=4407, 72.68053pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure17.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure17.pdf>
@@ -4604,7 +4618,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure20.pdf used on
 input line 155.
 (pdftex.def)             Requested size: 80.43758pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf, id=4413, 61.565pt x 63.56949pt>
+<figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf, id=4408, 61.565pt x 63.56949pt>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf Graphic file (type pdf)
 <use figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf>
 Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf used on 
@@ -4635,7 +4649,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure21.pdf used on
 input line 155.
 (pdftex.def)             Requested size: 68.89594pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure22.pdf, id=4414, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure22.pdf, id=4409, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure22.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure22.pdf>
@@ -4643,7 +4657,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure22.pdf used on
 input line 159.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf, id=4415, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf, id=4410, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf>
@@ -4651,7 +4665,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf used on
 input line 159.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure24.pdf, id=4416, 62.09499pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure24.pdf, id=4411, 62.09499pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure24.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure24.pdf>
@@ -4659,7 +4673,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure24.pdf used on
 input line 159.
 (pdftex.def)             Requested size: 69.48903pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure25.pdf, id=4417, 62.09499pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure25.pdf, id=4412, 62.09499pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure25.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure25.pdf>
@@ -4691,7 +4705,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure25.pdf used on
 input line 159.
 (pdftex.def)             Requested size: 69.48903pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure26.pdf, id=4418, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure26.pdf, id=4413, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure26.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure26.pdf>
@@ -4699,7 +4713,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure26.pdf used on
 input line 163.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure27.pdf, id=4419, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure27.pdf, id=4414, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure27.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure27.pdf>
@@ -4707,7 +4721,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure27.pdf used on
 input line 163.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure28.pdf, id=4420, 62.09499pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure28.pdf, id=4415, 62.09499pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure28.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure28.pdf>
@@ -4715,7 +4729,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure28.pdf used on
 input line 163.
 (pdftex.def)             Requested size: 69.48903pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure29.pdf, id=4421, 62.09499pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure29.pdf, id=4416, 62.09499pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure29.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure29.pdf>
@@ -4754,7 +4768,7 @@ D_2b-figure16.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure17.pdf> <./figures
 ure22.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure23.pdf> <./figures/diagram
 s/CCSD_2b/CCSD_2b-figure24.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure25.pd
 f>]
-<figures/diagrams/CCSD_2b/CCSD_2b-figure30.pdf, id=4475, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure30.pdf, id=4470, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure30.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure30.pdf>
@@ -4768,7 +4782,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure31.pdf used on
 input line 167.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure32.pdf, id=4476, 62.09499pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure32.pdf, id=4471, 62.09499pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure32.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure32.pdf>
@@ -4776,7 +4790,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure32.pdf used on
 input line 167.
 (pdftex.def)             Requested size: 69.48903pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure33.pdf, id=4477, 62.09499pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure33.pdf, id=4472, 62.09499pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure33.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure33.pdf>
@@ -4814,7 +4828,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure34.pdf used on
 input line 171.
 (pdftex.def)             Requested size: 59.12459pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure35.pdf, id=4478, 52.83339pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure35.pdf, id=4473, 52.83339pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure35.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure35.pdf>
@@ -4828,7 +4842,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure36.pdf used on
 input line 171.
 (pdftex.def)             Requested size: 80.49149pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf, id=4479, 62.09499pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf, id=4474, 62.09499pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf>
@@ -4860,7 +4874,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf used on
 input line 171.
 (pdftex.def)             Requested size: 69.48903pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure38.pdf, id=4480, 55.21027pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure38.pdf, id=4475, 55.21027pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure38.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure38.pdf>
@@ -4868,7 +4882,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure38.pdf used on
 input line 176.
 (pdftex.def)             Requested size: 61.7845pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure39.pdf, id=4481, 55.21027pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure39.pdf, id=4476, 55.21027pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure39.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure39.pdf>
@@ -4876,7 +4890,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure39.pdf used on
 input line 176.
 (pdftex.def)             Requested size: 61.7845pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf, id=4482, 58.11813pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf, id=4477, 58.11813pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf>
@@ -4884,7 +4898,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf used on
 input line 176.
 (pdftex.def)             Requested size: 65.03864pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure41.pdf, id=4483, 58.52565pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure41.pdf, id=4478, 58.52565pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure41.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure41.pdf>
@@ -4916,7 +4930,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure41.pdf used on
 input line 176.
 (pdftex.def)             Requested size: 65.49467pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure42.pdf, id=4484, 55.21027pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure42.pdf, id=4479, 55.21027pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure42.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure42.pdf>
@@ -4924,7 +4938,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure42.pdf used on
 input line 182.
 (pdftex.def)             Requested size: 61.7845pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure43.pdf, id=4485, 55.21027pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure43.pdf, id=4480, 55.21027pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure43.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure43.pdf>
@@ -4932,7 +4946,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure43.pdf used on
 input line 182.
 (pdftex.def)             Requested size: 61.7845pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure44.pdf, id=4486, 58.11813pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure44.pdf, id=4481, 58.11813pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure44.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure44.pdf>
@@ -4940,7 +4954,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure44.pdf used on
 input line 182.
 (pdftex.def)             Requested size: 65.03864pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure45.pdf, id=4487, 58.52565pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure45.pdf, id=4482, 58.52565pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure45.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure45.pdf>
@@ -4948,7 +4962,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure45.pdf used on
 input line 182.
 (pdftex.def)             Requested size: 65.49467pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure46.pdf, id=4488, 80.89824pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure46.pdf, id=4483, 80.89824pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure46.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure46.pdf>
@@ -4956,7 +4970,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure46.pdf used on
 input line 182.
 (pdftex.def)             Requested size: 90.53133pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure47.pdf, id=4489, 75.18991pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure47.pdf, id=4484, 75.18991pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure47.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure47.pdf>
@@ -4964,7 +4978,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure47.pdf used on
 input line 182.
 (pdftex.def)             Requested size: 84.14326pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure48.pdf, id=4490, 72.6996pt x 63.56949pt
+<figures/diagrams/CCSD_2b/CCSD_2b-figure48.pdf, id=4485, 72.6996pt x 63.56949pt
 >
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure48.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure48.pdf>
@@ -5022,7 +5036,7 @@ ure35.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure37.pdf> <./figures/diagram
 s/CCSD_2b/CCSD_2b-figure38.pdf> <./figures/diagrams/CCSD_2b/CCSD_2b-figure39.pd
 f> <./figures/diagrams/CCSD_2b/CCSD_2b-figure40.pdf> <./figures/diagrams/CCSD_2
 b/CCSD_2b-figure41.pdf>]
-<figures/diagrams/CCSD_2b/CCSD_2b-figure49.pdf, id=4551, 56.03435pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure49.pdf, id=4546, 56.03435pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure49.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure49.pdf>
@@ -5030,7 +5044,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure49.pdf used on
 input line 186.
 (pdftex.def)             Requested size: 62.70671pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure50.pdf, id=4552, 56.03435pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure50.pdf, id=4547, 56.03435pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure50.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure50.pdf>
@@ -5038,7 +5052,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure50.pdf used on
 input line 186.
 (pdftex.def)             Requested size: 62.70671pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure51.pdf, id=4553, 58.59491pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure51.pdf, id=4548, 58.59491pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure51.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure51.pdf>
@@ -5064,7 +5078,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure51.pdf used on
 input line 186.
 (pdftex.def)             Requested size: 65.57219pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure52.pdf, id=4554, 56.03435pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure52.pdf, id=4549, 56.03435pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure52.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure52.pdf>
@@ -5072,7 +5086,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure52.pdf used on
 input line 192.
 (pdftex.def)             Requested size: 62.70671pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure53.pdf, id=4555, 56.03435pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure53.pdf, id=4550, 56.03435pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure53.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure53.pdf>
@@ -5080,7 +5094,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure53.pdf used on
 input line 192.
 (pdftex.def)             Requested size: 62.70671pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure54.pdf, id=4556, 58.59491pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure54.pdf, id=4551, 58.59491pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure54.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure54.pdf>
@@ -5088,7 +5102,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure54.pdf used on
 input line 192.
 (pdftex.def)             Requested size: 65.57219pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure55.pdf, id=4557, 58.63707pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure55.pdf, id=4552, 58.63707pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure55.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure55.pdf>
@@ -5096,7 +5110,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure55.pdf used on
 input line 192.
 (pdftex.def)             Requested size: 65.61935pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure56.pdf, id=4558, 75.66669pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure56.pdf, id=4553, 75.66669pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure56.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure56.pdf>
@@ -5104,7 +5118,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure56.pdf used on
 input line 192.
 (pdftex.def)             Requested size: 84.67682pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure57.pdf, id=4559, 73.33899pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure57.pdf, id=4554, 73.33899pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure57.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure57.pdf>
@@ -5112,7 +5126,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure57.pdf used on
 input line 192.
 (pdftex.def)             Requested size: 82.07193pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure58.pdf, id=4560, 81.30475pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure58.pdf, id=4555, 81.30475pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure58.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure58.pdf>
@@ -5186,7 +5200,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure62.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 90.53133pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure63.pdf, id=4561, 63.94992pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure63.pdf, id=4556, 63.94992pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure63.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure63.pdf>
@@ -5206,7 +5220,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure65.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 72.0209pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure66.pdf, id=4562, 64.97676pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure66.pdf, id=4557, 64.97676pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure66.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure66.pdf>
@@ -5214,7 +5228,7 @@ Package pdftex.def Info: figures/diagrams/CCSD_2b/CCSD_2b-figure66.pdf used on
 input line 200.
 (pdftex.def)             Requested size: 72.71396pt x 71.13188pt.
 
-<figures/diagrams/CCSD_2b/CCSD_2b-figure67.pdf, id=4563, 64.97676pt x 63.56949p
+<figures/diagrams/CCSD_2b/CCSD_2b-figure67.pdf, id=4558, 64.97676pt x 63.56949p
 t>
 File: figures/diagrams/CCSD_2b/CCSD_2b-figure67.pdf Graphic file (type pdf)
  <use figures/diagrams/CCSD_2b/CCSD_2b-figure67.pdf>
@@ -5475,7 +5489,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4D34D4191B900FEA50C0364D45DD9B33;3959.
+(rerunfilecheck)             Checksum: EA58CA35ADB161A101F4A7AD8BD0A1CD;3893.
 
 
 LaTeX Warning: There were undefined references.
@@ -5485,10 +5499,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12108 strings out of 493029
- 220578 string characters out of 6136234
+ 12106 strings out of 493029
+ 220554 string characters out of 6136234
  306179 words of memory out of 5000000
- 14384 multiletter control sequences out of 15000+600000
+ 14383 multiletter control sequences out of 15000+600000
  12777 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,18n,44p,1652b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5509,10 +5523,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (172 pages, 5141456 bytes).
+Output written on thesis.pdf (172 pages, 5141891 bytes).
 PDF statistics:
- 5108 PDF objects out of 5155 (max. 8388607)
- 3786 compressed objects within 38 object streams
- 752 named destinations out of 1000 (max. 500000)
- 1931 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5103 PDF objects out of 5155 (max. 8388607)
+ 3781 compressed objects within 38 object streams
+ 751 named destinations out of 1000 (max. 500000)
+ 1923 words of extra memory for PDF output out of 10000 (max. 10000000)
 
