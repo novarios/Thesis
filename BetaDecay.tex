@@ -124,6 +124,7 @@ These beta-decay processes can be further characterized by the character of thei
   \caption{Summary of the selection rules for allowed beta decays according to the angular momentum $J$ and parity $\pi$ of the initial ($I$) and final ($F$) states.}
   \label{tab:beta-selection}
 \end{table}
+It should be stated that while Gamow-Teller transitions can occur without a change in the nuclear spin ($\Delta J = 0\ \text{for}\ J_{F}>0\ \text{and}\ J_{I}>0$), the Gamow-Teller operator carries an angular momentum of $J = 1$.
 
 The half-life of these processes $T_{1/2}$ can be calculated using a combination of both the Fermi and Gamow-Teller type transitions in the form of their reduced transition amplitudes, $B_{\text{F}}$ and $B_{\text{GT}}$, respectively,
 \begin{equation} \label{eq:RTAmps}
@@ -224,8 +225,8 @@ Similarly, the $\mathrm{hphh}$ component is represented by the following diagram
 
 After constructing the effective operators, the reduced transition amplitudes in Eq.\ \eqref{eq:RTAmps} can be calculated.  Because of the ambiguity in the bi-orthonormalization discussed in section \ref{section:eom_dual}, the square-norm of the matrix elements, $\lvert M \rvert^{2}$, must be written using both the left and right solutions for each of the initial and final states.  Expanded in terms of the EOM states, these reduced amplitudes for the Fermi and Gamow-Teller operators become,
 \begin{gather}
-  B_{F} = \frac{g_{V}^{2}}{2J_{i} + 1}\delta_{J_\mathrm{f}J_{\mathrm{i}}}\sum_{pq}\relement{\Ref}{\Lop_{\mathrm{i}}\EOop{}_{F^{\pm}}\Rop_{\mathrm{f}}}{\Ref}\relement{\Ref}{\Lop_{\mathrm{f}}\EOop{}_{F^{\mp}}\Rop_{\mathrm{i}}}{\Ref}, \\
-  B_{GT} = \frac{g_{A}^{2}}{2J_{i} + 1}\sum_{pq}\relement{\Ref}{\Lop_{\mathrm{i}}\EOop{}_{GT^{\pm}}\Rop_{\mathrm{f}}}{\Ref}\relement{\Ref}{\Lop_{\mathrm{f}}\EOop{}_{GT^{\mp}}\Rop_{\mathrm{i}}}{\Ref}.
+  B_{F} = \frac{g_{V}^{2}}{2J_{\mathrm{i}} + 1}\delta_{J_\mathrm{f}J_{\mathrm{i}}}\sum_{\mathrm{f}}\relement{\Ref}{\Lop_{\mathrm{i}}\EOop{}_{F^{\pm}}\Rop_{\mathrm{f}}}{\Ref}\relement{\Ref}{\Lop_{\mathrm{f}}\EOop{}_{F^{\mp}}\Rop_{\mathrm{i}}}{\Ref}, \\
+  B_{GT} = \frac{g_{A}^{2}}{2J_{\mathrm{i}} + 1}\sum_{\mathrm{f}}\relement{\Ref}{\Lop_{\mathrm{i}}\EOop{}_{GT^{\pm}}\Rop_{\mathrm{f}}}{\Ref}\relement{\Ref}{\Lop_{\mathrm{f}}\EOop{}_{GT^{\mp}}\Rop_{\mathrm{i}}}{\Ref}.
 \end{gather}
 
 Using the machinery developed in this thesis and the techniques discussed in this chapter, the calculated half-lives of various nuclei will be presented in an upcoming paper.

@@ -125,7 +125,7 @@ ax3.axis([6.0, 30.0, -140.0, -110.0])
 ax3.set_xlabel(r'$\mathrm{\hbar\omega\ (MeV)}$', fontsize=15)
 ax3.set_ylabel(r'$\mathrm{E\ (MeV)}$', fontsize=15)
 # 138.789315
-annotation_string = r'$\mathrm{^{23}O}$'
+annotation_string = r'$\mathrm{^{21}N}$'
 ax3.annotate(annotation_string, fontsize=15, xy=(0.15, 0.85), xycoords='axes fraction')
 
 ax4 = plt.subplot(gs[3])
@@ -136,7 +136,7 @@ ax4.plot([0, 30], [-155.176854, -155.176854], '--', color='grey')
 ax4.axis([6.0, 30.0, -160.0, -130.0])
 ax4.set_xlabel(r'$\mathrm{\hbar\omega\ (MeV)}$', fontsize=15)
 # 155.176854
-annotation_string = r'$\mathrm{^{23}F}$'
+annotation_string = r'$\mathrm{^{21}O}$'
 ax4.annotate(annotation_string, fontsize=15, xy=(0.15, 0.85), xycoords='axes fraction')
 
 

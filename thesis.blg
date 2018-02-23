@@ -3,53 +3,52 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: ieeetr.bst
 Database file #1: thesis.bib
-I was expecting an "="---line 1365 of file thesis.bib
+I was expecting an "="---line 1397 of file thesis.bib
  :   article 
  :           NUMBER = {26},
 I'm skipping whatever remains of this entry
-Warning--empty author in GOLDSTONE1957267
 Warning--empty booktitle in SHERRILL1999143
 Warning--empty author in blas
 Warning--empty publisher in HALZEN1984
-You've used 160 entries,
+You've used 162 entries,
             1876 wiz_defined-function locations,
-            1479 strings with 34304 characters,
-and the built_in function-call counts, 52902 in all, are:
-= -- 5249
-> -- 2453
+            1494 strings with 35016 characters,
+and the built_in function-call counts, 53618 in all, are:
+= -- 5318
+> -- 2482
 < -- 0
-+ -- 889
-- -- 729
-* -- 3897
-:= -- 7354
-add.period$ -- 172
-call.type$ -- 160
-change.case$ -- 150
++ -- 899
+- -- 737
+* -- 3948
+:= -- 7459
+add.period$ -- 174
+call.type$ -- 162
+change.case$ -- 152
 chr.to.int$ -- 0
-cite$ -- 164
-duplicate$ -- 2730
-empty$ -- 4193
-format.name$ -- 729
-if$ -- 12947
+cite$ -- 165
+duplicate$ -- 2764
+empty$ -- 4260
+format.name$ -- 737
+if$ -- 13121
 int.to.chr$ -- 0
-int.to.str$ -- 160
-missing$ -- 164
-newline$ -- 496
-num.names$ -- 157
-pop$ -- 288
+int.to.str$ -- 162
+missing$ -- 166
+newline$ -- 502
+num.names$ -- 162
+pop$ -- 292
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2478
+skip$ -- 2507
 stack$ -- 0
-substring$ -- 3559
-swap$ -- 1550
+substring$ -- 3617
+swap$ -- 1566
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 430
-width$ -- 163
-write$ -- 1636
+warning$ -- 3
+while$ -- 439
+width$ -- 165
+write$ -- 1658
 (There was 1 error message)

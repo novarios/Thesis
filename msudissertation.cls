@@ -85,6 +85,7 @@
     By
 
     \@author
+    \vspace{-\topskip}%
   \end{center}%
 }
 

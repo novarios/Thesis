@@ -6,7 +6,7 @@ Coupled-cluster theory is a powerful method for approximating solutions to the m
 
 \section{Exponential Ansatz} \label{section:exponentialansatz}
 
-Coupled cluster theory is based on expressing the $A$-particle correlated wave function $\corrket$ using the exponential ansatz \cite{COESTER1960477,CIZEK19664256},
+Coupled cluster theory is based on expressing the $A$-particle correlated wave function $\corrket$ using the exponential ansatz \cite{COESTER1960477,CIZEK19664256,HUBBARD1957539,HUGENHOLTZ1957481},
 \begin{equation} \label{eq:cc_ansatz}
   \corrket = \E^{\Top}\refket.
 \end{equation}
@@ -15,7 +15,7 @@ The cluster operator $\Top \equiv \Top_{1} + \Top_{2} + \cdots + \Top_{A}$, is c
   \Top_{1} \equiv \sum_{ai} \tamp{a}{i}\normord{\co{a}\ao{i}}, \notag \\
   \Top_{2} \equiv \frac{1}{4}\sum_{abij} \tamp{ab}{ij}\normord{\co{a}\co{b}\ao{j}\ao{i}}, \notag \\
   \vdots \notag \\
-  \Top_{k} \equiv \left(\frac{1}{k!}\right)^2 \sum_{\substack{a_{1} \ldots a_{k} \\ i_{1} \ldots i_{k}}} \tamp{a_{1} \cdots a_{k}}{i_{1} \cdots i_{k}}\normord{\co{a}_{1} \cdots \co{a}_{k} \ao{i}_{k} \cdots \ao{i}_{1}},
+  \Top_{k} \equiv \left(\frac{1}{k!}\right)^2 \sum_{\substack{a_{1} \ldots a_{k} \\ i_{1} \ldots i_{k}}} \tamp{a_{1} \cdots a_{k}}{i_{1} \cdots i_{k}}\normord{\co{a_{1}} \cdots \co{a_{k}} \ao{i_{k}} \cdots \ao{i_{1}}},
 \end{gather}
 where the unknown matrix elements, $\tamp{a_{1} \ldots a_{k}}{i_{1} \ldots i_{k}}$, are known as \textit{cluster amplitudes} \cite{SHAVITT2009}.
 
@@ -38,7 +38,7 @@ where the \textit{normal-ordered effective Hamiltonian} is constructed equivalen
   \EHamN \equiv \E^{-\Top} \HamN \E^{\Top}.
 \end{align}
 
-An important characteristic of the effective Hamiltonian, $\EHam$ and $\EHamN$, is that because the cluster operator, which contains no de-excitations, is not Hermitian, the exponential wave operator cannot be unitary, and thus $\EHam$ is not Hermitian.  This initially seems like an explicit contradiction to any standard quantum mechanics formulation where observables are associated with the real eigenvalues of Hermitian matrices. Technically, the existence and reality of the CC solution is only guaranteed when the full cluster operator is used $\Top = \Top_{1} + \cdots + \Top_{A}$, see \cite{ZIVKOVIC1977,MOISEYEV2011}.  However, while the non-Hermiticity does require some special considerations which will be discussed, this fundamental problem does not materialize in this work.
+An important characteristic of the effective Hamiltonian, $\EHam$ and $\EHamN$, is that because the cluster operator, which contains no de-excitations, is not Hermitian, the exponential wave operator cannot be unitary, and thus $\EHam$ is not Hermitian.  This initially seems like an explicit contradiction to any standard quantum mechanics formulation where observables are associated with the real eigenvalues of Hermitian matrices. Technically, the existence and reality of the CC solution is only guaranteed when the full cluster operator is used $\Top = \Top_{1} + \cdots + \Top_{A}$, see \cite{ZIVKOVIC1977,PIECUCH1990,PIECUCH2000,MOISEYEV2011}.  However, while the non-Hermiticity does require some special considerations which will be discussed, this fundamental problem does not materialize in this work.
 
 The effective Hamiltonian in Eq.\ \eqref{eq:cc_heff0} can be rewritten with commutators ($[ \hat{A},\hat{B} ] = \hat{A}\hat{B} - \hat{B}\hat{A}$) according to the Baker--Campbell--Hausdorff expansion as,
 \begin{align} \label{eq:bch-cc}
@@ -63,7 +63,7 @@ The unknown cluster amplitudes in CCSD, $\amp{a}{i}$ and $\amp{ab}{ij}$, can be 
   \statebra{a}{i} \EHam \refket &= 0, \notag \\
   \statebra{ab}{ij} \EHam \refket &= 0.
 \end{align}
-After the Fock matrix has been diagonalized, the diagonal components of Eq.\ \eqref{eq:ccsd1} can be separated and, after expanding the exponent in Eq.\ \eqref{eq:cc_heff1}, the non-vanishing terms of the CCSD amplitude equations become,
+After the Fock matrix has been diagonalized, the diagonal components of Eq.\ \eqref{eq:ccsd1} can be separated and, after expanding the exponent in Eq.\ \eqref{eq:cc_heff1}, the non-vanishing terms of the CCSD amplitude equations in the HF basis become,
 \begin{gather} \label{eq:ccsd2}
   \statebra{a}{i} \left[ \Ham_{2} \left(\Top_{1} + \Top_{2} + \Top_{1}\Top_{2} + \frac{1}{2!} \Top_{1}^{2} + \frac{1}{3!} \Top_{1}^{3}\right) \right]_{\mathrm{c}} \refket = \Edenom{a}{i}\amp{a}{i} \\
   \statebra{ab}{ij} \left[ \Ham_{2} \left(1 + \hat{T}_1 + \hat{T}_2 + \frac{1}{2} \hat{T}_1^{2} + \hat{T}_1\hat{T}_2 + \frac{1}{2!} \hat{T}_2^{2} + \frac{1}{3!} \hat{T}_1^{3} + \frac{1}{2!} \hat{T}_1^{2} \hat{T}_2 + \frac{1}{4!} \hat{T}_1^{4}\right) \right]_{\mathrm{c}} \refket = \Edenom{ab}{ij}\amp{ab}{ij}, \notag
